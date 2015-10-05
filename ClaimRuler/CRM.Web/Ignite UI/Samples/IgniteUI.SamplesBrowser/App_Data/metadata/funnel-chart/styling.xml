@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Styling</Title>
+    <Description>This sample demonstrates how to change the look and feel of igFunnelChart control.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Styling" TopicName="igFunnelChart_Styling" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>スタイル設定</Title>
+    <Description>このサンプルでは、igFunnelChart コントロールのルック アンド フィールを変更する方法を紹介します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="スタイル設定" TopicName="igFunnelChart_Styling" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>MVC Initialization</Title>
+    <Description>This is an example of rendering the igRadialGauge using the ASP.NET MVC helper. This helper sets the various options on the igRadialGauge control and renders the required HTML and JavaScript.</Description>
+    <HelpTopics>
+      <HelpTopic Title="igRadialGauge" TopicName="igRadialGauge" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>MVC の初期化</Title>
+    <Description>このサンプルでは、ASP.NET MVC ヘルパーを使用して igRadialGauge を描画する方法を紹介します。このヘルパーは igRadialGauge コントロールのさまざまなオプションを設定し、必要な HTML および JavaScript を描画します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="igRadialGauge" TopicName="igRadialGauge" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+</Sample>

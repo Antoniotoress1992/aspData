@@ -1,0 +1,11 @@
+@{
+    ViewBag.Title = "Scheduler | Managing users rights";
+    ViewBag.SampleTitle = "Authorization";
+    ViewBag.ShortDescription = "Managing users rights";
+    ViewBag.LongDescription = "Different permissions for guests and logged in users. Scheduler is readonly for anonymous users,     logged in users can modify only they own events.<br />    You can use \"test\" as login and password";
+}
+
+
+    <div style="position:absolute;top:10px;right:60px; background-color:White; text-align:center;">@Html.Partial("_LoginPartial")</div>
+
+    @Html.Raw(Model.Render())

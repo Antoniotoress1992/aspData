@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Grid Column Template</Title>
+    <Description></Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>グリッドの列テンプレート</Title>
+    <Description></Description>
+  </LocalizedContent>
+  <RedirectToSample CopyTargetTitleAndDescription="description">grid/column-template</RedirectToSample>
+  <ServerRuntime></ServerRuntime>
+  <Status></Status>
+</Sample>

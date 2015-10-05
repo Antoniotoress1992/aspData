@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="../../igniteui/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+    <link href="../../igniteui/css/structure/infragistics.css" rel="stylesheet" />
+
+    <!-- Used to style the API Viewer and Explorer UI -->
+    <link href="../../css/apiviewer.css" rel="stylesheet" type="text/css" />
+
+    <script src="../../js/modernizr.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="../../igniteui/js/infragistics.core.js"></script>
+    <script src="../../igniteui/js/infragistics.dv.js"></script>
+
+</head>
+<body> 
+    <div id="barcode"></div>
+
+    <script type="text/javascript">
+        $(function () {
+            $("#barcode").igQRCodeBarcode({
+                height: "300px",
+                width: "100%",
+                data: "http://www.infragistics.com/products/jquery/samples"
+            });
+        });
+    </script>
+</body>
+</html>

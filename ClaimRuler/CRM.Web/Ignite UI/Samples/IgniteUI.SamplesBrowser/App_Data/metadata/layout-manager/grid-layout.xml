@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Grid Layout with colspan and rowspan Support</Title>
+    <Description>This sample demonstrates the ability of the Layout Manager control's Grid layout to allow items to have arbitrary position in a grid with a predefined size including for items with different rowspan and colspan settings.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>colspan および rowspan サポートのグリッド レイアウト</Title>
+    <Description>このサンプルでは、項目を定義済みのサイズを持つグリッドの位置に設定可能なグリッド レイアウトを紹介します。項目の変更可能な rowspan および colspan も設定できます。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <IsResponsive>True</IsResponsive>
+  <MinSampleSize>PhonePortrait</MinSampleSize>
+</Sample>

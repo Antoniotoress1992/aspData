@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Geographic Contour Line Series</Title>
+    <Description>This sample demonstrates how to bind pre-triangulated files (.ITF) to the igMap control and configure a geographic contour line series. Hundreds of thousands of points showing precipitation measurements from many of weather stations in USA are displayed in the sample.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Overview" TopicName="Overview_igMap" />
+      <HelpTopic Title="Creating Different Kinds of Maps" TopicName="igMap_Creating_Different_Kinds_Maps" />
+      <HelpTopic Title="Contour Line Series" TopicName="igMap_Configuring_Geographic_Contour_Line_Series" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>地理等高線シリーズ</Title>
+    <Description>このサンプルでは、三角形分割ファイル (.ITF) をマップ コントロールにバインドし、地理等高線シリーズを構成する方法を紹介します。米国の気象観測所による降水量のデータを数千のポイントを使用して表示します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="概要" TopicName="Overview_igMap" />
+      <HelpTopic Title="マップ種類の作成" TopicName="igMap_Creating_Different_Kinds_Maps" />
+      <HelpTopic Title="等高線シリーズ" TopicName="igMap_Configuring_Geographic_Contour_Line_Series" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>Hosted</ServerRuntime>  
+  <Status></Status>
+  <MinSampleSize>TabletLandscape</MinSampleSize>
+  <ExcludeFromZip>True</ExcludeFromZip>
+</Sample>

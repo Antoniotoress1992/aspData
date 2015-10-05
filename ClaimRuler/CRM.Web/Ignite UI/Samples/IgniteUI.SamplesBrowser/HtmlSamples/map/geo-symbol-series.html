@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="../../igniteui/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+    <link href="../../igniteui/css/structure/infragistics.css" rel="stylesheet" />
+
+    <script src="../../js/modernizr.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+    
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="../../igniteui/js/infragistics.core.js"></script>
+    <script src="../../igniteui/js/infragistics.dv.js"></script>
+
+    <script src="../../js/map-helper.js" type="text/javascript" ></script>
+   
+     <style>
+        #tooltipTable
+        {
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        #tooltipTable td, #tooltipTable th
+        {
+            font-size: 9px;
+            border: 1px solid #5da7df;
+            padding: 3px 7px 2px 7px;
+        }
+        #tooltipTable th
+        {
+            font-weight: bold;
+            font-size: 11px;
+            text-align: left;
+            padding-top: 5px;
+            padding-bottom: 4px;
+            background-color: #5da7df;
+            color: #ffffff;
+        }
+    </style>
+    <script id="geoSymbolTooltip" type="text/x-jquery-tmpl">
+        <table id="tooltipTable" >
+            <tr><th colspan="2">${item.City}, ${item.Country}</th></tr>
+            <tr>
+                <td>Population:</td>
+                <td>${item.Population}</td>
+            </tr>
+        </table>
+    </script>
+   
+</head>
+<body>
+    
+    <script type="text/javascript">
+        $(function () {
+         
+            // load geo-locations from shapefile and simplify data structure
+            var worldCities = [];
+            var points = [];
+            var shapeDataSource = new $.ig.ShapeDataSource({
+                shapefileSource: "../../data-files/shapes/world_cities.shp",
+                databaseSource: "../../data-files/shapes/world_cities.dbf",
+                transformRecord: function (rec) {
+                    var pointX = rec.points.item(0).item(0).x();
+                    var pointY = rec.points.item(0).item(0).y();
+                    var city = rec.fields.item("NAME");
+                    var country = rec.fields.item("COUNTRY");
+                    var population = rec.fields.item("POPULATION");
+                    if (population > 7000) {
+                        points.push({
+                            Latitude: pointY, Longitude: pointX,
+                            City: city, Country: country,
+                            Population: population
+                        });
+                    }
+                },
+                callback: function () {
+                    worldCities = points.sort(compareCities);;
+                    createMap();
+                }
+            });
+            shapeDataSource.dataBind();
+
+            function compareCities(a, b) {
+                if (a.Population > b.Population)
+                    return -1;
+                if (a.Population < b.Population)
+                    return 1;
+                return 0;
+            }
+            
+        function createMap() {
+
+            $("#map").igMap({
+                width: "700px",
+                height: "500px",
+                windowRect: { left: 0.1, top: 0.1, height: 0.7, width: 0.7 },
+                overviewPlusDetailPaneVisibility: "visible",
+                overviewPlusDetailPaneBackgroundImageUri: "../../images/samples/maps/world.png",
+                backgroundContent: {
+                    type: "cloudMade",
+                    key: mapHelper.cloudmadeData(),
+                    parameter: 2
+                },
+                series: [{
+                    type: "geographicSymbol",
+                    name: "worldCities",
+                    dataSource: worldCities,
+                    longitudeMemberPath: "Longitude",
+                    latitudeMemberPath: "Latitude",
+                    showTooltip: true,
+                    tooltipTemplate: "geoSymbolTooltip",
+                    // using custom template
+                    markerType: "none",
+                    markerTemplate: {
+                        measure: function (measureInfo) {
+                            measureInfo.width = 10;
+                            measureInfo.height = 10;
+                        },
+                        render: function (renderInfo) {
+
+                            var ctx = renderInfo.context;
+                            var x = renderInfo.xPosition;
+                            var y = renderInfo.yPosition;
+                            if (renderInfo.isHitTestRender) 
+                                ctx.fillStyle = renderInfo.data.actualItemBrush().fill();
+                            else 
+                                ctx.fillStyle = "black";
+                            
+                            var size = 10;
+                            var heightHalf = size / 2.0;
+                            var widthHalf = size / 2.0;
+
+                            if (renderInfo.isHitTestRender) {
+                                ctx.fillRect(x - widthHalf, y - heightHalf, size, size);
+                            } else {
+                                
+                                // color markers based on population of cities
+                                var pop = renderInfo.data.item()["Population"];
+                                if (pop > 0)
+                                    ctx.fillStyle = "rgba(120,120,120,0.8)";
+                                if (pop > 100000)
+                                    ctx.fillStyle = "rgba(160,200,20,0.8)";
+                                if (pop > 1000000)
+                                    ctx.fillStyle = "rgba(210,155,20,0.8)";
+                                if (pop > 5000000)
+                                    ctx.fillStyle = "rgba(210,60,20,0.8)";
+                                if (pop > 10000000)
+                                    ctx.fillStyle = "rgba(155,20,20,0.8)";
+                               
+                                size = 3;
+                                ctx.globalAlpha = 1;
+                                ctx.strokeStyle = "rgba(20,20,20,0.36)";
+                                ctx.beginPath();
+                                ctx.arc(x, y, size, 0, 2.0 * Math.PI);
+                                ctx.fill();
+                                ctx.stroke();
+                            }
+                        }
+                    }
+                }],
+
+            });
+        };
+
+    });
+
+    </script>
+
+    <div>
+        <div id="map"></div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>XML Binding</Title>
+    <Description>The combo supports binding to XML data. This sample shows a basic example of binding to an XML string.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>XML のバインド</Title>
+    <Description>コンボは XML データへのバインドをサポートします。このサンプルは XML 文字列へのバインドの例を紹介します。</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>XML のバインド</Title>
+    <Description></Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

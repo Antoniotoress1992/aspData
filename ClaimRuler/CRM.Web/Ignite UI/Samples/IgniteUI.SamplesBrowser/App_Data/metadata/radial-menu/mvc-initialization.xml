@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>MVC Initialization</Title>
+    <Description>This is an example of rendering the igRadialMenu using the ASP.NET MVC helper. This helper sets the various options on the igRadialMenu control and renders the required HTML and JavaScript.</Description>
+    <HelpTopics>
+      <HelpTopic Title="igRadialMenu" TopicName="igRadialMenu" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>MVC の初期化</Title>
+    <Description>このサンプルでは、ASP.NET MVC ヘルパーを使用して igRadialMenu を描画する方法を紹介します。このヘルパーは igRadialMenu コントロールのさまざまなオプションを設定し、必要な HTML および JavaScript を描画します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="igRadialMenu" TopicName="igRadialMenu" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status>new</Status>
+</Sample>

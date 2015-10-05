@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Instantiation from Markup</Title>
+    <Description>This sample demonstrates how to instantiate the igTileManager on existing markup in a container. The sample also shows how the UI responds to resize by rearranging the tiles to fit and at the same time keeping their preset dimensions.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>マークアップでインスタンス化</Title>
+    <Description>このサンプルでは、コンテナーで既存のマークアップで igTileManager をインスタンス化する方法を紹介します。サイズ変更に UI を応答させる方法も紹介します。タイルを再配置し、プリセット ディメンションを保持します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <IsResponsive>True</IsResponsive>
+</Sample>

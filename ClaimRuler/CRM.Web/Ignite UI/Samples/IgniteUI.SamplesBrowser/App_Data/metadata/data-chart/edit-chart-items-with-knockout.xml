@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Edit Chart Items with KnockoutJS</Title>
+    <Description>
+      The sample demonstrates the igDataChart control reacting to changes in the data source by the Knockout View-Model.
+      Note that the chart is updated without having to re-bind the control. By default, the sample shows the market revenue and expenses for the first 10 days of the month.
+      You can add/remove days and move items along the chart and observe money flow on the market changing accordingly.
+    </Description>
+    <HelpTopics>
+      <HelpTopic Title="Configuring Knockout Support" TopicName="igDataChart_KnockoutJS_Support" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>KnockoutJS でチャート項目の編集</Title>
+    <Description>
+      このサンプルは、Knockout ビュー モデルのデータ ソースの変更を処理する igDataChart コントロールを紹介します。
+      コントロールを再バインドせずにチャートが更新されます。デフォルトで、サンプルは月の最初の 10 日の売上および経費を表示します。
+      チャートに日を追加/削除するか、項目を移動し、チャートを更新します。
+    </Description>
+    <HelpTopics>
+      <HelpTopic Title="Knockout サポートの構成" TopicName="igDataChart_KnockoutJS_Support" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>TabletPortrait</MinSampleSize>
+</Sample>

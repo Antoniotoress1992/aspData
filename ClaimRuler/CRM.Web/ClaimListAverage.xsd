@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ClaimListAverage" targetNamespace="http://tempuri.org/ClaimListAverage.xsd" xmlns:mstns="http://tempuri.org/ClaimListAverage.xsd" xmlns="http://tempuri.org/ClaimListAverage.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ClaimListAverage" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ClaimListAverage" msprop:Generator_UserDSName="ClaimListAverage">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="avgCoverageA" msprop:Generator_ColumnVarNameInTable="columnavgCoverageA" msprop:Generator_ColumnPropNameInRow="avgCoverageA" msprop:Generator_ColumnPropNameInTable="avgCoverageAColumn" msprop:Generator_UserColumnName="avgCoverageA" type="xs:string" minOccurs="0" />
+              <xs:element name="avgCoverageB" msprop:Generator_ColumnVarNameInTable="columnavgCoverageB" msprop:Generator_ColumnPropNameInRow="avgCoverageB" msprop:Generator_ColumnPropNameInTable="avgCoverageBColumn" msprop:Generator_UserColumnName="avgCoverageB" type="xs:string" minOccurs="0" />
+              <xs:element name="avgCoverageC" msprop:Generator_ColumnVarNameInTable="columnavgCoverageC" msprop:Generator_ColumnPropNameInRow="avgCoverageC" msprop:Generator_ColumnPropNameInTable="avgCoverageCColumn" msprop:Generator_UserColumnName="avgCoverageC" type="xs:string" minOccurs="0" />
+              <xs:element name="avgCoverageD" msprop:Generator_ColumnVarNameInTable="columnavgCoverageD" msprop:Generator_ColumnPropNameInRow="avgCoverageD" msprop:Generator_ColumnPropNameInTable="avgCoverageDColumn" msprop:Generator_UserColumnName="avgCoverageD" type="xs:string" minOccurs="0" />
+              <xs:element name="totalCoverageA" msprop:Generator_ColumnVarNameInTable="columntotalCoverageA" msprop:Generator_ColumnPropNameInRow="totalCoverageA" msprop:Generator_ColumnPropNameInTable="totalCoverageAColumn" msprop:Generator_UserColumnName="totalCoverageA" type="xs:string" minOccurs="0" />
+              <xs:element name="totalCoverageB" msprop:Generator_ColumnVarNameInTable="columntotalCoverageB" msprop:Generator_ColumnPropNameInRow="totalCoverageB" msprop:Generator_ColumnPropNameInTable="totalCoverageBColumn" msprop:Generator_UserColumnName="totalCoverageB" type="xs:string" minOccurs="0" />
+              <xs:element name="totalCoverageC" msprop:Generator_ColumnVarNameInTable="columntotalCoverageC" msprop:Generator_ColumnPropNameInRow="totalCoverageC" msprop:Generator_ColumnPropNameInTable="totalCoverageCColumn" msprop:Generator_UserColumnName="totalCoverageC" type="xs:string" minOccurs="0" />
+              <xs:element name="totalCoverageD" msprop:Generator_ColumnVarNameInTable="columntotalCoverageD" msprop:Generator_ColumnPropNameInRow="totalCoverageD" msprop:Generator_ColumnPropNameInTable="totalCoverageDColumn" msprop:Generator_UserColumnName="totalCoverageD" type="xs:string" minOccurs="0" />
+              <xs:element name="avgCoverageE" msprop:Generator_ColumnVarNameInTable="columnavgCoverageE" msprop:Generator_ColumnPropNameInRow="avgCoverageE" msprop:Generator_ColumnPropNameInTable="avgCoverageEColumn" msprop:Generator_UserColumnName="avgCoverageE" type="xs:string" minOccurs="0" />
+              <xs:element name="avgOtherCoverage" msprop:Generator_ColumnVarNameInTable="columnavgOtherCoverage" msprop:Generator_ColumnPropNameInRow="avgOtherCoverage" msprop:Generator_ColumnPropNameInTable="avgOtherCoverageColumn" msprop:Generator_UserColumnName="avgOtherCoverage" type="xs:string" minOccurs="0" />
+              <xs:element name="totalOurInvoice" msprop:Generator_ColumnVarNameInTable="columntotalOurInvoice" msprop:Generator_ColumnPropNameInRow="totalOurInvoice" msprop:Generator_ColumnPropNameInTable="totalOurInvoiceColumn" msprop:Generator_UserColumnName="totalOurInvoice" type="xs:string" minOccurs="0" />
+              <xs:element name="totalMiles" msprop:Generator_ColumnVarNameInTable="columntotalMiles" msprop:Generator_ColumnPropNameInRow="totalMiles" msprop:Generator_ColumnPropNameInTable="totalMilesColumn" msprop:Generator_UserColumnName="totalMiles" type="xs:string" minOccurs="0" />
+              <xs:element name="totalCoverageE" msprop:Generator_ColumnVarNameInTable="columntotalCoverageE" msprop:Generator_ColumnPropNameInRow="totalCoverageE" msprop:Generator_ColumnPropNameInTable="totalCoverageEColumn" msprop:Generator_UserColumnName="totalCoverageE" type="xs:string" minOccurs="0" />
+              <xs:element name="totalOtherCoverage" msprop:Generator_ColumnVarNameInTable="columntotalOtherCoverage" msprop:Generator_ColumnPropNameInRow="totalOtherCoverage" msprop:Generator_ColumnPropNameInTable="totalOtherCoverageColumn" msprop:Generator_UserColumnName="totalOtherCoverage" type="xs:string" minOccurs="0" />
+              <xs:element name="avgOurInvoice" msprop:Generator_ColumnVarNameInTable="columnavgOurInvoice" msprop:Generator_ColumnPropNameInRow="avgOurInvoice" msprop:Generator_ColumnPropNameInTable="avgOurInvoiceColumn" msprop:Generator_UserColumnName="avgOurInvoice" type="xs:string" minOccurs="0" />
+              <xs:element name="avgMiles" msprop:Generator_ColumnVarNameInTable="columnavgMiles" msprop:Generator_ColumnPropNameInRow="avgMiles" msprop:Generator_ColumnPropNameInTable="avgMilesColumn" msprop:Generator_UserColumnName="avgMiles" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

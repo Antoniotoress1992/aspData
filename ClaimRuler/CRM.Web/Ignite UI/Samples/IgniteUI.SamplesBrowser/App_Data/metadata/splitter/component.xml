@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Splitter</Name>
+    <Description>
+      Create dynamic layouts with resizable and collapsible panels. This unique control can be horizontal or vertical, can include buttons for Left, Right, or Collapse, and can be dragged accordingly to resize a containers widget. It is designed with programmable events for Collapse, Expand and Resize, and has full keyboard support for interactions.
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="hint" Value="Select a destination from tree." />
+      <LocalizedSampleString Key="notFound" Value="No information found." />
+      <LocalizedSampleString Key="id" Value="ID" />
+      <LocalizedSampleString Key="companyName" Value="Company Name" />
+      <LocalizedSampleString Key="contactName" Value="Contact Name" />
+      <LocalizedSampleString Key="contactTitle" Value="Contact Title" />
+      <LocalizedSampleString Key="orderId" Value="Order ID" />
+      <LocalizedSampleString Key="customerId" Value="Customer ID" />
+      <LocalizedSampleString Key="shipName" Value="Ship Name" />
+      <LocalizedSampleString Key="firstPanel" Value="First Panel" />
+      <LocalizedSampleString Key="secondPanel" Value="Second Panel" />
+      <LocalizedSampleString Key="splitterApiSettings" Value="Splitter API settings" />
+      <LocalizedSampleString Key="collapseFirstPanel" Value="Collapse First Panel" />
+      <LocalizedSampleString Key="expandFirstPanel" Value="Expand First Panel" />
+      <LocalizedSampleString Key="collapseSecondPanel" Value="Collapse Second Panel" />
+      <LocalizedSampleString Key="expandSecondPanel" Value="Expand Second Panel" />
+      <LocalizedSampleString Key="removeSplitBarButtons" Value="Remove Split Bar Buttons" />
+      <LocalizedSampleString Key="changeContent" Value="Change content with " />
+      <LocalizedSampleString Key="atThe" Value="at the" />
+      <LocalizedSampleString Key="enterNewPanelSize" Value="Enter new panel size" />
+      <LocalizedSampleString Key="hintSize" Value="e.g. 100px" />
+    </LocalizedSampleStrings>
+    <PageKeywords>igSplitter</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Splitter</Name>
+    <Description>
+      サイズ変更可能で縮小可能なパネルを使用した動的なレイアウトを作成します。このユニークなコントロールは、水平または垂直の表示、Left、 Right、または Collapse のボタンを使用できます。また、コンテナー ウィジェットのサイズ変更に応じたドラッグが可能です。Collapse、Expand、および Resize のプログラム可能なイベントでデザインされており、キーボード操作が完全にサポートされます。
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="hint" Value="ツリーから場所を選択します。" />
+      <LocalizedSampleString Key="notFound" Value="情報は見つかりませんでした。" />
+      <LocalizedSampleString Key="id" Value="ID" />
+      <LocalizedSampleString Key="companyName" Value="会社名" />
+      <LocalizedSampleString Key="contactName" Value="名前" />
+      <LocalizedSampleString Key="contactTitle" Value="連絡先" />
+      <LocalizedSampleString Key="orderId" Value="注文 ID" />
+      <LocalizedSampleString Key="customerId" Value="顧客 ID" />
+      <LocalizedSampleString Key="shipName" Value="出荷名" />
+      <LocalizedSampleString Key="firstPanel" Value="最初のパネル" />
+      <LocalizedSampleString Key="secondPanel" Value="2 つ目のパネル" />
+      <LocalizedSampleString Key="splitterApiSettings" Value="スプリッターの API 設定" />
+      <LocalizedSampleString Key="collapseFirstPanel" Value="最初のパネルの縮小" />
+      <LocalizedSampleString Key="expandFirstPanel" Value="最初のパネルの展開" />
+      <LocalizedSampleString Key="collapseSecondPanel" Value="2 つ目のパネルの縮小" />
+      <LocalizedSampleString Key="expandSecondPanel" Value="2 つ目のパネルの展開" />
+      <LocalizedSampleString Key="removeSplitBarButtons" Value="スプリッターのボタンの削除" />
+      <LocalizedSampleString Key="changeContent" Value="コンテンツを設定:" />
+      <LocalizedSampleString Key="atThe" Value="位置:" />
+      <LocalizedSampleString Key="enterNewPanelSize" Value="パネル サイズを設定:" />
+      <LocalizedSampleString Key="hintSize" Value="100px など" />
+    </LocalizedSampleStrings>
+    <PageKeywords>igSplitter</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>ui.igsplitter</ClientApiUrl>
+  <HelpPageName>igSplitter_Overview</HelpPageName>
+  <ForumNumber>728</ForumNumber>
+  <IconImage>jquery-splitter.png</IconImage>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <TOC>
+    <Sample>basic-vertical-splitter</Sample>
+    <Sample>basic-horizontal-splitter</Sample>
+    <Sample>nested-splitters</Sample>
+    <Sample>aspnet-mvc-helper-splitter</Sample>
+    <Sample>api-events-splitter</Sample>
+  </TOC>
+</Component>

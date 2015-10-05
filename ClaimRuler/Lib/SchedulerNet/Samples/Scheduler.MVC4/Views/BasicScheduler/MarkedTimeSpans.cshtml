@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Scheduler | Hour areas color";
+    ViewBag.SampleTitle = "Color time sections";
+    ViewBag.ShortDescription = "Mark time sections";
+    ViewBag.LongDescription = "You can mark certain calendar sections with color<br />(e.g., days off, holidays or blocked time sections).";
+}
+
+@Html.Raw(Model.GenerateJS())
+@Html.Raw(Model.GenerateCSS())
+    <style>
+        .red_section {
+            background-color: red;
+            text-align: center;
+            color:#E2B8AC;
+            font-size:24px;
+            opacity: 0.25;
+            filter:alpha(opacity=25);
+        } 
+        .green_section {
+            background-color: #77ff77;
+            font-size:24px;
+            opacity: 0.25;
+            filter:alpha(opacity=25);
+        } 
+    </style>
+
+@Html.Raw(Model.GenerateHTML())

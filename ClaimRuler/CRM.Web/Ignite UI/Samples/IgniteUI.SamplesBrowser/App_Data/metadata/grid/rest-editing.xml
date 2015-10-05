@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>REST Editing</Title>
+    <Description>
+        This sample demonstrates how to bind igGrid to REST service (WebAPI). This is done by configuring the grid REST settings. When in REST mode igGrid will create a POST request for the newly created rows, a PUT request for the updated rows and a DELETE request for the deleted rows.
+        Create, update or delete rows from the grid and use the "Save Changes" button to propagate them to the server. "Undo" button will delete any locally pending changes made to the grid.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+      <Title>REST 編集</Title>
+    <Description>
+      このサンプルでは、igGrid を REST サービス (WebAPI) にバインドする方法を紹介します。これはグリッドの REST 設定を構成すると実装されます。REST モードの場合、igGrid は新しく作成した行の POST 要求、更新した行の PUT 要求、および削除した行の DELETE 要求を作成します。
+      グリッドの行を作成、更新、削除し、[変更の保存] ボタンを押すと、サーバーに変更を送信します。[元に戻す] ボタンは、グリッドのローカルに保留中の変更を削除します。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

@@ -1,0 +1,54 @@
+﻿@using Infragistics.Web.Mvc
+@using IgniteUI.SamplesBrowser.Models
+@model IQueryable<IgniteUI.SamplesBrowser.Models.Northwind.Product>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="@Url.Content("~/igniteui/css/themes/infragistics/infragistics.theme.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/igniteui/css/structure/infragistics.css")" rel="stylesheet" />
+
+    <script src="@Url.Content("~/js/modernizr.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery-ui.min.js")"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="@Url.Content("~/igniteui/js/infragistics.core.js")"></script>
+    <script src="@Url.Content("~/igniteui/js/infragistics.lob.js")"></script>
+
+</head>
+<body>
+    @(Html.Infragistics()
+        .Grid(Model)
+        .ID("grid")
+        .Width("100%")
+        .Height("500px")
+        .PrimaryKey("ID")
+        .AutoGenerateColumns(false)
+        .AutoGenerateLayouts(false)
+        .Columns(column =>
+        {
+            column.For(x => x.ProductName).HeaderText("Product Name").Width("30%");
+            column.For(x => x.CategoryName).HeaderText("Category").Width("30%");
+            column.For(x => x.UnitPrice).HeaderText("Unit Price").Width("20%");
+            column.For(x => x.UnitsInStock).HeaderText("Units In Stock").Width("20%");
+        })
+        .Features(features =>
+        {
+            features.Sorting().Type(OpType.Remote);
+            features.Paging().Type(OpType.Remote);
+            features.Filtering().Type(OpType.Remote);
+            features.Responsive().ColumnSettings(cs =>
+            {
+                cs.ColumnSetting().ColumnKey("CategoryName").Classes("ui-hidden-phone");
+                cs.ColumnSetting().ColumnKey("UnitPrice").Classes("ui-hidden-phone ui-hidden-tablet");
+            });
+        })
+        .DataSourceUrl(Url.Action("GetProducts"))
+        .Render()
+    )
+</body>
+</html>

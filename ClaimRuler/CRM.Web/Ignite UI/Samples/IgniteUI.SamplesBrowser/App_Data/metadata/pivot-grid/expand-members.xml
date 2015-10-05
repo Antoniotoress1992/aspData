@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Expand Members</Title>
+    <Description>This sample demonstrates how to programatically expand members in the Pivot Grid.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>メンバーの展開</Title>
+    <Description>このサンプルは、ピボット グリッドでプログラムでメンバーを展開する方法を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <MinSampleSize>Desktop</MinSampleSize>
+</Sample>

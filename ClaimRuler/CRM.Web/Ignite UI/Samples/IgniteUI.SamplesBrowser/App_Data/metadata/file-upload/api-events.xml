@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>API and Events</Title>
+    <Description>
+      This sample illustrates the client events that are available for the jQuery Upload control. The events 'fileSelecting' and 'fileSelected' are fired when selecting a file from the dialog window. While files are uploading, the handlers of 'fileUploading' and 'fileUploaded' are called. The 'onError' is called, for example, when you try to upload file larger than 1 MB. The 'fileUploadAborted' event is fired when you stop one uploading file, and the 'cancelAllClicked' event is fired when you stop all of them using the 'Cancel' button.
+      Note: You can upload files with a size smaller than 1 MB.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>API およびイベント</Title>
+    <Description>
+      このサンプルでは、jQuery アップロード コントロールのクライアント イベントを紹介します。ダイアログ ウィンドウからファイルを選択すると fileSelecting イベントおよび fileSelected イベントが発生します。ハンドラーをアップロードする際に fileUploading および fileUploaded が呼び出されます。1 MB を超えるファイルをアップロードしようとすると onError が呼び出されます。ファイルのアップロードを停止すると fileUploadAborted イベントが発生します。[キャンセル] ボタンを使用してすべてのアップロードを中止すると cancelAllClicked イベントが発生します。
+      注: 1 MB 以下のファイルのみアップロードできます。
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>API およびイベント</Title>
+    <Description></Description>
+  </LocalizedContent>
+  <ServerRuntime>Hosted</ServerRuntime>
+  <Status></Status>
+</Sample>

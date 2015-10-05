@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Editing DataSet</Title>
+    <Description>
+        <![CDATA[
+        In this sample the igHierarchicalGrid Updating feature communicates with the Grid MVC Helper wrapper to persist the changes on the server in a DataSet object. The igHierarchicalGrid Updating feature uses transactions to log any changes made to the grid. These transactions are kept locally in the browser until the igHierarchicalGrid.saveChanges API method is called to send a POST request to the Url indicated by the igHierarchicalGrid.updateUrl option. On the server these transaction should be parsed and processed and the Grid MVC Helper wrapper greatly simplifies this task. The EditingSaveChanges controller method uses a GridModel.LoadTransactions&lt;T&gt;(string postdata) to deserialize the changes from the grid and processes them. Use the grid to add, edit or delete single or multiple records in either the root or child layout. Press the "Save Changes" to send the changes on the server with an Ajax call.
+        ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>DataSet の編集</Title>
+    <Description>
+        <![CDATA[
+        このサンプルでは、igHierarchicalGrid の更新機能を使用して Data オブジェクトの変更をサーバーで永続化するためにグリッドの MVC ヘルパーと交信します。igHierarchicalGrid の更新機能は、グリッドの変更をログするためにトランザクションを使用します。トランザクションはローカルにブラウザーで保存されます。igHierarchicalGrid.saveChanges の API メソッドを呼び出したときに、igHierarchicalGrid.updateUrl オプションの URL に POST 要求を送信します。サーバーでトランザクションを解析して処理します。グリッドの MVC ヘルパー ラッパーはこのタスクに便利です。EditingSaveChanges コントローラー メソッドは、GridModel.LoadTransactions<T>(string postdata) を使用してグリッドの変更を逆シリアル化し、処理します。グリッドのルート レイアウトまたは子レイアウトでレコードを追加、編集、または削除します。[変更の保存] ボタンを押して Ajax 呼び出しでサーバーに変更を送信します。
+        ]]>
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

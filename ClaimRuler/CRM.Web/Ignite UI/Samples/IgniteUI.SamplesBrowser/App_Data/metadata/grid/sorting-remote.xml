@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Sorting (Remote)</Title>
+    <Description>
+        This sample demonstrates remote sorting functionality of the igGridSorting feature. Requests are handled by the Ignite UI Grid MVC Helper Wrapper which  automatically processes the request sorting parameters and transforms them into LINQ expressions.  For this to work the controller action method responsible for the sorting should be decorated with GridDataSourceAction attribute. Finally an IQueryable data provider should be passed as a view model.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>並べ替え (リモート)</Title>
+    <Description>
+      このサンプルでは、igGridSorting 機能のリモート並べ替え機能を紹介します。要求は、要求の並べ替えパラメーターを自動的に処理して LINQ 式に変換する Ignite UI グリッドの MVC ヘルパー ラッパーによって処理されます。並べ替えを実行するコントローラー操作メソッドに GridDataSourceAction 属性を含む必要があります。IQueryable データ プロバイダーがビュー モデルとして渡される必要があります。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

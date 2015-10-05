@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Rating</Name>
+    <Description>
+      Harvest crowd opinion with our jQuery rating control (and accompanying controls for ASP.NET MVC) for collecting ratings from end users. You've frequently seen these ratings on today's collaborative, social media-oriented and Web 2.0 applications, and now you can add this capability into your own solutions!
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="no_hover" Value="Customized igRating control, which doesn't have hover effect"/>
+      <LocalizedSampleString Key="default" Value="Customized igRating control with default behavior"/>
+      <LocalizedSampleString Key="continuous_hover" Value="Customized igRating control, which has continuous hover effect"/>
+      <LocalizedSampleString Key="only_selected" Value="The igRating control that shows only the selected and hovered values"/>
+      <LocalizedSampleString Key="custom_background" Value="The igRating control with customized background"/>
+      <LocalizedSampleString Key="current_val" Value="Current value:"/>
+      <LocalizedSampleString Key="percent_val" Value="Value as percent"/>
+      <LocalizedSampleString Key="Precision" Value="Precision"/>
+      <LocalizedSampleString Key="Exact" Value="Exact"/>
+      <LocalizedSampleString Key="Half" Value="Half"/>
+      <LocalizedSampleString Key="whole" Value="Whole (default)"/>
+      <LocalizedSampleString Key="select_places" Value="Select decimal places"/>
+      <LocalizedSampleString Key="1" Value=".0"/>
+      <LocalizedSampleString Key="2" Value=".00"/>
+      <LocalizedSampleString Key="3" Value=".000 (default)"/>
+      <LocalizedSampleString Key="select_precision" Value="Select precision and decimal places"/>
+      <LocalizedSampleString Key="custom_items" Value="Custom items"/>
+      <LocalizedSampleString Key="select_one" Value="Select only one"/>
+    </LocalizedSampleStrings>
+    <PageKeywords>igRating</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Rating</Name>
+    <Description>
+      jQuery レーティング コントロールおよび ASP.NET MVC 用のコントロールでは、エンド ユーザーのレーティングを取得します。 ソーシャル メディア サイトや Web 2.0 アプリケーションなどでレーティング機能はよく使用されています。igRating はレーティング機能を簡単に追加できます。
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="no_hover" Value="ホバー エフェクトがないカスタム igRating コントロール"/>
+      <LocalizedSampleString Key="default" Value="デフォルト動作がカスタマイズされた igRating コントロール"/>
+      <LocalizedSampleString Key="continuous_hover" Value="連続ホバー エフェクトがあるカスタム igRating コントロール"/>
+      <LocalizedSampleString Key="only_selected" Value="選択している値およびホバーしている値のみを表示する igRating コントロール"/>
+      <LocalizedSampleString Key="custom_background" Value="カスタム背景付きの igRating コントロール"/>
+      <LocalizedSampleString Key="current_val" Value="現在値:"/>
+      <LocalizedSampleString Key="percent_val" Value="値 (パーセント)"/>
+      <LocalizedSampleString Key="Precision" Value="Precision"/>
+      <LocalizedSampleString Key="Exact" Value="Exact"/>
+      <LocalizedSampleString Key="Half" Value="Half"/>
+      <LocalizedSampleString Key="whole" Value="Whole (デフォルト)"/>
+      <LocalizedSampleString Key="select_places" Value="小数位の選択"/>
+      <LocalizedSampleString Key="1" Value=".0"/>
+      <LocalizedSampleString Key="2" Value=".00"/>
+      <LocalizedSampleString Key="3" Value=".000 (デフォルト)"/>
+      <LocalizedSampleString Key="select_precision" Value="精度と小数位を設定する"/>
+      <LocalizedSampleString Key="custom_items" Value="カスタム項目"/>
+      <LocalizedSampleString Key="select_one" Value="1 つの項目のみを選択する"/>
+    </LocalizedSampleStrings>
+    <PageKeywords>igRating</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Rating</Name>
+    <Description>
+      jQuery レーティング コントロールおよび ASP.NET MVC 用のコントロールでは、エンド ユーザーのレーティングを取得します。 ソーシャル メディア サイトや Web 2.0 アプリケーションなどでレーティング機能はよく使用されています。igRating はレーティング機能を簡単に追加できます。
+    </Description>
+  </LocalizedContent>
+  <ClientApiUrl>ui.igrating</ClientApiUrl>
+  <HelpPageName>igRating_igRating</HelpPageName>
+  <ForumNumber>510</ForumNumber>
+  <IconImage>jquery-rating-logo.png</IconImage>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <TOC>
+    <Sample>basic-usage</Sample>
+    <Sample>aspnet-mvc-helper</Sample>.
+    <Sample>precision</Sample>
+    <Sample>custom-items</Sample>
+    <Sample>custom-styles</Sample>
+  </TOC>
+</Component>

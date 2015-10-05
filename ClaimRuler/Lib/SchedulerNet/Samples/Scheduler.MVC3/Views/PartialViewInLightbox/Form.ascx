@@ -1,0 +1,52 @@
+﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl" %>
+<div>
+<style>
+    .label
+    {
+        display:inline-block;
+        width:60px;
+    }
+</style>
+<form id='form'>
+<span class="label">Text</span><input id="1" name="text" type="text"/><br />
+<span class="label">From</span><input id="2" name="start_date"  type="text"/><span class="label">to</span><input id="3" name="end_date" type="text"/><br />
+<span class="label">Room_id</span><input id="4" name="room_id" type="text"/><span class="label">User Id</span><input id="5" name="user_id" type="text"/>
+<input id="id" name="id" type="hidden"/>
+</form>
+<div ><input type="button" value="Save" onclick="lightbox.save()" /><input type="button" value="Cancel" onclick="lightbox.close()" /><input style="margin-left:250px" type="button" value="Delete" onclick="lightbox.remove()" /></div>
+</div>
+<script>
+   
+    getValues = function () {
+        var ev = {};
+        var inputs = document.body.getElementsByTagName('input');
+
+        for (var i = 0; i < inputs.length; i++) {
+            if (inputs[i].type == "button") {
+                continue;
+            }
+            if (inputs[i].getAttribute('name') == "start_date" || inputs[i].getAttribute('name') == "end_date")
+                ev[inputs[i].getAttribute('name')] = parent.scheduler.templates.xml_date(inputs[i].value);
+            else
+                ev[inputs[i].getAttribute('name')] = inputs[i].value;
+
+         
+        }
+        return ev;
+    };
+    setValues = function (obj) {
+
+        var inputs = document.body.getElementsByTagName('input');
+        for (var i = 0; i < inputs.length; i++) {
+            var name = inputs[i].getAttribute('name');
+            if (name && obj[name] !== undefined && inputs[i].type != "button") {
+                if (name == "start_date" || name == "end_date")
+                    inputs[i].value = parent.scheduler.date.date_to_str(parent.scheduler.config.xml_date)(obj[name]);
+                else
+                    inputs[i].value = obj[name];
+            }
+        }
+    };
+
+</script>
+

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Geographic Symbol Series</Title>
+    <Description>This sample demonstrates how to create maps and visualize locations of major cities in the igMap control using a geographic symbol series. This map uses custom marker template to fill geographic symbols based on population of cities. Cities with smallest population are rendered as gray circles and cites with more population are displayed as green, orange, or red circles.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Overview" TopicName="Overview_igMap" />
+      <HelpTopic Title="Creating Different Kinds of Maps" TopicName="igMap_Creating_Different_Kinds_Maps" />
+      <HelpTopic Title="Symbol Series" TopicName="igMap_Configuring_Geographic_Symbol_Series" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>地理シンボル シリーズ</Title>
+    <Description>このサンプルは、マップを作成し、主要な市の位置を地理記号系列で表示する方法を示します。このマップは、市の人口に基づいて地理記号を塗りつぶすためにカスタム マーカー テンプレートを使用します。人口最小都市はグレーの丸で描画し、人口最大都市は緑、オレンジ、または赤の丸で描画されます。</Description>
+    <HelpTopics>
+      <HelpTopic Title="概要" TopicName="Overview_igMap" />
+      <HelpTopic Title="マップ種類の作成" TopicName="igMap_Creating_Different_Kinds_Maps" />
+      <HelpTopic Title="シンボル シリーズ" TopicName="igMap_Configuring_Geographic_Symbol_Series" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>Hosted</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>TabletLandscape</MinSampleSize>
+  <ExcludeFromZip>True</ExcludeFromZip>
+</Sample>

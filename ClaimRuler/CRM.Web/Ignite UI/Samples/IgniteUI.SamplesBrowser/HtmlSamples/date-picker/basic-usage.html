@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="../../igniteui/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+    <link href="../../igniteui/css/structure/infragistics.css" rel="stylesheet" />
+
+    <script src="../../js/modernizr.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="../../igniteui/js/infragistics.core.js"></script>
+    <script src="../../igniteui/js/infragistics.lob.js"></script>
+    <style>
+        @media all and (max-width: 360px) {
+            .ui-datepicker {
+                width: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+        
+    <input id="datePicker" type="date" />
+    <!-- Date Picker can also be instantiated with a div -->
+    <!--<div id="datePicker"></div>-->
+
+    <script>
+        $(function () {
+
+            $("#datePicker").igDatePicker();
+
+        });
+    </script>
+
+</body>
+</html>

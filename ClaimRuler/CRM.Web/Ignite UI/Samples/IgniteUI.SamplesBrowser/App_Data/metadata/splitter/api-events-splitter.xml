@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Splitter API and Events</Title>
+    <Description>This sample demonstrates how to handle events in the Splitter control and API usage.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>スプリッター API およびイベント</Title>
+    <Description>このサンプルでは、スプリッター コントロールのイベントを処理する方法を紹介し、API を使用する方法を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhonePortrait</MinSampleSize>
+</Sample>

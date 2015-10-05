@@ -1,0 +1,37 @@
+﻿@using Infragistics.Web.Mvc
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="@Url.Content("~/igniteui/css/themes/infragistics/infragistics.theme.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/igniteui/css/structure/infragistics.css")" rel="stylesheet" />
+
+    <script src="@Url.Content("~/js/modernizr.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery-ui.min.js")"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="@Url.Content("~/igniteui/js/infragistics.core.js")"></script>
+    <script src="@Url.Content("~/igniteui/js/infragistics.lob.js")"></script>
+
+</head>
+<body>
+
+    <div id="dialog">
+        <p>
+            <img style="width: 100%" src="../../images/samples/dialog-window/content.jpg" />
+        </p>
+	</div>
+
+    @(Html.Infragistics()
+        .Dialog()
+        .ContentID("dialog")
+        .Height("300px")
+        .Width("280px")
+        .Render()
+    )
+</body>
+</html>

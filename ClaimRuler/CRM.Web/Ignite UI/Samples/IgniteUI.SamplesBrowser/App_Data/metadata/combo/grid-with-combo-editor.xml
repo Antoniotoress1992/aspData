@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Grid with Combo Editor</Title>
+    <Description>When using the igCombo control as an editor in the igGrid control, a formatter function is necessary to show the display text of the combo control. 
+    For performance reasons, the grid uses only one instance of the combo. During editing, the igCombo control commits its selected value to the grid and a JavaScript function is used to persist the selected text when the combo is no longer editing a cell.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>コンボ エディターを含むグリッド</Title>
+    <Description>
+      igGrid コントロールで igCombo コントロールをエディターとして使用する場合、コンボ コントロールにテキストを表示するにはフォーマッター関数が必要です。
+      パフォーマンスを維持するために、グリッドのコンボでは 1 インスタンスのみ使用します。編集時に igCombo コントロールは選択された値をグリッドに保存し、コンボでセルの編集が終了したときに、選択されたテキストを保持する JavaScript 関数を使用します。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhonePortrait</MinSampleSize>
+</Sample>

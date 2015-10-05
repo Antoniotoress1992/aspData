@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Bind to WebAPI</Title>
+    <Description>
+        This sample demonstrates how to bind igGrid to WebAPI.  Grid requests the data in JSON format using an Ajax call.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>WebAPI へのバインド</Title>
+    <Description>
+      このサンプルでは、igGrid を WebAPI にバインドする方法を紹介します。グリッドは、AJAX 呼び出しを使用してデータを JSON 形式で要求します。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+</Sample>

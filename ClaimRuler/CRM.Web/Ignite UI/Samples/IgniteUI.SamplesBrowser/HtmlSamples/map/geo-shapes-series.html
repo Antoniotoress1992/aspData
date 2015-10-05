@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="../../igniteui/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+    <link href="../../igniteui/css/structure/infragistics.css" rel="stylesheet" />
+
+    <script src="../../js/modernizr.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="../../igniteui/js/infragistics.core.js"></script>
+    <script src="../../igniteui/js/infragistics.dv.js"></script>
+       <style>
+        #tooltipTable
+        {
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        #tooltipTable td, #tooltipTable th
+        {
+            font-size: 9px;
+            border: 1px solid #2d87cb;
+            padding: 3px 7px 2px 7px;
+        }
+        #tooltipTable th
+        {
+            font-weight: bold;
+            font-size: 11px;
+            text-align: left;
+            padding-top: 5px;
+            padding-bottom: 4px;
+            background-color: #2d87cb;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+     <script id="geoShapeTooltip" type="text/x-jquery-tmpl">
+        <table id="tooltipTable" >
+            <tr><th class="tooltipHeading" colspan="2">
+                    ${item.fieldValues.NAME}, ${item.fieldValues.REGION}</th></tr>
+            <tr>
+                <td>Population:</td>
+                <td>${item.fieldValues.POP2005}</td>
+            </tr>
+        </table>
+    </script>
+
+     <script type="text/javascript" src="../../js/map-helper.js" ></script>
+     <script type="text/javascript">
+         function ColorPickerByIndex(min, max) {
+             //  Initialize internal state
+             var brushes = ["#d9c616", "#d96f17", "#d1150c"];
+             var interval = (max - min) / (brushes.length - 1);
+             //  Returns a color from the brushes array depending on the input value 
+             this.getColorByIndex = function(val) {
+                 var index = Math.round(val / interval);
+                 if (index < 0) {
+                     index = 0;
+                 } else if (index > (brushes.length - 1)) {
+                     index = brushes.length - 1;
+                 }
+                 return brushes[index];
+             };
+         }
+
+         $(function () {
+             
+             var colorPicker = new ColorPickerByIndex(100000, 500000000);
+
+             //  alternative functions for generating color based on a data value 
+             var getColorValue = function (val) {
+                 var ratio = val / 1338299500.0;
+                 var col = 255.0 * ratio;
+                 var colString = "rgba(0,50," + Math.round(col) + ",0.45)";
+                 return colString;
+             };
+             var getLogColorValue = function (val) {
+                 var ratio = Math.log(val) / Math.log(1338299500.0);
+                 var col = 255.0 * ratio;
+                 var colString = "rgba(0,50," + Math.round(col) + ",0.45)";
+                 return colString;
+             };
+             
+            $("#map").igMap({
+                width: "700px",
+                height: "500px",
+                windowRect: { left: 0.1, top: 0.1, height: 0.7, width: 0.7 },
+                overviewPlusDetailPaneVisibility: "visible",
+                overviewPlusDetailPaneBackgroundImageUri: "../../images/samples/maps/world.png",
+                series: [{
+                    type: "geographicShape",
+                    name: "worldCountries",
+                    markerType: "none",
+                    shapeMemberPath: "points",
+                    shapeDataSource: '../../data-files/shapes/world_countries_reg.shp',
+                    databaseSource: '../../data-files/shapes/world_countries_reg.dbf',
+                    opacity: 0.8,
+                    outlineThickness: 1,
+                    showTooltip: true,
+                    tooltipTemplate: "geoShapeTooltip",
+                    shapeStyleSelector: {
+                        selectStyle: function (s, o) {
+                            var pop = s.fields.item("POP2005");
+                            var popInt = parseInt(pop);
+                            var colString = colorPicker.getColorByIndex(popInt); //getColorValue(popInt);
+                            return {
+                                fill: colString,
+                                stroke: "gray"
+                            };
+                        }
+                    }
+                }],
+
+            });
+        });
+    </script>
+    
+    <div id="map"></div>
+</body>
+</html>

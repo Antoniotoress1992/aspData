@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Basic Usage</Title>
+    <Description>
+      This sample demonstrates how to initialize the Popup ASP.NET MVC helper and how to open it on a button click.
+      Note:
+      Popup Mobile widget is introduced in jQuery Mobile, version 1.2.0.
+    </Description>
+    <HelpTopics>
+      <HelpTopic Title="Adding Popup" TopicName="Adding_Popup" />
+      <HelpTopic Title="Overview" TopicName="Popup_Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>基本的な使用方法</Title>
+    <Description>
+      このサンプルでは、Popup ASP.NET MVC ヘルパーを初期化し、ボタン クリックで開く方法を紹介します。
+      注:
+      Popup Mobile ウィジェットは、jQuery モバイル 1.2.0 で初めて導入された機能です。
+    </Description>
+    <HelpTopics>
+      <HelpTopic Title="Popup の追加" TopicName="Adding_Popup" />
+      <HelpTopic Title="概要" TopicName="Popup_Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+</Sample>

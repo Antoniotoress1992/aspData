@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Split Button</Name>
+    <Description>
+      Split button gives users the chance to use custom events.
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="changeShape" Value="Change shape: " />
+      <LocalizedSampleString Key="changeColor" Value="Change color: " />
+      <LocalizedSampleString Key="collapse" Value="Collapse" />
+      <LocalizedSampleString Key="expand" Value="Expand" />
+    </LocalizedSampleStrings>
+    <PageKeywords>igSplitButton</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Split Button</Name>
+    <Description>
+      分割ボタンを使用してカスタム イベントを使用できます。
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="changeShape" Value="図形の変更: " />
+      <LocalizedSampleString Key="changeColor" Value="色の変更: " />
+      <LocalizedSampleString Key="collapse" Value="縮小" />
+      <LocalizedSampleString Key="expand" Value="展開" />
+    </LocalizedSampleStrings>
+    <PageKeywords>Split Button</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>ui.igsplitbutton</ClientApiUrl>
+  <IconImage>jquery-html-editor-logo.png</IconImage>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <TOC>
+    <Sample>change-shapes</Sample>
+    <Sample>api-and-events</Sample>
+  </TOC>
+</Component>

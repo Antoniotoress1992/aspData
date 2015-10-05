@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>CloudMade Maps</Title>
+    <Description>This sample demonstrates how to use imagery tiles from CloudMade Maps as a background content in the igMap control.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Overview" TopicName="Overview_igMap" />
+      <HelpTopic Title="Data Binding" TopicName="Data_Binding_igMap" />
+      <HelpTopic Title="Creating Different Kinds of Maps" TopicName="igMap_Creating_Different_Kinds_Maps" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>CloudMade マップ</Title>
+    <Description>このサンプルでは、マップ コントロールで背景コンテンツとして CloudMade からの画像タイルを使用する方法を紹介します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="概要" TopicName="Overview_igMap" />
+      <HelpTopic Title="データ バインディング" TopicName="Data_Binding_igMap" />
+      <HelpTopic Title="マップ種類の作成" TopicName="igMap_Creating_Different_Kinds_Maps" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>HostedRemote</ServerRuntime>
+  <Status></Status>
+</Sample>

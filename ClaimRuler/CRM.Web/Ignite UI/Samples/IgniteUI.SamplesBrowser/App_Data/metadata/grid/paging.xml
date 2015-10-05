@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Paging</Title>
+    <Description>
+        This sample demonstrates the paging feature of the igGrid control. The paging feature exposes a number of options to customize this behavior, including: page size, show/hide size drop-down, show/hide paging buttons. When the page count exceeds the value of PageCountLimit (10 by default), a page drop down is automatically rendered so that the end user can select the desired page. The number of pages visible in the grid is configured by setting the visiblePages option. The look and feel of all paging buttons, page links and drop-downs may be customized through CSS.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>ページング</Title>
+    <Description>
+      このサンプルでは、igGrid コントロールのページング機能を紹介します。ページング機能は、この動作をカスタマイズするためのオプションを公開します。ページ サイズ、サイズ ドロップダウンを表示/非表示、ページング ボタンを表示/非表示などをカスタマイズできます。ページ数が PageCountLimit (デフォルト値は 10) 値より大きい場合、ユーザーがページを選択するためのページ ドロップダウンが自動的に描画されます。グリッドに表示されるページ数は、visiblePages オプションによって設定されます。すべてのページング ボタン、ページリンク、ドロップダウンのルック アンド フィールは CSS でカスタマイズできます。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Infragistics Excel</Name>
+    <Description>Import and export Microsoft® Excel® workbooks in high-fidelity with the compiled assembly that reads and writes in the widely-interoperable XLS/XLSX/ExcelML file formats. With absolutely no Excel dependency, your jQuery application can run completely independent of Excel, and Excel does not have to be installed alongside your application.</Description>    
+    <PageKeywords></PageKeywords>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Order_ID" Value="Order ID" />
+      <LocalizedSampleString Key="Contact_Name" Value="Contact Name" />
+      <LocalizedSampleString Key="Ship_Address" Value="Shipping Address" />
+      <LocalizedSampleString Key="Order_Date" Value="Order Date" />
+      <LocalizedSampleString Key="Export_Options" Value="Export Options" />
+      <LocalizedSampleString Key="Export_Format" Value="Export Format" />
+      <LocalizedSampleString Key="Excel_2007_Format" Value="Excel 2007 Format" />
+      <LocalizedSampleString Key="Excel_97_2003_Format" Value="Excel 97 2003 Format" />
+      <LocalizedSampleString Key="Export_Orientation" Value="Export Orientation" />
+      <LocalizedSampleString Key="Export_Type" Value="Export Type" />
+      <LocalizedSampleString Key="Current_Page" Value="Current Page" />
+      <LocalizedSampleString Key="All_Pages" Value="All Pages" />
+      <LocalizedSampleString Key="Export_Button" Value="Export Button" />
+    </LocalizedSampleStrings>
+  </LocalizedContent>
+  
+  <LocalizedContent Language="ja">
+    <Name>Infragistics Excel</Name>
+    <Description>Microsoft® Excel® ワークブックをインポートまたはエクスポートします。XLS/XLSX/ExcelML ファイル形式をサポートします。Excel 依存がないため、jQuery アプリケーションをスタンドアロンで実行でき、Excel をローカルにインストールする必要はありません。</Description>
+    <PageKeywords></PageKeywords>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Order_ID" Value="注文 ID" />
+      <LocalizedSampleString Key="Contact_Name" Value="名前" />
+      <LocalizedSampleString Key="Ship_Address" Value="配送先住所" />
+      <LocalizedSampleString Key="Order_Date" Value="注文日" />
+      <LocalizedSampleString Key="Export_Options" Value="エクスポート オプション" />
+      <LocalizedSampleString Key="Export_Format" Value="エクスポート形式" />
+      <LocalizedSampleString Key="Excel_2007_Format" Value="Excel 2007 形式" />
+      <LocalizedSampleString Key="Excel_97_2003_Format" Value="Excel 97-2003 形式" />
+      <LocalizedSampleString Key="Export_Orientation" Value="エクスポートの方向" />
+      <LocalizedSampleString Key="Export_Type" Value="エクスポートのタイプ" />
+      <LocalizedSampleString Key="Current_Page" Value="現在のページ" />
+      <LocalizedSampleString Key="All_Pages" Value="すべてのページ" />
+      <LocalizedSampleString Key="Export_Button" Value="エクスポート" />
+    </LocalizedSampleStrings>
+  </LocalizedContent>
+  
+  <ClientApiUrl></ClientApiUrl>
+  <ForumNumber>556</ForumNumber>
+  <HelpPageName>Infragistics.Web.Mvc.Documents.Excel~Infragistics.Documents.Excel_namespace_hierarchy</HelpPageName>
+  <IconImage></IconImage>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <TOC>
+    <Sample>create-excel-worksheet</Sample>
+  </TOC>
+</Component>

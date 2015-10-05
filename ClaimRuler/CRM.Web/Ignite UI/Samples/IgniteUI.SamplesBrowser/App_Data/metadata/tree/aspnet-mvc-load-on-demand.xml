@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>ASP.NET MVC Load-on-Demand</Title>
+    <Description>Load on demand ensures that only data requested by the user is loaded into the control. This sample demonstrates the load on demand capabilities of the Tree control by configuring the ASP.NET MVC helper.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>ASP.NET MVC ロードオンデマンド</Title>
+    <Description>ロードオンデマンドを使用すると、要求されたデータのみをコントロールに読み込みます。このサンプルは ASP.NET MVC ヘルパーを構成してツリー コントロールのロードオンデマンド機能を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+</Sample>

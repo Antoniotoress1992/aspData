@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>  
+  <LocalizedContent Language="en">
+    <Name>File Upload</Name>
+    <SampleStrings>
+      <LocalizedSampleString Key="File_ID" Value="File Id"/>
+      <LocalizedSampleString Key="File_Path" Value="File Path"/>
+      <LocalizedSampleString Key="File_Status" Value="File Status"/>
+      <LocalizedSampleString Key="Total_Size" Value="Total Size"/>
+      <LocalizedSampleString Key="Uploaded_Bytes" Value="Uploaded Bytes"/>
+      <LocalizedSampleString Key="File_Size" Value="File Size"/>
+      <LocalizedSampleString Key="upload_aborted" Value="Upload Aborted"/>
+      <LocalizedSampleString Key="error_message" Value="Error Message"/>
+      <LocalizedSampleString Key="avg_speed" Value="Average Speed"/>
+      <LocalizedSampleString Key="uploaded_files" Value="Uploaded Files"/>
+      <LocalizedSampleString Key="Uploaded" Value="Uploaded"/>
+      <LocalizedSampleString Key="to_upload" Value="To be uploaded"/>
+      <LocalizedSampleString Key="time_elapsed" Value="Time Elapsed"/>
+      <LocalizedSampleString Key="sec" Value="sec"/>
+      <LocalizedSampleString Key="time_left" Value="Time Left"/>
+      <LocalizedSampleString Key="KB" Value="KB"/>
+      <LocalizedSampleString Key="kbs" Value="KB/S"/>
+      <LocalizedSampleString Key="cannot_upload" Value="You cannot upload files larger than 1 MB"/>
+      <LocalizedSampleString Key="file_exists" Value="File already exists on server:"/>
+      <LocalizedSampleString Key="Drag_And_Drop_Files" Value="Drag and Drop Files Here &lt;br/&gt; or Click to Select From a Dialog"/>
+    </SampleStrings>
+    <Description>
+      Accept user-submitted file uploads in your Web applications with our jQuery file upload control, and accompanying controls for ASP.NET MVC. Configurable single- and multi-file AJAX uploads take place in the background, so your users can continue working uninterrupted.
+    </Description>
+    <PageKeywords>igFileUpload</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>File Upload</Name>
+    <SampleStrings>
+      <LocalizedSampleString Key="File_ID" Value="ファイル ID"/>
+      <LocalizedSampleString Key="File_Path" Value="ファイル パス"/>
+      <LocalizedSampleString Key="File_Status" Value="ファイル状態"/>
+      <LocalizedSampleString Key="Total_Size" Value="サイズの合計"/>
+      <LocalizedSampleString Key="Uploaded_Bytes" Value="アップロードしたバイト"/>
+      <LocalizedSampleString Key="File_Size" Value="ファイル サイズ"/>
+      <LocalizedSampleString Key="upload_aborted" Value="アップロードを中止しました"/>
+      <LocalizedSampleString Key="error_message" Value="エラー メッセージ"/>
+      <LocalizedSampleString Key="avg_speed" Value="平均速度"/>
+      <LocalizedSampleString Key="uploaded_files" Value="アップロードしたファイル"/>
+      <LocalizedSampleString Key="Uploaded" Value="アップロード完了"/>
+      <LocalizedSampleString Key="to_upload" Value="アップロード待ち"/>
+      <LocalizedSampleString Key="time_elapsed" Value="経過時間"/>
+      <LocalizedSampleString Key="sec" Value="秒"/>
+      <LocalizedSampleString Key="time_left" Value="残り時間"/>
+      <LocalizedSampleString Key="KB" Value="KB"/>
+      <LocalizedSampleString Key="kbs" Value="KB/S"/>
+      <LocalizedSampleString Key="cannot_upload" Value="1 MB より大きいファイルはアップロードできません。"/>
+      <LocalizedSampleString Key="file_exists" Value="ファイルはサーバーに既に存在します:"/>
+      <LocalizedSampleString Key="Drag_And_Drop_Files" Value="ここにファイルをドラッグ アンド ドロップまたは&lt;br/&gt;クリックしてダイアログから選択"/>
+    </SampleStrings>
+    <Description>
+      jQuery ファイル アップロード コントロールとその ASP.NET MVC 用のラッパーでユーザーが Web サイトにファイルをアップロードすることができるようになります。単一または複数の AJAX アップロードを背後で処理する間、ユーザーは快適にその他の操作を実行することが可能です。
+    </Description>
+    <PageKeywords>igFileUpload</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>ui.igupload</ClientApiUrl>
+  <HelpPageName>igUpload_igUpload</HelpPageName>
+  <ForumNumber>509</ForumNumber>
+  <IconImage>jquery-file-upload-logo.png</IconImage>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <TOC>
+    <Sample>basic-usage</Sample>
+    <Sample>aspnet-mvc-helper</Sample>
+    <Sample>multiple-upload</Sample>
+    <Sample>progress-information</Sample>
+    <Sample>api-events</Sample>
+    <Sample>upload-progress-manager</Sample>
+  </TOC>
+</Component>

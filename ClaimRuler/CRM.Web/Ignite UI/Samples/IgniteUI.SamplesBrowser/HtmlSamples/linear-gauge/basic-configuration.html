@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="../../igniteui/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+    <link href="../../igniteui/css/structure/infragistics.css" rel="stylesheet" />
+
+    <!-- Used to style the API Viewer and Explorer UI -->
+    <link href="../../css/apiviewer.css" rel="stylesheet" type="text/css" />
+
+    <script src="../../js/modernizr.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="../../igniteui/js/infragistics.core.js"></script>
+    <script src="../../igniteui/js/infragistics.dv.js"></script>
+
+</head>
+<body>
+    <div style="width: 100px; margin-top: 5px; font-weight: bold">Absolute Zero</div>
+    
+    <div style="height:150px">
+        <div id="lineargauge"  ></div>
+    </div>
+    
+    By international agreement, absolute zero is defined as 0K on the Kelvin scale and as −273.15° on the Celsius scale.
+
+    <script type="text/javascript">
+        $(function () {
+            $("#lineargauge").igLinearGauge({
+                height: "80px",
+                width: "100%",
+                value: -273.15,
+                minimumValue: -275,
+                maximumValue: 0,
+                ranges: [
+                    {
+                        startValue: -275, endValue: -225, name: "range1"
+                    },
+                    {
+                        startValue: -225, endValue: -175, name: "range2"
+                    },
+                    {
+                        startValue: -175, endValue: -125, name: "range3"
+                    },
+                    {
+                        startValue: -125, endValue: -75, name: "range4"
+                    },
+                    {
+                        startValue: -75, endValue: 0, name: "range5"
+                    },
+                ]
+            });
+        });
+    </script>
+    
+</body>
+</html>

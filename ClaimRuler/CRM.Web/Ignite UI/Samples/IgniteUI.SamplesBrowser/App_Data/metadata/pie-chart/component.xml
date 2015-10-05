@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>  
+  <LocalizedContent Language="en">
+    <Name>Pie Chart</Name>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="UnitedStates" Value="United States"/>
+      <LocalizedSampleString Key="Indonesia" Value="Indonesia"/>
+      <LocalizedSampleString Key="Brazil" Value="Brazil"/>
+      <LocalizedSampleString Key="China" Value="China"/>
+      <LocalizedSampleString Key="India" Value="India"/>
+      <LocalizedSampleString Key="lbl_budget" Value="Budget"/>
+      <LocalizedSampleString Key="start_angle" Value="Start Angle"/>
+      <LocalizedSampleString Key="Radius" Value="Radius"/>
+      <LocalizedSampleString Key="label_extent" Value="Label Extent"/>
+      <LocalizedSampleString Key="exploded_radius" Value="Exploded Radius"/>
+      <LocalizedSampleString Key="label_position" Value="Label Position"/>
+      <LocalizedSampleString Key="leader_line" Value="Leader Line"/>
+      <LocalizedSampleString Key="straigth" Value="Straight"/>
+      <LocalizedSampleString Key="spline" Value="Spline"/>
+      <LocalizedSampleString Key="arc" Value="Arc"/>
+      <LocalizedSampleString Key="None" Value="None"/>
+      <LocalizedSampleString Key="Center" Value="Center"/>
+      <LocalizedSampleString Key="inside_end" Value="Inside End"/>
+      <LocalizedSampleString Key="outside_end" Value="Outside End"/>
+      <LocalizedSampleString Key="best_fit" Value="Best Fit"/>
+      <LocalizedSampleString Key="Administration" Value="Administration"/>
+      <LocalizedSampleString Key="Sales" Value="Sales"/>
+      <LocalizedSampleString Key="IT" Value="IT"/>
+      <LocalizedSampleString Key="Marketing" Value="Marketing"/>
+      <LocalizedSampleString Key="Development" Value="Development"/>
+      <LocalizedSampleString Key="Support" Value="Support"/>
+      <LocalizedSampleString Key="lbl_data_financial_administration" Value="Administration"/>
+      <LocalizedSampleString Key="lbl_data_financial_sales" Value="Sales"/>
+      <LocalizedSampleString Key="lbl_data_financial_it" Value="IT"/>
+      <LocalizedSampleString Key="lbl_data_financial_marketing" Value="Marketing"/>
+      <LocalizedSampleString Key="lbl_data_financial_development" Value="Development"/>
+      <LocalizedSampleString Key="lbl_data_financial_customersupport" Value="Customer Support"/>      
+    </LocalizedSampleStrings>
+    <Description>
+      Create simple or exploded pie charts, with a customizable threshold for inclusion in an "Others" category, and text labels and images that can be displayed within or outside of the pie in a manner that avoids overlapping. Users can click or drill down to view underlying data, explode out a section of the pie, and get information via tooltips.
+    </Description>
+    <PageKeywords>igPieChart</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Pie Chart</Name>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="UnitedStates" Value="米国"/>
+      <LocalizedSampleString Key="Indonesia" Value="インドネシア"/>
+      <LocalizedSampleString Key="Brazil" Value="ブラジル"/>
+      <LocalizedSampleString Key="China" Value="中国"/>
+      <LocalizedSampleString Key="India" Value="インド"/>
+      <LocalizedSampleString Key="lbl_budget" Value="予算"/>
+      <LocalizedSampleString Key="start_angle" Value="開始角度"/>
+      <LocalizedSampleString Key="Radius" Value="半径"/>
+      <LocalizedSampleString Key="label_extent" Value="ラベルの拡張"/>
+      <LocalizedSampleString Key="exploded_radius" Value="分解半径"/>
+      <LocalizedSampleString Key="label_position" Value="ラベルの位置"/>
+      <LocalizedSampleString Key="leader_line" Value="引き出し線"/>
+      <LocalizedSampleString Key="straigth" Value="直線"/>
+      <LocalizedSampleString Key="spline" Value="スプライン"/>
+      <LocalizedSampleString Key="arc" Value="円弧"/>
+      <LocalizedSampleString Key="None" Value="なし"/>
+      <LocalizedSampleString Key="Center" Value="中央"/>
+      <LocalizedSampleString Key="inside_end" Value="内部の終了位置"/>
+      <LocalizedSampleString Key="outside_end" Value="外部の終了位置"/>
+      <LocalizedSampleString Key="best_fit" Value="最適"/>
+      <LocalizedSampleString Key="Administration" Value="事務"/>
+      <LocalizedSampleString Key="Sales" Value="セールス"/>
+      <LocalizedSampleString Key="IT" Value="IT"/>
+      <LocalizedSampleString Key="Marketing" Value="マーケティング"/>
+      <LocalizedSampleString Key="Development" Value="開発"/>
+      <LocalizedSampleString Key="Support" Value="サポート"/>
+      <LocalizedSampleString Key="lbl_data_financial_administration" Value="事務"/>
+      <LocalizedSampleString Key="lbl_data_financial_sales" Value="セールス"/>
+      <LocalizedSampleString Key="lbl_data_financial_it" Value="IT"/>
+      <LocalizedSampleString Key="lbl_data_financial_marketing" Value="マーケティング"/>
+      <LocalizedSampleString Key="lbl_data_financial_development" Value="開発"/>
+      <LocalizedSampleString Key="lbl_data_financial_customersupport" Value="サポート"/>      
+    </LocalizedSampleStrings>
+    <Description>
+      簡易チャートまたは分割円チャートを作成できます。カスタマイズ可能なしきい値、および重ならないよう円の内側または外側に表示できるテキスト ラベルと画像を使用できます。基本データを表示するには、スライスをクリックまたはドリルダウンします。あるいは、円チャートのセクションを切り離してツールチップを表示できます。
+    </Description>
+    <PageKeywords>igPieChart</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>ui.igPieChart</ClientApiUrl>
+  <HelpPageName>igPieChart</HelpPageName>
+  <ForumNumber>592</ForumNumber>
+  <IconImage>jquery-pie-chart-logo.png</IconImage>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <TOC>
+    <Sample>json-binding</Sample>
+    <Sample>xml-binding</Sample>
+    <Sample>aspnet-mvc-helper</Sample>
+    <Sample>layout-configuration</Sample>
+  </TOC>
+</Component>

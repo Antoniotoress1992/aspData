@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Api and Events</Title>
+    <Description>This sample demonstrates how to handle events in the Split Button control and API usage.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>API およびイベント</Title>
+    <Description>このサンプルでは、分割ボタン コントロールのイベントを処理する方法を紹介し、API を使用する方法を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status>New</Status>
+  <MinSampleSize>TabletLandscape</MinSampleSize>
+</Sample>

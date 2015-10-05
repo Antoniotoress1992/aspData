@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Cell Merging</Title>
+    <Description>
+        <![CDATA[
+        This sample demonstrates the Cell Merging feature of the igGrid in combination with the Sorting feature. Cells are merged on initial load for both root and child layouts.
+        ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>セルの結合</Title>
+    <Description>
+      <![CDATA[
+      このサンプルは、igGrid のセル結合機能と並べ替え機能について紹介します。ルートおよび子レイアウトでセルが初期ロードで結合されます。
+      ]]>
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

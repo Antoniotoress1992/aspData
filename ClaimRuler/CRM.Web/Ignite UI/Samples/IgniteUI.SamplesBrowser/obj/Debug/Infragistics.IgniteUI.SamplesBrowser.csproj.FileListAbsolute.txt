@@ -1,0 +1,5 @@
+E:\Work\7\603\bin\Release\NewSamplesInternal\Infragistics.IgniteUI.SamplesBrowser.dll
+E:\Work\7\603\bin\Release\NewSamplesInternal\Infragistics.IgniteUI.SamplesBrowser.pdb
+E:\Work\7\603\src\DEV\jQuery\2014.1\Samples\IgniteUI.SamplesBrowser\IgniteUI.SamplesBrowser\obj\Debug\Infragistics.IgniteUI.SamplesBrowser.csprojResolveAssemblyReference.cache
+E:\Work\7\603\src\DEV\jQuery\2014.1\Samples\IgniteUI.SamplesBrowser\IgniteUI.SamplesBrowser\obj\Debug\Infragistics.IgniteUI.SamplesBrowser.dll
+E:\Work\7\603\src\DEV\jQuery\2014.1\Samples\IgniteUI.SamplesBrowser\IgniteUI.SamplesBrowser\obj\Debug\Infragistics.IgniteUI.SamplesBrowser.pdb

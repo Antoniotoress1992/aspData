@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Drag and Drop - Multiple Trees</Title>
+    <Description>This sample demonstrates how to drag and drop nodes from one igTree control to another.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>ドラッグ アンド ドロップ - 複数のツリー</Title>
+    <Description></Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

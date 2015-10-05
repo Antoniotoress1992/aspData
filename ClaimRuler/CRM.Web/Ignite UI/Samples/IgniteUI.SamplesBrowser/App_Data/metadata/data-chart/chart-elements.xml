@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Chart Elements</Title>
+    <Description>
+      This sample demonstrates various elements that are available in the igDataChart control. Chart elements such as axis, labels, grid lines, grid stripes, zoom bars, series, trend lines, indicators and crosshairs are all available to enhance the control's presentation. 
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>チャートの要素</Title>
+    <Description>
+      このサンプルでは、igDataChart コントロールのさまざまな要素を紹介します。軸、ラベル、グリッド線、ストライプ、ズームバー、シリーズ、トレンドライン、インジケーター、十字線などのチャート要素をコントロールに使用し、高度なデータ視覚化を実現します。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

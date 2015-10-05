@@ -1,0 +1,46 @@
+﻿@using Infragistics.Web.Mvc
+@using IgniteUI.SamplesBrowser.Models
+@model IQueryable<IgniteUI.SamplesBrowser.Models.Northwind.Product>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="@Url.Content("~/igniteui/css/themes/infragistics/infragistics.theme.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/igniteui/css/structure/infragistics.css")" rel="stylesheet" />
+
+    <script src="@Url.Content("~/js/modernizr.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery-ui.min.js")"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="@Url.Content("~/igniteui/js/infragistics.core.js")"></script>
+    <script src="@Url.Content("~/igniteui/js/infragistics.lob.js")"></script>
+
+</head>
+<body>
+
+    @(Html.Infragistics()
+        .Grid(Model)
+        .ID("Grid")
+        .Height("500px")
+        .Width("100%")
+        .AutoGenerateColumns(false)
+        .AutoGenerateLayouts(false)
+        .RenderCheckboxes(true)
+        .ResponseDataKey(null)
+        .Columns(column =>
+        {
+            column.For(x => x.ProductName).HeaderText("Product Name").Width("35%");
+            column.For(x => x.UnitsInStock).HeaderText("Units In Stock").Width("15%");
+            column.For(x => x.SupplierName).HeaderText("Supplier Name").Width("35%");
+            column.For(x => x.Discontinued).HeaderText("Discontinued").Width("15%");
+        })
+        .DataSourceUrl(Url.Content("~/api/products"))
+        .Render()
+    )
+
+</body>
+</html>

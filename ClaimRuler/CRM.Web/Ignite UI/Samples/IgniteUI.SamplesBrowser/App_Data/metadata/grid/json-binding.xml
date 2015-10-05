@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>JSON Binding</Title>
+    <Description>The sample demonstrates how to bind igGrid to JSON data source. </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>JSON のバインド</Title>
+    <Description>このサンプルでは、igGrid コントロールを JSON データ ソースにバインドする方法を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Radial Gauge</Name>
+    <Description>Make your data visualizations and dashboards more engaging with Radial Gauges that show off KPIs with rich style and interactivity. The round and semi-round gauges are powerful, easy to use, and highly configurable to present dashboards capable of displaying clocks, industrial panels, automotive dashboards, and even aircraft cockpits. The Ignite UI Radial Gauges are compatible with the NucliOS (for native iOS) and XAML (WPF and Silverlight) versions of the Gauge, offering visual and functional parity on multiple platforms.</Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="RadialGauge_CircularCounterclockwise" Value="Circular counterclockwise RadialGauge"/>
+      <LocalizedSampleString Key="RadialGauge_CircularCustomStyle" Value="Circular RadialGauge with custom colors and extents"/>
+      <LocalizedSampleString Key="RadialGauge_CircularRanges" Value="Circular RadialGauge with Ranges"/>
+      <LocalizedSampleString Key="RadialGauge_CurrentNeedleValue" Value="Current Needle Value"/>
+      <LocalizedSampleString Key="RadialGauge_FittedClockwise" Value="Fitted semi-circular clockwise RadialGauge"/>
+      <LocalizedSampleString Key="RadialGauge_FittedCustomStyle" Value="Fitted RadialGauge with custom colors and extents"/>
+      <LocalizedSampleString Key="RadialGauge_FittedZeroMinorTicks" Value="Fitted RadialGauge with zero minor ticks"/>
+      <LocalizedSampleString Key="RadialGauge_GetNeedleValueBtn" Value="Get Needle Value"/>
+      <LocalizedSampleString Key="RadialGauge_GetNeedleValueLabel" Value="Get Current Needle Value"/>
+      <LocalizedSampleString Key="RadialGauge_SelectValues" Value="Select value"/>
+      <LocalizedSampleString Key="RadialGauge_SetNeedleValueBtn" Value="Set Needle Value"/>
+      <LocalizedSampleString Key="RadialGauge_SetNeedleValueLabel" Value="Enter/Select Needle value"/>
+      <LocalizedSampleString Key="lbl_choose_setting" Value="Choose a setting"/>
+      <LocalizedSampleString Key="lbl_setting1" Value="Setting One"/>
+      <LocalizedSampleString Key="lbl_setting2" Value="Setting Two"/>
+      <LocalizedSampleString Key="lbl_setting3" Value="Setting Three"/>
+      <LocalizedSampleString Key="RadialGaugeOptions" Value="Radial Gauge Options"/>
+      <LocalizedSampleString Key="Options" Value="Options"/>
+      <LocalizedSampleString Key="TransitionDuration" Value="Transition Duration"/>
+      <LocalizedSampleString Key="NeedleValue" Value="Needle Value"/>
+      <LocalizedSampleString Key="NeedleSizing" Value="Needle Sizing"/>
+      <LocalizedSampleString Key="StartExtent" Value="Start Extent"/>
+      <LocalizedSampleString Key="EndExtent" Value="End Extent"/>
+      <LocalizedSampleString Key="StartWidthRatio" Value="Start Width Ratio"/>
+      <LocalizedSampleString Key="EndWidthRatio" Value="End Width Ratio"/>
+      <LocalizedSampleString Key="NeedleShapes" Value="Needle Shapes"/>
+      <LocalizedSampleString Key="NeedleShape" Value="Needle Shape"/>
+      <LocalizedSampleString Key="PivotShape" Value="Pivot Shape"/>
+      <LocalizedSampleString Key="NeedleBrushes" Value="Needle Brushes"/>
+      <LocalizedSampleString Key="NeedleBrush" Value="Needle Brush"/>
+      <LocalizedSampleString Key="NeedleOutline" Value="Needle Outline"/>
+      <LocalizedSampleString Key="PivotBrush" Value="Pivot Brush"/>
+      <LocalizedSampleString Key="PivotOutline" Value="Pivot Outline"/>
+      <LocalizedSampleString Key="LabelExtent" Value="Label Extent"/>
+      <LocalizedSampleString Key="LabelInterval" Value="Label Interval"/>
+      <LocalizedSampleString Key="InnerStartExtent" Value="Inner Start Extent"/>
+      <LocalizedSampleString Key="InnerEndExtent" Value="Inner End Extent"/>
+      <LocalizedSampleString Key="OuterStartExtent" Value="Outer Start Extent"/>
+      <LocalizedSampleString Key="OuterEndExtent" Value="Outer End Extent"/>
+      <LocalizedSampleString Key="StartValue" Value="Start Value"/>
+      <LocalizedSampleString Key="EndValue" Value="End Value"/>
+      <LocalizedSampleString Key="ScaleOversweep" Value="Scale Oversweep"/>
+      <LocalizedSampleString Key="SweepDirection" Value="Sweep Direction"/>
+      <LocalizedSampleString Key="ScaleBrush" Value="Scale Brush"/>
+      <LocalizedSampleString Key="TickmarkSizingProperties" Value="Tickmark Sizing Properties"/>
+      <LocalizedSampleString Key="StrokeThickness" Value="Stroke Thickness"/>
+      <LocalizedSampleString Key="MinorTickmarkSizingProperties" Value="Minor Tickmark Sizing Properties"/>
+      <LocalizedSampleString Key="TickCount" Value="Tick Count"/>
+      <LocalizedSampleString Key="Brushes" Value="Brushes"/>
+      <LocalizedSampleString Key="TickmarkBrush" Value="Tickmark Brush"/>
+      <LocalizedSampleString Key="MinorTickmarkBrush" Value="Minor Tickmark Brush"/>
+      <LocalizedSampleString Key="ColorRed" Value="Red"/>
+      <LocalizedSampleString Key="ColorYellow" Value="Yellow"/>
+      <LocalizedSampleString Key="ColorGreen" Value="Green"/>
+      <LocalizedSampleString Key="ColorBlue" Value="Blue"/>
+      <LocalizedSampleString Key="ColorLightBlue" Value="LightBlue"/>
+      <LocalizedSampleString Key="ColorBlack" Value="Black"/>
+      <LocalizedSampleString Key="Brush" Value="Brush"/>
+      <LocalizedSampleString Key="OutlineBrush" Value="Outline Brush"/>
+    </LocalizedSampleStrings>
+    <PageKeywords>igRadialGauge</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Radial Gauge</Name>
+    <Description>データの視覚化やダッシュボードにラジアルゲージを使用し、リッチなスタイルと対話機能を KPI で実現できます。パワフルな円形および半円形のゲージは、時計を使用したダッシュボード、自動車ダッシュボード、航空機コックピットなどを表示することが可能です。Ignite UI ラジアル ゲージは、NucliOS (ネイティブ iOS) および XAML (WPF and Silverlight) のゲージと互換性があり、複数プラットフォームでのビジュアルおよび機能のパリティを提供します。</Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="RadialGauge_CircularCounterclockwise" Value="円形反時計回り RadialGauge"/>
+      <LocalizedSampleString Key="RadialGauge_CircularCustomStyle" Value="カスタム色と範囲付き円形 RadialGauge"/>
+      <LocalizedSampleString Key="RadialGauge_CircularRanges" Value="範囲の円形 RadialGauge"/>
+      <LocalizedSampleString Key="RadialGauge_CurrentNeedleValue" Value="現在の針値"/>
+      <LocalizedSampleString Key="RadialGauge_FittedClockwise" Value="フィット半円形時計回り RadialGauge"/>
+      <LocalizedSampleString Key="RadialGauge_FittedCustomStyle" Value="カスタム色と範囲付きフィット RadialGauge"/>
+      <LocalizedSampleString Key="RadialGauge_FittedZeroMinorTicks" Value="副目盛なしフィット RadialGauge"/>
+      <LocalizedSampleString Key="RadialGauge_GetNeedleValueBtn" Value="針値の取得"/>
+      <LocalizedSampleString Key="RadialGauge_GetNeedleValueLabel" Value="現在の針値の取得"/>
+      <LocalizedSampleString Key="RadialGauge_SelectValues" Value="値の選択"/>
+      <LocalizedSampleString Key="RadialGauge_SetNeedleValueBtn" Value="針値の設定"/>
+      <LocalizedSampleString Key="RadialGauge_SetNeedleValueLabel" Value="針値の入力/設定"/>
+      <LocalizedSampleString Key="lbl_choose_setting" Value="設定の選択"/>
+      <LocalizedSampleString Key="lbl_setting1" Value="設定 1"/>
+      <LocalizedSampleString Key="lbl_setting2" Value="設定 2"/>
+      <LocalizedSampleString Key="lbl_setting3" Value="設定 3"/>
+      <LocalizedSampleString Key="RadialGaugeOptions" Value="ラジアル ゲージ オプション"/>
+      <LocalizedSampleString Key="Options" Value="オプション"/>
+      <LocalizedSampleString Key="TransitionDuration" Value="トランジション期間"/>
+      <LocalizedSampleString Key="NeedleValue" Value="針の値"/>
+      <LocalizedSampleString Key="NeedleSizing" Value="針のサイズ"/>
+      <LocalizedSampleString Key="StartExtent" Value="開始範囲"/>
+      <LocalizedSampleString Key="EndExtent" Value="終了範囲"/>
+      <LocalizedSampleString Key="StartWidthRatio" Value="開始幅の比率"/>
+      <LocalizedSampleString Key="EndWidthRatio" Value="終了幅の比率"/>
+      <LocalizedSampleString Key="NeedleShapes" Value="針の図形"/>
+      <LocalizedSampleString Key="NeedleShape" Value="針の図形"/>
+      <LocalizedSampleString Key="PivotShape" Value="ピボット図形"/>
+      <LocalizedSampleString Key="NeedleBrushes" Value="針ブラシ"/>
+      <LocalizedSampleString Key="NeedleBrush" Value="針ブラシ"/>
+      <LocalizedSampleString Key="NeedleOutline" Value="針のアウトライン"/>
+      <LocalizedSampleString Key="PivotBrush" Value="ピボット ブラシ"/>
+      <LocalizedSampleString Key="PivotOutline" Value="ピボット アウトライン"/>
+      <LocalizedSampleString Key="LabelExtent" Value="ラベル範囲"/>
+      <LocalizedSampleString Key="LabelInterval" Value="ラベル期間"/>
+      <LocalizedSampleString Key="InnerStartExtent" Value="内部の開始範囲"/>
+      <LocalizedSampleString Key="InnerEndExtent" Value="内部の終了範囲"/>
+      <LocalizedSampleString Key="OuterStartExtent" Value="外部の開始範囲"/>
+      <LocalizedSampleString Key="OuterEndExtent" Value="外部の終了範囲"/>
+      <LocalizedSampleString Key="StartValue" Value="開始値"/>
+      <LocalizedSampleString Key="EndValue" Value="終了値"/>
+      <LocalizedSampleString Key="ScaleOversweep" Value="スケールのオーバースイープ"/>
+      <LocalizedSampleString Key="SweepDirection" Value="スイープの方向"/>
+      <LocalizedSampleString Key="ScaleBrush" Value="スケール ブラシ"/>
+      <LocalizedSampleString Key="TickmarkSizingProperties" Value="目盛りのサイズ プロパティ"/>
+      <LocalizedSampleString Key="StrokeThickness" Value="ストロークの太さ"/>
+      <LocalizedSampleString Key="MinorTickmarkSizingProperties" Value="副目盛りのサイズ プロパティ"/>
+      <LocalizedSampleString Key="TickCount" Value="目盛り数"/>
+      <LocalizedSampleString Key="Brushes" Value="ブラシ"/>
+      <LocalizedSampleString Key="TickmarkBrush" Value="目盛りのブラシ"/>
+      <LocalizedSampleString Key="MinorTickmarkBrush" Value="副目盛りのブラシ"/>
+      <LocalizedSampleString Key="ColorRed" Value="レッド"/>
+      <LocalizedSampleString Key="ColorYellow" Value="イエロー"/>
+      <LocalizedSampleString Key="ColorGreen" Value="グリーン"/>
+      <LocalizedSampleString Key="ColorBlue" Value="ブルー"/>
+      <LocalizedSampleString Key="ColorLightBlue" Value="ライト ブルー"/>
+      <LocalizedSampleString Key="ColorBlack" Value="ブラック"/>
+      <LocalizedSampleString Key="Brush" Value="ブラシ"/>
+      <LocalizedSampleString Key="OutlineBrush" Value="アウトライン ブラシ"/>
+    </LocalizedSampleStrings>
+    <PageKeywords>igRadialGauge</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>ui.igRadialGauge</ClientApiUrl>
+  <ForumNumber>726</ForumNumber>
+  <IconImage>jquery-radial-gauge.png</IconImage>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <Status>New</Status>
+  <TOC>
+    <Sample>mvc-initialization</Sample>
+    <Sample>api-usage</Sample>
+    <Sample>drag-needle</Sample>
+    <Sample>motion-framework</Sample>
+    <Sample>gauge-needle</Sample>
+    <Sample>label-settings</Sample>
+    <Sample>range</Sample>
+    <Sample>scale-settings</Sample>
+    <Sample>tickmarks</Sample>
+  </TOC>
+</Component>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Custom Icons and Styles</Title>
+    <Description>Since the igHtmlEditor control doesn't support the jQuery UI CSS Framework for styling, the standard Infragistics theme and the Windows UI themes are supported by default. This sample demonstrates how to customize igHtmlEditor look and feel by using CSS styles.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>カスタム アイコンとスタイル設定</Title>
+    <Description>スタイル設定で igHtmlEditor コントロールは jQuery UI CSS フレームワークをサポートしません。標準の Infragistics テーマおよび Windows UI テーマはサポートされます。このサンプルは、CSS スタイルを使用して igHtmlEditor のルック アンド フィールをカスタマイズする方法を示します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>TabletPortrait</MinSampleSize>
+</Sample>

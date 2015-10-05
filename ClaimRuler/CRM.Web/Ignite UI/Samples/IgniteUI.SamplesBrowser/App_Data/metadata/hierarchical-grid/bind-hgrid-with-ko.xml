@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>KnockoutJS Configuration</Title>
+    <Description>
+        <![CDATA[
+  This sample demonstrates support of KnockoutJS bindings with the igHierarchicalGrid widget. In this implementation, the first row of the hierarchical grid parent/child layout is bound using a standard two-way binding.
+        ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>KnockoutJS の構成</Title>
+    <Description>
+        <![CDATA[
+        このサンプルでは、igHierarchicalGrid ウィジェットの KnockoutJS バインディングのサポートを紹介します。この実装では、階層グリッドの親/子レイアウトの最初の行は標準の TwoWay バインディングによってバインドされます。
+        ]]>
+        </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>TabletPortrait</MinSampleSize>
+</Sample>

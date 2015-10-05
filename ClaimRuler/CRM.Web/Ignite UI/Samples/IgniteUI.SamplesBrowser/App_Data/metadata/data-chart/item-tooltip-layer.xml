@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Item Tooltip Layer</Title>
+    <Description>This sample demonstrates the Item Tooltip Layer that displays tooltips for all target series individually. The sample options pane allows you to edit the properties of the layer, such as changing the transition duration.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Item Tooltip Layer" TopicName="HoverInteractions_Item_Tooltip_Layer" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>項目ツールチップ レイヤー</Title>
+    <Description>このサンプルは、すべてのターゲットシリーズに項目ツールチップ レイヤーを表示するツールチップ レイヤーを紹介します。このサンプル オプション ペインでは、トランジション期間の変更など、レイヤー プロパティを編集できます。</Description>
+    <HelpTopics>
+      <HelpTopic Title="項目ツールチップ レイヤー" TopicName="HoverInteractions_Item_Tooltip_Layer" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

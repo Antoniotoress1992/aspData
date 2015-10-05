@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>ASP.NET MVC Helper</Title>
+    <Description>This sample demonstrates how to bind the Tree control to a collection of objects on the server using the ASP.NET MVC helper.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>ASP.NET MVC ヘルパー</Title>
+    <Description>このサンプルは、ASP.NET MVC ヘルパーを使用してツリー コントロールをサーバーのオブジェクト コレクションにバインドする方法を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+</Sample>

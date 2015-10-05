@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Basic Usage</Title>
+    <Description>This sample demonstrates how to customize the ASP.NET MVC Check Box helper to show traditional mobile formats as well as the look of a native HTML check box.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Adding CheckBox" TopicName="Adding CheckBox" />
+      <HelpTopic Title="Configuring" TopicName="CheckBox Configuring" />
+      <HelpTopic Title="Overview" TopicName="CheckBox Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>基本的な使用方法</Title>
+    <Description>このサンプルでは、ASP.NET MVC Check Box ヘルパーをモバイル形式およびネイティブな HTML チェック ボックスの外観を表示するためにカスタマイズする方法を紹介します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="CheckBox の追加" TopicName="Adding CheckBox" />
+      <HelpTopic Title="構成" TopicName="CheckBox Configuring" />
+      <HelpTopic Title="概要" TopicName="CheckBox Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+</Sample>

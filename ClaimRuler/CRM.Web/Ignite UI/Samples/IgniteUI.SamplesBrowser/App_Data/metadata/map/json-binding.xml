@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>JSON Binding</Title>
+    <Description>This sample demonstrates how to bind JSON data with locations of cities in the world to the igMap control using a geographic symbol series</Description>
+    <HelpTopics>
+      <HelpTopic Title="Overview" TopicName="Overview_igMap" />
+      <HelpTopic Title="Data Binding" TopicName="Data_Binding_igMap" />
+      <HelpTopic Title="Configuring Map Provider" TopicName="igMap_Configuring_Map Provider" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>JSON のバインド</Title>
+    <Description>このサンプルでは地理シンボル系列を使用し、世界の国の位置データを含む JSON データを、マップ コントロールにバインドする方法を示します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="概要" TopicName="Overview_igMap" />
+      <HelpTopic Title="データ バインディング" TopicName="Data_Binding_igMap" />
+      <HelpTopic Title="マップ プロバイダーの構成" TopicName="igMap_Configuring_Map Provider" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>TabletPortrait</MinSampleSize>
+</Sample>

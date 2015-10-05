@@ -1,0 +1,141 @@
+﻿@using Infragistics.Web.Mvc.Mobile
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="@Url.Content("~/css/jqm/jquery.mobile.structure.min.css")" rel="stylesheet" />
+
+    <!-- Required Ignite UI Mobile Combined CSS Files -->
+    <link href="@Url.Content("~/igniteui/mobile/css/structure/infragistics.mobile.css")"  rel="stylesheet"/>
+    <link href="@Url.Content("~/igniteui/mobile/css/themes/ios/infragistics.mobile.theme.css")"  rel="stylesheet"/>
+    
+    <script src="@Url.Content("~/js/modernizr.min.js")"></script>
+    <script src="@Url.Content("~/js/jqm/jquery.min.js")"></script>
+    <script src="@Url.Content("~/js/jqm/jquery.mobile.min.js")"></script>
+
+    <!-- Required Ignite UI Mobile Combined JavaScript File -->
+    <script src="@Url.Content("~/igniteui/mobile/js/infragistics.mobile.js")"></script>
+</head>
+<body>
+    <div data-role="page">
+
+        <div data-role="content">
+
+            @(Html.InfragisticsMobile()
+            .CollapsibleSet()
+            .ID("TheSet")
+            .BeginRender()
+        )
+
+            @(Html.InfragisticsMobile()
+            .Collapsible()
+            .ID("SaladCollapsible")
+            .HeaderText("Salads")
+            .ContentTheme("c")
+            .Inset(false)
+            .BeginRender()
+        )
+            @(Html.InfragisticsMobile()
+            .CheckBox()
+            .Text("Shopska")
+            .Theme("b")
+            .Render()
+        )
+            @(Html.InfragisticsMobile()
+            .CheckBox()
+            .Text("Tomato")
+            .Theme("b")
+            .Render()
+        )
+            @(Html.InfragisticsMobile()
+            .CheckBox()
+            .Text("Cucumber")
+            .Theme("b")
+            .Render()
+        )
+
+            @(Html.InfragisticsMobile()
+            .Collapsible().EndRender()
+        )
+
+            @(Html.InfragisticsMobile()
+            .Collapsible()
+            .ID("MainCollapsible")
+            .HeaderText("Main Course")
+            .ContentTheme("c")
+            .BeginRender()
+        )
+
+            @(Html.InfragisticsMobile()
+            .CheckBox()
+            .Text("Chicken")
+            .Theme("b")
+            .Render()
+        )
+
+            @(Html.InfragisticsMobile()
+            .CheckBox()
+            .Text("Veal")
+            .Theme("b")
+            .Render()
+        )
+
+            @(Html.InfragisticsMobile()
+            .CheckBox()
+            .Text("Pork Chop")
+            .Theme("b")
+            .Render()
+        )
+
+            @(Html.InfragisticsMobile()
+            .Collapsible().EndRender()
+        )
+
+            @(Html.InfragisticsMobile()
+            .Collapsible()
+            .ID("DesertCollapsible")
+            .HeaderText("Desserts")
+            .ContentTheme("c")
+            .BeginRender()
+        )
+
+            @(Html.InfragisticsMobile()
+            .CheckBox()
+            .Text("Tiramisu")
+            .Theme("b")
+            .Render()
+        )
+
+            @(Html.InfragisticsMobile()
+            .CheckBox()
+            .Text("Ice Cream")
+            .Theme("b")
+            .Render()
+        )
+
+            @(Html.InfragisticsMobile()
+            .CheckBox()
+            .Text("Fresh Fruit")
+            .Theme("b")
+            .Render()
+        )
+
+            @(Html.InfragisticsMobile()
+            .Collapsible().EndRender()
+        )
+
+            @(Html.InfragisticsMobile()
+            .CollapsibleSet()
+            .EndRender()
+        )
+
+        </div>
+    </div>
+
+</body>
+</html>

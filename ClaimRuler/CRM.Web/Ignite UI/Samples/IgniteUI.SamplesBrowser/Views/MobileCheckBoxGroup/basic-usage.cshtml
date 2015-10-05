@@ -1,0 +1,72 @@
+﻿@using Infragistics.Web.Mvc.Mobile
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="@Url.Content("~/css/jqm/jquery.mobile.structure.min.css")" rel="stylesheet" />
+
+    <!-- Required Ignite UI Mobile Combined CSS Files -->
+    <link href="@Url.Content("~/igniteui/mobile/css/structure/infragistics.mobile.css")"  rel="stylesheet"/>
+    <link href="@Url.Content("~/igniteui/mobile/css/themes/ios/infragistics.mobile.theme.css")"  rel="stylesheet"/>
+    
+    <script src="@Url.Content("~/js/modernizr.min.js")"></script>
+    <script src="@Url.Content("~/js/jqm/jquery.min.js")"></script>
+    <script src="@Url.Content("~/js/jqm/jquery.mobile.min.js")"></script>
+
+    <!-- Required Ignite UI Mobile Combined JavaScript File -->
+    <script src="@Url.Content("~/igniteui/mobile/js/infragistics.mobile.js")"></script>
+</head>
+<body>
+    <div data-role="page">
+        <style type="text/css">
+            .sample-block { margin-top: 30px; }            
+            .sample-block h4 { padding: 0px; margin: 0px 10px; }
+        </style>
+
+        <div data-role="content">
+
+            <div class="sample-block-basic">
+                @(
+                 Html.InfragisticsMobile()
+                    .CheckBoxGroup()
+                    .ID("chkbxgrp1")
+                    .Text("Basic Check Box Group")
+                    .Items(item => {
+                        item.CheckBox().Text(String.Format("{0} 1", "Check Box"));
+                        item.CheckBox().Text(String.Format("{0} 2", "Check Box"));
+                        item.CheckBox().Text(String.Format("{0} 3", "Check Box"));
+                    })
+                    .Render()
+                )
+            </div>
+
+            <div class="sample-block">
+                @(
+                 Html.InfragisticsMobile()
+                    .CheckBoxGroup()
+                    .ID("chkbxgrp2")
+                    .Text("Horizontal Check Box Group")
+                    .Items(item => {
+                        item.CheckBox().ID("chk1").Text("Kia");
+                        item.CheckBox().ID("chk2").Text("VW");
+                        item.CheckBox().ID("chk3").Text("Audi");
+                        item.CheckBox().ID("chk4").Text("Porche");
+                        item.CheckBox().ID("chk5").Text("Volvo");
+                    })
+                    .Horizontal(true)
+                    .Theme("c")
+                    .Mini(true)
+                    .Render()
+                )
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,824 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using LinqKit;
+using System.Threading.Tasks;
+using System.Linq.Expressions;
+
+using CRM.Data;
+using CRM.Data.Views;
+using CRM.Data.Entities;
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Web;
+
+
+
+using CRM.Data.Account;
+using CRM.Data;
+
+using LinqKit;
+using System.Data;
+using System.Runtime.Serialization;
+
+using CRM.Repository;
+using CRM.Data.Entities;
+//using CRM.Data.Account;
+using System.Text;
+
+
+namespace CRM.Repository {
+	public class ClaimManager : IDisposable {
+		private bool disposed = false;		// to detect redundant calls
+
+		private CRM.Data.Entities.CRMEntities claimRulerDBContext = null;
+
+		public ClaimManager() {
+            claimRulerDBContext = new CRM.Data.Entities.CRMEntities();
+		}
+
+		public Claim Get(int id) {
+			Claim claim = null;
+
+			claim = (from x in claimRulerDBContext.Claim
+					   .Include("AdjusterMaster")
+					   .Include("LeadPolicy.Leads.Client")
+					   .Include("LeadPolicy.LeadPolicyType")
+					   .Include("StatusMaster")
+					   .Include("SubStatusMaster")
+				    where x.ClaimID == id
+				    select x
+				   ).FirstOrDefault();
+
+			return claim;
+		}
+        public List<Claim> GetByClientId(int id)
+        {
+
+            List<Claim> claims = new List<Claim>();
+
+            claims = (from x in claimRulerDBContext.Claim
+                       .Include("AdjusterMaster")
+                       .Include("LeadPolicy.Leads.Client")
+                       .Include("LeadPolicy.LeadPolicyType")
+                       .Include("StatusMaster")
+                       .Include("SubStatusMaster")
+                       .Include("Invoice")
+                      where x.ClaimID == id
+                      select x
+                   ).ToList();
+
+            return claims;
+
+        }
+        public List<ClaimReport> GetClaimsByClientId(int id)
+        {
+
+            List<ClaimReport> claims = new List<ClaimReport>();
+
+
+
+            claims = (from x in claimRulerDBContext.Claim
+                      .Include("AdjusterMaster")
+                      .Include("LeadPolicy.Leads.Client")
+                      .Include("LeadPolicy.LeadPolicyType")
+                      .Include("StatusMaster")
+                      .Include("SubStatusMaster")
+                      from q in claimRulerDBContext.InvoiceDetail
+                      from c in claimRulerDBContext.CarrierLocation
+                      from p in claimRulerDBContext.Invoice
+
+                      where x.ClaimID == id && p.InvoiceID == q.InvoiceID &&
+                            x.CarrierInvoiceProfileID == p.CarrierInvoiceProfileID
+                            && x.CarrierID == c.CarrierID
+                      select new ClaimReport
+                      {
+
+                          AdjusterClaimNumber = x.AdjusterClaimNumber,
+                          InsurerClaim = x.InsurerClaimNumber,
+                          InsuredName = x.LeadPolicy.InsuranceCompanyName,
+                          CoverageA = x.CoverageAPaid,
+                          CoverageB = x.CoverageBPaid,
+                          CoverageC = x.CoverageCPaid,
+                          CoverageD = x.CoverageDPaid,
+                          OurInvoice = q.Total,
+                          Miles = q.Qty,
+                          DateReceived = x.DateAcknowledged,
+                          DateClosed = x.DateClosed,
+                          InsureBranch = c.LocationName,
+                          CarrierId = x.CarrierID,
+                          //DaystoClose = Convert.ToInt32(x.DateAcknowledged - x.DateClosed),
+
+                          OurAdjuster = x.AdjusterMaster.AdjusterName
+
+
+                      }).ToList();
+
+            return claims;
+
+        }
+        public string getCarrierExamnier(int examinerId)
+        {
+            string examinerName = "";
+            Contact contactObj = new Contact();
+            contactObj = (from x in claimRulerDBContext.Contact
+                          where x.CategoryID == examinerId
+                          select x).FirstOrDefault();
+            if (contactObj != null)
+            {
+                examinerName = contactObj.FirstName + contactObj.LastName;
+            }
+
+
+            return examinerName;
+        }
+        public InvoiceDetail getInvoiceDetail(int CarrierInvoiceProfileID)
+        {
+
+            InvoiceDetail InvoiceDetailObj = new InvoiceDetail();
+            InvoiceDetailObj = (from x in claimRulerDBContext.InvoiceDetail
+                                from d in claimRulerDBContext.Invoice
+                                where d.CarrierInvoiceProfile.CarrierInvoiceProfileID == CarrierInvoiceProfileID && d.InvoiceID == x.InvoiceID
+                                select x).FirstOrDefault();
+            return InvoiceDetailObj;
+
+        }
+        public List<ClaimLimit> getLimit(int claimId)
+        {
+
+            List<ClaimLimit> ClaimLimitObj = new List<ClaimLimit>();
+            ClaimLimitObj = (from x in claimRulerDBContext.ClaimLimit
+                             where x.ClaimID == claimId
+                             select x).ToList();
+
+            return ClaimLimitObj;
+
+
+        }
+        
+        public List<ClaimReport> GetClaimsByClientId(int id, int[] claimList)
+        {
+
+            List<ClaimReport> claims = new List<ClaimReport>();
+            
+            claims = (from x in claimRulerDBContext.Claim
+                      .Include("AdjusterMaster")
+                       .Include("LeadPolicy.Leads.Client")
+                       .Include("LeadPolicy.LeadPolicyType")
+                       .Include("StatusMaster")
+                       .Include("SubStatusMaster")
+                       .Include("Invoice")
+
+                      //from q in claimRulerDBContext.InvoiceDetail
+                      //from c in claimRulerDBContext.CarrierLocation
+                      //from p in claimRulerDBContext.Invoice  
+
+                      where claimList.Contains(x.ClaimID) //&& p.InvoiceID == q.InvoiceID  &&
+                      //x.CarrierInvoiceProfileID == p.CarrierInvoiceProfileID
+
+                      select new ClaimReport
+                      {
+
+                          AdjusterClaimNumber = x.AdjusterClaimNumber,
+                          InsurerClaim = x.InsurerClaimNumber,
+
+
+                          claimId = x.ClaimID,
+
+
+                          DateReceived = x.DateOpenedReported,
+                          DateClosed = x.DateClosed,
+                          ExaminerId = x.ExaminerID,
+                          CarrierId = x.CarrierID,
+                          CarrierInvoiceProfileID = x.CarrierInvoiceProfileID,
+                          OurAdjuster = x.AdjusterMaster.AdjusterName,
+                          policyId = x.PolicyID
+
+                      }).ToList();
+
+            return claims;
+
+        }
+		/// <summary>
+		/// Returns carrier ID assigned to claim policy
+		/// </summary>
+		/// <param name="id"></param>
+		/// <returns></returns>
+		public int GetCarrier(int id) {
+
+			return (from x in claimRulerDBContext.Claim
+					   .Include("LeadPolicy")
+				   where x.ClaimID == id
+				   select x.LeadPolicy.CarrierID ?? 0
+				   ).FirstOrDefault<int>();
+
+		}
+
+        /// <summary>
+        /// Returns carrier from client id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public List<Carrier> GetAllCarrier(int clientId)
+        {
+            List<Carrier> objCarrier = null;
+            objCarrier=(from x in claimRulerDBContext.Carrier
+                    where x.ClientID == clientId
+                    select x
+                   ).ToList();
+            return objCarrier;
+        }
+
+        public List<Claim> GetPolicyClaim(int policyId)
+        {
+            List<Claim> claim = null;
+
+            claim = (from x in claimRulerDBContext.Claim
+                     where x.PolicyID == policyId
+                     select x
+                   ).ToList();
+
+            return claim;
+        }
+
+		public int Get(int clientID, string claimNumber) {
+			int claimID = 0;
+
+			claimID = (from x in claimRulerDBContext.Claim.Include("LeadPolicy.Leads")
+					 where x.AdjusterClaimNumber == claimNumber &&
+					 x.LeadPolicy.Leads.ClientID == clientID
+					 select x.ClaimID
+				).FirstOrDefault<int>();
+
+			return claimID;
+		}
+
+		public List<LeadView> Search(Expression<Func<vw_Lead_Search, bool>> predicate) {
+			List<LeadView> listView = null;
+           
+            // List<Claim> myCLaim = null;
+            //var myClaimID = Session[""];
+            //var myCLaim = (from x in claimRulerDBContext.Claim
+            //               join p in claimRulerDBContext.ProgressStatus on x.ProgressStatusID equals p.ProgressStatusID
+
+            //               select new { p.ProgressDescription });
+            
+			listView = (from x in claimRulerDBContext.vw_Lead_Search
+                            
+                        
+				.AsExpandable()
+				.Where(predicate)
+					  orderby x.OriginalLeadDate descending
+					  select new LeadView {
+						  LeadId = x.LeadId,
+						  policyID = x.policyID ?? 0,
+                          
+						  OriginalLeadDate = x.OriginalLeadDate,
+                         
+						  InsuredName = x.InsuredName,
+						  ClaimantFirstName =  x.ClaimantFirstName,
+                         
+						  ClaimantLastName = x.ClaimantLastName,
+
+						  BusinessName = x.BusinessName,
+
+                          //ProgressDescription = x.ProgressDescription,
+
+						  ClaimNumber = x.AdjusterClaimNumber,
+						  StatusName = x.StatusName ?? "",
+						  SubStatusName = x.SubStatusName,
+						  //StatusCodes = x.SubStatusName ?? "",
+
+                          //var a = (from x in claimRulerDBContext.Claim
+                          //             where x.ClaimID = 1764)
+                          
+						  LossDate = x.LossDate,
+
+						  AdjusterName = x.AdjusterName ?? "Unassigned",
+
+						  Coverage = x.Coverage ?? "",
+
+                         // ProgressDescription = x.ProgressDescription ?? "",
+
+						  InsuranceCompanyName = x.InsuranceCompanyName ?? "",
+                          
+						  ClaimWorkflowType = x.ClaimWorkflowType,
+
+						  EventType = x.EventType,
+						  EventName = x.EventName,
+						  Severity = x.SeverityNumber ?? 0,
+                          
+                          ProgressDescription = x.ProgressDescription,//NEW OC 9/19/2014
+                          LocationName = x.LocationName, //NEW OC 9/19/2014
+                          InsurerClaimNumber = x.InsurerClaimNumber,
+						  // loss address
+						  LossAddress = x.LossAddress,
+						  CityName = x.CityName,
+						  StateName = x.StateName,
+						  Zip = x.Zip,
+
+						  // mailing address
+						  MailingCity = x.MailingCity,
+						  MailingState = x.MailingState,
+						  MailingZip = x.MailingZip,
+
+						  LeadSourceName = x.LeadSourceName ?? "",
+
+						  ContractorName = x.ContractorName ?? "",
+						  AppraiserName = x.AppraiserName ?? "",
+						  UmpireName = x.UmpireName ?? "",
+						  ProducerName = x.ProducerName ?? "",
+
+						  UserName = x.UserName,
+
+						  SiteSurveyDate = x.SiteSurveyDate,
+                          
+						  LastActivityDate = x.LastActivityDate,
+
+						  TypeofDamageText = x.CauseOfLoss,
+                          ClaimID=x.ClaimID??0,
+                          
+					  }).ToList();
+
+
+
+			//// get it from claim
+			//string[] causeOfLoss = (from p in x.LeadPolicies
+			//				    from c in p.Claims
+			//				    where c.IsActive == true && c.CauseOfLoss != null
+			//				    select c.CauseOfLoss).ToArray();
+
+			//if (causeOfLoss != null && causeOfLoss.Length > 0) {
+			//	// get it from claim
+			//	leadView.TypeofDamageText = "";
+			//	foreach (string idList in causeOfLoss) {
+			//		if (!string.IsNullOrEmpty(idList)) {
+			//			string[] damageDescriptions = TypeofDamageManager.GetDescriptions(idList);
+			//			leadView.TypeofDamageText = string.Join("<br>", damageDescriptions);
+			//		}
+			//	}
+			//}
+			//else if (!string.IsNullOrEmpty(x.TypeOfDamage)) {
+			//	// get it from Lead
+			//	leadView.TypeofDamageText = string.Join("<br>", x.TypeofDamageText.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries));
+			//}
+
+            
+			return listView;
+
+		}
+
+		public List<LeadView> Search(Expression<Func<Claim, bool>> predicate) {
+			List<LeadView> listView = null;
+
+			listView = (from x in claimRulerDBContext.Claim
+				.AsExpandable()
+				.Where(predicate)
+					  orderby x.LeadPolicy.Leads.InsuredName ascending
+					  select new LeadView {
+						  ClaimID = x.ClaimID,
+                          TypeOfLoss = x.TypeofLoss,
+						  LeadId = x.LeadPolicy.Leads.LeadId,
+						  OriginalLeadDate = x.LeadPolicy.Leads.OriginalLeadDate,
+
+						  InsuredName = x.LeadPolicy.Leads.InsuredName,
+						  ClaimantFirstName = x.LeadPolicy.Leads.ClaimantFirstName,
+
+						  ClaimantLastName = x.LeadPolicy.Leads.ClaimantLastName,
+
+						  BusinessName = x.LeadPolicy.Leads.BusinessName,
+
+						  ClaimNumber = x.AdjusterClaimNumber,
+						  StatusName = x.StatusMaster.StatusName ?? "",
+						  StatusCodes = x.SubStatusMaster.SubStatusName ?? "",
+                          
+						  LossDate = x.LossDate,
+
+						  AdjusterName = x.AdjusterMaster.AdjusterName ?? "Unassigned",
+
+						  Coverage = x.LeadPolicy.LeadPolicyType.Description ?? "",
+
+						  InsuranceCompanyName = x.LeadPolicy.InsuranceCompanyName ?? "",
+
+						  ClaimWorkflowType = x.ClaimWorkflowType,
+
+						  EventType = x.EventType,
+						  EventName = x.EventName,
+						  Severity = x.SeverityNumber ?? 0,
+
+						  // loss address
+						  LossAddress = x.LeadPolicy.Leads.LossAddress,
+						  CityName = x.LeadPolicy.Leads.CityName,
+						  StateName = x.LeadPolicy.Leads.StateName,
+						  Zip = x.LeadPolicy.Leads.Zip,
+
+						  // mailing address
+						  MailingCity = x.LeadPolicy.Leads.MailingCity,
+						  MailingState = x.LeadPolicy.Leads.MailingState,
+						  MailingZip = x.LeadPolicy.Leads.MailingZip,
+
+						  LeadSourceName = x.LeadPolicy.Leads.LeadSourceMaster.LeadSourceName ?? "",
+
+						  ContractorName = x.LeadPolicy.Leads.ContractorMaster.ContractorName ?? "",
+						  AppraiserName = x.LeadPolicy.Leads.AppraiserMaster.AppraiserName ?? "",
+						  UmpireName = x.LeadPolicy.Leads.UmpireMaster.UmpireName ?? "",
+						  ProducerName = x.LeadPolicy.Leads.ProducerMaster.ProducerName ?? "",
+
+						  UserName = x.LeadPolicy.Leads.SecUser.UserName,
+
+						  SiteSurveyDate = x.LeadPolicy.Leads.SiteSurveyDate,
+
+						  LastActivityDate = x.LeadPolicy.Leads.LastActivityDate,
+                   
+
+					  }).ToList();
+
+
+
+			//// get it from claim
+			//string[] causeOfLoss = (from p in x.LeadPolicies
+			//				    from c in p.Claims
+			//				    where c.IsActive == true && c.CauseOfLoss != null
+			//				    select c.CauseOfLoss).ToArray();
+
+			//if (causeOfLoss != null && causeOfLoss.Length > 0) {
+			//	// get it from claim
+			//	leadView.TypeofDamageText = "";
+			//	foreach (string idList in causeOfLoss) {
+			//		if (!string.IsNullOrEmpty(idList)) {
+			//			string[] damageDescriptions = TypeofDamageManager.GetDescriptions(idList);
+			//			leadView.TypeofDamageText = string.Join("<br>", damageDescriptions);
+			//		}
+			//	}
+			//}
+			//else if (!string.IsNullOrEmpty(x.TypeOfDamage)) {
+			//	// get it from Lead
+			//	leadView.TypeofDamageText = string.Join("<br>", x.TypeofDamageText.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries));
+			//}
+
+           
+			return listView;
+
+		}
+        public List<ClaimReport> GetAll()
+        {
+
+            List<ClaimReport> Cliams = null;
+
+
+
+
+            Cliams = (from x in claimRulerDBContext.Claim
+
+
+                      select new ClaimReport
+                      {
+                          InsurerClaim = x.AdjusterClaimNumber
+
+
+                      }).ToList();
+
+
+
+            return Cliams;
+
+        }
+		public List<Claim> SearchClaim(Expression<Func<Claim, bool>> predicate) {
+			List<Claim> claims = null;
+
+			claims = (from x in claimRulerDBContext.Claim
+										.AsExpandable()
+										.Where(predicate)
+					select x
+					).ToList();
+
+
+			return claims;
+
+		}
+
+		public List<LeadView> Search(Expression<Func<vw_Lead_Search, bool>> predicate, string sortExpression, bool descending) {
+			string sortClause = null;
+			List<LeadView> listView = null;
+
+			listView = Search(predicate);
+
+
+
+			if (listView != null) {
+				sortClause = sortExpression + (descending ? " Desc " : " Asc ");
+
+				listView = listView.sort(sortClause).ToList();
+
+			}
+
+
+
+			return listView;
+
+		}
+		public int GetByLastNameClaimNumber(string lastName, string claimNumber) {
+			int claimID = 0;
+
+			claimID = (from x in claimRulerDBContext.Claim
+					   .Include("LeadPolicy.Leads")
+					 where x.AdjusterClaimNumber == claimNumber &&
+						   x.LeadPolicy.Leads.ClaimantLastName == lastName
+					 select x.ClaimID
+				   ).FirstOrDefault();
+
+			return claimID;
+		}
+		public int GetByInsuredNameClaimNumber(string insuredName, string claimNumber) {
+			int claimID = 0;
+
+			claimID = (from x in claimRulerDBContext.Claim
+					   .Include("LeadPolicy.Leads")
+					 where x.AdjusterClaimNumber == claimNumber &&
+						   x.LeadPolicy.Leads.InsuredName == insuredName
+					 select x.ClaimID
+				   ).FirstOrDefault();
+
+			return claimID;
+		}
+		public int GetByEmailPhoneLastName(string email, string lastName, string claimNumber) {
+			int claimID = 0;
+
+			claimID = (from x in claimRulerDBContext.Claim
+					   .Include("LeadPolicy.Leads")
+					 where x.AdjusterClaimNumber == claimNumber &&
+							x.LeadPolicy.Leads.EmailAddress == email &&
+						   x.LeadPolicy.Leads.ClaimantLastName == lastName
+					 select x.ClaimID
+				   ).FirstOrDefault();
+
+			return claimID;
+		}
+
+        public List<ClaimProgressData> GetByProgressID(int clientID, int progressID, int carrierid, int adjusterid)
+        {
+            List<ClaimProgressData> claims = null;
+
+            if (adjusterid != 0 && carrierid != 0)
+            {
+
+                claims = (from claim in claimRulerDBContext.Claim
+                                  join adjuster in claimRulerDBContext.AdjusterMaster on claim.AdjusterID equals adjuster.AdjusterId
+                                  join status in claimRulerDBContext.StatusMaster on claim.StatusID equals status.StatusId
+                                  join policy in claimRulerDBContext.LeadPolicy on claim.PolicyID equals policy.Id
+                                  join policytype in claimRulerDBContext.LeadPolicyType on policy.PolicyType equals policytype.LeadPolicyTypeID
+                                  join lead in claimRulerDBContext.Leads on policy.LeadId equals lead.LeadId 
+                                  
+                                  join carrier in claimRulerDBContext.Carrier on policy.CarrierID equals carrier.CarrierID
+
+                                  where lead.ClientID == clientID && claim.ProgressStatusID == progressID && claim.IsActive == true && policy.IsActive==true
+                                  && lead.Status == 1 && adjuster.AdjusterId == adjusterid && carrier.CarrierID == carrierid
+
+
+                              //group claim by new { claim.ProgressStatusID } into g
+                              select new ClaimProgressData
+                              {
+                                  adjusterName = adjuster.FirstName + " " + adjuster.LastName,
+                                  claimID = claim.ClaimID,
+                                  insuredName = lead.InsuredName,
+                                  lossDate = claim.LossDate,
+                                  policyType = policytype.Description != null ? policytype.Description : "",
+                                  claimStatus = status.StatusName != null ? status.StatusName : ""
+                             
+                              }).ToList();
+
+            }
+            else if (adjusterid != 0 && carrierid == 0)
+            {
+                claims = (from claim in claimRulerDBContext.Claim
+                          join adjuster in claimRulerDBContext.AdjusterMaster on claim.AdjusterID equals adjuster.AdjusterId
+                          join status in claimRulerDBContext.StatusMaster on claim.StatusID equals status.StatusId
+                          join policy in claimRulerDBContext.LeadPolicy on claim.PolicyID equals policy.Id
+                          join policytype in claimRulerDBContext.LeadPolicyType on policy.PolicyType equals policytype.LeadPolicyTypeID
+                          join lead in claimRulerDBContext.Leads on policy.LeadId equals lead.LeadId
+
+                         
+
+                          where lead.ClientID == clientID && claim.ProgressStatusID == progressID && claim.IsActive == true && policy.IsActive == true
+                          && lead.Status == 1 && adjuster.AdjusterId == adjusterid 
+
+
+                          //group claim by new { claim.ProgressStatusID } into g
+                          select new ClaimProgressData
+                          {
+                              adjusterName = adjuster.FirstName + " " + adjuster.LastName,
+                              claimID = claim.ClaimID,
+                              insuredName = lead.InsuredName,
+                              lossDate = claim.LossDate,
+                              policyType = policytype.Description != null ? policytype.Description : "",
+                              claimStatus = status.StatusName != null ? status.StatusName : ""
+
+                          }).ToList();
+            }
+            else if (adjusterid == 0 && carrierid != 0)
+            {
+                claims = (from claim in claimRulerDBContext.Claim
+                          //join adjuster in claimRulerDBContext.AdjusterMaster on claim.AdjusterID equals adjuster.AdjusterId
+                          join status in claimRulerDBContext.StatusMaster on claim.StatusID equals status.StatusId
+                          join policy in claimRulerDBContext.LeadPolicy on claim.PolicyID equals policy.Id
+                          join policytype in claimRulerDBContext.LeadPolicyType on policy.PolicyType equals policytype.LeadPolicyTypeID
+                          join lead in claimRulerDBContext.Leads on policy.LeadId equals lead.LeadId
+
+                          join carrier in claimRulerDBContext.Carrier on policy.CarrierID equals carrier.CarrierID
+
+                          where lead.ClientID == clientID && claim.ProgressStatusID == progressID && claim.IsActive == true && policy.IsActive == true
+                          && lead.Status == 1 && carrier.CarrierID == carrierid
+
+
+                          //group claim by new { claim.ProgressStatusID } into g
+                          select new ClaimProgressData
+                          {
+                              adjusterName = "Unassigned",
+                              claimID = claim.ClaimID,
+                              insuredName = lead.InsuredName,
+                              lossDate = claim.LossDate,
+                              policyType = policytype.Description != null ? policytype.Description : "",
+                              claimStatus = status.StatusName != null ? status.StatusName : ""
+
+                          }).ToList();
+            }
+            else
+            {
+                claims = (from x in claimRulerDBContext.Claim
+                                .Include("AdjusterMaster")
+                                .Include("StatusMaster")
+                                .Include("LeadPolicy.LeadPolicyType")
+                                .Include("LeadPolicy.Leads")
+                          where x.LeadPolicy.Leads.ClientID == clientID &&
+                                  x.ProgressStatusID == progressID &&
+                                  x.IsActive == true &&
+                                  x.LeadPolicy.IsActive == true &&
+                                  x.LeadPolicy.Leads.Status == 1
+
+                          select new ClaimProgressData
+                          {
+                              adjusterName = x.AdjusterID != null ? x.AdjusterMaster.AdjusterName : "Unassigned",
+                              claimID = x.ClaimID,
+                              insuredName = x.LeadPolicy.Leads.InsuredName,
+                              lossDate = x.LossDate,
+                              policyType = x.LeadPolicy.LeadPolicyType != null ? x.LeadPolicy.LeadPolicyType.Description : "",
+                              claimStatus = x.StatusMaster != null ? x.StatusMaster.StatusName : ""
+                          }
+                       ).ToList<ClaimProgressData>();
+
+
+            }
+
+
+
+
+
+
+            //commented by us
+            //claims = (from x in claimRulerDBContext.Claim
+            //                .Include("AdjusterMaster")
+            //                .Include("StatusMaster")
+            //                .Include("LeadPolicy.LeadPolicyType")
+            //                .Include("LeadPolicy.Leads")
+            //        where x.LeadPolicy.Leads.ClientID == clientID &&
+            //                x.ProgressStatusID == progressID &&
+            //                x.IsActive == true &&
+            //                x.LeadPolicy.IsActive == true &&
+            //                x.LeadPolicy.Leads.Status == 1
+
+            //        select new ClaimProgressView {
+            //            adjusterName = x.AdjusterID != null ? x.AdjusterMaster.AdjusterName : "Unassigned",
+            //            claimID = x.ClaimID,
+            //            insuredName = x.LeadPolicy.Leads.InsuredName,
+            //            lossDate = x.LossDate,
+            //            policyType = x.LeadPolicy.LeadPolicyType != null ? x.LeadPolicy.LeadPolicyType.Description : "",
+            //            claimStatus = x.StatusMaster != null ? x.StatusMaster.StatusName : ""
+            //        }
+            //       ).ToList<ClaimProgressView>();
+
+
+			return claims;
+		}
+
+        public void UpdateClaimStatus(Claim objClaim)
+        {
+            Claim objclaim2 = DbContextHelper.DbContext.Claim.First(x => x.ClaimID == objClaim.ClaimID);
+
+            objclaim2.StatusID = objClaim.StatusID;
+            objclaim2.InsurerClaimNumber = objClaim.InsurerClaimNumber;
+            objclaim2.CarrierID = objClaim.CarrierID;
+            objclaim2.AdjusterID = objClaim.AdjusterID;
+            objclaim2.StatusUpdatedBy = objClaim.StatusUpdatedBy;
+            objclaim2.StatusCommentNote = objClaim.StatusCommentNote;
+            objclaim2.StatusEmailTo = objClaim.StatusEmailTo;
+
+
+            DbContextHelper.DbContext.SaveChanges();
+
+
+        }
+        public void UpdateAdjusterName(AdjusterMaster objAdjusterMaster)
+        {
+            AdjusterMaster objAdjusterMaster2 = DbContextHelper.DbContext.AdjusterMaster.First(x => x.AdjusterId == objAdjusterMaster.AdjusterId);
+            objAdjusterMaster2.CompanyName = objAdjusterMaster.CompanyName;
+            DbContextHelper.DbContext.SaveChanges();
+        }
+        public void UpdateCarrierId(LeadPolicy objLeadPolicy)
+        {
+            LeadPolicy objLeadPolicy2 = DbContextHelper.DbContext.LeadPolicy.First(x => x.Id == objLeadPolicy.Id);
+            objLeadPolicy2.CarrierID = objLeadPolicy.CarrierID;
+            DbContextHelper.DbContext.SaveChanges();
+        }
+
+        public int GetPolicyId(int id)
+        {
+            LeadPolicy objLeadPolicy = null;
+
+            objLeadPolicy = (from clm in claimRulerDBContext.Claim
+                      join leadpolicy in claimRulerDBContext.LeadPolicy on clm.PolicyID equals leadpolicy.Id
+                      //join lead in claimRulerDBContext.LeadPolicy on leadpolicy.LeadId equals lead.LeadId
+                      where clm.ClaimID == id
+                      select  leadpolicy 
+                   ).FirstOrDefault();
+
+            return objLeadPolicy.LeadId??0;
+        }
+
+        public int GetLeadPolicyId(int id)
+        {
+            LeadPolicy objLeadPolicy = null;
+
+            objLeadPolicy = (from clm in claimRulerDBContext.Claim
+                             join leadpolicy in claimRulerDBContext.LeadPolicy on clm.PolicyID equals leadpolicy.Id
+                             //join lead in claimRulerDBContext.LeadPolicy on leadpolicy.LeadId equals lead.LeadId
+                             where clm.ClaimID == id
+                             select leadpolicy
+                   ).FirstOrDefault();
+
+            return objLeadPolicy.Id;
+        }
+
+        public void UpdateInsurerName(Leads objLeads)
+        {
+            Leads objLeads2 = DbContextHelper.DbContext.Leads.First(x => x.LeadId == objLeads.LeadId);
+            objLeads2.InsuredName = objLeads.InsuredName;
+            DbContextHelper.DbContext.SaveChanges();
+        }
+
+		#region ===== memory management =====
+
+		public void Dispose() {
+			// Perform any object clean up here.
+
+			// If you are inheriting from another class that
+			// also implements IDisposable, don't forget to
+			// call base.Dispose() as well.
+			Dispose(true);
+		}
+
+		protected virtual void Dispose(bool disposing) {
+			if (!disposed) {
+				if (disposing) {
+					if (claimRulerDBContext != null) {
+
+						claimRulerDBContext.Dispose();
+					}
+				}
+
+				disposed = true;
+			}
+		}
+		#endregion
+	}
+
+
+
+
+    public class ClaimProgressData
+    {
+        public string adjusterName { get; set; }
+
+        public int claimID { get; set; }
+
+        public string claimStatus { get; set; }
+
+        public string insuredName { get; set; }
+
+        public DateTime? lossDate { get; set; }
+
+        public string policyType { get; set; }
+
+        public string url { get; set; }
+
+       
+    }
+
+
+
+
+
+}

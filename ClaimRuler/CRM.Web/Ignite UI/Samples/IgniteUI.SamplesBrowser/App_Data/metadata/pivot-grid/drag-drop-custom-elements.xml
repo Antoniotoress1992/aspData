@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Drag Drop Custom Elements</Title>
+    <Description>This sample shows how to enable drag and drop of custom elements to the drop areas of the igPivotDataSelector and the igPivotGrid.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>カスタム要素のドラッグ アンド ドロップ</Title>
+    <Description>このサンプルでは、igPivotDataSelector および igPivotGrid にカスタム要素のドラッグ アンド ドロップを有効にする方法を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>Remote</ServerRuntime>
+  <MinSampleSize>Desktop</MinSampleSize>
+</Sample>

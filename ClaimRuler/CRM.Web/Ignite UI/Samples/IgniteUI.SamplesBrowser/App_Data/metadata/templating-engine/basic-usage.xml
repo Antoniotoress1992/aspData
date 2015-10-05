@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Basic Usage</Title>
+    <Description>The Infragistics Templating Engine provides a consistent templating syntax for all of the Ignite UI controls. 
+    This example demonstrates the templating syntax in context when customizing the igCombo control's header, items, and footer.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>基本的な使用方法</Title>
+    <Description>
+      Infragistics テンプレート エンジンは、すべての Ignite UI コントロールの一貫性のあるテンプレート構文を提供します。
+      このサンプルでは、igCombo コントロールのヘッダー、項目、およびフッターをカスタマイズするテンプレート化構文を紹介します。
+    </Description>
+  </LocalizedContent>
+  <RedirectToSample CopyTargetTitleAndDescription="none">combo/templates</RedirectToSample>
+  <ServerRuntime></ServerRuntime>
+  <Status></Status>
+</Sample>

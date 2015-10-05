@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Custom Move Validation</Title>
+    <Description>This sample shows how to configure custom move validation with the Pivot Grid and the Pivot Data Selector. When using a custom validation function, dropping items to the columns is forbidden. Also any hierarchy that contains the word "Seller" in its name will not be accepted by the drop areas in the Pivot Grid and the Data Selector.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>カスタム移動検証</Title>
+    <Description>このサンプルでは、ピボット グリッドおよびピボット データ セレクターを使用してカスタム移動検証を構成する方法を紹介します。カスタム検証関数を使用すると、項目の列へのドロップが無効になります。また、名前に「Calendar」が含まれる階層では、ピボット グリッドおよびデータ セレクターのドロップ領域へのドロップは無効になります。</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>カスタム ドラッグ アンド ドロップ検証</Title>
+    <Description>このサンプルでは、ピボット グリッドおよびピボット データ セレクターを使用してカスタム ドラッグ アンド ドロップ検証を構成する方法を紹介します。カスタム検証関数を使用すると、項目の列へのドロップが無効になります。また、名前に「Calendar」が含まれる階層では、ピボット グリッドおよびデータ セレクターのドロップ領域へのドロップは無効になります。</Description>
+  </LocalizedContent>
+  <ServerRuntime>Remote</ServerRuntime>
+  <MinSampleSize>Desktop</MinSampleSize>
+</Sample>

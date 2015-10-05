@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Chart Title and Subtitle</Title>
+    <Description>The title and subtitle feature of the igChart control allows you to add information to the top section of the chart control.
+      When adding a title and/or subtitle to the chart control, the content of the chart is automatically resized to allow for the title and/or subtitle information.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Chart Title and Subtitle" TopicName="igDataChart_Chart_Titles_and_Subtitles" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>チャートのタイトルとサブタイトル</Title>
+    <Description>igChart コントロールのタイトルおよびサブタイトルの機能は、igChart コントロールの上セクションに情報を追加できます。チャート コントロールにタイトルまたはサブタイトルを追加すると、情報を合わせるためにチャートのコンテンツが自動的にサイズ変更されます。</Description>
+    <HelpTopics>
+      <HelpTopic Title="チャートのタイトルとサブタイトル" TopicName="igDataChart_Chart_Titles_and_Subtitles" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

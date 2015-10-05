@@ -1,0 +1,66 @@
+﻿@using Infragistics.Web.Mvc.Mobile
+@model IQueryable<IgniteUI.SamplesBrowser.Models.Northwind.Category>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="@Url.Content("~/css/jqm/jquery.mobile.structure.min.css")" rel="stylesheet" />
+
+    <!-- Required Ignite UI Mobile Combined CSS Files -->
+    <link href="@Url.Content("~/igniteui/mobile/css/structure/infragistics.mobile.css")"  rel="stylesheet"/>
+    <link href="@Url.Content("~/igniteui/mobile/css/themes/ios/infragistics.mobile.theme.css")"  rel="stylesheet"/>
+    
+    <script src="@Url.Content("~/js/modernizr.min.js")"></script>
+    <script src="@Url.Content("~/js/jqm/jquery.min.js")"></script>
+    <script src="@Url.Content("~/js/jqm/jquery.mobile.min.js")"></script>
+
+    <!-- Required Ignite UI Mobile Combined JavaScript File -->
+    <script src="@Url.Content("~/igniteui/mobile/js/infragistics.mobile.js")"></script>
+</head>
+<body>
+    <div data-role="page">
+                
+        <div data-role="content">
+
+            @( Html
+                .InfragisticsMobile()
+                .ListView(Model)
+                .ID("multiLevelListView")
+                .ImageMode(ImageMode.Icon)
+                .OData(true)
+                .SubPageHeaderTheme("a")
+                .Bindings(b =>
+                {
+                    b.HeaderKeyFor(c => c.CategoryName)
+                    .ImageUrlKeyFor(c => c.ImageUrl)
+                    .DetailsTitleKeyFor(c => c.CategoryName)
+                    .CountKeyFor(c => c.ProductCount);
+                })
+                .SubPageHeaderTheme("a")
+                .ChildLayout(layout =>
+                {
+                    layout.For(c => c.Products)
+                    .Key("Products")
+                    .ImageMode(ImageMode.Icon)
+                    .Bindings(b =>
+                    {
+                        b.HeaderKeyFor(p => p.ProductName)
+                        .ImageUrlKeyFor(p => p.CategoryImageUrl)
+                        .DescriptionKeyFor(p => p.CategoryName)
+                        .CountKeyFor(p => p.UnitsInStock);
+                    });
+                })
+                .DataBind()
+                .Render()
+            )
+
+
+        </div>
+    </div>
+
+</body>
+</html>

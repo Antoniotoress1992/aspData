@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Animated Transitions</Title>
+    <Description>This sample demonstrates animated transitions between different sets of settings in the the igBulletGraph control.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>アニメーション化されたトランジション</Title>
+    <Description>このサンプルでは、igBulletGraph コントロールの設定の間のアニメーション化されたトランジションを紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

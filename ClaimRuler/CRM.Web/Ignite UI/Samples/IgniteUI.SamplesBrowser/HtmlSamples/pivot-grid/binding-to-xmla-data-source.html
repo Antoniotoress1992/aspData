@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="../../igniteui/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+    <link href="../../igniteui/css/structure/infragistics.css" rel="stylesheet" />
+
+    <script src="../../js/modernizr.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="../../igniteui/js/infragistics.core.js"></script>
+    <script src="../../igniteui/js/infragistics.lob.js"></script>
+    <style>
+        #dataSelector, #pivotGrid {
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="dataSelector"></div>
+    <div id="pivotGrid"></div>
+
+    <script>
+        $.support.cors = true;
+
+        $(function () {
+            var dataSource = new $.ig.OlapXmlaDataSource({
+                serverUrl: 'http://sampledata.infragistics.com/olap/msmdpump.dll',
+                catalog: 'Adventure Works DW Standard Edition',
+                cube: 'Adventure Works',
+                rows: "[Ship Date].[Calendar]",
+                columns: "[Delivery Date].[Calendar]",
+                measures: "[Measures].[Product Gross Profit Margin Status],[Measures].[Product Gross Profit Margin Goal]",
+            });
+
+            $('#dataSelector').igPivotDataSelector({
+                dataSource: dataSource,
+                height: "650px",
+                width: "240px"
+            });
+            $("#pivotGrid").igPivotGrid({
+                dataSource: dataSource,
+                height: "650px",
+                width: "670px"
+            });
+        });
+    </script>
+</body>
+</html>

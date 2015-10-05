@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>  
+  <LocalizedContent Language="en">
+    <Title>Remote ADOMD.NET Provider</Title>
+    <Description>This sample demonstrates using the ADOMD.NET remote provider with the igPivotGrid. All requests are proxied through the server application to avoid cross domain problems. In addition, the data is translated to JSON reducing the size of the response. NOTE: This sample requires an internet connection to access the OLAP data.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>リモート ADOMD.NET プロバイダー</Title>
+    <Description>このサンプルでは、ADOMD.NET のリモート プロバイダー機能を使用し、ネットワーク トラフィックを軽減することによる利点を紹介します。すべての要求は、クロス ドメインの問題を防止するためにサーバー アプリケーションを介してプロキシーされます。また、応答のサイズを小さくなるために、データが JSON に変換されます。このサンプルは、 OLAP データをアクセスするために、インターネット接続が必要です。</Description>
+  </LocalizedContent>
+  <Status>NEW</Status>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <MinSampleSize>Desktop</MinSampleSize>
+</Sample>

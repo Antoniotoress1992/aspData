@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Basic Horizontal Splitter</Title>
+    <Description>This sample demonstrates how to use the Splitter control to manage master/detail grid with horizontal layout. The first container contains a master grid with customers. After a row is clicked in master grid, in the second container is shown grid with orders that are made by this customer.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>基本の水平スプリッター</Title>
+    <Description>このサンプルでは、スプリッター コントロールを使用して水平レイアウトのマスター/詳細グリッドを管理する方法を紹介します。最初のコンテナーは顧客データを含むマスター グリッドを含みます。マスター グリッドの行がクリックした後に 2 つ目のコンテナーにこの顧客の注文を含むグリッドを表示します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhonePortrait</MinSampleSize>
+</Sample>

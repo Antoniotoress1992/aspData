@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Common Features</Title>
+    <Description>The following sample demonstrates some of the basic features of the jQuery Video Player including an out-of-the-box playback and volume control, creating screenshot of the currently displayed video frame and browser compatibility detection. You can learn about the HTML5 video support of the various browsers by running this sample in each of them. Note: When running this sample on a mobile device, the default device video player controls are rendered, unless the Modernizr JavaScript library is undefined. If for some reason you don't have the Modernizr library available on your page, then the igVideoPlayer control is rendered, which in some cases may have fewer touch capabilities than the default device video player. That's why this sample uses the Modernizr library and in mobile contexts the igVideoPlayer falls back to the default device video player.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>共通機能</Title>
+    <Description>このサンプルでは IgniteUI のビデオ プレイヤーの標準機能を紹介します。再生、ボリューム、フレームのスクリーンショット、ブラウザー互換性の検出など、多数の機能が含まれます。ブラウザー毎の HTML5 ビデオ サポートを確認するには、このサンプルを各ブラウザーで実行してみてください。注: このサンプルをモバイル デバイスで実行する場合、Modernizr JavaScript ライブラリが未定義である以外、デフォルトのデバイス ビデオ プレーヤー コントロールを描画します。Modernizr ライブラリがページで利用できない場合、igVideoPlayer コントロールを描画します。この場合、デフォルト デバイス ビデオ プレーヤーよりタッチ機能が少ない場合があります。そのため、このサンプルでは Modernizr ライブラリを使用し、モバイル デバイスでは igVideoPlayer ではなくデフォルト デバイス ビデオ プレーヤーを使用します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>Remote</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

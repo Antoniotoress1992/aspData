@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>API and Events</Title>
+    <Description>This sample demonstrates how to handle events in the Tree control and API usage.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>API およびイベント</Title>
+    <Description>このサンプルでは、ツリー コントロールのイベントを処理および API を使用する方法を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

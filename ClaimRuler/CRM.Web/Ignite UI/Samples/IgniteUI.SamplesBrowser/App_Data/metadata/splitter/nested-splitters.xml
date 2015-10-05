@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Nested Splitters</Title>
+    <Description>This sample demonstrates how to manage layout with nested splitters. The panel contains a Tree with continents, countries and cities. When you click on a node the map in the second splitter is centered according node's coordinates. If a country is selected, then a grid is displayed under the map with cities in that country. Panels are not resizable by default.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>ネスト スプリッター</Title>
+    <Description>このサンプルでは、ネスト スプリッターのレイアウトを管理する方法を紹介します。パネルは大陸、国、および都市を含むツリーを表示します。ノードをクリックすると、2 つ目のスプリッターにあるマップはノードの座標によって中央揃えます。国が選択した場合、その国の都市を含むグリッドはマップの下に表示されます。パネルはデフォルトでサイズ変更できません。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

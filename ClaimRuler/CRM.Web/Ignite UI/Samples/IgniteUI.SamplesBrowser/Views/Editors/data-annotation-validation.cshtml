@@ -1,0 +1,242 @@
+﻿@using Infragistics.Web.Mvc
+@using IgniteUI.SamplesBrowser.Models
+
+@model IgniteUI.SamplesBrowser.Models.DataAnnotations.ValidatedOrder
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="@Url.Content("~/igniteui/css/themes/infragistics/infragistics.theme.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/igniteui/css/structure/infragistics.css")" rel="stylesheet" />
+
+    <script src="@Url.Content("~/js/modernizr.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery-ui.min.js")"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="@Url.Content("~/igniteui/js/infragistics.core.js")"></script>
+    <script src="@Url.Content("~/igniteui/js/infragistics.lob.js")"></script>
+
+</head>
+<body>
+    <style>
+
+        form {
+            overflow: hidden;
+            width: 600px;
+            position: relative;
+            left: 50%;
+            margin-left: -300px;
+        }
+
+        .orderFieldSet {
+            float: left;
+            border: solid 1px #b1b1b1;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 5px 0px 5px 20px;
+            width: 250px;
+        }
+
+        .submittedFieldSet {
+            float: left;
+            border: solid 1px #b1b1b1;
+            margin-top: 10px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            padding: 5px 0px 5px 20px;
+            width: 250px;
+        }
+
+        #btnSubmit {
+            margin-top: 10px;
+        }
+
+        @@media all and (max-width: 660px) {
+            form {
+                width: 250px;
+                margin-left: -125px;
+            }
+
+            .orderFieldSet, .submittedFieldSet {
+                width: 220px;
+                margin-left: 0;
+            }
+
+        }
+
+    </style>
+
+    @using (Html.BeginForm())
+    {
+        <fieldset class="orderFieldSet">
+            <p>
+                <b>Order</b>
+            </p>
+            <p>
+                Ship Date
+        <br />
+
+                @(Html.Infragistics().DatePickerFor(m => m.OrderShipDate)
+               .ID("OrderShipDateEditor")
+               .Width(200)
+               .NullText("Ship Date")
+               .ValidatorOptions(options => options.OnBlur(false).OnChange(false).OnSubmit(true))
+               .Value(null)
+               .Render()
+        )
+                <br />
+
+                @Html.ValidationMessageFor(m => m.OrderShipDate)
+            </p>
+            <p>
+                @Html.Label("Due Date")<br />
+
+                @(Html.Infragistics().DateTimeEditorFor(m => m.OrderDueDate)
+                    .ID("OrderDueDateEditor")
+                    .Width(200)
+                    .NullText("Due Date")
+                    .ValidatorOptions(options => options.OnBlur(false).OnChange(false).OnSubmit(true))
+                    .Value(null)
+                    .Render()
+                )
+                <br />
+                @Html.ValidationMessageFor(m => m.OrderDueDate)
+            </p>
+            <p>
+                @Html.Label("Customer Name")
+                <br />
+
+                @(Html.Infragistics().TextEditorFor(m => m.CustomerName)
+                    .ID("CustomerNameEditor")
+                    .Width(200)
+                    .NullText("Customer Name")
+                    .ValidatorOptions(options => options.OnBlur(false).OnChange(false).OnSubmit(true))
+                    .Value(null)
+                    .Render()
+                )
+
+            </p>
+            <p>
+                @Html.Label("Method of Shipment")<br />
+                @Html.ValidationMessageFor(m => m.ShipMethod)
+                @(Html.Infragistics().ComboFor(m => m.ShipMethod)
+                    .DataSource(Model.ShipMethodList)
+                    .ValueKey("Value")
+                    .TextKey("Text")
+                    .ValidatorOptions(options => options.OnBlur(false).OnChange(false).OnSubmit(true))
+                    .Width("200")
+                    .NullText("Method of Shipment")
+                    .Render()
+                    )
+
+            </p>
+            <p>
+                @Html.Label("Contact Phone")
+                <br />
+
+                @(Html.Infragistics().MaskEditorFor(m => m.ContactPhoneNumber)
+                    .ID("ContactPhoneEditor")
+                    .Width(200)
+                    .NullText("Contact Phone")
+                    .InputMask("000-000-00")
+                    .PromptCharacter('0')
+                    .ValidatorOptions(options => options.OnBlur(false).OnChange(false).OnSubmit(true))
+                    .Value(null)
+                    .Render()
+                    )
+
+            </p>
+            <p>
+                @Html.Label("Advance Payment Amount")
+                <br />
+
+                @(Html.Infragistics().CurrencyEditorFor(m => m.AdvancePaymentAmount)
+                    .ID("AdvancePaymentAmountEditor")
+                    .Width(200)
+                    .NullText("Advance Payment Amount")
+                    .ValidatorOptions(options => options.OnBlur(false).OnChange(false))
+                    .Value(null)
+                    .Render()
+                )
+
+            </p>
+            <p>
+                @Html.Label("Email Address")
+                <br />
+
+                @(Html.Infragistics().TextEditorFor(m => m.ContactEmail)
+                    .ID("ContactEmailAddressEditor")
+                    .Width(200)
+                    .NullText("Email Address")
+                    .Value(null)
+                    .ValidatorOptions(options => options.OnBlur(false).OnChange(false).OnSubmit(true))
+                    .Render()
+                )
+
+            </p>
+            <input type="submit" id="btnSubmit" value='Submit' />
+            <br />
+            <br />
+        </fieldset>
+        
+        var submittedModel = ViewData["submittedModel"] as IgniteUI.SamplesBrowser.Models.DataAnnotations.ValidatedOrder;            
+        
+        if (submittedModel != null)
+        { 
+        <fieldset class="submittedFieldSet">
+            <p>
+                <b>Submitted Order</b>
+            </p>
+            <p>
+                @Html.Label("Ship Date")<br />
+                @submittedModel.OrderShipDate.ToShortDateString() 
+            </p>
+            <p>
+                @Html.Label("Due Date")
+                <br />
+                @submittedModel.OrderDueDate.ToShortDateString() 
+            </p>
+            <p>
+                @Html.Label("Customer Name")
+                <br />
+                @submittedModel.CustomerName.ToString() 
+            </p>
+            <p>
+                @Html.Label("Method of Shipment")<br />
+                @submittedModel.ShipMethod.ToString() 
+            </p>
+            <p>
+                @Html.Label("Contact Phone")<br />
+                @submittedModel.ContactPhoneNumber.ToString() 
+            </p>
+            <p>
+                @Html.Label("Advance Payment Amount")
+                <br />
+                @submittedModel.AdvancePaymentAmount.ToString() 
+            </p>
+            <p>
+                @Html.Label("Email Address")
+                <br />
+                @submittedModel.ContactEmail.ToString() 
+            </p>
+        </fieldset>
+        }
+    }
+
+    <script>
+
+        $(function () {
+            $("#btnSubmit").igButton({
+                labelText: $("#btnSubmit").val()
+            });
+        });
+
+    </script>
+
+</body>
+</html>

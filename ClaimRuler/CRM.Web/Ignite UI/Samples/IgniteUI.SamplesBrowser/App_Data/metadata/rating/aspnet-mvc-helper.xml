@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>ASP.NET MVC Helper</Title>
+    <Description>This sample demonstrates how to configure the basic properties of the igRating control using the ASP.NET MVC helper.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>ASP.NET MVC ヘルパー</Title>
+    <Description>このサンプルでは、ASP.NET MVC ヘルパー を使用して igRating コントロールのベーシックなプロパティを設定する方法を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+</Sample>

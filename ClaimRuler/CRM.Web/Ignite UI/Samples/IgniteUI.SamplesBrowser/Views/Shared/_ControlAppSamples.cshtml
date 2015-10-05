@@ -1,0 +1,13 @@
+﻿@model Infragistics.IgniteUI.SamplesBrowser.Shared.Entities.Control
+<aside class="igsb-control-apps">
+    <h3>@Resources.Main.Application_Samples</h3>
+    <p class="igsb-ctrl-app-txt">@Resources.Main.Control_App_Sample_Desc</p>
+    <ul>
+        @foreach (var link in Model.ApplicationSampleLinks)
+        {
+        <li class="contents-list-control">
+            <a target="_blank" href="@link.Url">@link.LinkText</a>
+        </li>
+        }
+    </ul>
+</aside>

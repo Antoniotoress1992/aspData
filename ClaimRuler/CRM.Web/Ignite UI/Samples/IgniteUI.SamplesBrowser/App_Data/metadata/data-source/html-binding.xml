@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>HTML Binding</Title>
+    <Description>
+        This sample demonstrates how to bind the igDataSource component to HTML Table Data. Press the "Databind" button to bind the data source to the table above. When you click the "Databind" button, the contents of the first HTML table will be extracted by the data source, and rendered dynamically in another templated table, below the first one.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>HTML のバインド</Title>
+    <Description>
+      このサンプルでは、igDataSource コンポーネントを HTML テーブル データにバインドする方法を紹介します。[データバインド] ボタンをクリックすると、以上のテーブルにデータソースをバインドします。[データバインド] ボタンをクリックすると、最初の HTML テーブルはデータ ソースによって抽出され、他のテンプレート テーブルに動的に描画されます。以下は最初のテーブルです。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

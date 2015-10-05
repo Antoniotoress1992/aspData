@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>DataTable Binding</Title>
+    <Description>Using the ASP.NET MVC helper, you can bind the igGrid directly to DataTable objects.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>DataTable のバインド</Title>
+    <Description>ASP.NET MVC ヘルパーを使用して、igGrid を直接 DataTable オブジェクトにバインドできます。</Description>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+</Sample>

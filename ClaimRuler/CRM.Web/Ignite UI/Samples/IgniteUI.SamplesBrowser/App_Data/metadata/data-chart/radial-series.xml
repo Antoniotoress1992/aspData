@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Radial Series</Title>
+    <Description>This sample shows Radial Series of the igDataChart control.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Series Types" TopicName="igDataChart_Series_Types" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>ラジアル シリーズ</Title>
+    <Description>このサンプルでは、igDataChart コントロールのラジアル シリーズを紹介します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="シリーズ タイプ" TopicName="igDataChart_Series_Types" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

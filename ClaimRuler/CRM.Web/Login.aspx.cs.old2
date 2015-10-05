@@ -1,0 +1,1066 @@
+﻿
+namespace CRM.Web
+{
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Web;
+    using System.Web.UI;
+    using System.Web.UI.WebControls;
+    using System.Web.Security;
+    using CRM.Core;
+    using LinqKit;
+
+    using CRM.Data;
+    using CRM.Data.Account;
+    using CRM.Repository;
+    using CRM.Data.Entities;
+    using CRM.Web.UserControl.Admin;
+    using System.Configuration;
+    using System.Data.SqlClient;
+
+    using System.Data;
+    using System.Threading;
+    using System.Xml.Linq;
+    using CRM.RuleEngine;
+    using System.Web.SessionState;
+
+
+    public partial class Login : System.Web.UI.Page
+    {
+        string connectionString = ConfigurationManager.ConnectionStrings["ClaimRuler"].ConnectionString;
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            Page.SetFocus(txtUserName);
+
+        }
+
+
+        List<SecRoleModuleManager.secRoleModuleGet> resRolePermission = new List<SecRoleModuleManager.secRoleModuleGet>();
+        Worker workerObject = new Worker();
+        Thread workerThread = null;
+        public void DoAuthenticate(CRM.Data.Entities.SecUser user)
+        {
+            string url = null;
+            string userData = null;
+            List<int> roleActions = null;
+
+            Session["UserId"] = user.UserId;
+            Session["UserName"] = user.UserName;
+            Session["RoleId"] = user.SecRole.RoleId.ToString();
+
+            // 201307-29
+            Session["ClientId"] = user.ClientID;
+            if (user.Client.Count > 0)
+            {
+                Session["ClientShowTask"] = user.Client == null ? true : (user.Client.FirstOrDefault().isShowTasks ?? true);
+            }
+            else
+            {
+                Session["ClientShowTask"] = true;
+            }
+
+            userData = string.Format("{0}|{1}|{2} {3}|{4}", user.SecRole.RoleName, user.SecRole.RoleId, user.FirstName, user.LastName, user.Email);
+
+            var ticket = new FormsAuthenticationTicket
+                (
+                   1,
+                   user.UserId.ToString(),
+                   DateTime.Now,
+                   DateTime.Now.AddMinutes(120),
+                   true,
+                   userData,	//(user.SecRole.RoleName + "|" + user.SecRole.RoleId.ToString()),
+                   FormsAuthentication.FormsCookiePath
+                );
+
+            string encryptedTicket = FormsAuthentication.Encrypt(ticket);
+            Response.Cookies.Add(new HttpCookie(FormsAuthentication.FormsCookieName, encryptedTicket));
+            Session["rolePermission"] = resRolePermission = SecRoleModuleManager.getRolePermission(user.SecRole.RoleId).ToList();
+
+            // get role actions
+            if (user.RoleId != (int)UserRole.Administrator)
+            {
+                using (ActionManager repository = new ActionManager())
+                {
+                    roleActions = repository.GetActions((int)user.ClientID, (int)user.RoleId);
+                    Session["roleActions"] = roleActions;
+                }
+            }
+
+            //if (user.SecRole.RoleId == (int)UserRole.Adjuster)
+            //	url = "~/Protected/Intake/form.aspx";
+            //else
+            if (Request.QueryString["url"] != null)
+            {
+                url = Request.QueryString["url"].ToString();
+            }
+            else
+            {
+                url = FormsAuthentication.DefaultUrl;
+                Session["Count"] = null;
+
+                object leadView = formatExceptionLead();
+                formatException();
+                setRulexception();
+                
+                
+                object se = Session;
+                setGlobalSession();
+ 
+                Thread thread = new Thread(delegate()
+                {
+                    workerObject.DoWork(leadView, Session);
+                }); 
+                //ThreadPool.QueueUserWorkItem(new WaitCallback(workerObject.DoWork), leadView, testse);
+               
+               // workerThread = new Thread(workerObject.DoWork);
+
+                thread.Start();
+            }
+
+            Response.Redirect(url);
+        }
+        List<LoginTrials> resLoginTrails = new List<LoginTrials>();
+
+        public void setGlobalSession() {
+            Globals gv = Globals.Instance();
+            int[] claimInt = new int[50];
+            ucAllUserLeads userGetClaim = new ucAllUserLeads();
+            List<LeadView> lead = new List<LeadView>();
+            lead = userGetClaim.getLeadList();
+
+            for (var i = 0; i < lead.Count; i++)
+            {
+                claimInt[i] = lead[i].ClaimID;
+            }
+
+
+            gv.setCliamList(claimInt);
+            //gv.setClaimId(Session["ClaimID"].ToString());
+            gv.setUserId(Session["UserId"].ToString());
+            gv.setUserName(Session["UserName"].ToString());
+            //gv.setClaimId(Session["RoleId"].ToString());
+            gv.setClientId(Session["ClientId"].ToString());
+            //gv.setClaimId(Session["ClientShowTask"].ToString());
+            //gv.setClaimId(Session["rolePermission"].ToString());
+            //gv.setClaimId(Session["roleActions"].ToString());
+            //gv.setClaimId(Session["Count"].ToString());
+            gv.setclaimCount(lead.Count);
+                
+            
+        }
+
+        public void formatException()
+        {
+            ucAllUserLeads userGetClaim = new ucAllUserLeads();
+            List<LeadView> leadView = new List<LeadView>();
+            leadView = userGetClaim.getLeadList();
+            int clientID = Convert.ToInt32(Session["ClientId"]);
+            int userID = Convert.ToInt32(Session["UserId"]);
+            int claimId = 0;
+
+            for (int i = 0; i < leadView.Count; i++)
+            {
+                claimId = leadView[i].ClaimID;
+                formatExceptions(clientID, userID, claimId);
+            }
+            
+        }
+
+        public object formatExceptionLead()
+        {
+            ucAllUserLeads userGetClaim = new ucAllUserLeads();
+            List<LeadView> leadView = new List<LeadView>();
+            leadView = userGetClaim.getLeadList();
+            
+
+           
+            return leadView;
+        }
+        public void formatExceptionm(HttpContext ctx)
+        {
+            ucAllUserLeads userGetClaim = new ucAllUserLeads();
+            List<LeadView> leadView = new List<LeadView>();
+            leadView = userGetClaim.getLeadList();
+            int clientID = Convert.ToInt32(Session["ClientId"]);
+            int userID = Convert.ToInt32(Session["UserId"]);
+            int claimId;
+
+            for (int i = 0; i < leadView.Count; i++)
+            {
+                claimId = leadView[i].ClaimID;
+                formatExceptions(clientID, userID, claimId);
+            }
+        }
+        public void formatExceptions(int clientID, int userID, int claimId)
+        {
+            string str_query = @"update RuleException set IsActive = 0 
+                                    where
+                                        
+                                        ClientID=@ClientID and
+                                        UserID=@UserID and
+                                        ObjectID=@ObjectID                   
+                                ";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlCommand cmd = new SqlCommand(str_query, conn))
+            {
+
+                cmd.Parameters.AddWithValue("@ClientID", clientID);
+                cmd.Parameters.AddWithValue("@ObjectID", claimId);
+
+                cmd.Parameters.AddWithValue("@UserID", userID);
+
+                conn.Open();
+
+
+                cmd.ExecuteNonQuery();
+                conn.Close();
+                conn.Dispose();
+
+
+                conn.Close();
+            }
+
+        }
+        public void setRulexception()
+        {
+            ucAllUserLeads userGetClaim = new ucAllUserLeads();
+            List<LeadView> leadView = new List<LeadView>();
+            leadView = userGetClaim.getLeadList();
+            int clientID = Convert.ToInt32(Session["ClientId"]);
+            int userID = Convert.ToInt32(Session["UserId"]);
+            int claimId;
+
+            for (int i = 0; i < leadView.Count; i++)
+            {
+                claimId = leadView[i].ClaimID;
+                int progressId = getProgressId(claimId);
+                DateTime progressDate = progressClaimRecievedData(claimId);
+
+                if (progressId != 0)
+                {
+
+                    List<int> ruleId = getRuleId(progressId);
+                    for (var j = 0; j < ruleId.Count; j++)
+                    {
+                        if (ruleId.Count != 0)
+                        {
+                            List<BusinessRule> businessRuleArr = new List<BusinessRule>();
+                            businessRuleArr = getBusinessRuleId(clientID, ruleId[j]);
+                            for (var k = 0; k < businessRuleArr.Count; k++)
+                            {
+                                int timeInterval = getTimeFlag(businessRuleArr[k].RuleXML, businessRuleArr[k].Description);
+                                TimeSpan timeDiff = DateTime.Now - progressDate;
+                                if (timeDiff.Seconds > 0)
+                                {
+                                    int checkstate = checkInsertable(businessRuleArr[k].BusinessRuleID, clientID, userID, claimId);
+                                    if (checkstate == 0)
+                                    {
+                                        insertRuleException(businessRuleArr[k].BusinessRuleID, clientID, userID, claimId);
+                                    }
+                                    if (checkstate == 1)
+                                    {
+                                        updateRuleException(businessRuleArr[k].BusinessRuleID, clientID, userID, claimId);
+                                    }
+                                }
+                            }
+
+                        }
+
+                    }
+
+                }
+            }
+
+        }
+
+        public int checkInsertable(int businessruleId, int clientId, int userId, int claimId)
+        {
+            int insertState = 0;
+            string str_query = @"SELECT * FROM RuleException WHERE 
+                                        BusinessRuleID = @businessRuleId and
+                                        ClientID = @clientId and
+                                        UserID = @userId and
+                                        ObjectID = @claimId";
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlCommand cmd = new SqlCommand(str_query, conn))
+            {
+                cmd.Parameters.AddWithValue("@businessRuleId", businessruleId);
+                cmd.Parameters.AddWithValue("@clientId", clientId);
+                cmd.Parameters.AddWithValue("@userId", userId);
+                cmd.Parameters.AddWithValue("@claimId", claimId);
+
+                conn.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    int active = Convert.ToInt32(reader["IsActive"]);
+                    if (active == 0) { insertState = 1; } else { insertState = 2; }
+
+                }
+
+                conn.Close();
+            }
+
+
+            return insertState;
+
+
+        }
+
+
+        public int getTimeFlag(string ruleXml, string value)
+        {
+            int timeInterval = 0;
+            int rulexml = Convert.ToInt32(ruleXml);
+            int timeValue = Convert.ToInt32(value);
+
+            if (rulexml == 1)
+            {
+                timeInterval = timeValue;
+            }
+            if (rulexml == 2)
+            {
+                timeInterval = timeValue * 24;
+            }
+            return timeInterval;
+
+        }
+        public int getProgressId(int claimId)
+        {
+            int progress = 0;
+            string str_query = @"SELECT * FROM Claim WHERE ClaimId = @claimId";
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlCommand cmd = new SqlCommand(str_query, conn))
+            {
+                cmd.Parameters.AddWithValue("@claimId", claimId);
+
+                conn.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    if (reader["ProgressStatusID"] != DBNull.Value)
+                    {
+                        progress = Convert.ToInt32(reader["ProgressStatusID"]);
+
+                    }
+
+                }
+
+                conn.Close();
+            }
+            return progress;
+        }
+
+        public List<int> getRuleId(int progressId)
+        {
+
+            List<int> ruleIds = new List<int>();
+            if (checkRuleId1(progressId) == 1) { ruleIds.Add((int)Globals.RuleType.NewClaimAttention); }
+            if (checkRuleId2(progressId) == 1) { ruleIds.Add((int)Globals.RuleType.ClaimAssingmentReview); }
+            if (checkRuleId3(progressId) == 1) { ruleIds.Add((int)Globals.RuleType.ContactWithInsured); }
+            if (checkRuleId4(progressId) == 1) { ruleIds.Add((int)Globals.RuleType.FirstReport); }
+            if (checkRuleId5(progressId) == 1) { ruleIds.Add((int)Globals.RuleType.InterimOrFinalReportOrClaimClosing); }
+            return ruleIds;
+        }
+        public DateTime progressClaimRecievedData(int claimId)
+        {
+            DateTime progressDate = new DateTime();
+
+            string str_query = @"SELECT * FROM Claim WHERE ClaimId = @claimId";
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlCommand cmd = new SqlCommand(str_query, conn))
+            {
+                cmd.Parameters.AddWithValue("@claimId", claimId);
+
+                conn.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    if (reader["DateOpenedReported"] != DBNull.Value)
+                    {
+                        progressDate = Convert.ToDateTime(reader["DateOpenedReported"]);
+
+                    }
+                    
+                }
+
+                conn.Close();
+            }
+
+
+
+            return progressDate;
+        }
+        public int checkRuleId1(int progressId)
+        {
+            int result = 0;
+            if (progressId == 16) { result = 1; }
+            if (progressId == 0) { result = 1; }
+            return result;
+        }
+        public int checkRuleId2(int progressId)
+        {
+            int result = 0;
+            if (progressId == 16) { result = 1; }
+            if (progressId == 1) { result = 1; }
+            if (progressId == 0) { result = 1; }
+            return result;
+        }
+        public int checkRuleId3(int progressId)
+        {
+            int result = 0;
+            if (progressId == 16) { result = 1; }
+            if (progressId == 1) { result = 1; }
+            if (progressId == 2) { result = 1; }
+            if (progressId == 0) { result = 1; }
+            return result;
+        }
+        public int checkRuleId4(int progressId)
+        {
+            int result = 0;
+            if (progressId == 16) { result = 1; }
+            if (progressId == 1) { result = 1; }
+            if (progressId == 2) { result = 1; }
+            if (progressId == 3) { result = 1; }
+            if (progressId == 4) { result = 1; }
+            if (progressId == 5) { result = 1; }
+            if (progressId == 0) { result = 1; }
+            return result;
+        }
+        public int checkRuleId5(int progressId)
+        {
+            int result = 0;
+            if (progressId == 16) { result = 1; }
+            if (progressId == 1) { result = 1; }
+            if (progressId == 2) { result = 1; }
+            if (progressId == 3) { result = 1; }
+            if (progressId == 4) { result = 1; }
+            if (progressId == 5) { result = 1; }
+            if (progressId == 6) { result = 1; }
+            if (progressId == 0) { result = 1; }
+            return result;
+        }
+
+
+        public List<BusinessRule> getBusinessRuleId(int clientID, int ruleId)
+        {
+            List<BusinessRule> businessRuleArr = new List<BusinessRule>();
+
+            string str_query = @"SELECT * FROM BusinessRule WHERE ClientID = @clientID and RuleID = @ruleId and IsActive = 1";
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlCommand cmd = new SqlCommand(str_query, conn))
+            {
+                cmd.Parameters.AddWithValue("@clientID", clientID);
+
+                cmd.Parameters.AddWithValue("@ruleId", ruleId);
+                conn.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    BusinessRule businessRuleObj = new BusinessRule();
+
+                    businessRuleObj.BusinessRuleID = Convert.ToInt32(reader["BusinessRuleID"]);
+
+
+                    XElement ruleXML = XElement.Parse(reader["RuleXML"].ToString());
+
+
+                    using (RuleHelper ruleHelper = new RuleHelper())
+                    {
+                        XElement conditionLapseTime = ruleHelper.GetElement(ruleXML, "LapseTime");
+                        businessRuleObj.Description = conditionLapseTime.Element("value").Value;
+
+                        XElement conditionLapseTimeType = ruleHelper.GetElement(ruleXML, "LapseTimeType");
+                        businessRuleObj.RuleXML = conditionLapseTimeType.Element("value").Value;
+                    }
+                    businessRuleArr.Add(businessRuleObj);
+                }
+
+                conn.Close();
+            }
+
+
+            return businessRuleArr;
+        }
+
+        public void insertRuleException(int BusinessRuleId, int clientID, int userID, int claimId)
+        {
+            string str_query = @"INSERT INTO RuleException (BusinessRuleID, ClientID ,ObjectID, ExceptionDate ,ObjectTypeID,UserID,IsActive)  
+                                    VALUES (@BusinessRuleID,@ClientID,@ObjectID,@ExceptionDate,@ObjectTypeID,@UserID,@active)
+                                ";
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlCommand cmd = new SqlCommand(str_query, conn))
+            {
+                cmd.Parameters.AddWithValue("@BusinessRuleID", BusinessRuleId);
+                cmd.Parameters.AddWithValue("@ClientID", clientID);
+                cmd.Parameters.AddWithValue("@ObjectID", claimId);
+                cmd.Parameters.AddWithValue("@ObjectTypeID", 1);
+                cmd.Parameters.AddWithValue("@UserID", userID);
+                cmd.Parameters.AddWithValue("@ExceptionDate", DateTime.Now);
+                cmd.Parameters.AddWithValue("@active", true);
+                conn.Open();
+
+
+                cmd.ExecuteNonQuery();
+                conn.Close();
+                conn.Dispose();
+
+
+                conn.Close();
+            }
+
+
+        }
+        public void updateRuleException(int BusinessRuleId, int clientID, int userID, int claimId)
+        {
+            string str_query = @"update RuleException set IsActive = 1 
+                                    where
+                                        BusinessRuleID = @BusinessRuleID and
+                                        ClientID=@ClientID and
+                                        UserID=@UserID and
+                                        ObjectID=@ObjectID                   
+                                ";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlCommand cmd = new SqlCommand(str_query, conn))
+            {
+                cmd.Parameters.AddWithValue("@BusinessRuleID", BusinessRuleId);
+                cmd.Parameters.AddWithValue("@ClientID", clientID);
+                cmd.Parameters.AddWithValue("@ObjectID", claimId);
+
+                cmd.Parameters.AddWithValue("@UserID", userID);
+
+                conn.Open();
+
+
+                cmd.ExecuteNonQuery();
+                conn.Close();
+                conn.Dispose();
+
+
+                conn.Close();
+            }
+
+        }
+        protected void btnSubmit_click(object sender, EventArgs e)
+        {
+
+            CRM.Data.Entities.SecUser user = SecUserManager.GetByUserName(txtUserName.Text.Trim());
+            if (user.UserName != null && user.Password != null)
+            {
+                string password = SecurityManager.Decrypt(user.Password);
+
+                if (user.UserId > 0 && password.Equals(txtPassword.Text.Trim()))
+                {
+                    lblError.Visible = false;
+
+
+                    DoAuthenticate(user);
+
+                }
+                else
+                {
+                    lblError.Visible = true;
+                    lblError.Text = "Invalid User Name or Password!";
+                    createLoginLog(user.UserId, false);
+
+                }
+            }
+            else
+            {
+                lblError.Visible = true;
+                lblError.Text = "Invalid User Name or Password!";
+                return;
+            }
+
+        }
+
+
+        private void checkforLoginAttempt()
+        {
+
+        }
+
+        private void createLoginLog(int UserId, bool sucess)
+        {
+
+
+            SecLoginLog loginlog = new SecLoginLog();
+            loginlog.UserId = UserId;
+            loginlog.LoginId = txtUserName.Text.Trim();
+            loginlog.LoginTime = DateTime.Now;
+            loginlog.LogoutTime = DateTime.Now;
+            if (sucess == true)
+            {
+                loginlog.Sucess = true;
+            }
+            else
+            {
+                loginlog.Sucess = false;
+            }
+            loginlog.CreatedMachineIP = Request.ServerVariables["remote_addr"].ToString();
+            SecLoginLogManager.Save(loginlog);
+        }
+
+
+
+    }
+    public class Worker : System.Web.UI.Page
+    {
+        public int k = 0;
+        string connectionString = ConfigurationManager.ConnectionStrings["ClaimRuler"].ConnectionString;
+        public void DoWork()
+        {
+
+            int claimId = 0;
+            Globals gvGet = Globals.Instance();
+            int clientID = Convert.ToInt32(gvGet.getClientId());
+            int userID = Convert.ToInt32(gvGet.getUserId());
+            int claimCount = gvGet.getclaimCount();
+            int[] claimList = new int[50];
+            claimList = gvGet.getCliamList();
+
+            //string str_tmp = gv.getTestValue();
+            while (!_shouldStop)
+            {
+
+
+                for (int i = 0; i < claimCount; i++)
+                {
+                    claimId = claimList[i];
+                    formatExceptions(clientID, userID, claimId);
+                }
+                for (int i = 0; i < claimCount; i++)
+                {
+                    claimId = claimList[i];
+                    int progressId = getProgressId(claimId);
+                    DateTime progressDate = progressClaimRecievedData(claimId);
+
+                    if (progressId != 0)
+                    {
+
+                        List<int> ruleId = getRuleId(progressId);
+                        for (var j = 0; j < ruleId.Count; j++)
+                        {
+                            if (ruleId.Count != 0)
+                            {
+                                List<BusinessRule> businessRuleArr = new List<BusinessRule>();
+                                businessRuleArr = getBusinessRuleId(clientID, ruleId[j]);
+                                for (var k = 0; k < businessRuleArr.Count; k++)
+                                {
+                                    int timeInterval = getTimeFlag(businessRuleArr[k].RuleXML, businessRuleArr[k].Description);
+                                    TimeSpan timeDiff = DateTime.Now - progressDate;
+                                    if (timeDiff.Seconds > 0)
+                                    {
+                                        int checkstate = checkInsertable(businessRuleArr[k].BusinessRuleID, clientID, userID, claimId);
+                                        if (checkstate == 0)
+                                        {
+                                            insertRuleException(businessRuleArr[k].BusinessRuleID, clientID, userID, claimId);
+                                        }
+                                        if (checkstate == 1)
+                                        {
+                                            updateRuleException(businessRuleArr[k].BusinessRuleID, clientID, userID, claimId);
+                                        }
+                                    }
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+                Thread.Sleep(1000 * 60 * 1);
+            }
+
+
+        }
+        public void RequestStop()
+        {
+            _shouldStop = true;
+        }
+        private volatile bool _shouldStop = false;
+         public object formatException()
+        {
+            ucAllUserLeads userGetClaim = new ucAllUserLeads();
+            List<LeadView> leadView = new List<LeadView>();
+            leadView = userGetClaim.getLeadList();
+            int clientID = Convert.ToInt32(Session["ClientId"]);
+            int userID = Convert.ToInt32(Session["UserId"]);
+            int claimId = 0;
+
+            for (int i = 0; i < leadView.Count; i++)
+            {
+                claimId = leadView[i].ClaimID;
+                formatExceptions(clientID, userID, claimId);
+            }
+            return leadView;
+        }
+
+        
+       
+        public void formatExceptions(int clientID, int userID, int claimId)
+        {
+            string str_query = @"update RuleException set IsActive = 0 
+                                    where
+                                        
+                                        ClientID=@ClientID and
+                                        UserID=@UserID and
+                                        ObjectID=@ObjectID                   
+                                ";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlCommand cmd = new SqlCommand(str_query, conn))
+            {
+
+                cmd.Parameters.AddWithValue("@ClientID", clientID);
+                cmd.Parameters.AddWithValue("@ObjectID", claimId);
+
+                cmd.Parameters.AddWithValue("@UserID", userID);
+
+                conn.Open();
+
+
+                cmd.ExecuteNonQuery();
+                conn.Close();
+                conn.Dispose();
+
+
+                conn.Close();
+            }
+
+        }
+        public void setRulexception()
+        {
+            ucAllUserLeads userGetClaim = new ucAllUserLeads();
+            List<LeadView> leadView = new List<LeadView>();
+            leadView = userGetClaim.getLeadList();
+            int clientID = Convert.ToInt32(Session["ClientId"]);
+            int userID = Convert.ToInt32(Session["UserId"]);
+            int claimId;
+            
+            for (int i = 0; i < leadView.Count; i++)
+            {
+                claimId = leadView[i].ClaimID;
+                int progressId = getProgressId(claimId);
+                DateTime progressDate = progressClaimRecievedData(claimId);
+
+                if (progressId != 0)
+                {
+
+                    List<int> ruleId = getRuleId(progressId);
+                    for (var j = 0; j < ruleId.Count; j++)
+                    {
+                        if (ruleId.Count != 0)
+                        {
+                            List<BusinessRule> businessRuleArr = new List<BusinessRule>();
+                            businessRuleArr = getBusinessRuleId(clientID, ruleId[j]);
+                            for (var k = 0; k < businessRuleArr.Count; k++)
+                            {
+                                int timeInterval = getTimeFlag(businessRuleArr[k].RuleXML, businessRuleArr[k].Description);
+                                TimeSpan timeDiff = DateTime.Now - progressDate;
+                                if (timeDiff.Seconds > 0)
+                                {
+                                    int checkstate = checkInsertable(businessRuleArr[k].BusinessRuleID, clientID, userID, claimId);
+                                    if (checkstate == 0)
+                                    {
+                                        insertRuleException(businessRuleArr[k].BusinessRuleID, clientID, userID, claimId);
+                                    }
+                                    if (checkstate == 1)
+                                    {
+                                        updateRuleException(businessRuleArr[k].BusinessRuleID, clientID, userID, claimId);
+                                    }
+                                }
+                            }
+
+                        }
+
+                    }
+
+                }
+            }
+
+        }
+
+        public int checkInsertable(int businessruleId, int clientId, int userId, int claimId)
+        {
+            int insertState = 0;
+            string str_query = @"SELECT * FROM RuleException WHERE 
+                                        BusinessRuleID = @businessRuleId and
+                                        ClientID = @clientId and
+                                        UserID = @userId and
+                                        ObjectID = @claimId";
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlCommand cmd = new SqlCommand(str_query, conn))
+            {
+                cmd.Parameters.AddWithValue("@businessRuleId", businessruleId);
+                cmd.Parameters.AddWithValue("@clientId", clientId);
+                cmd.Parameters.AddWithValue("@userId", userId);
+                cmd.Parameters.AddWithValue("@claimId", claimId);
+
+                conn.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    int active = Convert.ToInt32(reader["IsActive"]);
+                    if (active == 0) { insertState = 1; } else { insertState = 2; }
+
+                }
+
+                conn.Close();
+            }
+
+
+            return insertState;
+
+
+        }
+
+
+        public int getTimeFlag(string ruleXml, string value)
+        {
+            int timeInterval = 0;
+            int rulexml = Convert.ToInt32(ruleXml);
+            int timeValue = Convert.ToInt32(value);
+
+            if (rulexml == 1)
+            {
+                timeInterval = timeValue;
+            }
+            if (rulexml == 2)
+            {
+                timeInterval = timeValue * 24;
+            }
+            return timeInterval;
+
+        }
+        public int getProgressId(int claimId)
+        {
+            int progress = 0;
+            string str_query = @"SELECT * FROM Claim WHERE ClaimId = @claimId";
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlCommand cmd = new SqlCommand(str_query, conn))
+            {
+                cmd.Parameters.AddWithValue("@claimId", claimId);
+
+                conn.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    if (reader["ProgressStatusID"] != DBNull.Value)
+                    {
+                        progress = Convert.ToInt32(reader["ProgressStatusID"]);
+
+                    }
+                    
+
+                }
+
+                conn.Close();
+            }
+            return progress;
+        }
+
+        public List<int> getRuleId(int progressId)
+        {
+
+            List<int> ruleIds = new List<int>();
+            if (checkRuleId1(progressId) == 1) { ruleIds.Add((int)Globals.RuleType.NewClaimAttention); }
+            if (checkRuleId2(progressId) == 1) { ruleIds.Add((int)Globals.RuleType.ClaimAssingmentReview); }
+            if (checkRuleId3(progressId) == 1) { ruleIds.Add((int)Globals.RuleType.ContactWithInsured); }
+            if (checkRuleId4(progressId) == 1) { ruleIds.Add((int)Globals.RuleType.FirstReport); }
+            if (checkRuleId5(progressId) == 1) { ruleIds.Add((int)Globals.RuleType.InterimOrFinalReportOrClaimClosing); }
+            return ruleIds;
+        }
+        public DateTime progressClaimRecievedData(int claimId)
+        {
+            DateTime progressDate = new DateTime();
+
+            string str_query = @"SELECT * FROM Claim WHERE ClaimId = @claimId";
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlCommand cmd = new SqlCommand(str_query, conn))
+            {
+                cmd.Parameters.AddWithValue("@claimId", claimId);
+
+                conn.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    if (reader["DateOpenedReported"] != DBNull.Value)
+                    {
+                        progressDate = Convert.ToDateTime(reader["DateOpenedReported"]);
+
+                    }
+                   
+                }
+
+                conn.Close();
+            }
+
+
+
+            return progressDate;
+        }
+        public int checkRuleId1(int progressId)
+        {
+            int result = 0;
+            if (progressId == 16) { result = 1; }
+            return result;
+        }
+        public int checkRuleId2(int progressId)
+        {
+            int result = 0;
+            if (progressId == 16) { result = 1; }
+            if (progressId == 1) { result = 1; }
+            return result;
+        }
+        public int checkRuleId3(int progressId)
+        {
+            int result = 0;
+            if (progressId == 16) { result = 1; }
+            if (progressId == 1) { result = 1; }
+            if (progressId == 2) { result = 1; }
+            return result;
+        }
+        public int checkRuleId4(int progressId)
+        {
+            int result = 0;
+            if (progressId == 16) { result = 1; }
+            if (progressId == 1) { result = 1; }
+            if (progressId == 2) { result = 1; }
+            if (progressId == 3) { result = 1; }
+            if (progressId == 4) { result = 1; }
+            if (progressId == 5) { result = 1; }
+            return result;
+        }
+        public int checkRuleId5(int progressId)
+        {
+            int result = 0;
+            if (progressId == 16) { result = 1; }
+            if (progressId == 1) { result = 1; }
+            if (progressId == 2) { result = 1; }
+            if (progressId == 3) { result = 1; }
+            if (progressId == 4) { result = 1; }
+            if (progressId == 5) { result = 1; }
+            if (progressId == 6) { result = 1; }
+            return result;
+        }
+
+
+        public List<BusinessRule> getBusinessRuleId(int clientID, int ruleId)
+        {
+            List<BusinessRule> businessRuleArr = new List<BusinessRule>();
+
+            string str_query = @"SELECT * FROM BusinessRule WHERE ClientID = @clientID and RuleID = @ruleId and IsActive = 1";
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlCommand cmd = new SqlCommand(str_query, conn))
+            {
+                cmd.Parameters.AddWithValue("@clientID", clientID);
+
+                cmd.Parameters.AddWithValue("@ruleId", ruleId);
+                conn.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    BusinessRule businessRuleObj = new BusinessRule();
+
+                    businessRuleObj.BusinessRuleID = Convert.ToInt32(reader["BusinessRuleID"]);
+
+
+                    XElement ruleXML = XElement.Parse(reader["RuleXML"].ToString());
+
+
+                    using (RuleHelper ruleHelper = new RuleHelper())
+                    {
+                        XElement conditionLapseTime = ruleHelper.GetElement(ruleXML, "LapseTime");
+                        businessRuleObj.Description = conditionLapseTime.Element("value").Value;
+
+                        XElement conditionLapseTimeType = ruleHelper.GetElement(ruleXML, "LapseTimeType");
+                        businessRuleObj.RuleXML = conditionLapseTimeType.Element("value").Value;
+                    }
+                    businessRuleArr.Add(businessRuleObj);
+                }
+
+                conn.Close();
+            }
+
+
+            return businessRuleArr;
+        }
+
+        public void insertRuleException(int BusinessRuleId, int clientID, int userID, int claimId)
+        {
+            string str_query = @"INSERT INTO RuleException (BusinessRuleID, ClientID ,ObjectID, ExceptionDate ,ObjectTypeID,UserID,IsActive)  
+                                    VALUES (@BusinessRuleID,@ClientID,@ObjectID,@ExceptionDate,@ObjectTypeID,@UserID,@active)
+                                ";
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlCommand cmd = new SqlCommand(str_query, conn))
+            {
+                cmd.Parameters.AddWithValue("@BusinessRuleID", BusinessRuleId);
+                cmd.Parameters.AddWithValue("@ClientID", clientID);
+                cmd.Parameters.AddWithValue("@ObjectID", claimId);
+                cmd.Parameters.AddWithValue("@ObjectTypeID", 1);
+                cmd.Parameters.AddWithValue("@UserID", userID);
+                cmd.Parameters.AddWithValue("@ExceptionDate", DateTime.Now);
+                cmd.Parameters.AddWithValue("@active", true);
+                conn.Open();
+
+
+                cmd.ExecuteNonQuery();
+                conn.Close();
+                conn.Dispose();
+
+
+                conn.Close();
+            }
+
+
+        }
+        public void updateRuleException(int BusinessRuleId, int clientID, int userID, int claimId)
+        {
+            string str_query = @"update RuleException set IsActive = 1 
+                                    where
+                                        BusinessRuleID = @BusinessRuleID and
+                                        ClientID=@ClientID and
+                                        UserID=@UserID and
+                                        ObjectID=@ObjectID                   
+                                ";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlCommand cmd = new SqlCommand(str_query, conn))
+            {
+                cmd.Parameters.AddWithValue("@BusinessRuleID", BusinessRuleId);
+                cmd.Parameters.AddWithValue("@ClientID", clientID);
+                cmd.Parameters.AddWithValue("@ObjectID", claimId);
+
+                cmd.Parameters.AddWithValue("@UserID", userID);
+
+                conn.Open();
+
+
+                cmd.ExecuteNonQuery();
+                conn.Close();
+                conn.Dispose();
+
+
+                conn.Close();
+            }
+
+        }
+    
+
+     
+
+    }
+    public class LoginTrials
+    {
+        public int LoginId { get; set; }
+        public int Trial { get; set; }
+        public DateTime TrailTime { get; set; }
+    }
+   
+}

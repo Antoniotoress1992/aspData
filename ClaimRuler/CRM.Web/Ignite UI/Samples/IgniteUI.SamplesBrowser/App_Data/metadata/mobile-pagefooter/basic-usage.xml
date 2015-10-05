@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title></Title>
+    <Description></Description>
+    <HelpTopics>
+      <HelpTopic Title="Adding PageFooter" TopicName="Adding_PageFooter" />
+      <HelpTopic Title="Overview" TopicName="PageFooter_Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title></Title>
+    <Description></Description>
+    <HelpTopics>
+      <HelpTopic Title="PageFooter の追加" TopicName="Adding_PageFooter" />
+      <HelpTopic Title="概要" TopicName="PageFooter_Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+  <RedirectToSample CopyTargetTitleAndDescription="both">mobile-page/basic-usage</RedirectToSample>
+  <ServerRuntime></ServerRuntime>
+  <Status></Status>
+</Sample>

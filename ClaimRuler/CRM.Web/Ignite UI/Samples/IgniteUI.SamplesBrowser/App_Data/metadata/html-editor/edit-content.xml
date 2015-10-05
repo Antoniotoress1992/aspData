@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Edit Content</Title>
+    <Description>In this forum post example, an initial piece of content provided in the HTML Editor.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>内容を編集する</Title>
+    <Description>このフォーラム投稿のサンプルでは、HTML エディターでコンテンツを提供します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>TabletPortrait</MinSampleSize>
+</Sample>

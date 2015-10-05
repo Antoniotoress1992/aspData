@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>API and Events</Title>
+    <Description>The buttons and viewer below showcase some of igSparkline's methods and events. Initially, the 
+    databinding and databound events fire and you can see the results of the 'addItem' and 'removeItem' methods by clicking the corresponding buttons.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Overview" TopicName="igSparkline_Overview" />
+      <HelpTopic Title="Adding Sparkline" TopicName="igSparkline_Adding_igSparkline" />
+      <HelpTopic Title="MVC Helper API" TopicName="igSparkline_jQuery_and_ASPNET_MVC_API" />
+      <HelpTopic Title="Configuring" TopicName="igSparkline_Configuring" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>API およびイベント</Title>
+    <Description>
+      以下のボタンおよびビューアーは igSparkline のメソッドおよびイベントを紹介します。databinding および databound イベントが最初に発生します。対応するボタンをクリックすると、addItem および removeItem メソッドの結果を表示できます。
+    </Description>
+    <HelpTopics>
+      <HelpTopic Title="概要" TopicName="igSparkline_Overview" />
+      <HelpTopic Title="スパークラインの追加" TopicName="igSparkline_Adding_igSparkline" />
+      <HelpTopic Title="MVC ヘルパー API" TopicName="igSparkline_jQuery_and_ASPNET_MVC_API" />
+      <HelpTopic Title="構成" TopicName="igSparkline_Configuring" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

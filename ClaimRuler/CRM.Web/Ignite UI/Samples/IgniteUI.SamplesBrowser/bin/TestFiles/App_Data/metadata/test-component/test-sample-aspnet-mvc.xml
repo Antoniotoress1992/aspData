@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>ASP.NET Helper</Title>
+    <Description>This is the ASP.NET Helper.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>レスポンス Web デザイン モード</Title>
+    <Description></Description>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+</Sample>

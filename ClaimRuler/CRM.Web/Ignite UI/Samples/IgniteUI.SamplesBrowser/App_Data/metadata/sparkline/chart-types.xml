@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Chart Types</Title>
+    <Description>This sample shows all of the different chart types for the igSparkline. 
+    Configure the chart type by setting the displayType option to 'line', 'area', 'column', or 'winLoss'.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Overview" TopicName="igSparkline_Overview" />
+      <HelpTopic Title="Adding Sparkline" TopicName="igSparkline_Adding_igSparkline" />
+      <HelpTopic Title="Configuring" TopicName="igSparkline_Configuring" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>チャート タイプ</Title>
+    <Description>
+      このサンプルは igSparkline のチャート タイプをすべて表示します。チャート タイプを設定するには、displayType オプションを line、area、column、または winLoss に設定します。
+    </Description>
+    <HelpTopics>
+      <HelpTopic Title="概要" TopicName="igSparkline_Overview" />
+      <HelpTopic Title="スパークラインの追加" TopicName="igSparkline_Adding_igSparkline" />
+      <HelpTopic Title="構成" TopicName="igSparkline_Configuring" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

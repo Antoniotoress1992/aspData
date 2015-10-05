@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Row Selectors</Title>
+    <Description>
+        <![CDATA[
+        This sample demonstrates the Row Selectors feature of the igHierarchicalGrid. The Row Selectors feature provides the user with the functionality to select cell(s), or entire row(s) by clicking the row selector column placed on the left of the first column of the grid. In addition to that, the widget provides row numbering functionality and checkboxes for row selection.<br/>
+        Use the grids above to experience Row Selectors feature in different configurations.<br/>
+        Note: By default Row Selectors depends on the Selection feature and will throw an error when the Selection feature is not defined.
+        ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>行セレクター</Title>
+    <Description>
+    <![CDATA[
+        このサンプルでは、igHierarchicalGrid の行セレクター機能を紹介します。行セレクター機能は、グリッドの最初の列の左側に配置された行セレクター列をクリックすることで、セルまたは行全体を選択する機能をユーザーに提供します。さらに、そのウィジェットは行の番号付け機能や行を選択するためのチェックボックスを備えています。<br/>
+        以上のグリッドは、行セレクター機能の複数の構成を使用します。<br/>
+        注: 行セレクターは選択機能の依存関係があり、選択機能が定義されていない場合にエラーを発生します。
+        ]]>
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

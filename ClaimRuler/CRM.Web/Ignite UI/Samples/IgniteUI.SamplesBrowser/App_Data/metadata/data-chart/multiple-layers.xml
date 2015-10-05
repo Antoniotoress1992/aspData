@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Multiple Layers</Title>
+    <Description>This sample demonstrates how multiple layers interact within the igChart control. This sample displays the Category Tooltip Layer, the Crosshair layer and the Category Highlight Layer. </Description>
+    <HelpTopics>
+      <HelpTopic />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>複数レイヤー</Title>
+    <Description>このサンプルは igChart コントロールでインタラクティブな複数レイヤーを使用する方法を紹介します。このサンプルでは、カテゴリ ツールチップ レイヤー、十字ポインター レイヤー、およびカテゴリ強調表示レイヤーを表示します。</Description>
+    <HelpTopics>
+      <HelpTopic />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

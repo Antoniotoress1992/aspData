@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<rule>
+	<description>
+	</description>
+	<definition>
+		<condition type="equal">
+			<entity>Invoice</entity>
+			<value>10</value>
+		</condition>
+		<condition type="equal">
+			<entity>AdjusterID</entity>
+			<value>30</value>
+		</condition>
+	</definition>
+</rule>

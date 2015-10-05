@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">pivot-data-selector/using-the-asp-net-mvc-helper-with-flat-data-source</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      The igPivotDataSelector is a jQuery UI widget that enables users to select data slices, typically, when data is being visualized in an 
+      <a href="~/pivot-grid">igPivotGrid</a>. It is a supplementary control working together with the data source components. You can use it 
+      with <a href="~/pivot-data-selector/using-the-asp-net-mvc-helper-with-flat-data-source">flat</a> or 
+      <a href="~/pivot-data-selector/using-the-asp-net-mvc-helper-with-xmla-data-source">XMLA</a> data sources. 
+      See the complete list of samples in the menu.
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      igPivotDataSelector は、データが <a href="~/pivot-grid">igPivotGrid</a> で可視化されている場合にユーザーがデータ スライスを選択できる jQuery UI ウィジェットです。データ ソース コンポーネントと連携する補完コントロールです。<a href="~/pivot-data-selector/using-the-asp-net-mvc-helper-with-flat-data-source">フラット</a>または <a href="~/pivot-data-selector/using-the-asp-net-mvc-helper-with-xmla-data-source">XMLA</a> データ ソースと使用できます。サンプルをすべて表示するには、メニューを参照してください。
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

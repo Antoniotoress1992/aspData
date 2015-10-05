@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Infragistics Loader</Name>
+    <Description>
+      No need to memorize that long list of required files; the Infragistics Loader does it for you. Our small widget helps load only the required JavaScript and CSS files. All it needs are the names of the controls on the page to load all the file automatically and in the correct order.
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="ID" Value="ID"/>
+      <LocalizedSampleString Key="Name" Value="Name"/>
+      <LocalizedSampleString Key="Number" Value="Number"/>
+      <LocalizedSampleString Key="Cost" Value="Cost"/>
+      <LocalizedSampleString Key="last_name" Value="Last Name"/>
+      <LocalizedSampleString Key="first_name" Value="First Name"/>
+      <LocalizedSampleString Key="home_phone" Value="Home Phone"/>
+      <LocalizedSampleString Key="customer_id" Value="Customer ID"/>
+      <LocalizedSampleString Key="Freight" Value="Freight"/>
+      <LocalizedSampleString Key="ship_name" Value="Ship Name"/>
+      <LocalizedSampleString Key="ship_address" Value="Ship Address"/>
+      <LocalizedSampleString Key="ship_city" Value="Ship City"/>
+      <LocalizedSampleString Key="ship_country" Value="Ship Country"/>
+      <LocalizedSampleString Key="China" Value="China"/>
+      <LocalizedSampleString Key="India" Value="India"/>
+      <LocalizedSampleString Key="Japan" Value="Japan"/>
+      <LocalizedSampleString Key="uk" Value="United Kingdom"/>
+      <LocalizedSampleString Key="us" Value="United States"/>
+      <LocalizedSampleString Key="Countries" Value="Countries"/>
+      <LocalizedSampleString Key="instantiate_tree" Value="Instantiate Tree"/>
+      <LocalizedSampleString Key="radial_line" Value="Radial Line"/>
+      <LocalizedSampleString Key="radial_column" Value="Radial Column"/>
+      <LocalizedSampleString Key="radia_pie" Value="Radial Pie"/>
+      <LocalizedSampleString Key="Administration" Value="Administration"/>
+      <LocalizedSampleString Key="Sales" Value="Sales"/>
+      <LocalizedSampleString Key="IT" Value="IT"/>
+      <LocalizedSampleString Key="Marketing" Value="Marketing"/>
+      <LocalizedSampleString Key="Development" Value="Development"/>
+      <LocalizedSampleString Key="Support" Value="Support"/>
+      <LocalizedSampleString Key="Spending" Value="Spending"/>
+      <LocalizedSampleString Key="Budget" Value="Budget"/>
+      <LocalizedSampleString Key="Quantity" Value="Quantity"/>
+      <LocalizedSampleString Key="Price" Value="Price"/>
+    </LocalizedSampleStrings>
+    <PageKeywords>igLoader</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Infragistics Loader</Name>
+    <Description>
+      必要なファイルはすべて Infragistics Loader が処理します。ウィジェットが必要な JavaScript および CSS ファイルのみを読み込みます。ページのコントロール名を設定するだけで自動的に正しい順番でファイルを読み込みます。
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="ID" Value="ID"/>
+      <LocalizedSampleString Key="Name" Value="名前"/>
+      <LocalizedSampleString Key="Number" Value="数値"/>
+      <LocalizedSampleString Key="Cost" Value="原価"/>
+      <LocalizedSampleString Key="last_name" Value="名字"/>
+      <LocalizedSampleString Key="first_name" Value="名前"/>
+      <LocalizedSampleString Key="home_phone" Value="電話"/>
+      <LocalizedSampleString Key="customer_id" Value="顧客 ID"/>
+      <LocalizedSampleString Key="Freight" Value="発送"/>
+      <LocalizedSampleString Key="ship_name" Value="出荷名"/>
+      <LocalizedSampleString Key="ship_address" Value="配送先住所"/>
+      <LocalizedSampleString Key="ship_city" Value="配送先市町村"/>
+      <LocalizedSampleString Key="ship_country" Value="配送先の国"/>
+      <LocalizedSampleString Key="China" Value="中国"/>
+      <LocalizedSampleString Key="India" Value="インド"/>
+      <LocalizedSampleString Key="Japan" Value="日本"/>
+      <LocalizedSampleString Key="uk" Value="イギリス"/>
+      <LocalizedSampleString Key="us" Value="米国"/>
+      <LocalizedSampleString Key="Countries" Value="国"/>
+      <LocalizedSampleString Key="instantiate_tree" Value="ツリーのインスタンス化"/>
+      <LocalizedSampleString Key="radial_line" Value="ラジアル折れ線チャート"/>
+      <LocalizedSampleString Key="radial_column" Value="ラジアル柱状チャート"/>
+      <LocalizedSampleString Key="radia_pie" Value="ラジアル円チャート"/>
+      <LocalizedSampleString Key="Administration" Value="管理"/>
+      <LocalizedSampleString Key="Sales" Value="セールス"/>
+      <LocalizedSampleString Key="IT" Value="IT"/>
+      <LocalizedSampleString Key="Marketing" Value="マーケティング"/>
+      <LocalizedSampleString Key="Development" Value="開発"/>
+      <LocalizedSampleString Key="Support" Value="サポート"/>
+      <LocalizedSampleString Key="Spending" Value="支出"/>
+      <LocalizedSampleString Key="Budget" Value="予算"/>
+      <LocalizedSampleString Key="Quantity" Value="数量"/>
+      <LocalizedSampleString Key="Price" Value="価格"/>
+    </LocalizedSampleStrings>
+    <PageKeywords>igLoader</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>ig.loader</ClientApiUrl>
+  <HelpPageName>Using_Infragistics_Loader</HelpPageName>
+  <ForumNumber>515</ForumNumber>
+  <IconImage>jquery-loader.png</IconImage>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <TOC>
+    <Sample>basic-usage</Sample>
+    <Sample>aspnet-mvc-helper</Sample>
+    <Sample>download-all-features</Sample>
+    <Sample>dynamic-download</Sample>
+    <Sample>multiple-resources</Sample>
+  </TOC>
+</Component>

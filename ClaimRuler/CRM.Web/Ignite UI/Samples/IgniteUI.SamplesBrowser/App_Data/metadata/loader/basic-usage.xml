@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Basic Usage</Title>
+    <Description>This sample demonstrates how to initialize the loader using the JavaScript implementation. As shown in the accompanying code listings, you must provide the path to required CSS and JavaScript directories and declare which resources the loader will fetch for the page. This sample loads the igGrid control with the Sorting feature. </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>基本的な使用方法</Title>
+    <Description>このサンプルでは、JavaScript 実装を使用してローダーを初期化する方法を示します。必要な CSS と JavaScript ディレクトリへのパスを提供し、ローダーがページにフェッチするリソースを宣言する必要があります。このサンプルは並べ替え機能が有効な igGrid コントロールを読み込みます。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <IsFullPostBack>False</IsFullPostBack>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

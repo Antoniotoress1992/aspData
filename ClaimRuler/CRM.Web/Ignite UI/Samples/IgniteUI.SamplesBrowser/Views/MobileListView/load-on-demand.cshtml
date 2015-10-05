@@ -1,0 +1,98 @@
+﻿@using Infragistics.Web.Mvc.Mobile
+@model IQueryable<IgniteUI.SamplesBrowser.Models.Northwind.Category>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="@Url.Content("~/css/jqm/jquery.mobile.structure.min.css")" rel="stylesheet" />
+
+    <!-- Required Ignite UI Mobile Combined CSS Files -->
+    <link href="@Url.Content("~/igniteui/mobile/css/structure/infragistics.mobile.css")"  rel="stylesheet"/>
+    <link href="@Url.Content("~/igniteui/mobile/css/themes/ios/infragistics.mobile.theme.css")"  rel="stylesheet"/>
+    
+    <script src="@Url.Content("~/js/modernizr.min.js")"></script>
+    <script src="@Url.Content("~/js/jqm/jquery.min.js")"></script>
+    <script src="@Url.Content("~/js/jqm/jquery.mobile.min.js")"></script>
+
+    <!-- Required Ignite UI Mobile Combined JavaScript File -->
+    <script src="@Url.Content("~/igniteui/mobile/js/infragistics.mobile.js")"></script>
+</head>
+<body>
+    <div data-role="page">       
+            
+        <script>
+
+            $("#listview-load-on-demand-sample").bind("pagebeforecreate", function (e) {
+                $(this).page("option", "theme", "b");
+                $(this).page("option", "headerTheme", "b");
+            });
+
+            $("#listview-load-on-demand-sample").bind("pageinit", function (e) {
+                var flatListId = $("#loadOnDemandListView").igListView("rootWidget").element[0].id;
+
+                $("#" + flatListId).bind("iglistsubpagecreated", function (evt, ui) {
+                    ui.subPage.page().data().page.element[0].className = "ui-page ui-body-b";
+                });
+            });
+
+        </script>
+
+        <div data-role="content">
+
+            @( Html
+                .InfragisticsMobile()
+                .ListView(Model)
+                .ID("loadOnDemandListView")
+                .ResponseDataKey("Records")
+                .Inset(true)
+                .ImageMode(ImageMode.Icon)
+                .ItemTheme("c")
+                .SubPageHeaderTheme("b")
+                //Configures children to be requested from the server
+                .LoadChildrenOnDemand(true)
+                .Bindings(b =>
+                {
+                    b.HeaderKeyFor(c => c.CategoryName)
+                    .PrimaryKeyFor(c => c.ID)
+                    .CountKeyFor(c => c.ProductCount)
+                    .ImageUrlKeyFor(c => c.ImageUrl)
+                    .DetailsTitleKeyFor(c => c.CategoryName);
+                })
+                .ChildLayout(layout =>
+                {
+                    layout.For(c => c.Products)
+                    .Key("Products")
+                    .DataSourceUrl(Url.Action("categories-and-products-json"))
+                    .ResponseDataKey("Records")
+                    .ImageMode(ImageMode.Icon)
+                    .Inset(true)
+                    .Bindings(b =>
+                    {
+                        b.TextKeyFor(p => p.ProductName)
+                        .PrimaryKeyFor(p => p.ID)
+                        .DescriptionKeyFor(p => p.CategoryName)
+                        .ImageUrlKeyFor(p => p.CategoryImageUrl)
+                        .ForeignKeyFor(p => p.CategoryID);
+                    })
+                    .Features(f =>
+                    {
+                        //configures load on demand for the child layout
+                        f.LoadOnDemand()
+                        .Type(OpType.Remote)
+                        .PageSize(5);
+                    });
+                })
+                .DataBind()
+                .Render()
+            )
+
+
+        </div>
+    </div>
+
+</body>
+</html>

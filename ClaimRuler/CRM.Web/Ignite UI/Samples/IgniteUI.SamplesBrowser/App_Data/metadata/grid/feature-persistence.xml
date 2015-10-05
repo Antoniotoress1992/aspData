@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Feature Persistence</Title>
+    <Description>
+      The sample demonstrates the persistence between states when Sorting, Filtering, GroupBy and Selection are enabled.
+      The button will databind the grid to its data source.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>機能の永続化</Title>
+    <Description>
+      このサンプルでは、並べ替え、フィルタリング、グループ化、および選択が有効の場合、状態間の永続化を紹介します。
+      ボタンでグリッドをデータソースにバインドします。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status>New</Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

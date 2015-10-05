@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="../../igniteui/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+    <link href="../../igniteui/css/structure/infragistics.css" rel="stylesheet" />
+
+    <script src="../../js/modernizr.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="../../igniteui/js/infragistics.core.js"></script>
+    <script src="../../igniteui/js/infragistics.lob.js"></script>
+    <script src="../../igniteui/js/infragistics.dv.js"></script>
+</head>
+<body>
+    <table id="grid"></table>
+   
+    <script type="text/javascript" src="../../data-files/wind.js"></script>
+
+    <script type="text/javascript">
+        var lg; 
+        $(function () {
+
+            $("#grid").igGrid({
+                height: 500,
+                primaryKey:"id",
+                columns: [
+                    { headerText: "id", key: "id", dataType: "number", hidden: true},
+                    { headerText: "Time", key: "Time", dataType: "string", width: 80 },
+                    { headerText: "Wind Speed (mph)", key: "WindSpeed", dataType: "number", width: 160 },
+                    { headerText: "Wind Speed Gauge (mph)", key: "gauge", width: 370, template: "<div class='linear-gauge' ></div>" }
+                ],
+                dataSource: data,
+                autoGenerateColumns: false,
+                rowsRendered: function (evt, ui) {
+                    $(".linear-gauge").each(function (i) {
+                        var item = data[i];
+                        $(this).igLinearGauge({
+                            height: "60px",
+                            width: "100%",
+                            backingBrush: "transparent",
+                            backingOutline: "transparent",
+                            minimumValue: 0,
+                            maximumValue: 9,
+                            scaleEndExtent: 0.9,
+                            labelsPostInitial: 1, 
+                            value: item.WindSpeed,
+                            needleBrush: "white",
+                            needleOutline: "#2582a9",  
+                            ranges: [
+                                { name: "calm", startValue: 0, endValue: 1 },
+                                { name: "lightAir", startValue: 1, endValue: 4 },
+                                { name: "lightBreeze", startValue: 4, endValue: 7 },
+                                { name: "gentleBreeze", startValue: 7, endValue: 9 }
+                            ],
+                            transitionDuration: 1200, 
+                            labelInterval: 2,
+                            interval: 1
+                        });
+                    });
+                },
+                features: [
+                    {
+                        name: "Updating",
+                        enableAddRow: false,
+                        editMode: "cell",
+                        enableDeleteRow: false,
+                        showReadonlyEditors: false,
+                        enableDataDirtyException: false,
+                        columnSettings: [
+                            {
+                                columnKey: "WindSpeed",
+                                editorType: "numeric",
+                                validation: true,
+                                editorOptions: { minValue: 0, maxValue: 9, required: true }
+                            },
+                            {
+                                columnKey: "Time",
+                                readOnly: true
+                            },
+                            {
+                                columnKey: "gauge",
+                                readOnly: true
+                            }
+                        ],
+
+                        editCellEnding: function (evt, ui) {
+                            if (ui.value != ui.oldValue) { 
+                                lg = $(".linear-gauge").eq(ui.rowID).detach();
+                            } 
+                        },
+                        editCellEnded: function (evt, ui) {
+                            if (ui.value != ui.oldValue) { 
+                                $(".linear-gauge").eq(ui.rowID).remove();
+                                ui.owner.element.find("tr[data-id=" + ui.rowID + "]>td:eq(2)").append(lg);
+                                if (ui.columnKey == "WindSpeed") {
+                                    $(".linear-gauge").eq(ui.rowID).igLinearGauge("option", "value", ui.value);
+                                }
+                            }
+                        }
+                    }],
+                caption: "Raw Data from NOAA. Wind information from Los Angeles (07\\16\\2013) weather station."
+            });
+        });
+    </script>
+</body>
+</html>

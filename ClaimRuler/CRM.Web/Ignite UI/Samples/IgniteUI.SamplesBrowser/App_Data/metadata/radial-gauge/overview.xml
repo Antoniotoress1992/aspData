@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">radial-gauge/drag-needle</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      The igRadialGauge control is a data visualization tool capable of displaying a gauge containing a number of visual elements, 
+      such as a scale with <a href="~/radial-gauge/tickmarks">tick marks</a> and labels, 
+      <a href="~/radial-gauge/gauge-needle">a needle</a>, and a <a href="~/radial-gauge/range">number of ranges</a>. 
+      <a href="~/radial-gauge/scale-settings">Create a scale</a> by supplying minimumValue and maximumValue 
+      values and a needle can point to a value by setting the value property. The gauge also supports ranges, which provide visual cues 
+      for the scale. See the complete list of samples in the menu.
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      igRadialGauge コントロールは、ゲージを表示するデータ ビジュアライゼーション ツールです。スケール、<a href="~/radial-gauge/tickmarks">目盛り</a>、ラベル、<a href="~/radial-gauge/gauge-needle">針</a>、および<a href="~/radial-gauge/range">範囲</a>などの複数の視覚要素を含むことができます。     
+      minimumValue および maximumValue 値を設定して<a href="~/radial-gauge/scale-settings">スケールを作成</a>し、value プロパティを設定すると、針の値を設定します。
+      ゲージは、スケールの視覚的な合図である範囲もサポートします。サンプルをすべて表示するには、メニューを参照してください。
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

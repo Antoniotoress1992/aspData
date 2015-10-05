@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Virtualization (Continuous)</Title>
+    <Description>
+      This sample demonstrates the continuous virtualization capabilities of the igGrid control. Continuous virtualization is a feature that controls how rows are displayed in the grid i.e. only a chunk of the total rows in the data source are rendered in the DOM. As the user scrolls up and down the grid, the virtualization feature determines if the current rows are sufficient to display the next/previous portion of rows. If new rows are required, then the current portion of rows is disposed and the new portion of rows is created. Therefore a grid with 1,000 records in its data source may only display 30 at a time which significantly reduces the DOM overhead. One of the advantages when using continuous virtualization is that each row in the igGrid control could span on several lines. Thus, row height may vary from row to row.
+    </Description>
+</LocalizedContent>
+<LocalizedContent Language="ja">
+    <Title>仮想化 (連続)</Title>
+    <Description>
+      このサンプルでは、igGrid コントロールの連続仮想化機能を紹介します。連続仮想化は、グリッドで行を表示する方法を制御機能です。つまり、データ ソースのすべての行の部分のみが DOM に描画されます。ユーザーがグリッドでスクロールする際に、仮想化機能は現在の行で次の行部分を表示するかどうかを決定します。新しい行が必要な場合、現在の行を破棄し、新しい行を作成します。1,000 レコードを持つグリッドは、30 レコードのみを一度に表示するため、DOM オーバーヘッドを減らします。連続仮想化を使用する利点は、igGrid コントロールの各行を複数行にできることです。そのため行の高さは行ごとに異なります。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

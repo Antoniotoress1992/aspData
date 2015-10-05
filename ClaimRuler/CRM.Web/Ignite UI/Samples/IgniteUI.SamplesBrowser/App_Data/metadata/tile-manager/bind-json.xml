@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Binding to JSON</Title>
+    <Description>This sample demonstrates binding the Tile Manager control to JSON data source.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>JSON バインド</Title>
+    <Description>このサンプルでは、タイル マネージャー コントロールを JSON データ ソースにバインドする方法を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <IsResponsive>True</IsResponsive>
+  <MinSampleSize>PhonePortrait</MinSampleSize>
+</Sample>

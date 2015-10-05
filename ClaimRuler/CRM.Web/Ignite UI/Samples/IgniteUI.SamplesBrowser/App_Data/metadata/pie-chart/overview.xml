@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">pie-chart/json-binding</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      The igPieChart is a charting control for rendering pie charts in HTML5 Web applications and sites. It uses the new HTML5 canvas tag to plot pie charts on web pages. 
+      The main features of igPieChart include <a href="~/pie-chart/layout-configuration">legend, tooltips based on templates, controlling pie radius, controlling pie label 
+      position, start angle, sweep direction, exploded slices and distance from center for exploded slices</a>. See the complete list of samples in the menu.
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      igPieChart は、HTML5 による Web アプリケーションで円グラフを描画するチャート作成用コントロールです。これはウェブ ページに円グラフをプロットする際に新しい HTML5 canvas タグを使用します。
+      igPieChart の主な機能には、<a href="~/pie-chart/layout-configuration">凡例、テンプレートに従ったツール チップ、円の大きさのコントロール、ラベル位置のコントロール、開始角度、拡がりの方向、飛び出たスライスとその中心からの位置</a>といったものがあります。サンプルをすべて表示するには、メニューを参照してください。
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

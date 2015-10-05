@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>XML Binding</Title>
+    <Description>
+        This sample demonstrates how to bind igDataSource component to local XML data format.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>XML のバインド</Title>
+    <Description>
+      このサンプルでは、igDataSource コンポーネントをローカル XML にバインドしています。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

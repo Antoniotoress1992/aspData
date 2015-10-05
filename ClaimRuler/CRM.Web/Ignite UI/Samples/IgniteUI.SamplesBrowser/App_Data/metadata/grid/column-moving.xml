@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Column Moving</Title>
+    <Description>
+        This sample demonstrates the igGrid column moving functionality.
+        On mouse enabled devices use the mouse to drag and drop column headers to rearrange their columns.
+        On mouse and touch enabled devices use the column moving icon located on the right of each column header to access the column moving dropdown. You can move multiple columns by using the "Move Columns" dialog accessible from each column moving dropdown.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>列移動</Title>
+    <Description>
+      このサンプルでは、igGrid の列移動機能を紹介します。
+      マウスを使用するデバイスで、マウスを使用して列ヘッダーをドラッグ アンド ドロップすると、列を再配置できます。
+      タッチ対応デバイスで、各の列ヘッダーの右側に配置される列移動アイコンを使用して列移動ドロップダウンにアクセスできます。各列移動ドロップダウンからアクセス可能な「列移動」ダイアログで複数の列を移動できます。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

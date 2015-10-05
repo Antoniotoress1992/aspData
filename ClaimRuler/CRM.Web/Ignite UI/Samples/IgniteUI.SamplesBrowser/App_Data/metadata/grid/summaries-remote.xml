@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Summaries (Remote Calculation)</Title>
+    <Description>
+        This sample demonstrates remote summaries feature for the igGrid control. In this mode summaries are calculated by the Ignite UI Grid MVC Helper Wrapper on the server and sent back to the client as part of the response.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>集計 (リモート計算)</Title>
+    <Description>
+      このサンプルでは、igGrid コントロールのリモート集計機能を紹介します。このモードでは、集計が Ignite UI グリッドの MVC ヘルパー ラッパーによってサーバーで計算され、応答としてクライアントに送信されます。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

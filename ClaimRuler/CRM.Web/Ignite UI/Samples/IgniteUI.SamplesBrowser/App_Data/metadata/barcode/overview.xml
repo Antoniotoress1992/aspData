@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">barcode/basic-configuration</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      The igQRBarcode control is a HTML5, canvas-based control. It renders QR (Quick Response) Codes representing alphanumeric data such as a URL. As with all Ignite UI controls, you can use 
+      <a href="~/barcode/mvc-initialization">the igQRBarcode ASP.NET MVC helper</a> in your ASP.NET MVC views. You can customize the following:
+      <ul>
+        <li><a href="~/barcode/configuring-the-qr-code-specific-settings">Encoding</a></li>
+        <li><a href="~/barcode/qr-barcode-dimensions">Size</a></li>
+        <li><a href="~/barcode/configuring-colors">Color</a></li>
+      </ul>
+      See the complete list of samples in the menu.
+     ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      igQRBarcode コントロールは HTML5 キャンバス ベース コントロールです。URL などの文字/数字データを表す QR (Quick Response) コードを描画します。すべての Ignite UI コントロールと同じように、<a href="~/barcode/mvc-initialization">igQRBarcode ASP.NET MVC ヘルパー</a>を ASP.NET MVC ビューで使用できます。以下の機能をカスタマイズできます:
+      <ul>
+        <li><a href="~/barcode/configuring-the-qr-code-specific-settings">エンコード</a></li>
+        <li><a href="~/barcode/qr-barcode-dimensions">サイズ</a></li>
+        <li><a href="~/barcode/configuring-colors">色</a></li>
+      </ul>
+      サンプルをすべて表示するには、メニューを参照してください。
+     ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

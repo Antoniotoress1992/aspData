@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Chart Navigation</Title>
+    <Description>This sample demonstrates various navigation methods available in the jQuery chart. 
+    Panning and zooming through the control’s content can be performed using built-in keyboard 
+    navigation (Arrows, Page Up/Down, Home key), built-in mouse navigation (Shift + mouse drag, mouse scroll, 
+    mouse down + mouse drag), and the overview plus detail pane, as well as from code-behind using 
+    the control's window position and scale properties.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>チャート ナビゲーション</Title>
+    <Description>
+      このサンプルでは、jQuery チャートのさまざまなナビゲーション方法を紹介します。
+      コントロールのコンテンツを組み込みキーボード ナビゲーション (矢印キー、Page Up/Down、Home キー)、組み込みマウス ナビゲーション (Shift キー + マウス ドラッグ、マウス スクロール、マウス ダウン + マウス ドラッグ)、概要と詳細ペイン、またはコード ビハインドでコントロールのウィンドウ位置およびスケール プロパティによってパンやズームできます。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

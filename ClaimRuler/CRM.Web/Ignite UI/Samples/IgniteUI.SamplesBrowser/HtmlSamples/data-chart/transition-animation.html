@@ -1,0 +1,338 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Transition Animation</title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="../../igniteui/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+    <link href="../../igniteui/css/structure/infragistics.css" rel="stylesheet" />
+
+    <!--CSS file specific for chart styling -->
+    <link href="../../igniteui/css/structure/modules/infragistics.ui.chart.new.css" rel="stylesheet" />
+
+    <script src="../../js/modernizr.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="../../igniteui/js/infragistics.core.js"></script>
+    <script src="../../igniteui/js/infragistics.dv.js"></script>
+
+</head>
+<body>
+    <script type="text/javascript" src="../../data-files/uk-france-population.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var data = [
+                 { "CountryName": "China", "Pop1995": 1216, "Pop2005": 1297, "Pop2015": 1361, "Pop2025": 1394 },
+                 { "CountryName": "India", "Pop1995": 920, "Pop2005": 1090, "Pop2015": 1251, "Pop2025": 1396 },
+                 { "CountryName": "United States", "Pop1995": 266, "Pop2005": 295, "Pop2015": 322, "Pop2025": 351 },
+                 { "CountryName": "Indonesia", "Pop1995": 197, "Pop2005": 229, "Pop2015": 256, "Pop2025": 277 },
+                 { "CountryName": "Brazil", "Pop1995": 161, "Pop2005": 186, "Pop2015": 204, "Pop2025": 218 }
+            ];
+
+            $("#chart").igDataChart({
+                width: "100%",
+                height: "400px",
+                legend: { element: "lineLegend" },
+                title: "Population per Country",
+                subtitle: "A comparison of population in 1995 and 2005",
+                dataSource: data,
+                axes: [
+                    {
+                        name: "NameAxis",
+                        type: "categoryX",
+                        label: "CountryName"
+                    },
+                    {
+                        name: "PopulationAxis",
+                        type: "numericY",
+                        minimumValue: 0,
+                        title: "Millions of People",
+                    }
+                ],
+                series: [
+                    {
+                        name: "2005Population",
+                        type: "line",
+                        title: "2005",
+                        xAxis: "NameAxis",
+                        yAxis: "PopulationAxis",
+                        valueMemberPath: "Pop2005",
+                        isTransitionInEnabled: true,
+                        isHighlightingEnabled: true,
+                        thickness: 5
+                    },
+                    {
+                        name: "1995Population",
+                        type: "line",
+                        title: "1995",
+                        xAxis: "NameAxis",
+                        yAxis: "PopulationAxis",
+                        valueMemberPath: "Pop1995",
+                        isTransitionInEnabled: true,
+                        isHighlightingEnabled: true,
+                        thickness: 5
+                    }
+                ]
+            });
+            $("#seriesType").change(function (e) {
+                redrawChart();
+            });
+            var redrawChart = function () { 
+                transMode = $("#transitionInTypeSlider").val();
+                transType = $("#transitionInSpeedTypeSlider").val();
+                transEasingFunc = $("#transitionEasingFunctionSlider").val();
+
+                var thickness = 5,
+                seriesType = $("#seriesType").val();
+
+                if (seriesType == "area" ||
+                    seriesType == "splineArea" ||
+                    seriesType == "column" ||
+                    seriesType == "stepArea" || seriesType == "bar") {
+                    thickness = 1;
+                }
+                
+                $("#chart").igDataChart("option", "series", [{ name: "2005Population", remove: true }]);
+                $("#chart").igDataChart("option", "series", [{ name: "1995Population", remove: true }]);
+                $("#chart").igDataChart("option", "axes", [{ name: "PopulationAxis", remove: true }]);
+                $("#chart").igDataChart("option", "axes", [{ name: "NameAxis", remove: true }]);
+                
+                if (seriesType == "bar") {
+                    $("#chart").igDataChart("option", "axes", [{
+                        name: "NameAxis",
+                        type: "numericX"
+                    }]);
+                    $("#chart").igDataChart("option", "axes", [{
+                        name: "PopulationAxis",
+                        type: "categoryY",
+                        minimumValue: 0,
+                        label: "CountryName",
+                        title: "Millions of People"
+                    }]);
+                    
+                    $("#chart").igDataChart("option", "series", [{
+                        type: seriesType,
+                        name: "2005Population",
+                        title: "2005",
+                        xAxis: "NameAxis",
+                        yAxis: "PopulationAxis",
+                        valueMemberPath: "Pop2005",
+                        isTransitionInEnabled: true,
+                        isHighlightingEnabled: true,
+                        thickness: thickness,
+                        transitionInMode: transMode,
+                        transitionInSpeedType: transType,
+                        transitionInEasingFunction: transEasingFunc
+                    }]);
+                    $("#chart").igDataChart("option", "series", [{
+                        type: seriesType,
+                        name: "1995Population",
+                        title: "1995",
+                        xAxis: "NameAxis",
+                        yAxis: "PopulationAxis",
+                        valueMemberPath: "Pop1995",
+                        isTransitionInEnabled: true,
+                        isHighlightingEnabled: true,
+                        thickness: thickness,
+                        transitionInMode: transMode,
+                        transitionInSpeedType: transType,
+                        transitionInEasingFunction: transEasingFunc
+                    }]);
+                } else {
+                    $("#chart").igDataChart("option", "axes", [{
+                        name: "NameAxis",
+                        type: "categoryX",
+                        label: "CountryName"
+                    }]);
+                    $("#chart").igDataChart("option", "axes", [{
+                        name: "PopulationAxis",
+                        type: "numericY",
+                        minimumValue: 0,
+                        title: "Millions of People",
+                    }]);
+                    
+                    if (seriesType == "rangeColumn" || seriesType == "rangeArea") {
+                        $("#chart").igDataChart("option", "series", [{
+                            type: seriesType,
+                            name: "2005Population",
+                            title: "2005",
+                            highMemberPath: "Pop2005",
+                            lowMemberPath: "Pop1995",
+                            xAxis: "NameAxis",
+                            yAxis: "PopulationAxis",
+                            isTransitionInEnabled: true,
+                            isHighlightingEnabled: true,
+                            thickness: thickness,
+                            transitionInMode: transMode,
+                            transitionInSpeedType: transType,
+                            transitionInEasingFunction: transEasingFunc
+                        }]);
+
+                    } else {
+                        $("#chart").igDataChart("option", "series", [{
+                            type: seriesType,
+                            name: "2005Population",
+                            title: "2005",
+                            xAxis: "NameAxis",
+                            yAxis: "PopulationAxis",
+                            valueMemberPath: "Pop2005",
+                            isTransitionInEnabled: true,
+                            isHighlightingEnabled: true,
+                            thickness: thickness,
+                            transitionInMode: transMode,
+                            transitionInSpeedType: transType,
+                            transitionInEasingFunction: transEasingFunc
+                        }]);
+                        $("#chart").igDataChart("option", "series", [{
+                            type: seriesType,
+                            name: "1995Population",
+                            title: "1995",
+                            xAxis: "NameAxis",
+                            yAxis: "PopulationAxis",
+                            valueMemberPath: "Pop1995",
+                            isTransitionInEnabled: true,
+                            isHighlightingEnabled: true,
+                            thickness: thickness,
+                            transitionInMode: transMode,
+                            transitionInSpeedType: transType,
+                            transitionInEasingFunction: transEasingFunc
+                        }]);
+                    }
+                }
+            };
+           
+            $("#transitionInTypeSlider").change(function (e) {
+                redrawChart();
+            });
+
+            $("#transitionInSpeedTypeSlider").change(function (e) {
+                redrawChart();
+            });
+
+            $("#transitionEasingFunctionSlider").change(function (e) {
+                redrawChart();
+            });
+        });
+    </script>
+
+    <style type="text/css">
+        
+        td { vertical-align: top; }
+        .chartElement {
+            padding-bottom: 20px;
+        }
+
+        .selectionOptions
+        {
+            margin-bottom: 10px;   
+        }
+        .sliderBounds {
+            width: 95px;
+            margin: 6px 3px 6px 6px;
+            display: inline-block;
+        }
+        .optionContainer {
+            min-width: 120px;
+            max-width: 250px;
+            margin: 2px;
+            padding: 2px;
+            display: inline-block;
+            border: 1px solid #e0e0e0;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            border-radius: 4px;
+        }
+        .selectBounds {
+            min-width: 120px;
+            max-width: 132px;
+        }
+    </style>
+
+    <div class="selectionOptions" >
+        Series type:
+        <select id="seriesType" class="selectBounds">
+            <option value="area">Area</option>
+            <option value="column">Column</option>
+            <option value="line" selected="selected">Line</option>
+            <option value="splineArea">Spline Area</option>
+            <option value="spline">Spline</option>
+            <option value="stepArea">Step Area</option>
+            <option value="stepLine">Step Line</option>
+            <option value="point">Point</option>
+            <option value="rangeColumn">Range Column</option>
+            <option value="rangeArea">Range Area</option>
+            <option value="bar">Bar</option>
+        </select>
+    </div>
+    <table>
+        <tr>
+            <td id="chart" class="chartElement"/>  
+            <td id="lineLegend" style="float: left"/>
+        </tr>    
+    </table>
+    
+     <div>
+        <fieldset id="chartOptions">
+            <legend>Chart Options</legend>
+            	
+           	<div class="optionContainer">
+               Transition Types
+					<br />
+               <select id="transitionInTypeSlider">
+                <option value="auto" selected="selected">auto</option>
+                <option value="fromZero" >fromZero</option>
+                <option value="accordionFromLeft">accordionFromLeft</option>
+                <option value="accordionFromRight" >accordionFromRight</option>
+                <option value="accordionFromTop" >accordionFromTop</option>
+                <option value="accordionFromBottom" >accordionFromBottom</option>
+                <option value="expand">expand</option>
+                <option value="sweepFromLeft">sweepFromLeft</option>
+                <option value="sweepFromRight" >sweepFromRight</option>
+                <option value="sweepFromTop" >sweepFromTop</option>
+                <option value="sweepFromBottom" >sweepFromBottom</option>
+                <option value="sweepFromCenter" >sweepFromCenter</option>
+                <option value="accordionFromCategoryAxisMinimum">accordionFromCategoryAxisMinimum</option>
+                <option value="accordionFromCategoryAxisMaximum" >accordionFromCategoryAxisMaximum</option>
+                <option value="accordionFromValueAxisMinimum" >accordionFromValueAxisMinimum</option>
+                <option value="accordionFromValueAxisMaximum" >accordionFromValueAxisMaximum</option>
+                <option value="sweepFromCategoryAxisMinimum">sweepFromCategoryAxisMinimum</option>
+                <option value="sweepFromCategoryAxisMaximum" >sweepFromCategoryAxisMaximum</option>
+                <option value="sweepFromValueAxisMinimum" >sweepFromValueAxisMinimum</option>
+                <option value="sweepFromValueAxisMaximum" >sweepFromValueAxisMaximum</option>
+              </select>
+             </div>
+            
+            <div class="optionContainer">
+                Speed Type
+				<br />
+                <select id="transitionInSpeedTypeSlider">
+                    <option value="auto" selected="selected">auto</option>
+                    <option value="normal" >normal</option>
+                    <option value="valueScaled">valueScaled</option>
+                    <option value="indexScaled" >indexScaled</option>
+                    <option value="random" >random</option>
+                </select>
+            </div>
+            
+            <div class="optionContainer">
+                Easing Function
+                <br />
+                <select id="transitionEasingFunctionSlider">
+                    <option value="linear" selected="selected">linear</option>
+                    <option value="cubic" >cubic</option>
+                </select>
+            </div>
+            
+           
+        </fieldset>
+    </div>
+
+    
+    <div style="float: right" class="Quandl-attribution">
+        Population data from:
+        <a href="http://www.quandl.com/" target="_blank">Quandl</a>
+    </div>
+</body>
+</html>

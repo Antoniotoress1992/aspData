@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Bind Collection</Title>
+    <Description>This is an example of rendering the igSparkline using the ASP.NET MVC helper. The helper binds to a 
+    collection of objects on the server and serializes the collection to JSON objects and renders the required igSparkline HTML and JavaScript.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Overview" TopicName="igSparkline_Overview" />
+      <HelpTopic Title="Adding Sparkline" TopicName="igSparkline_Adding_igSparkline" />
+      <HelpTopic Title="Data Binding" TopicName="igSparkline_Binding_to_Data" />
+      <HelpTopic Title="Configuring" TopicName="igSparkline_Configuring" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>Collection にバインド</Title>
+    <Description>
+      このサンプルでは、ASP.NET MVC ヘルパーを使用して igSparkline を描画する方法を紹介します。ヘルパーはサーバーのオブジェクトのコレクションにバインドし、コレクションを JSON オブジェクトにシリアル化し、必要な igSparkline HTML および JavaScript を描画します。
+    </Description>
+    <HelpTopics>
+      <HelpTopic Title="概要" TopicName="igSparkline_Overview" />
+      <HelpTopic Title="スパークラインの追加" TopicName="igSparkline_Adding_igSparkline" />
+      <HelpTopic Title="データ バインディング" TopicName="igSparkline_Binding_to_Data" />
+      <HelpTopic Title="構成" TopicName="igSparkline_Configuring" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+</Sample>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Responsive Flow Layout</Title>
+    <Description>This sample demonstrates the responsiveness of the Layout Manager control's Flow layout with various item sizes set either in pixels or percentages and setting the number of items in the Layout Manager's options without the need for any initial markup.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>レスポンシブ フロー レイアウト</Title>
+    <Description>このサンプルは、レスポンシブ フロー レイアウトを紹介します。要素の自然なフロー、サイズはピクセルまたはパーセンテージで設定できます。初期化のマークアップの必要なしで、コンポーネントのオプションに複数の項目を指定できます。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <IsResponsive>True</IsResponsive>
+</Sample>

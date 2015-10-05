@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<js>
+<LocalizedContent Language="EN">
+  <LocalizedSampleStrings>
+    <LocalizedSampleString Key="API_Viewer" Value="API Viewer" />
+    <LocalizedSampleString Key="API_Explorer" Value="API Explorer" />
+    <LocalizedSampleString Key="bing_message" Value="You must provide your own API key for Bing Maps in the code of this sample to display geographic imagery from Bing Maps in the background content of the Geographic Map control. Replace the mapHelper.bingData() function with a string that contains your Bing Maps key." />    
+  </LocalizedSampleStrings>  
+</LocalizedContent>
+  <LocalizedContent Language="ja">
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="API_Viewer" Value="API ビューアー" />
+      <LocalizedSampleString Key="API_Explorer" Value="API エクスプローラー" />
+      <LocalizedSampleString Key="bing_message" Value="地理マップ コントロールの背景に Bing Maps の地理画像を表示するには、このサンプルのコードで Bing Maps の API キーを提供する必要があります。mapHelper.bingData() 関数を Bing Maps キーを含む文字列と置換してください。" />
+    </LocalizedSampleStrings>
+  </LocalizedContent>
+</js>
+

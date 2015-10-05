@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="../../igniteui/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+    <link href="../../igniteui/css/structure/infragistics.css" rel="stylesheet" />    
+
+    <script src="../../js/modernizr.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="../../igniteui/js/infragistics.core.js"></script>
+    <script src="../../igniteui/js/infragistics.lob.js"></script>
+
+    <script src="../../js/external/jsrender.js" type="text/javascript"></script>
+
+    <style type="text/css">
+        .tweet-user {
+            font-size: 14px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            float: left;
+        }
+        .tweet-text {
+            font-size: 14px;
+            font-family: Arial, sans-serif;
+        }
+        .tweet-screen-name {
+            font-size: 12px;
+            font-family: Arial, sans-serif;
+            color: #999;
+            margin-left: 10px;
+            float:left;
+        }
+        .tweet {
+            float: none;
+            padding-left: 50px;
+        }
+        .tweet p {
+            margin: 5px;
+        }
+        .tweet-date {
+            float: right;
+            font-size: 12px;
+            font-family: Arial, sans-serif;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+     
+    <h3>Load on Demand - loadTrigger: auto</h3>  
+    <!-- Target element for the igGrid with loadTrigger Auto for LoadOnDemand -->
+    <table id="autoLoadOnDemand">
+    </table>    
+    <br />
+    <h3>Load on Demand - loadTrigger: button</h3>
+    <!-- Target element for the igGrid with loadTrigger Button for LoadOnDemand -->
+    <table id="buttonLoadOnDemand">
+    </table>
+    <br />
+
+    <!--Sample JSON Data-->
+    <script src="../../data-files/ig-tweets.js"></script>
+    <script>
+        //jsRender helper function which formats the string date
+        $.views.helpers(
+        {
+            formatDate: function (val) {
+                var date = new Date(val);
+                if (!isNaN(date) && ($.type(date) === "date")) {
+                    return $.ig.formatter(date, "date", "dateTime");
+                }
+                return val;
+            }
+        });
+
+        $(function () {
+            createAutoGrid();
+            createButtonGrid();
+        });
+
+        function createAutoGrid()
+        {
+            $( "#autoLoadOnDemand" ).igGrid( {
+                width: "100%",
+                autoGenerateColumns: false,
+                dataSource: infragisticsTweets,
+                localSchemaTransform: false,
+                templatingEngine: "jsrender",
+                height: "300px",
+                columns: [
+                    {
+                        key: 'Tweets',
+                        dataType: 'string',
+                        headerText: 'Infragistics Tweets',
+                        unbound: true,
+                        width: "100%",
+                        template: "<div style='float:left'><img src='../../images/ig_twitter_logo.png' ></img></div><div class='tweet'><p style='height:20px'><span class='tweet-user'>{{>user.name}}</span><span class='tweet-screen-name'>@{{>user.screen_name}}</span><span class='tweet-date'>{{>#view.hlp('formatDate')(created_at)}}</span></p><p class='tweet-text'>{{>text}}</p></div>"
+                    }
+                ],
+                features: [
+                    {
+                        name: 'LoadOnDemand',
+                        chunkSize: 10,
+                        loadTrigger: "auto"
+                    }
+                ]
+            });
+        }
+
+        function createButtonGrid()
+        {
+            $( "#buttonLoadOnDemand" ).igGrid( {
+                width: "100%",
+                autoGenerateColumns: false,
+                dataSource: infragisticsTweets,
+                localSchemaTransform: false,
+                templatingEngine: "jsrender",
+                height: "300px",
+                columns: [
+                    {
+                        key: 'Tweets',
+                        dataType: 'string',
+                        headerText: 'Infragistics Tweets',
+                        unbound: true,
+                        width: "100%",
+                        template: "<div style='float:left'><img src='../../images/ig_twitter_logo.png' ></img></div><div class='tweet'><p style='height:20px'><span class='tweet-user'>{{>user.name}}</span><span class='tweet-screen-name'>@{{>user.screen_name}}</span><span class='tweet-date'>{{>#view.hlp('formatDate')(created_at)}}</span></p><p class='tweet-text'>{{>text}}</p></div>"
+                    }
+                ],
+                features: [
+                    {
+                        name: 'LoadOnDemand',
+                        chunkSize: 10,
+                        loadTrigger: "button"
+                    }
+                ]
+            });
+        }
+    </script>
+</body>
+</html>

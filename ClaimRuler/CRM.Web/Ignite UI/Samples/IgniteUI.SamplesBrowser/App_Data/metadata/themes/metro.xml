@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Metro theme</Title>
+    <Description>This sample demonstrates the Ignite UI Metro theme inspired by Windows UI design.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>Metro テーマ</Title>
+    <Description>このサンプルは、Windows UI デザイン スタイルを持つ Ignite UI Metro テーマを紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status>New</Status>
+</Sample>

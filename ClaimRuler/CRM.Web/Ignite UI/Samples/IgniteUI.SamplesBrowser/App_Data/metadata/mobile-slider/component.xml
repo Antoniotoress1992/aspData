@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Slider</Name>
+    <Description>
+      Go beyond simple web pages and build true mobile applications. With a selection seven types of mobile input controls, users can provide inputs and responses simply and easily.
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Basic_Slider" Value="Basic Slider"/>
+      <LocalizedSampleString Key="Without_Textbox" Value="Without Textbox"/>
+      <LocalizedSampleString Key="Red" Value="Red"/>
+      <LocalizedSampleString Key="Blue" Value="Blue"/>
+      <LocalizedSampleString Key="Green" Value="Green"/>
+      <LocalizedSampleString Key="Hex_Value" Value="Hex Value" />
+    </LocalizedSampleStrings>
+    <PageKeywords>MobileSlider</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Slider</Name>
+    <Description>
+      モバイル アプリケーションに対応するコントロールを提供します。モバイル入力コントロールの 7 つのタイプを提供します。
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Basic_Slider" Value="ベーシック スライダー"/>
+      <LocalizedSampleString Key="Without_Textbox" Value="Textbox を使用しない場合"/>
+      <LocalizedSampleString Key="Red" Value="赤"/>
+      <LocalizedSampleString Key="Blue" Value="青"/>
+      <LocalizedSampleString Key="Green" Value="緑"/>
+      <LocalizedSampleString Key="Hex_Value" Value="16 進数値" />
+    </LocalizedSampleStrings>
+    <PageKeywords>MobileSlider</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>http://api.jquerymobile.com/slider/</ClientApiUrl>
+  <HelpPageName>Slider_Landing_Page</HelpPageName>
+  <ForumNumber>691</ForumNumber>
+  <IconImage>jquery-mobile-slider.png</IconImage>
+  <ClientRuntime>jQueryMobile</ClientRuntime>
+  <IsFeatureComponent>True</IsFeatureComponent>
+  <TOC>
+    <Sample>basic-usage</Sample>
+    <Sample>color-picker</Sample>
+  </TOC>
+</Component>

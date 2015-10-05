@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">html-editor/basic-usage</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      The igHtmlEditor control is a jQuery HTML editor control that features standard HTML editing capabilities. Formatting options include font face, 
+      font size, text and image alignment and link and table support. You can <a href="~/html-editor/custom-toolbars-and-buttons">customize the toolbars and buttons</a> 
+      to add additional functionality to the interface. See the complete list of samples in the menu.
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      igHtmlEditor コントロールは、標準 HTML 編集機能を備えた jQuery HTML エディター コントロールです。書式設定オプションは、フォント フェイス、フォント サイズ、テキスト、イメージの調整機能があり、リンクとテーブルをサポートしています。<a href="~/html-editor/custom-toolbars-and-buttons">ツールバーおよびボタンをカスタマイズし</a>、インターフェイスに機能を追加できます。
+      サンプルをすべて表示するには、メニューを参照してください。
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

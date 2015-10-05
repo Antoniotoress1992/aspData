@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="../../igniteui/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+    <link href="../../igniteui/css/structure/infragistics.css" rel="stylesheet" />
+
+    <script src="../../js/modernizr.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="../../igniteui/js/infragistics.core.js"></script>
+
+    <script src="../../igniteui/js/infragistics.dv.js"></script>
+
+    <!-- Used to add markup and provide logging 
+    functionality for the API Explorer and API Viewer UI -->
+    <script src="../../js/apiviewer.js"></script>
+
+</head>
+<body>
+    <script src="../../data-files/high-density-data.js"></script>
+
+  <script id="cityTemplate" type="text/x-jquery-tmpl">
+        <table>
+            <tr><td class="tooltipHeading" colspan="2">${item.name}</td></tr>
+        </table>
+    </script>
+
+     <style type="text/css">
+    	.sliderBounds {
+    	   width: 95px;
+    	   margin: 6px 3px 6px 6px;
+			display: inline-block;
+    	}
+    	.optionContainer {
+    	   width: 200px;
+    	   margin: 2px;
+			padding: 2px;
+			display: inline-block;
+			border: 1px solid #e0e0e0;
+			-moz-border-radius: 4px;
+			-webkit-border-radius: 4px;
+			border-radius: 4px;
+    	}
+    	.selectBounds {
+    	   min-width: 120px;
+    	   max-width: 132px;
+    	}
+    </style>
+
+    <div id="map"></div>
+    <br/>
+    
+    <div>
+        <fieldset id="chartOptions">
+            <legend>Map Options</legend>
+            <br />            
+            <div class="optionContainer">
+                Resolution
+                <br />
+                <div id="resolutionSlider" class="sliderBounds"></div>
+                <label id="resolutionLabel">0</label>
+            </div>
+           
+           <div class="optionContainer">
+                Minimum Heat Value
+                <br />
+                <div id="minimumHeatValueSlider" class="sliderBounds"></div>
+                <label id="minimumHeatValueLabel">0</label>
+            </div>
+            <div class="optionContainer">
+                Maximum Heat Value
+                <br />
+                <div id="maximumHeatValueSlider" class="sliderBounds"></div>
+                <label id="maximumHeatValueLabel">5</label>
+            </div>
+
+            <br />
+
+            <div class="optionContainer">
+                Point Extent
+                <br />
+                <div id="pointExtentSlider" class="sliderBounds"></div>
+                 <label id="pointExtentLabel">1</label>
+            </div>
+            
+            <div class="optionContainer">
+                Minimum Heat Color
+                <br />
+                <select id="minimumHeatColorDropDown" class="selectBounds">
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="black" selected="selected">Black</option>
+                </select>
+            </div>
+            <div class="optionContainer">
+                Maximum Heat Color
+                <br />
+                <select id="maximumHeatColorDropDown" class="selectBounds">
+                    <option value="red" selected="selected">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="black" >Black</option>
+                </select>
+            </div>
+             <br />
+            <div class="optionContainer">
+                <input type="checkbox" id="enableMouseOverCheckBox" checked="checked" />Enable Mouse Over<br />
+            </div>
+             <div class="optionContainer">
+                <input type="checkbox" id="useBruteForceCheckBox" />Use Brute Force<br />
+             </div>  
+            
+        </fieldset>
+    </div>
+    <br />
+
+    <script type="text/javascript">     
+        $(function () {
+            $("#map").igMap({
+                width: "700px",
+                height: "500px",
+                backgroundContent: {
+                    type: "openStreet"
+                },
+                series: [{
+                    type: "geographicHighDensityScatter",
+                    name: "australiaMap",
+                    dataSource: placeData,
+                    latitudeMemberPath: "lat",
+                    longitudeMemberPath: "lon",
+                    heatMinimum: 0,
+                    heatMaximum: 5,
+                    mouseOverEnabled: true,
+                    showTooltip: true,
+                    tooltipTemplate: "cityTemplate"
+                }],
+                windowRect: {
+                    left: 0.7,
+                    top: 0.52,
+                    width: 0.127,
+                    height: 0.127
+                }
+            });
+
+        // Resolution
+        $("#resolutionSlider").slider({
+            min: 0,
+            max: 10,
+            value: 0,
+            slide: function (event, ui) {
+                $("#map").igMap("option", "series", [{ name: "australiaMap", resolution: ui.value}]);
+                $("#resolutionLabel").text(ui.value);
+            }
+        });
+      
+        // Minimum Heat Value
+        $("#minimumHeatValueSlider").slider({
+            min: 0,
+            max: 5,
+            value: 0,
+            slide: function (event, ui) {
+                $("#map").igMap("option", "series", [{ name: "australiaMap", heatMinimum: ui.value }]);
+                $("#minimumHeatValueLabel").text(ui.value);
+            }
+        });
+
+        // Maximum Heat Value
+        $("#maximumHeatValueSlider").slider({
+            min: 5,
+            max: 10,
+            value: 10,
+            slide: function (event, ui) {
+                $("#map").igMap("option", "series", [{ name: "australiaMap", heatMaximum: ui.value }]);
+                $("#maximumHeatValueLabel").text(ui.value);
+            }
+        });
+
+        // Heat Minimum Color
+        $("#minimumHeatColorDropDown").on({
+            change: function (e) {
+                var minColor = $(this).val();
+                $("#map").igMap("option", "series", [{ name: "australiaMap", heatMinimumColor: minColor }]);
+            }
+        });
+
+        // Heat Maximum Color
+        $("#maximumHeatColorDropDown").on({
+            change: function (e) {
+                var maxColor = $(this).val();
+                $("#map").igMap("option", "series", [{ name: "australiaMap", heatMaximumColor: maxColor }]);
+            }
+        });
+        // Point Extent
+        $("#pointExtentSlider").slider({
+            min: 1,
+            max: 5,
+            value: 1,
+            slide: function (event, ui) {
+                $("#map").igMap("option", "series", [{ name: "australiaMap", pointExtent: ui.value}]);
+                $("#pointExtentLabel").text(ui.value);
+            }
+        });
+
+
+        // Enable Mouse Over
+        $("#enableMouseOverCheckBox").click(function (e) {
+            var enableMouseOverSeries = $("#enableMouseOverCheckBox").is(":checked") ? true : false;
+            $("#map").igMap("option", "series", [{ name: "australiaMap", mouseOverEnabled: enableMouseOverSeries}]);
+        });
+            
+        // Use Brute Force
+        $("#useBruteForceCheckBox").click(function (e) {
+            var useBruteForceSeries = $("#useBruteForceCheckBox").is(":checked") ? true : false;
+            $("#map").igMap("option", "series", [{ name: "australiaMap", useBruteForce: useBruteForceSeries }]);
+        });
+
+        });
+    </script>
+
+   
+</body>
+</html>
+

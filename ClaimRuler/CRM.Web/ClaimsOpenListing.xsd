@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ClaimsOpenListing" targetNamespace="http://tempuri.org/ClaimsOpenListing.xsd" xmlns:mstns="http://tempuri.org/ClaimsOpenListing.xsd" xmlns="http://tempuri.org/ClaimsOpenListing.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ClaimRulerConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ClaimRulerConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ClaimRulerConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vw_OpenClaimsListingTableAdapter" GeneratorDataComponentClassName="vw_OpenClaimsListingTableAdapter" Name="vw_OpenClaimsListing" UserDataComponentName="vw_OpenClaimsListingTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ClaimRulerConnectionString (Web.config)" DbObjectName="ClaimRuler.dbo.vw_OpenClaimsListing" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ClaimNumber, Company, AdjusterName, FileNumber, Diary, Insured, Claimant, DateLoss, DateReceived, ClientID FROM dbo.vw_OpenClaimsListing</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ClaimNumber" DataSetColumn="ClaimNumber" />
+              <Mapping SourceColumn="Company" DataSetColumn="Company" />
+              <Mapping SourceColumn="AdjusterName" DataSetColumn="AdjusterName" />
+              <Mapping SourceColumn="FileNumber" DataSetColumn="FileNumber" />
+              <Mapping SourceColumn="Diary" DataSetColumn="Diary" />
+              <Mapping SourceColumn="Insured" DataSetColumn="Insured" />
+              <Mapping SourceColumn="Claimant" DataSetColumn="Claimant" />
+              <Mapping SourceColumn="DateLoss" DataSetColumn="DateLoss" />
+              <Mapping SourceColumn="DateReceived" DataSetColumn="DateReceived" />
+              <Mapping SourceColumn="ClientID" DataSetColumn="ClientID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ClaimsOpenListing" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ClaimsOpenListing" msprop:Generator_UserDSName="ClaimsOpenListing">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vw_OpenClaimsListing" msprop:Generator_TableClassName="vw_OpenClaimsListingDataTable" msprop:Generator_TableVarName="tablevw_OpenClaimsListing" msprop:Generator_TablePropName="vw_OpenClaimsListing" msprop:Generator_RowDeletingName="vw_OpenClaimsListingRowDeleting" msprop:Generator_RowChangingName="vw_OpenClaimsListingRowChanging" msprop:Generator_RowEvHandlerName="vw_OpenClaimsListingRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_OpenClaimsListingRowDeleted" msprop:Generator_UserTableName="vw_OpenClaimsListing" msprop:Generator_RowChangedName="vw_OpenClaimsListingRowChanged" msprop:Generator_RowEvArgName="vw_OpenClaimsListingRowChangeEvent" msprop:Generator_RowClassName="vw_OpenClaimsListingRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ClaimNumber" msprop:Generator_ColumnVarNameInTable="columnClaimNumber" msprop:Generator_ColumnPropNameInRow="ClaimNumber" msprop:Generator_ColumnPropNameInTable="ClaimNumberColumn" msprop:Generator_UserColumnName="ClaimNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Company" msprop:Generator_ColumnVarNameInTable="columnCompany" msprop:Generator_ColumnPropNameInRow="Company" msprop:Generator_ColumnPropNameInTable="CompanyColumn" msprop:Generator_UserColumnName="Company" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AdjusterName" msprop:Generator_ColumnVarNameInTable="columnAdjusterName" msprop:Generator_ColumnPropNameInRow="AdjusterName" msprop:Generator_ColumnPropNameInTable="AdjusterNameColumn" msprop:Generator_UserColumnName="AdjusterName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FileNumber" msprop:Generator_ColumnVarNameInTable="columnFileNumber" msprop:Generator_ColumnPropNameInRow="FileNumber" msprop:Generator_ColumnPropNameInTable="FileNumberColumn" msprop:Generator_UserColumnName="FileNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Diary" msprop:Generator_ColumnVarNameInTable="columnDiary" msprop:Generator_ColumnPropNameInRow="Diary" msprop:Generator_ColumnPropNameInTable="DiaryColumn" msprop:Generator_UserColumnName="Diary" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Insured" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnInsured" msprop:Generator_ColumnPropNameInRow="Insured" msprop:Generator_ColumnPropNameInTable="InsuredColumn" msprop:Generator_UserColumnName="Insured" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="101" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Claimant" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnClaimant" msprop:Generator_ColumnPropNameInRow="Claimant" msprop:Generator_ColumnPropNameInTable="ClaimantColumn" msprop:Generator_UserColumnName="Claimant" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DateLoss" msprop:Generator_ColumnVarNameInTable="columnDateLoss" msprop:Generator_ColumnPropNameInRow="DateLoss" msprop:Generator_ColumnPropNameInTable="DateLossColumn" msprop:Generator_UserColumnName="DateLoss" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DateReceived" msprop:Generator_ColumnVarNameInTable="columnDateReceived" msprop:Generator_ColumnPropNameInRow="DateReceived" msprop:Generator_ColumnPropNameInTable="DateReceivedColumn" msprop:Generator_UserColumnName="DateReceived" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ClientID" msprop:Generator_ColumnVarNameInTable="columnClientID" msprop:Generator_ColumnPropNameInRow="ClientID" msprop:Generator_ColumnPropNameInTable="ClientIDColumn" msprop:Generator_UserColumnName="ClientID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

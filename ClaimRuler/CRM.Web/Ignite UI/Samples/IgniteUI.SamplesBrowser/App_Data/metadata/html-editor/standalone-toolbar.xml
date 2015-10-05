@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Standalone Toolbar</Title>
+    <Description>This sample demonstrates how the igHtmlEditor control works with standalone toolbar. When a text is selected a toolbar is shown below it. The toolbar options are Bold, Italic and Underline.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>スタンドアロン ツールバー</Title>
+    <Description>このサンプルでは、igHtmlEditor コントロールをスタンドアロン ツールバーと動作させる方法を紹介します。テキストを選択すると、そのテキストの下にツールバーが表示されます。ツールバーのオプションは太字、斜体、および下線です。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status>New</Status>
+  <MinSampleSize>TabletPortrait</MinSampleSize>
+</Sample>

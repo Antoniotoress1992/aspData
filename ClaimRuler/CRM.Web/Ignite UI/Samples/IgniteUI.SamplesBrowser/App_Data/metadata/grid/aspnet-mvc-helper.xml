@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>ASP.NET MVC Helper</Title>
+    <Description>
+        This sample demonstrates how you can utilize the ASP.NET MVC helper to implement remote features functionalities for the igGrid.
+        The igGrid ASP.NET MVC helper contains a GridDataSourceAction attribute class which greatly simplifies server side grid requests processing. Given an IEnumerable/IQueryable data source a controller method decorated with this attribute will automatically process grid features requests and will return the transformed data back to the igGrid in JSON format.
+        Use the Paging, Sorting and Filtering features to experience the remote igGrid capabilities.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>ASP.NET MVC ヘルパー</Title>
+    <Description>
+      このサンプルでは、ASP.NET MVC ヘルパーを使用し、igGrid でリモート機能を実装する方法を紹介します。
+      igGrid ASP.NET MVC ヘルパーは、サーバー側のグリッド要求の処理を実行する GridDataSourceAction 属性クラスを含みます。IEnumerable/IQueryable データ ソースの場合、この属性を持つコントローラー メソッドは、グリッド機能の要求を自動的に処理し、変換されたデータを igGrid に JSON 形式で返します。
+      igGrid はリモートのページング、並べ替え、およびフィルタリング機能を提供します。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

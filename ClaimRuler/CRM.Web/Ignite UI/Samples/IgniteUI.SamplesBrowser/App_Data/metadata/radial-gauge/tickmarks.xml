@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Tickmarks</Title>
+    <Description>Tickmarks can be displayed at every user specified interval on a gauge. Use the table above to set the Radial Gauge control's tickmark properties. </Description>
+    <HelpTopics>
+      <HelpTopic Title="Configuring the Tick Marks (igRadialGauge)" TopicName="igRadialGauge_Configuring_Tick_Marks" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>目盛り</Title>
+    <Description>ゲージの目盛りをユーザーが指定した間隔で表示できます。以上の表を使用してラジアル ゲージ コントロールの目盛りプロパティを設定できます。</Description>
+    <HelpTopics>
+      <HelpTopic Title="目盛りの構成 (igRadialGauge)" TopicName="igRadialGauge_Configuring_Tick_Marks" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

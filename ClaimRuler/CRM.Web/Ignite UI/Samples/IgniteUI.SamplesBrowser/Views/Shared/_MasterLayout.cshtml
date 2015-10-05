@@ -1,0 +1,114 @@
+﻿@using IgniteUI.SamplesBrowser.Application.Model
+@using Infragistics.IgniteUI.SamplesBrowser.Shared.Entities
+@using Infragistics.IgniteUI.SamplesBrowser.Shared.Enums
+@using Infragistics.IgniteUI.SamplesBrowser.Shared.HtmlHelperExtensions
+@using Infragistics.IgniteUI.SamplesBrowser.Shared.ViewModels
+@model ViewModelBase
+
+<!DOCTYPE html>
+<!--[if lte IE 8]>
+<html class="OldIE no-js">
+<![endif]-->
+<html class="no-js">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta charset='utf-8'>
+        <meta http-equiv="x-ua-compatible" content="IE=Edge">
+        <title>@Html.Raw(Model.PageTitle)</title>
+        <meta name="description" content="@Model.PageDescription" />
+        <meta name="keywords" content="@Model.PageKeywords" />
+        <link rel="shortcut icon"  type="image/ico" href="@Model.Url.SamplesBrowserContent("~/images/favicon.ico", UrlScheme.Schemeless)" />
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:300,600,400' rel='stylesheet' type='text/css' />    
+        <link href="@Model.Url.SamplesBrowserContent(Model.ThemeCssUrl, UrlScheme.Schemeless)" rel="stylesheet"/>
+        <link href="@Model.Url.SamplesBrowserContent("~/igniteui/css/structure/infragistics.css", UrlScheme.Schemeless)" rel="stylesheet" />
+
+        <link href="@Model.Url.SamplesBrowserContent("~/css/all.css", UrlScheme.Schemeless)" rel="stylesheet" />
+        @*
+        <link href="@Model.Url.SamplesBrowserContent("~/css/prettify.css", UrlScheme.Schemeless)" rel="stylesheet" />
+        <link href="@Model.Url.SamplesBrowserContent("~/css/apiviewer.css", UrlScheme.Schemeless)" rel="stylesheet" />
+        <link href="@Model.Url.SamplesBrowserContent("~/css/sb-responsive.css", UrlScheme.Schemeless)" rel="stylesheet" id="responsiveCSS"/>
+        <link href="@Model.Url.SamplesBrowserContent("~/css/sb-sample.css", UrlScheme.Schemeless)" rel="stylesheet"/>
+        *@
+
+        <!--[if lte IE 7]>
+            <link href="@Model.Url.SamplesBrowserContent("~/css/sb-legacy.css", UrlScheme.Schemeless)" rel="stylesheet" />
+            <script src="@Model.Url.SamplesBrowserContent("~/js/json2.js", UrlScheme.Schemeless)"></script> 
+        <![endif]-->
+
+        <script type="text/javascript" src="@Model.Url.SamplesBrowserContent("~/js/all.js", UrlScheme.Schemeless)"></script>
+        @*
+        <script type="text/javascript" src="@Model.Url.SamplesBrowserContent("~/js/modernizr.min.js", UrlScheme.Schemeless)"></script>
+        <script type="text/javascript" src="@Model.Url.SamplesBrowserContent("~/js/jquery.min.js", UrlScheme.Schemeless)"></script>
+        <script type="text/javascript" src="@Model.Url.SamplesBrowserContent("~/js/jquery-ui.min.js", UrlScheme.Schemeless)"></script>
+
+        <script type="text/javascript" src="@Model.Url.SamplesBrowserContent("~/js/prettify.js", UrlScheme.Schemeless)"></script>
+        <script type="text/javascript" src="@Model.Url.SamplesBrowserContent("~/js/apiviewer.js", UrlScheme.Schemeless)"></script>
+        <script type="text/javascript" src="@Model.Url.SamplesBrowserContent("~/js/sb.js", UrlScheme.Schemeless)"></script>
+
+        <script type="text/javascript" src="@Model.Url.SamplesBrowserContent("~/js/qr/qrcode.js", UrlScheme.Schemeless)"></script>
+        <script type="text/javascript" src="@Model.Url.SamplesBrowserContent("~/js/qr/jquery.qrcode.js", UrlScheme.Schemeless)"></script>
+        <script type="text/javascript" src="@Model.Url.SamplesBrowserContent("~/js/jquery.history.js", UrlScheme.Schemeless)" id="historyJS"></script>
+        *@
+
+        <script type="text/javascript">
+            var MyAppUrlSettings = {
+                SampleContentURL: '@Url.Action("Sample", "Home")',
+                hostname: '@Model.Url.SamplesBrowserContent("~/")'
+            }
+        </script>
+        @RenderSection("HeadContent", false)
+    </head>
+    <body>
+        <div id="wrapperDiv">
+            <div id="sampleBrowserContainer" class="sbContainer">
+                <header class="ui-helper-clearfix row sbHeader">
+                    <div class="headerIcon headerIcon_click">
+                        <img src="@Model.Url.SamplesBrowserContent("~/images/headerIcon.PNG", UrlScheme.Schemeless)" />
+                    </div>
+                </header>
+                @Html.Partial("_HamburgerMenu", Model)
+
+                <div id="contentLayer" style="display: none;"></div>
+                <div id="mainContainer" class="sb-layout ui-helper-clearfix">
+                    <div class="tempContainer"></div>
+                    <div class="menu-bar">
+                        @if(Model.ShowDownloadButton){
+                        <div class="downloadButton">
+                            <a href="@Model.Url.SamplesBrowserContent("~/download", UrlScheme.Https)">
+                                @Resources.Main.DownloadNow                              
+                            </a>
+                        </div>}
+                        <div id="hamburger_click">
+                            <div id="hamburger">
+                                <img src="@Model.Url.SamplesBrowserContent("~/images/hamburgerIcon.png", UrlScheme.Schemeless)"/>
+                            </div>
+                            <label>@Resources.Main.Menu</label>
+                        </div>
+                        @*in order to support local samples, javascript click-handler should be used, but not href (with wrong value)*@
+                        <a href="#" class="tablet-size-logo headerIcon_click"></a>
+                        <a href="#" class="phone-size-logo headerIcon_click"></a>
+                        
+                    </div>
+                    @RenderBody()
+                </div>
+            </div>
+            <footer class="row footerArea">
+                <div class="footerIcon">
+                    <a href="@Resources.Main.IG_Website">
+                        <img src="@Model.Url.SamplesBrowserContent("~/images/footerIcon.PNG", UrlScheme.Schemeless)" />
+                    </a>
+                </div>
+                <nav class="footerNav">
+                <a href="@Resources.Main.License_AgreementURL">@Resources.Main.License_Agreement</a>|
+                <a href="@Resources.Main.Contact_UsURL">@Resources.Main.Contact_Us</a>|
+                <a href="@Resources.Main.Get_HelpURL">@Resources.Main.Get_Help</a>|
+                <a href="@Resources.Main.Meet_UsURL">@Resources.Main.Meet_Us</a>|
+                <a href="@Resources.Main.Privacy_AgreementURL">@Resources.Main.Privacy_Agreement</a>|
+                <a href="@Resources.Main.Site_MapURL">@Resources.Main.Site_Map</a>|
+                <a href="@Resources.Main.Legal_InformationURL">@Resources.Main.Legal_Information</a>
+                </nav>
+            </footer>
+        </div>
+        @Html.Partial("_GA", Model)
+    </body>
+</html>

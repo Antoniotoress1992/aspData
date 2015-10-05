@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Radial Series</title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="../../igniteui/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+    <link href="../../igniteui/css/structure/infragistics.css" rel="stylesheet" />
+    
+    <!--CSS file specific for chart styling -->
+    <link href="../../igniteui/css/structure/modules/infragistics.ui.chart.new.css" rel="stylesheet" />
+
+    <script src="../../js/modernizr.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="../../igniteui/js/infragistics.core.js"></script>
+    <script src="../../igniteui/js/infragistics.dv.js"></script>
+
+</head>
+<body>
+    <script type="text/javascript" src="../../data-files/temperature.js"></script>
+
+    <script type="text/javascript">
+
+        $(function () {
+            function createChart(selector, seriesType, data, hasLegend) {
+                $(selector).igDataChart({
+                    width: "400px",
+                    height: "400px",
+                    dataSource: data,
+                    legend: hasLegend ? { element: "radialLegend" } : null,
+                    title: "New York City vs. Philadelphia",
+                    subtitle: "A comparison of daily temperatures",
+                    axes: [{
+                        name: "angleAxis",
+                        type: "categoryAngle",
+                        label: "Time",
+                        startAngleOffset: -90,
+                        interval: 1
+                    }, {
+                        name: "radiusAxis",
+                        type: "numericRadius",
+                        innerRadiusExtentScale: .1,
+                        maximumValue: 95,
+                        minimumValue: 75,
+                        interval: 5,
+                        radiusExtentScale: .6
+                    }],
+                    series: [{
+                        name: "series1",
+                        title: 'Philadelphia',
+                        type: seriesType,
+                        angleAxis: "angleAxis",
+                        valueAxis: "radiusAxis",
+                        valueMemberPath: "PhiladelphiaTemp",
+                        thickness: 5,
+                        markerType: "circle"
+                    }, {
+                        name: "series2",
+                        title: 'New York City',
+                        type: seriesType,
+                        angleAxis: "angleAxis",
+                        valueAxis: "radiusAxis",
+                        valueMemberPath: "NewYorkCityTemp",
+                        thickness: 5,
+                        markerType: "circle"
+                    }],
+                    horizontalZoomable: true,
+                    verticalZoomable: true,
+                    windowResponse: "immediate"
+                });
+            }
+
+            createChart("#chartRadialLine", "radialLine", data, false);
+            createChart("#chartRadialColumn", "radialColumn", data, false);
+            createChart("#chartRadialPie", "radialPie", data, false);
+            createChart("#chartRadialArea", "radialArea", data, true);
+        });
+    </script>
+
+    <style type="text/css">
+        h2
+        {
+            width: 100%;
+            text-align: center;
+        }
+        
+        .chart
+        {
+            position: relative;
+            float: left;
+            margin-right: 10px;
+        }
+    </style>
+
+    <div class="chartContainer">
+        <div class="chart">
+            <h2>Radial Line</h2>
+            <div id="chartRadialLine"></div>
+        </div>
+        <div class="chart">
+            <h2>Radial Column</h2>
+            <div id="chartRadialColumn"></div>
+        </div>
+        <div class="chart">
+            <h2>Radial Pie</h2>
+            <div id="chartRadialPie"></div>
+        </div>
+        <div class="chart">
+            <h2>Radial Area</h2>
+            <div id="chartRadialArea"></div>
+        </div>
+       
+    </div>
+    <table>
+        <tr>
+            <td id="radialLegend"></td>
+        </tr>
+        <tr><td>Weather data from:<br />
+        <a href="http://www.noaa.gov/" target="_blank">NOAA</a></td></tr>
+    </table>
+    
+</body>
+</html>

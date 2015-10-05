@@ -1,0 +1,146 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{99CD43B9-82A3-4536-92E5-5837B08E5649}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\AjaxControlToolkit.dll = Lib\AjaxControlToolkit.dll
+		Lib\AjaxControlToolkit.pdb = Lib\AjaxControlToolkit.pdb
+		Lib\aspsnippets.facebookapi.dll = Lib\aspsnippets.facebookapi.dll
+		Lib\Atom.NET.dll = Lib\Atom.NET.dll
+		Lib\ComputerBeacon.Json.dll = Lib\ComputerBeacon.Json.dll
+		Lib\CrystalDecisions.CrystalReports.Engine.dll = Lib\CrystalDecisions.CrystalReports.Engine.dll
+		Lib\CrystalDecisions.ReportAppServer.ClientDoc.dll = Lib\CrystalDecisions.ReportAppServer.ClientDoc.dll
+		Lib\CrystalDecisions.ReportSource.dll = Lib\CrystalDecisions.ReportSource.dll
+		Lib\CrystalDecisions.Shared.dll = Lib\CrystalDecisions.Shared.dll
+		Lib\CrystalDecisions.Web.dll = Lib\CrystalDecisions.Web.dll
+		Lib\DHTMLX.dll = Lib\DHTMLX.dll
+		Lib\DHTMLX.xml = Lib\DHTMLX.xml
+		Lib\EAGetMail40.dll = Lib\EAGetMail40.dll
+		Lib\Elmah.dll = Lib\Elmah.dll
+		Lib\Elmah.pdb = Lib\Elmah.pdb
+		Lib\Elmah.xml = Lib\Elmah.xml
+		Lib\Google.GData.AccessControl.dll = Lib\Google.GData.AccessControl.dll
+		Lib\Google.GData.Calendar.dll = Lib\Google.GData.Calendar.dll
+		Lib\Google.GData.Client.DLL = Lib\Google.GData.Client.DLL
+		Lib\Google.GData.Extensions.dll = Lib\Google.GData.Extensions.dll
+		Lib\Html5Asp.dll = Lib\Html5Asp.dll
+		Lib\ImapX.dll = Lib\ImapX.dll
+		Lib\ImapX.pdb = Lib\ImapX.pdb
+		Lib\Infragistics45.Web.jQuery.v14.1.dll = Lib\Infragistics45.Web.jQuery.v14.1.dll
+		Lib\Infragistics45.Web.v14.1.dll = Lib\Infragistics45.Web.v14.1.dll
+		Lib\Infragistics45.WebUI.Documents.Core.v14.1.dll = Lib\Infragistics45.WebUI.Documents.Core.v14.1.dll
+		Lib\Infragistics45.WebUI.Documents.Excel.v14.1.dll = Lib\Infragistics45.WebUI.Documents.Excel.v14.1.dll
+		Lib\Infragistics45.WebUI.Documents.IO.v14.1.dll = Lib\Infragistics45.WebUI.Documents.IO.v14.1.dll
+		Lib\Infragistics45.WebUI.Documents.Reports.v14.1.dll = Lib\Infragistics45.WebUI.Documents.Reports.v14.1.dll
+		Lib\Infragistics45.WebUI.Documents.Word.v14.1.dll = Lib\Infragistics45.WebUI.Documents.Word.v14.1.dll
+		Lib\Infragistics45.WebUI.Misc.v14.1.dll = Lib\Infragistics45.WebUI.Misc.v14.1.dll
+		Lib\Infragistics45.WebUI.Shared.v14.1.dll = Lib\Infragistics45.WebUI.Shared.v14.1.dll
+		Lib\Infragistics45.WebUI.WebDataInput.v14.1.dll = Lib\Infragistics45.WebUI.WebDataInput.v14.1.dll
+		Lib\Infragistics45.WebUI.WebHtmlEditor.v14.1.dll = Lib\Infragistics45.WebUI.WebHtmlEditor.v14.1.dll
+		Lib\Infragistics45.WebUI.WebSchedule.v14.1.dll = Lib\Infragistics45.WebUI.WebSchedule.v14.1.dll
+		Lib\Infragistics45.WebUI.WebScheduleDataProvider.v14.1.dll = Lib\Infragistics45.WebUI.WebScheduleDataProvider.v14.1.dll
+		Lib\itextsharp.dll = Lib\itextsharp.dll
+		Lib\license.txt = Lib\license.txt
+		Lib\LinqKit.dll = Lib\LinqKit.dll
+		Lib\log4net.dll = Lib\log4net.dll
+		Lib\log4net.xml = Lib\log4net.xml
+		Lib\Microsoft.ReportViewer.Common.dll = Lib\Microsoft.ReportViewer.Common.dll
+		Lib\Microsoft.ReportViewer.ProcessingObjectModel.dll = Lib\Microsoft.ReportViewer.ProcessingObjectModel.dll
+		Lib\Microsoft.ReportViewer.WebForms.dll = Lib\Microsoft.ReportViewer.WebForms.dll
+		Lib\Microsoft.ReportViewer.WebForms.xml = Lib\Microsoft.ReportViewer.WebForms.xml
+		Lib\Microsoft.ReportViewer.WinForms.dll = Lib\Microsoft.ReportViewer.WinForms.dll
+		Lib\Microsoft.ReportViewer.WinForms.xml = Lib\Microsoft.ReportViewer.WinForms.xml
+		Lib\Newtonsoft.Json.dll = Lib\Newtonsoft.Json.dll
+		Lib\Newtonsoft.Json.xml = Lib\Newtonsoft.Json.xml
+		Lib\readme.txt = Lib\readme.txt
+		Lib\Spire.Common.dll = Lib\Spire.Common.dll
+		Lib\Spire.Common.xml = Lib\Spire.Common.xml
+		Lib\Spire.Doc.dll = Lib\Spire.Doc.dll
+		Lib\Spire.Doc.xml = Lib\Spire.Doc.xml
+		Lib\Spire.License.dll = Lib\Spire.License.dll
+		Lib\Spire.Pdf.dll = Lib\Spire.Pdf.dll
+		Lib\Spire.Pdf.xml = Lib\Spire.Pdf.xml
+		Lib\Spire.XLS.dll = Lib\Spire.XLS.dll
+		Lib\Spire.XLS.xml = Lib\Spire.XLS.xml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM.Web", "CRM.Web\CRM.Web.csproj", "{5A1B15FC-D4B8-4043-B333-376EB07A6B16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM.Data", "CRM.Data\CRM.Data.csproj", "{5420CF5E-D3B5-4767-A8EC-DF1C76601ED0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM.Core", "CRM.Core\CRM.Core.csproj", "{5E69DACE-F45D-4750-B300-241847766E48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailReminder", "EmailReminder\EmailReminder.csproj", "{6DD0B8D2-472A-4A59-A931-FBF34FDB2FC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM.Repository", "CRM.Repository\CRM.Repository.csproj", "{BC3D9197-A0C3-429D-BD3C-B483627974EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM.RuleEngine", "CRM.RuleEngine\CRM.RuleEngine.csproj", "{D6D690B6-E3BD-429D-B890-7592333EBA5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM.RuleEngine.Service", "CRM.RuleEngine.Service\CRM.RuleEngine.Service.csproj", "{5475E2FE-F53B-4CD7-916B-49CFDCF98AAE}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://162.242.238.245:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CRM.Core\\CRM.Core.csproj
+		SccProjectName1 = CRM.Core
+		SccLocalPath1 = CRM.Core
+		SccProjectUniqueName2 = CRM.Data\\CRM.Data.csproj
+		SccProjectName2 = CRM.Data
+		SccLocalPath2 = CRM.Data
+		SccProjectUniqueName3 = CRM.Web\\CRM.Web.csproj
+		SccProjectName3 = CRM.Web
+		SccLocalPath3 = CRM.Web
+		SccProjectUniqueName4 = EmailReminder\\EmailReminder.csproj
+		SccProjectName4 = EmailReminder
+		SccLocalPath4 = EmailReminder
+		SccProjectUniqueName5 = CRM.Repository\\CRM.Repository.csproj
+		SccProjectName5 = CRM.Repository
+		SccLocalPath5 = CRM.Repository
+		SccProjectUniqueName6 = CRM.RuleEngine\\CRM.RuleEngine.csproj
+		SccProjectName6 = CRM.RuleEngine
+		SccLocalPath6 = CRM.RuleEngine
+		SccProjectUniqueName7 = CRM.RuleEngine.Service\\CRM.RuleEngine.Service.csproj
+		SccProjectName7 = CRM.RuleEngine.Service
+		SccLocalPath7 = CRM.RuleEngine.Service
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A1B15FC-D4B8-4043-B333-376EB07A6B16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A1B15FC-D4B8-4043-B333-376EB07A6B16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A1B15FC-D4B8-4043-B333-376EB07A6B16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A1B15FC-D4B8-4043-B333-376EB07A6B16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5420CF5E-D3B5-4767-A8EC-DF1C76601ED0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5420CF5E-D3B5-4767-A8EC-DF1C76601ED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5420CF5E-D3B5-4767-A8EC-DF1C76601ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5420CF5E-D3B5-4767-A8EC-DF1C76601ED0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E69DACE-F45D-4750-B300-241847766E48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E69DACE-F45D-4750-B300-241847766E48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E69DACE-F45D-4750-B300-241847766E48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E69DACE-F45D-4750-B300-241847766E48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DD0B8D2-472A-4A59-A931-FBF34FDB2FC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DD0B8D2-472A-4A59-A931-FBF34FDB2FC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DD0B8D2-472A-4A59-A931-FBF34FDB2FC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DD0B8D2-472A-4A59-A931-FBF34FDB2FC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC3D9197-A0C3-429D-BD3C-B483627974EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC3D9197-A0C3-429D-BD3C-B483627974EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC3D9197-A0C3-429D-BD3C-B483627974EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC3D9197-A0C3-429D-BD3C-B483627974EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6D690B6-E3BD-429D-B890-7592333EBA5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6D690B6-E3BD-429D-B890-7592333EBA5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6D690B6-E3BD-429D-B890-7592333EBA5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6D690B6-E3BD-429D-B890-7592333EBA5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5475E2FE-F53B-4CD7-916B-49CFDCF98AAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5475E2FE-F53B-4CD7-916B-49CFDCF98AAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5475E2FE-F53B-4CD7-916B-49CFDCF98AAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5475E2FE-F53B-4CD7-916B-49CFDCF98AAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

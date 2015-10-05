@@ -1,0 +1,117 @@
+﻿@using Infragistics.Web.Mvc
+@using IgniteUI.SamplesBrowser.Models
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="@Url.Content("~/igniteui/css/themes/infragistics/infragistics.theme.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/igniteui/css/structure/infragistics.css")" rel="stylesheet" />
+
+    <script src="@Url.Content("~/js/modernizr.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery-ui.min.js")"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="@Url.Content("~/igniteui/js/infragistics.core.js")"></script>
+    <script src="@Url.Content("~/igniteui/js/infragistics.lob.js")"></script>
+
+</head>
+<body>
+
+    <script type="text/javascript">
+        $.support.cors = true;
+        $(function () {
+            var dataSource,
+            remoteDataSource,
+            remoteSize = { u: 0, d: 0 },
+            directSize = { u: 0, d: 0 },
+            $directGrid = $("#directPivotGrid"),
+            $remoteGrid = $("#remotePivotGrid"),
+            toggleTupleMember = function (expand, pivotGrid, axisName, tupleIndex, memberIndex) {
+                var friendlyAxisName = axisName == "Axis0" ? "columnAxis" : "rowAxis";
+                if (expand) {
+                    pivotGrid.igPivotGrid("expandTupleMember", friendlyAxisName, tupleIndex, memberIndex, true);
+                }
+                else {
+                    pivotGrid.igPivotGrid("collapseTupleMember", friendlyAxisName, tupleIndex, memberIndex, true);
+                }
+            };
+
+            $(document).ajaxComplete(function (event, request, settings) {
+                if (settings.url.match("(.*/)?remote-xmla-provider-endpoint(.*)")) {
+                    remoteSize.u += settings.data.length;
+                    remoteSize.d += request.responseText.length;
+                    $("#remoteSize").text("Uploaded: " + (remoteSize.u / 1024).toFixed(2) + " KB, Downloaded: " + (remoteSize.d / 1024).toFixed(2) + " KB").show();
+                } else if (settings.url === "http://sampledata.infragistics.com/olap/msmdpump.dll") {
+                    directSize.u += settings.data.length;
+                    directSize.d += request.responseText.length;
+                    $("#directSize").text("Uploaded: " + (directSize.u / 1024).toFixed(2) + " KB, Downloaded: " + (directSize.d / 1024).toFixed(2) + " KB").show();
+                }
+            });
+
+            dataSource = new $.ig.OlapXmlaDataSource({
+                serverUrl: 'http://sampledata.infragistics.com/olap/msmdpump.dll',
+                catalog: 'Adventure Works DW Standard Edition',
+                cube: 'Adventure Works',
+                rows: '[Date].[Calendar]',
+                columns: '[Product].[Product Categories]',
+                measures: '[Measures].[Internet Order Count]'
+            });
+
+            remoteDataSource = new $.ig.OlapXmlaDataSource({
+                isRemote: true,
+                serverUrl: '@Url.Action("remote-xmla-provider-endpoint")',
+                catalog: 'Adventure Works DW Standard Edition',
+                cube: 'Adventure Works',
+                rows: '[Date].[Calendar]',
+                columns: '[Product].[Product Categories]',
+                measures: '[Measures].[Internet Order Count]'
+            });
+
+            $directGrid.igPivotGrid({
+                dataSource: dataSource,
+                width: "915px",
+                height: "450px",
+                hideFiltersDropArea: true,
+                disableColumnsDropArea: true,
+                disableRowsDropArea: true,
+                disableMeasuresDropArea: true,
+                tupleMemberExpanding: function (evt, ui) {
+                    toggleTupleMember(true, $remoteGrid, ui.axisName, ui.tupleIndex, ui.memberIndex);
+                },
+                tupleMemberCollapsing: function (evt, ui) {
+                    toggleTupleMember(false, $remoteGrid, ui.axisName, ui.tupleIndex, ui.memberIndex);
+                }
+            });
+
+            $remoteGrid.igPivotGrid({
+                dataSource: remoteDataSource,
+                width: "915px",
+                height: "450px",
+                hideFiltersDropArea: true,
+                disableColumnsDropArea: true,
+                disableRowsDropArea: true,
+                disableMeasuresDropArea: true,
+                tupleMemberExpanding: function (evt, ui) {
+                    toggleTupleMember(true, $directGrid, ui.axisName, ui.tupleIndex, ui.memberIndex);
+                },
+                tupleMemberCollapsing: function (evt, ui) {
+                    toggleTupleMember(false, $directGrid, ui.axisName, ui.tupleIndex, ui.memberIndex);
+                }
+            });
+        });
+    </script>
+
+    <h5>Direct XMLA Access</h5>
+    <h5 id="directSize">Uploaded: 0KB, Downloaded: 0 KB</h5>
+    <div id="directPivotGrid"></div>
+
+    <h5>Remote XMLA Access</h5>
+    <h5 id="remoteSize">Uploaded: 0KB, Downloaded: 0 KB</h5>
+    <div id="remotePivotGrid"></div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Performance Bar Settings</Title>
+    <Description>This sample demonstrates configuring the performance (value) bar, the comparative measure (target value) marker, and the dimension of the scale of the the igBulletGraph control.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>パフォーマンス バーの設定</Title>
+    <Description>このサンプルでは、igBulletGraph コントロールのパフォーマンス (実際値) バー、比較目盛 (ターゲット値) マーカー、およびスケールのサイズを構成する方法を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

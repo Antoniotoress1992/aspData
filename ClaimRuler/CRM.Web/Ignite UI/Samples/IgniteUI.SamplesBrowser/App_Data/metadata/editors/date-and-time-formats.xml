@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Date and Time Formats</Title>
+    <Description>This sample shows different configurations for formatting dates and times in the date editor.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Overview" TopicName="igDateEditor_Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>日付と時刻書式設定</Title>
+    <Description>このサンプルでは、日付エディターに日付と時間を書式設定する構成を紹介します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="概要" TopicName="igDateEditor_Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

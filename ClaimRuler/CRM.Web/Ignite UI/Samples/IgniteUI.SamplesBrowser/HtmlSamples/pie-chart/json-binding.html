@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="../../igniteui/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+    <link href="../../igniteui/css/structure/infragistics.css" rel="stylesheet" />
+
+    <script src="../../js/modernizr.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="../../igniteui/js/infragistics.core.js"></script>
+    <script src="../../igniteui/js/infragistics.dv.js"></script>
+    <script src="../../igniteui/js/infragistics.lob.js"></script>
+
+</head>
+<body>
+    
+    <style type="text/css">
+         #chart {
+            position: relative;
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 10px;
+    }
+        
+    </style>
+
+    <div id="chart"></div>
+
+    <script>
+
+        $(function () {
+
+            var data = [
+                { "CountryName": "China", "Pop1990": 1141, "Pop2008": 1333, "Pop2025": 1458 },
+                { "CountryName": "India", "Pop1990": 849, "Pop2008": 1140, "Pop2025": 1398 },
+                { "CountryName": "United States", "Pop1990": 250, "Pop2008": 304, "Pop2025": 352 },
+                { "CountryName": "Indonesia", "Pop1990": 178, "Pop2008": 228, "Pop2025": 273 },
+                { "CountryName": "Brazil", "Pop1990": 150, "Pop2008": 192, "Pop2025": 223 }
+            ];
+
+            $("#chart").igPieChart({
+                width: "435px",
+                height: "435px",
+                dataSource: data, //JSON data defined above
+                valueMemberPath: "Pop2008",
+                labelMemberPath: "CountryName",
+                labelsPosition: "bestFit"
+            });
+
+        });
+    </script>
+
+</body>
+</html>

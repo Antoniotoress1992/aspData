@@ -1,0 +1,120 @@
+﻿@using Infragistics.Web.Mvc
+@using IgniteUI.SamplesBrowser.Models
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="@Url.Content("~/igniteui/css/themes/infragistics/infragistics.theme.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/igniteui/css/structure/infragistics.css")" rel="stylesheet" />
+
+    <!-- Sample CSS -->
+    <style type="text/css">
+        #player1 {
+            z-index: 1000;
+        }
+
+        #silverlightControlHost {
+            display: none;
+        }
+    </style>
+
+    <script src="@Url.Content("~/js/silverlight.js")"></script>
+
+    <script src="@Url.Content("~/js/modernizr.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery-ui.min.js")"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="@Url.Content("~/igniteui/js/infragistics.core.js")"></script>
+    <script src="@Url.Content("~/igniteui/js/infragistics.lob.js")"></script>
+
+</head>
+<body>
+
+        <script>
+
+            function onSilverlightError(sender, args) {
+                var appSource = "";
+                if (sender != null && sender != 0) {
+                    appSource = sender.getHost().Source;
+                }
+
+                var errorType = args.ErrorType;
+                var iErrorCode = args.ErrorCode;
+
+                if (errorType == "ImageError" || errorType == "MediaError") {
+                    return;
+                }
+
+                var errMsg = "Unhandled Error in Silverlight Application " + appSource + "\n";
+
+                errMsg += "Code: " + iErrorCode + "    \n";
+                errMsg += "Category: " + errorType + "       \n";
+                errMsg += "Message: " + args.ErrorMessage + "     \n";
+
+                if (errorType == "ParserError") {
+                    errMsg += "File: " + args.xamlFile + "     \n";
+                    errMsg += "Line: " + args.lineNumber + "     \n";
+                    errMsg += "Position: " + args.charPosition + "     \n";
+                }
+                else if (errorType == "RuntimeError") {
+                    if (args.lineNumber != 0) {
+                        errMsg += "Line: " + args.lineNumber + "     \n";
+                        errMsg += "Position: " + args.charPosition + "     \n";
+                    }
+                    errMsg += "MethodName: " + args.methodName + "     \n";
+                }
+
+                alert(errMsg);
+            }
+
+            $(function () {
+                $("#player1").bind({
+                    igvideoplayerbrowsernotsupported: function (sender, eventArgs) {
+                        $("#silverlightControlHost").css("display", "block");
+                        $("#player1").css("display", "none");
+                        eventArgs.cancel = true;
+                    }
+                });
+            });
+
+    </script>
+
+    <div>
+        @(Html.
+            Infragistics().
+            VideoPlayer().
+            ID("player1").
+            Width("720").
+            Height("540").
+            PosterUrl(ViewData["posterUrl"] as string).
+            Fullscreen(false).
+            BrowserControls(false).
+            Autohide(true).
+            Title("Infragistics Presentation").
+            Sources(ViewData["videoSources"] as List<string>).
+            Render()
+        )
+    </div>    
+        <div id="silverlightControlHost">
+            <object data="data:application/x-silverlight-2," type="application/x-silverlight-2"
+                width="720px" height="540px">
+                <param name="source" value="@Url.Content("~/xap/video-player-fallback.xap")" />
+                <param name="onError" value="onSilverlightError" />
+                <param name="background" value="white" />
+                <param name="minRuntimeVersion" value="4.0.50826.0" />
+                <param name="autoUpgrade" value="true" />
+                <a href="http://go.microsoft.com/fwlink/?LinkID=149156&v=4.0.50826.0" style="text-decoration: none">
+                    <img src="http://go.microsoft.com/fwlink/?LinkId=161376" alt="Get Microsoft Silverlight"
+                        style="border-style: none" />
+                </a>
+            </object>
+            <iframe id="_sl_historyFrame" style="visibility: hidden; height: 0px; width: 0px; border: 0px"></iframe>
+        </div>
+
+</body>
+</html>

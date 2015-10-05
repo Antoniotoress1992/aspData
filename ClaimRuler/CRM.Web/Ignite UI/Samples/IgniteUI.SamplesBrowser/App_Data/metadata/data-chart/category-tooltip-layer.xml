@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Category Tooltip Layer</Title>
+    <Description>This sample demonstrates the Category Tooltip Layer that displays grouped tooltips for series that use a category axis. The sample options pane allows you to edit the properties of the layer, such as changing the position of the tooltip.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Category Tooltip Layer" TopicName="HoverInteractions_Category_Tooltip_Layer" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>カテゴリ ツールチップ レイヤー</Title>
+    <Description>このサンプルは、カテゴリ軸を使用してグループ化されたツールチップを表示するカテゴリ ツール チップ レイヤーを紹介します。このサンプル オプション ペインでは、ツールチップの位置の変更など、レイヤーのプロパティを編集できます。</Description>
+    <HelpTopics>
+      <HelpTopic Title="カテゴリ ツールチップ レイヤー" TopicName="HoverInteractions_Category_Tooltip_Layer" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

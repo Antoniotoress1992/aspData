@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">splitter/basic-vertical-splitter</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      The igSplitter is a widget based on jQuery UI that manages layout in two panels with a split bar 
+      and provides <a href="~/splitter/api-events-splitter">rich interactions</a> to end users including the abilities to 
+      <a href="~/splitter/basic-horizontal-splitter">expand/collapse</a> panels and <a href="~/splitter/basic-vertical-splitter">resize panels via the split bar</a>.
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      igSplitter は、jQuery UI に基づくウィジェットです。2 つのパネルでコンテンツを管理し、スプリッター バーを提供します。<a href="~/splitter/basic-horizontal-splitter">パネルを展開/縮小</a>するか、<a href="~/splitter/basic-vertical-splitter">スプリッター バーを使用してパネルのサイズを変更</a>する<a href="~/splitter/api-events-splitter">機能</a>を提供します。
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

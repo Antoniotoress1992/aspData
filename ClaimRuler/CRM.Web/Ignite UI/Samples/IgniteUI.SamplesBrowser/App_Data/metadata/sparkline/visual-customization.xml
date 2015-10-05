@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Visual Customization</Title>
+    <Description>This sample demonstrates how to change the look and feel of igSparkline control.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Overview" TopicName="igSparkline_Overview" />
+      <HelpTopic Title="Visual Elements" TopicName="igSparkline_Visual_Elements" />
+      <HelpTopic Title="Configuring" TopicName="igSparkline_Configuring" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>ビジュアル カスタマイズ化</Title>
+    <Description>このサンプルでは、igSparkline コントロールのルック アンド フィールを変更する方法を紹介します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="概要" TopicName="igSparkline_Overview" />
+      <HelpTopic Title="視覚要素" TopicName="igSparkline_Visual_Elements" />
+      <HelpTopic Title="構成" TopicName="igSparkline_Configuring" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status>Updated</Status>
+</Sample>

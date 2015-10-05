@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>KnockoutJS Configuration</Title>
+    <Description>This sample demonstrates support of knockout.js bindings with the igGrid widget. In this implementation, the selected row of the grid is bound using a standard two-way binding.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>KnockoutJS の構成</Title>
+    <Description>このサンプルでは、igGrid ウィジェットの knockout.js バインディングのサポートを紹介します。この実装では、グリッドの選択された行は標準の TwoWay バインディングによってバインドされます。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

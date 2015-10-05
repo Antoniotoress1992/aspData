@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Search</Title>
+    <Description>By enabling the filtering feature of the ListView, users can search on all fields using the search box. In addition to the search box, this sample also shows the ListView with numbering enabled.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Configuring Filtering" TopicName="igListView_Configuring_Filtering" />
+      <HelpTopic Title="Overview" TopicName="igListView_Overview" />
+      <HelpTopic Title="Known Issues and Limitations" TopicName="igListView_Known_Issues" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>検索</Title>
+    <Description>ListView のフィルタリング機能を有効にすると、検索ボックスですべてのフィールドを検索できます。このサンプルでは、行数を有効にした ListView も紹介します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="フィルタリングの構成" TopicName="igListView_Configuring_Filtering" />
+      <HelpTopic Title="概要" TopicName="igListView_Overview" />
+      <HelpTopic Title="既知の問題と制限" TopicName="igListView_Known_Issues" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

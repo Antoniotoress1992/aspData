@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Unbound Column</Title>
+    <Description>The sample demonstrates how to add and configure unbound columns in igGrid.
+    The unbound values of column “Promotion Expired Date” are set initially using a list of dates.
+    Column “IsPromotion” is using databound client event to set unbound values.
+    Column “Total” is using formula to calculate the multiplication of the values from columns “Unit Price” and “Units in Stock”.
+    When updating the values in “Unit Price” and “Units in Stock”, the change is reflected to Total column.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>非バインド列</Title>
+    <Description>
+      このサンプルでは、igGrid で非バインド列を追加して構成する方法を紹介します。
+      「プロモーション期限」列の非バインド値は日付のリストを使用して初期化されます。
+      「プロモーション」列は、非バインド値を設定するためにデータバインドされたクライアント イベントを使用します。
+      「合計」列は、「単位価格」および「在庫数」列の値の乗算を計算するために数式を使用します。
+      「単位価格」および「在庫数」列の値を更新すると、「合計」列も更新されます。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>TabletPortrait</MinSampleSize>
+</Sample>

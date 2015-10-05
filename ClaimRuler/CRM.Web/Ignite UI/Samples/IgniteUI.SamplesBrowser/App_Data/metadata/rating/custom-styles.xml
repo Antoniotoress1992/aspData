@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Custom Styles</Title>
+    <Description>This sample illustrates how to apply a custom theme to our jQuery Rating control. Different effects and visualizations can be achieved by manipulating the CSS.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>カスタム スタイル</Title>
+    <Description>このサンプルは、カスタム テーマを JQuery レーティングコントロールに適用する方法を紹介します。CSS を使用してさまざまな効果や視覚化を実現できます。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  
+  <!-- Excluding from jsFiddle because it applying regular styles after the custom styles are applied and overwritting the custom styles -->
+  <JsFiddle Exclude="true"></JsFiddle>
+  <MinSampleSize>TabletPortrait</MinSampleSize>
+</Sample>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>KnockoutJS Binding</Title>
+    <Description>This sample demonstrates how to instantiate and bind Ignite UI editor controls to data using KnockoutJS data bindings.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Configuring Knockout Support" TopicName="Configuring Knockout Support (Editors)" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>KnockoutJS のバインド</Title>
+    <Description>このサンプルでは、KnockoutJS データ バインディングを使用して IgniteUI エディター コントロールをインスタンス化し、データにバインドする方法を紹介します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="Knockout サポートの構成" TopicName="Configuring Knockout Support (Editors)" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

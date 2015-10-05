@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Tile Manager</Name>
+    <Description>
+      When static, and even responsive UI, isn't enough to deliver maximum user experience, you can rely on the Tile Manager to delivery a new level of richness to HTML pages. Based on the Layout Manager control, the Tile Manager give touch-friendly, table-ready, interactive UI that allows your end users to expand, collapse, and move widgets on the page. Create a grid-based layout in HTML that allows widgets to be hosted in defined column and row spans.
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="whatIsLorem" Value="What is Lorem Ipsum" />
+      <LocalizedSampleString Key="whatIsLoremDescription" Value="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." />
+      <LocalizedSampleString Key="whyUseIt" Value="Why do we use it?" />
+      <LocalizedSampleString Key="whyUseItDescription" Value="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)." />
+      <LocalizedSampleString Key="whereItComesFrom" Value="Where does it come from?" />
+      <LocalizedSampleString Key="whereItComesFromDescription" Value='Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.' />
+      <LocalizedSampleString Key="whereToGetSome" Value="Where can I get some?" />
+      <LocalizedSampleString Key="whereToGetSomeDescription" Value="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc." />
+      <LocalizedSampleString Key="skills" Value="Skills" />
+      <LocalizedSampleString Key="products" Value="Products" />
+      <LocalizedSampleString Key="price" Value="Price" />
+      <LocalizedSampleString Key="topSpeed" Value="Top speed" />
+      <LocalizedSampleString Key="nightViewAssist" Value="Night View Assist" />
+      <LocalizedSampleString Key="parkingControl" Value="Parking Distance Control" />
+      <LocalizedSampleString Key="voiceRecognition" Value="Voice Recognition System" />
+      <LocalizedSampleString Key="hwEfficiency" Value="Highway fuel efficiency of" />
+      <LocalizedSampleString Key="engine" Value="engine" />
+      <LocalizedSampleString Key="navigationWithVC" Value="touch-screen glide-up navigation with voice recognition" />
+      <LocalizedSampleString Key="leatherSeats" Value="Leather seating surfaces" />
+      <LocalizedSampleString Key="remoteStart" Value="Adaptive Remote Start" />
+      <LocalizedSampleString Key="lateralAcceleration" Value="G-meter measures lateral acceleration" />
+      <LocalizedSampleString Key="awd" Value="All Wheel Drive" />
+      <LocalizedSampleString Key="heatedSeats" Value="Heated and cooled front seats" />
+      <LocalizedSampleString Key="available" Value="Available" />
+      <LocalizedSampleString Key="navigation" Value="navigation" />
+      <LocalizedSampleString Key="sunroof" Value="sunroof" />
+      <LocalizedSampleString Key="pwrLiftMemoryHeight" Value="Power liftgate with memory height" />
+      <LocalizedSampleString Key="rearviewCamera" Value="Rearview backup camera" />
+      <LocalizedSampleString Key="discount" Value="Discount" />
+      <LocalizedSampleString Key="hardDrive" Value="Hard Drive" />
+      <LocalizedSampleString Key="screenSize" Value="Screen Size" />
+      <LocalizedSampleString Key="videoCard" Value="Video Card" />
+      <LocalizedSampleString Key="processor" Value="Processor" />
+      <LocalizedSampleString Key="memory" Value="Memory" />
+      <LocalizedSampleString Key="in" Value="in" />
+      <LocalizedSampleString Key="seconds" Value="seconds" />
+      <LocalizedSampleString Key="helpApiDocs" Value="Help and API docs" />
+      <LocalizedSampleString Key="kmH" Value="km/h" />
+      <LocalizedSampleString Key="carDealership" Value="Car Dealership" />
+      <LocalizedSampleString Key="chooseBrand" Value="Choose a car brand to browse" />
+      <LocalizedSampleString Key="turboDiesel" Value="turbodiesel" />
+      <LocalizedSampleString Key="mpg" Value="mpg" />
+      <LocalizedSampleString Key="gas" Value="Gas" />
+      <LocalizedSampleString Key="gasElectric" Value="Gas/Electric" />
+      <LocalizedSampleString Key="mrc" Value="Magnetic Ride Control suspension system" />
+      <LocalizedSampleString Key="allNew" Value="all-new" />
+      <LocalizedSampleString Key="hp" Value="HP" />
+      <LocalizedSampleString Key="turboCharged" Value="turbocharged" />
+      <LocalizedSampleString Key="ultraView" Value="UltraView" />
+      <LocalizedSampleString Key="infragisticsUrl" Value="http://www.infragistics.com" />
+      <LocalizedSampleString Key="helpUrl" Value="http://help.infragistics.com" />
+    </LocalizedSampleStrings>
+    <PageKeywords>igTileManager</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Tile Manager</Name>
+    <Description>
+      静的なレスポンシブ UI でもタイルマネージャーを使用することにより、HTML ページに豊かな機能を追加できます。レイアウト マネージャー コントロールに基づいて、タイル マネージャーは、展開、縮小、ウィジェットの移動など、タブレットでレスポンシブな UI を提供します。ウィジェットを定義済みの列または行スパンでホストする HTML でグリッドベースのレイアウトを作成できます。
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="whatIsLorem" Value="Lorem Ipsum の概要" />
+      <LocalizedSampleString Key="whatIsLoremDescription" Value="Lorem Ipsum は印刷業界で一般的に使用されているダミー テキストです。16 世紀に書籍の見本を作成するために初めて使用されて以来、印刷業で標準のダミー テキストになりました。電子文書に画期的な進歩があった現在も引き続き使用されています。Lorem Ipsum を含む Letraset シートのリリースで大衆文化に入り、最近では Aldus PageMaker などのソフトにも Lorem Ipsum が含まれます。" />
+      <LocalizedSampleString Key="whyUseIt" Value="用途" />
+      <LocalizedSampleString Key="whyUseItDescription" Value="閲覧者がレイアウトを確認する際に、その内容が理解できてしまうとレイアウトの確認の妨げになることがあります。Lorem Ipsum は、「コンテンツをここに挿入する」などのテキストを使用する代わりに英字を正規分布させ、判読可能な英語のように表示したものです。デスクトップ パブリッシング パッケージや web ページのエディターの多くは、Lorem Ipsum を既定のモデル テキストとして使用します。「lorem ipsum」を web で検索すると、構築中の web サイトを見つけることができます。時がたつにつれてさまざまなバージョンが出てきました。中にはユーモアのあるコンテンツを含むバージョンもあります。" />
+      <LocalizedSampleString Key="whereItComesFrom" Value="起源" />
+      <LocalizedSampleString Key="whereItComesFromDescription" Value='Lorem Ipsum はランダムなテキストではありません。45 BC 年の古代ラテン文化で作成された 2000 年前のテキストです。バージニアの Hampden-Sydney 大学のラテン文学の教授であるリチャード・マッククリントック氏は、Lorem Ipsum テキストであまり使用されていないラテン言語「consectetur」を研究し、古典文学の都市を訪れ、その起源を探究しました。Lorem Ipsum は、哲学者キケロによる BC 45 年の著作「de Finibus Bonorum et Malorum」(善と悪の究極について) の 1.10.32 および 1.10.33 から取られている。この本は倫理の理論についての本でルネッサンス期に人気のあった本です。Lorem Ipsum の最初の行、「Lorem ipsum dolor sit amet...」、はセクション 1.10.32 の行にあります。
+
+1500 年から使用される Lorem Ipsum の規格テキストは、以下に表示されています。キケロの「de Finibus Bonorum et Malorum」のセクション 1.10.32 および 1.10.33 も元の形式で提供されています。H. Rackham の 1914 年の英語版も提供します。' />
+      <LocalizedSampleString Key="whereToGetSome" Value="入手" />
+      <LocalizedSampleString Key="whereToGetSomeDescription" Value="多くの Lorem Ipsum のバージョンがありますが、ユーモアやランダムな言葉の使用など、異なるバージョンが多く存在します。Lorem Ipsum を使用する場合は、禁止用語などが使用されていないバージョンを使用してください。インターネットの Lorem Ipsum ジェネレーターは必要に応じて定義済みのテキストを繰り返します。つまり、このジェネレーターが最初の本当のジェネレーターとなります。200 以上のラテン単語の辞書を使用し、複数のモデル分構造を使用して Lorem Ipsum テキストを生成します。生成される Lorem Ipsum は繰り返しやユーモアは使用されず、またランダムな単語も挿入されません。" />
+      <LocalizedSampleString Key="skills" Value="スキル" />
+      <LocalizedSampleString Key="products" Value="製品" />
+      <LocalizedSampleString Key="price" Value="価格" />
+      <LocalizedSampleString Key="topSpeed" Value="最大スピード" />
+      <LocalizedSampleString Key="nightViewAssist" Value="ナイトビュー アシスト" />
+      <LocalizedSampleString Key="parkingControl" Value="駐車距離ヘルパー" />
+      <LocalizedSampleString Key="voiceRecognition" Value="音声認識システム" />
+      <LocalizedSampleString Key="hwEfficiency" Value="高速道路の燃料効率" />
+      <LocalizedSampleString Key="engine" Value="エンジン" />
+      <LocalizedSampleString Key="navigationWithVC" Value="タッチ画面の音声認識付きポップアップ ナビゲーション" />
+      <LocalizedSampleString Key="leatherSeats" Value="レザー シート" />
+      <LocalizedSampleString Key="remoteStart" Value="リモート起動" />
+      <LocalizedSampleString Key="lateralAcceleration" Value="左右促進を測定する G メーター" />
+      <LocalizedSampleString Key="awd" Value="四輪駆動" />
+      <LocalizedSampleString Key="heatedSeats" Value="暖房/冷房付き前座席" />
+      <LocalizedSampleString Key="available" Value="利用可能な" />
+      <LocalizedSampleString Key="navigation" Value="ナビゲーション" />
+      <LocalizedSampleString Key="sunroof" Value="サンルーフ" />
+      <LocalizedSampleString Key="pwrLiftMemoryHeight" Value="高さメモリー付きパワー リフトゲート" />
+      <LocalizedSampleString Key="rearviewCamera" Value="バックアップ カメラ" />
+      <LocalizedSampleString Key="discount" Value="割引" />
+      <LocalizedSampleString Key="hardDrive" Value="ハード ドライブ" />
+      <LocalizedSampleString Key="screenSize" Value="画面サイズ" />
+      <LocalizedSampleString Key="videoCard" Value="ビデオ カード" />
+      <LocalizedSampleString Key="processor" Value="プロセッサ" />
+      <LocalizedSampleString Key="memory" Value="メモリ" />
+      <LocalizedSampleString Key="in" Value="-" />
+      <LocalizedSampleString Key="seconds" Value="秒" />
+      <LocalizedSampleString Key="helpApiDocs" Value="ヘルプと API" />
+      <LocalizedSampleString Key="kmH" Value="km/h" />
+      <LocalizedSampleString Key="carDealership" Value="自動車販売代理店" />
+      <LocalizedSampleString Key="chooseBrand" Value="自動車メーカーを選択して参照します" />
+      <LocalizedSampleString Key="turboDiesel" Value="ディーゼル エンジン" />
+      <LocalizedSampleString Key="mpg" Value="mpg" />
+      <LocalizedSampleString Key="gas" Value="ガソリン" />
+      <LocalizedSampleString Key="gasElectric" Value="ガソリン/電力" />
+      <LocalizedSampleString Key="mrc" Value="マグネット サスペンション システム" />
+      <LocalizedSampleString Key="allNew" Value="新車" />
+      <LocalizedSampleString Key="hp" Value="HP" />
+      <LocalizedSampleString Key="turboCharged" Value="ターボ" />
+      <LocalizedSampleString Key="ultraView" Value="UltraView" />
+      <LocalizedSampleString Key="infragisticsUrl" Value="http://jp.infragistics.com" />
+      <LocalizedSampleString Key="helpUrl" Value="http://help.jp.infragistics.com" />
+    </LocalizedSampleStrings>
+    <PageKeywords>igTileManager</PageKeywords>
+  </LocalizedContent>
+  <HelpPageName>igTileManager_Overview</HelpPageName>
+  <ForumNumber>727</ForumNumber>
+  <ClientApiUrl>ui.igtilemanager</ClientApiUrl>
+  <IconImage>jquery-tile-manager.png</IconImage>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <Status>New</Status>
+  <TOC>
+    <Sample>leading-tile</Sample>
+    <Sample>bind-json</Sample>
+    <!--<Sample>markup</Sample>-->
+    <Sample>item-configurations</Sample>
+    <Sample>aspnet-mvc-helper</Sample>
+    <!--<Sample>computer-store</Sample>-->
+  </TOC>
+</Component>

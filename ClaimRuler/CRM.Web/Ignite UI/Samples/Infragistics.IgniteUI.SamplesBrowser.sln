@@ -1,0 +1,36 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infragistics.IgniteUI.SamplesBrowser", "IgniteUI.SamplesBrowser\Infragistics.IgniteUI.SamplesBrowser.csproj", "{A62A2A2F-BBB8-4378-96B2-0D855F6F7944}"
+EndProject
+ 
+ 
+ 
+ 
+Global
+	 
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A62A2A2F-BBB8-4378-96B2-0D855F6F7944}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A62A2A2F-BBB8-4378-96B2-0D855F6F7944}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A62A2A2F-BBB8-4378-96B2-0D855F6F7944}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{A62A2A2F-BBB8-4378-96B2-0D855F6F7944}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{D16830F6-EC62-450F-9546-0B2B2666B659}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D16830F6-EC62-450F-9546-0B2B2666B659}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D16830F6-EC62-450F-9546-0B2B2666B659}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D16830F6-EC62-450F-9546-0B2B2666B659}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59A5008F-7FE3-4D28-A350-862E72F6FF90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59A5008F-7FE3-4D28-A350-862E72F6FF90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59A5008F-7FE3-4D28-A350-862E72F6FF90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59A5008F-7FE3-4D28-A350-862E72F6FF90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8721DA68-16E5-4CF2-9C8B-130B16042925}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8721DA68-16E5-4CF2-9C8B-130B16042925}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8721DA68-16E5-4CF2-9C8B-130B16042925}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8721DA68-16E5-4CF2-9C8B-130B16042925}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

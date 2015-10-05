@@ -1,0 +1,45 @@
+﻿@using Infragistics.Web.Mvc
+@using System.Data
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="@Url.Content("~/igniteui/css/themes/infragistics/infragistics.theme.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/igniteui/css/structure/infragistics.css")" rel="stylesheet" />
+
+    <script src="@Url.Content("~/js/modernizr.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery-ui.min.js")"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="@Url.Content("~/igniteui/js/infragistics.core.js")"></script>
+    <script src="@Url.Content("~/igniteui/js/infragistics.lob.js")"></script>
+
+</head>
+<body>
+
+    @(Html.Infragistics().Grid<System.Data.DataSet>()
+        .ID("grid1")
+        .Width("100%")
+        .AutoGenerateColumns(true)
+        .AutoGenerateLayouts(true)
+        .Features(features =>
+        {
+            features.Sorting().Type(OpType.Local).Mode(SortingMode.Single).Inherit(true);
+            features.Paging().PageSize(5).Type(OpType.Remote).Inherit(false);
+            features.Filtering().Type(OpType.Local).Inherit(true);
+            features.Selection().Mode(SelectionMode.Row).MultipleSelection(true);
+            features.GroupBy().Type(OpType.Local).Inherit(true);
+            features.Hiding().Inherit(true);
+        })
+        .DataSource(Model)
+        .DataSourceUrl(Url.Action("dataset-binding"))
+        .DataBind()
+        .Render()
+    )
+</body>
+</html>

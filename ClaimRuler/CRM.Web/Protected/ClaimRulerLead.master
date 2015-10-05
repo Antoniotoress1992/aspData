@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Protected/ClaimRuler.Master" AutoEventWireup="true" CodeBehind="ClaimRulerLead.master.cs" Inherits="CRM.Web.Protected.ClaimRulerLead" %>
+
+<%@ Register Assembly="Infragistics45.Web.v14.1, Version=14.1.20141.2011, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" Namespace="Infragistics.Web.UI.LayoutControls" TagPrefix="ig" %>
+
+<%@ Register Assembly="Infragistics45.Web.v14.1, Version=14.1.20141.2011, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" Namespace="Infragistics.Web.UI.NavigationControls" TagPrefix="ig" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderMiddArea" runat="server">
+    <div class="paneContent">
+        <div class="page-title">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderPageTitle" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div>
+            <h2>
+                <span><b>
+                   <span><b><%= Session["InsuredName"]%></b> </span></b> </span>
+            </h2>
+        </div>
+        <div>
+
+
+            <div class="toolbar toolbar-body">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolderToolbar" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="paneContentInner">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolderMiddArea" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+        </div>
+    </div>
+</asp:Content>

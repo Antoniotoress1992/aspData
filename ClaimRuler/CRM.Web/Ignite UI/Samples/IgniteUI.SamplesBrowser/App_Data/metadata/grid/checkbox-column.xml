@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Checkbox Column</Title>
+    <Description>
+        This sample demonstrates how to enable checkboxes in a boolean column instead of the true/false values. 
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+      <Title>チェックボックス列</Title>
+    <Description>
+      このサンプルでは、ブール値列で true/false 値を表示する代わりにチェックボックスを有効にする方法を紹介します。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

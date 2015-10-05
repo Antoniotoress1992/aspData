@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<HelpContent TitleID="title">
+  <Structure>
+    <Section TitleID="boilerplate_title">
+      <CodeExample SamplePathID="ignite-ui-boilerplate-jquery-ui" ControlPathID="help-jqui-code-examples">
+        <FullCode />
+        <Description ContentID="boilerplate_desc"/>
+      </CodeExample>
+    </Section>
+    <Section TitleID="create_grid_chart_title">
+      <Paragraph ContentID="grid_chart_intro"/>
+      <CodeExample SamplePathID="getting-started-grid-and-chart" ControlPathID="help-jqui-code-examples">
+        <RunningSample />
+        <TabbedCode />
+        <FullCode Collapsible="Collapsed" />
+      </CodeExample>
+    </Section>
+    <Section TitleID="required_resources_title">
+      
+      <HtmlContent ContentID="dependency_desc"/>
+      <Block TitleID="required_dependencies">
+
+        <HtmlContent ContentID="ig_theme_heading"/>
+        <Paragraph ContentID="ig_theme_desc" />
+        <CodeSnippet><![CDATA[<link href="../../igniteui/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />]]></CodeSnippet>
+        
+        <HtmlContent ContentID="ig_structure_heading"/>
+        <Paragraph ContentID="ig_structure_desc" />
+        <CodeSnippet><![CDATA[<link href="../../igniteui/css/structure/infragistics.css" rel="stylesheet" />]]></CodeSnippet>
+
+        <HtmlContent ContentID="jquery_heading"/>
+        <HtmlContent ContentID="jquery_desc" />
+        <CodeSnippet><![CDATA[<script src="../../js/jquery.min.js"></script>]]></CodeSnippet>
+
+        <HtmlContent ContentID="jqueryui_heading"/>
+        <HtmlContent ContentID="jqueryui_desc" />
+        <CodeSnippet><![CDATA[<script src="../../js/jquery-ui.min.js"></script>]]></CodeSnippet>
+
+        <HtmlContent ContentID="ig_core_heading"/>
+        <Paragraph ContentID="ig_core_desc" />
+        <CodeSnippet><![CDATA[<script src="../../igniteui/js/infragistics.core.js"></script>]]></CodeSnippet>
+      </Block>
+      <Block TitleID="optional_dependencies">        
+        <HtmlContent ContentID="modernizr_heading"/>
+        <HtmlContent ContentID="modernizr_desc" />
+        <CodeSnippet><![CDATA[<script src="../../js/modernizr.min.js"></script>]]></CodeSnippet>
+
+        <HtmlContent ContentID="ig_dv_heading"/>
+        <Paragraph ContentID="ig_dv_desc" />
+        <CodeSnippet><![CDATA[<script src="../../igniteui/js/infragistics.dv.js"></script>]]></CodeSnippet>
+
+        <HtmlContent ContentID="ig_lob_heading"/>
+        <Paragraph ContentID="ig_lob_desc" />
+        <CodeSnippet><![CDATA[<script src="../../igniteui/js/infragistics.lob.js"></script>]]></CodeSnippet>
+      </Block>
+    </Section>
+    <Section TitleID="what_next">
+      <Paragraph ContentID="what_next_desc"/>
+      <HtmlContent ContentID="control_list"/>
+    </Section>
+  </Structure>
+  <LocalizedContent Language="en">
+    <Content ID="title">Getting Started</Content>
+    
+    <!-- Create Grid and Chart -->
+    <Content ID="create_grid_chart_title">Create a Grid and Data Chart</Content>
+    <Content ID="grid_chart_intro">Start using the two most powerful Ignite UI controls right now. To re-create this sample, add the JavaScript, HTML, and CSS from the
+      code viewer to the boilerplate. View the full page if you want to see the complete sample.</Content>    
+
+    <!-- Boilerplate -->
+    <Content ID="boilerplate_title">Ignite UI Boilerplate - jQuery UI</Content>
+    <Content ID="boilerplate_desc">
+      <![CDATA[The boilerplate is a template which includes all of the required dependencies for Ignite UI® jQuery UI-based controls. Simply 
+      copy this boilerplate to a blank HTML file. All of the required JavaScript and CSS is referenced from CDNs 
+      making it easy for you to get started with Ignite UI.]]></Content>
+        
+    <Content ID="required_resources_title">Ignite UI Dependencies</Content>
+    <Content ID="dependency_desc"><![CDATA[This list includes the general JavaScript and CSS dependencies for Ignite UI. The CDN links make 
+    it easy for you to reference these scripts in your application. For production environments, you should consider creating a custom build of Ignite UI 
+    that includes only the controls and features that you need. You can download the full product and custom builds on <a href="~/download">the download page</a>.]]></Content>
+    
+    <!-- Required Resources-->
+    <Content ID="required_dependencies">Required Dependencies</Content>
+    <Content ID="ig_theme_heading"><![CDATA[<h4 class="igsb-bold">Infragistics Theme</h4>]]></Content>
+    <Content ID="ig_theme_desc">The Infragistics theme is a jQuery UI theme providing the default look and feel for the Ignite UI controls. You have the option to substitute your own jQuery UI theme instead.</Content>
+    <Content ID="ig_structure_heading"><![CDATA[<h4 class="igsb-bold">Structure CSS</h4>]]></Content>
+    <Content ID="ig_structure_desc">The infragistics.css file provides the CSS related to layout and positioning for the Ignite UI controls.</Content>
+    <Content ID="jquery_heading"><![CDATA[<h4 class="igsb-bold">jQuery</h4>]]></Content>
+    <Content ID="jquery_desc"><![CDATA[<p>One of the most popular JavaScript libraries, jQuery serves as the base for jQuery UI. Learn more at <a target="_blank" href="http://jquery.com">http://jquery.com</a>.</p>]]></Content>
+    <Content ID="jqueryui_heading"><![CDATA[<h4 class="igsb-bold">jQuery UI</h4>]]></Content>
+    <Content ID="jqueryui_desc"><![CDATA[<p>The jQuery UI framework adds a set of interactions, effects, widgets, and themes serving as the basis for UI controls in Ignite UI. Learn more at <a target="_blank" href="http://jqueryui.com">http://jqueryui.com</a>.<p>]]></Content>
+    <Content ID="ig_core_heading"><![CDATA[<h4 class="igsb-bold">Bundled Ignite UI Core JavaScript</h4>]]></Content>
+    <Content ID="ig_core_desc">Ignite UI offers a set of bundled JavaScript files. The infragistics.core.js file contains base logic and data source components.</Content>
+
+    <!-- Optional Resources-->
+    <Content ID="optional_dependencies">Optional Dependencies</Content>
+    <Content ID="modernizr_heading"><![CDATA[<h4 class="igsb-bold">Modernizr</h4>]]></Content>
+    <Content ID="modernizr_desc"><![CDATA[<p>Modernizr is a library that makes it easy to detect features present in the browser. Ignite UI primarily uses this library to detect touch capabilities.. Learn more at <a target="_blank" href="http://modernizr.com">http://modernizr.com</a>.</p>]]></Content>
+    <Content ID="ig_dv_heading"><![CDATA[<h4 class="igsb-bold">Bundled Ignite UI DV JavaScript</h4>]]></Content>
+    <Content ID="ig_dv_desc">For all charting and mapping controls, use infragistics.dv.js. It takes a dependency on infragistics.core.js and is only required when using charting and mapping controls.</Content>
+    <Content ID="ig_lob_heading"><![CDATA[<h4 class="igsb-bold">Bundled Ignite UI LOB JavaScript</h4>]]></Content>
+    <Content ID="ig_lob_desc">For all other controls including grids, OLAP, and line-of-business, use infragistics.lob.js. This script also takes a dependency on infragistics.core.js.</Content> 
+    
+    <!-- What's Next -->
+    <Content ID="what_next">What's Next</Content>
+    <Content ID="what_next_desc">Now that you have the basics down, browse around the samples to learn more about how you can make your apps more awesome using Ignite UI! Learn more about some of the most popular controls:</Content>
+    <Content ID="control_list">
+      <![CDATA[
+    <ul>
+      <li><a href="~/grid/overview">Grid</a></li>
+      <li><a href="~/data-chart/overview">Data Chart</a></li>
+      <li><a href="~/pivot-grid/overview">Pivot Grid</a></li>
+      <li><a href="~/combo/overview">Combo</a></li>
+      <li><a href="~/tree/overview">Tree</a></li>      
+    </ul>
+    ]]></Content>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Content ID="title">ヘルプ リソース</Content>
+
+    <!-- Create Grid and Chart -->
+    <Content ID="create_grid_chart_title">グリッドおよびチャートの作成</Content>
+    <Content ID="grid_chart_intro">
+      Ignite UI の最もパワフルな 2 つのコントロールをいますぐ使用できます。このサンプルを作成するには、コード ビューアーの JavaScript、HTML、および CSS をボイラープレートに追加します。完全なサンプルを表示するには、ページ全体で表示します。
+    </Content>
+
+    <!-- Boilerplate -->
+    <Content ID="boilerplate_title">Ignite UI のボイラープレート - jQuery UI</Content>
+    <Content ID="boilerplate_desc">
+      <![CDATA[ボイラープレートは、Ignite UI の jQuery UI ベースのコントロールに必要なすべての依存関係を含むテンプレートです。
+すべての必要な JavaScript ファイルおよび CSS ファイルは CDN から参照されています。それらのファイルをダウンロードせずに Ignite UI を使用できます。]]>
+    </Content>
+
+    <Content ID="required_resources_title">Ignite UI の依存関係</Content>
+    <Content ID="dependency_desc">
+      <![CDATA[このリストは Ignite UI の一般的な JavaScript および CSS 依存関係を含みます。このスクリプトを簡単にアプリケーションに参照するには、CDN を使用できます。実稼働環境の場合、必要なコントロールおよび機能のみを含むカスタム Ignite UI ビルドを作成することができます。製品全体またはカスタム ビルドを<a href="~/download">ダウンロード ページ</a>からダウンロードできます。]]>
+    </Content>
+
+    <!-- Required Resources-->
+    <Content ID="required_dependencies">必須の依存関係</Content>
+    <Content ID="ig_theme_heading"><![CDATA[<h4 class="igsb-bold">Infragistics テーマ</h4>]]></Content>
+    <Content ID="ig_theme_desc">Infragistics テーマは、Ignite UI コントロールのデフォルト ルック アンド フィールを提供する jQuery UI テーマです。カスタム jQuery UI テーマを使用するオプションがあります。</Content>
+    <Content ID="ig_structure_heading"><![CDATA[<h4 class="igsb-bold">構造 CSS</h4>]]></Content>
+    <Content ID="ig_structure_desc">infragistics.css ファイルは、Ignite UI コントロールのレイアウトおよび配置に関連する CSS を提供します。</Content>
+    <Content ID="jquery_heading"><![CDATA[<h4 class="igsb-bold">jQuery</h4>]]></Content>
+    <Content ID="jquery_desc"><![CDATA[<p>jQuery、人気のある JavaScript ライブラリは、jQuery UI の元です。詳細については、<a target="_blank" href="http://jquery.com">http://jquery.com</a> を参照してください。</p>]]></Content>
+    <Content ID="jqueryui_heading"><![CDATA[<h4 class="igsb-bold">jQuery UI</h4>]]></Content>
+    <Content ID="jqueryui_desc"><![CDATA[<p>jQuery UI フレームワークは、Ignite UI コントロールの操作、結果、ウィジェット、テーマのセットを追加します。詳細については、<a target="_blank" href="http://jqueryui.com">http://jqueryui.com</a> を参照してください。<p>]]></Content>
+    <Content ID="ig_core_heading"><![CDATA[<h4 class="igsb-bold">Ignite UI コア JavaScript ファイルのバンドル</h4>]]></Content>
+    <Content ID="ig_core_desc">Ignite UI は、バンドルされた JavaScript ファイルのセットを提供します。infragistics.core.js ファイルは、基本ロジックおよびデータ ソース コンポーネントを含みます。</Content>
+
+    <!-- Optional Resources-->
+    <Content ID="optional_dependencies">オプションの依存関係</Content>
+    <Content ID="modernizr_heading"><![CDATA[<h4 class="igsb-bold">Modernizr</h4>]]></Content>
+    <Content ID="modernizr_desc"><![CDATA[<p>Modernizr は、ブラウザーの機能を簡単に検出するライブラリです。Ignite UI は、このライブラリを使用してタッチ機能を検出します。詳細については、<a target="_blank" href="http://modernizr.com">http://modernizr.com</a> を参照してください。</p>]]></Content>
+    <Content ID="ig_dv_heading"><![CDATA[<h4 class="igsb-bold">Ignite UI DV JavaScript ファイルのバンドル</h4>]]></Content>
+    <Content ID="ig_dv_desc">infragistics.dv.js ファイルは、チャートおよびマップ コントロールを含みます。infragistics.core.js ファイルに依存関係があり、チャートおよびマッピング コントロールを使用する場合のみに必要です。</Content>
+    <Content ID="ig_lob_heading"><![CDATA[<h4 class="igsb-bold">Ignite UI LOB JavaScript ファイルのバンドル</h4>]]></Content>
+    <Content ID="ig_lob_desc">infragistics.lob.js ファイルは、グリッド、OLAP、および業務用コントロールなどの他のコントロールを含みます。このスクリプトも infragistics.core.js の依存関係があります。</Content>
+
+    <!-- What's Next -->
+    <Content ID="what_next">次の手順</Content>
+    <Content ID="what_next_desc">基本アプリケーションを作成した後、サンプルを参照し、Ignite UI コントロールをアプリケーションに追加する方法を参照します。以下の人気のあるコントロールを参照してください。</Content>
+    <Content ID="control_list">
+      <![CDATA[
+    <ul>
+      <li><a href="~/grid/overview">グリッド</a></li>
+      <li><a href="~/data-chart/overview">データ チャート</a></li>
+      <li><a href="~/pivot-grid/overview">ピボット グリッド</a></li>
+      <li><a href="~/combo/overview">コンボ</a></li>
+      <li><a href="~/tree/overview">ツリー</a></li>      
+    </ul>
+    ]]>
+    </Content>
+  </LocalizedContent>
+</HelpContent>
+

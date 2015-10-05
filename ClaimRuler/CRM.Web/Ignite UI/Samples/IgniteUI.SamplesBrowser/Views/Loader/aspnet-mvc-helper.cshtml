@@ -1,0 +1,49 @@
+﻿@using Infragistics.Web.Mvc
+@using IgniteUI.SamplesBrowser.Models
+
+@model IQueryable<IgniteUI.SamplesBrowser.Models.Northwind.Product>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+
+    <script src="@Url.Content("~/js/modernizr.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery-ui.min.js")"></script>
+
+    <!-- Ignite UI Loader JavaScript File -->
+    <script src="@Url.Content("~/igniteui/js/infragistics.loader.js")"></script>
+
+</head>
+<body>
+
+    @(Html.Infragistics()
+        .Loader()
+        .ScriptPath(Url.Content("~/igniteui/js/"))
+        .CssPath(Url.Content("~/igniteui/css/"))
+        .Resources("igGrid.Sorting")
+        .Render()
+    )
+
+    @(Html.Infragistics().Grid(Model).ID("grid").Columns(column =>
+        {
+            column.For(x => x.ID).HeaderText("ID").Width("100px");
+            column.For(x => x.ProductName).HeaderText("Name").Width("200px");
+            column.For(x => x.QuantityPerUnit).HeaderText("Quantity").Width("200px");
+            column.For(x => x.UnitPrice).HeaderText("Price").DataType("number").Format("currency").Width("130px");
+        })
+        .Features(features =>
+        {
+            features.Sorting()
+                .Mode(SortingMode.Multiple)
+                .Type(OpType.Remote);
+        })
+        .Height("400")
+        .DataBind()
+        .Render()
+    )
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Binding High Volume Data</Title>
+    <Description>
+      This sample demonstrates how to efficiently bind a large number of data points to the igDataChart control.
+    </Description>
+    <HelpTopics>
+      <HelpTopic Title="Data Binding" TopicName="igDataChart_DataBinding" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>大量のデータのバインド</Title>
+    <Description>
+      このサンプルでは、多数のデータポイントを igDataChart コントロールへ効果的にバインドする方法を紹介します。
+    </Description>
+    <HelpTopics>
+      <HelpTopic Title="データ バインディング" TopicName="igDataChart_DataBinding" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

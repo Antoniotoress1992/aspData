@@ -1,0 +1,16 @@
+<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AdminSite.master.cs"
+	Inherits="CRM.Web.Protected.AdminSite" %>
+
+<%@ Register Src="../UserControl/Admin/ucMenu.ascx" TagName="ucMenu" TagPrefix="uc2" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="contentHeader" runat="server">	
+</asp:Content>
+<%--<asp:Content ID="Content2" ContentPlaceHolderID="content1" runat="server">
+</asp:Content>--%>
+<asp:Content ID="Content3" ContentPlaceHolderID="content1" runat="server">
+	<div class="wrapper no-js">
+		<uc2:ucMenu ID="ucMenu1" runat="server" />
+		<asp:HiddenField ID="hfViewPermission" runat="server" Value="0" />
+		<asp:ContentPlaceHolder ID="ContentPlaceHolderMiddArea" runat="server">
+		</asp:ContentPlaceHolder>
+	</div>
+</asp:Content>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Date Picker</Name>
+    <Description>
+      Easily edit and select dates with this fusion of the jQuery date picker with all of the enhanced date editing functionality of our date editor control, for a lightweight, dropdown jQuery date picker with accompanying controls for ASP.NET MVC that's full stylable and works across browsers.
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="validate_blur" Value="Validate On Blur and On Submit, Retain Focus" />
+      <LocalizedSampleString Key="validate_change" Value="Validate On Value Change and On Submit" />
+      <LocalizedSampleString Key="submit_form" Value="Submit Form" />
+      <LocalizedSampleString Key="start_date" Value="Start date for reservation" />
+      <LocalizedSampleString Key="enter_date" Value="Enter Date" />
+      <LocalizedSampleString Key="end_date" Value="End date for reservation" />
+      <LocalizedSampleString Key="luxury_hotel" Value="Luxury hotel room with king-size bed" />
+      <LocalizedSampleString Key="reservation_status" Value="Reservation status for room:" />
+      <LocalizedSampleString Key="unable_book" Value="Unable to book room.  Please check the dates you entered" />
+      <LocalizedSampleString Key="start_date_after" Value="Start date for reservation should be after current date" />
+      <LocalizedSampleString Key="start_date_before" Value="Start date for reservation should be before end date" />
+      <LocalizedSampleString Key="enter_end_date" Value="Enter end date for reservation" />
+      <LocalizedSampleString Key="end_date_after" Value="End date for reservation should be after current date" />
+      <LocalizedSampleString Key="end_date_after_start" Value="End date for reservation should be after start date" />
+      <LocalizedSampleString Key="room_booked" Value="Your room has been booked successfully. Thank you!" />
+      <LocalizedSampleString Key="reserved" Value="RESERVED" />
+      <LocalizedSampleString Key="not_reserved" Value="NOT RESERVED" />
+      <LocalizedSampleString Key="Submit" Value="Submit" />
+    </LocalizedSampleStrings>
+    <PageKeywords>igDatePicker</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Date Picker</Name>
+    <Description>
+      jQuery 日付ピッカーは、日付の編集や選択が簡単です。他のコントロール同様 ASP.NET MVC に対応し、軽量で詳細なスタイル設定が可能なうえ、多くのブラウザーに対応しています。
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="validate_blur" Value="onBlur 時および onSubmit 時の検証、フォーカスを失わない" />
+      <LocalizedSampleString Key="validate_change" Value="onValueChange 時および onSubmit 時の検証" />
+      <LocalizedSampleString Key="submit_form" Value="フォームの送信" />
+      <LocalizedSampleString Key="start_date" Value="チェックイン" />
+      <LocalizedSampleString Key="enter_date" Value="日付の入力" />
+      <LocalizedSampleString Key="end_date" Value="チェックアウト" />
+      <LocalizedSampleString Key="luxury_hotel" Value="キングサイズ ベッド利用デラックス ホテル ルーム" />
+      <LocalizedSampleString Key="reservation_status" Value="お部屋の予約状況:" />
+      <LocalizedSampleString Key="unable_book" Value="部屋を予約できません。入力した日付を確認してください。" />
+      <LocalizedSampleString Key="start_date_after" Value="チェックインを今日以降に設定してください。" />
+      <LocalizedSampleString Key="start_date_before" Value="チェックインをチェックアウト以前に設定してください。" />
+      <LocalizedSampleString Key="enter_end_date" Value="チェックアウトを入力してください。" />
+      <LocalizedSampleString Key="end_date_after" Value="チェックアウトを今日以降に設定してください。" />
+      <LocalizedSampleString Key="end_date_after_start" Value="チェックアウトをチェックイン以降に設定してください。" />
+      <LocalizedSampleString Key="room_booked" Value="予約が完了しました。ありがとうございました。" />
+      <LocalizedSampleString Key="reserved" Value="予約されています" />
+      <LocalizedSampleString Key="not_reserved" Value="予約していません" />
+      <LocalizedSampleString Key="Submit" Value="送信" />
+    </LocalizedSampleStrings>
+    <PageKeywords>igDatePicker</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Date Picker</Name>
+    <Description>
+      jQuery 日付ピッカーは、日付の編集や選択が簡単です。他のコントロール同様 ASP.NET MVC に対応し、軽量で詳細なスタイル設定が可能なうえ、多くのブラウザーに対応しています。
+    </Description>
+  </LocalizedContent>
+  <ClientApiUrl>ui.igdatepicker</ClientApiUrl>
+  <HelpPageName>igDatePicker_igDatePicker</HelpPageName>
+  <ForumNumber>507</ForumNumber>
+  <IconImage>jquery-date-picker-logo.png</IconImage>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <TOC>
+    <Sample>hotel-reservation</Sample>
+    <Sample>basic-usage</Sample>
+    <Sample>validation</Sample>
+  </TOC>
+</Component>

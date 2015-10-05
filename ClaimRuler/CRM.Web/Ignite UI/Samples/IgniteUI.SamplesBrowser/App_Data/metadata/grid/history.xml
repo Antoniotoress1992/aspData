@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>History.js Integration</Title>
+    <Description>
+	  Ignite UI controls are fully integrated with history.js – a popular framework for browser history support.
+	  This sample demonstrates the Data Grid control integrated with history.js. Filter, sort, resize the list of footballers or change the grid page, to create a new view and send it using the generated browser URL.
+	</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>History.js の結合</Title>
+    <Description>
+      Ignite UI® コントロールはブラウザーの履歴機能を提供する history.js をサポートします。
+      このサンプルは、データ グリッド コントロールを history.js との使用を紹介します。プレーヤーのリストをフィルター、並べ替え、サイズ変更し、新しいビューを作成し、生成されたブラウザー URL を使用してリストを送信します。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>Desktop</MinSampleSize>
+  <!-- Excluding from jsFiddle because history js changes the url of the sample and jsfiddle cannot handle that. -->
+  <JsFiddle Exclude="true"></JsFiddle>
+</Sample>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Transition Animation</Title>
+    <Description>This sample demonstrates the animation feature that is displayed at the chart initialization.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Transition Animation" TopicName="igChart_Transitions_In_Animations" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>移行アニメーション</Title>
+    <Description>このサンプルは、チャートの初期化で再生するアニメーション機能を紹介します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="移行アニメーション" TopicName="igChart_Transitions_In_Animations" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

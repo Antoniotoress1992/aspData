@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">sparkline/bind-json</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      The Sparkline control is a data-intense, design-simple graphic that allows 
+      end users to spot trends, variations and patterns in data in a clear and 
+      compact representation. It supports the following <a href="~/sparkline/chart-types">chart types: 
+      line, column, area, and win-loss</a>, and displays more details using 
+      <a href="~/sparkline/tooltips-and-markers">markers, tooltips</a>, <a href="~/sparkline/normal-range-and-trend-lines">normal ranges, and trend lines</a>. 
+      See the complete list of samples in the menu.
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      スパークライン チャート コントロールは、データのトレンド、変更、パターンをコンパクトで分かりやすいチャートで表示します。
+      以下のチャート タイプをサポートします: <a href="~/sparkline/chart-types">折れ線、柱状、エリア、および Win-Loss</a>。<a href="~/sparkline/tooltips-and-markers">マーカー、ツールチップ</a>、<a href="~/sparkline/normal-range-and-trend-lines">標準範囲、およびトレンドライン</a>を使用して詳細を表示します。
+      サンプルをすべて表示するには、メニューを参照してください。
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

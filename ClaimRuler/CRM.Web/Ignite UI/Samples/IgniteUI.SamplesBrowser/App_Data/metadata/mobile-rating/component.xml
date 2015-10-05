@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Rating</Name>
+    <Description>
+      The Mobile Rating control has been written and adapted specifically for mobile form factors, allowing for easy interaction with Touch gestures.
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Value_Event" Value="Value Event"/>
+      <LocalizedSampleString Key="Set_Value_To" Value="Set value to"/>
+      <LocalizedSampleString Key="HTML_Data_Attributes" Value="HTML Data Attributes"/>
+      <LocalizedSampleString Key="Dynamic_Instantiation" Value="Dynamic Instantiation"/>
+    </LocalizedSampleStrings>
+    <PageKeywords>igRating</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Rating</Name>
+    <Description>
+      Mobile Rating コントロールは、モバイル フォーム ファクターに適応しており、タッチ ジェスチャで簡単に操作できます。
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Value_Event" Value="値イベント"/>
+      <LocalizedSampleString Key="Set_Value_To" Value="設定する値:"/>
+      <LocalizedSampleString Key="HTML_Data_Attributes" Value="HTML データ属性"/>
+      <LocalizedSampleString Key="Dynamic_Instantiation" Value="動的にインスタンスを作成"/>
+    </LocalizedSampleStrings>
+    <PageKeywords>igRating</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>mobile.igrating</ClientApiUrl>
+  <HelpPageName>igRating_(Mobile)</HelpPageName>
+  <ForumNumber>663</ForumNumber>
+  <IconImage>jquery-mobile-rating.png</IconImage>
+  <ClientRuntime>jQueryMobile</ClientRuntime>
+  <IsFeatureComponent>True</IsFeatureComponent>
+  <TOC>
+    <Sample>basic-usage</Sample>
+    <Sample>custom-items</Sample>
+    <Sample>api-and-events</Sample>
+    <Sample>aspnet-mvc-helper</Sample>
+  </TOC>
+</Component>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">rating/basic-usage</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      The igRating control is an HTML 5 capable jQuery widget. The control supports <a href="~/rating/custom-items">various display</a> 
+      and <a href="~/rating/custom-styles">style options</a> along with continuous selection and <a href="~/rating/precision">precision options</a>. 
+      See the complete list of samples in the menu.
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      igRating コントロールは、HTML5 jQuery ウィジェットです。コントロールは、<a href="~/rating/custom-items">さまざまな表示</a>および<a href="~/rating/custom-styles">スタイル設定</a>のオプションをサポートし、連続選択および<a href="~/rating/precision">精度</a>オプションもサポートします。
+      サンプルをすべて表示するには、メニューを参照してください。
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

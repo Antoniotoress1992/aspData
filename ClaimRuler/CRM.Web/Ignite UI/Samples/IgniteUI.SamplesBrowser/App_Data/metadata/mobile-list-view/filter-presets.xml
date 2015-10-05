@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Filter Presets</Title>
+    <Description>Filter presets are pre-configured filters that appear as buttons in the filter tray. The below sample demonstrates how filter presets are applied to show only specific categories.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Configuring Filtering" TopicName="igListView_Configuring_Filtering" />
+      <HelpTopic Title="Overview" TopicName="igListView_Overview" />
+      <HelpTopic Title="Known Issues and Limitations" TopicName="igListView_Known_Issues" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>フィルターのプリセット</Title>
+    <Description>フィルター プリセットは、フィルター トレーにボタンとして表示される定義済みフィルターです。このサンプルでは、指定のカテゴリのみを表示するために定義済みフィルターを適用する方法を紹介します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="フィルタリングの構成" TopicName="igListView_Configuring_Filtering" />
+      <HelpTopic Title="概要" TopicName="igListView_Overview" />
+      <HelpTopic Title="既知の問題と制限" TopicName="igListView_Known_Issues" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

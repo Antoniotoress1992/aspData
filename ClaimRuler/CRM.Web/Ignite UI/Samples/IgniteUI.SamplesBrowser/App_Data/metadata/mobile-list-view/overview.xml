@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">mobile-list-view/json-binding</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+            With the igListView mobile list control, you can show a column of data, 
+            <a href="~/mobile-list-view/bind-collection">drill down into details</a>, 
+            have <a href="~/mobile-list-view/templates">extensible templates</a>, 
+            <a href="~/mobile-list-view/load-on-demand">load items on demand</a>, 
+            set various <a href="~/mobile-list-view/sort-group-presets">presets for filtering and sorting</a>, 
+            and <a href="~/mobile-list-view/search">filter by keywords</a>. See the complete list of samples in the menu.
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+            igListView モバイル リスト コントロールは、データ内の 1 行のみの表示、<a href="~/mobile-list-view/bind-collection">ドリルダウン詳細表示</a>、<a href="~/mobile-list-view/templates">拡張可能なテンプレートの使用</a>、<a href="~/mobile-list-view/load-on-demand">項目のオンデマンド読み込み</a>、<a href="~/mobile-list-view/sort-group-presets">フィルタリングと並べ替え対応プリセット</a>、および<a href="~/mobile-list-view/search">キーワード フィルター</a>などの機能を提供します。
+            サンプルをすべて表示するには、メニューを参照してください。
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

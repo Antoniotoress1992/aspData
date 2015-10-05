@@ -1,0 +1,68 @@
+﻿@using Infragistics.IgniteUI.SamplesBrowser.Shared.Contracts
+@using Infragistics.IgniteUI.SamplesBrowser.Shared.Entities
+@model HelpContent
+@helper RenderHelpElement(IHelpElement helpElement)
+{
+    Type helpElementType = helpElement.GetType();
+    if (helpElementType == typeof(HelpContent))
+    {
+        HelpContent helpContent = helpElement as HelpContent;
+    <article class="help-content">
+        @if(helpContent.HasTitle)
+        {
+        <h1 class="pageTitle">@helpContent.Title</h1>
+        }
+        @RenderHelpElementChildren(helpContent.ChildHelpElements)
+    </article>
+    }
+    if (helpElementType == typeof(HelpSection))
+    {
+        HelpSection helpSection = helpElement as HelpSection;
+        <section class="igsb-help">
+            @if(helpSection.HasTitle)
+            {
+                <h2>@helpSection.Title</h2>
+            }
+            @RenderHelpElementChildren(helpSection.ChildHelpElements)
+        </section>
+    }
+    if (helpElementType == typeof(HelpBlock))
+    {
+        HelpBlock block = helpElement as HelpBlock;
+        if (block.HasTitle)
+        {                   
+            <h3>@block.Title</h3>
+        }
+            @RenderHelpElementChildren(block.ChildHelpElements)
+    }
+    if (helpElementType == typeof(HelpParagraph))
+    {
+        HelpParagraph paragraph = helpElement as HelpParagraph;
+            <p>@paragraph.Content</p>
+    }
+    if (helpElementType == typeof(HelpCodeExample))
+    {
+        HelpCodeExample codeExample = helpElement as HelpCodeExample;
+            @Html.Partial("_HelpCodeExample", codeExample)
+    }
+    if (helpElementType == typeof(HelpHtmlContent))
+    {
+        HelpHtmlContent htmlContent = helpElement as HelpHtmlContent;
+            @Html.Raw(htmlContent.Content)
+    }
+    if (helpElementType == typeof(HelpCodeSnippet))
+    {
+        @* Currently only supports HTML *@
+        HelpCodeSnippet codeSnippet = helpElement as HelpCodeSnippet;
+        <pre class="prettyprint lang-html igsb-code-snippet">@codeSnippet.Content</pre>
+    }
+}
+@helper RenderHelpElementChildren(IEnumerable<IHelpElement> helpElements)
+{
+    foreach (IHelpElement helpElement in helpElements)
+    {
+        @RenderHelpElement(helpElement);
+    }
+}
+@RenderHelpElement(Model)
+

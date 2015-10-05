@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<HelpContent TitleID="title">
+  <Structure>
+    <Section TitleID="boilerplate_title">
+      <CodeExample SamplePathID="ignite-ui-boilerplate-jquery-mobile" ControlPathID="help-jqm-code-examples">
+        <FullCode />
+        <Description ContentID="boilerplate_desc"/>
+      </CodeExample>
+    </Section>
+    <Section TitleID="create_list_view">
+      <Paragraph ContentID="list_view_intro"/>
+      <CodeExample SamplePathID="getting-started-list-view" ControlPathID="help-jqm-code-examples">
+        <RunningSample />
+        <TabbedCode />
+        <FullCode Collapsible="Collapsed" />
+      </CodeExample>
+    </Section>
+    <Section TitleID="required_resources_title">
+      
+      <HtmlContent ContentID="dependency_desc"/>
+      <Block TitleID="required_dependencies">
+
+        <HtmlContent ContentID="jqm_structure"/>
+        <Paragraph ContentID="jqm_structure_desc" />
+        <CodeSnippet><![CDATA[<link href="../../css/jqm/jquery.mobile.structure.min.css"  rel="stylesheet"/>]]></CodeSnippet>       
+        
+        <HtmlContent ContentID="ig_structure_heading"/>
+        <Paragraph ContentID="ig_structure_desc" />
+        <CodeSnippet><![CDATA[<link href="../../igniteui/mobile/css/structure/infragistics.mobile.css"  rel="stylesheet"/>]]></CodeSnippet>
+
+        <HtmlContent ContentID="ig_theme_heading"/>
+        <Paragraph ContentID="ig_theme_desc" />
+        <CodeSnippet><![CDATA[<link href="../../igniteui/mobile/css/themes/ios/infragistics.mobile.theme.css"  rel="stylesheet"/>]]></CodeSnippet>
+
+        <HtmlContent ContentID="jquery_heading"/>
+        <HtmlContent ContentID="jquery_desc" />
+        <CodeSnippet><![CDATA[<script src="../../js/jqm/jquery.min.js"></script>]]></CodeSnippet>
+
+        <HtmlContent ContentID="jqm_heading"/>
+        <HtmlContent ContentID="jqm_desc" />
+        <CodeSnippet><![CDATA[<script src="../../js/jqm/jquery.mobile.min.js"></script>]]></CodeSnippet>
+
+        <HtmlContent ContentID="ig_mobile_heading"/>
+        <Paragraph ContentID="ig_mobile_desc" />
+        <CodeSnippet><![CDATA[<script src="../../igniteui/mobile/js/infragistics.mobile.js"></script>]]></CodeSnippet>
+      </Block>
+    </Section>
+    <Section TitleID="what_next">
+      <Paragraph ContentID="what_next_desc"/>
+      <HtmlContent ContentID="control_list"/>
+    </Section>
+  </Structure>
+  <LocalizedContent Language="en">
+    <Content ID="title">Getting Started</Content>   
+
+    <!-- Boilerplate -->
+    <Content ID="boilerplate_title">Ignite UI Boilerplate - jQuery Mobile</Content>
+    <Content ID="boilerplate_desc">
+      <![CDATA[The boilerplate is a template which includes all of the required dependencies for Ignite UI® jQuery Mobile-based controls. Simply 
+      copy this boilerplate to a blank HTML file. All of the required JavaScript and CSS is referenced from CDNs 
+      making it easy for you to get started with Ignite UI.]]></Content>
+    
+    <!-- Create List View -->
+    <Content ID="create_list_view">Create a Mobile List View</Content>
+    <Content ID="list_view_intro">
+      When using Ignite UI with jQuery Mobile, you often-times create widgets entirely in HTML using data attributes. In this example, Ignite UI enhances the UL element's markup to create a fully functioning
+      mobile list view control. Instead of writing JavaScript to instantiate the widget, you simply add the proper HTML markup and Ignite UI creates the list view widget.
+    </Content>
+
+    <Content ID="required_resources_title">Ignite UI Dependencies</Content>
+    <Content ID="dependency_desc"><![CDATA[This list includes the general JavaScript and CSS dependencies for Ignite UI. The CDN links make 
+    it easy for you to reference these scripts in your application. For production environments, you should consider creating a custom build of Ignite UI 
+    that includes only the controls and features that you need. You can download the full product and custom builds on <a href="~/download">the download page</a>.]]></Content>
+    
+    <!-- Required Resources-->
+    <Content ID="required_dependencies">Required Dependencies</Content>
+    <Content ID="jqm_structure"><![CDATA[<h4 class="igsb-bold">jQuery Mobile Structure CSS</h4>]]></Content>
+    <Content ID="jqm_structure_desc">The jQuery Mobile Structure CSS provides a base layer of layout-related styles for all jQuery Mobile widgets. This stylesheet does not contain styles related to colors and theming.</Content>
+    <Content ID="ig_structure_heading"><![CDATA[<h4 class="igsb-bold">Ignite UI Mobile Structure CSS</h4>]]></Content>
+    <Content ID="ig_structure_desc">Similar to the jQuery Mobile Structure CSS, the Ignite UI Mobile Structure CSS provides layout-related CSS for all Ignite UI mobile widgets.</Content>
+    <Content ID="ig_theme_heading"><![CDATA[<h4 class="igsb-bold">Ignite UI Theme CSS (iOS)</h4>]]></Content>
+    <Content ID="ig_theme_desc">To complete the look and feel of the Ignite UI mobile controls, you must reference a theme file. The code is for the iOS theme by default but Android and Windows Phone themes are also provided.</Content>
+    <Content ID="jquery_heading"><![CDATA[<h4 class="igsb-bold">jQuery</h4>]]></Content>
+    <Content ID="jquery_desc"><![CDATA[<p>One of the most popular JavaScript libraries, jQuery serves as the base for jQuery Mobile. Learn more at <a target="_blank" href="http://jquery.com">http://jquery.com</a>.</p>]]></Content>
+    <Content ID="jqm_heading"><![CDATA[<h4 class="igsb-bold">jQuery Mobile</h4>]]></Content>
+    <Content ID="jqm_desc"><![CDATA[<p>The jQuery Mobile framework adds a set of touch events, widgets, and themes serving as the basis for mobile controls in Ignite UI. Learn more at <a target="_blank" href="http://jquerymobile.com">http://jquerymobile.com</a>.<p>]]></Content>
+    <Content ID="ig_mobile_heading"><![CDATA[<h4 class="igsb-bold">Bundled Ignite UI Mobile JavaScript</h4>]]></Content>
+    <Content ID="ig_mobile_desc">The Ignite UI mobile widgets are bundled into a single JavaScript file that is accessible via CDN.</Content>
+    
+    <!-- What's Next -->
+    <Content ID="what_next">What's Next</Content>
+    <Content ID="what_next_desc">Now that you have the basics down, browse around the samples to learn more about how you can make your apps more awesome using Ignite UI! Learn more about some of the most popular controls:</Content>
+    <Content ID="control_list">
+      <![CDATA[
+    <ul>
+      <li><a href="~/mobile-list-view/overview">List View</a></li>
+      <li><a href="~/mobile-rating/overview">Rating</a></li>        
+    </ul>
+    ]]></Content>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Content ID="title">ヘルプ リソース</Content>
+
+    <!-- Create List View -->
+    <Content ID="create_list_view">リスト ビューの作成</Content>
+    <Content ID="list_view_intro">
+      Ignite UI を jQuery Mobile と使用する場合、HTML でデータ属性を使用してウィジェットをを作成できます。この例では、Ignite UI で UL 要素のマークアップを拡張し、モバイル リスト ビュー コントロールを作成します。JavaScript でウィジェットをインスタンス化する代わりに、HTML マークアップを追加し、Ignite UI でリスト ビュー ウィジェットを作成します。
+    </Content>
+
+    <!-- Boilerplate -->
+    <Content ID="boilerplate_title">Ignite UI のボイラープレート - jQuery Mobile</Content>
+    <Content ID="boilerplate_desc">
+      <![CDATA[ボイラープレートは、Ignite UI の jQuery Mobile ベースのコントロールに必要なすべての依存関係を含むテンプレートです。このボイラープレート コードを空の HTML ファイルにコピーします。
+すべての必要な JavaScript ファイルおよび CSS ファイルは CDN から参照されています。それらのファイルをダウンロードせずに Ignite UI を使用できます。]]>
+    </Content>
+
+    <Content ID="required_resources_title">Ignite UI の依存関係</Content>
+    <Content ID="dependency_desc">
+      <![CDATA[このリストは Ignite UI の一般的な JavaScript および CSS 依存関係を含みます。このスクリプトを簡単にアプリケーションに参照するには、CDN を使用できます。実稼働環境の場合、必要なコントロールおよび機能のみを含むカスタム Ignite UI ビルドを作成することができます。製品全体またはカスタム ビルドを<a href="~/download">ダウンロード ページ</a>からダウンロードできます。]]>
+    </Content>
+
+    <!-- Required Resources-->
+    <Content ID="required_dependencies">必須の依存関係</Content>
+    <Content ID="jqm_structure"><![CDATA[<h4 class="igsb-bold">jQuery Mobile の基本構造 CSS ファイル</h4>]]></Content>
+    <Content ID="jqm_structure_desc">jQuery Mobile の基本構造 CSS ファイルは、すべての jQuery Mobile ウィジェットのレイアウトに関連するスタイルのベース レイヤーを提供します。このスタイルシートは、色およびテーマに関連するスタイルを含みません。</Content>
+    <Content ID="ig_structure_heading"><![CDATA[<h4 class="igsb-bold">Ignite UI Mobile の基本構造 CSS ファイル</h4>]]></Content>
+    <Content ID="ig_structure_desc">jQuery Mobile の基本構造 CSS ファイルのように、Ignite UI Mobile の基本構造 CSS ファイルは、すべての Ignite UI モバイル ウィジェットのレイアウトに関連する CSS を提供します。</Content>
+    <Content ID="ig_theme_heading"><![CDATA[<h4 class="igsb-bold">Ignite UI テーマ CSS ファイル (iOS)</h4>]]></Content>
+    <Content ID="ig_theme_desc">Ignite UI モバイル コントロールのルック アンド フィールを完了するには、テーマ ファイルを参照する必要があります。iOS テーマのコードをデフォルトで表示しますが、Android および Windows Phone テーマも提供します。</Content>
+    <Content ID="jquery_heading"><![CDATA[<h4 class="igsb-bold">jQuery</h4>]]></Content>
+    <Content ID="jquery_desc"><![CDATA[<p>jQuery、人気のある JavaScript ライブラリは、jQuery Mobile の元です。詳細については、<a target="_blank" href="http://jquery.com">http://jquery.com</a> を参照してください。</p>]]></Content>
+    <Content ID="jqm_heading"><![CDATA[<h4 class="igsb-bold">jQuery Mobile</h4>]]></Content>
+    <Content ID="jqm_desc"><![CDATA[<p>jQuery Mobile フレームワークは、Ignite UI モバイル コントロールのタッチ イベント、ウィジェット、テーマのセットを追加します。詳細については、<a target="_blank" href="http://jquerymobile.com">http://jquerymobile.com</a> を参照してください。<p>]]></Content>
+    <Content ID="ig_mobile_heading"><![CDATA[<h4 class="igsb-bold">Ignite UI Mobile JavaScript ファイルのバンドル</h4>]]></Content>
+    <Content ID="ig_mobile_desc">Ignite UI モバイル ウィジェットは、CDN からアクセス可能な単一の JavaScript ファイルにバンドルされます。</Content>
+
+    <!-- What's Next -->
+    <Content ID="what_next">次の手順</Content>
+    <Content ID="what_next_desc">基本アプリケーションを作成した後、サンプルを参照し、Ignite UI コントロールをアプリケーションに追加する方法を参照します。以下の人気のあるコントロールを参照してください。</Content>
+    <Content ID="control_list">
+      <![CDATA[
+    <ul>
+      <li><a href="~/mobile-list-view/overview">リスト ビュー</a></li>    
+      <li><a href="~/mobile-rating/overview">レーティング</a></li> 
+    </ul>
+    ]]>
+    </Content>
+  </LocalizedContent>
+</HelpContent>
+

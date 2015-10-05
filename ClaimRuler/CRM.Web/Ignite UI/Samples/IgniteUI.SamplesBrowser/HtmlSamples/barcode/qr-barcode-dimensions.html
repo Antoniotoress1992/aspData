@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="../../igniteui/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+    <link href="../../igniteui/css/structure/infragistics.css" rel="stylesheet" />
+
+    <script src="../../js/modernizr.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="../../igniteui/js/infragistics.core.js"></script>
+    <script src="../../igniteui/js/infragistics.dv.js"></script>
+</head>
+<body>
+    <div id="barcode"></div>
+
+    <script type="text/javascript">
+        $(function () {
+            $("#barcode").igQRCodeBarcode({
+                height: "300px",
+                width: "100%",
+                stretch: 'none',
+                barsFillMode: "fillSpace",
+                xDimension: 0.75,
+                data: "http://www.infragistics.com/products/jquery/help"
+            });
+
+            $("input[name=barsFillMode]").change(function (evt) {
+                var val = evt.target.value;
+                $("#barcode").igQRCodeBarcode("option", "barsFillMode", val);
+            });
+
+            $("input[name=stretch]").change(function (evt) {
+                var val = evt.target.value;
+                $("#barcode").igQRCodeBarcode("option", "stretch", val);
+            });
+
+            $("#xDimensionSlider").slider({
+                min: 0.55,
+                max: 2,
+                step: 0.01,
+                value: 0.75,
+                slide: function (event, ui) {
+                    $("#barcode").igQRCodeBarcode("option", "xDimension", ui.value);
+
+                    $("#stretchNone").prop("checked", true);
+                    $("#barcode").igQRCodeBarcode("option", "stretch", "none");
+                    $("#xDimensionLabel").text(ui.value);
+                }
+            });
+        });
+    </script>
+
+    <fieldset id="barcodeOptions">
+        <legend>Options</legend>
+        <table>
+            <tr>
+                <td>XDimension</td>
+                <td>
+                    <div id="xDimensionSlider" style="width: 100px; margin: 12px" />
+                </td>
+                <td>
+                    <label id="xDimensionLabel">0.75</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Bars Fill Mode</td>
+                <td>
+                    <input type="radio" name="barsFillMode" value="fillSpace" checked="checked" style="margin: 12px" />fillSpace
+                </td>
+                <td>
+                    <input type="radio" name="barsFillMode" value="ensureEqualSize" style="margin: 12px" />ensureEqualSize
+                </td>
+            </tr>
+            <tr>
+                <td>Stretch</td>
+                <td>
+                    <input type="radio" name="stretch" value="none" checked="checked" style="margin: 12px" id="stretchNone" />none
+                </td>
+                <td>
+                    <input type="radio" name="stretch" value="uniform" style="margin: 12px" />uniform
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+</body>
+</html>

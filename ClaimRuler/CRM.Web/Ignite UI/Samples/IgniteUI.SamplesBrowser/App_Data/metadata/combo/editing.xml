@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Editing</Title>
+    <Description>The igCombo control is editable and can be used as a true combo or as an autocomplete text box. The drop down button can be visible or invisible and the igCombo can be set to read-only.</Description>
+    <HelpTopics>
+        <HelpTopic Title="Configuring Auto-Suggest" TopicName="igCombo_Configure_Auto_Suggest" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>編集</Title>
+    <Description>igCombo コントロールは編集可能で、コンボボックスまたはオートコンプリート テキスト ボックスとして使用できます。ドロップダウン ボタンの表示状態を変更して、igCombo を読み取り専用として設定できます。</Description>
+    <HelpTopics>
+        <HelpTopic Title="自動補完の構成" TopicName="igCombo_Configure_Auto_Suggest" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

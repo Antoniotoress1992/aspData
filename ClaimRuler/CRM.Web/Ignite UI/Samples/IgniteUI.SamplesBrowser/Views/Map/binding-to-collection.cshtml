@@ -1,0 +1,89 @@
+﻿@using Infragistics.Web.Mvc;
+@model IQueryable<IgniteUI.SamplesBrowser.Controllers.WorldCity>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="@Url.Content("~/igniteui/css/themes/infragistics/infragistics.theme.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/igniteui/css/structure/infragistics.css")" rel="stylesheet" />
+
+    <script src="@Url.Content("~/js/modernizr.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery-ui.min.js")"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="@Url.Content("~/igniteui/js/infragistics.core.js")"></script>
+    <script src="@Url.Content("~/igniteui/js/infragistics.dv.js")"></script>
+      <style>
+        #tooltipTable
+        {
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        #tooltipTable td, #tooltipTable th
+        {
+            font-size: 9px;
+            border: 1px solid #269bc9;
+            padding: 3px 7px 2px 7px;
+        }
+        #tooltipTable th
+        {
+            font-weight: bold;
+            font-size: 11px;
+            text-align: left;
+            padding-top: 5px;
+            padding-bottom: 4px;
+            background-color: #269bc9;
+            color: #ffffff;
+        }
+    </style>
+    <script id="tooltipTemplate" type="text/x-jquery-tmpl">
+        <table id="tooltipTable" >
+            <tr><th class="tooltipHeading" colspan="2">${item.Name}, ${item.Country}</th></tr>
+            <tr>
+                <td>Latitude:</td>
+                <td>${item.Latitude}</td>
+            </tr>
+            <tr>
+                <td>Longitude:</td>
+                <td>${item.Longitude}</td>
+            </tr>
+        </table>
+    </script>
+   
+</head>
+<body>
+
+    <div>
+        @(Html.Infragistics().Map<IgniteUI.SamplesBrowser.Controllers.WorldCity>(Model)
+      
+                .ID("map")
+                .Width("700px")
+                .Height("500px")
+                .OverviewPlusDetailPaneVisibility(Visibility.Visible)
+                .OverviewPlusDetailPaneBackgroundImageUri(Url.Content("~/images/samples/maps/World.png"))
+                .BackgroundContent(bgr => bgr.OpenStreetMaps())
+                .PanModifier(ModifierKeys.Control)
+                .Series(series => {
+                    series.GeographicSymbol("worldCities")
+                        .LatitudeMemberPath(item => item.Latitude)
+                        .LongitudeMemberPath(item => item.Longitude)
+                        .MarkerType(MarkerType.Automatic)
+                        .MarkerCollisionAvoidance(CollisionAvoidanceType.Fade)
+                        .MarkerBrush("#1B559D")
+                        .MarkerOutline("black")
+                        .ShowTooltip(true).TooltipTemplate("tooltipTemplate");
+                })
+                .WindowRect(0.1, 0.1, 0.7, 0.7)
+                .DataBind()
+                .Render()
+        )
+        
+    </div>
+</body>
+</html>

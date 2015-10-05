@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Map</Name>
+    <Description>
+      Create highly detailed, thematic geographical maps using an innovative feature set that includes custom shape template, the ability to render points, polylines, polygons, interactive bitmaps, an intuitive Overview Pane and much more. Touch support makes it easy to zoom in, zoom out and pan on mobile devices.
+    </Description>
+    <SampleStrings>
+      <LocalizedSampleString Key="Map_IGOffices_Title" Value="Infragistics Offices around the World"/>
+      <LocalizedSampleString Key="Map_IGOffice_Type" Value="Office Type"/>
+      <LocalizedSampleString Key="Map_WorldCities" Value="World Cities"/>
+      <LocalizedSampleString Key="Map_Roads_NAmerica" Value="Major Roads in North America"/>
+      <LocalizedSampleString Key="Map_Flights_NAmerica" Value="Major Airports in North America"/>
+      <LocalizedSampleString Key="Latitude" Value="Latitude"/>
+      <LocalizedSampleString Key="Longitude" Value="Longitude"/>
+      <LocalizedSampleString Key="Population" Value="Population"/>
+      <LocalizedSampleString Key="bing_message" Value="You must provide your own API key for Bing Maps in the code of this sample to display geographic imagery from Bing Maps in the background content of the Geographic Map control."/>
+      <LocalizedSampleString Key="resolution" Value="Resolution"/>
+      <LocalizedSampleString Key="minimumHeatValue" Value="Minimum Heat Value"/>
+      <LocalizedSampleString Key="maximumHeatValue" Value="Maximum Heat Value"/>
+      <LocalizedSampleString Key="pointExtent" Value="Point Extent"/>
+      <LocalizedSampleString Key="minimumHeatColor" Value="Minimum Heat Color"/>
+      <LocalizedSampleString Key="maximumHeatColor" Value="Maximum Heat Color"/>
+      <LocalizedSampleString Key="enableMouseOverSeries" Value="Enable Mouse Over"/>
+      <LocalizedSampleString Key="useBruteForce" Value="Use Brute Force"/>
+      <LocalizedSampleString Key="generateData" Value="Generate Data"/>
+      <LocalizedSampleString Key="mapOptions" Value="Map Options"/>
+    </SampleStrings>
+    <PageKeywords>igMap</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Map</Name>
+    <Description>
+      詳細な地理マップを作成できます。カスタム図形テンプレート、ポリラインおよびポリ図形の描画、マップの移動、散布図エリア プロット、概要ペインなどの機能を提供します。
+    </Description>
+    <SampleStrings>
+      <LocalizedSampleString Key="Map_IGOffices_Title" Value="Infragistics 海外拠点"/>
+      <LocalizedSampleString Key="Map_IGOffice_Type" Value="オフィス タイプ"/>
+      <LocalizedSampleString Key="Map_WorldCities" Value="世界の都市"/>
+      <LocalizedSampleString Key="Map_Roads_NAmerica" Value="北米の主な道路"/>
+      <LocalizedSampleString Key="Map_Flights_NAmerica" Value="北米の主な空港"/>
+      <LocalizedSampleString Key="Latitude" Value="緯度"/>
+      <LocalizedSampleString Key="Longitude" Value="経度"/>
+      <LocalizedSampleString Key="Population" Value="人口"/>
+      <LocalizedSampleString Key="bing_message" Value="地理マップ コントロールの背景に Bing Maps の地理画像を表示するには、このサンプルのコードで Bing Maps の API キーを提供する必要があります。"/>
+      <LocalizedSampleString Key="resolution" Value="解像度"/>
+      <LocalizedSampleString Key="minimumHeatValue" Value="ヒートの最小値"/>
+      <LocalizedSampleString Key="maximumHeatValue" Value="ヒートの最大値"/>
+      <LocalizedSampleString Key="pointExtent" Value="ポイント範囲"/>
+      <LocalizedSampleString Key="minimumHeatColor" Value="ヒートの最小色"/>
+      <LocalizedSampleString Key="maximumHeatColor" Value="ヒートの最大色"/>
+      <LocalizedSampleString Key="enableMouseOverSeries" Value="マウス オーバーの有効化"/>
+      <LocalizedSampleString Key="useBruteForce" Value="ブルート フォースの使用"/>
+      <LocalizedSampleString Key="generateData" Value=" データの生成"/>
+      <LocalizedSampleString Key="mapOptions" Value="マップ オプション"/>
+    </SampleStrings>
+    <PageKeywords>igMap</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Map</Name>
+    <Description>
+      詳細な地理マップを作成できます。カスタム図形テンプレート、ポリラインおよびポリ図形の描画、マップの移動、散布図エリア プロット、概要ペインなどの機能を提供します。
+    </Description>
+  </LocalizedContent>
+  <ClientApiUrl>ui.igmap</ClientApiUrl>
+  <HelpPageName>igMap_landing_page</HelpPageName>
+  <ForumNumber>650</ForumNumber>
+  <IconImage>jquery-map.png</IconImage>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <IsFeatureComponent>True</IsFeatureComponent>
+  <Status>Updated</Status>
+  <TOC>
+    <Sample>bing-maps</Sample>
+    <Sample>cloudmade-maps</Sample>
+    <Sample>openstreet-maps</Sample>
+    <Sample>json-binding</Sample>
+    <Sample>binding-to-collection</Sample>
+    <Sample>geo-high-density-scatter-series</Sample>
+    <Sample>geo-symbol-series</Sample>
+    <Sample>geo-shapes-series</Sample>
+    <Sample>geo-polyline-series</Sample>
+    <Sample>geo-scatter-area</Sample>
+    <Sample>geo-contour-line</Sample>
+    <Sample>map-tooltips</Sample>
+    <Sample>marker-template</Sample>
+  </TOC>
+</Component>

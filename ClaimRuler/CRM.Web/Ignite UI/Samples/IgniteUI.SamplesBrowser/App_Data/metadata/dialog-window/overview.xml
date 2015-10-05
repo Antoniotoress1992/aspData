@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">dialog-window/basic-usage</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      The igDialogWindow is a configurable dialog window. It has <a href="~/dialog-window/api-and-events">multiple visible states</a>, 
+      <a href="~/dialog-window/icons">supports customized icons</a>, and a <a href="~/dialog-window/modal-dialog">modal dialog view</a>. 
+      Behaviors like close, pin, maximize and minimize are available for each dialog.
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      igDialogWindow は構成可能なダイアログ ウィンドウです。<a href="~/dialog-window/api-and-events">複数の表示状態</a>があり、<a href="~/dialog-window/icons">カスタム アイコン</a>をサポートし、<a href="~/dialog-window/modal-dialog">モーダル ダイアログ ビュー</a>があります。 
+      閉じる、ピン固定、最大化、最小化などの動作を使用できます。
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

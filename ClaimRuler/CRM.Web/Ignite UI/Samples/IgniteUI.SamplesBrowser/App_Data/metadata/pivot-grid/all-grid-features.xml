@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>All Grid Features</Title>
+    <Description>This sample demonstrates how to enable all the igGrid features supported by the igPivotGrid - Selection, Tooltips and Resizing.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>すべてのピボット グリッド機能</Title>
+    <Description>このサンプルは、igPivotGrid でサポートされる選択、ツールチップ、およびサイズ変更の igGrid 機能を有効にする方法を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <MinWidth>500</MinWidth>
+  <MinSampleSize>TabletLandscape</MinSampleSize>
+</Sample>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">infragistics-documents/create-pdf-or-xps</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      The Infragistics® Document Engine provides a Microsoft® .NET API for creating Portable Document Format (PDF) and  Open XML Paper Specification (XPS) documents. For instance, you can use
+      this assembly in .NET applications to <a href="~/infragistics-documents/create-pdf-or-xps">generate grid data</a> in these document formats.
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      Infragistics® Document Engine は、Portable Document Format (PDF) および  Open XML Paper Specification (XPS) 文書を作成するための Microsoft® .NET API を提供します。たとえば、.NET アプリケーションでこのアセンブリを使用してこの文書形式でグリッド データを生成できます。
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

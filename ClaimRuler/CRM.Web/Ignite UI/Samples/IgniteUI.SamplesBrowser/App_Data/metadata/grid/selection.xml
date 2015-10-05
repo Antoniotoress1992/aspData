@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Selection</Title>
+    <Description>
+        This sample demonstrates how to enable the cell selection and row selection functionality of our jQuery Grid.
+        Cells and rows can be selected with either the mouse or the keyboard.
+        When they are selected with the mouse and the MultipleSelection option is enabled, holding the CTRL key down while
+        clicking will append each clicked row to the non-continuous selected set.
+        When the same is done, but the SHIFT key is held down instead, multiple continuous rows are selected.
+        Clicking on any cell without holding down CTRL or SHIFT will reset the set of selected rows.
+        There are multiple settings allowing single and multiple selection on touch devices too.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>選択</Title>
+    <Description>
+      このサンプルは、jQuery グリッドのセル選択および行選択機能を有効にする方法を紹介します。
+      セルおよび行をマウスまたはキーボードによって選択できます。
+      MultipleSelection オプションが有効でマウスによって選択された場合、CTRL キーを押してクリックすると、クリックした行を非連続の選択セットに追加します。
+      その場合に、CTRL キーの代わりに SHIFT キーを押すと、複数の連続行を選択します。
+      CTRL または SHIFT を押さないでセルをクリックすると、選択した行のセットをリセットします。
+      タッチ デバイスにも単一選択および複数選択を許可する設定があります。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

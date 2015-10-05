@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>HTML Binding</Title>
+    <Description>The igCombo can bind directly to an HTML SELECT element.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>HTML のバインド</Title>
+    <Description>igCombo は HTML SELECT 要素に直接バインドできます。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

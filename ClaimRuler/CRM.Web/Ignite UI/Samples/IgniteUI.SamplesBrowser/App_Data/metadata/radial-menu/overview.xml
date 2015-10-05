@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">radial-menu/button-items</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      Inspired by the Microsoft OneNote radial menu, the igRadialMenu provides a circular menu that orients the commands around the user, rather than requiring the user to negotiate a nested hierarchy of drop downs. Most commonly used as a context menu, the igRadialMenu allows you to drill down into related sub-menu items with the ability to navigate back to the main level menu item.
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      igRadialMenu は、Microsoft OneNote ラジアル メニュー スタイルのツールおよび機能を提供します。ドロップダウンのネストされた階層の代わりに円形のメニューを提供します。コンテキスト メニューとして使用できます。igRadialMenu で関連するサブメニュー項目にドリルダウン、その後メイン レベルのメニュー項目に戻る機能も提供されます。
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

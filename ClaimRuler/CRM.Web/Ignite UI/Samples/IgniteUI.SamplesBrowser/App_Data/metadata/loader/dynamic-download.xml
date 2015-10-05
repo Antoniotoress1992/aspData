@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Dynamic Download</Title>
+    <Description>This sample demonstrates how to dynamically load resources using the loader. In this sample, the loader doesn't load the igTree resources until the button is clicked. When you pass in a resource string as a loader parameter, in this case "igTree", the loader fetches the required resources prior to executing the callback function.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>動的なダウンロード</Title>
+    <Description>このサンプルでは、ローダーを使用して動的にリソースの読み込む方法を紹介します。このサンプルでは、ボタンがクリックされると igTree リソースの読み込みを開始します。「igTree」などのリソース文字列をローダー パラメーターとして渡す場合、ローダーは、コールバック関数を実行する前に必要なリソースを取得します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <IsFullPostBack>False</IsFullPostBack>
+</Sample>

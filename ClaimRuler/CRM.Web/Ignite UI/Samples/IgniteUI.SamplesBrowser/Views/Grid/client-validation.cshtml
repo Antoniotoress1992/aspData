@@ -1,0 +1,68 @@
+﻿@using Infragistics.Web.Mvc
+@using IgniteUI.SamplesBrowser.Models
+@model IQueryable<IgniteUI.SamplesBrowser.Models.Northwind.Order>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="@Url.Content("~/igniteui/css/themes/infragistics/infragistics.theme.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/igniteui/css/structure/infragistics.css")" rel="stylesheet" />
+
+    <script src="@Url.Content("~/js/modernizr.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery-ui.min.js")"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="@Url.Content("~/igniteui/js/infragistics.core.js")"></script>
+    <script src="@Url.Content("~/igniteui/js/infragistics.lob.js")"></script>
+
+</head>
+<body>
+
+    @(Html.Infragistics()
+        .Grid(Model)
+        .ID("Grid")
+        .Height("500px")
+        .Width("100%")
+        .AutoGenerateColumns(false)
+        .AutoGenerateLayouts(false)
+        .RenderCheckboxes(true)
+        .PrimaryKey("OrderID")
+        .Columns(column =>
+        {
+            column.For(x => x.OrderID).HeaderText("Order ID").Width("10%");
+            column.For(x => x.OrderDate).HeaderText("Order Date").Width("15%");
+            column.For(x => x.ShipName).HeaderText("Ship Name").Width("25%");
+            column.For(x => x.ShipAddress).HeaderText("Ship Address").Width("25%");
+            column.For(x => x.TotalItems).HeaderText("Total Items").Width("10%");
+            column.For(x => x.TotalPrice).HeaderText("Total Price").Width("15%");
+        })
+        .Features(feature =>
+        {
+            feature.Updating().ColumnSettings(cs => {
+                cs.ColumnSetting().ColumnKey("OrderID").ReadOnly(true);
+                cs.ColumnSetting().ColumnKey("OrderDate").EditorType(ColumnEditorType.DatePicker).Required(true).DateEditorOptions(options => options.ButtonType(TextEditorButtonType.DropDown).ValidatorOptions(o => o.KeepFocus(ValidatorKeepFocus.Never)));
+                cs.ColumnSetting().ColumnKey("ShipName").Required(true).EditorType(ColumnEditorType.Text).TextEditorOptions(options =>
+                {
+                    options.ValidatorOptions(option =>
+                    {
+                        option.KeepFocus(ValidatorKeepFocus.Never);
+                        option.MinLength(2);
+                    });
+                });
+                cs.ColumnSetting().ColumnKey("ShipAddress").Required(true).EditorType(ColumnEditorType.Text).TextEditorOptions(options => options.ValidatorOptions(o => o.MinLength(3)));
+                cs.ColumnSetting().ColumnKey("TotalItems").Required(true);
+                cs.ColumnSetting().ColumnKey("TotalPrice").Required(true).EditorType(ColumnEditorType.Currency);
+            });
+            feature.Sorting();
+        })
+        .DataSourceUrl(Url.Action("GetOrders"))
+        .UpdateUrl(Url.Action("OrdersSaveData"))
+        .DataBind()
+        .Render()
+    )
+</body>
+</html>

@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Grid</Name>
+    <SampleStrings>
+      <LocalizedSampleString Key="legend_lbl_editSettings" Value="Edit settings"/>
+      <LocalizedSampleString Key="lbl_showButtons" Value="Show Done/Cancel Buttons"/>
+      <LocalizedSampleString Key="legend_lbl_delSettings" Value="Deleting settings"/>
+      <LocalizedSampleString Key="lbl_enblDelRow" Value="Enable Delete Row"/>
+      <LocalizedSampleString Key="lbl_selectRowIndex" Value="Select Row Index"/>
+      <LocalizedSampleString Key="legend_lbl_addSettings" Value="Adding settings"/>
+      <LocalizedSampleString Key="chckbx_lbl_enblAddRow" Value="Enable Add Row"/>
+      <LocalizedSampleString Key="table_lbl_employeeID" Value="Employee ID"/>
+      <LocalizedSampleString Key="table_lbl_names" Value="Employee Names"/>
+      <LocalizedSampleString Key="table_lbl_firstName" Value="First Name"/>
+      <LocalizedSampleString Key="table_lbl_lastName" Value="Last Name"/>
+      <LocalizedSampleString Key="table_lbl_lastNumber" Value="Last Number"/>
+      <LocalizedSampleString Key="table_lbl_title" Value="Title"/>
+      <LocalizedSampleString Key="table_lbl_birthDate" Value="Birth Date"/>
+      <LocalizedSampleString Key="table_lbl_postCode" Value="Postal Code"/>
+      <LocalizedSampleString Key="table_lbl_country" Value="Country"/>
+      <LocalizedSampleString Key="table_lbl_city" Value="City"/>
+      <LocalizedSampleString Key="button_lbl_delRow" Value="Delete row"/>
+      <LocalizedSampleString Key="button_lbl_addRow" Value="Add row"/>
+      <LocalizedSampleString Key="legend_lbl_gridApiSettings" Value="Grid api settings"/>
+      <LocalizedSampleString Key="lbl_selectRow" Value="Select Row: "/>
+      <LocalizedSampleString Key="lbl_selectColumn" Value="Select Column: "/>
+      <LocalizedSampleString Key="legend_lbl_filterSettings" Value="Filtering settings"/>
+      <LocalizedSampleString Key="legend_lbl_selectSettings" Value="Selection settings"/>
+      <LocalizedSampleString Key="lbl_selectRowIndex_colon" Value="Select Row Index: "/>
+      <LocalizedSampleString Key="legend_lbl_pagingSettings" Value="Paging settings"/>
+      <LocalizedSampleString Key="lbl_selectPageIndex" Value="Select Page Index:"/>
+      <LocalizedSampleString Key="lbl_selectPageSize" Value="Select Page Size:"/>
+      <LocalizedSampleString Key="button_lbl_databind" Value="Databind"/>
+      <LocalizedSampleString Key="button_lbl_getRowIndex" Value="Get Row Index"/>
+      <LocalizedSampleString Key="button_lbl_getCellText" Value="Get Cell Text"/>
+      <LocalizedSampleString Key="button_lbl_filter" Value="Filter"/>
+      <LocalizedSampleString Key="button_lbl_selectRow" Value="Select Row"/>
+      <LocalizedSampleString Key="button_lbl_sortColumn" Value="Sort Column"/>
+      <LocalizedSampleString Key="button_lbl_getSelRows" Value="Get Selected Rows"/>
+      <LocalizedSampleString Key="table_lbl_id" Value="ID"/>
+      <LocalizedSampleString Key="table_lbl_name" Value="Name"/>
+      <LocalizedSampleString Key="table_lbl_number" Value="Number"/>
+      <LocalizedSampleString Key="legend_lbl_initState" Value="InitialState"/>
+      <LocalizedSampleString Key="radio_lbl_regular" Value="Regular"/>
+      <LocalizedSampleString Key="radio_lbl_merged" Value="Merged"/>
+      <LocalizedSampleString Key="legend_lbl_cellSelOpt" Value="Cell Selection Options"/>
+      <LocalizedSampleString Key="chckbx_lbl_multiSel" Value="Multiple Selection"/>
+      <LocalizedSampleString Key="chckbx_lbl_multiSelClick" Value="Multiple Cell Select On Click"/>
+      <LocalizedSampleString Key="chckbx_lbl_touchDrag" Value="Touch Drag Select"/>
+      <LocalizedSampleString Key="button_lbl_applyCellSel" Value="Apply Cell Selection"/>
+      <LocalizedSampleString Key="legend_lbl_rowSelOpt" Value="RowSelectors Options "/>
+      <LocalizedSampleString Key="chckbx_lbl_enblRowNum" Value="Enable RowNumbering"/>
+      <LocalizedSampleString Key="chckbx_lbl_enblChckbxs" Value="Enable Checkboxes"/>
+      <LocalizedSampleString Key="lbl_selMode" Value="Selection Mode"/>
+      <LocalizedSampleString Key="lbl_rowSelColWidth" Value="Row Selector Column Width"/>
+      <LocalizedSampleString Key="chckbx_multiSel" Value="Multiple Selection"/>
+      <LocalizedSampleString Key="button_lbl_applyRowSelOpt" Value="Apply RowSelectors options"/>
+      <LocalizedSampleString Key="Grid_Knockoutjs_EditSelectedRow" Value="Edit Selected Row"/>
+      <LocalizedSampleString Key="Grid_Knockoutjs_ErrDeleteRow" Value="You should select the row before deleting it!"/>
+      <LocalizedSampleString Key="Northwind_Customers_CustomerID" Value="Customer ID"/>
+      <LocalizedSampleString Key="Northwind_Customers_CompanyName" Value="Company Name"/>
+      <LocalizedSampleString Key="Northwind_Customers_ContactName" Value="Contact Name"/>
+      <LocalizedSampleString Key="Northwind_Customers_ContactTitle" Value="Contact Title"/>
+      <LocalizedSampleString Key="Northwind_Customers_Address" Value="Address"/>
+      <LocalizedSampleString Key="Northwind_Customers_City" Value="City"/>
+      <LocalizedSampleString Key="Northwind_Customers_Region" Value="Region"/>
+      <LocalizedSampleString Key="Northwind_Customers_PostalCode" Value="Postal Code"/>
+      <LocalizedSampleString Key="Northwind_Customers_Country" Value="Country"/>
+      <LocalizedSampleString Key="Northwind_Customers_Phone" Value="Phone"/>
+      <LocalizedSampleString Key="Northwind_Customers_Fax" Value="Fax"/>
+      <LocalizedSampleString Key="Northwind_Customers_CompanyInformation" Value="Company Information"/>
+      <LocalizedSampleString Key="Northwind_Customers_AddressInformation" Value="Address Information"/>
+      <LocalizedSampleString Key="Northwind_Customers_LocalAddress" Value="Local Address"/>
+      <LocalizedSampleString Key="Northwind_Customers_PhoneInformation" Value="Phone Information"/>
+      <LocalizedSampleString Key="cell_merging_row_index" Value="The index of the row the merged group starts in is: "/>
+      <LocalizedSampleString Key="cell_merging_row_key" Value="The key of the row the merged group starts in is: "/>
+      <LocalizedSampleString Key="cell_merging_cell_value" Value="The cells value which is repeated and caused the merged group to be created is: "/>
+      <LocalizedSampleString Key="cell_merging_cell_count" Value="The total count of cells that were merged is: "/>
+      <LocalizedSampleString Key="cell_merging_logging_caption" Value="Logging cellsMerged event"/>
+      <LocalizedSampleString Key="Northwind_Employees_EmployeeID" Value="Employee ID"/>
+      <LocalizedSampleString Key="Northwind_Employees_FirstName" Value="First Name"/>
+      <LocalizedSampleString Key="Northwind_Employees_LastName" Value="Last Name"/>
+      <LocalizedSampleString Key="Northwind_Employees_Title" Value="Title"/>
+      <LocalizedSampleString Key="Northwind_Employees_Address" Value="Address"/>
+      <LocalizedSampleString Key="Northwind_Employees_City" Value="City"/>
+      <LocalizedSampleString Key="Northwind_Employees_Region" Value="Region"/>
+      <LocalizedSampleString Key="Northwind_Employees_Country" Value="Country"/>
+      <LocalizedSampleString Key="Northwind_Employees_Image" Value="Image"/>
+      <LocalizedSampleString Key="Northwind_Employees_Name" Value="Name"/>
+      <LocalizedSampleString Key="Northwind_Employees_Age" Value="Age"/>
+      <LocalizedSampleString Key="Northwind_Employees_Phone" Value="Phone"/>
+      <LocalizedSampleString Key="Northwind_Employees_Email" Value="Email"/>
+      <LocalizedSampleString Key="Northwind_Employees_PostalCode" Value="Postal Code"/>
+      <LocalizedSampleString Key="Northwind_Employees_BirthDate" Value="Birth Date"/>
+      <LocalizedSampleString Key="Northwind_Employees_Languages" Value="Languages"/>
+      <LocalizedSampleString Key="Northwind_Employees_Notes" Value="Notes"/>
+      <LocalizedSampleString Key="grid_api_row_number" Value="The number of selected rows is:"/>
+      <LocalizedSampleString Key="grid_api_row_index1" Value="Row with index"/>
+      <LocalizedSampleString Key="grid_api_row_index2" Value="is selected"/>
+      <LocalizedSampleString Key="grid_api_cell_text" Value="Cell Text:"/>
+      <LocalizedSampleString Key="unbound_col_values" Value="The unbound values of the column are:"/>
+      <LocalizedSampleString Key="unbound_col_function" Value="The formula function of the column is:"/>
+      <LocalizedSampleString Key="unbound_col_format" Value="The format of the column is:"/>
+      <LocalizedSampleString Key="unbound_col_template" Value="The template of the column is:"/>
+      <LocalizedSampleString Key="unbound_col_dataType" Value="The dataType of the column is:"/>
+      <LocalizedSampleString Key="unbound_col_Total" Value="The Total's cell text is"/>
+      <LocalizedSampleString Key="json_units_in_stock" Value="Units in Stock"/>
+      <LocalizedSampleString Key="json_productID" Value="Product ID"/>
+      <LocalizedSampleString Key="json_productName" Value="Product Name"/>
+      <LocalizedSampleString Key="json_unitPrice" Value="Unit Price"/>
+      <LocalizedSampleString Key="unbound_promotionExpDate" Value="Promotion Exp Date"/>
+      <LocalizedSampleString Key="unbound_isPromotion" Value="Is Promotion"/>
+      <LocalizedSampleString Key="unbound_total" Value="Total"/>
+      <LocalizedSampleString Key="getUCAPI_lbl" Value="Select an unbound column and click a button to invoke the method"/>
+      <LocalizedSampleString Key="setUnboundValues_lbl" Value="Set unbound values to columns with keys IsPromotion and Total"/>
+      <LocalizedSampleString Key="propertiesColumnWidth_legend" Value="Set the width of the properties column"/>
+      <LocalizedSampleString Key="sel_col_sort_lbl" Value="Select a column to sort"/>
+      <LocalizedSampleString Key="allowedEditorValues" Value="The property accepts values between 20 and 80"/>
+      <LocalizedSampleString Key="rowTmplJsRender" Value="The column template with jsRender syntax"/>      
+      <LocalizedSampleString Key="rowEditTemplate_eventFired" Value="rowEditDialogOpened event was fired with cell values:"/>
+      <LocalizedSampleString Key="legend_lbl_initialFixDirection" Value="Fix direction"/>
+      <LocalizedSampleString Key="radio_lbl_fixing_direction_left" Value="Left"/>
+      <LocalizedSampleString Key="radio_lbl_fixing_direction_right" Value="Right"/>
+      <LocalizedSampleString Key="column_fixing_columnFixed_event" Value="columnFixed event was fired with column key: "/>
+      <LocalizedSampleString Key="column_fixing_columnUnfixed_event" Value="columnUnfixed event was fired with column key: "/>
+      <LocalizedSampleString Key="column_fixing_columnFixingRefused_event" Value="columnFixingRefused event was fired with column key: "/>
+      <LocalizedSampleString Key="table_lbl_team" Value="Team"/>
+      <LocalizedSampleString Key="table_lbl_age" Value="Age"/>
+      <LocalizedSampleString Key="table_lbl_number_no" Value="No."/>
+      <LocalizedSampleString Key="table_lbl_position" Value="Pos."/>
+      <LocalizedSampleString Key="table_lbl_goals" Value="Goals"/>
+      <LocalizedSampleString Key="table_lbl_assists" Value="Assists"/>
+      <LocalizedSampleString Key="table_lbl_yellow" Value="Yellow C."/>
+      <LocalizedSampleString Key="table_lbl_red" Value="Red C."/>
+      <LocalizedSampleString Key="table_lbl_salary" Value="Salary"/>
+      <LocalizedSampleString Key="single_cell_selection" Value="Single Cell Selection"/>
+      <LocalizedSampleString Key="multiple_row_selection" Value="Multiple Row Selection"/>
+      <LocalizedSampleString Key="default_row_selectors" Value="Default Row Selectors"/>
+      <LocalizedSampleString Key="row_selectors_with_checkboxes" Value="Row Selectors With Checkboxes"/>
+      <LocalizedSampleString Key="row_numbering" Value="Row Numbering"/>
+      <LocalizedSampleString Key="AdventureWorks_Products_ProductID" Value="Product ID"/>
+      <LocalizedSampleString Key="AdventureWorks_Products_Name" Value="Product Name"/>
+      <LocalizedSampleString Key="AdventureWorks_Products_ProductNumber" Value="Product Number"/>
+      <LocalizedSampleString Key="AdventureWorks_Products_MakeFlag" Value="Make Flag"/>
+      <LocalizedSampleString Key="AdventureWorks_Products_ReorderPoint" Value="Reorder Point"/>
+      <LocalizedSampleString Key="AdventureWorks_Products_SellStartDate" Value="Sell Start Date"/>
+      <LocalizedSampleString Key="AdventureWorks_Products_ModifiedDate" Value="Modified Date"/>
+      <LocalizedSampleString Key="AdventureWorks_Products_ListPrice" Value="List Price"/>
+      <LocalizedSampleString Key="AdventureWorks_Products_StandardCost" Value="Standard Cost"/>
+      <LocalizedSampleString Key="SummariesCustom_Count_True_Values" Value="Count True Values"/>
+      <LocalizedSampleString Key="SummariesCustom_Count_False_Values" Value="Count False Values"/>
+      <LocalizedSampleString Key="Northwind_Invoices_OrderID" Value="Order ID"/>
+      <LocalizedSampleString Key="Northwind_Invoices_OrderDate" Value="Order Date"/>
+      <LocalizedSampleString Key="Northwind_Invoices_ShipName" Value="Ship Name"/>
+      <LocalizedSampleString Key="Northwind_Invoices_ShipCity" Value="Ship City"/>
+      <LocalizedSampleString Key="Northwind_Invoices_ShipCountry" Value="Ship Country"/>
+      <LocalizedSampleString Key="Northwind_Invoices_CustomerName" Value="Customer Name"/>
+      <LocalizedSampleString Key="Northwind_Invoices_City" Value="Customer City"/>
+      <LocalizedSampleString Key="GridLayout_Grid_Caption" Value="Disabled fixed headers. Width is defined for every column."/>
+      <LocalizedSampleString Key="GridLayout_Grid1_Caption" Value="Enabled fixed headers. Default column width is configured."/>
+      <LocalizedSampleString Key="Northwind_Products_ProductID" Value="Product ID"/>
+      <LocalizedSampleString Key="Northwind_Products_ProductName" Value="Product Name"/>
+      <LocalizedSampleString Key="Northwind_Products_Category" Value="Category"/>
+      <LocalizedSampleString Key="Northwind_Products_UnitsInStock" Value="Units In Stock"/>
+      <LocalizedSampleString Key="Northwind_Products_SupplierName" Value="Supplier Name"/>
+      <LocalizedSampleString Key="Northwind_Products_Discontinued" Value="Discontinued"/>
+      <LocalizedSampleString Key="Northwind_Products_UnitPrice" Value="Unit Price"/>
+      <LocalizedSampleString Key="Northwind_Products_UnitsOnOrder" Value="Units On Order"/>
+      <LocalizedSampleString Key="Northwind_Orders_OrderID" Value="Order ID"/>
+      <LocalizedSampleString Key="Northwind_Orders_OrderDate" Value="Order Date"/>
+      <LocalizedSampleString Key="Northwind_Orders_ShipName" Value="Ship Name"/>
+      <LocalizedSampleString Key="Northwind_Orders_ShipAddress" Value="Ship Address"/>
+      <LocalizedSampleString Key="Northwind_Orders_TotalItems" Value="Total Items"/>
+      <LocalizedSampleString Key="Northwind_Orders_TotalPrice" Value="Total Price"/>
+      <LocalizedSampleString Key="BasicEditing_SaveChanges" Value="Save Changes"/>
+      <LocalizedSampleString Key="BasicEditing_Undo" Value="Undo"/>
+      <LocalizedSampleString Key="BasicEditing_Redo" Value="Redo"/>
+      <LocalizedSampleString Key="btn_prev_state" Value="Previous Grid State"/>
+      <LocalizedSampleString Key="btn_back" Value="Previous State"/>
+      <LocalizedSampleString Key="btn_forward" Value="Next State"/>
+      <LocalizedSampleString Key="btn_copy_state" Value="Copy Current Players"/>
+      <LocalizedSampleString Key="copy_url_button_msg" Value="Copy URL and open it in a new tab or browser"/>
+      <LocalizedSampleString Key="btn_send_state_mail" Value="Send Players via e-mail"/>
+      <LocalizedSampleString Key="grid_state_subj" Value="List with Footballers"/>
+      <LocalizedSampleString Key="grid_state_body" Value="Use the following custom list with footballers: "/>
+      <LocalizedSampleString Key="LoadOnDemand_Auto_Caption" Value="Load on Demand - loadTrigger: auto"/>
+      <LocalizedSampleString Key="LoadOnDemand_Button_Caption" Value="Load on Demand - loadTrigger: button"/>
+      <LocalizedSampleString Key="LoadOnDemand_Infragistics_Tweets" Value="Infragistics Tweets"/>
+      <LocalizedSampleString Key="alert_include_history_script" Value="Please include the history.js library, by uncommenting the script reference"/>
+      <LocalizedSampleString Key="EditingAPIEvents_editMode" Value="Edit mode"/>
+      <LocalizedSampleString Key="EditingAPIEvents_startEditTriggers" Value="Start edit triggers"/>
+    </SampleStrings>
+    <Description>Use the fastest jQuery grid on the market to get more interactivity out of your static HTML tables and data. Our latest iteration offers more line of business features and Touch support, along with our unrivalled quality and performance.</Description>
+    <PageKeywords>igGrid</PageKeywords>
+    <SampleGroups>
+      <SampleGroup ID="1">Data Binding</SampleGroup>
+      <SampleGroup ID="2">Features</SampleGroup>
+      <SampleGroup ID="3">Responsive Web Design</SampleGroup>
+      <SampleGroup ID="4">Templates and Layout</SampleGroup>
+      <SampleGroup ID="5">API Usage</SampleGroup>
+      <SampleGroup ID="6">Performance</SampleGroup>
+        <SampleGroup ID="7">Editing</SampleGroup>
+        <SampleGroup ID="8">Styling</SampleGroup>
+    </SampleGroups>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Grid</Name>
+    <SampleStrings>
+      <LocalizedSampleString Key="legend_lbl_editSettings" Value="設定の編集"/>
+      <LocalizedSampleString Key="lbl_showButtons" Value="完了/キャンセル ボタンの表示"/>
+      <LocalizedSampleString Key="legend_lbl_delSettings" Value="設定の削除"/>
+      <LocalizedSampleString Key="lbl_enblDelRow" Value="行の削除を有効にする"/>
+      <LocalizedSampleString Key="lbl_selectRowIndex" Value="行インデックスの選択"/>
+      <LocalizedSampleString Key="legend_lbl_addSettings" Value="設定の追加"/>
+      <LocalizedSampleString Key="chckbx_lbl_enblAddRow" Value="行の追加を有効にする"/>
+      <LocalizedSampleString Key="table_lbl_employeeID" Value="従業員 ID"/>
+      <LocalizedSampleString Key="table_lbl_names" Value="従業員名"/>
+      <LocalizedSampleString Key="table_lbl_firstName" Value="名前"/>
+      <LocalizedSampleString Key="table_lbl_lastName" Value="名字"/>
+      <LocalizedSampleString Key="table_lbl_lastNumber" Value="最後の番号"/>
+      <LocalizedSampleString Key="table_lbl_title" Value="役職"/>
+      <LocalizedSampleString Key="table_lbl_birthDate" Value="生年月日"/>
+      <LocalizedSampleString Key="table_lbl_postCode" Value="郵便番号"/>
+      <LocalizedSampleString Key="table_lbl_country" Value="国"/>
+      <LocalizedSampleString Key="table_lbl_city" Value="市"/>
+      <LocalizedSampleString Key="button_lbl_delRow" Value="行の削除"/>
+      <LocalizedSampleString Key="button_lbl_addRow" Value="行の追加"/>
+      <LocalizedSampleString Key="legend_lbl_gridApiSettings" Value="グリッド API 設定"/>
+      <LocalizedSampleString Key="lbl_selectRow" Value="行の選択: "/>
+      <LocalizedSampleString Key="lbl_selectColumn" Value="列の選択: "/>
+      <LocalizedSampleString Key="legend_lbl_filterSettings" Value="フィルター設定"/>
+      <LocalizedSampleString Key="legend_lbl_selectSettings" Value="選択の設定"/>
+      <LocalizedSampleString Key="lbl_selectRowIndex_colon" Value="行インデックスの選択: "/>
+      <LocalizedSampleString Key="legend_lbl_pagingSettings" Value="ページング設定"/>
+      <LocalizedSampleString Key="lbl_selectPageIndex" Value="ページ インデックスの選択:"/>
+      <LocalizedSampleString Key="lbl_selectPageSize" Value="ページ サイズの選択:"/>
+      <LocalizedSampleString Key="button_lbl_databind" Value="データバインド"/>
+      <LocalizedSampleString Key="button_lbl_getRowIndex" Value="行インデックスの取得"/>
+      <LocalizedSampleString Key="button_lbl_getCellText" Value="セル テキストの取得"/>
+      <LocalizedSampleString Key="button_lbl_filter" Value="フィルター"/>
+      <LocalizedSampleString Key="button_lbl_selectRow" Value="行の選択"/>
+      <LocalizedSampleString Key="button_lbl_sortColumn" Value="列の並べ替え"/>
+      <LocalizedSampleString Key="button_lbl_getSelRows" Value="選択した行の取得"/>
+      <LocalizedSampleString Key="table_lbl_id" Value="ID"/>
+      <LocalizedSampleString Key="table_lbl_name" Value="名前"/>
+      <LocalizedSampleString Key="table_lbl_number" Value="数値"/>
+      <LocalizedSampleString Key="legend_lbl_initState" Value="初期状態"/>
+      <LocalizedSampleString Key="radio_lbl_regular" Value="標準"/>
+      <LocalizedSampleString Key="radio_lbl_merged" Value="結合"/>
+      <LocalizedSampleString Key="legend_lbl_cellSelOpt" Value="セル選択のオプション"/>
+      <LocalizedSampleString Key="chckbx_lbl_multiSel" Value="複数選択"/>
+      <LocalizedSampleString Key="chckbx_lbl_multiSelClick" Value="クリックして複数セルの選択"/>
+      <LocalizedSampleString Key="chckbx_lbl_touchDrag" Value="タッチしてドラッグ選択"/>
+      <LocalizedSampleString Key="button_lbl_applyCellSel" Value="セル選択の適用"/>
+      <LocalizedSampleString Key="legend_lbl_rowSelOpt" Value="RowSelectors オプション"/>
+      <LocalizedSampleString Key="chckbx_lbl_enblRowNum" Value="RowNumbering を有効にする"/>
+      <LocalizedSampleString Key="chckbx_lbl_enblChckbxs" Value="チェックボックスを有効にする"/>
+      <LocalizedSampleString Key="lbl_selMode" Value="選択モード"/>
+      <LocalizedSampleString Key="lbl_rowSelColWidth" Value="行セレクター列の幅"/>
+      <LocalizedSampleString Key="chckbx_multiSel" Value="複数選択"/>
+      <LocalizedSampleString Key="button_lbl_applyRowSelOpt" Value="RowSelectors オプションの適用"/>
+      <LocalizedSampleString Key="Grid_Knockoutjs_EditSelectedRow" Value="選択した行の編集"/>
+      <LocalizedSampleString Key="Grid_Knockoutjs_ErrDeleteRow" Value="行を削除するには、行を選択する必要があります。"/>
+      <LocalizedSampleString Key="Northwind_Customers_CustomerID" Value="顧客 ID"/>
+      <LocalizedSampleString Key="Northwind_Customers_CompanyName" Value="会社名"/>
+      <LocalizedSampleString Key="Northwind_Customers_ContactName" Value="名前"/>
+      <LocalizedSampleString Key="Northwind_Customers_ContactTitle" Value="連絡先"/>
+      <LocalizedSampleString Key="Northwind_Customers_Address" Value="住所"/>
+      <LocalizedSampleString Key="Northwind_Customers_City" Value="市"/>
+      <LocalizedSampleString Key="Northwind_Customers_Region" Value="領域"/>
+      <LocalizedSampleString Key="Northwind_Customers_PostalCode" Value="郵便番号"/>
+      <LocalizedSampleString Key="Northwind_Customers_Country" Value="国名"/>
+      <LocalizedSampleString Key="Northwind_Customers_Phone" Value="電話"/>
+      <LocalizedSampleString Key="Northwind_Customers_Fax" Value="FAX"/>
+      <LocalizedSampleString Key="Northwind_Customers_CompanyInformation" Value="会社情報"/>
+      <LocalizedSampleString Key="Northwind_Customers_AddressInformation" Value="アドレス情報"/>
+      <LocalizedSampleString Key="Northwind_Customers_LocalAddress" Value="住所"/>
+      <LocalizedSampleString Key="Northwind_Customers_PhoneInformation" Value="電話情報"/>
+      <LocalizedSampleString Key="cell_merging_row_index" Value="結合グループの開始行インデックス: "/>
+      <LocalizedSampleString Key="cell_merging_row_key" Value="結合グループの開始行キー: "/>
+      <LocalizedSampleString Key="cell_merging_cell_value" Value="結合グループを作成し、繰り返されたセル値: "/>
+      <LocalizedSampleString Key="cell_merging_cell_count" Value="結合セルの合計数: "/>
+      <LocalizedSampleString Key="cell_merging_logging_caption" Value="cellsMerged イベントのログ有効"/>
+      <LocalizedSampleString Key="Northwind_Employees_EmployeeID" Value="社員 ID"/>
+      <LocalizedSampleString Key="Northwind_Employees_FirstName" Value="名前"/>
+      <LocalizedSampleString Key="Northwind_Employees_LastName" Value="名字"/>
+      <LocalizedSampleString Key="Northwind_Employees_Title" Value="役職"/>
+      <LocalizedSampleString Key="Northwind_Employees_Address" Value="住所"/>
+      <LocalizedSampleString Key="Northwind_Employees_City" Value="市"/>
+      <LocalizedSampleString Key="Northwind_Employees_Region" Value="州"/>
+      <LocalizedSampleString Key="Northwind_Employees_Country" Value="国名"/>
+      <LocalizedSampleString Key="Northwind_Employees_Image" Value="画像"/>
+      <LocalizedSampleString Key="Northwind_Employees_Name" Value="名前"/>
+      <LocalizedSampleString Key="Northwind_Employees_Age" Value="年齢"/>
+      <LocalizedSampleString Key="Northwind_Employees_Phone" Value="電話"/>
+      <LocalizedSampleString Key="Northwind_Employees_Email" Value="メール"/>
+      <LocalizedSampleString Key="Northwind_Employees_PostalCode" Value="郵便番号"/>
+      <LocalizedSampleString Key="Northwind_Employees_BirthDate" Value="生年月日"/>
+      <LocalizedSampleString Key="Northwind_Employees_Languages" Value="言語"/>
+      <LocalizedSampleString Key="Northwind_Employees_Notes" Value="メモ"/>
+      <LocalizedSampleString Key="grid_api_row_number" Value="選択された行数:"/>
+      <LocalizedSampleString Key="grid_api_row_index1" Value="インデックス"/>
+      <LocalizedSampleString Key="grid_api_row_index2" Value="行が選択されました"/>
+      <LocalizedSampleString Key="grid_api_cell_text" Value="セルのテキスト:"/>
+      <LocalizedSampleString Key="unbound_col_values" Value="列のバインドされていない値:"/>
+      <LocalizedSampleString Key="unbound_col_function" Value="列の数式関数:"/>
+      <LocalizedSampleString Key="unbound_col_format" Value="列の形式:"/>
+      <LocalizedSampleString Key="unbound_col_template" Value="列のテンプレート:"/>
+      <LocalizedSampleString Key="unbound_col_dataType" Value="列の dataType:"/>
+      <LocalizedSampleString Key="unbound_col_Total" Value="すべてのセル テキスト:"/>
+      <LocalizedSampleString Key="json_units_in_stock" Value="在庫数:"/>
+      <LocalizedSampleString Key="json_productID" Value="製品 ID"/>
+      <LocalizedSampleString Key="json_productName" Value="製品名"/>
+      <LocalizedSampleString Key="json_unitPrice" Value="単価"/>
+      <LocalizedSampleString Key="unbound_promotionExpDate" Value="プロモーション期限"/>
+      <LocalizedSampleString Key="unbound_isPromotion" Value="プロモーション"/>
+      <LocalizedSampleString Key="unbound_total" Value="合計"/>
+      <LocalizedSampleString Key="getUCAPI_lbl" Value="非バインド列を選択してボタンをクリックすると、メソッドを呼び出します。"/>
+      <LocalizedSampleString Key="setUnboundValues_lbl" Value="非バインド値を IsPromotion および Total のキーを持つ列に設定します。"/>
+      <LocalizedSampleString Key="propertiesColumnWidth_legend" Value="プロパティ列の幅を設定する"/>
+      <LocalizedSampleString Key="sel_col_sort_lbl" Value="並べ替える列を選択してください"/>
+      <LocalizedSampleString Key="allowedEditorValues" Value="プロパティの値は 20 と 80 の間である必要があります。"/>
+      <LocalizedSampleString Key="rowTmplJsRender" Value="jsRender 構文の列テンプレート"/>
+      <LocalizedSampleString Key="rowEditTemplate_eventFired" Value="rowEditDialogOpened イベントが次のセル値と発生しました:"/>
+      <LocalizedSampleString Key="legend_lbl_initialFixDirection" Value="固定方向"/>
+      <LocalizedSampleString Key="radio_lbl_fixing_direction_left" Value="左"/>
+      <LocalizedSampleString Key="radio_lbl_fixing_direction_right" Value="右"/>
+      <LocalizedSampleString Key="column_fixing_columnFixed_event" Value="columnFixed イベントが次の列キーのために発生しました: "/>
+      <LocalizedSampleString Key="column_fixing_columnUnfixed_event" Value="columnUnfixed イベントが次の列キーのために発生しました: "/>
+      <LocalizedSampleString Key="column_fixing_columnFixingRefused_event" Value="columnFixingRefused イベントが次の列キーのために発生しました: "/>
+      <LocalizedSampleString Key="table_lbl_team" Value="チーム"/>
+      <LocalizedSampleString Key="table_lbl_age" Value="年齢"/>
+      <LocalizedSampleString Key="table_lbl_number_no" Value="番号"/>
+      <LocalizedSampleString Key="table_lbl_position" Value="ポジション"/>
+      <LocalizedSampleString Key="table_lbl_goals" Value="ゴール"/>
+      <LocalizedSampleString Key="table_lbl_assists" Value="アシスト"/>
+      <LocalizedSampleString Key="table_lbl_yellow" Value="イエローカード"/>
+      <LocalizedSampleString Key="table_lbl_red" Value="レッドカード"/>
+      <LocalizedSampleString Key="table_lbl_salary" Value="給与"/>
+      <LocalizedSampleString Key="single_cell_selection" Value="単一のセル選択"/>
+      <LocalizedSampleString Key="multiple_row_selection" Value="複数の行選択"/>
+      <LocalizedSampleString Key="default_row_selectors" Value="デフォルトの行セレクター"/>
+      <LocalizedSampleString Key="row_selectors_with_checkboxes" Value="チェックボックス付きの行セレクター"/>
+      <LocalizedSampleString Key="row_numbering" Value="行番号"/>
+      <LocalizedSampleString Key="AdventureWorks_Products_ProductID" Value="製品 ID"/>
+      <LocalizedSampleString Key="AdventureWorks_Products_Name" Value="製品名"/>
+      <LocalizedSampleString Key="AdventureWorks_Products_ProductNumber" Value="製品番号"/>
+      <LocalizedSampleString Key="AdventureWorks_Products_MakeFlag" Value="メーカー フラグ"/>
+      <LocalizedSampleString Key="AdventureWorks_Products_ReorderPoint" Value="再注文"/>
+      <LocalizedSampleString Key="AdventureWorks_Products_SellStartDate" Value="販売の開始日付"/>
+      <LocalizedSampleString Key="AdventureWorks_Products_ModifiedDate" Value="変更日付"/>
+      <LocalizedSampleString Key="AdventureWorks_Products_ListPrice" Value="価格"/>
+      <LocalizedSampleString Key="AdventureWorks_Products_StandardCost" Value="標準の原価"/>
+      <LocalizedSampleString Key="SummariesCustom_Count_True_Values" Value="True 値の数"/>
+      <LocalizedSampleString Key="SummariesCustom_Count_False_Values" Value="False 値の数"/>
+      <LocalizedSampleString Key="Northwind_Invoices_OrderID" Value="注文 ID"/>
+      <LocalizedSampleString Key="Northwind_Invoices_OrderDate" Value="注文日"/>
+      <LocalizedSampleString Key="Northwind_Invoices_ShipName" Value="出荷名"/>
+      <LocalizedSampleString Key="Northwind_Invoices_ShipCity" Value="配送先市町村"/>
+      <LocalizedSampleString Key="Northwind_Invoices_ShipCountry" Value="配送先の国"/>
+      <LocalizedSampleString Key="Northwind_Invoices_CustomerName" Value="顧客名"/>
+      <LocalizedSampleString Key="Northwind_Invoices_City" Value="顧客住所"/>
+      <LocalizedSampleString Key="GridLayout_Grid_Caption" Value="固定ヘッダーが無効です。各列で幅が定義されます。"/>
+      <LocalizedSampleString Key="GridLayout_Grid1_Caption" Value="固定ヘッダーが有効です。デフォルトの列幅が構成されます。"/>
+      <LocalizedSampleString Key="Northwind_Products_ProductID" Value="製品 ID"/>
+      <LocalizedSampleString Key="Northwind_Products_ProductName" Value="製品名"/>
+      <LocalizedSampleString Key="Northwind_Products_Category" Value="カテゴリ"/>
+      <LocalizedSampleString Key="Northwind_Products_UnitsInStock" Value="在庫数"/>
+      <LocalizedSampleString Key="Northwind_Products_SupplierName" Value="仕入先名"/>
+      <LocalizedSampleString Key="Northwind_Products_Discontinued" Value="製造中止"/>
+      <LocalizedSampleString Key="Northwind_Products_UnitPrice" Value="単価"/>
+      <LocalizedSampleString Key="Northwind_Products_UnitsOnOrder" Value="入荷待ち"/>
+      <LocalizedSampleString Key="Northwind_Orders_OrderID" Value="注文 ID"/>
+      <LocalizedSampleString Key="Northwind_Orders_OrderDate" Value="注文日"/>
+      <LocalizedSampleString Key="Northwind_Orders_ShipName" Value="出荷名"/>
+      <LocalizedSampleString Key="Northwind_Orders_ShipAddress" Value="配送先住所"/>
+      <LocalizedSampleString Key="Northwind_Orders_TotalItems" Value="項目の合計数"/>
+      <LocalizedSampleString Key="Northwind_Orders_TotalPrice" Value="総額"/>
+      <LocalizedSampleString Key="BasicEditing_SaveChanges" Value="変更の保存"/>
+      <LocalizedSampleString Key="BasicEditing_Undo" Value="元に戻す"/>
+      <LocalizedSampleString Key="BasicEditing_Redo" Value="やり直し"/>
+      <LocalizedSampleString Key="btn_prev_state" Value="以前のグリッド状態"/>
+      <LocalizedSampleString Key="btn_back" Value="以前の状態"/>
+      <LocalizedSampleString Key="btn_forward" Value="次の状態"/>
+      <LocalizedSampleString Key="btn_copy_state" Value="プレーヤーをコピー"/>
+      <LocalizedSampleString Key="copy_url_button_msg" Value="URL をコピーして新しいタブまたはブラウザーで開く"/>
+      <LocalizedSampleString Key="btn_send_state_mail" Value="プレーヤーを E メールで送信"/>
+      <LocalizedSampleString Key="grid_state_subj" Value="プレーヤーのリスト"/>
+      <LocalizedSampleString Key="grid_state_body" Value="プレーヤーのカスタム リストはこちら: "/>
+      <LocalizedSampleString Key="LoadOnDemand_Auto_Caption" Value="ロードオンデマンド - loadTrigger: auto"/>
+      <LocalizedSampleString Key="LoadOnDemand_Button_Caption" Value="ロードオンデマンド - loadTrigger: button"/>
+      <LocalizedSampleString Key="LoadOnDemand_Infragistics_Tweets" Value="Infragistics ツイート"/>
+      <LocalizedSampleString Key="alert_include_history_script" Value="history.js ライブラリのスクリプト参照をコメント インしてください。"/>
+      <LocalizedSampleString Key="EditingAPIEvents_editMode" Value="編集モード"/>
+      <LocalizedSampleString Key="EditingAPIEvents_startEditTriggers" Value="編集の開始トリガー"/>
+    </SampleStrings>
+    <Description>インタラクティブな操作が可能な HTML テーブルやデータなど、高いパフォーマンスを提供する jQuery データ グリッドは、スタイルのカスタマイズ、ページング、並べ替え、フィルタリング機能をサポートします。 </Description>
+    <PageKeywords>igGrid</PageKeywords>
+    <SampleGroups>
+      <SampleGroup ID="1">データ バインディング</SampleGroup>
+      <SampleGroup ID="2">機能</SampleGroup>
+      <SampleGroup ID="3">レスポンシブ Web デザイン</SampleGroup>
+      <SampleGroup ID="4">テンプレートとレイアウト</SampleGroup>
+      <SampleGroup ID="5">API 使用</SampleGroup>
+      <SampleGroup ID="6">パフォーマンス</SampleGroup>
+      <SampleGroup ID="7">編集</SampleGroup>
+      <SampleGroup ID="8">スタイル設定</SampleGroup>
+    </SampleGroups>
+  </LocalizedContent>
+  <ClientApiUrl>ui.iggrid</ClientApiUrl>
+  <HelpPageName>igGrid</HelpPageName>
+  <ForumNumber>499</ForumNumber>
+  <IconImage>jquery-grid-logo.png</IconImage>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <IsFeatureComponent>True</IsFeatureComponent>
+  <Status>Updated</Status>
+  <TOC>
+    <SampleGroup ID="1">
+      <Sample>json-binding</Sample>
+      <Sample>html-binding</Sample>
+      <Sample>xml-binding</Sample>
+      <Sample>datatable-binding</Sample>
+      <Sample>bind-grid-with-ko</Sample>
+      <Sample>aspnet-mvc-helper</Sample>
+      <Sample>load-on-demand</Sample>
+      <Sample>bind-web-api</Sample>
+    </SampleGroup>
+    <SampleGroup ID="2">
+      <Sample>feature-chooser</Sample>
+      <Sample>feature-persistence</Sample>
+      <Sample>history</Sample>
+      <Sample>cell-merging</Sample>
+      <Sample>unbound-column</Sample>
+      <Sample>selection</Sample>
+      <Sample>row-selectors</Sample>
+      <Sample>filtering</Sample>
+      <Sample>column-fixing</Sample>
+      <Sample>sorting-remote</Sample>
+      <Sample>sorting-local</Sample>
+      <Sample>paging</Sample>
+      <Sample>grouping</Sample>
+      <Sample>grouping-customization</Sample>
+      <Sample>summaries</Sample>
+      <Sample>summaries-remote</Sample>
+      <Sample>summaries-custom</Sample>
+      <Sample>tooltips</Sample>
+      <Sample>column-hiding</Sample>
+      <Sample>column-resizing</Sample>
+      <Sample>column-moving</Sample>
+      <Sample>multi-column-headers</Sample>
+    </SampleGroup>
+    <SampleGroup ID="3">
+      <Sample>responsive-web-design-mode</Sample>
+      <Sample>responsive-vertical-rendering</Sample>
+      <Sample>twitter-bootstrap</Sample>
+    </SampleGroup>
+    <SampleGroup ID="4">
+      <Sample>row-edit-template</Sample>
+      <Sample>jsrender-integration</Sample>
+        <Sample>auto-generate-columns</Sample>
+        <Sample>checkbox-column</Sample>
+        <Sample>column-template</Sample>
+        <Sample>configure-text-alignment</Sample>
+        <Sample>grid-layout</Sample>
+        <Sample>column-format-function</Sample>
+        <Sample>column-formats</Sample>
+    </SampleGroup>
+    <SampleGroup ID="5">
+      <Sample>editing-api-events</Sample>
+      <Sample>grid-api-events</Sample>
+    </SampleGroup>
+      <SampleGroup ID="6">
+          <Sample>virtualization-fixed</Sample>
+          <Sample>virtualization-continuous</Sample>
+      </SampleGroup>
+      <SampleGroup ID="7">
+        <Sample>basic-editing</Sample>
+        <Sample>rest-editing</Sample>
+      </SampleGroup>
+    <!--
+      <SampleGroup ID="8">
+          <Sample>windows-ui-theme</Sample>
+      </SampleGroup>-->
+  </TOC>
+</Component>

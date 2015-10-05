@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>HTML Binding</Title>
+    <Description>This sample demonstrates how to data bind the igTree control to a static markup structure.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>HTML のバインド</Title>
+    <Description>このサンプルは igTree コントロールを静的なマークアップ構造にデータ バインドする方法を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

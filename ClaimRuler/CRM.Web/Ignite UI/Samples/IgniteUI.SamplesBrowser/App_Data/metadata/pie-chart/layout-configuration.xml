@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Layout Configuration</Title>
+    <Description>In this sample, you can see how the different options can change the layout of the pie chart control.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Overview" TopicName="igPieChart_Overview" />
+      <HelpTopic Title="Adding Pie Chart" TopicName="igPieChart_Adding" />
+      <HelpTopic Title="Styling Themes" TopicName="igPieChart_Styling_Themes" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>レイアウトの構成</Title>
+    <Description>このサンプルでは、円チャート コントロールのレイアウトを変更するオプションを紹介します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="概要" TopicName="igPieChart_Overview" />
+      <HelpTopic Title="円チャートの追加" TopicName="igPieChart_Adding" />
+      <HelpTopic Title="テーマのスタイル設定" TopicName="igPieChart_Styling_Themes" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

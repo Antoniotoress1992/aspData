@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Column Format Function</Title>
+    <Description>
+        This sample shows how to format column values before displaying them in the grid. The Make Flag boolean column has a formatter function which transforms the true/false values into Yes/No values.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+      <Title>列の書式関数</Title>
+    <Description>
+      このサンプルでは、グリッドに表示する前に列値を書式設定する方法を紹介します。「メーカー フラグ」のブール列に true/false 値を Yes/No 値に変換する書式設定関数があります。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

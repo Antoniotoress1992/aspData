@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Sparkline in Grid</Title>
+    <Description>This sample demonstrates binding certain data of a grid to a igSparkline chart. This allows the user to visually analyze the grid data.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Overview" TopicName="igSparkline_Overview" />
+      <HelpTopic Title="Configuring" TopicName="igSparkline_Configuring" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>グリッドのスパークライン</Title>
+    <Description>このサンプルでは、グリッドのデータを igSparkline チャートにバインドする方法を紹介します。ユーザーはグリッド データを視覚的に分析できます。</Description>
+    <HelpTopics>
+      <HelpTopic Title="概要" TopicName="igSparkline_Overview" />
+      <HelpTopic Title="構成" TopicName="igSparkline_Configuring" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

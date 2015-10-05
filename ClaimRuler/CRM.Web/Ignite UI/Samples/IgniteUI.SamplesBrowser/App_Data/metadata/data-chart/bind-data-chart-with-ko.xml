@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Bind Data Chart with KnockoutJS</Title>
+    <Description>
+      <b>What does it demonstrate?</b><br />
+      The sample demonstrates binding igDataChart with Knockout View-Model, using Infragistics Knockout extension for the control.
+      <br />
+      <b>What will you see?</b><br />
+      When you modify the values for an igDataChart item, the charts that are bound to that value are updated accordingly; the update is indicated by highlighting the border of the modified charts.
+      <br />
+      <b>How to do it?</b><br />
+      <ul>
+        <li>Use the combo to change the current item and then to modify the chart item.</li>
+        <li>Use the button at the top-right to change the charts with randomly generated data.</li>
+      </ul>
+    </Description>
+    <HelpTopics>
+      <HelpTopic Title="Configuring Knockout Support" TopicName="igDataChart_KnockoutJS_Support" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>KnockoutJS を使用してデータ チャートをバインド</Title>
+    <Description>
+      <b>目的</b><br />
+      このサンプルでは、コントロールの Infragistics Knockout 拡張機能を使用して igDataChart を Knockout ビュー モデルとバインドする方法を紹介します。
+      <br />
+      <b>結果</b><br />
+      igDataChart 項目の値を変更したとき、その値にバインドされるチャートが更新されます。変更されたチャートの境界線が強調表示されます。
+      <br />
+      <b>手順</b><br />
+      <ul>
+        <li>スライダーを使用して現在の項目を変更し、チャート項目を変更します。</li>
+        <li>右上のボタンを使用し、チャートをランダムに生成したデータにバインドします。</li>
+      </ul>
+    </Description>
+    <HelpTopics>
+      <HelpTopic Title="Knockout サポートの構成" TopicName="igDataChart_KnockoutJS_Support" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

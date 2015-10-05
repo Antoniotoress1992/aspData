@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Basic Usage</Title>
+    <Description>
+      This sample demonstrates a popover on a single target element and on multiple target elements. 
+      These are the basic initialization scenarios of the Popover control in JavaScript.
+      To see the popover control in action click on the Infragistics logo or focus on any of the input fields.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>ベーシック ポップオーバー</Title>
+    <Description>
+      このサンプルでは、単一の要素のポップオーバー、および複数のターゲット要素のポップオーバーを紹介します。これは JavaScript でポップオーバー コントロールの基本初期化シナリオです。
+      ポップオーバー コントロールを表示するには、Infragistics ロゴをクリックするか、入力フィールドをフォーカスします。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status>Updated</Status>  
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

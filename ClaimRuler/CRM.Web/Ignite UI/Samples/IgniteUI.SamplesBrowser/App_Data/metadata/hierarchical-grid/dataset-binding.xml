@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>DataSet Binding</Title>
+    <Description>
+        <![CDATA[
+        Using the ASP.NET MVC helper, you can bind the igHierarchicalGrid directly to DataSet objects. This sample demonstrates igHierarchicalGrid configured with auto-generated columns and layouts bound to DataSet object. Paging feature operates in remote mode while Sorting, Filtering and GroupBy features operate in local mode. All of the features are inherited, so they are available in the auto-generated child layout.
+        ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>DataSet のバインド</Title>
+    <Description>
+    <![CDATA[
+        ASP.NET MVC ヘルパーを使用し、igHierarchicalGrid を直接 DataSet オブジェクトにバインドできます。このサンプルでは、DataSet オブジェクトにバインドされる自動生成された列およびレイアウトを構成した igHierarchicalGrid を紹介します。ページング機能はリモート モードで操作し、並べ替え、フィルタリング、グループ化機能はローカル モードで操作します。すべての機能は継承されるため、自動生成された子レイアウトにも利用可能です。
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>TabletLandscape</MinSampleSize>
+</Sample>

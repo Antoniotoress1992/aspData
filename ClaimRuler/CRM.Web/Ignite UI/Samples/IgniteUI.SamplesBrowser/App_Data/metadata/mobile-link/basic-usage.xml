@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Basic Usage</Title>
+    <Description>
+      This sample demonstrates how to customize the ASP.NET MVC Link helper to look like a button.
+      Note:
+      The jQuery mobile framework allows you to prefetch HTML referenced in the page. After the page is loaded, an asynchronous callback is made that loads the referenced page, improving performance. When you use the MVC Link Prefetch property it renders a link that has the ability to prefetch the referenced document.
+    </Description>
+    <HelpTopics>
+      <HelpTopic Title="Adding Link" TopicName="Adding_Link" />
+      <HelpTopic Title="Configuring" TopicName="Configuring_Link" />
+      <HelpTopic Title="Overview" TopicName="Link_Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>基本的な使用方法</Title>
+    <Description>
+      このサンプルでは、ASP.NET MVC Link ヘルパーをカスタマイズしてボタンの外観を設定する方法を紹介します。
+      注:
+      jQuery Mobile フレームワークはページに参照される HTML をプリフェッチできます。ページを読み込んだ後に、参照されるページを読み込む非同期コールバックを実行します。これによりパフォーマンスが向上します。MVC Link の Prefetch プロパティを使用すると、参照されるドキュメントをプリフェッチできるリンクを描画します。
+    </Description>
+    <HelpTopics>
+      <HelpTopic Title="Link の追加" TopicName="Adding_Link" />
+      <HelpTopic Title="構成" TopicName="Configuring_Link" />
+      <HelpTopic Title="概要" TopicName="Link_Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+</Sample>

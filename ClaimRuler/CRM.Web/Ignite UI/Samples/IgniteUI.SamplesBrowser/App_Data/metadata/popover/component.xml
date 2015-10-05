@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Popover</Name>
+    <Description>
+      </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="sign_in_username" Value="Please enter your username or email address"/>
+      <LocalizedSampleString Key="sign_in_pass" Value="Please enter your password"/>
+      <LocalizedSampleString Key="sign_in_btn" Value="Sign in"/>
+      <LocalizedSampleString Key="sign_in_lbl" Value="Username"/>
+      <LocalizedSampleString Key="social_networks" Value="Infragistics social networks"/>
+      <LocalizedSampleString Key="social_title" Value="We're social"/>
+      <LocalizedSampleString Key="social_facebook" Value="Join us on Facebook"/>
+      <LocalizedSampleString Key="social_twitter" Value="Follow us on Twitter"/>
+      <LocalizedSampleString Key="social_youtube" Value="Watch our YouTube channel"/>
+      <LocalizedSampleString Key="map_helper" Value="Google maps input viewer"/>
+      <LocalizedSampleString Key="map_helper_title" Value="To display the location of the city is used Google maps"/>
+    </LocalizedSampleStrings>
+    <PageKeywords>igPopover</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Popover</Name>
+    <Description>
+     </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="sign_in_username" Value="ユーザー名またはメール アドレスを入力してください。"/>
+      <LocalizedSampleString Key="sign_in_pass" Value="パスワードを入力してください。"/>
+      <LocalizedSampleString Key="sign_in_btn" Value="サインイン"/>
+      <LocalizedSampleString Key="sign_in_lbl" Value="ユーザー名"/>
+      <LocalizedSampleString Key="social_networks" Value="Infragistics ソーシャル ネットワーク"/>
+      <LocalizedSampleString Key="social_title" Value="ソーシャル"/>
+      <LocalizedSampleString Key="social_facebook" Value="Facebook"/>
+      <LocalizedSampleString Key="social_twitter" Value="Twitter"/>
+      <LocalizedSampleString Key="social_youtube" Value="YouTube チャネル"/>
+      <LocalizedSampleString Key="map_helper" Value="Google Maps の入力ビューアー"/>
+      <LocalizedSampleString Key="map_helper_title" Value="Google Maps を使用して市の位置を表示します。"/>
+    </LocalizedSampleStrings>
+    <PageKeywords>igPopover</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>ui.igpopover</ClientApiUrl>
+  <ForumNumber>814</ForumNumber>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <TOC>  
+    <Sample>basic-popover</Sample>
+    <Sample>aspnet-mvc-helper</Sample>
+  </TOC>
+</Component>

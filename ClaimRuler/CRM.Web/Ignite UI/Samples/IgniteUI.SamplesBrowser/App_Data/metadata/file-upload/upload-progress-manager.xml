@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Using UploadProgressManager</Title>
+    <Description>The sample demonstrates how to save file information on the server and access it when needed by using the UploadProgressManager on the server.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>UploadProgressManager の使用</Title>
+    <Description>このサンプルでは、サーバーで UploadProgressManager を使用すると、サーバーでファイル情報を保存し、その情報へアクセスする方法を紹介します。</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>UploadProgressManager の使用</Title>
+    <Description></Description>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+</Sample>

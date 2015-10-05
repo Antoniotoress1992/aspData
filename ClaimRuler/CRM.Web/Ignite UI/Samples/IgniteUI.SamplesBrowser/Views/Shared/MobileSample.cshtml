@@ -1,0 +1,54 @@
+﻿@using IgniteUI.SamplesBrowser.Application.Model
+@using Infragistics.IgniteUI.SamplesBrowser.Shared.ViewModels
+@model SampleViewModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        @Model.PageTitle
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="IE=10" >
+    <meta name="description" content="@Model.PageDescription" />
+    <meta name="keywords" content="@Model.PageKeywords" />
+
+    <link rel="shortcut icon"  type="image/ico" href="@Url.Content("~/images/favicon.ico")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/jqm/jquery.mobile.structure.min.css")" />
+
+    <!-- Required Ignite UI Mobile Combined CSS Files -->
+    <link href="@Url.Content("~/igniteui/mobile/css/structure/infragistics.mobile.css")"  rel="stylesheet"/>
+    <link href="@Url.Content("~/igniteui/mobile/css/themes/" + Model.MobilePhoneTheme + "/infragistics.mobile.theme.css")"  rel="stylesheet"/>
+
+    <link rel="stylesheet" href="@Url.Content("~/css/mobilesamples.css")" />
+    <script type="text/javascript" src="@Url.Content("~/js/jqm/jquery.min.js")"></script>
+    <script type="text/javascript">
+        $(document).bind("mobileinit", function () {
+            $.mobile.loadingMessage = 'Localized Text';
+        });
+    </script>
+    <script type="text/javascript" src="@Url.Content("~/js/jqm/jquery.mobile.min.js")"></script>   
+    
+    @if (Model.IsMobileSampleRunningOnDesktop)
+    {
+        <script>
+            $(document).on("pageinit", "div:jqmData(role='page')", function (e) {
+                $(e.target).on("focus", function (e) {
+                    e.preventDefault();
+                });
+            });
+        </script>         
+         
+        <script type="text/javascript" src="@Url.Content("~/js/sb-mobileIframe.js")"></script>  
+        <script type="text/javascript" src="@Url.Content("~/js/modernizr.min.js")"></script>
+        <script type="text/javascript" src="@Url.Content("~/js/infragistics.ui.sbscroll.js")"></script>
+    }
+    
+    <!-- Required Ignite UI Mobile Combined JavaScript File -->
+    <script src="@Url.Content("~/igniteui/mobile/js/infragistics.mobile.js")"></script>    
+</head>
+<body>
+    @Html.Raw(Model.Sample.Code.RunningSampleBody)
+    @Html.Partial("_GA", Model)
+</body>
+</html>

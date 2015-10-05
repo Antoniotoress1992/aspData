@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Templating Engine</Name>
+    <Description>
+      Use our ultra-fast, high performance Templating Engine with our Grid or Tree controls, or use it outside of the context of our UI widgets. It's completely integrated in our javascript, so there's no need to refer to any external references.
+    </Description>
+    <SampleStrings>
+      <LocalizedSampleString Key="ProductName" Value="Product Name"/>
+      <LocalizedSampleString Key="UnitPrice" Value="Unit Price"/>
+      <LocalizedSampleString Key="UnitsInStock" Value="Units In Stock"/>
+      <LocalizedSampleString Key="UnitsOnOrder" Value="Units On Order"/>
+      <LocalizedSampleString Key="FirstName" Value="First Name"/>
+      <LocalizedSampleString Key="LastName" Value="Last Name"/>
+      <LocalizedSampleString Key="Nationality" Value="Nationality"/>
+      <LocalizedSampleString Key="Movies" Value="Movies"/>
+    </SampleStrings>
+    <PageKeywords>Templating Engine</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Templating Engine</Name>
+    <Description>
+      高いパフォーマンスのテンプレート エンジンをグリッドまたはツリー コントロールと使用するか、UI ウィジェット以外に使用できます。javascript に含まれているため、外部のリソースを参照する必要がありません。
+    </Description>
+    <SampleStrings>
+      <LocalizedSampleString Key="ProductName" Value="製品名"/>
+      <LocalizedSampleString Key="UnitPrice" Value="単価"/>
+      <LocalizedSampleString Key="UnitsInStock" Value="在庫数"/>
+      <LocalizedSampleString Key="UnitsOnOrder" Value="入荷待ち"/>
+      <LocalizedSampleString Key="FirstName" Value="名前"/>
+      <LocalizedSampleString Key="LastName" Value="名字"/>
+      <LocalizedSampleString Key="Nationality" Value="国"/>
+      <LocalizedSampleString Key="Movies" Value="映画"/>
+    </SampleStrings>
+    <PageKeywords>Templating Engine</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl></ClientApiUrl>
+  <HelpPageName>igTemplating Overview</HelpPageName>
+  <ForumNumber></ForumNumber>
+  <IconImage></IconImage>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <TOC>
+    <Sample>basic-usage</Sample>
+    <Sample>grid-column-template</Sample>
+    <Sample>conditional-templates</Sample>
+    <Sample>nested-templates</Sample>
+    <Sample>aspnet-mvc-usage</Sample>
+  </TOC>
+</Component>

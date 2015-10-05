@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Configure Text Alignment</Title>
+    <Description>
+        This sample demonstrates how to customize the grid column text alignment.
+        The grid's "Product ID" and "Reorder Point" numeric columns text is aligned to the right. This is done by applying a text-align CSS rule to the respective TD elements of each row in the igGrid.dataRendered event.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+      <Title>テキスト配置の構成</Title>
+    <Description>
+      このサンプルでは、グリッド列のテキスト配置をカスタマイズする方法を紹介します。
+      グリッドの「製品 ID」および「再注文」の数値列のテキストが右側に配置されます。igGrid.dataRendered イベントで各の行の TD 要素に text-align CSS ルールを適用します。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

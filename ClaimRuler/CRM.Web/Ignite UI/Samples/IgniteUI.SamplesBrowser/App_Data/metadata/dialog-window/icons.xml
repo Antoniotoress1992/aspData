@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Icons</Title>
+    <Description>This sample demonstrates you how to show igDialog icons.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Header and Footer" TopicName="igDialog Header and Footer" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>アイコン</Title>
+    <Description>このサンプルでは、igDialog のアイコンを表示する方法を紹介します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="ヘッダーとフッター" TopicName="igDialog Header and Footer" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <TOC>
+    <Sample>Icons</Sample>
+  </TOC>
+  <IsFullPostBack>False</IsFullPostBack>
+  <MinSampleSize>PhonePortrait</MinSampleSize>
+</Sample>

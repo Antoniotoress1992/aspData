@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Scale Settings</Title>
+    <Description>This sample demonstrates the supported scale configurations of the igLinearGauge control.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>スケール設定</Title>
+    <Description>このサンプルでは、igLinearGauge コントロールのサポートされるスケール構成を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

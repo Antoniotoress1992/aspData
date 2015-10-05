@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Crosshair Layer</Title>
+    <Description>This sample demonstrates the Crosshair Layer that provides crossing lines that meet at the actual value of every series that they are targeting. The sample options pane allows you to edit the properties of the layer, such as changing the thickness of the crosshair.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Crosshair Layer" TopicName="HoverInteractions_Crosshair_Layer" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>十字ポインター レイヤー</Title>
+    <Description>このサンプルは、ターゲットとする実際の値に一致する十字線を提供する十字ポインター レイヤーを紹介します。このサンプル オプション ペインでは、十字ポインターの太さなど、レイヤー プロパティを編集できます。</Description>
+    <HelpTopics>
+      <HelpTopic Title="十字ポインター レイヤー" TopicName="HoverInteractions_Crosshair_Layer" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

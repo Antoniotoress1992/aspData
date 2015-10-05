@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>ASP.NET MVC Helper</Title>
+    <Description>This sample shows the combo used in a basic ASP.NET MVC scenario. The ASP.NET MVC helper is used to instantiate the combo in the view.
+    In addition, the ComboDataSourceAction attribute is used to process the remote request for the collection of employees as well as process the remote filtering parameters. 
+    Finally, you can see how the combo is used in a form to update a field in the model.</Description>
+    <HelpTopics>
+      <HelpTopic Title="MVC Helper and API" TopicName="igCombo_jQuery_And_ASP_NET_MVC_Helper_API_Links" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>ASP.NET MVC ヘルパー</Title>
+    <Description>
+      このサンプルでは、ASP.NET MVC の基本的なシナリオでコンボを使用する方法を紹介します。ビューでコンボをインスタンス化するために ASP.NET MVC ヘルパーが使用されます。
+      また、従業員のコレクションのリモート要求を処理し、リモート フィルタリング パラメーターを処理するために ComboDataSourceAction 属性が使用されます。
+      モデルのフィールドを更新するためにコンボの使用方法を紹介します。
+    </Description>
+    <HelpTopics>
+      <HelpTopic Title="MVC ヘルパーと API" TopicName="igCombo_jQuery_And_ASP_NET_MVC_Helper_API_Links" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+</Sample>

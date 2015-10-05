@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Templates</Title>
+    <Description>Templates can be used to override the visual layout and appearance of the ListView. This sample shows the item template and details template configuration. Note: This samples uses an OData service as the data source and may not work running offline or when running from the file system. Note: There is a known issue with Android browsers and the OData service in this sample. Please run this sample in a non-Android based browser.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Overview" TopicName="igListView_Overview" />
+      <HelpTopic Title="Known Issues and Limitations" TopicName="igListView_Known_Issues" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>テンプレート</Title>
+    <Description>テンプレートを使用すると、ListView のビジュアル レイアウトと外観をオーバーライドできます。このサンプルは項目テンプレートと詳細テンプレートの構成を表示します。注: このサンプルはデータ ソースとして OData サービスを使用します。オフラインで実行またはファイル システムから実行すると正しく動作しません。注: このサンプルの oData サービスと Android ブラウザーに既知の問題があります。このサンプルを Android 以外のブラウザーで実行してください。</Description>
+    <HelpTopics>
+      <HelpTopic Title="概要" TopicName="igListView_Overview" />
+      <HelpTopic Title="既知の問題と制限" TopicName="igListView_Known_Issues" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

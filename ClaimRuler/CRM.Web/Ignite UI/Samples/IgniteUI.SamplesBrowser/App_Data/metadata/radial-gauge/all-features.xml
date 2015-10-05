@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>All Features</Title>
+    <Description>This sample demonstrates setting all the properties of igRadialGauge control.</Description>
+    <HelpTopics>
+      <HelpTopic Title="igRadialGauge" TopicName="igRadialGauge" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>すべての機能</Title>
+    <Description>このサンプルは igRadialGauge コントロールのすべてのプロパティの設定を紹介します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="igRadialGauge" TopicName="igRadialGauge" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

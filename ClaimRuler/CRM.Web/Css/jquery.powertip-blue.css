@@ -1,0 +1,279 @@
+/* PowerTip Plugin */
+#powerTip {
+    cursor: default;
+    background-color: #305496;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 1px rgba(255, 255, 255, 0.5) inset, 0 -2px 2px #a5d2fa inset;
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 1px rgba(255, 255, 255, 0.5) inset, 0 -2px 2px #a5d2fa inset;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 1px rgba(255, 255, 255, 0.5) inset, 0 -2px 2px #a5d2fa inset;
+    border: 1px solid #4b91d2;
+    border-radius: 6px;
+    color: white;
+    display: none;
+    padding: 10px;
+    position: absolute;
+    white-space: nowrap;
+    z-index: 2147483647;
+}
+
+    #powerTip:before {
+        content: "";
+        position: absolute;
+    }
+
+    #powerTip.n:before, #powerTip.s:before {
+        border-right: 15px solid transparent;
+        border-left: 15px solid transparent;
+        left: 50%;
+        margin-left: -5px;
+    }
+
+    #powerTip.e:before, #powerTip.w:before {
+        border-bottom: 15px solid transparent;
+        border-top: 15px solid transparent;
+        margin-top: -15px;
+        top: 50%;
+    }
+
+    #powerTip.n:before {
+        border-top: 25px solid #305496;
+        border-top: 25px solid #305496;
+        bottom: -21px;
+    }
+
+    #powerTip.e:before {
+        border-right: 19px solid #305496;
+        border-right: 19px solid #305496;
+        left: -17px;
+    }
+
+    #powerTip.s:before {
+        border-bottom: 26px solid #305496;
+        border-bottom: 26px solid #305496;
+        top: -22px;
+    }
+
+    #powerTip.w:before {
+        border-left: 25px solid #305496;
+        border-left: 25px solid #305496;
+        right: -20px;
+    }
+
+    #powerTip.ne:before, #powerTip.se:before {
+        border-right: 10px solid transparent;
+        border-left: 0;
+        left: 10px;
+    }
+
+    #powerTip.nw:before, #powerTip.sw:before {
+        border-left: 10px solid transparent;
+        border-right: 0;
+        right: 10px;
+    }
+
+    #powerTip.ne:before, #powerTip.nw:before {
+        border-top: 10px solid #305496;
+        border-top: 10px solid #305496;
+        bottom: -10px;
+    }
+
+    #powerTip.se:before, #powerTip.sw:before {
+        border-bottom: 10px solid #305496;
+        border-bottom: 10px solid #305496;
+        top: -10px;
+    }
+
+    #powerTip.nw-alt:before, #powerTip.ne-alt:before,
+    #powerTip.sw-alt:before, #powerTip.se-alt:before {
+        border-top: 10px solid #4b91d2;
+        border-top: 10px solid rgba(75, 145, 210, 0.8);
+        bottom: -10px;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        left: 10px;
+    }
+
+    #powerTip.ne-alt:before {
+        left: auto;
+        right: 10px;
+    }
+
+    #powerTip.sw-alt:before, #powerTip.se-alt:before {
+        border-top: none;
+        border-bottom: 10px solid #4b91d2;
+        border-bottom: 10px solid rgba(75, 145, 210, 0.8);
+        bottom: auto;
+        top: -10px;
+    }
+
+    #powerTip.se-alt:before {
+        left: auto;
+        right: 10px;
+    }
+
+    #powerTip b {
+        font-size: 18pt;
+    }
+
+    #powerTip .step {
+        font-size: 14pt;
+    }
+
+    #powerTip a {
+        color: white;
+        font-size: 18px;
+    }
+
+        #powerTip a:hover {
+            text-decoration: none;
+        }
+
+    #powerTip p {
+        font-size: 14pt;
+    }
+
+    #powerTip button {
+        background-color: #305496;
+        border: 1px solid black;
+        color: white;
+        margin-left: 116px;
+        font-size: 14pt;
+    }
+
+     #powerTip input {
+        background-color: #305496;
+        border: 1px solid black;
+        color: white;
+        margin-left: 32px;      
+        font-size: 14pt;
+    }
+
+#dashboardtoolTip {
+    cursor: default;
+    background-color: #305496;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 1px rgba(255, 255, 255, 0.5) inset, 0 -2px 2px #a5d2fa inset;
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 1px rgba(255, 255, 255, 0.5) inset, 0 -2px 2px #a5d2fa inset;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 1px rgba(255, 255, 255, 0.5) inset, 0 -2px 2px #a5d2fa inset;
+    border: 1px solid #4b91d2;
+    border-radius: 6px;
+    color: white;
+    display: none;
+    padding: 10px;
+    position: absolute;
+    white-space: nowrap;
+    z-index: 2147483647;
+    top: 402px !important;
+    left: 576px !important;
+}
+
+    #dashboardtoolTip b {
+        font-size: 18pt;
+    }
+
+    #dashboardtoolTip .step {
+        font-size: 14pt;
+    }
+
+    #dashboardtoolTip p {
+        font-size: 14pt;
+    }
+
+    #dashboardtoolTip button {
+        background-color: #305496;
+        border: 1px solid black;
+        color: white;
+        margin-left: 116px;
+        font-size: 14pt;
+    }
+
+    /**/
+    .tutorialPopup {
+    cursor: default;
+    background-color: #305496;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 1px rgba(255, 255, 255, 0.5) inset, 0 -2px 2px #a5d2fa inset;
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 1px rgba(255, 255, 255, 0.5) inset, 0 -2px 2px #a5d2fa inset;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 1px rgba(255, 255, 255, 0.5) inset, 0 -2px 2px #a5d2fa inset;
+    border: 1px solid #4b91d2;
+    border-radius: 6px;
+    color: white;
+    display: none;
+    padding: 10px;
+    /*position: absolute;*/
+    white-space: nowrap;
+    z-index: 2147483647;
+    /*top: 402px !important;
+    left: 576px !important;*/
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+   .tutorialPopup b {
+        font-size: 18pt;
+    }
+
+   .tutorialPopup .step {
+        font-size: 14pt;
+           
+    }
+
+   .tutorialPopup p {
+        font-size: 14pt;
+    }
+
+  .tutorialPopup button {
+        background-color: #305496;
+        border: 1px solid black;
+        color: white;
+        margin-left: 116px;
+        font-size: 14pt;
+    }
+
+  #claimStep{
+      
+    bottom: auto;
+    display: block;
+    left: 245px;
+    right: auto;
+    top: 75px;
+}
+#claimStep.tutorialPopup:before {
+    border-right: 19px solid #305496;
+    left: -17px;
+}
+  #claimStep:before {
+    content: "";
+    position: absolute;
+}
+  #claimStep.tutorialPopup:before {
+    border-bottom: 15px solid transparent;
+    border-top: 15px solid transparent;
+    margin-top: -15px;
+    top: 50%;
+}
+
+  .tutorialPopup input {
+        background-color: #305496;
+        border: 1px solid black;
+        color: white;       
+          margin-left: 32px;
+        font-size: 14pt;
+    }
+
+#stepBusinessRule.tutorialPopup {
+    height: 180px!important;
+    left: 50%!important;
+    margin-left: -265px!important;
+    margin-top: -100px!important;
+    position: absolute!important;
+    right: 0!important;
+    top: 50%!important;
+    width: 530px!important;
+}
+.floatRgt {
+    float:right;
+}
+
+/*for chrome only
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+ #diez  { color: red  }
+}*/

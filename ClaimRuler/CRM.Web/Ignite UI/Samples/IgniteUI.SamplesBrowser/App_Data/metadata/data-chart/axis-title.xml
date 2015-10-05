@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Axis Title</Title>
+    <Description>The axis title feature of the igChart control allows you to add contextual information to the x and y axes of the igChart control. The slider allows you to determine the angle rotation of the axis title.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Axis Title" TopicName="igDataChart_Axis_Title" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>軸タイトル</Title>
+    <Description>igChart コントロールの軸タイトル機能は、igChart コントロールの x および y 軸に情報を追加できます。スライダーを使用すると、軸タイトルの回転角度を設定できます。</Description>
+    <HelpTopics>
+      <HelpTopic Title="軸タイトル" TopicName="igDataChart_Axis_Title" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

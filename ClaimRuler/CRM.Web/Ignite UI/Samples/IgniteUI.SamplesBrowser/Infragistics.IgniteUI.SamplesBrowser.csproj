@@ -1,0 +1,2097 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A62A2A2F-BBB8-4378-96B2-0D855F6F7944}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IgniteUI.SamplesBrowser</RootNamespace>
+    <AssemblyName>Infragistics.IgniteUI.SamplesBrowser</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName></SccProjectName>
+    <SccLocalPath></SccLocalPath>
+    <SccAuxPath></SccAuxPath>
+    <SccProvider></SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>False</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\packages\AutoMapper.2.2.0\lib\net40\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Elmah">      
+      <HintPath>..\packages\elmah.corelibrary.1.2.2\lib\Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Olap.DataProvider.Adomd.Mvc, Version=4.14.1.1, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\XAML\2014.1\Source\Olap\Infragistics.Olap.Adomd\bin\Infragistics.Olap.DataProvider.Adomd.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Web.Mvc, Version=4.14.1.1, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Source\Infragistics.Web.Mvc\bin\Infragistics.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics.Web.Mvc.Documents.Core, Version=14.1.20141.1, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Source\Infragistics.Web.Mvc\bin\Infragistics.Web.Mvc.Documents.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Web.Mvc.Documents.Excel, Version=14.1.20141.1, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Source\Infragistics.Web.Mvc\bin\Infragistics.Web.Mvc.Documents.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Web.Mvc.Documents.IO, Version=14.1.20141.1, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Source\Infragistics.Web.Mvc\bin\Infragistics.Web.Mvc.Documents.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Web.Mvc.Documents.Reports, Version=14.1.20141.1, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Source\Infragistics.Web.Mvc\bin\Infragistics.Web.Mvc.Documents.Reports.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Web.Mvc.Documents.Word, Version=14.1.20141.1, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Source\Infragistics.Web.Mvc\bin\Infragistics.Web.Mvc.Documents.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Web.Mvc.Mobile, Version=3.14.1.1, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\Infragistics.Web.Mvc.Mobile\v4.0_3.12.1.1__7dd5c3163f2cd0cb\Infragistics.Web.Mvc.Mobile.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Zip\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" /> <Reference Include="Infragistics.IgniteUI.SamplesBrowser.Shared.dll" />
+    <Reference Include="Microsoft.Data.Edm, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Spatial, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\System.Spatial.5.2.0\lib\net40\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Http.OData">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.OData.4.0.0\lib\net40\System.Web.Http.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20710.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Application\Model\Util\CustomExceptionFilterAttribute.cs" />
+    <Compile Include="Application\Model\Util\CustomQueryableAttribute.cs" />
+    <Compile Include="Application\Model\Util\ODataMetadata.cs" />
+    <Compile Include="Application\Model\Util\Config.cs" />
+    <Compile Include="Application\Model\Util\ResourceStrings.cs" />
+    <Compile Include="Application\Model\Util\FileSystemHelper.cs" />
+    <Compile Include="Application\Model\Util\JsonpFormatter.cs" />
+    <Compile Include="Application\Model\Util\AppUrlHelper.cs" />
+    <Compile Include="Application\Model\Util\SvgHttpHandler.cs" />
+    <Compile Include="Application\ViewRenderer.cs" />
+    <Compile Include="App_GlobalResources\Main.ja.designer.cs">
+      <DependentUpon>Main.ja.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="App_GlobalResources\Main1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Main.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\UploadConfig.cs" />
+    <Content Include="App_Data\metadata\grid\feature-persistence.xml" />
+    <Content Include="App_Data\metadata\grid\tooltips.xml" />
+    <Content Include="App_Data\metadata\html-editor\standalone-toolbar.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\pivot-grid\remote-adomd-provider.xml" />
+    <Content Include="App_Data\metadata\popover\aspnet-mvc-helper.xml" />
+    <Content Include="App_Data\metadata\radial-menu\button-items.xml" />
+    <Content Include="App_Data\metadata\radial-menu\color-items.xml" />
+    <Content Include="App_Data\metadata\radial-menu\component.xml" />
+    <Content Include="App_Data\metadata\radial-menu\configure-items.xml" />
+    <Content Include="App_Data\metadata\radial-menu\customizing-center-button.xml" />
+    <Content Include="App_Data\metadata\radial-menu\customizing-items.xml" />
+    <Content Include="App_Data\metadata\radial-menu\customizing-outer-ring.xml" />
+    <Content Include="App_Data\metadata\radial-menu\numeric-items.xml" />
+    <Content Include="App_Data\metadata\radial-menu\mvc-initialization.xml" />
+    <Content Include="App_Data\metadata\radial-menu\overview.xml" />
+    <Content Include="App_Data\metadata\split-button\api-and-events.xml" />
+    <Content Include="App_Data\metadata\split-button\change-shapes.xml" />
+    <Content Include="App_Data\metadata\split-button\component.xml" />
+    <Content Include="App_Data\metadata\split-button\overview.xml" />
+    <Content Include="App_Data\metadata\themes\component.xml" />
+    <Content Include="App_Data\metadata\themes\ios7.xml" />
+    <Content Include="App_Data\metadata\themes\overview.xml" />
+    <Content Include="App_Data\metadata\themes\metro.xml" />
+    <Content Include="css\sb-sample.css" />
+    <Content Include="HtmlSamples\grid\feature-persistence.html" />
+    <Content Include="HtmlSamples\grid\tooltips.html" />
+    <Content Include="HtmlSamples\html-editor\standalone-toolbar.html" />
+    <Content Include="HtmlSamples\radial-menu\button-items.html" />
+    <Content Include="HtmlSamples\radial-menu\color-items.html" />
+    <Content Include="HtmlSamples\radial-menu\configure-items.html" />
+    <Content Include="HtmlSamples\radial-menu\customizing-center-button.html" />
+    <Content Include="HtmlSamples\radial-menu\customizing-items.html" />
+    <Content Include="HtmlSamples\radial-menu\customizing-outer-ring.html" />
+    <Content Include="HtmlSamples\radial-menu\numeric-items.html" />
+    <Content Include="HtmlSamples\split-button\api-and-events.html" />
+    <Content Include="HtmlSamples\split-button\change-shapes.html" />
+    <Content Include="HtmlSamples\themes\ios7.html" />
+    <Content Include="HtmlSamples\themes\metro.html" />
+    <Content Include="images\JSFiddle-img.png" />
+    <Content Include="images\marketing\app-samples\ighealthcare-sample.png" />
+    <Content Include="images\marketing\app-samples\igfinance-sample.png" />
+    <Content Include="images\samples\html-editor\ui-icons_222222_256x240.png" />
+    <Content Include="images\samples\popover\facebook.jpg" />
+    <Content Include="images\samples\popover\IGlogo.jpg" />
+    <Content Include="images\samples\popover\twitter.jpg" />
+    <Content Include="images\samples\popover\youtube.jpg" />
+    <Content Include="images\samples\radial-menu\BColor.png" />
+    <Content Include="images\samples\radial-menu\Bold.png" />
+    <Content Include="images\samples\radial-menu\FColor.png" />
+    <Content Include="images\samples\radial-menu\Font.png" />
+    <Content Include="images\samples\radial-menu\Italic.png" />
+    <Content Include="images\samples\radial-menu\Size.png" />
+    <Content Include="js\external\jsrender.debug.js" />
+    <Content Include="js\external\jsrender.js" />
+    <Content Include="js\sb-mobileIframe.js" />
+    <Content Include="README.txt" />
+    <Content Include="App_Data\metadata\application-samples.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\barcode\component.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\barcode\overview.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\barcode\qr-barcode-dimensions.xml" />
+    <Content Include="App_Data\metadata\barcode\mvc-initialization.xml" />
+    <Content Include="App_Data\metadata\barcode\basic-configuration.xml" />
+    <Content Include="App_Data\metadata\barcode\configuring-colors.xml" />
+    <Content Include="App_Data\metadata\barcode\configuring-the-qr-code-specific-settings.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\bullet-graph\overview.xml" />
+    <Content Include="App_Data\metadata\bullet-graph\tooltip-settings.xml" />
+    <Content Include="App_Data\metadata\combo\overview.xml" />
+    <Content Include="App_Data\metadata\data-chart\axis-title.xml" />
+    <Content Include="App_Data\metadata\data-chart\binding-real-time-data.xml" />
+    <Content Include="App_Data\metadata\data-chart\chart-navigation.xml" />
+    <Content Include="App_Data\metadata\data-chart\chart-elements.xml" />
+    <Content Include="App_Data\metadata\data-chart\overview.xml" />
+    <Content Include="App_Data\metadata\data-source\overview.xml" />
+    <Content Include="App_Data\metadata\date-picker\overview.xml" />
+    <Content Include="App_Data\metadata\dialog-window\overview.xml" />
+    <Content Include="App_Data\metadata\doughnut-chart\overview.xml" />
+    <Content Include="App_Data\metadata\editors\overview.xml" />
+    <Content Include="App_Data\metadata\file-upload\overview.xml" />
+    <Content Include="App_Data\metadata\funnel-chart\overview.xml" />
+    <Content Include="App_Data\metadata\hierarchical-grid\aspnet-mvc-helper.xml" />
+    <Content Include="App_Data\metadata\hierarchical-grid\row-selectors.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\infragistics-documents\component.xml" />
+    <Content Include="App_Data\metadata\infragistics-documents\create-pdf-or-xps.xml" />
+    <Content Include="App_Data\metadata\infragistics-documents\overview.xml" />
+    <Content Include="App_Data\metadata\infragistics-excel\component.xml" />
+    <Content Include="App_Data\metadata\infragistics-excel\create-excel-worksheet.xml" />
+    <Content Include="App_Data\metadata\infragistics-excel\overview.xml" />
+    <Content Include="App_Data\metadata\infragistics-word\component.xml" />
+    <Content Include="App_Data\metadata\infragistics-word\create-word-table.xml" />
+    <Content Include="App_Data\metadata\getting-started-mobile.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\data-chart\category-highlight-layer.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\data-chart\category-item-highlight-layer.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\data-chart\category-tooltip-layer.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\data-chart\chart-fill-gradients.xml" />
+    <Content Include="App_Data\metadata\data-chart\series-highlighting-financial.xml" />
+    <Content Include="App_Data\metadata\data-chart\transition-animation-financial.xml" />
+    <Content Include="App_Data\metadata\data-chart\series-tooltips.xml" />
+    <Content Include="App_Data\metadata\data-chart\drop-shadows.xml" />
+    <Content Include="App_Data\metadata\data-chart\transition-animation.xml" />
+    <Content Include="App_Data\metadata\data-chart\custom-series-highlighting.xml" />
+    <Content Include="App_Data\metadata\data-chart\series-highlighting.xml" />
+    <Content Include="App_Data\metadata\data-chart\multiple-layers.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\data-chart\item-tooltip-layer.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\data-chart\crosshair-layer.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\getting-started.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\grid\auto-generate-columns.xml" />
+    <Content Include="App_Data\metadata\grid\basic-editing.xml" />
+    <Content Include="App_Data\metadata\grid\checkbox-column.xml" />
+    <Content Include="App_Data\metadata\grid\column-format-function.xml" />
+    <Content Include="App_Data\metadata\grid\column-formats.xml" />
+    <Content Include="App_Data\metadata\grid\column-template.xml" />
+    <Content Include="App_Data\metadata\grid\configure-text-alignment.xml" />
+    <Content Include="App_Data\metadata\grid\overview.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\grid\grid-layout.xml" />
+    <Content Include="App_Data\metadata\grid\load-on-demand.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\grid\bind-web-api.xml" />
+    <Content Include="App_Data\metadata\grid\column-hiding.xml" />
+    <Content Include="App_Data\metadata\grid\column-moving.xml" />
+    <Content Include="App_Data\metadata\grid\column-resizing.xml" />
+    <Content Include="App_Data\metadata\grid\grouping-customization.xml" />
+    <Content Include="App_Data\metadata\grid\grouping.xml" />
+    <Content Include="App_Data\metadata\grid\history.xml" />
+    <Content Include="App_Data\metadata\grid\multi-column-headers.xml" />
+    <Content Include="App_Data\metadata\grid\paging.xml" />
+    <Content Include="App_Data\metadata\grid\rest-editing.xml" />
+    <Content Include="App_Data\metadata\grid\row-selectors.xml" />
+    <Content Include="App_Data\metadata\grid\sorting-local.xml" />
+    <Content Include="App_Data\metadata\grid\sorting-remote.xml" />
+    <Content Include="App_Data\metadata\grid\summaries-custom.xml" />
+    <Content Include="App_Data\metadata\grid\summaries-remote.xml" />
+    <Content Include="App_Data\metadata\grid\summaries.xml" />
+    <Content Include="App_Data\metadata\grid\twitter-bootstrap.xml" />
+    <Content Include="App_Data\metadata\grid\virtualization-continuous.xml" />
+    <Content Include="App_Data\metadata\grid\virtualization-fixed.xml" />
+    <Content Include="App_Data\metadata\grid\windows-ui-theme.xml" />
+    <Content Include="App_Data\metadata\help-jqm-code-examples\component.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\help-jqm-code-examples\getting-started-list-view.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\help-jqm-code-examples\ignite-ui-boilerplate-jquery-mobile.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\help-jqui-code-examples\component.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\help-jqui-code-examples\getting-started-grid-and-chart.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\help-jqui-code-examples\ignite-ui-boilerplate-jquery-ui.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\hierarchical-grid\overview.xml" />
+    <Content Include="App_Data\metadata\html-editor\overview.xml" />
+    <Content Include="App_Data\metadata\infragistics-word\overview.xml" />
+    <Content Include="App_Data\metadata\layout-manager\overview.xml" />
+    <Content Include="App_Data\metadata\linear-gauge\basic-configuration.xml" />
+    <Content Include="App_Data\metadata\linear-gauge\component.xml" />
+    <Content Include="App_Data\metadata\linear-gauge\needle-dragging.xml" />
+    <Content Include="App_Data\metadata\linear-gauge\needle-settings.xml" />
+    <Content Include="App_Data\metadata\linear-gauge\grid-integration.xml" />
+    <Content Include="App_Data\metadata\linear-gauge\animated-transitions.xml" />
+    <Content Include="App_Data\metadata\linear-gauge\overview.xml" />
+    <Content Include="App_Data\metadata\linear-gauge\range-settings.xml" />
+    <Content Include="App_Data\metadata\linear-gauge\scale-settings.xml" />
+    <Content Include="App_Data\metadata\linear-gauge\mvc-initialization.xml" />
+    <Content Include="App_Data\metadata\linear-gauge\vertical-horizontal-orientation.xml" />
+    <Content Include="App_Data\metadata\loader\overview.xml" />
+    <Content Include="App_Data\metadata\map\openstreet-maps.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\map\overview.xml" />
+    <Content Include="App_Data\metadata\mobile-button\overview.xml" />
+    <Content Include="App_Data\metadata\mobile-checkbox-group\overview.xml" />
+    <Content Include="App_Data\metadata\mobile-checkbox\overview.xml" />
+    <Content Include="App_Data\metadata\mobile-collapsible-set\overview.xml" />
+    <Content Include="App_Data\metadata\mobile-collapsible\overview.xml" />
+    <Content Include="App_Data\metadata\mobile-link\overview.xml" />
+    <Content Include="App_Data\metadata\mobile-list-view\overview.xml" />
+    <Content Include="App_Data\metadata\mobile-navbar\overview.xml" />
+    <Content Include="App_Data\metadata\mobile-pagecontent\overview.xml" />
+    <Content Include="App_Data\metadata\mobile-pagefooter\overview.xml" />
+    <Content Include="App_Data\metadata\mobile-pageheader\overview.xml" />
+    <Content Include="App_Data\metadata\mobile-page\overview.xml" />
+    <Content Include="App_Data\metadata\mobile-popup\overview.xml" />
+    <Content Include="App_Data\metadata\mobile-radiobutton-group\overview.xml" />
+    <Content Include="App_Data\metadata\mobile-rating\overview.xml" />
+    <Content Include="App_Data\metadata\mobile-selectmenu\overview.xml" />
+    <Content Include="App_Data\metadata\mobile-slider\overview.xml" />
+    <Content Include="App_Data\metadata\mobile-textbox\overview.xml" />
+    <Content Include="App_Data\metadata\mobile-toggleswitch\overview.xml" />
+    <Content Include="App_Data\metadata\pie-chart\overview.xml" />
+    <Content Include="App_Data\metadata\pivot-data-selector\overview.xml" />
+    <Content Include="App_Data\metadata\pivot-grid\overview.xml" />
+    <Content Include="App_Data\metadata\pivot-view\overview.xml" />
+    <Content Include="App_Data\metadata\popover\basic-popover.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\popover\component.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\popover\overview.xml" />
+    <Content Include="App_Data\metadata\radial-gauge\overview.xml" />
+    <Content Include="App_Data\metadata\rating\overview.xml" />
+    <Content Include="App_Data\metadata\sparkline\overview.xml" />
+    <Content Include="App_Data\metadata\splitter\overview.xml" />
+    <Content Include="App_Data\metadata\templating-engine\basic-usage.xml" />
+    <Content Include="App_Data\metadata\templating-engine\nested-templates.xml" />
+    <Content Include="App_Data\metadata\templating-engine\conditional-templates.xml" />
+    <Content Include="App_Data\metadata\templating-engine\aspnet-mvc-usage.xml" />
+    <Content Include="App_Data\metadata\templating-engine\overview.xml" />
+    <Content Include="App_Data\metadata\templating-engine\grid-column-template.xml" />
+    <Content Include="App_Data\metadata\templating-engine\component.xml" />
+    <Content Include="App_Data\metadata\tile-manager\leading-tile.xml" />
+    <Content Include="App_Data\metadata\tile-manager\overview.xml" />
+    <Content Include="App_Data\metadata\tree\drag-and-drop-multiple-trees.xml" />
+    <Content Include="App_Data\metadata\tree\overview.xml" />
+    <Content Include="App_Data\metadata\video-player\overview.xml" />
+    <Content Include="App_Data\metadata\zoombar\component.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\zoombar\financial-chart.xml" />
+    <Content Include="App_Data\metadata\zoombar\overview.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\sampledata\en\sql10\NORTHWND_log.LDF">
+      <DependentUpon>NORTHWND.MDF</DependentUpon>
+    </Content>
+    <Content Include="App_Data\sampledata\ja\sql10\NORTHWND-JA_log.LDF">
+      <DependentUpon>NORTHWND-JA.mdf</DependentUpon>
+    </Content>
+    <Content Include="css\bootstrap\bootstrap-responsive.min.css" />
+    <Content Include="css\sb-legacy.css" />
+    <Content Include="data-files-ja\candidates.js" />
+    <Content Include="data-files-ja\footballers.js" />
+    <Content Include="data-files\actors.js" />
+    <Content Include="data-files\financial-data-random.js" />
+    <Content Include="data-files\footballers.js" />
+    <Content Include="data-files\ig-tweets.js" />
+    <Content Include="data-files\nw-customers.js" />
+    <Content Include="data-files\temperature.js" />
+    <Content Include="data-files\computers.js" />
+    <Content Include="data-files\uk-france-population.js" />
+    <Content Include="data-files\us-fao-gross-production.js" />
+    <Content Include="data-files\us-population-and-labor-force.js" />
+    <Content Include="data-files\wind.js" />
+    <Content Include="data-files\world-energy-production.js" />
+    <Content Include="data-files\wti-oil-data.js" />
+    <Content Include="images\404.png" />
+    <Content Include="images\500.png" />
+    <Content Include="HtmlSamples\barcode\qr-barcode-dimensions.html" />
+    <Content Include="HtmlSamples\barcode\basic-configuration.html" />
+    <Content Include="HtmlSamples\barcode\configuring-colors.html" />
+    <Content Include="HtmlSamples\barcode\configuring-the-qr-code-specific-settings.html" />
+    <Content Include="HtmlSamples\bullet-graph\tooltip-settings.html" />
+    <Content Include="HtmlSamples\data-chart\axis-title.html" />
+    <Content Include="HtmlSamples\data-chart\category-highlight-layer.html" />
+    <Content Include="HtmlSamples\data-chart\category-item-highlight-layer.html" />
+    <Content Include="HtmlSamples\data-chart\category-tooltip-layer.html" />
+    <Content Include="HtmlSamples\data-chart\chart-fill-gradients.html" />
+    <Content Include="HtmlSamples\data-chart\chart-navigation.html" />
+    <Content Include="HtmlSamples\data-chart\binding-real-time-data.html" />
+    <Content Include="HtmlSamples\data-chart\chart-elements.html" />
+    <Content Include="HtmlSamples\data-chart\series-highlighting-financial.html" />
+    <Content Include="HtmlSamples\data-chart\transition-animation-financial.html" />
+    <Content Include="HtmlSamples\data-chart\series-tooltips.html" />
+    <Content Include="HtmlSamples\data-chart\drop-shadows.html" />
+    <Content Include="HtmlSamples\data-chart\transition-animation.html" />
+    <Content Include="HtmlSamples\data-chart\custom-series-highlighting.html" />
+    <Content Include="HtmlSamples\data-chart\series-highlighting.html" />
+    <Content Include="HtmlSamples\data-chart\multiple-layers.html" />
+    <Content Include="HtmlSamples\data-chart\item-tooltip-layer.html" />
+    <Content Include="HtmlSamples\data-chart\crosshair-layer.html" />
+    <Content Include="HtmlSamples\hierarchical-grid\row-selectors.html" />
+    <Content Include="HtmlSamples\map\openstreet-maps.html" />
+    <Content Include="HtmlSamples\templating-engine\basic-usage.html" />
+    <Content Include="HtmlSamples\templating-engine\grid-column-templates.html" />
+    <Content Include="HtmlSamples\templating-engine\nested-templates.html" />
+    <Content Include="HtmlSamples\templating-engine\conditional-templates.html" />
+    <Content Include="HtmlSamples\grid\auto-generate-columns.html" />
+    <Content Include="HtmlSamples\grid\checkbox-column.html" />
+    <Content Include="HtmlSamples\grid\column-format-function.html" />
+    <Content Include="HtmlSamples\grid\column-formats.html" />
+    <Content Include="HtmlSamples\grid\column-hiding.html" />
+    <Content Include="HtmlSamples\grid\column-moving.html" />
+    <Content Include="HtmlSamples\grid\column-resizing.html" />
+    <Content Include="HtmlSamples\grid\column-template.html" />
+    <Content Include="HtmlSamples\grid\configure-text-alignment.html" />
+    <Content Include="HtmlSamples\grid\grid-layout.html" />
+    <Content Include="HtmlSamples\grid\grouping-customization.html" />
+    <Content Include="HtmlSamples\grid\grouping.html" />
+    <Content Include="HtmlSamples\grid\load-on-demand.html" />
+    <Content Include="HtmlSamples\grid\multi-column-headers.html" />
+    <Content Include="HtmlSamples\grid\paging.html" />
+    <Content Include="HtmlSamples\grid\row-selectors.html" />
+    <Content Include="HtmlSamples\grid\sorting-local.html" />
+    <Content Include="HtmlSamples\grid\summaries-custom.html" />
+    <Content Include="HtmlSamples\grid\summaries.html" />
+    <Content Include="HtmlSamples\grid\twitter-bootstrap.html" />
+    <Content Include="HtmlSamples\grid\virtualization-continuous.html" />
+    <Content Include="HtmlSamples\grid\virtualization-fixed.html" />
+    <Content Include="HtmlSamples\grid\windows-ui-theme.html" />
+    <Content Include="HtmlSamples\help-jqm-code-examples\getting-started-list-view.html" />
+    <Content Include="HtmlSamples\help-jqm-code-examples\ignite-ui-boilerplate-jquery-mobile.html" />
+    <Content Include="HtmlSamples\help-jqui-code-examples\getting-started-grid-and-chart.html" />
+    <Content Include="HtmlSamples\grid\history.html" />
+    <Content Include="HtmlSamples\help-jqui-code-examples\ignite-ui-boilerplate-jquery-ui.html" />
+    <Content Include="HtmlSamples\linear-gauge\basic-configuration.html" />
+    <Content Include="HtmlSamples\linear-gauge\needle-dragging.html" />
+    <Content Include="HtmlSamples\linear-gauge\needle-settings.html" />
+    <Content Include="HtmlSamples\linear-gauge\grid-integration.html" />
+    <Content Include="HtmlSamples\linear-gauge\animated-transitions.html" />
+    <Content Include="HtmlSamples\linear-gauge\range-settings.html" />
+    <Content Include="HtmlSamples\linear-gauge\scale-settings.html" />
+    <Content Include="HtmlSamples\linear-gauge\vertical-horizontal-orientation.html" />
+    <Content Include="HtmlSamples\map\bing-maps.html" />
+    <Content Include="HtmlSamples\map\cloudmade-maps.html" />
+    <Content Include="HtmlSamples\map\geo-contour-line.html" />
+    <Content Include="HtmlSamples\map\geo-high-density-scatter-series.html" />
+    <Content Include="HtmlSamples\map\geo-polyline-series.html" />
+    <Content Include="HtmlSamples\map\geo-scatter-area.html" />
+    <Content Include="HtmlSamples\map\geo-shapes-series.html" />
+    <Content Include="HtmlSamples\map\geo-symbol-series.html" />
+    <Content Include="HtmlSamples\map\json-binding.html" />
+    <Content Include="HtmlSamples\map\map-tooltips.html" />
+    <Content Include="HtmlSamples\map\marker-template.html" />
+    <Content Include="HtmlSamples\popover\basic-popover.html" />
+    <Content Include="HtmlSamples\tile-manager\leading-tile.html" />
+    <Content Include="HtmlSamples\zoombar\financial-chart.html" />
+    <Content Include="images\download-now.png" />
+    <Content Include="images\download-now.svg" />
+    <Content Include="images\dropdown_arrow.png" />
+    <Content Include="images\footerIcon.PNG" />
+    <Content Include="images\hamburgerIcon.PNG" />
+    <Content Include="images\headerIcon.PNG" />
+    <Content Include="images\ignite-ui-small.png" />
+    <Content Include="images\ignite-ui-small.svg" />
+    <Content Include="images\ignite-ui.png" />
+    <Content Include="images\ignite-ui.svg" />
+    <Content Include="images\ig_twitter_logo.png" />
+    <Content Include="images\marketing\app-samples\autosalestracking-sample.png" />
+    <Content Include="images\marketing\app-samples\healthcare-sample.png" />
+    <Content Include="images\marketing\app-samples\personalfinance-sample.png" />
+    <Content Include="images\marketing\app-samples\worldstats-sample.png" />
+    <Content Include="images\OtherIcons-lowres.png" />
+    <Content Include="images\OtherIcons.png" />
+    <Content Include="images\samples\templating-engine\multiConditionalColTemplate\Argentina.gif" />
+    <Content Include="images\samples\templating-engine\multiConditionalColTemplate\Austria.gif" />
+    <Content Include="images\samples\templating-engine\multiConditionalColTemplate\Belgium.gif" />
+    <Content Include="images\samples\templating-engine\multiConditionalColTemplate\Brazil.gif" />
+    <Content Include="images\samples\templating-engine\multiConditionalColTemplate\Canada.gif" />
+    <Content Include="images\samples\templating-engine\multiConditionalColTemplate\Denmark.gif" />
+    <Content Include="images\samples\templating-engine\multiConditionalColTemplate\Finland.gif" />
+    <Content Include="images\samples\templating-engine\multiConditionalColTemplate\France.gif" />
+    <Content Include="images\samples\templating-engine\multiConditionalColTemplate\Germany.gif" />
+    <Content Include="images\samples\templating-engine\multiConditionalColTemplate\Ireland.gif" />
+    <Content Include="images\samples\templating-engine\multiConditionalColTemplate\Italy.gif" />
+    <Content Include="images\samples\templating-engine\multiConditionalColTemplate\Mexico.gif" />
+    <Content Include="images\samples\templating-engine\multiConditionalColTemplate\Norway.gif" />
+    <Content Include="images\samples\templating-engine\multiConditionalColTemplate\Poland.gif" />
+    <Content Include="images\samples\templating-engine\multiConditionalColTemplate\Portugal.gif" />
+    <Content Include="images\samples\templating-engine\multiConditionalColTemplate\Spain.gif" />
+    <Content Include="images\samples\templating-engine\multiConditionalColTemplate\Sweden.gif" />
+    <Content Include="images\samples\templating-engine\multiConditionalColTemplate\Switzerland.gif" />
+    <Content Include="images\samples\templating-engine\multiConditionalColTemplate\UK.gif" />
+    <Content Include="images\samples\templating-engine\multiConditionalColTemplate\USA.gif" />
+    <Content Include="images\samples\templating-engine\multiConditionalColTemplate\Venezuela.gif" />
+    <Content Include="images\samples\templating-engine\colTemplateWithConditionalCell\arrowDown.gif" />
+    <Content Include="images\samples\templating-engine\colTemplateWithConditionalCell\arrowUp.gif" />
+    <Content Include="images\marketing\components\jquery-barcode.png" />
+    <Content Include="images\samples\tile-manager\car-dealership\shutterstock_100205033.jpg" />
+    <Content Include="images\samples\tile-manager\car-dealership\shutterstock_117299326.jpg" />
+    <Content Include="images\samples\tile-manager\car-dealership\shutterstock_117299347.jpg" />
+    <Content Include="images\samples\tile-manager\car-dealership\shutterstock_117299389.jpg" />
+    <Content Include="images\samples\tile-manager\car-dealership\shutterstock_134383139.jpg" />
+    <Content Include="images\samples\tile-manager\car-dealership\shutterstock_134383151.jpg" />
+    <Content Include="images\samples\tile-manager\car-dealership\shutterstock_134383163.jpg" />
+    <Content Include="images\samples\tile-manager\car-dealership\shutterstock_136209296.jpg" />
+    <Content Include="images\samples\tile-manager\car-dealership\shutterstock_139519967.jpg" />
+    <Content Include="images\samples\tile-manager\car-dealership\shutterstock_23082346.jpg" />
+    <Content Include="images\samples\tile-manager\car-dealership\shutterstock_25369924.jpg" />
+    <Content Include="images\samples\tile-manager\car-dealership\shutterstock_25427074.jpg" />
+    <Content Include="images\samples\tile-manager\car-dealership\shutterstock_2564520.jpg" />
+    <Content Include="images\samples\tile-manager\car-dealership\shutterstock_25850722.jpg" />
+    <Content Include="images\samples\tile-manager\car-dealership\shutterstock_27117550.jpg" />
+    <Content Include="images\samples\tile-manager\car-dealership\shutterstock_27395866.jpg" />
+    <Content Include="images\samples\tile-manager\car-dealership\shutterstock_31516801.jpg" />
+    <Content Include="images\samples\tile-manager\car-dealership\shutterstock_32589022.jpg" />
+    <Content Include="images\samples\tile-manager\car-dealership\shutterstock_32939821.jpg" />
+    <Content Include="images\samples\tile-manager\car-dealership\shutterstock_32949850.jpg" />
+    <Content Include="images\samples\tile-manager\car-dealership\shutterstock_33516181.jpg" />
+    <Content Include="images\samples\tile-manager\car-dealership\shutterstock_33704344.jpg" />
+    <Content Include="images\samples\tile-manager\car-dealership\shutterstock_37363489.jpg" />
+    <Content Include="images\samples\tile-manager\car-dealership\shutterstock_38284540.jpg" />
+    <Content Include="images\samples\tile-manager\car-dealership\shutterstock_38288989.jpg" />
+    <Content Include="images\samples\tile-manager\car-dealership\shutterstock_40104997.jpg" />
+    <Content Include="images\samples\tile-manager\car-dealership\shutterstock_4028761.jpg" />
+    <Content Include="images\samples\tile-manager\car-dealership\shutterstock_4417342.jpg" />
+    <Content Include="images\samples\tile-manager\car-dealership\shutterstock_57034834.jpg" />
+    <Content Include="images\samples\tile-manager\car-dealership\shutterstock_60821281.jpg" />
+    <Content Include="images\samples\tile-manager\car-dealership\shutterstock_7391134.jpg" />
+    <Content Include="images\samples\tile-manager\car-dealership\shutterstock_94183417.jpg" />
+    <Content Include="images\samples\tile-manager\car-dealership\shutterstock_97401740.jpg" />
+    <Content Include="images\samples\tile-manager\car-dealership\shutterstock_97401770.jpg" />
+    <Content Include="images\SB-icons-lowres-small.png" />
+    <Content Include="images\SB-icons-lowres.png" />
+    <Content Include="images\SB-icons.png" />
+    <Content Include="images\spritesheet.png" />
+    <Content Include="images\spritesheet.svg" />
+    <Content Include="js\sb-mobile.js" />
+    <Content Include="js\sb-sample.js" />
+    <Content Include="images\productNavDownBtn.png" />
+    <Content Include="images\productNavUpBtn.png" />
+    <Content Include="data-files-ja\candidates.js" />
+    <Content Include="images\productNavDownBtn.png" />
+    <Content Include="images\productNavUpBtn.png" />
+    <Content Include="Views\Barcode\mvc-initialization.cshtml" />
+    <Content Include="Views\BulletGraph\mvc-initialization.cshtml" />
+    <Content Include="Views\LinearGauge\mvc-initialization.cshtml" />
+    <Content Include="Views\Shared\_HelpContent.cshtml" />
+    <Content Include="Views\Shared\_HelpCodeExample.cshtml" />
+    <Content Include="Views\Shared\ApplicationSamples.cshtml" />
+    <Content Include="Views\Shared\GettingStarted.cshtml" />
+    <Content Include="Views\Shared\Index.cshtml" />
+    <Content Include="Views\LocalInstall\LocalInstallPageGeneration.cshtml" />
+    <Content Include="Views\Shared\_HamburgerMenu.cshtml" />
+    <Content Include="Views\Grid\sorting-remote.cshtml" />
+    <Content Include="Views\Grid\summaries-remote.cshtml" />
+    <Content Include="Views\Shared\_MobileThemes.cshtml" />
+    <Content Include="Views\Grid\bind-web-api.cshtml" />
+    <Content Include="Views\Grid\basic-editing.cshtml" />
+    <Content Include="Views\Grid\rest-editing.cshtml" />
+    <Content Include="Views\InfragisticsDocuments\create-pdf-or-xps.cshtml" />
+    <Content Include="Views\InfragisticsExcel\create-excel-worksheet.cshtml" />
+    <Content Include="Views\InfragisticsWord\create-word-table.cshtml" />
+    <Compile Include="Controllers\BarcodeController.cs" />
+    <Compile Include="Controllers\ComboController.cs" />
+    <Compile Include="Controllers\BulletGraphController.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
+    <Compile Include="Controllers\InfragisticsDocumentsController.cs" />
+    <Compile Include="Controllers\InfragisticsExcelController.cs" />
+    <Compile Include="Controllers\InfragisticsWordController.cs" />
+    <Compile Include="Controllers\LinearGaugeController.cs" />
+    <Compile Include="Controllers\LocalInstallController.cs" />
+    <Compile Include="Controllers\PopoverController.cs" />
+    <Compile Include="Controllers\RadialMenuController.cs" />
+    <Compile Include="Controllers\TemplatingEngineController.cs" />
+    <Compile Include="Controllers\TileManagerController.cs" />
+    <Compile Include="Controllers\LayoutManagerController.cs" />
+    <Compile Include="Controllers\DataChartController.cs" />
+    <Compile Include="Controllers\DatePickerController.cs" />
+    <Compile Include="Controllers\DialogWindowController.cs" />
+    <Compile Include="Controllers\DoughnutChartController.cs" />
+    <Compile Include="Controllers\EditorsController.cs" />
+    <Compile Include="Controllers\HtmlEditorController.cs" />
+    <Compile Include="Controllers\LoaderController.cs" />
+    <Compile Include="Controllers\PieChartController.cs" />
+    <Compile Include="Controllers\PivotDataSelectorController.cs" />
+    <Compile Include="Controllers\PivotViewController.cs" />
+    <Compile Include="Controllers\MapController.cs" />
+    <Compile Include="Controllers\PivotGridController.cs" />
+    <Compile Include="Controllers\RadialGaugeController.cs" />
+    <Compile Include="Controllers\RatingController.cs" />
+    <Compile Include="Controllers\SplitterController.cs" />
+    <Compile Include="Controllers\FunnelChartController.cs" />
+    <Compile Include="Controllers\HierarchicalGridController.cs" />
+    <Compile Include="Controllers\MobileButtonController.cs" />
+    <Compile Include="Controllers\DataController.cs" />
+    <Compile Include="Controllers\GridController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MobileCheckBoxController.cs" />
+    <Compile Include="Controllers\MobileCheckBoxGroupController.cs" />
+    <Compile Include="Controllers\MobileCollapsibleController.cs" />
+    <Compile Include="Controllers\MobileCollapsibleSetController.cs" />
+    <Compile Include="Controllers\MobileLinkController.cs" />
+    <Compile Include="Controllers\MobileListViewController.cs" />
+    <Compile Include="Controllers\MobileNavBarController.cs" />
+    <Compile Include="Controllers\MobilePageContentController.cs" />
+    <Compile Include="Controllers\MobilePageController.cs" />
+    <Compile Include="Controllers\MobilePageFooterController.cs" />
+    <Compile Include="Controllers\MobilePageHeaderController.cs" />
+    <Compile Include="Controllers\MobilePopupController.cs" />
+    <Compile Include="Controllers\MobileRadioButtonGroupController.cs" />
+    <Compile Include="Controllers\MobileRatingController.cs" />
+    <Compile Include="Controllers\MobileSelectMenuController.cs" />
+    <Compile Include="Controllers\MobileSliderController.cs" />
+    <Compile Include="Controllers\MobileTextBoxController.cs" />
+    <Compile Include="Controllers\MobileToggleSwitchController.cs" />
+    <Compile Include="Controllers\SparklineController.cs" />
+    <Compile Include="Controllers\FileUploadController.cs" />
+    <Content Include="App_Data\metadata\bullet-graph\basic-configuration.xml" />
+    <Content Include="App_Data\metadata\bullet-graph\component.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\bullet-graph\animated-transitions.xml" />
+    <Content Include="App_Data\metadata\bullet-graph\mvc-initialization.xml" />
+    <Content Include="App_Data\metadata\bullet-graph\performance-bar-settings.xml" />
+    <Content Include="App_Data\metadata\bullet-graph\range-settings.xml" />
+    <Content Include="App_Data\metadata\bullet-graph\grid-integration.xml" />
+    <Content Include="App_Data\metadata\bullet-graph\vertical-orientation.xml" />
+    <Content Include="App_Data\metadata\bullet-graph\tick-marks-settings.xml" />
+    <Content Include="App_Data\metadata\bullet-graph\scale-labeling-settings.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\combo\cascading-combos.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\combo\aspnet-mvc-helper.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\data-chart\bind-data-chart-with-ko.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\combo\editing.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\combo\filtering.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\combo\grid-with-combo-editor.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\combo\load-on-demand.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\combo\selection-and-checkboxes.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\combo\templates.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\combo\virtualization.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\data-chart\aspnet-mvc-helper.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\data-chart\chart-title.xml" />
+    <Content Include="App_Data\metadata\data-chart\edit-chart-items-with-knockout.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\data-chart\stacked-series.xml" />
+    <Content Include="App_Data\metadata\date-picker\hotel-reservation.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\date-picker\validation.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\dialog-window\api-and-events.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\dialog-window\aspnet-mvc-helper.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\dialog-window\modal-dialog.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\dialog-window\loading-external-page.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\dialog-window\icons.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\doughnut-chart\bind-to-collection.xml" />
+    <Content Include="App_Data\metadata\doughnut-chart\bind-json.xml" />
+    <Content Include="App_Data\metadata\doughnut-chart\component.xml" />
+    <Content Include="App_Data\metadata\doughnut-chart\configure-legend.xml" />
+    <Content Include="App_Data\metadata\doughnut-chart\labels-tooltips.xml" />
+    <Content Include="App_Data\metadata\doughnut-chart\other-category.xml" />
+    <Content Include="App_Data\metadata\grid\bind-grid-with-ko.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\grid\column-fixing.xml" />
+    <Content Include="App_Data\metadata\grid\jsrender-integration.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\grid\responsive-vertical-rendering.xml" />
+    <Content Include="App_Data\metadata\grid\responsive-web-design-mode.xml" />
+    <Content Include="App_Data\metadata\hierarchical-grid\bind-hgrid-with-ko.xml" />
+    <Content Include="App_Data\metadata\html-editor\aspnet-mvc-helper.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\editors\load-and-save-form-values.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\editors\data-annotation-validation.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\editors\date-and-time-formats.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\editors\localizing-editors.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\editors\validation.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\editors\currency-editor.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\html-editor\api-and-events.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\html-editor\edit-content.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\html-editor\custom-toolbars-and-buttons.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\html-editor\custom-icons-and-styles.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\layout-manager\aspnet-mvc-helper.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\layout-manager\border-layout-markup.xml" />
+    <Content Include="App_Data\metadata\layout-manager\border-layout.xml" />
+    <Content Include="App_Data\metadata\layout-manager\column-layout-markup.xml" />
+    <Content Include="App_Data\metadata\layout-manager\component.xml" />
+    <Content Include="App_Data\metadata\layout-manager\flow-layout.xml" />
+    <Content Include="App_Data\metadata\layout-manager\grid-layout.xml" />
+    <Content Include="App_Data\metadata\layout-manager\vertical-layout.xml" />
+    <Content Include="App_Data\metadata\loader\aspnet-mvc-helper.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\loader\basic-usage.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\loader\component.xml" />
+    <Content Include="App_Data\metadata\loader\download-all-features.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\loader\dynamic-download.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\loader\multiple-resources.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\map\cloudmade-maps.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\map\bing-maps.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\map\geo-high-density-scatter-series.xml" />
+    <Content Include="App_Data\metadata\models.xml" />
+    <Content Include="App_Data\metadata\pie-chart\aspnet-mvc-helper.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\pie-chart\layout-configuration.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\pivot-data-selector\using-the-asp-net-mvc-helper-with-xmla-data-source.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\pivot-data-selector\using-the-asp-net-mvc-helper-with-flat-data-source.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\pivot-grid\all-grid-features.xml" />
+    <Content Include="App_Data\metadata\pivot-grid\expand-members.xml" />
+    <Content Include="App_Data\metadata\pivot-grid\using-the-asp-net-mvc-helper-with-flat-data-source.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\pivot-grid\using-the-asp-net-mvc-helper-with-xmla-data-source.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\pivot-view\binding-to-flat-data-source.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\pivot-view\binding-to-xmla-data-source.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\pivot-view\component.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\js.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\map\binding-to-collection.xml" />
+    <Content Include="App_Data\metadata\map\geo-contour-line.xml" />
+    <Content Include="App_Data\metadata\map\geo-polyline-series.xml" />
+    <Content Include="App_Data\metadata\map\geo-scatter-area.xml" />
+    <Content Include="App_Data\metadata\map\geo-shapes-series.xml" />
+    <Content Include="App_Data\metadata\map\geo-symbol-series.xml" />
+    <Content Include="App_Data\metadata\map\map-tooltips.xml" />
+    <Content Include="App_Data\metadata\map\marker-template.xml" />
+    <Content Include="App_Data\metadata\pivot-data-selector\component.xml" />
+    <Content Include="App_Data\metadata\pivot-grid\chart-integration.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\pivot-grid\remote-xmla-provider.xml" />
+    <Content Include="App_Data\metadata\pivot-view\using-the-asp-net-mvc-helper-with-flat-data-source.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\pivot-view\using-the-asp-net-mvc-helper-with-xmla-data-source.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\radial-gauge\all-features.xml" />
+    <Content Include="App_Data\metadata\radial-gauge\api-usage.xml" />
+    <Content Include="App_Data\metadata\radial-gauge\component.xml" />
+    <Content Include="App_Data\metadata\radial-gauge\tickmarks.xml" />
+    <Content Include="App_Data\metadata\radial-gauge\scale-settings.xml" />
+    <Content Include="App_Data\metadata\radial-gauge\range.xml" />
+    <Content Include="App_Data\metadata\radial-gauge\label-settings.xml" />
+    <Content Include="App_Data\metadata\radial-gauge\gauge-needle.xml" />
+    <Content Include="App_Data\metadata\radial-gauge\custom-styles.xml" />
+    <Content Include="App_Data\metadata\radial-gauge\drag-needle.xml" />
+    <Content Include="App_Data\metadata\radial-gauge\layouts.xml" />
+    <Content Include="App_Data\metadata\radial-gauge\motion-framework.xml" />
+    <Content Include="App_Data\metadata\radial-gauge\mvc-initialization.xml" />
+    <Content Include="App_Data\metadata\rating\aspnet-mvc-helper.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\rating\precision.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\rating\custom-items.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\rating\custom-styles.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\tile-manager\aspnet-mvc-helper.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\tile-manager\bind-json.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\tile-manager\component.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\tile-manager\item-configurations.xml" />
+    <Content Include="App_Data\metadata\tile-manager\markup.xml" />
+    <Content Include="App_Data\metadata\tree\aspnet-mvc-helper.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\tree\aspnet-mvc-load-on-demand.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\tree\api-and-events.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\tree\drag-and-drop-single-tree.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\video-player\banner-advertisements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\video-player\bookmarks.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\video-player\commercials-support.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\video-player\common-features.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\video-player\related-videos.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\video-player\fallback-video.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\video-player\aspnet-mvc-helper.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\sampledata\en\sql11\NORTHWND_log.ldf">
+      <DependentUpon>NORTHWND.MDF</DependentUpon>
+    </Content>
+    <Content Include="App_Data\sampledata\ja\sql11\NORTHWND-JA_log.ldf">
+      <DependentUpon>NORTHWND-JA.mdf</DependentUpon>
+    </Content>
+    <Content Include="css\apiviewer.css" />
+    <Compile Include="Controllers\TreeController.cs" />
+    <Compile Include="Controllers\VideoPlayerController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Application\Data\Northwind\Entities\CategoryEntity.cs" />
+    <Compile Include="Application\Data\Northwind\Entities\CustomerEntity.cs" />
+    <Compile Include="Application\Data\Northwind\Entities\EmployeeEntity.cs" />
+    <Compile Include="Application\Data\Northwind\Entities\InvoiceEntity.cs" />
+    <Content Include="css\sb-responsive.css" />
+    <Content Include="data-files-ja\continents-with-countries-and-cities.js" />
+    <Content Include="data-files-ja\financial-indicators.js" />
+    <Content Include="data-files-ja\hierarchical-files.js" />
+    <Content Include="data-files-ja\hierarchical-products.js" />
+    <Content Include="data-files-ja\ig-offices.js" />
+    <Content Include="data-files-ja\world-cities.js" />
+    <Content Include="data-files\candidates.js" />
+    <Content Include="data-files\high-density-data.js" />
+    <Content Include="HtmlSamples\bullet-graph\basic-configuration.html" />
+    <Content Include="HtmlSamples\bullet-graph\animated-transitions.html" />
+    <Content Include="HtmlSamples\bullet-graph\range-settings.html" />
+    <Content Include="HtmlSamples\bullet-graph\performance-bar-settings.html" />
+    <Content Include="HtmlSamples\bullet-graph\grid-integration.html" />
+    <Content Include="HtmlSamples\bullet-graph\vertical-orientation.html" />
+    <Content Include="HtmlSamples\bullet-graph\tick-marks-settings.html" />
+    <Content Include="HtmlSamples\bullet-graph\scale-labeling-settings.html" />
+    <Content Include="HtmlSamples\data-chart\bind-data-chart-with-ko.html" />
+    <Content Include="HtmlSamples\data-chart\chart-title.html" />
+    <Content Include="HtmlSamples\data-chart\edit-chart-items-with-knockout.html" />
+    <Content Include="HtmlSamples\doughnut-chart\bind-json.html" />
+    <Content Include="HtmlSamples\doughnut-chart\configure-legend.html" />
+    <Content Include="HtmlSamples\doughnut-chart\labels-tooltips.html" />
+    <Content Include="HtmlSamples\doughnut-chart\other-category.html" />
+    <Content Include="HtmlSamples\data-chart\stacked-series.html" />
+    <Content Include="HtmlSamples\grid\column-fixing.html" />
+    <Content Include="HtmlSamples\grid\bind-grid-with-ko.html" />
+    <Content Include="HtmlSamples\grid\jsRender-integration.html" />
+    <Content Include="HtmlSamples\grid\responsive-vertical-rendering.html" />
+    <Content Include="HtmlSamples\grid\responsive-web-design-mode.html" />
+    <Content Include="HtmlSamples\hierarchical-grid\bind-hgrid-with-ko.html" />
+    <Content Include="HtmlSamples\layout-manager\border-layout-markup.html" />
+    <Content Include="HtmlSamples\layout-manager\border-layout.html" />
+    <Content Include="HtmlSamples\layout-manager\column-layout-markup.html" />
+    <Content Include="HtmlSamples\layout-manager\flow-layout.html" />
+    <Content Include="HtmlSamples\layout-manager\grid-layout.html" />
+    <Content Include="HtmlSamples\layout-manager\vertical-layout.html" />
+    <Content Include="HtmlSamples\pivot-grid\all-grid-features.html" />
+    <Content Include="HtmlSamples\pivot-grid\expand-members.html" />
+    <Compile Include="Models\Showcase\HotelReservation.cs" />
+    <Compile Include="Models\Financial\FinancialDataCollection.cs" />
+    <Compile Include="Models\Financial\StockMarketDataCollection.cs" />
+    <Compile Include="Models\Northwind\Category.cs" />
+    <Compile Include="Models\Northwind\Customer.cs" />
+    <Compile Include="Application\Data\Northwind\Mapping\CategoryMap.cs" />
+    <Compile Include="Application\Data\Northwind\Mapping\CustomerMap.cs" />
+    <Compile Include="Application\Data\Northwind\Mapping\EmployeeMap.cs" />
+    <Compile Include="Application\Data\Northwind\Mapping\InvoiceMap.cs" />
+    <Compile Include="Application\Data\Northwind\Mapping\OrderMap.cs" />
+    <Compile Include="Application\Data\Northwind\Mapping\OrderDetailMap.cs" />
+    <Compile Include="Application\Data\Northwind\Mapping\ProductMap.cs" />
+    <Compile Include="Application\Data\Northwind\Mapping\RegionMap.cs" />
+    <Compile Include="Application\Data\Northwind\Mapping\ShipperMap.cs" />
+    <Compile Include="Application\Data\Northwind\Mapping\SupplierMap.cs" />
+    <Compile Include="Application\Data\Northwind\Mapping\TerritoryMap.cs" />
+    <Compile Include="Application\Data\Northwind\NorthwindContext.cs" />
+    <Compile Include="Models\Northwind\Invoice.cs" />
+    <Compile Include="Models\Northwind\Order.cs" />
+    <Compile Include="Models\Repositories\IncludeChildren.cs" />
+    <Compile Include="Models\Repositories\IRepository.cs" />
+    <Compile Include="Models\Northwind\Employee.cs" />
+    <Compile Include="Models\Northwind\Product.cs" />
+    <Compile Include="Application\Data\Northwind\Entities\OrderEntity.cs" />
+    <Compile Include="Application\Data\Northwind\Entities\OrderDetailEntity.cs" />
+    <Compile Include="Application\Data\Northwind\Entities\ProductEntity.cs" />
+    <Compile Include="Application\Data\Northwind\Entities\RegionEntity.cs" />
+    <Compile Include="Models\Repositories\RepositoryFactory.cs" />
+    <Compile Include="Models\Repositories\ItemRepository.cs" />
+    <Compile Include="Application\Data\Northwind\Entities\ShipperEntity.cs" />
+    <Compile Include="Application\Data\Northwind\Entities\SupplierEntity.cs" />
+    <Compile Include="Application\Data\Northwind\Entities\TerritoryEntity.cs" />
+    <Compile Include="Models\Repositories\RepositoryMapping.cs" />
+    <Compile Include="Models\DataAnnotations\ValidatedOrder.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="HtmlSamples\radial-gauge\bind-to-live-data.html" />
+    <Content Include="HtmlSamples\radial-gauge\events.html" />
+    <Content Include="HtmlSamples\radial-gauge\gauge-needle.html" />
+    <Content Include="HtmlSamples\radial-gauge\label-settings.html" />
+    <Content Include="HtmlSamples\radial-gauge\motion-framework.html" />
+    <Content Include="HtmlSamples\radial-gauge\range.html" />
+    <Content Include="HtmlSamples\radial-gauge\scale-settings.html" />
+    <Content Include="HtmlSamples\radial-gauge\tickmarks.html" />
+    <Content Include="HtmlSamples\tile-manager\bind-json.html" />
+    <Content Include="HtmlSamples\tile-manager\item-configurations.html" />
+    <Content Include="HtmlSamples\tile-manager\markup.html" />
+    <Content Include="HtmlSamples\tree\api-and-events.html" />
+    <Content Include="HtmlSamples\tree\drag-and-drop-single-tree.html" />
+    <Content Include="HtmlSamples\tree\drag-and-drop-multiple-trees.html" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\marketing\components\jquery-bullet-graph.png" />
+    <Content Include="images\marketing\components\jquery-donought-chart.png" />
+    <Content Include="images\marketing\components\jquery-layout-manager.png" />
+    <Content Include="images\marketing\components\jquery-loader.png" />
+    <Content Include="images\marketing\components\jquery-mobile-button.png" />
+    <Content Include="images\marketing\components\jquery-mobile-checkbox-group.png" />
+    <Content Include="images\marketing\components\jquery-mobile-checkbox.png" />
+    <Content Include="images\marketing\components\jquery-mobile-collapsible-set.png" />
+    <Content Include="images\marketing\components\jquery-mobile-collapsible.png" />
+    <Content Include="images\marketing\components\jquery-mobile-link.png" />
+    <Content Include="images\marketing\components\jquery-mobile-listview.png" />
+    <Content Include="images\marketing\components\jquery-mobile-navbar.png" />
+    <Content Include="images\marketing\components\jquery-mobile-page-content.png" />
+    <Content Include="images\marketing\components\jquery-mobile-page-footer.png" />
+    <Content Include="images\marketing\components\jquery-mobile-page-header.png" />
+    <Content Include="images\marketing\components\jquery-mobile-page.png" />
+    <Content Include="images\marketing\components\jquery-mobile-popup.png" />
+    <Content Include="images\marketing\components\jquery-mobile-radiobuttons.png" />
+    <Content Include="images\marketing\components\jquery-mobile-selectmenu.png" />
+    <Content Include="images\marketing\components\jquery-mobile-slider.png" />
+    <Content Include="images\marketing\components\jquery-mobile-textbox.png" />
+    <Content Include="images\marketing\components\jquery-mobile-toggleswitch.png" />
+    <Content Include="images\marketing\components\jquery-tile-manager.png" />
+    <Content Include="images\samples\data-chart\music-controls-sprite2.png" />
+    <Content Include="images\samples\data-chart\music-controls-sprite.png" />
+    <Content Include="images\samples\nw\countries\Argentina.gif" />
+    <Content Include="images\samples\nw\countries\Austria.gif" />
+    <Content Include="images\samples\nw\countries\Belgium.gif" />
+    <Content Include="images\samples\nw\countries\Brazil.gif" />
+    <Content Include="images\samples\nw\countries\Canada.gif" />
+    <Content Include="images\samples\nw\countries\Denmark.gif" />
+    <Content Include="images\samples\nw\countries\Finland.gif" />
+    <Content Include="images\samples\nw\countries\France.gif" />
+    <Content Include="images\samples\nw\countries\Germany.gif" />
+    <Content Include="images\samples\nw\countries\Ireland.gif" />
+    <Content Include="images\samples\nw\countries\Italy.gif" />
+    <Content Include="images\samples\nw\countries\Mexico.gif" />
+    <Content Include="images\samples\nw\countries\Norway.gif" />
+    <Content Include="images\samples\nw\countries\Poland.gif" />
+    <Content Include="images\samples\nw\countries\Portugal.gif" />
+    <Content Include="images\samples\nw\countries\Spain.gif" />
+    <Content Include="images\samples\nw\countries\Sweden.gif" />
+    <Content Include="images\samples\nw\countries\Switzerland.gif" />
+    <Content Include="images\samples\nw\countries\UK.gif" />
+    <Content Include="images\samples\nw\countries\USA.gif" />
+    <Content Include="images\samples\nw\countries\Venezuela.gif" />
+    <Content Include="images\samples\data-chart\music-controls.jpg" />
+    <Content Include="images\samples\splitter\world.png" />
+    <Content Include="images\samples\tile-manager\220px-BillGates2012.jpg" />
+    <Content Include="images\samples\tile-manager\3450728563_69b0bd0743_m.jpg" />
+    <Content Include="images\samples\tile-manager\450px-Douglas_Crockford.jpg" />
+    <Content Include="images\samples\tile-manager\jason-beres-image.png" />
+    <Content Include="images\samples\tile-manager\jonskeet.jpg" />
+    <Content Include="images\samples\tree\bin_empty.png" />
+    <Content Include="images\samples\tree\book.png" />
+    <Content Include="images\samples\tree\book_add.png" />
+    <Content Include="images\samples\tree\coins.png" />
+    <Content Include="images\samples\tree\coins_add.png" />
+    <Content Include="images\samples\tree\computer.png" />
+    <Content Include="images\samples\tree\documents.png" />
+    <Content Include="images\samples\tree\documents-folder.png" />
+    <Content Include="images\samples\tree\door.png" />
+    <Content Include="images\samples\tree\door_in.png" />
+    <Content Include="images\samples\tree\folder.gif" />
+    <Content Include="images\samples\tree\folder_images.gif" />
+    <Content Include="images\samples\tree\music.png" />
+    <Content Include="images\samples\video-player\big-buck-bunny.png" />
+    <Content Include="data-files\hierarchical-files.js" />
+    <Content Include="data-files\hierarchical-products.js" />
+    <Content Include="images\zoomIn48.png" />
+    <Content Include="js\jqm\jquery.min.js" />
+    <Content Include="js\jquery.animate-colors-min.js" />
+    <Content Include="js\jquery.history.js" />
+    <Content Include="js\qr\jquery.qrcode.js" />
+    <Content Include="js\qr\qrcode.js" />
+    <Content Include="images\samples\popover\BodyParts.png" />
+    <Content Include="xap\video-player-fallback.xap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="App_Data\metadata\combo\bind-combo-with-ko.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\combo\json-binding.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\combo\xml-binding.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\combo\html-binding.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\combo\component.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\data-chart\bar-and-column-series.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\data-chart\binding-high-volume-data.xml" />
+    <Content Include="App_Data\metadata\data-chart\category-series.xml" />
+    <Content Include="App_Data\metadata\data-chart\composite-chart.xml" />
+    <Content Include="App_Data\metadata\data-chart\financial-indicators.xml" />
+    <Content Include="App_Data\metadata\data-chart\financial-series.xml" />
+    <Content Include="App_Data\metadata\data-chart\motion-framework.xml" />
+    <Content Include="App_Data\metadata\data-chart\polar-series.xml" />
+    <Content Include="App_Data\metadata\data-chart\radial-series.xml" />
+    <Content Include="App_Data\metadata\data-chart\range-category-series.xml" />
+    <Content Include="App_Data\metadata\data-chart\scatter-series.xml" />
+    <Content Include="App_Data\metadata\data-source\component.xml" />
+    <Content Include="App_Data\metadata\data-source\html-binding.xml" />
+    <Content Include="App_Data\metadata\data-source\json-binding.xml" />
+    <Content Include="App_Data\metadata\data-source\mashup.xml" />
+    <Content Include="App_Data\metadata\data-source\odata.xml" />
+    <Content Include="App_Data\metadata\data-source\xml-binding.xml" />
+    <Content Include="App_Data\metadata\editors\bind-editors-with-ko.xml" />
+    <Content Include="App_Data\metadata\funnel-chart\bezier-curve-and-tooltips.xml" />
+    <Content Include="App_Data\metadata\funnel-chart\server-binding.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\funnel-chart\component.xml" />
+    <Content Include="App_Data\metadata\funnel-chart\funnel-chart.xml" />
+    <Content Include="App_Data\metadata\funnel-chart\slice-selection.xml" />
+    <Content Include="App_Data\metadata\funnel-chart\styling.xml" />
+    <Content Include="App_Data\metadata\funnel-chart\xml-binding.xml" />
+    <Content Include="App_Data\metadata\grid\feature-chooser.xml" />
+    <Content Include="App_Data\metadata\grid\grid-api-events.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\grid\editing-api-events.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\grid\selection.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\grid\row-edit-template.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\grid\filtering.xml" />
+    <Content Include="App_Data\metadata\grid\aspnet-mvc-helper.xml" />
+    <Content Include="App_Data\metadata\grid\unbound-column.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\grid\cell-merging.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\grid\datatable-binding.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\hierarchical-grid\load-on-demand.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\hierarchical-grid\editing-dataset.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\hierarchical-grid\selection.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\hierarchical-grid\dataset-binding.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\hierarchical-grid\row-edit-template.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\hierarchical-grid\unbound-column.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-button\basic-usage.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-button\component.xml" />
+    <Content Include="App_Data\metadata\hierarchical-grid\cell-merging.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-checkbox-group\basic-usage.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-checkbox-group\component.xml" />
+    <Content Include="App_Data\metadata\mobile-checkbox\basic-usage.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-checkbox\component.xml" />
+    <Content Include="App_Data\metadata\mobile-collapsible-set\basic-usage.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-collapsible-set\component.xml" />
+    <Content Include="App_Data\metadata\mobile-collapsible\basic-usage.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-collapsible\component.xml" />
+    <Content Include="App_Data\metadata\mobile-link\basic-usage.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-link\component.xml" />
+    <Content Include="App_Data\metadata\mobile-list-view\api-events.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-list-view\bind-to-rest-service.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-list-view\bind-collection.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-list-view\load-on-demand.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-list-view\search.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-list-view\sort-group-presets.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-list-view\templates.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-list-view\custom-groups.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-list-view\dynamic-binding.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-list-view\filter-presets.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-list-view\list-dividers.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-list-view\remote-features.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-navbar\basic-usage.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-navbar\component.xml" />
+    <Content Include="App_Data\metadata\mobile-pagecontent\basic-usage.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-pagecontent\component.xml" />
+    <Content Include="App_Data\metadata\mobile-pagefooter\basic-usage.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-pagefooter\component.xml" />
+    <Content Include="App_Data\metadata\mobile-pageheader\basic-usage.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-pageheader\component.xml" />
+    <Content Include="App_Data\metadata\mobile-page\basic-usage.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-page\component.xml" />
+    <Content Include="App_Data\metadata\mobile-popup\basic-usage.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-popup\component.xml" />
+    <Content Include="App_Data\metadata\mobile-radiobutton-group\basic-usage.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-radiobutton-group\component.xml" />
+    <Content Include="App_Data\metadata\mobile-rating\aspnet-mvc-helper.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-rating\component.xml" />
+    <Content Include="App_Data\metadata\mobile-rating\custom-items.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-rating\basic-usage.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-list-view\component.xml" />
+    <Content Include="App_Data\metadata\mobile-list-view\json-binding.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\data-chart\component.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\data-chart\json-binding.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\data-chart\xml-binding.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\date-picker\basic-usage.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\date-picker\component.xml" />
+    <Content Include="App_Data\metadata\dialog-window\basic-usage.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\dialog-window\component.xml" />
+    <Content Include="App_Data\metadata\editors\basic-usage.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\editors\component.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\grid\component.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\grid\html-binding.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\grid\json-binding.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\grid\xml-binding.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\hierarchical-grid\component.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\hierarchical-grid\json-binding.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\hierarchical-grid\xml-binding.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\html-editor\basic-usage.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\html-editor\component.xml" />
+    <Content Include="App_Data\metadata\index.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\map\component.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\map\json-binding.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-selectmenu\basic-usage.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-selectmenu\component.xml" />
+    <Content Include="App_Data\metadata\mobile-slider\basic-usage.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-slider\component.xml" />
+    <Content Include="App_Data\metadata\mobile-slider\color-picker.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-textbox\basic-usage.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-textbox\component.xml" />
+    <Content Include="App_Data\metadata\mobile-toggleswitch\basic-usage.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\mobile-toggleswitch\component.xml" />
+    <Content Include="App_Data\metadata\mobile-toggleswitch\device-manager.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\pie-chart\component.xml" />
+    <Content Include="App_Data\metadata\pie-chart\json-binding.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\pie-chart\xml-binding.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\pivot-grid\component.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\pivot-grid\binding-to-flat-data-source.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\pivot-grid\binding-to-xmla-data-source.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\pivot-grid\sorting.xml" />
+    <Content Include="App_Data\metadata\pivot-grid\custom-drag-drop-validation.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\pivot-grid\drag-drop-custom-elements.xml" />
+    <Content Include="App_Data\metadata\pivot-grid\layout-modes.xml" />
+    <Content Include="App_Data\metadata\rating\basic-usage.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\rating\component.xml" />
+    <Content Include="App_Data\metadata\mobile-rating\api-and-events.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\sparkline\bind-collection.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\sparkline\component.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\sparkline\bind-json.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\sparkline\bind-to-remote-data.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\sparkline\chart-types.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\sparkline\sparkline-in-grid.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\sparkline\normal-range-and-trend-lines.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\sparkline\tooltips-and-markers.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\sparkline\visual-customization.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\sparkline\api-and-events.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\splitter\basic-vertical-splitter.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\splitter\component.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\splitter\basic-horizontal-splitter.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\splitter\aspnet-mvc-helper-splitter.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\splitter\api-events-splitter.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\splitter\nested-splitters.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\tree\component.xml" />
+    <Content Include="App_Data\metadata\tree\bind-tree-with-ko.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\tree\html-binding.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\tree\json-binding.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\tree\xml-binding.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\file-upload\api-events.xml" />
+    <Content Include="App_Data\metadata\file-upload\aspnet-mvc-helper.xml" />
+    <Content Include="App_Data\metadata\file-upload\basic-usage.xml" />
+    <Content Include="App_Data\metadata\file-upload\component.xml" />
+    <Content Include="App_Data\metadata\file-upload\multiple-upload.xml" />
+    <Content Include="App_Data\metadata\file-upload\progress-information.xml" />
+    <Content Include="App_Data\metadata\file-upload\upload-progress-manager.xml" />
+    <Content Include="App_Data\metadata\video-player\basic-usage.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\metadata\video-player\component.xml" />
+    <Content Include="App_Data\sampledata\ja\sql10\NORTHWND-JA.mdf" />
+    <Content Include="App_Data\sampledata\en\sql10\NORTHWND.MDF" />
+    <Content Include="App_Data\sampledata\en\sql11\NORTHWND.MDF" />
+    <Content Include="App_Data\sampledata\ja\sql11\NORTHWND-JA.mdf" />
+    <Content Include="App_GlobalResources\Main.ja.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Main.ja.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="css\charts\chart-samples.css" />
+    <Content Include="css\jqm\images\ajax-loader.gif" />
+    <Content Include="css\jqm\images\icons-18-black.png" />
+    <Content Include="css\jqm\images\icons-18-white.png" />
+    <Content Include="css\jqm\images\icons-36-black.png" />
+    <Content Include="css\jqm\images\icons-36-white.png" />
+    <Content Include="css\jqm\jquery.mobile.structure.min.css" />
+    <Content Include="css\mobilesamples.css" />
+    <Content Include="css\prettify.css" />
+    <Content Include="data-files-ja\sales.js" />
+    <Content Include="data-files\adventureworks.min.js" />
+    <Content Include="data-files\continents-with-countries-and-cities.js" />
+    <Content Include="data-files\financial-indicators.js" />
+    <Content Include="data-files\financial-data.js" />
+    <Content Include="data-files-ja\nw-employees.js" />
+    <Content Include="data-files-ja\nw-products.js" />
+    <Content Include="data-files\ig-offices.js" />
+    <Content Include="data-files\northwind.js" />
+    <Content Include="data-files\northwindProducts.js" />
+    <Content Include="data-files\nw-customers-with-orders.js" />
+    <Content Include="data-files\nw-invoices.js" />
+    <Content Include="data-files\nw-products.js" />
+    <Content Include="data-files\sales.js" />
+    <Content Include="data-files\world-cities.js" />
+    <Content Include="Global.asax" />
+    <Content Include="HtmlSamples\combo\virtualization.html" />
+    <Content Include="HtmlSamples\combo\templates.html" />
+    <Content Include="HtmlSamples\combo\selection-and-checkboxes.html" />
+    <Content Include="HtmlSamples\combo\load-on-demand.html" />
+    <Content Include="HtmlSamples\combo\grid-with-combo-editor.html" />
+    <Content Include="HtmlSamples\combo\filtering.html" />
+    <Content Include="HtmlSamples\combo\editing.html" />
+    <Content Include="HtmlSamples\combo\cascading-combos.html" />
+    <Content Include="HtmlSamples\combo\bind-combo-with-ko.html" />
+    <Content Include="HtmlSamples\combo\html-binding.html" />
+    <Content Include="HtmlSamples\combo\json-binding.html" />
+    <Content Include="HtmlSamples\combo\xml-binding.html" />
+    <Content Include="HtmlSamples\data-chart\bar-and-column-series.html" />
+    <Content Include="HtmlSamples\data-chart\binding-high-volume-data.html" />
+    <Content Include="HtmlSamples\data-chart\category-series.html" />
+    <Content Include="HtmlSamples\data-chart\composite-chart.html" />
+    <Content Include="HtmlSamples\data-chart\financial-indicators.html" />
+    <Content Include="HtmlSamples\data-chart\financial-series.html" />
+    <Content Include="HtmlSamples\data-chart\json-binding.html" />
+    <Content Include="HtmlSamples\data-chart\motion-framework.html" />
+    <Content Include="HtmlSamples\data-chart\polar-series.html" />
+    <Content Include="HtmlSamples\data-chart\radial-series.html" />
+    <Content Include="HtmlSamples\data-chart\range-category-series.html" />
+    <Content Include="HtmlSamples\data-chart\scatter-series.html" />
+    <Content Include="HtmlSamples\data-chart\xml-binding.html" />
+    <Content Include="HtmlSamples\data-source\html-binding.html" />
+    <Content Include="HtmlSamples\data-source\json-binding.html" />
+    <Content Include="HtmlSamples\data-source\mashup.html" />
+    <Content Include="HtmlSamples\data-source\odata.html" />
+    <Content Include="HtmlSamples\data-source\xml-binding.html" />
+    <Content Include="HtmlSamples\date-picker\validation.html" />
+    <Content Include="HtmlSamples\date-picker\basic-usage.html" />
+    <Content Include="HtmlSamples\dialog-window\basic-usage.html" />
+    <Content Include="HtmlSamples\dialog-window\api-and-events.html" />
+    <Content Include="HtmlSamples\dialog-window\modal-dialog.html" />
+    <Content Include="HtmlSamples\dialog-window\loading-external-page.html" />
+    <Content Include="HtmlSamples\dialog-window\icons.html" />
+    <Content Include="HtmlSamples\editors\currency-editor.html" />
+    <Content Include="HtmlSamples\editors\basic-usage.html" />
+    <Content Include="HtmlSamples\editors\bind-editors-with-ko.html" />
+    <Content Include="HtmlSamples\editors\date-and-time-formats.html" />
+    <Content Include="HtmlSamples\editors\localizing-editors.html" />
+    <Content Include="HtmlSamples\editors\validation.html" />
+    <Content Include="HtmlSamples\funnel-chart\bezier-curve-and-tooltips.html" />
+    <Content Include="HtmlSamples\funnel-chart\funnel-chart.html" />
+    <Content Include="HtmlSamples\funnel-chart\slice-selection.html" />
+    <Content Include="HtmlSamples\funnel-chart\styling.html" />
+    <Content Include="HtmlSamples\funnel-chart\xml-binding.html" />
+    <Content Include="HtmlSamples\grid\feature-chooser.html" />
+    <Content Include="HtmlSamples\grid\grid-api-events.html" />
+    <Content Include="HtmlSamples\grid\editing-api-events.html" />
+    <Content Include="HtmlSamples\grid\selection.html" />
+    <Content Include="HtmlSamples\grid\row-edit-template.html" />
+    <Content Include="HtmlSamples\grid\filtering.html" />
+    <Content Include="HtmlSamples\grid\html-binding.html" />
+    <Content Include="HtmlSamples\grid\json-binding.html" />
+    <Content Include="HtmlSamples\grid\cell-merging.html" />
+    <Content Include="HtmlSamples\grid\unbound-column.html" />
+    <Content Include="HtmlSamples\grid\xml-binding.html" />
+    <Content Include="HtmlSamples\hierarchical-grid\row-edit-template.html" />
+    <Content Include="HtmlSamples\hierarchical-grid\selection.html" />
+    <Content Include="HtmlSamples\hierarchical-grid\unbound-column.html" />
+    <Content Include="HtmlSamples\hierarchical-grid\json-binding.html" />
+    <Content Include="HtmlSamples\hierarchical-grid\cell-merging.html" />
+    <Content Include="HtmlSamples\hierarchical-grid\xml-binding.html" />
+    <Content Include="HtmlSamples\html-editor\basic-usage.html" />
+    <Content Include="HtmlSamples\html-editor\api-and-events.html" />
+    <Content Include="HtmlSamples\html-editor\edit-content.html" />
+    <Content Include="HtmlSamples\html-editor\custom-toolbars-and-buttons.html" />
+    <Content Include="HtmlSamples\html-editor\custom-icons-and-styles.html" />
+    <Content Include="HtmlSamples\loader\basic-usage.html" />
+    <Content Include="HtmlSamples\loader\download-all-features.html" />
+    <Content Include="HtmlSamples\loader\dynamic-download.html" />
+    <Content Include="HtmlSamples\loader\multiple-resources.html" />
+    <Content Include="HtmlSamples\mobile-list-view\json-binding.html" />
+    <Content Include="HtmlSamples\mobile-list-view\api-events.html" />
+    <Content Include="HtmlSamples\mobile-list-view\custom-groups.html" />
+    <Content Include="HtmlSamples\mobile-list-view\dynamic-binding.html" />
+    <Content Include="HtmlSamples\mobile-list-view\filter-presets.html" />
+    <Content Include="HtmlSamples\mobile-list-view\list-dividers.html" />
+    <Content Include="HtmlSamples\mobile-list-view\bind-to-rest-service.html" />
+    <Content Include="HtmlSamples\mobile-list-view\remote-features.html" />
+    <Content Include="HtmlSamples\mobile-list-view\templates.html" />
+    <Content Include="HtmlSamples\mobile-list-view\sort-group-presets.html" />
+    <Content Include="HtmlSamples\mobile-list-view\search.html" />
+    <Content Include="HtmlSamples\mobile-rating\basic-usage.html" />
+    <Content Include="HtmlSamples\mobile-rating\api-and-events.html" />
+    <Content Include="HtmlSamples\mobile-rating\custom-items.html" />
+    <Content Include="HtmlSamples\pie-chart\layout-configuration.html" />
+    <Content Include="HtmlSamples\pivot-grid\chart-integration.html" />
+    <Content Include="HtmlSamples\pivot-grid\binding-to-flat-data-source.html" />
+    <Content Include="HtmlSamples\pivot-grid\binding-to-xmla-data-source.html" />
+    <Content Include="HtmlSamples\pivot-grid\layout-modes.html" />
+    <Content Include="HtmlSamples\pivot-grid\sorting.html" />
+    <Content Include="HtmlSamples\pivot-grid\custom-drag-drop-validation.html" />
+    <Content Include="HtmlSamples\pivot-grid\drag-drop-custom-elements.html" />
+    <Content Include="HtmlSamples\pivot-view\binding-to-flat-data-source.html" />
+    <Content Include="HtmlSamples\pivot-view\binding-to-xmla-data-source.html" />
+    <Content Include="HtmlSamples\radial-gauge\api-usage.html" />
+    <Content Include="HtmlSamples\radial-gauge\drag-needle.html" />
+    <Content Include="HtmlSamples\rating\custom-items.html" />
+    <Content Include="HtmlSamples\rating\custom-styles.html" />
+    <Content Include="HtmlSamples\rating\precision.html" />
+    <Content Include="HtmlSamples\sparkline\bind-json.html" />
+    <Content Include="HtmlSamples\splitter\basic-vertical-splitter.html" />
+    <Content Include="HtmlSamples\splitter\basic-horizontal-splitter.html" />
+    <Content Include="HtmlSamples\splitter\api-events-splitter.html" />
+    <Content Include="HtmlSamples\splitter\nested-splitters.html" />
+    <Content Include="HtmlSamples\tree\bind-tree-with-ko.html" />
+    <Content Include="HtmlSamples\sparkline\bind-to-remote-data.html" />
+    <Content Include="HtmlSamples\sparkline\api-and-events.html" />
+    <Content Include="HtmlSamples\sparkline\chart-types.html" />
+    <Content Include="HtmlSamples\sparkline\normal-range-and-trend-lines.html" />
+    <Content Include="HtmlSamples\sparkline\sparkline-in-grid.html" />
+    <Content Include="HtmlSamples\sparkline\tooltips-and-markers.html" />
+    <Content Include="HtmlSamples\sparkline\visual-customization.html" />
+    <Content Include="HtmlSamples\file-upload\api-events.html" />
+    <Content Include="HtmlSamples\file-upload\basic-usage.html" />
+    <Content Include="HtmlSamples\file-upload\multiple-upload.html" />
+    <Content Include="HtmlSamples\file-upload\progress-information.html" />
+    <Content Include="HtmlSamples\video-player\bookmarks.html" />
+    <Content Include="HtmlSamples\video-player\common-features.html" />
+    <Content Include="HtmlSamples\video-player\banner-advertisements.html" />
+    <Content Include="HtmlSamples\video-player\commercials-support.html" />
+    <Content Include="HtmlSamples\video-player\related-videos.html" />
+    <Content Include="images\background-rockets.png" />
+    <Content Include="images\background_gradient.png" />
+    <Content Include="images\blue_arrow_temp.png" />
+    <Content Include="images\footer-background.png" />
+    <Content Include="images\helpnav\api.png" />
+    <Content Include="images\helpnav\environments.png" />
+    <Content Include="images\helpnav\forums.png" />
+    <Content Include="images\helpnav\help.png" />
+    <Content Include="images\helpnav\support.png" />
+    <Content Include="images\helptopic.png" />
+    <Content Include="images\ig-logo.png" />
+    <Content Include="images\ig.png" />
+    <Content Include="images\marketing\components\jquery-funnel-chart.png" />
+    <Content Include="images\marketing\components\jquery-mobile-inputs.png" />
+    <Content Include="images\marketing\components\jquery-bar-chart-logo.png" />
+    <Content Include="images\marketing\components\jquery-combo-box-logo.png" />
+    <Content Include="images\marketing\components\jquery-data-source-logo.png" />
+    <Content Include="images\marketing\components\jquery-date-picker-logo.png" />
+    <Content Include="images\marketing\components\jquery-dialog-window-logo.png" />
+    <Content Include="images\marketing\components\jquery-editors-logo.png" />
+    <Content Include="images\marketing\components\jquery-file-upload-logo.png" />
+    <Content Include="images\marketing\components\jquery-grid-logo.png" />
+    <Content Include="images\marketing\components\jquery-hierarchical-grid-logo.png" />
+    <Content Include="images\marketing\components\jquery-html-editor-logo.png" />
+    <Content Include="images\marketing\components\jquery-infragistics-documents-logo.png" />
+    <Content Include="images\marketing\components\jquery-infragistics-excel-logo.png" />
+    <Content Include="images\marketing\components\jquery-infragistics-word-logo.png" />
+    <Content Include="images\marketing\components\jquery-map.png" />
+    <Content Include="images\marketing\components\jquery-mobile-layout.png" />
+    <Content Include="images\marketing\components\jquery-mobile-List-View.png" />
+    <Content Include="images\marketing\components\jquery-mobile-rating.png" />
+    <Content Include="images\marketing\components\jquery-radial-gauge.png" />
+    <Content Include="images\marketing\components\jquery-rating-logo.png" />
+    <Content Include="images\marketing\components\jquery-script-loader.png" />
+    <Content Include="images\marketing\components\jquery-sparkline.png" />
+    <Content Include="images\marketing\components\jquery-splitter.png" />
+    <Content Include="images\marketing\components\jquery-template-engine.png" />
+    <Content Include="images\marketing\components\jquery-tree-logo.png" />
+    <Content Include="images\marketing\components\jquery-video-player-logo.png" />
+    <Content Include="images\marketing\components\jquery-mobile-nav.png" />
+    <Content Include="images\marketing\components\jquery-olap-data-source.png" />
+    <Content Include="images\marketing\components\jquery-pie-chart-logo.png" />
+    <Content Include="images\marketing\jquery-header-image.png" />
+    <Content Include="images\placeholder.png" />
+    <Content Include="images\phones\android.png" />
+    <Content Include="images\phones\ios.png" />
+    <Content Include="images\phones\thumbnails\android.png" />
+    <Content Include="images\phones\thumbnails\androiddark.png" />
+    <Content Include="images\phones\thumbnails\androidlight.png" />
+    <Content Include="images\phones\thumbnails\androidlightdark.png" />
+    <Content Include="images\phones\thumbnails\ios.png" />
+    <Content Include="images\phones\thumbnails\iphone.png" />
+    <Content Include="images\phones\thumbnails\wp7.png" />
+    <Content Include="images\phones\thumbnails\wp7dark.png" />
+    <Content Include="images\phones\thumbnails\wp7light.png" />
+    <Content Include="images\phones\wp7.png" />
+    <Content Include="images\samples\colors\black.png" />
+    <Content Include="images\samples\colors\blue.png" />
+    <Content Include="images\samples\colors\brown.png" />
+    <Content Include="images\samples\colors\green.png" />
+    <Content Include="images\samples\colors\orange.png" />
+    <Content Include="images\samples\colors\purple.png" />
+    <Content Include="images\samples\colors\red.png" />
+    <Content Include="images\samples\colors\white.png" />
+    <Content Include="images\samples\colors\yellow.png" />
+    <Content Include="images\samples\content.png" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\samples\date-picker\room.jpg" />
+    <Content Include="images\samples\dialog-window\content.jpg" />
+    <Content Include="images\samples\html-editor\ig-html-editor-custom-styles-sprite.png" />
+    <Content Include="images\samples\html-editor\jquery-chart-featured-control-image.png" />
+    <Content Include="images\samples\html-editor\jquery-combo-box-featured-control-image.png" />
+    <Content Include="images\samples\html-editor\jquery-grid-featured-control-image.png" />
+    <Content Include="images\samples\html-editor\jquery-tree-featured-control-image.png" />
+    <Content Include="images\samples\maps\world.png" />
+    <Content Include="images\samples\mobile-toggleswitch\bluetooth-off.png" />
+    <Content Include="images\samples\mobile-toggleswitch\bluetooth-on.png" />
+    <Content Include="images\samples\mobile-toggleswitch\gps-disabled.png" />
+    <Content Include="images\samples\mobile-toggleswitch\gps-enabled.png" />
+    <Content Include="images\samples\mobile-toggleswitch\wireless-disabled.png" />
+    <Content Include="images\samples\mobile-toggleswitch\wireless-enabled.png" />
+    <Content Include="images\samples\nw\categories\1.png" />
+    <Content Include="images\samples\nw\categories\2.png" />
+    <Content Include="images\samples\nw\categories\3.png" />
+    <Content Include="images\samples\nw\categories\4.png" />
+    <Content Include="images\samples\nw\categories\5.png" />
+    <Content Include="images\samples\nw\categories\6.png" />
+    <Content Include="images\samples\nw\categories\7.png" />
+    <Content Include="images\samples\nw\categories\8.png" />
+    <Content Include="images\samples\nw\categories\9.png" />
+    <Content Include="images\samples\nw\employees\1.png" />
+    <Content Include="images\samples\nw\employees\2.png" />
+    <Content Include="images\samples\nw\employees\3.png" />
+    <Content Include="images\samples\nw\employees\4.png" />
+    <Content Include="images\samples\nw\employees\5.png" />
+    <Content Include="images\samples\nw\employees\6.png" />
+    <Content Include="images\samples\nw\employees\7.png" />
+    <Content Include="images\samples\nw\employees\8.png" />
+    <Content Include="images\samples\nw\employees\9.png" />
+    <Content Include="data-files\nw-employees.js" />
+    <Content Include="images\samples\olap\ajax-loader.gif" />
+    <Content Include="images\samples\rating\fast.png" />
+    <Content Include="images\samples\rating\fastempty.png" />
+    <Content Include="images\samples\rating\fastest.png" />
+    <Content Include="images\samples\rating\fastestempty.png" />
+    <Content Include="images\samples\rating\ig-rating-basket.png" />
+    <Content Include="images\samples\rating\ig-rating-ghost.png" />
+    <Content Include="images\samples\rating\ig-rating-red.png" />
+    <Content Include="images\samples\rating\ig-rating.png" />
+    <Content Include="images\samples\rating\resetrating.png" />
+    <Content Include="images\samples\rating\slow.png" />
+    <Content Include="images\samples\rating\slowempty.png" />
+    <Content Include="images\samples\rating\ui-igrating.png" />
+    <Content Include="images\samples\video-player\banner.png" />
+    <Content Include="images\samples\video-player\ig-pres.png" />
+    <Content Include="images\samples\video-player\quince-intro-1.png" />
+    <Content Include="images\samples\video-player\quince-intro-2.png" />
+    <Content Include="images\sprite.png" />
+    <Content Include="js\apiviewer.js" />
+    <Content Include="js\external\knockout-latest.debug.js" />
+    <Content Include="js\external\knockout-latest.js" />
+    <Content Include="js\external\knockout.mapping-latest.debug.js" />
+    <Content Include="js\external\knockout.mapping-latest.js" />
+    <Content Include="js\infragistics.ui.sbscroll.js" />
+    <Content Include="js\jquery-ui.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jqm\jquery.mobile.min.js" />
+    <Content Include="js\json2.js" />
+    <Content Include="js\map-helper.js" />
+    <Content Include="js\modernizr.min.js" />
+    <Content Include="HtmlSamples\pie-chart\json-binding.html" />
+    <Content Include="HtmlSamples\pie-chart\xml-binding.html" />
+    <Content Include="HtmlSamples\rating\basic-usage.html" />
+    <Content Include="HtmlSamples\tree\html-binding.html" />
+    <Content Include="HtmlSamples\tree\json-binding.html" />
+    <Content Include="HtmlSamples\tree\xml-binding.html" />
+    <Content Include="HtmlSamples\video-player\basic-usage.html" />
+    <Content Include="js\prettify.js" />
+    <Content Include="js\sb.js" />
+    <Content Include="js\silverlight.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+     
+     
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+     
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Main.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Main1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Grid\datatable-binding.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_SampleHead.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_RunningSample.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="css\Fonts\" />
+    <Folder Include="HtmlSamples\pivot-data-selector\" />
+    <Folder Include="IgniteUI\" />
+    <Folder Include="Temp\Uploads\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MobileListView\bind-collection.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MobileListView\load-on-demand.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MobileRating\aspnet-mvc-helper.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MobileButton\basic-usage.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Sparkline\bind-collection.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Grid\aspnet-mvc-helper.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MobileCheckBox\basic-usage.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MobileCheckBoxGroup\basic-usage.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MobileCollapsible\basic-usage.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MobileCollapsibleSet\basic-usage.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MobileLink\basic-usage.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MobileNavBar\basic-usage.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MobilePage\basic-usage.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MobilePageContent\basic-usage.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MobilePageFooter\basic-usage.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MobilePageHeader\basic-usage.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MobilePopup\basic-usage.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MobileRadioButtonGroup\basic-usage.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MobileSelectMenu\basic-usage.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MobileSlider\basic-usage.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MobileTextBox\basic-usage.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MobileToggleSwitch\device-manager.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MobileSlider\color-picker.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MobileToggleSwitch\basic-usage.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\HierarchicalGrid\dataset-binding.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data-files\shapes\Web.config" />
+    <Content Include="Views\Map\binding-to-collection.cshtml" />
+    <Content Include="data-files\shapes\north_america_primary_roads.dbf" />
+    <Content Include="data-files\shapes\north_america_primary_roads.shp" />
+    <Content Include="data-files\shapes\nws_precip_2011091820.itf" />
+    <Content Include="Views\PivotGrid\using-the-asp-net-mvc-helper-with-flat-data-source.cshtml" />
+    <Content Include="Views\PivotView\using-the-asp-net-mvc-helper-with-flat-data-source.cshtml" />
+    <Content Include="Views\PivotDataSelector\using-the-asp-net-mvc-helper-with-flat-data-source.cshtml" />
+    <Content Include="Views\PivotGrid\using-the-asp-net-mvc-helper-with-xmla-data-source.cshtml" />
+    <Content Include="Views\PivotView\using-the-asp-net-mvc-helper-with-xmla-data-source.cshtml" />
+    <Content Include="Views\PivotDataSelector\using-the-asp-net-mvc-helper-with-xmla-data-source.cshtml" />
+    <Content Include="Views\DialogWindow\aspnet-mvc-helper.cshtml" />
+    <Content Include="Views\HtmlEditor\aspnet-mvc-helper.cshtml" />
+    <Content Include="Views\RadialGauge\mvc-initialization.cshtml" />
+    <Content Include="Views\Combo\aspnet-mvc-helper.cshtml" />
+    <Content Include="Views\DatePicker\hotel-reservation.cshtml" />
+    <Content Include="Views\Editors\data-annotation-validation.cshtml" />
+    <Content Include="Views\Editors\load-and-save-form-values.cshtml" />
+    <Content Include="Views\DataChart\aspnet-mvc-helper.cshtml" />
+    <Content Include="data-files\shapes\world.dbf" />
+    <Content Include="data-files\shapes\world.shp" />
+    <Content Include="Views\PieChart\aspnet-mvc-helper.cshtml" />
+    <Content Include="Views\Loader\aspnet-mvc-helper.cshtml" />
+    <Content Include="Views\Rating\aspnet-mvc-helper.cshtml" />
+    <Content Include="Views\VideoPlayer\aspnet-mvc-helper.cshtml" />
+    <Content Include="Views\VideoPlayer\fallback-video.cshtml" />
+    <Content Include="Views\Tree\aspnet-mvc-helper.cshtml" />
+    <Content Include="Views\Tree\aspnet-mvc-load-on-demand.cshtml" />
+    <Content Include="Views\Shared\Sample.cshtml" />
+    <Content Include="Views\DoughnutChart\bind-to-collection.cshtml" />
+    <Content Include="data-files\shapes\GeoPlaces.Australia.csv" />
+    <Content Include="Views\Shared\_MasterLayout.cshtml" />
+    <Content Include="Views\Shared\_CoverLayout.cshtml" />
+    <Content Include="Views\LayoutManager\aspnet-mvc-helper.cshtml" />
+    <Content Include="Views\TileManager\aspnet-mvc-helper.cshtml" />
+    <Content Include="Views\Shared\_CodeViewer.cshtml" />
+    <Content Include="Views\TemplatingEngine\aspnet-mvc-usage.cshtml" />
+    <Content Include="data-files\shapes\world_cities.dbf" />
+    <Content Include="data-files\shapes\world_cities.prj" />
+    <Content Include="data-files\shapes\world_cities.shp" />
+    <Content Include="data-files\shapes\world_cities.shx" />
+    <Content Include="data-files\shapes\world_countries_reg.dbf" />
+    <Content Include="data-files\shapes\world_countries_reg.shp" />
+    <Content Include="data-files\shapes\world_countries_reg.shx" />
+    <Content Include="Views\Shared\_ControlAppSamples.cshtml" />
+    <Content Include="Views\HierarchicalGrid\aspnet-mvc-helper.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Error\NotFound.cshtml" />
+    <Content Include="Views\Error\ServerError.cshtml" />
+    <Content Include="Views\HierarchicalGrid\load-on-demand.cshtml" />
+    <Content Include="Views\FileUpload\aspnet-mvc-helper.cshtml" />
+    <Content Include="Views\Shared\MobileSample.cshtml" />
+    <Content Include="Views\FileUpload\upload-progress-manager.cshtml" />
+    <Content Include="Views\FunnelChart\server-binding.cshtml" />
+    <Content Include="Views\Splitter\aspnet-mvc-helper-splitter.cshtml" />
+    <Content Include="Views\PivotGrid\remote-xmla-provider.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\HierarchicalGrid\editing-dataset.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+     
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\Error.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_GA.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\PivotGrid\remote-adomd-provider.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Popover\aspnet-mvc-helper.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\RadialMenu\mvc-initialization.cshtml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>24772</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2682/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+   
+   
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

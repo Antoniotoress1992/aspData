@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Basic Usage</Title>
+    <Description>The sample demonstrates how the Radio Button Group renders both horizontal or vertical orientations.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Adding RadioButtonGroup" TopicName="Adding RadioButtonGroup" />
+      <HelpTopic Title="Configuring" TopicName="RadioButtonGroup Configuring" />
+      <HelpTopic Title="Overview" TopicName="RadioButtonGroup Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>基本的な使用方法</Title>
+    <Description>このサンプルでは、Radio Button Group を水平方向または垂直方向に描画する方法を紹介します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="RadioButtonGroup の追加" TopicName="Adding RadioButtonGroup" />
+      <HelpTopic Title="構成" TopicName="RadioButtonGroup Configuring" />
+      <HelpTopic Title="概要" TopicName="RadioButtonGroup Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+</Sample>

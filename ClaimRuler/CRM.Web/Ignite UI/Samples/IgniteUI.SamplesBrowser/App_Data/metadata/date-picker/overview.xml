@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">date-picker/basic-usage</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      The igDatePicker allows you to have an input field with a dropdown calendar and a specified date format display. The igDatePicker control supports localization by recognizing different regional options exposed from the browser and also supports <a href="~/date-picker/validation">validation</a>.
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      igDatePicker は入力フィールド、ドロップダウン カレンダー、および指定した日付書式設定を結合します。igDatePicker コントロールは、ブラウザーから公開されるさまざまな地域のオプションを認識することにより、ローカライズをサポートします。<a href="~/date-picker/validation">検証</a>もサポートします。
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Combo Box</Name>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Favourite_Actors" Value="My Favourite Actors"/>
+      <LocalizedSampleString Key="Selected_Actor" Value="Selected Actor" />
+      <LocalizedSampleString Key="button_Add" Value="Add" />
+      <LocalizedSampleString Key="button_Remove" Value="Remove" />
+      <LocalizedSampleString Key="Country" Value="Country" />
+      <LocalizedSampleString Key="State" Value="State" />
+      <LocalizedSampleString Key="District" Value="District" />
+      <LocalizedSampleString Key="cascading_ds" Value="Cascading Data Sources" />
+      <LocalizedSampleString Key="individual_ds" Value="Individual Data Sources" />
+      <LocalizedSampleString Key="editable_custom_vals" Value="Editable, Allows Custom Values, Dropdown Button Disabled" />
+      <LocalizedSampleString Key="not_editable" Value="Not Editable, Clear Button Disabled" />
+      <LocalizedSampleString Key="readonly_with_dropdown" Value="Read-only, Shows Dropdown" />
+      <LocalizedSampleString Key="readonly_no_dropdown" Value="Read-only, Dropdown Disabled" />
+      <LocalizedSampleString Key="autocomplete_filtering" Value="Auto-Complete, Filtering, Highlighting" />
+      <LocalizedSampleString Key="filtering_highlighting" Value="Filtering and Highlighting" />
+      <LocalizedSampleString Key="casesensitive" Value="Case-Sensitive" />
+      <LocalizedSampleString Key="update_message" Value="The grid's data has been updated..." />
+      <LocalizedSampleString Key="dropdown_focus" Value="Drop Down on Focus, Single Selection" />
+      <LocalizedSampleString Key="multiselection" Value="Multiple Selection (Hold Ctrl Key to Select Multiple Items)" />
+      <LocalizedSampleString Key="multiselect_checkboxes" Value="Multiple Selection with Checkboxes" />
+      <LocalizedSampleString Key="Black" Value="Black" />
+      <LocalizedSampleString Key="Blue" Value="Blue" />
+      <LocalizedSampleString Key="Brown" Value="Brown" />
+      <LocalizedSampleString Key="Green" Value="Green" />
+      <LocalizedSampleString Key="Orange" Value="Orange" />
+      <LocalizedSampleString Key="Purple" Value="Purple" />
+      <LocalizedSampleString Key="Red" Value="Red" />
+      <LocalizedSampleString Key="White" Value="White" />
+      <LocalizedSampleString Key="Yellow" Value="Yellow" />
+      <LocalizedSampleString Key="employees" Value="Employees" />
+      <LocalizedSampleString Key="more_info" Value="More information at" />
+      <LocalizedSampleString Key="current_employee" Value="Current Employee:" />
+      <LocalizedSampleString Key="choose_employee" Value="Choose New Employee" />
+      <LocalizedSampleString Key="update" Value="Update" />
+      <LocalizedSampleString Key="available_products" Value="Available Products" />
+      <LocalizedSampleString Key="product_count" Value="Product Count" />
+      <LocalizedSampleString Key="please_product" Value="Please, select a product" />
+      <LocalizedSampleString Key="selected_item" Value="Selected Item" />
+      <LocalizedSampleString Key="Town" Value="Town" />
+      <LocalizedSampleString Key="Bread" Value="Bread" />
+      <LocalizedSampleString Key="Milk" Value="Milk" />
+      <LocalizedSampleString Key="vint_soda" Value="Vint Soda" />
+      <LocalizedSampleString Key="havina_cola" Value="Havina Cola" />
+      <LocalizedSampleString Key="fruit_punch" Value="Fruit Punch" />
+      <LocalizedSampleString Key="cran_juice" Value="Cranberry Juice" />
+      <LocalizedSampleString Key="pink_lemonade" Value="Pink Lemonade" />
+      <LocalizedSampleString Key="dvd_player" Value="DVD Player" />
+      <LocalizedSampleString Key="lcd_hdtv" Value="LCD HDTV" />
+      <LocalizedSampleString Key="Food" Value="Food" />
+      <LocalizedSampleString Key="Beverages" Value="Beverages" />
+      <LocalizedSampleString Key="Electronics" Value="Electronics" />
+      <LocalizedSampleString Key="Name" Value="Name" />
+      <LocalizedSampleString Key="Description" Value="Description" />
+      <LocalizedSampleString Key="Category" Value="Category" />
+      <LocalizedSampleString Key="whole_bread" Value="Whole grain bread" />
+      <LocalizedSampleString Key="low_milk" Value="Low fat milk" />
+      <LocalizedSampleString Key="americana_variety" Value="Americana Variety - Mix of 6 flavors" />
+      <LocalizedSampleString Key="original_cola" Value="The Original Key Lime Cola" />
+      <LocalizedSampleString Key="mango" Value="Mango flavor, 8.3 Ounce Cans (Pack of 24)" />
+      <LocalizedSampleString Key="plastic_bottles" Value="16-Ounce Plastic Bottles (Pack of 12)" />
+      <LocalizedSampleString Key="cans" Value="36 Ounce Cans (Pack of 3)" />
+      <LocalizedSampleString Key="upconversion" Value="1080P Upconversion DVD Player" />
+      <LocalizedSampleString Key="bluray" Value="42 inch 1080p LCD with Built-in Blu-ray Disc Player" />      
+    </LocalizedSampleStrings>
+    <Description>
+      Using this fully featured Combo Box control with intuitive Auto-Suggest, Auto-Complete and Auto-Filtering built-in, your users will be able to find the choices they are looking for much more quickly. Single/Multi-Select capabilities are also available with the Combo Box.
+    </Description>
+    <PageKeywords>igCombo</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Combo Box</Name>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Favourite_Actors" Value="お気に入り映画俳優"/>
+      <LocalizedSampleString Key="Selected_Actor" Value="選択した映画俳優" />
+      <LocalizedSampleString Key="button_Add" Value="追加" />
+      <LocalizedSampleString Key="button_Remove" Value="削除" />
+      <LocalizedSampleString Key="Country" Value="国" />
+      <LocalizedSampleString Key="State" Value="州" />
+      <LocalizedSampleString Key="District" Value="地区" />
+      <LocalizedSampleString Key="cascading_ds" Value="カスケード データ ソース" />
+      <LocalizedSampleString Key="individual_ds" Value="データ ソース" />
+      <LocalizedSampleString Key="editable_custom_vals" Value="編集可能、カスタム値許可、ドロップダウン ボタン無効" />
+      <LocalizedSampleString Key="not_editable" Value="編集不可能、クリア ボタン無効" />
+      <LocalizedSampleString Key="readonly_with_dropdown" Value="読み取り専用、ドロップダウン表示" />
+      <LocalizedSampleString Key="readonly_no_dropdown" Value="読み取り専用、ドロップダウン無効" />
+      <LocalizedSampleString Key="autocomplete_filtering" Value="オート コンプリート、フィルタリング、強調表示" />
+      <LocalizedSampleString Key="filtering_highlighting" Value="フィルター処理と強調表示" />
+      <LocalizedSampleString Key="casesensitive" Value="大文字と小文字の区別" />
+      <LocalizedSampleString Key="update_message" Value="igGrid のデータが更新されました。" />
+      <LocalizedSampleString Key="dropdown_focus" Value="フォーカス時にドロップダウン表示、単一の選択" />
+      <LocalizedSampleString Key="multiselection" Value="複数選択 (複数項目を選択するには Ctrl キーを押します)" />
+      <LocalizedSampleString Key="multiselect_checkboxes" Value="チェックボックスを使用して複数選択" />
+      <LocalizedSampleString Key="Black" Value="黒" />
+      <LocalizedSampleString Key="Blue" Value="青" />
+      <LocalizedSampleString Key="Brown" Value="茶" />
+      <LocalizedSampleString Key="Green" Value="緑" />
+      <LocalizedSampleString Key="Orange" Value="オレンジ" />
+      <LocalizedSampleString Key="Purple" Value="パープル" />
+      <LocalizedSampleString Key="Red" Value="赤" />
+      <LocalizedSampleString Key="White" Value="白" />
+      <LocalizedSampleString Key="Yellow" Value="黄" />
+      <LocalizedSampleString Key="employees" Value="従業員" />
+      <LocalizedSampleString Key="more_info" Value="詳細について（英語）:" />
+      <LocalizedSampleString Key="current_employee" Value="現在の従業員:" />
+      <LocalizedSampleString Key="choose_employee" Value="新しい従業員の選択" />
+      <LocalizedSampleString Key="update" Value="更新" />
+      <LocalizedSampleString Key="available_products" Value="製品" />
+      <LocalizedSampleString Key="product_count" Value="製品数" />
+      <LocalizedSampleString Key="please_product" Value="製品を選択してください。" />
+      <LocalizedSampleString Key="selected_item" Value="選択した項目" />
+      <LocalizedSampleString Key="Town" Value="市" />
+      <LocalizedSampleString Key="Bread" Value="パン" />
+      <LocalizedSampleString Key="Milk" Value="果汁 100% オレンジ" />
+      <LocalizedSampleString Key="vint_soda" Value="果汁 100% グレープ" />
+      <LocalizedSampleString Key="havina_cola" Value="果汁 100% レモン" />
+      <LocalizedSampleString Key="fruit_punch" Value="コーヒーマイルド" />
+      <LocalizedSampleString Key="cran_juice" Value="コーヒービター" />
+      <LocalizedSampleString Key="pink_lemonade" Value="コーヒーミルク" />
+      <LocalizedSampleString Key="dvd_player" Value="DVD プレーヤー" />
+      <LocalizedSampleString Key="lcd_hdtv" Value="LCD HDTV" />
+      <LocalizedSampleString Key="Food" Value="食品" />
+      <LocalizedSampleString Key="Beverages" Value="飲料" />
+      <LocalizedSampleString Key="Electronics" Value="技術" />
+      <LocalizedSampleString Key="Name" Value="名前" />
+      <LocalizedSampleString Key="Description" Value="説明" />
+      <LocalizedSampleString Key="Category" Value="カテゴリ" />
+      <LocalizedSampleString Key="whole_bread" Value="全粒パン" />
+      <LocalizedSampleString Key="low_milk" Value="オレンジ ジュース" />
+      <LocalizedSampleString Key="americana_variety" Value="グレープ ジュース" />
+      <LocalizedSampleString Key="original_cola" Value="レモン ジュース" />
+      <LocalizedSampleString Key="mango" Value="コーヒーマイルド 195g×10缶" />
+      <LocalizedSampleString Key="plastic_bottles" Value="コーヒービター 195g×10缶" />
+      <LocalizedSampleString Key="cans" Value="コーヒーミルク 195g×10缶" />
+      <LocalizedSampleString Key="upconversion" Value="1080P DVD プレーヤー" />
+      <LocalizedSampleString Key="bluray" Value="100 センチメートル 1080p LCD テレビ" />
+    </LocalizedSampleStrings>
+    <Description>
+      コンボ ボックス コントロールは、自動補完、オート コンプリート、およびフィルタリング機能を提供し、ユーザーは簡単に項目を検索することができます。単一選択および複数選択機能があります。
+    </Description>
+    <PageKeywords>igCombo</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>ui.igcombo</ClientApiUrl>
+  <HelpPageName>igCombo_igCombo</HelpPageName>
+  <ForumNumber>590</ForumNumber>
+  <IconImage>jquery-Combo-Box-logo.png</IconImage>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <TOC>
+    <Sample>json-binding</Sample>
+    <Sample>html-binding</Sample>
+    <Sample>xml-binding</Sample>
+    <Sample>bind-combo-with-ko</Sample>
+    <Sample>aspnet-mvc-helper</Sample>
+    <Sample>selection-and-checkboxes</Sample>
+    <Sample>editing</Sample>
+    <Sample>filtering</Sample>    
+    <Sample>load-on-demand</Sample>
+    <Sample>virtualization</Sample>
+    <Sample>templates</Sample>
+    <Sample>cascading-combos</Sample>
+    <Sample>grid-with-combo-editor</Sample>
+  </TOC>
+</Component>

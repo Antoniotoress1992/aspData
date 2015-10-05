@@ -1,0 +1,298 @@
+﻿@using Infragistics.Web.Mvc
+@using IgniteUI.SamplesBrowser.Models
+
+@model IgniteUI.SamplesBrowser.Models.Showcase.HotelReservation
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="@Url.Content("~/igniteui/css/themes/infragistics/infragistics.theme.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/igniteui/css/structure/infragistics.css")" rel="stylesheet" />
+
+    <script src="@Url.Content("~/js/modernizr.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery-ui.min.js")"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="@Url.Content("~/igniteui/js/infragistics.core.js")"></script>
+    <script src="@Url.Content("~/igniteui/js/infragistics.lob.js")"></script>
+</head>
+<body>
+    <style type="text/css">
+        td { vertical-align: top; }
+        .error { color: #FF0000; }
+        .success { color: #458B00; }
+        #highlight, .highlight {
+            background-color: #3EC2F9;
+        }
+
+        @@media all and (max-width: 600px) {
+            .td1 {
+                float: left;
+                margin-left: 20px;
+            }
+
+            .td2 {
+                float: left;
+            }
+
+            .td2 img{
+                width: 100%;
+            }
+        }
+
+        @@media all and (max-width: 360px) {
+            .ui-datepicker {
+                width: 250px;
+            }
+        }
+    </style>
+
+     <div class="sampleContents">
+        <div class="sample-container">
+            <form method="post" action="@Url.Content("~/date-picker/hotel-reservation")">
+                    <table style="margin-top: 5px; border-collapse: collapse;" cellspacing="0"
+                        cellpadding="4">
+                        <tr>
+                            <td class="td1">
+                                <strong>
+                                    Start date for reservation
+                                </strong>                                
+                                <br />
+                                <br />                                
+                                @(Html.Infragistics()
+                                    .DatePickerFor(m => m.StartDate)
+                                    .ID("startDatePicker")
+                                    .Width(100)
+                                    .DateDisplayFormat("date")
+                                    .Required(true)
+                                    .NullText("Enter Date")
+                                    .ValidatorOptions(m => m.AnimationShow(0).AnimationHide(0).OnBlur(true).OnChange(true).OnSubmit(true).KeepFocus(ValidatorKeepFocus.Never))
+                                    .DropDownTriggers("focus")
+                                    .ButtonType(TextEditorButtonType.None)
+                                    .MinValue(DateTime.Now.Date)
+                                    .Render()
+                                )                                
+                                <span id="mySpan"></span>
+                                <br />
+                                <br />
+                                <strong>
+                                    End date for reservation
+                                </strong>
+                                <br />
+                                <br />
+                                @(Html.Infragistics()
+                                    .DatePickerFor(m => m.EndDate)
+                                    .ID("endDatePicker")
+                                    .Width(100)
+                                    .DateDisplayFormat("date")
+                                    .Required(true)
+                                    .NullText("Enter Date")
+                                    .ValidatorOptions(m => m.AnimationShow(0).AnimationHide(0).OnBlur(true).OnChange(true).OnSubmit(true).KeepFocus(ValidatorKeepFocus.Never))
+                                    .DropDownTriggers("focus")
+                                    .ButtonType(TextEditorButtonType.None)
+                                    .MinValue(DateTime.Now.Date)
+                                    .Render()
+                                )
+                                <br />
+                                <br />
+                            </td>
+                            <td class="td2">
+                                <img alt="Luxury hotel room with king-size bed" src="@Url.Content("~/images/samples/date-picker/room.jpg")" />
+                                <p>Luxury hotel room with king-size bed</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                Reservation status for room: <strong>@Model.GetStatus()</strong>
+                                <br />
+                                <br />
+                            </td>
+                        </tr>
+                    </table>
+                    <br />
+                    <div style="display: inline;">
+                        <div style="width: 480px; float: left">
+                            <input type="submit" id="submitEvent" value="Submit" />
+                             @if (ViewData["message"] != String.Empty) {                     
+                                <span class="success">@ViewData["message"]</span>
+                                <br />
+                             }
+                            <span id="messageBox"></span>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+            </form>
+        </div>
+    </div>
+
+    <script>
+
+        $(function () {
+            $("#submitEvent").igButton({ labelText: $("#submitEvent").val() });
+
+            var messageBox = $("#messageBox");
+            var startDatePicker = $('#startDatePicker');
+            var endDatePicker = $('#endDatePicker');
+            // Set 1 day in milliseconds
+            var oneDay = 1000 * 60 * 60 * 24;
+            var highlightDatesArray = new Array();
+            var startDatePickerValue = startDatePicker.igEditor('option', 'value');
+            var endDatePickerValue = endDatePicker.igEditor('option', 'value');
+
+            function GenerateDates() {
+                startDatePickerValue = startDatePicker.igEditor('option', 'value');
+                endDatePickerValue = endDatePicker.igEditor('option', 'value');
+                var datesArray = new Array();
+
+                if (startDatePickerValue && endDatePickerValue) {
+                    var diff = Math.ceil((endDatePickerValue.getTime() - startDatePickerValue.getTime()) / (oneDay));
+
+                    for (var i = 0; i <= diff; i++) {
+                        datesArray.push(new Date(startDatePickerValue.getFullYear(), startDatePickerValue.getMonth(), startDatePickerValue.getDate() + i));
+                    }
+                }
+
+                return datesArray;
+            }
+
+            function HighlightDates(date) {
+                for (var i = 0; i < highlightDatesArray.length; i++) {
+                    if (highlightDatesArray[i].getTime() == date.getTime()) {
+                        return [true, 'highlight'];
+                    }
+                }
+
+                return [true, ''];
+            }
+            highlightDatesArray = GenerateDates();
+            startDatePicker.igEditor({
+                focus: function () {
+                    highlightDatesArray = GenerateDates();
+                },
+                blur: function () {
+                    highlightDatesArray = GenerateDates();
+                    // can not do that, because if user clicks on endDatePicker,
+                    // then endDatePicker loses focus and closes calendar
+                    //$('#mySpan').focus();
+                }
+            });
+
+            endDatePicker.igEditor({
+                focus: function () {
+                    highlightDatesArray = GenerateDates();
+                },
+                blur: function () {
+                    highlightDatesArray = GenerateDates();
+                    // can not do that, because if user clicks on startDatePicker,
+                    // then startDatePicker loses focus and closes calendar
+                    //$('#submitEvent').focus();
+                }
+            });
+
+
+            var datepickerOptions = {
+                beforeShowDay: HighlightDates,
+                numberOfMonths: [1, 2],
+                showAnim: 'clip',
+                duration: 1000
+            };
+
+            startDatePicker.igEditor('option', 'datepickerOptions', $.extend(datepickerOptions));
+            endDatePicker.igEditor('option', 'datepickerOptions', $.extend(datepickerOptions));
+
+
+            var validatorOptions = startDatePicker.igEditor('option', 'validatorOptions');
+            $('#startDatePicker').igEditor('option', 'validatorOptions', $.extend({
+                onblur: true,
+                checkValue: function (evt, ui) {
+                    var startDate = ui.value;
+                    var todayDate = new Date();
+                    endDatePickerValue = endDatePicker.igEditor('option', 'value');
+
+                    if (endDatePickerValue) {
+                        //Calculate difference btw the two dates, and convert to days
+                        var diffStartToday = Math.ceil((startDate.getTime() - todayDate.getTime()) / (oneDay));
+
+                        if (diffStartToday < 0) {
+                            var message = 'Unable to book room.  Please check the dates you entered';
+                            messageBox.removeClass().addClass("error").html(message).stop(true, true).fadeIn(500).delay(3000).fadeOut(500);
+                            ui.message = 'Start date for reservation should be after current date';
+                            return false;
+                        }
+
+                        //Calculate difference btw the two dates, and convert to days
+                        var diffEndStart = Math.ceil((endDatePickerValue.getTime() - startDate.getTime()) / (oneDay));
+
+                        if (diffEndStart <= 0) {
+                            var message = 'Unable to book room.  Please check the dates you entered';
+                            messageBox.removeClass().addClass("error").html(message).stop(true, true).fadeIn(500).delay(3000).fadeOut(500);
+                            ui.message = 'Start date for reservation should be before end date';
+                            return false;
+                        }
+
+                    } else {
+                        if (startDate) {
+                            endDatePicker.igEditor('option', 'value', new Date(startDate.getFullYear(), startDate.getMonth(), startDate.getDate() + 1));
+                            endDatePicker.igEditor('validate');
+                        }
+                    }
+
+                    var validator = $("#endDatePicker").igEditor("validator");
+                    validator.hide();
+                }
+            }, validatorOptions));
+
+            validatorOptions = endDatePicker.igEditor('option', 'validatorOptions');
+            endDatePicker.igEditor('option', 'validatorOptions', $.extend({
+                onblur: true,
+                checkValue: function (evt, ui) {
+                    var endDate = ui.value;
+
+                    if (endDate == null) {
+                        var message = 'Unable to book room.  Please check the dates you entered';
+                        messageBox.removeClass().addClass("error").html(message).stop(true, true).fadeIn(500).delay(3000).fadeOut(500);
+                        ui.message = 'Enter end date for reservation';
+                        return false;
+                    }
+
+                    var todayDate = new Date();
+                    startDatePickerValue = startDatePicker.igEditor('option', 'value');
+
+                    if (startDatePickerValue) {
+                        //Calculate difference btw the two dates, and convert to days
+                        var diffEndToday = Math.ceil((endDate.getTime() - todayDate.getTime()) / (oneDay));
+
+                        if (diffEndToday <= 0) {
+                            var message = 'Unable to book room.  Please check the dates you entered';
+                            messageBox.removeClass().addClass("error").html(message).stop(true, true).fadeIn(500).delay(3000).fadeOut(500);
+                            ui.message = 'End date for reservation should be after current date';
+                            return false;
+                        }
+
+                        //Calculate difference btw the two dates, and convert to days
+                        var diffEndStart = Math.ceil((endDate.getTime() - startDatePickerValue.getTime()) / (oneDay));
+
+                        if (diffEndStart <= 0) {
+                            var message = 'Unable to book room.  Please check the dates you entered';
+                            messageBox.removeClass().addClass("error").html(message).stop(true, true).fadeIn(500).delay(3000).fadeOut(500);
+                            ui.message = 'End date for reservation should be after start date';
+                            return false;
+                        }
+                    }
+
+                    var validator = $("#startDatePicker").igEditor("validator");
+                    validator.validate();
+                }
+            }, validatorOptions));
+        });
+
+    </script>
+
+</body>
+</html>

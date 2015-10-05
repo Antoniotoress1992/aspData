@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Auto-Generate Columns</Title>
+    <Description>
+        This sample shows the auto-generate columns functionality of igGrid.  Auto-generation of columns is very useful when the data source contains a lot of columns which should be displayed in the grid. When columns are auto-generated their header captions are taken from the data source field names. The autoGenerateColumns option is used in combination with defaultColumnWidth option.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>列の自動生成</Title>
+    <Description>
+      このサンプルは、igGrid の列の自動生成機能を紹介します。データ ソースがグリッドに表示する列の大量を含む場合、列の自動生成は便利になります。列が自動生成された場合、ヘッダー キャプションはデータ ソースのフィールド名から設定されます。autoGenerateColumns オプションは defaultColumnWidth オプションと使用されます。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

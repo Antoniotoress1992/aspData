@@ -1,0 +1,13 @@
+@{
+    ViewBag.Title = "Scheduler | Export to PDF";
+    ViewBag.SampleTitle = "Export";
+    ViewBag.ShortDescription = "Export to PDF";
+    ViewBag.LongDescription = "Export calendar to PDF";
+}
+
+
+<div style="text-align:center">
+    <input type="button" value="Print" onclick="@Html.Raw(Model.ToPDF("http://dhtmlxscheduler.appspot.com/export/pdf"))" />
+   </div>
+    @Html.Raw(Model.Render()) 
+

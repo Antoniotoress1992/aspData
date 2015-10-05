@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Download All Features</Title>
+    <Description>This sample demonstrates how to load all feature resources files of the control with the Infragistics Loader. When you initialize the Infragistics Loader in JavaScript, resources can be loaded with control name plus astrisk (e.g. igHierarchicalGrid.*).</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>すべての機能のダウンロード</Title>
+    <Description>このサンプルでは、Infragistics ローダーを使用してコントロールのすべての機能リソース ファイルを読み込む方法を紹介します。JavaScript で Infragistics ローダーを初期化する際に、コントロール名と *  (igHierarchicalGrid.* など) を使用してリソースを読み込むことができます。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <IsFullPostBack>False</IsFullPostBack>
+  <MinSampleSize>TabletPortrait</MinSampleSize>
+</Sample>

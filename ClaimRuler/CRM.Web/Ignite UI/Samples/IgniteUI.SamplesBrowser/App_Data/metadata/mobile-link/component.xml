@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Link</Name>
+    <Description>
+      Providing an interactive experience with a seamless workflow is a key aspect of all applications, allowing users to easily navigate through their data. These controls provide that level of interactive navigation to mobile web developers.
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Basic_Link" Value="Basic Link"/>
+      <LocalizedSampleString Key="Button_Link" Value="Button Link"/>
+      <LocalizedSampleString Key="Pre_fetched_Link" Value="Pre-fetched Link"/>
+      <LocalizedSampleString Key="IG_Homepage" Value="http://www.infragistics.com/"/>
+    </LocalizedSampleStrings>
+    <PageKeywords>MobileLink</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Link</Name>
+    <Description>
+      アプリケーションのデータのナビゲーションを向上するために、インタラクティブなエクスペリエンスを使用します。このコントロールはそのインタラクティブなナビゲーションを提供します。
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Basic_Link" Value="基本リンク"/>
+      <LocalizedSampleString Key="Button_Link" Value="ボタン リンク"/>
+      <LocalizedSampleString Key="Pre_fetched_Link" Value="プリフェッチ リンク (英語)"/>
+      <LocalizedSampleString Key="IG_Homepage" Value="http://jp.infragistics.com/"/>
+    </LocalizedSampleStrings>
+    <PageKeywords>MobileLink</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>http://api.jquerymobile.com/button/</ClientApiUrl>
+  <HelpPageName>Link</HelpPageName>
+  <ForumNumber>693</ForumNumber>
+  <IconImage>jquery-mobile-link.png</IconImage>
+  <ClientRuntime>jQueryMobile</ClientRuntime>
+  <TOC>
+    <Sample>basic-usage</Sample>
+  </TOC>
+</Component>

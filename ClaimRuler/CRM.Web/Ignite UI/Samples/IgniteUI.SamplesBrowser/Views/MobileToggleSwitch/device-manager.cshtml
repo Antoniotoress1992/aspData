@@ -1,0 +1,142 @@
+﻿@using Infragistics.Web.Mvc.Mobile
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="@Url.Content("~/css/jqm/jquery.mobile.structure.min.css")" rel="stylesheet" />
+
+    <!-- Required Ignite UI Mobile Combined CSS Files -->
+    <link href="@Url.Content("~/igniteui/mobile/css/structure/infragistics.mobile.css")"  rel="stylesheet"/>
+    <link href="@Url.Content("~/igniteui/mobile/css/themes/ios/infragistics.mobile.theme.css")"  rel="stylesheet"/>
+    
+    <script src="@Url.Content("~/js/modernizr.min.js")"></script>
+    <script src="@Url.Content("~/js/jqm/jquery.min.js")"></script>
+    <script src="@Url.Content("~/js/jqm/jquery.mobile.min.js")"></script>
+
+    <!-- Required Ignite UI Mobile Combined JavaScript File -->
+    <script src="@Url.Content("~/igniteui/mobile/js/infragistics.mobile.js")"></script>
+</head>
+<body>
+    <div data-role="page">
+
+        <style type="text/css">
+            .disabled { display:none;}
+            .ui-grid-b .ui-slider-handle
+            {
+                margin-left : -15px;
+            }
+
+            #settings {
+                margin: 20px 0 0 0;
+            }
+        </style>
+
+        <script type="text/javascript">
+            $(function () {
+                // Fix for IE7 where the controls get misaligned
+                if (navigator && navigator.userAgent) {
+                    var agent = navigator.userAgent.toLowerCase();
+                    var index = agent.indexOf("msie ");
+                    if (index > 0) {
+                        index = parseFloat(agent.substr(index + 5));
+                        if (index <= 7) {
+                            $(".ui-block-c").css("float", "none");
+                        }
+                    }
+                }
+
+                $("#wirelessSwitcher").change(function (ui, evt) {
+                    if (ui.currentTarget.value === "true") {
+                        $("#disabledWireless").addClass("disabled");
+                        $("#enabledWireless").removeClass("disabled");
+                    } else {
+                        $("#enabledWireless").addClass("disabled");
+                        $("#disabledWireless").removeClass("disabled");
+                    }
+                });
+
+                $("#bluetoothSwitcher").change(function (ui, evt) {
+                    if (ui.currentTarget.value === "true") {
+                        $("#disabledBlueTooth").addClass("disabled");
+                        $("#enabledBlueTooth").removeClass("disabled");
+                    } else {
+                        $("#enabledBlueTooth").addClass("disabled");
+                        $("#disabledBlueTooth").removeClass("disabled");
+                    }
+                });
+
+                $("#GPSSwitcher").change(function (ui, evt) {
+                    if (ui.currentTarget.value === "true") {
+                        $("#disabledGPS").addClass("disabled");
+                        $("#enabledGPS").removeClass("disabled");
+                    } else {
+                        $("#enabledGPS").addClass("disabled");
+                        $("#disabledGPS").removeClass("disabled");
+                    }
+                });
+
+            });
+        </script>
+
+        <div data-role="content">
+
+            <h2>Device Manager</h2>
+
+            <fieldset id="settings" class="ui-grid-b" style="width: 300px;">
+                <div class="ui-block-a" style="margin-top: 10px; font-size: 22px; text-align: right;">Wireless: </div>
+                <div class="ui-block-b" style="margin-top: 10px;">
+                    <img id="disabledWireless" class="disabled" alt="Wireless Off" src="@Url.Content("~/images/samples/mobile-toggleswitch/wireless-disabled.png") " />
+                    <img id="enabledWireless"  alt="Wireless On" src="@Url.Content("~/images/samples/mobile-toggleswitch/wireless-enabled.png") " />
+                </div>
+                <div class="ui-block-c" style="">
+                    @(Html.InfragisticsMobile()
+                        .ToggleSwitch()
+                        .OnText("On")
+                        .OffText("Off")
+                        .HideLabel(true)
+                        .SwitchedState(true)
+                        .ID("wirelessSwitcher")
+                        .Render()
+                    )
+                </div>
+                <div class="ui-block-a" style="margin-top: 10px; font-size: 22px; text-align: right;">Bluetooth: </div>
+                <div class="ui-block-b" style="margin-top: 10px;">
+                    <img id="disabledBlueTooth" alt="Bluetooth Off" src="@Url.Content("~/images/samples/mobile-toggleswitch/bluetooth-off.png") " />
+                    <img id="enabledBlueTooth" class="disabled" alt="Bluetooth On" src="@Url.Content("~/images/samples/mobile-toggleswitch/bluetooth-on.png") " />
+                </div>
+                <div class="ui-block-c" style="">
+                    @(Html.InfragisticsMobile()
+                        .ToggleSwitch()
+                        .OnText("On")
+                        .OffText("Off")
+                        .ID("bluetoothSwitcher")
+                        .Render()
+                    )
+                </div>
+                <div class="ui-block-a" style="margin-top: 10px; font-size: 22px; text-align: right;">GPS: </div>
+                <div class="ui-block-b" style="margin-top: 10px;">
+                    <img id="disabledGPS" class="disabled" alt="GPS Disabled" src="@Url.Content("~/images/samples/mobile-toggleswitch/gps-disabled.png") " />
+                    <img id="enabledGPS"  alt="GPS Enabled" src="@Url.Content("~/images/samples/mobile-toggleswitch/gps-enabled.png") " />
+                </div>
+                <div class="ui-block-c" style="">
+                    @(Html.InfragisticsMobile()
+                        .ToggleSwitch()
+                        .OnText("On")
+                        .OffText("Off")
+                        .SwitchedState(true)
+                        .ID("GPSSwitcher")
+                        .Render()
+                    )
+                </div>
+            </fieldset>
+
+        </div>
+    </div>
+
+</body>
+</html>

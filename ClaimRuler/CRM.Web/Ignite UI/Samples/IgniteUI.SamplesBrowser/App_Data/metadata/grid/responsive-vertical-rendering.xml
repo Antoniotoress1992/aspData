@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Responsive Vertical Rendering</Title>
+    <Description>
+        Responsive vertical rendering mode renders the grid data in two columns. The left column holds the columns captions and the right column holds the data. 
+        This sample demonstrates the responsive vertical rendering mode in combination with Paging, Sorting and Selection features. The Sorting feature is supported through the API, that's why you should use a custom sorting interface like the one above the grid.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>レスポンシブ垂直レンダリング</Title>
+    <Description>
+      レスポンシブ垂直レンダリング モードは、グリッド データを 2 つの列で描画します。左の列は、列のキャプションを含み、右の列はデータを含みます。
+      このサンプルでは、レスポンシブ垂直レンダリング モードをページング、並べ替え、選択機能と使用する方法を紹介します。並べ替え機能は API によってサポートされます。グリッドの上にカスタム並べ替えインターフェイスなどを使用できます。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <IsResponsive>True</IsResponsive>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

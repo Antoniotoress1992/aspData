@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>jQuery Mobile Code Examples</Name>
+    <SampleStrings>
+      
+    </SampleStrings>
+    <Description>jQuery Mobile Code Examples</Description>
+    <PageKeywords>jQuery Mobile Code Examples</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>jQuery Mobile のコード例</Name>
+    <SampleStrings>
+
+    </SampleStrings>
+    <Description>jQuery Mobile のコード例</Description>
+    <PageKeywords>jQuery Mobile のコード例</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl></ClientApiUrl>
+  <HelpPageName></HelpPageName>
+  <ForumNumber></ForumNumber>
+  <IconImage></IconImage>
+  <ClientRuntime>jQueryMobile</ClientRuntime>
+  <IsFeatureComponent>False</IsFeatureComponent>
+  <TOC>
+    <Sample>ignite-ui-boilerplate-jquery-mobile</Sample>
+    <Sample>getting-started-list-view</Sample>
+  </TOC>
+</Component>

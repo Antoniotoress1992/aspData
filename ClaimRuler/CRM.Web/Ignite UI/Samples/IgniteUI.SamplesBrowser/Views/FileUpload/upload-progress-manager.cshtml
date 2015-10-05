@@ -1,0 +1,70 @@
+﻿@using Infragistics.Web.Mvc
+@using IgniteUI.SamplesBrowser.Models
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="@Url.Content("~/igniteui/css/themes/infragistics/infragistics.theme.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/igniteui/css/structure/infragistics.css")" rel="stylesheet" />
+
+    <!-- Used to style the API Viewer and Explorer UI -->
+    <link href="@Url.Content("~/css/apiviewer.css")" rel="stylesheet" />
+
+    <script src="@Url.Content("~/js/modernizr.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery-ui.min.js")"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="@Url.Content("~/igniteui/js/infragistics.core.js")"></script>
+    <script src="@Url.Content("~/igniteui/js/infragistics.lob.js")"></script>
+
+    <!-- Used to add markup and provide logging 
+        functionality for the API Explorer and API Viewer UI -->
+    <script src="@Url.Content("~/js/apiviewer.js")"></script>   
+</head>
+<body>
+
+    @(
+        Html.Infragistics().Upload()
+        .ID("igUpload1")
+        .Mode(UploadMode.Multiple)
+        .AutoStartUpload(false)
+        .ProgressUrl(Url.Content("~/IGUploadStatusHandler.ashx"))
+        .ControlId("serverID3")
+        .Render()
+    )
+
+    <div id="error-message" style="color: #FF0000; font-weight: bold;"></div>
+    <div class="api-viewer"></div>
+    <script type="text/javascript">
+        $(function () {
+
+            // Used to show output in the API Viewer at runtime,
+            // defined in external script 'apiviewer.js'
+            var apiViewer = new $.ig.apiViewer();
+
+            $("#igUpload1").on("iguploadfileuploading",
+                function (e, args) {
+                    var message = "<div>" +
+                        "File Id: " + args.fileId + "<br />" +
+                        "File Path: " + args.filePath + "<br />" +
+                        "File Status: " + args.fileStatus + "<br />" +
+                        "Total Size: " + args.totalSize + "<br />" +
+                        "Uploaded Bytes: " + args.uploadedBytes + "<br />" +
+                        "</div>";
+
+                    apiViewer.log(message);
+                }
+            );
+
+            $("#igUpload1").on("iguploadonerror", function (e, args) {
+                $("#error-message").html(args.serverMessage).stop(true, true).fadeIn(500).delay(3000).fadeOut(500);
+            });
+        });
+   </script>
+</body>
+</html>

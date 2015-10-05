@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">map/cloudmade-maps</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      The igMap is a HTML5 jQuery map control that can render data sets consisting of large number of geographic locations in shapes of markers, lines, polygons, and even as interactive bitmaps.
+                 
+      In addition, this control includes functionality to overlay multiple map layers with geographic data over imagery tiles from 
+      <a href="~/map/openstreet-maps">OpenStreetMap®</a>, 
+      <a href="~/map/bing-maps">Bing® Maps</a>, and
+      <a href="~/map/cloudmade-maps">CloudMade® Maps</a> providers.
+      For example, you can <a href="~/map/marker-template">mark specific map locations</a> and display information on the map using custom markers and color them depending on data parameters. 
+      Also, you can use <a href="~/map/geo-shapes-series">shape files to draw shapes around geographical regions.</a> 
+      See the complete list of samples in the menu.
+      
+      <p>The igMap can render data using following type of geographic map series:
+        <ul>
+         <li><a href="~/map/geo-high-density-scatter-series">Geographic High Density Scatter Series</a></li>
+         <li><a href="~/map/geo-scatter-area">Geographic Scatter Area Series</a></li>
+         <li><a href="~/map/geo-contour-line">Geographic Contour Line Series</a></li>
+         <li><a href="~/map/geo-polyline-series">Geographic Polyline Series</a></li>
+         <li><a href="~/map/geo-shapes-series">Geographic Shapes Series</a></li>
+         <li><a href="~/map/geo-symbol-series">Geographic Symbol Series</a></li>
+          <li>And more listed in the menu!</li>
+        </ul>
+      </p>
+     
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      igMap は HTML5 jQuery マップ コントロールです。多数の地理位置を含むデータ セットをマーカー、線、ポリゴン、ビットマップなどの形式で描画できます。
+                 
+      また、<a href="~/map/openstreet-maps">OpenStreetMap®</a>、<a href="~/map/bing-maps">Bing® Maps</a>、および <a href="~/map/cloudmade-maps">CloudMade® Maps</a> プロバイダーからの画像タイルの上に複数のマップ レイヤーをオーバーレイする機能も提供します。 
+      たとえば、<a href="~/map/marker-template">指定したマップ位置をマークし</a>、カスタム マーカーを使用してマップで情報を表示できます。データ パラメーターに基づいて色を設定できます。
+      <a href="~/map/geo-shapes-series">シェープ ファイル</a>を使用すると、地理的領域の周りに図形を描画できます。
+      サンプルをすべて表示するには、メニューを参照してください。
+      
+      <p>igMap は以下の地理マップ系列を使用してデータを描画できます:
+        <ul>
+         <li><a href="~/map/geo-high-density-scatter-series">地理高密度散布系列</a></li>
+         <li><a href="~/map/geo-scatter-area">地理散布エリア系列</a></li>
+         <li><a href="~/map/geo-contour-line">地理等高線系列</a></li>
+         <li><a href="~/map/geo-polyline-series">地理的ポリライン系列</a></li>
+         <li><a href="~/map/geo-shapes-series">地理図形系列</a></li>
+         <li><a href="~/map/geo-symbol-series">地理記号系列</a></li>
+          <li>すべてのサンプルを表示するには、メニューを参照してください。</li>
+        </ul>
+      </p>
+     
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

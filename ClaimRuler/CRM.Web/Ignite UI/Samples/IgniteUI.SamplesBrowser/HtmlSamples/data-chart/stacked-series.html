@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Stacked Series</title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="../../igniteui/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+    <link href="../../igniteui/css/structure/infragistics.css" rel="stylesheet" />
+
+    <!--CSS file specific for chart styling -->
+    <link href="../../igniteui/css/structure/modules/infragistics.ui.chart.new.css" rel="stylesheet" />
+
+    <style>
+        .chart {
+            display: inline-block;
+            margin: 0 10px 10px 0;
+        }
+
+            .chart h4 {
+                margin-bottom: 5px;
+            }
+    </style>
+
+    <script src="../../js/modernizr.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="../../igniteui/js/infragistics.core.js"></script>
+    <script src="../../igniteui/js/infragistics.dv.js"></script>
+
+</head>
+<body>
+
+    <div class="chart">
+        <h2 align="center">Stacked Bar</h2>
+        <div id="stackedBar"></div>
+    </div>
+    <div class="chart">
+        <h2 align="center">Stacked 100 Bar</h2>
+        <div id="stacked100Bar"></div>
+    </div>
+    <div class="chart">
+        <h2 align="center">Stacked Area</h2>
+        <div id="stackedArea"></div>
+    </div>
+    <div class="chart">
+        <h2 align="center">Stacked Column</h2>
+        <div id="stackedColumn"></div>
+    </div>
+    <div class="chart">
+        <h2 align="center">Stacked Line</h2>
+        <div id="stackedLine"></div>
+    </div>
+    <div class="chart">
+        <h2 align="center">Stacked Spline</h2>
+        <div id="stackedSpline"></div>
+    </div>
+    <div class="chart">
+        <h2 align="center">Stacked Spline Area</h2>
+        <div id="stackedSplineArea"></div>
+    </div>
+    <div class="chart">
+        <h2 align="center">Stacked 100 Area</h2>
+        <div id="stacked100Area"></div>
+    </div>
+    <div class="chart">
+        <h2 align="center">Stacked 100 Column</h2>
+        <div id="stacked100Column"></div>
+    </div>
+    <div class="chart">
+        <h2 align="center">Stacked 100 Line</h2>
+        <div id="stacked100Line"></div>
+    </div>
+    <div class="chart">
+        <h2 align="center">Stacked 100 Spline</h2>
+        <div id="stacked100Spline"></div>
+    </div>
+    <div class="chart">
+        <h2 align="center">Stacked 100 Spline Area</h2>
+        <div id="stacked100SplineArea"></div>
+    </div>
+
+    <div class="EIAdata-attribution">
+        Energy data from:<br />
+        <a href="http://www.eia.gov/" target="_blank">U.S. Energy Information Administration (2012)</a>
+    </div>
+
+    <script type="text/javascript" src="../../data-files/world-energy-production.js"></script>
+
+    <script>
+
+        $(function () {
+            function generateCategoryYChart(chartType) {
+
+                var selector = "#" + chartType;
+                $(selector).igDataChart({
+                    dataSource: lastFiveYears,
+                    height: "400px",
+                    width: "400px",
+                    title: "Energy Production Per Country",
+                    subtitle: "The top five Total Primary Energy producers",
+                    axes: [{
+                        name: "Year",
+                        type: "categoryY",
+                        label: "Year",
+                        title: "Year",
+                        gap: 1,
+                        labelMargin: 0
+                    }, {
+                        name: "Volume",
+                        type: "numericX",
+                        title: "Quadrillion Btu"
+                    }],
+                    series: [{
+                        name: "parent",
+                        type: chartType,
+                        xAxis: "Volume",
+                        yAxis: "Year",
+                        outline: "transparent",
+                        radius: 0,
+                        series: [{
+                            name: "China",
+                            title: "China",
+                            type: "stackedFragment",
+                            showTooltip: true,
+                            tooltipTemplate: "China",
+                            valueMemberPath: "China"
+                        }, {
+                            name: "United States",
+                            title: "United States",
+                            type: "stackedFragment",
+                            showTooltip: true,
+                            tooltipTemplate: "United States",
+                            valueMemberPath: "UnitedStates"
+                        }, {
+                            name: "Russia",
+                            title: "Russia",
+                            showTooltip: true,
+                            tooltipTemplate: "Russia",
+                            type: "stackedFragment",
+                            valueMemberPath: "Russia"
+                        }, {
+                            name: "Saudi Arabia",
+                            title: "Saudi Arabia",
+                            showTooltip: true,
+                            tooltipTemplate: "Saudi Arabia",
+                            type: "stackedFragment",
+                            valueMemberPath: "SaudiArabia"
+                        }, {
+                            name: "Canada",
+                            title: "Canada",
+                            showTooltip: true,
+                            tooltipTemplate: "Canada",
+                            type: "stackedFragment",
+                            valueMemberPath: "Canada"
+                        }]
+                    }],
+                    horizontalZoomable: true,
+                    verticalZoomable: true,
+                    windowResponse: "immediate"
+                });
+            }
+
+            function generateCategoryXChart(chartType) {
+
+                var selector = "#" + chartType;
+                var isColumnChart = chartType.contains("Column");
+
+                $(selector).igDataChart({
+                    dataSource: lastFiveYears,
+                    height: "400px",
+                    width: "400px",
+                    title: "Energy Production Per Country",
+                    subtitle: "The top five Total Primary Energy producers",
+                    axes: [{
+                        name: "Year",
+                        type: "categoryX",
+                        label: "Year",
+                        title: "Year",
+                        gap: 1,
+                    },
+                        {
+                            name: "Volume",
+                            type: "numericY",
+                            title: "Quadrillion Btu"
+                        }],
+                    series: [function () { // a self executing function to create the series initialization object
+                        var seriesObj = {
+                            name: "parent",
+                            xAxis: "Year",
+                            yAxis: "Volume",
+                            type: chartType,
+                            outline: "transparent",
+                            series: [{
+                                name: "China",
+                                title: "China",
+                                type: "stackedFragment",
+                                showTooltip: true,
+                                tooltipTemplate: "China",
+                                valueMemberPath: "China"
+                            }, {
+                                name: "United States",
+                                title: "United States",
+                                type: "stackedFragment",
+                                showTooltip: true,
+                                tooltipTemplate: "United States",
+                                valueMemberPath: "UnitedStates"
+                            }, {
+                                name: "Russia",
+                                title: "Russia",
+                                showTooltip: true,
+                                tooltipTemplate: "Russia",
+                                type: "stackedFragment",
+                                valueMemberPath: "Russia"
+                            }, {
+                                name: "Saudi Arabia",
+                                title: "Saudi Arabia",
+                                showTooltip: true,
+                                tooltipTemplate: "Saudi Arabia",
+                                type: "stackedFragment",
+                                valueMemberPath: "SaudiArabia"
+                            }, {
+                                name: "Canada",
+                                title: "Canada",
+                                showTooltip: true,
+                                tooltipTemplate: "Canada",
+                                type: "stackedFragment",
+                                valueMemberPath: "Canada"
+                            }]
+                        };
+                        if (isColumnChart) { //for column charts set the radius to 0
+                            seriesObj.radius = 0;
+                        }
+                        return seriesObj;
+                    }()],
+                    horizontalZoomable: true,
+                    verticalZoomable: true,
+                    windowResponse: "immediate"
+                });
+            };
+
+            generateCategoryYChart("stackedBar");
+            generateCategoryYChart("stacked100Bar");
+            generateCategoryXChart("stackedArea");
+            generateCategoryXChart("stackedColumn");
+            generateCategoryXChart("stackedLine");
+            generateCategoryXChart("stackedSpline");
+            generateCategoryXChart("stackedSplineArea");
+            generateCategoryXChart("stacked100Area");
+            generateCategoryXChart("stacked100Column");
+            generateCategoryXChart("stacked100Line");
+            generateCategoryXChart("stacked100Spline");
+            generateCategoryXChart("stacked100SplineArea");
+        });
+
+    </script>
+
+</body>
+</html>

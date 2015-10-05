@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Layout Modes</Title>
+    <Description>This sample compares the layout of the igPivotGrid when compact column and row headers are enabled or disabled.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>レイアウト モード</Title>
+    <Description>このサンプルでは、コンパクト列と行ヘッダーが有効または無効な場合の igPivotGrid のレイアウトを比較します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <MinSampleSize>Desktop</MinSampleSize>
+</Sample>

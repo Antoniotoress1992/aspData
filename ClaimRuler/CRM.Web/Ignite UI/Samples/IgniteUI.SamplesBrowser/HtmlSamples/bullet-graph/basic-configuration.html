@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="../../igniteui/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+    <link href="../../igniteui/css/structure/infragistics.css" rel="stylesheet" />
+
+    <!-- Used to style the API Viewer and Explorer UI -->
+    <link href="../../css/apiviewer.css" rel="stylesheet" type="text/css" />
+
+    <script src="../../js/modernizr.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="../../igniteui/js/infragistics.core.js"></script>
+    <script src="../../igniteui/js/infragistics.dv.js"></script>
+
+</head>
+<body>
+    <div style="margin-top: 5px; font-weight: bold">Fiscal Year Sales Target</div>
+    
+    <div style="height:150px">
+        <div id="bulletgraph" ></div>
+    </div>
+    <div >
+        Sales revenue this year (the horizontal white line) has exceeded last year's sales of 15k (the beginning of the acceptable range) by an average of 10% each quarter. Still there is a long way to go in order to reach our total target  for the year (vertical white line). Interestingly, sales have followed roughly the same trajectory as last year, reinforcing a pattern of buying habits we've witnessed over the past five years.
+    </div>
+
+    <script type="text/javascript">
+        $(function () {
+            $("#bulletgraph").igBulletGraph({
+                height: "80px",
+                width: "100%",
+                minimumValue: 0, // default is 0
+                maximumValue: 25, // default is 100
+                interval: 5,
+                value: 17,
+                targetValue: 21,
+                ranges: [
+                    {
+                        name: 'bad',
+                        startValue: 0,
+                        endValue: 15
+                    },
+                    {
+                        name: 'acceptable',
+                        startValue: 15,
+                        endValue: 20
+                    },
+                    {
+                        name: 'good',
+                        startValue: 20,
+                        endValue: 25
+                    }], 
+                formatLabel: function (evt, ui) {
+                        ui.label = ui.label+"K";
+                    }
+            });
+        });
+    </script>
+</body>
+</html>

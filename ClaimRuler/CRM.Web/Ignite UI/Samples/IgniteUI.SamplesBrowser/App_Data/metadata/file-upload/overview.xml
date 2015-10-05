@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">file-upload/basic-usage</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      The igUpload is an upload control that allows you to upload any type of files, sending them from the browser to the server. 
+      It handles <a href="~/file-upload/basic-usage">single uploads (default)</a> or <a href="~/file-upload/multiple-upload">simultaneous, multiple file uploads</a>. 
+      With server-side configuration, the igUpload <a href="~/file-upload/progress-information">displays progress information</a> during the file upload operation.
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      igUpload は、あらゆるタイプのファイルをアップロードし、ブラウザーからサーバーへファイルを送信できるようにするコントロールです。
+      <a href="~/file-upload/basic-usage">単一のアップロード (デフォルト)</a> または<a href="~/file-upload/multiple-upload">同期の複数のファイル アップロード</a>を処理します。
+      サーバー側の構成を使用し、igUpload はファイル アップロード操作で<a href="~/file-upload/progress-information">進行状況を表示</a>します。
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

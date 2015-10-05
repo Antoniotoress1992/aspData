@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Sorting</Title>
+    <Description>This sample demonstrates how to enable sorting in the igPivotGrid and how to apply sorting for specific levels upon initialization.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>並べ替え</Title>
+    <Description>このサンプルでは、igPivotGrid の並べ替えを有効にし、初期化で特定のレベルに並べ替えを適用する方法を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <MinSampleSize>TabletLandscape</MinSampleSize>
+</Sample>

@@ -1,0 +1,11 @@
+﻿@model Infragistics.IgniteUI.SamplesBrowser.Shared.Entities.HelpCodeExample
+<div class="igsb-help-code-example">
+@if (Model.SampleViewModel.Sample.Code.HasRunningSampleBody)
+{
+    @Html.Partial("_RunningSample", Model.SampleViewModel)
+}
+    <div class="igsb-code-example">
+    <div class="igsb-sample-desc">@Html.Raw(Model.Description)</div>
+    @Html.Partial("_CodeViewer", Model.SampleViewModel.Sample.Code)
+    </div>
+</div>

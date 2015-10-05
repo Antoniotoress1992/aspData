@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Bezier Curve And Tooltips</Title>
+    <Description>This sample demonstrates how to make the appearance of a funnel chart more appealing by using Bezier curves for the shape of the chart. It also displays tooltips when the mouse is hovered over each of the Funnel chart slices.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Overview" TopicName="igFunnelChart_Overview" />
+      <HelpTopic Title="Configuring" TopicName="igFunnelChart_Configuring" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>ベジエ曲線およびツールチップ</Title>
+    <Description>このサンプルでは、チャート図形でベジエ曲線を使用し、ファンネル チャートの外観を変更します。また、マウスがファンネル チャートのスライスの上にホバーしたときにツールチップを表示します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="概要" TopicName="igFunnelChart_Overview" />
+      <HelpTopic Title="構成" TopicName="igFunnelChart_Configuring" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

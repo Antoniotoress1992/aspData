@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Filtering</Title>
+    <Description>Our jQuery Grid filtering feature includes two modes: simple and advanced.
+    This sample demonstrates the advanced filtering where multiple filtering conditions can be applied.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>フィルタリング</Title>
+    <Description>
+      jQuery グリッドのフィルタリング機能には、簡易および詳細モードがあります。
+      このサンプルでは、複数フィルタリング条件を適用可能な詳細フィルタリングを紹介します。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

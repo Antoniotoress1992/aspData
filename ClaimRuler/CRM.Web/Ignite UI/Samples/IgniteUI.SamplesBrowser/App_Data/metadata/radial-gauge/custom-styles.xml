@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Custom Styles</Title>
+    <Description>This sample demonstrates how to change the look and feel of igRadialGauge control.</Description>
+    <HelpTopics>
+      <HelpTopic Title="igRadialGauge" TopicName="igRadialGauge" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>カスタム スタイル</Title>
+    <Description>このサンプルでは、igRadialGauge コントロールのルック アンド フィールを変更する方法を紹介します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="igRadialGauge" TopicName="igRadialGauge" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

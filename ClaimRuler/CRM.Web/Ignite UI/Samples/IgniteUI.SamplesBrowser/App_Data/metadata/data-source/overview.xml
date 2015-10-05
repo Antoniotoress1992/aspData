@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">data-source/json-binding</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      The igDataSource component is the standard Ignite UI component for binding to various kinds and sources of data. It serves as an intermediate layer between the 
+      data-bound controls like <a href="~/grid">igGrid</a> and the actual data, which can be either local (e.g. <a href="~/data-source/json-binding">JSON</a>, 
+      <a href="~/data-source/xml-binding">XML</a>, JavaScript Array, etc.) or 
+      remote (<a href="~/data-source/odata">OData</a>, REST services, WCF services, etc.). Paging, filtering, and sorting are supported, too. See the complete list of samples in the menu.
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      igDataSource コンポーネントは、データのさまざまなタイプにバインドするための規格の Ignite UI コンポーネントです。<a href="~/grid">igGrid</a> などのデータ バインド コントロールと実際のデータの間のレイヤーとして操作します。データ ソースはローカル (<a href="~/data-source/json-binding">JSON</a>、<a href="~/data-source/xml-binding">XML</a>、JavaScript 配列など) またはリモート (<a href="~/data-source/odata">OData</a>、REST サービス、WCF サービスなど) に設定できます。 
+      ページング、フィルタリング、並べ替えもサポートされます。サンプルをすべて表示するには、メニューを参照してください。
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

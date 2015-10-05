@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>KnockoutJS Binding</Title>
+    <Description>This sample demonstrates how to bind igTree to hierarchical data managed by KnockoutJS data bindings.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>KnockoutJS のバインド</Title>
+    <Description>このサンプルでは、KnockoutJS データ バインディングによって処理される階層データを igTree にバインドする方法を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>Remote</ServerRuntime>
+  <Status></Status>
+</Sample>

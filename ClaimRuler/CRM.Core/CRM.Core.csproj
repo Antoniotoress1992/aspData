@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5E69DACE-F45D-4750-B300-241847766E48}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CRM.Core</RootNamespace>
+    <AssemblyName>CRM.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics4.WebUI.Misc.v13.1">
+      <HintPath>..\..\..\..\Desktop\InfragisticsDll\Infragistics4.WebUI.Misc.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.WebUI.Shared.v13.1">
+      <HintPath>..\..\..\..\Desktop\InfragisticsDll\Infragistics4.WebUI.Shared.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.WebUI.WebDataInput.v13.1">
+      <HintPath>..\..\..\..\Desktop\InfragisticsDll\Infragistics4.WebUI.WebDataInput.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.WebUI.WebHtmlEditor.v13.1">
+      <HintPath>..\..\..\..\Desktop\InfragisticsDll\Infragistics4.WebUI.WebHtmlEditor.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.WebUI.WebSchedule.v13.1">
+      <HintPath>..\..\..\..\Desktop\InfragisticsDll\Infragistics4.WebUI.WebSchedule.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics45.WebUI.Documents.Reports.v14.1">
+      <HintPath>..\..\..\..\Desktop\InfragisticsDll\Infragistics45.WebUI.Documents.Reports.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics45.WebUI.Documents.Word.v14.1">
+      <HintPath>..\..\..\..\Desktop\InfragisticsDll\Infragistics45.WebUI.Documents.Word.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics45.WebUI.Shared.v14.1">
+      <HintPath>..\..\..\..\Desktop\InfragisticsDll\Infragistics45.WebUI.Shared.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics45.WebUI.WebSchedule.v14.1">
+      <HintPath>..\..\..\..\Desktop\InfragisticsDll\Infragistics45.WebUI.WebSchedule.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics45.WebUI.WebScheduleDataProvider.v14.1, Version=14.1.20141.2011, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Desktop\InfragisticsDll\Infragistics45.WebUI.WebScheduleDataProvider.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics45.WebUI.WebHtmlEditor.v14.1, Version=14.1.20141.2011, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Desktop\InfragisticsDll\Infragistics45.WebUI.WebHtmlEditor.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics45.WebUI.WebDataInput.v14.1, Version=14.1.20141.2011, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Desktop\InfragisticsDll\Infragistics45.WebUI.WebDataInput.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics45.Web.jQuery.v14.1, Version=14.1.20141.2011, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Desktop\InfragisticsDll\Infragistics45.Web.jQuery.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics45.Web.v14.1, Version=14.1.20141.2011, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Desktop\InfragisticsDll\Infragistics45.Web.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics45.WebUI.Misc.v14.1, Version=14.1.20141.2011, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Desktop\InfragisticsDll\Infragistics45.WebUI.Misc.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics45.WebUI.Documents.IO.v14.1, Version=14.1.20141.2011, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Desktop\InfragisticsDll\Infragistics45.WebUI.Documents.IO.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics45.WebUI.Documents.Excel.v14.1, Version=14.1.20141.2011, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Desktop\InfragisticsDll\Infragistics45.WebUI.Documents.Excel.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics45.WebUI.Documents.Core.v14.1, Version=14.1.20141.2011, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Desktop\InfragisticsDll\Infragistics45.WebUI.Documents.Core.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Atom.NET">
+      <HintPath>..\Lib\Atom.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.AccessControl, Version=2.2.0.0, Culture=neutral, PublicKeyToken=b4b8eb9a7afc8328, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Google.GData.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Calendar, Version=2.2.0.0, Culture=neutral, PublicKeyToken=aa6748391206b888, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Google.GData.Calendar.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Client, Version=2.2.0.0, Culture=neutral, PublicKeyToken=04a59ca9b0273830, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Google.GData.Client.DLL</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Extensions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=0b4c5df2ebf20876, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Google.GData.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="ImapX">
+      <HintPath>..\Lib\ImapX.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\Lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Common">
+      <HintPath>..\Lib\Spire.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Doc">
+      <HintPath>..\Lib\Spire.Doc.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf">
+      <HintPath>..\Lib\Spire.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.XLS">
+      <HintPath>..\Lib\Spire.XLS.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bingMapHelper.cs" />
+    <Compile Include="CollectionManager.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="CSVHelper.cs" />
+    <Compile Include="DateHelper.cs" />
+    <Compile Include="EmailHelper.cs" />
+    <Compile Include="ExportLeadHelper.cs" />
+    <Compile Include="GCalendarHelper.cs" />
+    <Compile Include="geoResponse.cs" />
+    <Compile Include="MenuHelper.cs" />
+    <Compile Include="MergeDocumentHelper.cs" />
+    <Compile Include="PDFPageEventHelper.cs" />
+    <Compile Include="PermissionHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportHelper.cs" />
+    <Compile Include="SecurityManager.cs" />
+    <Compile Include="Service References\bingMapGeocodeService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\bingMapImageryService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="SessionHelper.cs" />
+    <Compile Include="TextManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CRM.Data\CRM.Data.csproj">
+      <Project>{5420cf5e-d3b5-4767-a8ec-df1c76601ed0}</Project>
+      <Name>CRM.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CRM.Repository\CRM.Repository.csproj">
+      <Project>{bc3d9197-a0c3-429d-bd3c-b483627974ec}</Project>
+      <Name>CRM.Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Service References\bingMapGeocodeService\CRM.Core.bingMapGeocodeService.GeocodeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\bingMapGeocodeService\GeocodeService.wsdl" />
+    <None Include="Service References\bingMapGeocodeService\GeocodeService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\bingMapGeocodeService\GeocodeService1.wsdl" />
+    <None Include="Service References\bingMapGeocodeService\GeocodeService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\bingMapGeocodeService\GeocodeService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\bingMapGeocodeService\GeocodeService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\bingMapGeocodeService\GeocodeService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\bingMapImageryService\CRM.Core.bingMapImageryService.ImageryMetadataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\bingMapImageryService\CRM.Core.bingMapImageryService.MapUriResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\bingMapImageryService\ImageryService.wsdl" />
+    <None Include="Service References\bingMapImageryService\ImageryService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\bingMapImageryService\imageryservice1.wsdl" />
+    <None Include="Service References\bingMapImageryService\ImageryService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\bingMapImageryService\ImageryService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\bingMapImageryService\ImageryService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\bingMapImageryService\ImageryService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\bingMapImageryService\ImageryService5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\bingMapGeocodeService\" />
+    <WCFMetadataStorage Include="Service References\bingMapImageryService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\bingMapImageryService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\bingMapImageryService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\bingMapImageryService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\bingMapGeocodeService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\bingMapGeocodeService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\bingMapGeocodeService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

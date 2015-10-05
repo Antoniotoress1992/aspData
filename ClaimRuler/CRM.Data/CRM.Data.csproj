@@ -1,0 +1,738 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5420CF5E-D3B5-4767-A8EC-DF1C76601ED0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CRM.Data</RootNamespace>
+    <AssemblyName>CRM.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevDefined.OAuth">
+      <HintPath>..\packages\DevDefined.OAuth.0.1\lib\DevDefined.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics45.WebUI.Shared.v14.1, Version=14.1.20141.2011, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Infragistics45.WebUI.Shared.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics45.WebUI.WebSchedule.v14.1, Version=14.1.20141.2011, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Infragistics45.WebUI.WebSchedule.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Intuit.Ipp.Core">
+      <HintPath>..\packages\IppDotNetSdkForQuickBooksApiV3.2.0.2\lib\Intuit.Ipp.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Intuit.Ipp.Data">
+      <HintPath>..\packages\IppDotNetSdkForQuickBooksApiV3.2.0.2\lib\Intuit.Ipp.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Intuit.Ipp.DataService">
+      <HintPath>..\packages\IppDotNetSdkForQuickBooksApiV3.2.0.2\lib\Intuit.Ipp.DataService.dll</HintPath>
+    </Reference>
+    <Reference Include="Intuit.Ipp.Diagnostics">
+      <HintPath>..\packages\IppDotNetSdkForQuickBooksApiV3.2.0.2\lib\Intuit.Ipp.Diagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="Intuit.Ipp.Exception">
+      <HintPath>..\packages\IppDotNetSdkForQuickBooksApiV3.2.0.2\lib\Intuit.Ipp.Exception.dll</HintPath>
+    </Reference>
+    <Reference Include="Intuit.Ipp.LinqExtender">
+      <HintPath>..\packages\IppDotNetSdkForQuickBooksApiV3.2.0.2\lib\Intuit.Ipp.LinqExtender.dll</HintPath>
+    </Reference>
+    <Reference Include="Intuit.Ipp.PlatformService">
+      <HintPath>..\packages\IppDotNetSdkForQuickBooksApiV3.2.0.2\lib\Intuit.Ipp.PlatformService.dll</HintPath>
+    </Reference>
+    <Reference Include="Intuit.Ipp.QueryFilter">
+      <HintPath>..\packages\IppDotNetSdkForQuickBooksApiV3.2.0.2\lib\Intuit.Ipp.QueryFilter.dll</HintPath>
+    </Reference>
+    <Reference Include="Intuit.Ipp.Retry">
+      <HintPath>..\packages\IppDotNetSdkForQuickBooksApiV3.2.0.2\lib\Intuit.Ipp.Retry.dll</HintPath>
+    </Reference>
+    <Reference Include="Intuit.Ipp.Security">
+      <HintPath>..\packages\IppDotNetSdkForQuickBooksApiV3.2.0.2\lib\Intuit.Ipp.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Intuit.Ipp.Utility">
+      <HintPath>..\packages\IppDotNetSdkForQuickBooksApiV3.2.0.2\lib\Intuit.Ipp.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="LinqKit">
+      <HintPath>..\Lib\LinqKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\ActivityManager.cs" />
+    <Compile Include="Account\AdjusterManager.cs" />
+    <Compile Include="Account\AdjusterNoteManager.cs" />
+    <Compile Include="Account\AdjusterReferenceManager.cs" />
+    <Compile Include="Account\AdjusterStateLicenseManager.cs" />
+    <Compile Include="Account\AdjusterTypeClaimHandledManager.cs" />
+    <Compile Include="Account\ApplicationConfigurationManager.cs" />
+    <Compile Include="Account\AppraiserManager.cs" />
+    <Compile Include="Account\CarrierChannelManager.cs" />
+    <Compile Include="Account\CarrierCommentManager.cs" />
+    <Compile Include="Account\CarrierContactManager.cs" />
+    <Compile Include="Account\CarrierDocumentManager.cs" />
+    <Compile Include="Account\CarrierInvoiceProfileFeeItemizedManager.cs" />
+    <Compile Include="Account\CarrierInvoiceProfileManager.cs" />
+    <Compile Include="Account\CarrierInvoiceProfileFeeProvisionManager.cs" />
+    <Compile Include="Account\CarrierInvoiceTypeManager.cs" />
+    <Compile Include="Account\CarrierLocationManager.cs" />
+    <Compile Include="Account\CarrierManager.cs" />
+    <Compile Include="Account\CarrierTaskManager.cs" />
+    <Compile Include="Account\CheckPrimaryValue.cs" />
+    <Compile Include="Account\City.cs" />
+    <Compile Include="Account\ClaimCommentManager.cs" />
+    <Compile Include="Account\ClaimContactManager.cs" />
+    <Compile Include="Account\ClaimDocumentManager.cs" />
+    <Compile Include="Account\ClaimLimitManager.cs" />
+    <Compile Include="Account\ClaimsManager.cs" />
+    <Compile Include="Account\ClaimSubLimitManager.cs" />
+    <Compile Include="Account\ClientManager.cs" />
+    <Compile Include="Account\ContactManager.cs" />
+    <Compile Include="Account\ContractorManager.cs" />
+    <Compile Include="Account\DocumentLisMasterManager.cs" />
+    <Compile Include="Account\FieldColumnManager.cs" />
+    <Compile Include="Account\InsuranceTypeManager.cs" />
+    <Compile Include="Account\CarrierInvoiceProfileFeeScheduleManager.cs" />
+    <Compile Include="Account\InvoiceApprovalRuleManager.cs" />
+    <Compile Include="Account\InvoiceServiceManager.cs" />
+    <Compile Include="Account\InvoiceTypeManager.cs" />
+    <Compile Include="Account\LeadContactManager.cs" />
+    <Compile Include="Account\LeadContactTypeManager.cs" />
+    <Compile Include="Account\CSVReader.cs" />
+    <Compile Include="Account\InspectorManager.cs" />
+    <Compile Include="Account\LeadCommentManager.cs" />
+    <Compile Include="Account\LeadDocumentListManager.cs" />
+    <Compile Include="Account\InvoiceDetailManager.cs" />
+    <Compile Include="Account\LeadInvoiceDetailManager.cs" />
+    <Compile Include="Account\LeadInvoiceManager.cs" />
+    <Compile Include="Account\LeadPolicyDamageTypeManager.cs" />
+    <Compile Include="Account\LeadPolicyManager.cs" />
+    <Compile Include="Account\LeadPolicyTypeManager.cs" />
+    <Compile Include="Account\LeadReportLogManager.cs" />
+    <Compile Include="Account\LeadsManager.cs" />
+    <Compile Include="Account\CountryMasterManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Account\LeadSourceManager.cs" />
+    <Compile Include="Account\LeadsUploadManager.cs" />
+    <Compile Include="Account\LedgerManager.cs" />
+    <Compile Include="Account\LetterTemplateManager.cs" />
+    <Compile Include="Account\LienholderManager.cs" />
+    <Compile Include="Account\LimitManager.cs" />
+    <Compile Include="Account\MortgageeManager.cs" />
+    <Compile Include="Account\PolicyLimitManager.cs" />
+    <Compile Include="Account\PolicySublimitManager.cs" />
+    <Compile Include="Account\RecurrenceManager.cs" />
+    <Compile Include="Account\ReminderManager.cs" />
+    <Compile Include="Account\SubLimitOfLiabilityManager.cs" />
+    <Compile Include="Account\TaskReminderMasterManager.cs" />
+    <Compile Include="Account\ReminderMasterManager.cs" />
+    <Compile Include="Account\SchedulerManager.cs" />
+    <Compile Include="Account\UmpireManager.cs" />
+    <Compile Include="AdjusterMaster.cs" />
+    <Compile Include="AdjusterView.cs" />
+    <Compile Include="BillToView.cs" />
+    <Compile Include="CarrierView.cs" />
+    <Compile Include="Claim.cs" />
+    <Compile Include="Contact.cs" />
+    <Compile Include="CurrentLeadPolicy.cs" />
+    <Compile Include="DeployementAddressData.cs" />
+    <Compile Include="DocumentList.cs" />
+    <Compile Include="Email.cs" />
+    <Compile Include="Entities\Action.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Activity.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\AdjusterDeploymentAddress.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\AdjusterDeploymentEvent.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\AdjusterHandleClaimType.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\AdjusterLicenseAppointmentType.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\AdjusterMaster.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\AdjusterNote.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\AdjusterReference.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\AdjusterServiceArea.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\AdjusterSettingsPayroll.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ApplicationConfiguration.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\AppraiserMaster.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\BusinessRule.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Carrier.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CarrierChannel.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CarrierComment.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CarrierContact.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CarrierDocument.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CarrierInvoiceProfile.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CarrierInvoiceProfileFeeItemized.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CarrierInvoiceProfileFeeProvision.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CarrierInvoiceProfileFeeSchedule.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CarrierInvoiceType.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CarrierLocation.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ChannelType.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CityMaster.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Claim.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ClaimComment.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ClaimContact.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ClaimDocument.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ClaimExpense.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ClaimImage.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ClaimLimit.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Claims.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ClaimService.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ClaimSubLimit.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Client.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ClientFieldColumn.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ClientLetterTemplate.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Contact.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ContractorMaster.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CountryMaster.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CRMModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRMModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CRMModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CRMModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRMModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\DataForm.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\DataFormField.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\DataFormFieldTemplate.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\DocumentCategory.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\DocumentListMaster.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EarningCode.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ExpenseType.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\FieldColumn.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\FloodPolicyMaster.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\HabitableMaster.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ImportField.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\InspectorMaster.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\InsuranceType.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Invitee.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Invoice.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\InvoiceDetail.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\InvoiceFeeProfile.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\InvoiceFeeProfileDetail.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\InvoiceFeeProfileProvision.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\InvoiceServiceType.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\InvoiceServiceUnit.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\InvoiceType.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\LeadComment.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\LeadContact.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\LeadContactType.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\LeadDocumentList.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\LeadInvoice.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\LeadInvoiceDetail.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\LeadLog.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\LeadPolicy.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\LeadPolicyCoverage.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\LeadPolicyDamageType.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\LeadPolicyLienholder.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\LeadPolicyType.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\LeadReportGenerateLog.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Leads.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\LeadsDocument.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\LeadsImage.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\LeadSourceMaster.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Ledger.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Limit.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Mortgagee.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\OtherSourceMaster.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\OwnerSameMaster.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\PolicyLienholder.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\PolicyLimit.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\PolicyNote.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\PolicySubLimit.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ProducerMaster.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ProgressStatus.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\PropertyType.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Recurrence.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Reminder.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ReminderMaster.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ReportedToInsurerMaster.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\RoleAction.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Rule.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\RuleException.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\RuleObject.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\SecLoginLog.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\SecModule.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\SecondaryProducerMaster.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\SecRole.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\SecRoleInvoiceApprovalPermission.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\SecRoleModule.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\SecUser.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\SecUserLock.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\SiteInspectionCompleteMaster.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\StateMaster.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\StatusMaster.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\SubLimitOfLiabilityMaster.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\SubStatusMaster.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\sysdiagrams.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Task.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\TaskPriority.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\TaskReminderMaster.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\TaskStatus.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\TypeOfDamageMaster.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\TypeOfPropertyMaster.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\UmpireMaster.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\vw_Adjuster.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\vw_AdjusterNames.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\vw_AdjusterPayout.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\vw_AdjusterPayoutSubReport.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\vw_AdjusterPayrollForAllBilled.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\vw_AdjusterPayrollForAllBilledDetailed.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\vw_ClaimLimit.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\vw_ClaimsClosedListing.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\vw_closeLeadClaim.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\vw_Contact.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\vw_FieldColumn.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\vw_FormField.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\vw_InvoiceApprovalQueue.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\vw_Lead_Search.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\vw_OpenClaimsListing.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\vw_openLeadClaim.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\vw_Reminder.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\vw_Task.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\WebformSourceMaster.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\WindPolicyMaster.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ZipCodeMaster.cs">
+      <DependentUpon>CRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExportParameter.cs" />
+    <Compile Include="Extension\ExtensionMethods.cs" />
+    <Compile Include="FormFieldView.cs" />
+    <Compile Include="ImportMapField.cs" />
+    <Compile Include="InviteeView.cs" />
+    <Compile Include="InvoiceServiceTypeView.cs" />
+    <Compile Include="InvoiceView.cs" />
+    <Compile Include="Lead.cs" />
+    <Compile Include="LeadTask.cs" />
+    <Compile Include="Account\OtherSourceManager.cs" />
+    <Compile Include="Account\OwnerSameManager.cs" />
+    <Compile Include="Account\ProducerManager.cs" />
+    <Compile Include="Account\PropertyTypeManager.cs" />
+    <Compile Include="Account\ReportedToInsurerManager.cs" />
+    <Compile Include="Account\SecLockUserManager.cs" />
+    <Compile Include="Account\SecLoginLogManager.cs" />
+    <Compile Include="Account\SecModuleManager.cs" />
+    <Compile Include="Account\SecondaryProducerManager.cs" />
+    <Compile Include="Account\SecRoleManager.cs" />
+    <Compile Include="Account\SecRoleModuleManager.cs" />
+    <Compile Include="Account\SecUserManager.cs" />
+    <Compile Include="Account\SiteInspectionManager.cs" />
+    <Compile Include="Account\State.cs" />
+    <Compile Include="Account\StatusManager.cs" />
+    <Compile Include="Account\SubStatusManager.cs" />
+    <Compile Include="Account\TasksManager.cs" />
+    <Compile Include="Account\TypeofDamageManager.cs" />
+    <Compile Include="Account\TypeOfPropertyManager.cs" />
+    <Compile Include="Account\ZipCode.cs" />
+    <Compile Include="DbContextHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Globals.cs" />
+    <Compile Include="LeadView.cs" />
+    <Compile Include="LimitType.cs" />
+    <Compile Include="LinqExtensions.cs" />
+    <Compile Include="PolicySubLimit.cs" />
+    <Compile Include="PolicyType.cs" />
+    <Compile Include="ProgressStatisticsView.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchFilter.cs" />
+    <Compile Include="StatusStatisticsView.cs" />
+    <Compile Include="TaskOwner.cs" />
+    <Compile Include="TaskPolicyType.cs" />
+    <Compile Include="UserRole.cs" />
+    <Compile Include="Views\ClaimProgressView.cs" />
+    <Compile Include="Views\RuleExceptionStatisticsView.cs" />
+    <Compile Include="Views\RuleExceptionView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="Entities\CRMModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CRMModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Entities\CRMModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CRMModel.edmx</DependentUpon>
+      <LastGenOutput>CRMModel.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Entities\CRMModel.edmx.diagram">
+      <DependentUpon>CRMModel.edmx</DependentUpon>
+    </None>
+    <None Include="Entities\CRMModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CRMModel.edmx</DependentUpon>
+      <LastGenOutput>CRMModel.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="sql\Claim Edit Screen Fields.sql" />
+    <Content Include="sql\vw_Lead_Search.sql" />
+    <Content Include="sql\Create Claim records from LeadPolicy.sql" />
+    <Content Include="sql\Sales Report Batch file - Copy.sql" />
+    <Content Include="sql\Create Import Fields.sql" />
+    <Content Include="sql\Update CRM production.sql" />
+    <Content Include="sql\add new module.sql" />
+    <Content Include="sql\Sales Report Batch file.sql" />
+    <Content Include="sql\Fix record count.sql" />
+    <Compile Include="UserStaff.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

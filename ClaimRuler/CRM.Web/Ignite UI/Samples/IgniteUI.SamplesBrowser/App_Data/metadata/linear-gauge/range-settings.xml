@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Range Settings</Title>
+    <Description>This sample demonstrates setting comparative ranges in the linear gauge control.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>範囲設定</Title>
+    <Description>このサンプルでは、リニア ゲージ コントロールで比較範囲を設定する方法を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

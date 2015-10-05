@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Row Edit Template</Title>
+    <Description>
+        <![CDATA[
+        This sample demonstrates the row edit template functionality of Updating feature in the igHierarchicalGrid. Row edit template provides an interface to edit row in a separate dialog window. Click or tap on a row to pop-up the row edit dialog.
+        ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>行編集テンプレート</Title>
+    <Description>
+    <![CDATA[
+        このサンプルでは、igHierarchicalGrid の更新機能の行編集テンプレート機能を紹介します。行編集テンプレートは、別のダイアログ ウィンドウで行を編集するインターフェイスを提供します。行をクリックまたはタップすると、行編集ダイアログが表示されます。
+        ]]>
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

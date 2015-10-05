@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Multiple Resources</Title>
+    <Description>
+      This sample demonstrates how to load multiple components and features with the Infragistics Loader. When you initialize the loader in JavaScript, resources can be loaded by chaining e.g. igDataChart.Category.Radial where 'Category' and 'Radial' represent nested features.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>複数リソース</Title>
+    <Description>このサンプルでは、Infragistics ローダーを使用して複数のコンポーネントと機能の読み込みを紹介します。JavaScript でローダーを初期化する際に、チェーンでリソースを読み込むことができます。たとえば、「Category」と「Radial」を入れ子にする機能の場合、igDataChart.Category.Radial を使用します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <IsFullPostBack>False</IsFullPostBack>
+  <MinSampleSize>TabletPortrait</MinSampleSize>
+</Sample>

@@ -1,0 +1,48 @@
+﻿@model Infragistics.IgniteUI.SamplesBrowser.Shared.ViewModels.ViewModelBase
+@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";   
+}
+@section HeadContent
+{
+    @RenderSection("HeadContent", false)
+}
+<div id="prodNav" class="row main-content">
+    @RenderBody()
+</div>
+<section id="gettingStartedFooter" class="row">
+@if(Model.ShowGettingStartedSection)
+{    
+    <div class="row ui-helper-clearfix gs-row">
+        <a href="@Url.Content("~/getting-started")">
+            <h2 class="pageTitle">@Html.Raw(Resources.Main.Getting_Started_Header)</h2>
+        </a>
+        <p class="pageDesc">@Html.Raw(Model.GetGettingStartedDescription(Url.Content("~/getting-started")))</p>
+    </div>
+}
+    <div class="help-footer row ui-helper-clearfix gs-row">
+        <div class="help-item">
+            <a href="@Model.MainApiLink" target="_blank">
+                <div class="helpNavTitle">
+                    <span class="controlGroupIcon sprite-apiicon">&nbsp;</span>@Resources.Main.API
+                </div>
+                <span class="helpNavDesc">@Resources.Main.API_Desc</span>
+            </a>
+        </div>
+        <div class="help-item">
+            <a href="@Resources.Main.Forums_Url" target="_blank">
+                <div class="helpNavTitle">
+                    <span class="controlGroupIcon sprite-forumicon">&nbsp;</span>@Resources.Main.Forums
+                </div>
+                <span class="helpNavDesc">@Resources.Main.Forums_Desc</span>
+            </a>
+        </div>
+        <div class="help-item">
+            <a href="@Resources.Main.Blogs_Url" target="_blank">
+                <div class="helpNavTitle">
+                    <span class="controlGroupIcon sprite-blogsicon">&nbsp;</span>@Resources.Main.Blogs
+                </div>
+                <span class="helpNavDesc">@Resources.Main.Blogs_Desc</span>
+            </a>
+        </div>
+    </div>
+</section>

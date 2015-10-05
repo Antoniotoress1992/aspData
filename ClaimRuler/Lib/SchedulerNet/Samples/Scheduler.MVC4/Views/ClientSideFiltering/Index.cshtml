@@ -1,0 +1,9 @@
+@{
+    ViewBag.Title = "Scheduler | Client-side filter";
+    ViewBag.SampleTitle = "Client side filtering";
+    ViewBag.ShortDescription = "Filtering events on the client side";
+    ViewBag.LongDescription = "Different filters can be attached to each view. <br />    Month view - default,    Week view - date between 09.06.2011 and 09.14.2011,     Day view - show events of the first room";
+}
+
+
+@Html.Raw(Model.Render()) 

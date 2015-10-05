@@ -1,0 +1,22 @@
+﻿@{
+   
+    Layout = "~/Views/Shared/_SchedulerLayout.cshtml";
+}
+
+@model DHTMLX.Scheduler.DHXScheduler
+
+@section SampleTitle{
+    Basic initialization
+}
+@section TitleContent{
+    Basic initialization
+}
+@section ShortDescription{
+    See how scheduler can be initialized using Razor engine
+}
+@section LongDescription{
+    Drag or double-click to create new event
+    Double-click on existing events to edit them, or drag them to change their time. 
+}
+
+@Html.Raw(Model.Render())

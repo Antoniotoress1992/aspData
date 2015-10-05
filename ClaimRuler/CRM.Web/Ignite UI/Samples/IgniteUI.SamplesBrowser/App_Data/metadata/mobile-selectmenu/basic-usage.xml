@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Basic Usage</Title>
+    <Description>This is a basic sample showing the ASP.NET MVC helper for the jQuery Mobile selectmenu widget. The first selectmenu shows multiple selection. The following selectmenu widgets are combined into a 'controlgroup' and display using the browser's native select menu.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Adding SelectMenu" TopicName="SelectMenu_Adding" />
+      <HelpTopic Title="Configuring" TopicName="SelectMenu_Configure" />
+      <HelpTopic Title="Overview" TopicName="SelectMenu_Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>基本的な使用方法</Title>
+    <Description>これは jQuery Mobile selectmenu ウィジェットの ASP.NET MVC ヘルパーを紹介するサンプルです。最初の selectmenu は複数選択を示します。以下の selectmenu ウィジェットは controlgroup と組み合わせ、ブラウザーのネイティブ選択メニューを使用して表示します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="SelectMenu の追加" TopicName="SelectMenu_Adding" />
+      <HelpTopic Title="構成" TopicName="SelectMenu_Configure" />
+      <HelpTopic Title="概要" TopicName="SelectMenu_Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+</Sample>

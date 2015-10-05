@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Load on Demand</Title>
+    <Description>
+        The igGrid Load on Demand feature adds functionality to append data to the grid. It works in two modes: Automatic and Button.
+        Use the upper grid to experience the Automatic mode. Scroll to the bottom of the grid to see that the new data will be appended to the grid.
+        Use the bottom grid to experience the Button mode. Scroll to the bottom of the grid and then press the "Load more data" button to append new data.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>ロードオンデマンド</Title>
+    <Description>
+      igGrid ロードオンデマンド機能は、グリッドにデータを追加する機能を提供します。Automatic と Button の 2 つのモードがあります。
+      上のグリッドは Automatic モードを使用します。グリッドの下へスクロールすると、グリッドに新しいデータが追加されます。
+      下のグリッドは Button モードを使用します。グリッドの下へスクロールし、「その他のデータを読み込む」ボタンを押すと、新しいデータを追加します。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status>CTP</Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

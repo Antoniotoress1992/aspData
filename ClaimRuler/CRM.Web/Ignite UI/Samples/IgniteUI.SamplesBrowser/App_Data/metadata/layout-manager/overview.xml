@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">layout-manager/grid-layout</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      The igLayoutManager is a widget based on jQuery UI that implements different layout modes on a page. Modes include <a href="~/layout-manager/flow-layout">flow layout</a>, <a href="~/layout-manager/vertical-layout">vertical layout</a> 
+      and a border layout, which divides the container into left/right/footer/header/center regions. Further, the <a href="~/layout-manager/column-layout-markup">responsive and fluid column layouts</a> are 
+      based on a 12 column layout grid. Also supported is a <a href="~/layout-manager/grid-layout">grid layout</a> which allows items to be positioned at arbitrary places on the screen and have 
+      variable row and col spans. See the complete list of samples in the menu.
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      igLayoutManager は、ページにさまざまなレイアウト モードを実装する jQuery UI に基づいたウィジェットです。モードは、<a href="~/layout-manager/flow-layout">フロー レイアウト</a>、<a href="~/layout-manager/vertical-layout">垂直レイアウト</a>、および左/右/フッター/ヘッダー/中央領域に分割する境界線レイアウトを含みます。
+      また、<a href="~/layout-manager/column-layout-markup">レスポンシブおよび流動列レイアウト</a>は 12 列のレイアウト グリッドに基づきます。項目の位置を設定し、行スパンおよび列スパンを変更可能な<a href="~/layout-manager/grid-layout">グリッド レイアウト</a>もサポートされています。サンプルをすべて表示するには、メニューを参照してください。
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

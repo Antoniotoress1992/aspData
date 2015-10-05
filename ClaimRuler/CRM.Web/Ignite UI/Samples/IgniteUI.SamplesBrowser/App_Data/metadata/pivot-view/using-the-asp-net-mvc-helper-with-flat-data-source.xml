@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Using the ASP.NET MVC Helper with Flat Data Source</Title>
+    <Description>This sample demonstrates how to use the ASP.NET MVC Helper for the igPivotView with igOlapFlatDataSource.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>ASP.NET MVC ヘルパーとフラット データ ソースの使用</Title>
+    <Description>このサンプルでは、ASP.NET MVC ヘルパーを使用して igOlapFlatDataSource と igPivotView を使用する方法を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <MinSampleSize>Desktop</MinSampleSize>
+</Sample>

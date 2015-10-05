@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="../../igniteui/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+    <link href="../../igniteui/css/structure/infragistics.css" rel="stylesheet" />
+
+    <script src="../../js/modernizr.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="../../igniteui/js/infragistics.core.js"></script>
+    <script src="../../igniteui/js/infragistics.lob.js"></script>
+</head>
+<body>
+    <table id="grid"></table>
+    <script src="../../data-files/northwindProducts.js"></script>
+    <script>
+        $(function () {
+            $("#grid").igGrid({
+                autoGenerateColumns: true,
+                defaultColumnWidth: "150px",
+                width: "100%",
+                dataSource: northwindProducts,
+                responseDataKey: "results",
+                features: [
+                    {
+                        name: "Paging",
+                        type: "local",
+                        pageSize: 5
+                    },
+                    {
+                        name: "Sorting",
+                        type: "local"
+                    },
+                    {
+                        name: "Filtering",
+                        type: "local"
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>JsRender Integration</Title>
+    <Description>
+        jsRender is a third party templating engine which can be enabled in the igGrid.
+        This sample demonstrates the use of the jsRender in the grid's column template. "Name" and "Birth Date" columns use helper functions to process their content while "Languages" column demonstrates the {{for ...}} iterator tag.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>JsRender の結合</Title>
+    <Description>
+      jsRender は、igGrid で有効可能なサード パーティー テンプレート化エンジンです。
+      このサンプルでは、グリッドの列テンプレートで jsRender の使用を紹介します。「名前」および「生年月日」列はコンテンツを処理するためにヘルパー関数を使用します。「言語」列は {{for ...}} の列挙タグを使用します。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

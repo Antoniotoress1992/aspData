@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DHXSchedulerModels">
+  <DataContextMoniker Name="/DHXSchedulerModelsDataContext" />
+  <nestedChildShapes>
+    <classShape Id="838b105b-9ece-46c8-a36a-d50479a2a509" absoluteBounds="0.75, 0.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/DHXSchedulerModelsDataContext/Room" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d00e1a29-74d9-4486-962c-6a23f03e3974" absoluteBounds="0.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2e1cfd7c-2599-4bd9-8066-a1f0cd3f766f" absoluteBounds="0.75, 2.125, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/DHXSchedulerModelsDataContext/Recurring" />
+      <nestedChildShapes>
+        <elementListCompartment Id="89c40bf3-6cf5-46b7-b5c1-9e216fcf61a4" absoluteBounds="0.765, 2.585, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d33952d8-7649-4241-9364-aee9e4f463cb" absoluteBounds="3, 0.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DHXSchedulerModelsDataContext/ValidEvent" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ade47444-dd04-49a3-9800-cadf144e8187" absoluteBounds="3.015, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f805e540-7182-4c5b-902b-56b943a3660f" absoluteBounds="4.125, 4.375, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/DHXSchedulerModelsDataContext/UserDetails" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3e776428-abee-4ac8-8995-b777c2a323fd" absoluteBounds="4.14, 4.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5f436fbc-83bd-401d-ace9-15df68e711d5" absoluteBounds="5.375, 0.875, 2, 1.9631982421875">
+      <DataClassMoniker Name="/DHXSchedulerModelsDataContext/Event" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7e870e36-4b97-435e-bc4a-d67bbe36cd78" absoluteBounds="5.39, 1.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

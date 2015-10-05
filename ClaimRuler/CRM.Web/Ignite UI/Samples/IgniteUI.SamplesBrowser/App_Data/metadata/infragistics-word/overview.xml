@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">infragistics-word/create-word-table</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      The Infragistics® Word Engine provides a Microsoft® .NET API for creating Microsoft Word® documents. For instance, you can use
+      this assembly in .NET applications to <a href="~/infragistics-word/create-word-table">generate grid data</a> in this document format.
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      Infragistics® Word Engine は、Microsoft Word® 文書を作成するための Microsoft® .NET API を提供します。たとえば、.NET アプリケーションでこのアセンブリを使用してこの文書形式で<a href="~/infragistics-word/create-word-table">グリッド データを生成</a>できます。
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

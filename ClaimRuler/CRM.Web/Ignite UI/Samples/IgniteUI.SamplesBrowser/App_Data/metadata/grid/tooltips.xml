@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Tooltips</Title>
+    <Description>
+      The main purpose of grid tooltips is to make the entire cell content visible and also to enable the user to select and copy the text that is inside the tooltip container.
+      By default tooltips are displayed when the user hovers the mouse pointer over igGrid cell and the underlying data overflows its container.
+      In order to be compatible for touch devices is added a new tooltip style called “popover”.
+      If the popover style is activated it shows on a click or tap and the popover displays on the bottom of the cell.
+      In the sample the tooltips for columns "First Name" and "Last Name" are disabled through the column settings and the tooltips for the rest of the columns are always visible.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>ツールチップ</Title>
+    <Description>
+      グリッド ツールチップは、セル全体のコンテンツを可視化し、ユーザーはツールチップ コンテナー内のテキストを選択してコピーすることが可能です。
+      ツールチップは、ユーザーが igGrid セルの上にマウスをホバーするときにデフォルトで表示され、基本データがコンテナーをオーバーフローします。
+      タッチ デバイスの互換性により、「popover」の新しいツールチップ スタイルが追加されました。
+      ポップオーバー スタイルを有効にすると、クリックまたはタップしたときに表示され、セルの下に表示されます。
+      サンプルでは、「名前」および「名字」列のツールチップが列設定で無効にされています。その他の列のツールチップは常に表示されます。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status>New</Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

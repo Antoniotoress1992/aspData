@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Bar and Column Series</Title>
+    <Description>This sample shows Bar and Column Series of our jQuery Chart control.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Series Types" TopicName="igDataChart_Series_Types" />
+      <HelpTopic Title="Visual Elements" TopicName="igDataChart_Visual_Elements" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>棒および柱状シリーズ</Title>
+    <Description>このサンプルでは、jQuery チャート コントロールの棒および柱状シリーズを紹介します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="シリーズ タイプ" TopicName="igDataChart_Series_Types" />
+      <HelpTopic Title="視覚要素" TopicName="igDataChart_Visual_Elements" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

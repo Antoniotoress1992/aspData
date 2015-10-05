@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">infragistics-excel/create-excel-worksheet</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      The Infragistics® Excel Engine provides a Microsoft® .NET API for creating Microsoft Excel® documents. For instance, you can use
+      this assembly in .NET applications to <a href="~/infragistics-excel/create-excel-worksheet">generate grid data</a> in this document format.
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      Infragistics® Excel Engine は、Microsoft Excel® 文書を作成するための Microsoft® .NET API を提供します。たとえば、.NET アプリケーションでこのアセンブリを使用してこの文書形式で<a href="~/infragistics-excel/create-excel-worksheet">グリッド データを生成</a>できます。
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

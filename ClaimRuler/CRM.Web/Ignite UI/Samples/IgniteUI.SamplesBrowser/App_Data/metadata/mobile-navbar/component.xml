@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>NavBar</Name>
+    <Description>
+      Providing an interactive experience with a seamless workflow is a key aspect of all applications, allowing users to easily navigate through their data. These controls provide that level of interactive navigation to mobile web developers.
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Home" Value="Home"/>
+      <LocalizedSampleString Key="Products" Value="Products"/>
+      <LocalizedSampleString Key="Community" Value="Community"/>
+      <LocalizedSampleString Key="Help" Value="Help"/>
+      <LocalizedSampleString Key="About" Value="About"/>
+      <LocalizedSampleString Key="IG_Homepage" Value="http://www.infragistics.com/"/>
+      <LocalizedSampleString Key="IG_Products" Value="http://www.infragistics.com/products"/>
+      <LocalizedSampleString Key="IG_Community" Value="http://www.infragistics.com/community"/>
+      <LocalizedSampleString Key="IG_Help" Value="http://www.infragistics.com/help"/>
+      <LocalizedSampleString Key="IG_AboutUs" Value="http://www.infragistics.com/about-us"/>
+    </LocalizedSampleStrings>
+    <PageKeywords>MobileNavBar</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>NavBar</Name>
+    <Description>
+      アプリケーションのデータのナビゲーションを向上するために、インタラクティブなエクスペリエンスを使用します。このコントロールはそのインタラクティブなナビゲーションを提供します。
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Home" Value="ホーム"/>
+      <LocalizedSampleString Key="Products" Value="製品"/>
+      <LocalizedSampleString Key="Community" Value="コミュニティ"/>
+      <LocalizedSampleString Key="Help" Value="ヘルプ"/>
+      <LocalizedSampleString Key="About" Value="会社情報"/>
+      <LocalizedSampleString Key="IG_Homepage" Value="http://jp.infragistics.com/"/>
+      <LocalizedSampleString Key="IG_Products" Value="http://jp.infragistics.com/dotnet/netadvantage.aspx"/>
+      <LocalizedSampleString Key="IG_Community" Value="http://community.jp.infragistics.com/"/>
+      <LocalizedSampleString Key="IG_Help" Value="http://help.jp.infragistics.com/"/>
+      <LocalizedSampleString Key="IG_AboutUs" Value="http://jp.infragistics.com/corporate/default.aspx"/>
+    </LocalizedSampleStrings>
+    <PageKeywords>MobileNavBar</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>http://api.jquerymobile.com/navbar/</ClientApiUrl>
+  <HelpPageName>NavBar</HelpPageName>
+  <ForumNumber>693</ForumNumber>
+  <IconImage>jquery-mobile-navbar.png</IconImage>
+  <ClientRuntime>jQueryMobile</ClientRuntime>
+  <TOC>
+    <Sample>basic-usage</Sample>
+  </TOC>
+</Component>

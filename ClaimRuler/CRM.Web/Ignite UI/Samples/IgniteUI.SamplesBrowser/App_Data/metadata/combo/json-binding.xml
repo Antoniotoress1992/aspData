@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>JSON Binding</Title>
+    <Description>The combo easily binds to a JavaScript array or JSON data. This sample contains a basic example of client-side binding.</Description>
+    <PageKeywords>igCombo</PageKeywords>
+    <HelpTopics>
+        <HelpTopic Title="Binding to Data" TopicName="igCombo_Data_Binding" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>JSON のバインド</Title>
+    <Description>コンボは JavaScript 配列または JSON データにバインドできます。このサンプルはクライアント側のバインドの例を紹介します。</Description>
+    <PageKeywords>igCombo</PageKeywords>
+    <HelpTopics>
+        <HelpTopic Title="データ バインド" TopicName="igCombo_Data_Binding" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

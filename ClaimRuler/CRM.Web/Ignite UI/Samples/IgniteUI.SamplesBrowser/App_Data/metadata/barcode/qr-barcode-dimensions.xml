@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>QR Barcode Dimensions</Title>
+    <Description>This sample demonstrates configuring the dimension settings of the igQRCodeBarcode control.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>QR バーコードのサイズ設定</Title>
+    <Description>このサンプルでは、igQRCodeBarcode コントロールのディメンション設定の構成を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

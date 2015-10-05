@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Basic Usage</Title>
+    <Description>This sample demonstrates how the Collapsible Set ASP.NET MVC helper is used as a food order form. All the Collapsible controls are grouped into a collapsible set and only one collapsible set is expanded at a time. If one collapsible set is expanded, the previous set is collapsed.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Adding CollapsibleSet" TopicName="CollapsibleSet_Adding" />
+      <HelpTopic Title="Configuring" TopicName="CollapsibleSet_Configuring" />
+      <HelpTopic Title="Overview" TopicName="CollapsibleSet_Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>基本的な使用方法</Title>
+    <Description>このサンプルでは、食品の注文フォームに Collapsible Set ASP.NET MVC ヘルパーを使用する方法を紹介します。すべての縮小可能なコントロールが縮小可能なセットにグループ化されます。縮小可能なセットは一度に 1 つのみ展開されます。縮小可能なセットを展開すると、前に展開されたセットが縮小化されます。</Description>
+    <HelpTopics>
+      <HelpTopic Title="CollapsibleSet の追加" TopicName="CollapsibleSet_Adding" />
+      <HelpTopic Title="構成" TopicName="CollapsibleSet_Configuring" />
+      <HelpTopic Title="概要" TopicName="CollapsibleSet_Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+</Sample>

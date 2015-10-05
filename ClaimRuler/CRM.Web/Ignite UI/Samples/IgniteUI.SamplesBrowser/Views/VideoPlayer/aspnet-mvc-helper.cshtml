@@ -1,0 +1,85 @@
+﻿@using Infragistics.Web.Mvc
+@using IgniteUI.SamplesBrowser.Models
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="@Url.Content("~/igniteui/css/themes/infragistics/infragistics.theme.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/igniteui/css/structure/infragistics.css")" rel="stylesheet" />
+
+    <style type="text/css">
+        #player1 {
+            z-index: 1000;
+        }
+    </style>
+
+
+    <script src="@Url.Content("~/js/modernizr.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery-ui.min.js")"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="@Url.Content("~/igniteui/js/infragistics.core.js")"></script>
+    <script src="@Url.Content("~/igniteui/js/infragistics.lob.js")"></script>
+
+</head>
+<body>
+
+    @(Html.
+            Infragistics().
+            VideoPlayer().
+            ID("player1").
+            Sources(ViewData["videoSources"] as List<string>).
+            Width("100%").
+            Fullscreen(false).
+            BrowserControls(false).
+            Autohide(false).
+            Autoplay(false).
+            VolumeAutohideDelay(2000).
+            Title("Infragistics Presentation").
+            Banners(c =>
+                {
+                    c.
+                    AddBanner().
+                    ImageUrl(Url.Content("~/images/samples/video-player/banner.png")).
+                    Link("http://quince.infragistics.com/").
+                    Times(new List<int>() { 5, 20, 60 }).
+                    Visible(false).
+                    CloseBanner(true).
+                    Animate(true).
+                    Autohide(true).
+                    Hidedelay(10000).
+                    Width("200px").
+                    Height("67px");
+                }).
+            PosterUrl(ViewData["posterUrl"] as string).
+            Render()
+        )
+
+
+    <script>
+        var alternate = false;
+
+        $(function () {
+            $("#player1").bind({
+                igvideoplayerbannervisible: function (sender, eventArgs) {
+                    if (alternate === true)
+                        eventArgs.bannerElement.css('top', 130);
+                    else
+                        eventArgs.bannerElement.css('top', 0);
+
+                    alternate = !alternate;
+                },
+                igvideoplayerbannerclick: function () {
+                    $("#player1").igVideoPlayer('pause');
+                }
+            });
+        });
+
+    </script>
+</body>
+</html>

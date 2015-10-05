@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Load-On-Demand</Title>
+    <Description>This sample demonstrates how to use the combo box load-on-demand and paging functionality using a remote OData data source. Type a value in the combo to further filter items. Then, scroll to choose the specific item to select.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Configuring Load-on-Demand" TopicName="igCombo_Load_on_Demand" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>ロードオンデマンド</Title>
+    <Description>このサンプルでは、OData データ ソースを使用して、コンボ ボックスのロードオンデマンド機能とページング機能を使用する方法を紹介します。項目をフィルターするには、コンボに値を入力します。選択する特定の項目を選択するためにスクロールします。</Description>
+    <HelpTopics>
+      <HelpTopic Title="ロードオンデマンドの構成" TopicName="igCombo_Load_on_Demand" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>Remote</ServerRuntime>
+  <Status></Status>
+</Sample>

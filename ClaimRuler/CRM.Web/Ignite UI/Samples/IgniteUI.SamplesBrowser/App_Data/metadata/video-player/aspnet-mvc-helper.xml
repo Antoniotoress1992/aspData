@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>ASP.NET MVC Helper</Title>
+    <Description>This is an example of using the ASP.NET MVC helper to instantiate the video player control in an ASP.NET MVC view.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>ASP.NET MVC ヘルパー</Title>
+    <Description>このサンプルは、ASP.NET MVC ビューで ASP.NET MVC ヘルパーを使用してビデオ プレーヤーを初期化する方法を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+</Sample>

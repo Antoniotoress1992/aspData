@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="../../igniteui/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+    <link href="../../igniteui/css/structure/infragistics.css" rel="stylesheet" />    
+
+    <script src="../../js/modernizr.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="../../igniteui/js/infragistics.core.js"></script>
+    <script src="../../igniteui/js/infragistics.lob.js"></script>
+       
+</head>
+<body>
+    <h3>Single Cell Selection</h3>
+    <!-- Target element for the CellSelection igGrid -->
+    <table id="cellSelectionGrid">
+    </table>   
+    <br />
+    <h3>Multiple Row Selection</h3>
+    <!-- Target element for the RowSelection igGrid -->
+    <table id="rowSelectionGrid">
+    </table>
+
+    <!--Sample JSON Data-->
+    <script src="../../data-files/nw-employees.js"></script>
+
+    <script>
+
+        $(function () {
+            createCellSelectionGrid();
+            createRowSelectionGrid();
+        });
+
+        function createCellSelectionGrid() {
+            $("#cellSelectionGrid").igGrid({
+                width: "100%",
+                autoGenerateColumns: false,
+                dataSource: northwindEmployees,
+                responseDataKey: "results",
+                dataSourceType: "json",
+                columns: [
+                    { headerText: "Employee ID", key: "ID", dataType: "number", width: "120px" },
+                    { headerText: "Name", key: "Name", dataType: "string" },
+                    { headerText: "Title", key: "Title", dataType: "string"},
+                    { headerText: "Phone", key: "Phone", dataType: "string" }
+                ],
+                features: [
+                    {
+                        name: 'Responsive',
+                        enableVerticalRendering: false,
+                        columnSettings: [
+                            {
+                                columnKey: 'ID',
+                                classes: 'ui-hidden-phone'
+                            }
+                        ]
+                    },
+                    {
+                        name: "Selection",
+                        mode: "cell",
+                        multipleSelection: false,
+                        touchDragSelect: false, // this is true by default
+                        multipleCellSelectOnClick: false
+                    }
+                ]
+            });
+        }
+
+        function createRowSelectionGrid() {
+            $("#rowSelectionGrid").igGrid({
+                width: "100%",
+                autoGenerateColumns: false,
+                dataSource: northwindEmployees,
+                responseDataKey: "results",
+                dataSourceType: "json",
+                columns: [
+                    { headerText: "Employee ID", key: "ID", dataType: "number", width: "120px" },
+                    { headerText: "Name", key: "Name", dataType: "string"},
+                    { headerText: "Title", key: "Title", dataType: "string" },
+                    { headerText: "Phone", key: "Phone", dataType: "string" }
+                ],
+                features: [
+                    {
+                        name: 'Responsive',
+                        enableVerticalRendering: false,
+                        columnSettings: [
+                            {
+                                columnKey: 'ID',
+                                classes: 'ui-hidden-phone'
+                            }
+                        ]
+                    },
+                    {
+                        name: "Selection",
+                        mode: 'row',
+                        multipleSelection: true
+                    }
+                ]
+            });
+        }
+    </script>
+</body>
+</html>

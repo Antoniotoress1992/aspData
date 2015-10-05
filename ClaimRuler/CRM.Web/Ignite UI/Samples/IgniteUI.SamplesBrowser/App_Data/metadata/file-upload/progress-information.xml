@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Progress Information</Title>
+    <Description>
+      The sample illustrates the usage of the getFileInfoData public method of the jQuery Upload widget. The output of that method can be very useful for creating upload statistics.
+      Note: You can upload files with a size smaller than 1 MB.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>進行状況の表示</Title>
+    <Description>
+      このサンプルは jQuery アップロード コントロールの getFileInfoData パブリック メソッドの使用を紹介します。そのメソッドの出力はアップロード統計を作成する際に便利な機能です。
+      注: 1 MB 以下のファイルのみアップロードできます。
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>進行状況の表示</Title>
+    <Description></Description>
+  </LocalizedContent>
+  <ServerRuntime>Hosted</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

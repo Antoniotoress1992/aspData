@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Custom Toolbars and Buttons</Title>
+    <Description>This sample demonstrates how the igHtmlEditor control works as an email client. This implementation features a custom toolbar where you can add a signature to the message.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>カスタム ツールバーおよびボタン</Title>
+    <Description>このサンプルでは、igHtmlEditor コントロールを電子メール クライアントとして実装します。署名をメッセージに追加するカスタム ツールバーがあります。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>TabletPortrait</MinSampleSize>
+</Sample>

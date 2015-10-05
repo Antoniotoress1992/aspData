@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Pivot Grid</Name>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Address" Value="Address"/>
+      <LocalizedSampleString Key="ADOMDErrorMessage" Value="An error has occured on the server. &lt;br&gt;
+        One of the possible reasons is that you do not have the Microsoft.AnalysisServices.AdomdClient assembly installed. &lt;br&gt;
+        You can download Microsoft® SQL Server® 2008 R2 ADOMD.NET from
+        &lt;a target='_blank' href='http://www.microsoft.com/en-us/download/confirmation.aspx?id=16978'&gt;here&lt;/a&gt;.
+        &lt;br&gt;Alternatively if you already have another version of this assembly installed, you can configure a binding redirect in the web.config file.
+        For more information see this 
+        &lt;a target='_blank'  href='http://help.infragistics.com/doc/jquery/?page=igOlapXmlaDataSource_Configuring_Through_a_Remote_Provider.html'&gt;help topic&lt;/a&gt;."/>
+      <LocalizedSampleString Key="AllCustomers" Value="All Customers"/>
+      <LocalizedSampleString Key="AllLocations" Value="All Locations"/>
+      <LocalizedSampleString Key="AllPeriods" Value="All Periods"/>
+      <LocalizedSampleString Key="AllProducts" Value="All Products"/>
+      <LocalizedSampleString Key="AllSalespeople" Value="All Salespeople"/>
+      <LocalizedSampleString Key="AllSellers" Value="All Sellers"/>
+      <LocalizedSampleString Key="AllShippers" Value="All Shippers"/>
+      <LocalizedSampleString Key="kilobytes" Value="KB"/>
+      <LocalizedSampleString Key="Category" Value="Category"/>
+      <LocalizedSampleString Key="City" Value="City"/>
+      <LocalizedSampleString Key="CompactLayout" Value="Compact Layout"/>
+      <LocalizedSampleString Key="Country" Value="Country"/>
+      <LocalizedSampleString Key="CustomerName" Value="Customer Name"/>
+      <LocalizedSampleString Key="Customers" Value="Customers"/>
+      <LocalizedSampleString Key="Date" Value="Date"/>
+      <LocalizedSampleString Key="Dates" Value="Dates"/>
+      <LocalizedSampleString Key="Day" Value="Day"/>
+      <LocalizedSampleString Key="DirectXmlaAccess" Value="Direct XMLA Access"/>
+      <LocalizedSampleString Key="Discount" Value="Discount"/>
+      <LocalizedSampleString Key="Downloaded" Value="Downloaded"/>
+      <LocalizedSampleString Key="Freight" Value="Freight"/>
+      <LocalizedSampleString Key="Hierarchy" Value="Hierarchy"/>
+      <LocalizedSampleString Key="Invoices" Value="Invoices"/>
+      <LocalizedSampleString Key="Location" Value="Location"/>
+      <LocalizedSampleString Key="Measure" Value="Measure"/>
+      <LocalizedSampleString Key="Measures" Value="Measures"/>
+      <LocalizedSampleString Key="Month" Value="Month"/>
+      <LocalizedSampleString Key="OrderDate" Value="Order Date"/>
+      <LocalizedSampleString Key="Product" Value="Product"/>
+      <LocalizedSampleString Key="Products" Value="Products"/>
+      <LocalizedSampleString Key="Q {0}" Value="Q {0}"/>
+      <LocalizedSampleString Key="Quantity" Value="Quantity"/>
+      <LocalizedSampleString Key="Quarter" Value="Quarter"/>
+      <LocalizedSampleString Key="RemoteXmlaAccess" Value="Remote XMLA Access"/>
+      <LocalizedSampleString Key="RequiredDate" Value="Required Date"/>
+      <LocalizedSampleString Key="Sales" Value="Sales"/>
+      <LocalizedSampleString Key="Salespeople" Value="Salespeople"/>
+      <LocalizedSampleString Key="Salesperson" Value="Salesperson"/>
+      <LocalizedSampleString Key="SaleValue" Value="Sale Value"/>
+      <LocalizedSampleString Key="Seller" Value="Seller"/>
+      <LocalizedSampleString Key="ShipperName" Value="Shipper Name"/>
+      <LocalizedSampleString Key="ShippedDate" Value="Shipped Date"/>
+      <LocalizedSampleString Key="Shippers" Value="Shippers"/>
+      <LocalizedSampleString Key="StandardLayout" Value="Standard Layout"/>
+      <LocalizedSampleString Key="TransposeChart" Value="Transpose chart"/>
+      <LocalizedSampleString Key="UnitPrice" Value="Unit Price"/>
+      <LocalizedSampleString Key="UnitsSold" Value="Units Sold"/>
+      <LocalizedSampleString Key="Uploaded" Value="Uploaded"/>
+      <LocalizedSampleString Key="Year" Value="Year"/>
+    </LocalizedSampleStrings>
+    <Description>
+      Get the facts straight with an HTML jQuery-based pivot grid that lets your end-users perform complex analysis on supplied data. Using the Online Analytical Processing (OLAP) approach to present the result of multi-dimensional queries in an easy to comprehend manner.
+    </Description>
+    <PageKeywords>igPivotGrid</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Pivot Grid</Name>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Address" Value="住所"/>
+      <LocalizedSampleString Key="ADOMDErrorMessage" Value="サーバーでエラーが発生しました。 &lt;br&gt;
+        Microsoft.AnalysisServices.AdomdClient アセンブリがインストールされていない可能性があります。 &lt;br&gt;
+        Microsoft® SQL Server® 2008 R2 ADOMD.NET を&lt;a target='_blank' href='http://www.microsoft.com/ja-jp/download/confirmation.aspx?id=16978'&gt;ここ&lt;/a&gt;からダウンロードできます。
+        &lt;br&gt;また、このアセンブリのその他のバージョンがインストールされている場合、web.config ファイルでバインディング リダイレクトを構成できます。
+        詳細については、この&lt;a target='_blank'  href='http://help.jp.infragistics.com/doc/jquery/?page=igOlapXmlaDataSource_Configuring_Through_a_Remote_Provider.html'&gt;ヘルプ トピック&lt;/a&gt;を参照してください。"/>
+      <LocalizedSampleString Key="AllCustomers" Value="すべての顧客"/>
+      <LocalizedSampleString Key="AllLocations" Value="すべての場所"/>
+      <LocalizedSampleString Key="AllPeriods" Value="すべての期間"/>
+      <LocalizedSampleString Key="AllProducts" Value="すべての製品"/>
+      <LocalizedSampleString Key="AllSalespeople" Value="すべての営業担当者"/>
+      <LocalizedSampleString Key="AllSellers" Value="すべての販売員"/>
+      <LocalizedSampleString Key="AllShippers" Value="すべての出荷者"/>
+      <LocalizedSampleString Key="kilobytes" Value="KB"/>
+      <LocalizedSampleString Key="Category" Value="カテゴリ"/>
+      <LocalizedSampleString Key="City" Value="市"/>
+      <LocalizedSampleString Key="CompactLayout" Value="コンパクト レイアウト"/>
+      <LocalizedSampleString Key="Country" Value="国"/>
+      <LocalizedSampleString Key="CustomerName" Value="顧客名"/>
+      <LocalizedSampleString Key="Customers" Value="顧客"/>
+      <LocalizedSampleString Key="Date" Value="日付"/>
+      <LocalizedSampleString Key="Dates" Value="日付"/>
+      <LocalizedSampleString Key="Day" Value="日"/>
+      <LocalizedSampleString Key="DirectXmlaAccess" Value="直接 XMLA アクセス"/>
+      <LocalizedSampleString Key="Discount" Value="割引"/>
+      <LocalizedSampleString Key="Downloaded" Value="ダウンロード完了"/>
+      <LocalizedSampleString Key="Freight" Value="発送"/>
+      <LocalizedSampleString Key="Hierarchy" Value="階層"/>
+      <LocalizedSampleString Key="Invoices" Value="請求書"/>
+      <LocalizedSampleString Key="Location" Value="位置"/>
+      <LocalizedSampleString Key="Measure" Value="メジャー"/>
+      <LocalizedSampleString Key="Measures" Value="メジャー"/>
+      <LocalizedSampleString Key="Month" Value="月"/>
+      <LocalizedSampleString Key="OrderDate" Value="注文日"/>
+      <LocalizedSampleString Key="Product" Value="製品"/>
+      <LocalizedSampleString Key="Products" Value="製品"/>
+      <LocalizedSampleString Key="Q {0}" Value="Q {0}"/>
+      <LocalizedSampleString Key="Quantity" Value="数量"/>
+      <LocalizedSampleString Key="Quarter" Value="四半期"/>
+      <LocalizedSampleString Key="RemoteXmlaAccess" Value="リモート XMLA アクセス"/>
+      <LocalizedSampleString Key="RequiredDate" Value="配達日"/>
+      <LocalizedSampleString Key="Sales" Value="セールス"/>
+      <LocalizedSampleString Key="Salespeople" Value="営業担当者"/>
+      <LocalizedSampleString Key="Salesperson" Value="営業担当者"/>
+      <LocalizedSampleString Key="SaleValue" Value="販売値"/>
+      <LocalizedSampleString Key="Seller" Value="販売員"/>
+      <LocalizedSampleString Key="ShipperName" Value="出荷名"/>
+      <LocalizedSampleString Key="ShippedDate" Value="出荷日"/>
+      <LocalizedSampleString Key="Shippers" Value="出荷者"/>
+      <LocalizedSampleString Key="StandardLayout" Value="標準レイアウト"/>
+      <LocalizedSampleString Key="TransposeChart" Value="チャートの転置"/>
+      <LocalizedSampleString Key="UnitPrice" Value="単価"/>
+      <LocalizedSampleString Key="UnitsSold" Value="販売単位数"/>
+      <LocalizedSampleString Key="Uploaded" Value="アップロード完了"/>
+      <LocalizedSampleString Key="Year" Value="年"/>
+    </LocalizedSampleStrings>
+    <Description>
+      HTML jQuery ベース ピボット グリッドでデータを分かりやすく表示できるため、エンドユーザーは複雑なデータを簡単に分析することができます。オンライン解析処理 (OLAP) を使用して多次元クエリの結果を分かりやすく表示します。
+    </Description>
+    <PageKeywords>igPivotGrid</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>ui.igPivotGrid</ClientApiUrl>
+  <HelpPageName>igPivotGrid</HelpPageName>
+  <ForumNumber>683</ForumNumber>
+  <IconImage>jquery-olap-data-source.png</IconImage>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <Status>Updated</Status>
+  <TOC>
+    <Sample>binding-to-flat-data-source</Sample>
+    <Sample>binding-to-xmla-data-source</Sample>
+    <Sample>custom-drag-drop-validation</Sample>
+    <Sample>drag-drop-custom-elements</Sample>
+    <Sample>expand-members</Sample>
+    <Sample>chart-integration</Sample>
+    <Sample>layout-modes</Sample>
+    <Sample>sorting</Sample>
+    <Sample>all-grid-features</Sample>
+    <Sample>remote-adomd-provider</Sample>
+    <Sample>remote-xmla-provider</Sample>
+    <Sample>using-the-asp-net-mvc-helper-with-flat-data-source</Sample>
+    <Sample>using-the-asp-net-mvc-helper-with-xmla-data-source</Sample>
+  </TOC>
+</Component>

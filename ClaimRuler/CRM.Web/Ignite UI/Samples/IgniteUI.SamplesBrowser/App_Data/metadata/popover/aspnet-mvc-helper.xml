@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>ASP.NET MVC Basic Usage</Title>
+    <Description>
+      This sample demonstrates initializing the Popover control using the ASP.NET MVC Helper wrapper. 
+      The control is initialized in the View using chaining syntax.
+      The popover is activated when you hover over the input fields. 
+      Clicking on the button will make the both custom styled popovers show.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>ASP.NET MVC の基本的な使用方法</Title>
+    <Description>
+      このサンプルでは、ASP.NET MVC ヘルパー ラッパーを使用してポップオーバー コントロールの初期化を紹介します。コントロールは、チェーン構文を使用して View で初期化されます。
+      入力フィールドの上にホバーすると、ポップオーバーがアクティブ化されます。ボタンをクリックすると、カスタム スタイル設定されたポップオーバーが表示されます。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status>New</Status>  
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Sparkline</Name>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="line" Value="Line" />
+      <LocalizedSampleString Key="area" Value="Area" />
+      <LocalizedSampleString Key="column" Value="Column" />
+      <LocalizedSampleString Key="winloss" Value="Win-Loss" />
+      <LocalizedSampleString Key="Add_Data" Value="Add New Data Item" />
+      <LocalizedSampleString Key="Remove_Data" Value="Remove First Data Item" />
+      <LocalizedSampleString Key="Item_Added" Value="Item Added" />
+      <LocalizedSampleString Key="Item_Removed" Value="Item Removed" />
+      <LocalizedSampleString Key="Value" Value="Value" />
+      <LocalizedSampleString Key="Company_Name" Value="Company" />
+      <LocalizedSampleString Key="Contact_Name" Value="Contact" />
+      <LocalizedSampleString Key="Contact_Title" Value="Contact Title" />
+      <LocalizedSampleString Key="Order_History" Value="Order History" />
+      <LocalizedSampleString Key="Low" Value="Low" />
+      <LocalizedSampleString Key="High" Value="High" />
+    </LocalizedSampleStrings>
+    <Description>
+      The Sparkline control is a data-intense, design-simple graphic that allows end users to spot trends, variations and patterns in data in a clear and compact representation.
+    </Description>
+    <PageKeywords>igSparkline</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Sparkline</Name>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="line" Value="折れ線チャート" />
+      <LocalizedSampleString Key="area" Value="エリア チャート" />
+      <LocalizedSampleString Key="column" Value="柱状チャート" />
+      <LocalizedSampleString Key="winloss" Value="WinLoss チャート" />
+      <LocalizedSampleString Key="Add_Data" Value="新しいデータ項目の追加" />
+      <LocalizedSampleString Key="Remove_Data" Value="最初のデータ項目の削除" />
+      <LocalizedSampleString Key="Item_Added" Value="項目を追加しました。" />
+      <LocalizedSampleString Key="Item_Removed" Value="項目を削除しました。" />
+      <LocalizedSampleString Key="Value" Value="値" />
+      <LocalizedSampleString Key="Company_Name" Value="会社名" />
+      <LocalizedSampleString Key="Contact_Name" Value="名前" />
+      <LocalizedSampleString Key="Contact_Title" Value="役職" />
+      <LocalizedSampleString Key="Order_History" Value="注文履歴" />
+      <LocalizedSampleString Key="Low" Value="安値" />
+      <LocalizedSampleString Key="High" Value="高値" />
+    </LocalizedSampleStrings>
+    <Description>
+      スパークライン チャート コントロールは、データのトレンド、変更、パターンをコンパクトで分かりやすいチャートで表示します。
+    </Description>
+    <PageKeywords>igSparkline</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>ui.igSparkline</ClientApiUrl>
+  <HelpPageName>igSparkline_Overview</HelpPageName>
+  <ForumNumber>724</ForumNumber>
+  <IconImage>jquery-sparkline.png</IconImage>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <TOC>
+    <Sample>bind-json</Sample>
+    <Sample>bind-collection</Sample>
+    <Sample>bind-to-remote-data</Sample>
+    <Sample>chart-types</Sample>
+    <Sample>sparkline-in-grid</Sample>
+    <Sample>normal-range-and-trend-lines</Sample>
+    <Sample>tooltips-and-markers</Sample>
+    <Sample>visual-customization</Sample>
+    <Sample>api-and-events</Sample>
+  </TOC>
+</Component>

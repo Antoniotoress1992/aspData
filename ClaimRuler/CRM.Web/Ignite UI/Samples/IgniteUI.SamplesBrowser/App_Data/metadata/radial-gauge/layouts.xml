@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Layout Options</Title>
+    <Description>This sample demonstrates the different layouts of igRadialGauge control. The user can configure these by changing the backing, scale, needle, tick and range options.</Description>
+    <HelpTopics>
+      <HelpTopic Title="igRadialGauge" TopicName="igRadialGauge" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>レイアウト オプション</Title>
+    <Description>このサンプルでは、igRadialGauge コントロールのレイアウトを紹介します。背景、スケール、針、目盛り、および範囲オプションを構成できます。</Description>
+    <HelpTopics>
+      <HelpTopic Title="igRadialGauge" TopicName="igRadialGauge" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

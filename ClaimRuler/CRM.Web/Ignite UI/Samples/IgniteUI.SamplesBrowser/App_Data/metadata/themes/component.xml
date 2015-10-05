@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Themes</Name>
+    <Description>
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="AdventureWorks_Products_ProductID" Value="Product ID"/>
+      <LocalizedSampleString Key="AdventureWorks_Products_Name" Value="Product Name"/>
+      <LocalizedSampleString Key="AdventureWorks_Products_ProductNumber" Value="Product Number"/>
+      <LocalizedSampleString Key="AdventureWorks_Products_ListPrice" Value="List Price"/>
+      <LocalizedSampleString Key="AdventureWorks_Products_StandardCost" Value="Standard Cost"/>
+      <LocalizedSampleString Key="Data_NorthAmerica" Value="North America" />
+      <LocalizedSampleString Key="Data_UnitedStates" Value="United States" />
+      <LocalizedSampleString Key="Data_Canada" Value="Canada" />
+      <LocalizedSampleString Key="Data_Mexico" Value="Mexico" />
+      <LocalizedSampleString Key="Data_SouthAmerica" Value="South America" />
+      <LocalizedSampleString Key="Data_Brazil" Value="Brazil" />
+      <LocalizedSampleString Key="Data_Uruguay" Value="Uruguay" />
+      <LocalizedSampleString Key="Data_Europe" Value="Europe" />
+      <LocalizedSampleString Key="Data_UnitedKingdom" Value="United Kingdom" />
+      <LocalizedSampleString Key="Data_Germany" Value="Germany" />
+      <LocalizedSampleString Key="Data_Bulgaria" Value="Bulgaria" />
+      <LocalizedSampleString Key="Label_Open_Dialog" Value="Open Dialog" />
+      <LocalizedSampleString Key="Chart_title_countries_pop" Value="Population per Country" />
+      <LocalizedSampleString Key="Chart_subtitle_countries_pop" Value="Five largest projected populations for 2015" />
+      <LocalizedSampleString Key="CategoryAxis_title_countries_pop" Value="Country" />
+      <LocalizedSampleString Key="NumericAxis_title_countries_pop" Value="Millions of People" />
+    </LocalizedSampleStrings>
+    <PageKeywords></PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Themes</Name>
+    <Description>
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="AdventureWorks_Products_ProductID" Value="製品 ID"/>
+      <LocalizedSampleString Key="AdventureWorks_Products_Name" Value="製品名"/>
+      <LocalizedSampleString Key="AdventureWorks_Products_ProductNumber" Value="製品番号"/>
+      <LocalizedSampleString Key="AdventureWorks_Products_ListPrice" Value="価格"/>
+      <LocalizedSampleString Key="AdventureWorks_Products_StandardCost" Value="標準の原価"/>
+      <LocalizedSampleString Key="Data_NorthAmerica" Value="北アメリカ" />
+      <LocalizedSampleString Key="Data_UnitedStates" Value="米国" />
+      <LocalizedSampleString Key="Data_Canada" Value="カナダ" />
+      <LocalizedSampleString Key="Data_Mexico" Value="メキシコ" />
+      <LocalizedSampleString Key="Data_SouthAmerica" Value="南アメリカ" />
+      <LocalizedSampleString Key="Data_Brazil" Value="ブラジル" />
+      <LocalizedSampleString Key="Data_Uruguay" Value="ウルグアイ" />
+      <LocalizedSampleString Key="Data_Europe" Value="ヨーロッパ" />
+      <LocalizedSampleString Key="Data_UnitedKingdom" Value="イギリス" />
+      <LocalizedSampleString Key="Data_Germany" Value="ドイツ" />
+      <LocalizedSampleString Key="Data_Bulgaria" Value="ブルガリア" />
+      <LocalizedSampleString Key="Label_Open_Dialog" Value="ダイアログを開く" />
+      <LocalizedSampleString Key="Chart_title_countries_pop" Value="国別人口" />
+      <LocalizedSampleString Key="Chart_subtitle_countries_pop" Value="2015 年推計人口トップ 5" />
+      <LocalizedSampleString Key="CategoryAxis_title_countries_pop" Value="国" />
+      <LocalizedSampleString Key="NumericAxis_title_countries_pop" Value="予期人口 (百万人単位)" />
+    </LocalizedSampleStrings>
+    <PageKeywords></PageKeywords>
+  </LocalizedContent>
+  <IconImage>jquery-theming-logo.png</IconImage>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <TOC>
+    <Sample>metro</Sample>
+    <Sample>ios7</Sample>
+  </TOC>
+</Component>

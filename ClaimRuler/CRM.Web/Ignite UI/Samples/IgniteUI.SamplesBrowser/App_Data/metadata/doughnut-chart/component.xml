@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Doughnut Chart</Name>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="1990Population" Value="1990 Population"/>
+      <LocalizedSampleString Key="2008Population" Value="2008 Population"/>
+      <LocalizedSampleString Key="Administration" Value="Administration"/>
+      <LocalizedSampleString Key="best_fit" Value="Best Fit"/>
+      <LocalizedSampleString Key="BindJSONSubtitle" Value="Top 5 largest countries by population (in millions)"/>
+      <LocalizedSampleString Key="BindToCollectionTitle" Value="Departments"/>
+      <LocalizedSampleString Key="Brazil" Value="Brazil"/>
+      <LocalizedSampleString Key="BudgetVSSpending" Value="Budget vs Spending"/>
+      <LocalizedSampleString Key="Center" Value="Center"/>
+      <LocalizedSampleString Key="China" Value="China"/>
+      <LocalizedSampleString Key="ConfigureLegendMeasurement" Value="*Population measured in millions"/>
+      <LocalizedSampleString Key="ConfigureLegendTitle" Value="Top 5 Most Populated Countries"/>
+      <LocalizedSampleString Key="ConfigureLegendSubtitle" Value="1990 (inner ring) vs 2008 (outer ring)"/>
+      <LocalizedSampleString Key="DepartmentSize" Value="Department Size"/>
+      <LocalizedSampleString Key="Development" Value="Development"/>
+      <LocalizedSampleString Key="exploded_radius" Value="Exploded Radius"/>
+      <LocalizedSampleString Key="India" Value="India"/>
+      <LocalizedSampleString Key="Indonesia" Value="Indonesia"/>
+      <LocalizedSampleString Key="InnerExtent" Value="InnerExtent"/>
+      <LocalizedSampleString Key="inside_end" Value="Inside End"/>
+      <LocalizedSampleString Key="IT" Value="IT"/>
+      <LocalizedSampleString Key="LabelsAndTooltipsChartSubtitle" Value="Budget (inner ring) and Department Size (outer ring)"/>
+      <LocalizedSampleString Key="LabelsAndTooltipsChartTitle" Value="Departments"/>
+      <LocalizedSampleString Key="label_extent" Value="Label Extent"/>
+      <LocalizedSampleString Key="label_position" Value="Label Position"/>
+      <LocalizedSampleString Key="label_position_budget_series" Value="Label Position for the Budget Series"/>
+      <LocalizedSampleString Key="label_position_depsize_series" Value="Label Position for the Department Size Series"/>
+      <LocalizedSampleString Key="lbl_budget" Value="Budget"/>
+      <LocalizedSampleString Key="lbl_data_financial_administration" Value="Administration"/>
+      <LocalizedSampleString Key="lbl_data_financial_customersupport" Value="Customer Support"/>
+      <LocalizedSampleString Key="lbl_data_financial_development" Value="Development"/>
+      <LocalizedSampleString Key="lbl_data_financial_it" Value="IT"/>
+      <LocalizedSampleString Key="lbl_data_financial_marketing" Value="Marketing"/>
+      <LocalizedSampleString Key="lbl_data_financial_sales" Value="Sales"/>
+      <LocalizedSampleString Key="Marketing" Value="Marketing"/>
+      <LocalizedSampleString Key="None" Value="None"/>
+      <LocalizedSampleString Key="Others" Value="Players with less than 15 goals"/>
+      <LocalizedSampleString Key="outside_end" Value="Outside End"/>
+      <LocalizedSampleString Key="Radius" Value="Radius"/>
+      <LocalizedSampleString Key="Sales" Value="Sales"/>
+      <LocalizedSampleString Key="Season20122013" Value="Season 2012 / 2013"/>
+      <LocalizedSampleString Key="Series" Value="Series"/>
+      <LocalizedSampleString Key="Spending" Value="Spending"/>
+      <LocalizedSampleString Key="start_angle_budget_series" Value="Start Angle for the Budget Series"/>
+      <LocalizedSampleString Key="start_angle_depsize_series" Value="Start Angle for the Department Size Series"/>
+      <LocalizedSampleString Key="Support" Value="Support"/>
+      <LocalizedSampleString Key="TopScorers" Value="Top Soccer Scorers"/>
+      <LocalizedSampleString Key="UnitedStates" Value="United States"/>
+    </LocalizedSampleStrings>
+    <Description>
+      Express your data with multiple series using this rich Doughnut Chart. Similar to a Pie Chart, the Doughnut Chart is used to show categorical statistics expressed in percentages. Yet with its hollow center, it's best for displaying multiple series using concentric rings where each ring represents a data series. Bind easily to data, configure the inner radius, display exploded slices, customize themes, and more with this well-rounded control.
+    </Description>
+    <PageKeywords>igDoughnutChart</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Doughnut Chart</Name>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="1990Population" Value="1990 年の人口"/>
+      <LocalizedSampleString Key="2008Population" Value="2008 年の人口"/>
+      <LocalizedSampleString Key="Administration" Value="事務"/>
+      <LocalizedSampleString Key="best_fit" Value="最適"/>
+      <LocalizedSampleString Key="BindJSONSubtitle" Value="人口トップ 5 (100 万)"/>
+      <LocalizedSampleString Key="BindToCollectionTitle" Value="部門"/>
+      <LocalizedSampleString Key="Brazil" Value="ブラジル"/>
+      <LocalizedSampleString Key="BudgetVSSpending" Value="予算 vs 支出"/>
+      <LocalizedSampleString Key="Center" Value="中央"/>
+      <LocalizedSampleString Key="China" Value="中国"/>
+      <LocalizedSampleString Key="ConfigureLegendMeasurement" Value="*人口は 100 万単位です"/>
+      <LocalizedSampleString Key="ConfigureLegendTitle" Value="人口が多い国トップ 5"/>
+      <LocalizedSampleString Key="ConfigureLegendSubtitle" Value="1990 年 (内部リング) vs. 2008 年 (外部リング)"/>
+      <LocalizedSampleString Key="DepartmentSize" Value="部署サイズ"/>
+      <LocalizedSampleString Key="Development" Value="開発"/>
+      <LocalizedSampleString Key="exploded_radius" Value="分解半径"/>
+      <LocalizedSampleString Key="India" Value="インド"/>
+      <LocalizedSampleString Key="Indonesia" Value="インドネシア"/>
+      <LocalizedSampleString Key="InnerExtent" Value="InnerExtent"/>
+      <LocalizedSampleString Key="inside_end" Value="内部の終了位置"/>
+      <LocalizedSampleString Key="IT" Value="IT"/>
+      <LocalizedSampleString Key="LabelsAndTooltipsChartSubtitle" Value="予算 (内部リング) と部門サイズ (外部リング)"/>
+      <LocalizedSampleString Key="LabelsAndTooltipsChartTitle" Value="部門"/>
+      <LocalizedSampleString Key="label_extent" Value="ラベルの拡張"/>
+      <LocalizedSampleString Key="label_position" Value="ラベルの位置"/>
+      <LocalizedSampleString Key="label_position_budget_series" Value="予算シリーズのラベル位置"/>
+      <LocalizedSampleString Key="label_position_depsize_series" Value="部署サイズ シリーズのラベル位置"/>
+      <LocalizedSampleString Key="lbl_budget" Value="予算"/>
+      <LocalizedSampleString Key="lbl_data_financial_administration" Value="事務"/>
+      <LocalizedSampleString Key="lbl_data_financial_customersupport" Value="サポート"/>
+      <LocalizedSampleString Key="lbl_data_financial_development" Value="開発"/>
+      <LocalizedSampleString Key="lbl_data_financial_it" Value="IT"/>
+      <LocalizedSampleString Key="lbl_data_financial_marketing" Value="マーケティング"/>
+      <LocalizedSampleString Key="lbl_data_financial_sales" Value="セールス"/>
+      <LocalizedSampleString Key="Marketing" Value="マーケティング"/>
+      <LocalizedSampleString Key="None" Value="なし"/>
+      <LocalizedSampleString Key="Others" Value="15 得点未満のプレーヤー"/>
+      <LocalizedSampleString Key="outside_end" Value="外部の終了位置"/>
+      <LocalizedSampleString Key="Radius" Value="半径"/>
+      <LocalizedSampleString Key="Sales" Value="セールス"/>
+      <LocalizedSampleString Key="Season20122013" Value="2012 年 - 2013 年"/>
+      <LocalizedSampleString Key="Series" Value="シリーズ"/>
+      <LocalizedSampleString Key="Spending" Value="支出"/>
+      <LocalizedSampleString Key="start_angle_budget_series" Value="予算系列の開始角度"/>
+      <LocalizedSampleString Key="start_angle_depsize_series" Value="部門サイズ系列の開始角度"/>
+      <LocalizedSampleString Key="Support" Value="サポート"/>
+      <LocalizedSampleString Key="TopScorers" Value="得点トップ 5 プレーヤー"/>
+      <LocalizedSampleString Key="UnitedStates" Value="米国"/>
+    </LocalizedSampleStrings>
+    <Description>
+      このドーナツ型チャートは、データを複数のシリーズに表示できます。円チャートのように、ドーナツ型チャートはカテゴリ データをパーセンテージとして表示します。センターが中空の場合、各リングがデータ シリーズを表す同心リングを使用して複数のシリーズを表示するために使用されています。データにバインドして内部の半径を構成します。次に、展開されたスライスを表示してテーマをカスタマイズできます。
+    </Description>
+    <PageKeywords>igDoughnutChart</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>ui.igdoughnutchart</ClientApiUrl>
+  <HelpPageName>igDoughnutChart_Overview</HelpPageName>
+  <ForumNumber>721</ForumNumber>
+  <IconImage>jquery-donought-chart.png</IconImage>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <TOC>
+    <Sample>bind-json</Sample>
+    <Sample>configure-legend</Sample>
+    <Sample>other-category</Sample>
+    <Sample>labels-tooltips</Sample>
+    <Sample>bind-to-collection</Sample>
+  </TOC>
+</Component>

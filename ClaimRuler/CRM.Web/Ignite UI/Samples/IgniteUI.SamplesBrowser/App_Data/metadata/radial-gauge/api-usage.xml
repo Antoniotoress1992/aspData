@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>API Usage</Title>
+    <Description>The buttons and api-viewer showcase some of igRadialGauge's needle methods. You can change the value of the needle at runtime and obtain the current value of the needle by clicking the corresponding buttons.</Description>
+    <HelpTopics>
+      <HelpTopic Title="igRadialGauge" TopicName="igRadialGauge" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>API の使用</Title>
+    <Description>ボタンおよび API ビューアーは igRadialGauge の針のメソッドを紹介します。ボタンをクリックすると、ランタイムで針の値を変更するか、針の現在値を取得できます。</Description>
+    <HelpTopics>
+      <HelpTopic Title="igRadialGauge" TopicName="igRadialGauge" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

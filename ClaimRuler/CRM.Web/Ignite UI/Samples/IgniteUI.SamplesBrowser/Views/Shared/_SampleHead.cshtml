@@ -1,0 +1,14 @@
+﻿@using IgniteUI.SamplesBrowser.Application.Model
+@using Infragistics.IgniteUI.SamplesBrowser.Shared.ViewModels
+@model SampleViewModel
+
+<script type="text/javascript" src="@Url.Content("~/js/sb-sample.js")"></script>
+
+@if (Model.Sample.Control.IsJQueryMobile)
+{
+    <script type="text/javascript" src="@Url.Content("~/js/sb-mobile.js")"></script>
+}
+
+@Html.Raw(Model.Sample.Code.RunningSampleHead)
+
+

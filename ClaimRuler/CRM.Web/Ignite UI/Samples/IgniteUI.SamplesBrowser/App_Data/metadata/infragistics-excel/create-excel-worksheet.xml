@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Create Excel Worksheet</Title>
+    <Description>
+      You can export our jQuery Grid’s data to a Microsoft Excel® spreadsheet. Our Excel library also provides the option of selecting from a variety of different export formats, as well as styling options for the exported spreadsheet.    
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>Excel ワークシートの作成</Title>
+    <Description>
+      Microsoft Excel® スプレッドシートを jQuery グリッド データへエクスポートします。Excel ライブラリは、多数のエクスポート形式やスプレッドシートのスタイル オプションを提供します。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

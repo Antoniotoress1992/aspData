@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>ToolTip Settings</Title>
+    <Description>This sample demonstrates configuring of various ToolTips (default, semi-templated, and fully templated) for the igBulletGraph control.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>ツールチップ設定</Title>
+    <Description>このサンプルでは、igBulletGraph コントロールでデフォルトまたはテンプレート付きのツールチップの構成を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

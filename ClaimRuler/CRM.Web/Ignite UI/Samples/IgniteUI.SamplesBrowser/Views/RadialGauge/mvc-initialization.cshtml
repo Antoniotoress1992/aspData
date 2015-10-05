@@ -1,0 +1,80 @@
+﻿@using Infragistics.Web.Mvc
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="@Url.Content("~/igniteui/css/themes/infragistics/infragistics.theme.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/igniteui/css/structure/infragistics.css")" rel="stylesheet" />
+   
+     <script src="@Url.Content("~/js/modernizr.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery-ui.min.js")"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="@Url.Content("~/igniteui/js/infragistics.core.js")"></script>
+    <script src="@Url.Content("~/igniteui/js/infragistics.dv.js")"></script>
+</head>
+
+ 
+<body>
+
+   @(
+    Html.Infragistics().RadialGauge()
+            .ID("radialgauge")
+            .Width("100%")
+            .Height("500px")
+            .BackingShape(RadialGaugeBackingShape.Circular)            
+            .Value(2)
+            .Interval(10)
+            .LabelInterval(10)
+            .LabelExtent(0.7)
+            .MinimumValue(0)
+            .MaximumValue(100)
+            .ScaleEndAngle(55)
+            .ScaleStartAngle(125)
+            .ScaleStartExtent(0.49)
+            .ScaleEndExtent(0.57)  
+            .ScaleBrush("Gray") 
+            .ScaleSweepDirection(SweepDirection.Clockwise)
+            .CenterX(0.5)
+            .CenterY(0.5)
+            .TickStartExtent(0.50)
+            .TickEndExtent(0.57)
+            .TickStrokeThickness(3)
+            .MinorTickStartExtent(0.57)
+            .MinorTickEndExtent(0.54)
+            .MinorTickStrokeThickness(1)
+            .NeedleStartExtent(0)
+            .NeedleEndExtent(0.48)
+            .NeedleShape(RadialGaugeNeedleShape.Needle)
+            .NeedlePivotShape(RadialGaugePivotShape.CircleOverlay)
+            .TransitionDuration(0)
+            
+            .Ranges(r => 
+                {
+                    r.Range("range2")
+                    .StartValue(70)
+                    .EndValue(100)
+                    .InnerStartExtent(0.5)
+                    .InnerEndExtent(0.5)
+                    .OuterStartExtent(0.61)
+                    .OuterEndExtent(0.65)
+                    .StrokeThickness(0.5);
+
+                    r.Range("range3")
+                    .StartValue(50)
+                    .EndValue(70)
+                    .InnerStartExtent(0.5)
+                    .InnerEndExtent(0.5)
+                    .OuterStartExtent(0.57)
+                    .OuterEndExtent(0.61)
+                    .StrokeThickness(0.5);
+                })
+            .Render()
+            )
+</body>
+</html>

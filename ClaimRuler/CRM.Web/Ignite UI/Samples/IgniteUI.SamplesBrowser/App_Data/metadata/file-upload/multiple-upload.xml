@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Multiple Upload</Title>
+    <Description>
+        This sample shows you how to set our jQuery Upload control to operate with multiple files. The maxSimultaneousFilesUploads and maxUploadedFiles properties can be used to restrict the number of uploaded files when uploading more than one file.
+        On HTML 5 enabled browsers(those which support multiple attribute on the input element) you can select multiple files at once from the "Open File" dialog or drag and drop the files from Windows Explorer directly on the igUpload component.
+        Note: You can upload files with a size smaller than 1 MB.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>複数アップロード</Title>
+    <Description>
+      このサンプルでは、複数のファイルを処理するために jQuery アップロード コントロールが設定されています。maxSimultaneousFilesUploads および maxUploadedFiles プロパティを使用すると、複数ファイルをアップロードするときにアップロードされるファイルの最大数を制限できます。
+      HTML 5 対応ブラウザー (input 要素に複数の属性をサポートするブラウザー) では、「ファイルを開く」ダイアログから複数のファイルを選択するか、Windows エクスプローラーからファイルを直接 igUpload コンポーネントにドラッグ アンド ドロップできます。
+      注: 1 MB 以下のファイルのみアップロードできます。
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>複数アップロード</Title>
+    <Description></Description>
+  </LocalizedContent>
+  <ServerRuntime>Hosted</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Custom Items</Title>
+    <Description>This sample demonstrates how to set custom images for the rating control using CSS rules and overwriting the control's default classes.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Adding Rating" TopicName="Adding_igRating(Mobile)_to_a_Web_Page" />
+      <HelpTopic Title="Overview" TopicName="igRating(Mobile)_Overview" />
+      <HelpTopic Title="Known Issues and Limitations" TopicName="igRating(Mobile)_Known_Issues" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>カスタム項目</Title>
+    <Description>このサンプルでは、CSS ルールを使用してレーティング コントロールでカスタム画像を設定し、コントロールのデフォルト クラスを上書きしています。</Description>
+    <HelpTopics>
+      <HelpTopic Title="Rating の追加" TopicName="Adding_igRating(Mobile)_to_a_Web_Page" />
+      <HelpTopic Title="概要" TopicName="igRating(Mobile)_Overview" />
+      <HelpTopic Title="既知の問題と制限" TopicName="igRating(Mobile)_Known_Issues" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

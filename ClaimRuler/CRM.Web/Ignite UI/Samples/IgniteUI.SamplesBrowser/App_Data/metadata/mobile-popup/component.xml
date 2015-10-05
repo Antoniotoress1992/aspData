@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Popup</Name>
+    <Description>
+      With a full range of Mobile Layout controls, you can be sure your mobile application's presentation is optimized for mobile devices.
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Show_Basic_Popup" Value="Show Basic Popup"/>
+    </LocalizedSampleStrings>
+    <PageKeywords>MobilePopup</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Popup</Name>
+    <Description>
+      モバイル レイアウト コントロールを使用すると、アプリケーションをモバイル デバイスのために最適化できます。
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Show_Basic_Popup" Value="ベーシック ポップアップの表示"/>
+    </LocalizedSampleStrings>
+    <PageKeywords>MobilePopup</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>http://api.jquerymobile.com/popup/</ClientApiUrl>
+  <HelpPageName>Popup</HelpPageName>
+  <ForumNumber>692</ForumNumber>
+  <IconImage>jquery-mobile-popup.png</IconImage>
+  <ClientRuntime>jQueryMobile</ClientRuntime>
+  <TOC>
+    <Sample>basic-usage</Sample>
+  </TOC>
+</Component>

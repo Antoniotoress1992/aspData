@@ -1,0 +1,192 @@
+﻿@using Infragistics.IgniteUI.SamplesBrowser.Shared.Entities
+@using Infragistics.IgniteUI.SamplesBrowser.Shared.ViewModels
+@model SampleCode
+
+<div class="jq-ui-tabs igsb-tabs ui-tabs ui-widget ui-widget-content ui-corner-all">
+    @if (Model.HasJsFiddleSettings && Model.JsFiddleSettings.ShowJsFiddleButton)
+    {
+        <div id="JSFiddle">
+            <a href="@Model.JsFiddleSettings.JsFiddleGitHubUrl" target="_blank">@Resources.Main.Show_In_JsFiddle</a>
+        </div>
+    }
+	 <span class="codeViewerSelectAll" onclick="selectAllClick(this)">@Resources.Main.SelectAll_ButtonLabel</span>
+    <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+        @if (Model.HasSeparatedSampleCode)
+        {
+            if (Model.HasJavaScript)
+            {
+                <li class="ui-state-default ui-corner-top"><a href="#@Model.JavaScriptCodeID">@Resources.Main.JavaScript</a></li>
+            }
+            if (Model.HasHtml)
+            {
+                <li class="ui-state-default ui-corner-top"><a href="#@Model.HtmlCodeID">@Resources.Main.HTML</a></li>
+            }
+            if (Model.HasCss)
+            {
+                <li class="ui-state-default ui-corner-top"><a href="#@Model.CssCodeID">@Resources.Main.CSS</a></li>
+            }
+            if (Model.HasFullHtml)
+            {
+                <li class="ui-state-default ui-corner-top"><a href="#@Model.FullHtmlCodeID">@Resources.Main.Full_Page</a></li>
+            }
+            if (Model.HasData)
+            {
+                <li class="ui-state-default ui-corner-top"><a href="#@Model.DataCodeID">@Resources.Main.Details_Data_File</a></li>              
+            }
+        }
+        @if (!Model.HasSeparatedSampleCode && !Model.HasAspNetMvcCode)
+        {
+            if (Model.HasFullHtml)
+            {
+                <li class="ui-state-default ui-corner-top"><a href="#@Model.FullHtmlCodeID">@Resources.Main.HTML</a></li>
+            }        
+            if (Model.HasData)
+            {
+                <li class="ui-state-default ui-corner-top"><a href="#@Model.DataCodeID">@Resources.Main.Details_Data_File</a></li>              
+            }
+        }
+        @if (Model.HasAspNetMvcCode)
+        {
+            if (Model.HasView)
+            {
+                <li class="ui-state-default ui-corner-top"><a href="#@Model.ViewCodeID">@Resources.Main.ASPNET_View_Code</a></li>
+            }
+            if (Model.HasController)
+            {
+                <li class="ui-state-default ui-corner-top"><a href="#@Model.ControllerCodeID">@Resources.Main.ASPNET_Controller_Code</a></li>
+            }
+            if (Model.HasModel)
+            {
+                <li class="ui-state-default ui-corner-top"><a href="#@Model.ModelCodeID">@Resources.Main.ASPNET_Model_Code</a></li>
+            }
+        }
+    </ul>
+    @*Inline styles used to work with jQuery UI Tab*@
+    @if (Model.HasSeparatedSampleCode && Model.HasJavaScript)
+    {
+        <div id="@Model.JavaScriptCodeID" class="code-viewer" style="display:none">
+            <pre class="prettyprint lang-js">
+                    @Model.JavaScript         
+            </pre>
+        </div>
+    }
+    @if (Model.HasSeparatedSampleCode && Model.HasHtml)
+    {
+        <div id="@Model.HtmlCodeID" class="code-viewer" style="display:none">
+            <pre class="prettyprint lang-html">
+                    @Model.Html         
+            </pre>
+        </div>
+    }
+    @if (Model.HasSeparatedSampleCode && Model.HasCss)
+    {
+        <div id="@Model.CssCodeID" class="code-viewer" style="display:none">
+            <pre class="prettyprint lang-css">
+                    @Model.Css       
+            </pre>
+        </div>
+    }        
+    @if (Model.HasFullHtml)
+    {
+        <div id="@Model.FullHtmlCodeID" class="code-viewer" style="display:none">
+            <pre class="prettyprint lang-html">
+                    @Model.FullHtml         
+            </pre>
+        </div>
+    }
+    @if (Model.HasData)
+    {
+        <div id="@Model.DataCodeID" class="code-viewer" style="display:none">
+            <pre class="lang-js">
+                    @Model.Data  
+            </pre>
+        </div>
+    }
+    @if (Model.HasView)
+    {
+        <div id="@Model.ViewCodeID" class="code-viewer" style="display:none">
+            <pre class="prettyprint lang-html">
+                @Model.View
+            </pre>
+        </div>
+    }
+    @if (Model.HasController)
+    {
+        <div id="@Model.ControllerCodeID" class="code-viewer" style="display:none">
+            <pre class="prettyprint lang-cs">
+                 @Model.Controller
+            </pre>
+        </div>
+    }
+    @if (Model.HasModel)
+    {
+        <div id="@Model.ModelCodeID" class="code-viewer" style="display:none">
+            <pre class="prettyprint lang-cs">
+             @Model.Model
+            </pre>
+        </div>
+    }
+</div>
+
+<aside class="codeViewerButton codeViewerCollapsed">@Resources.Main.Code_Viewer</aside>
+
+<aside id="codeViewerPopup">
+    <div style="text-align: right; position: absolute; z-index: 1; height: 1px; width: 100%">
+        <span class="codeViewerPopupHideButton codeViewerButton">@Resources.Main.Back_To_Sample</span>
+    </div>
+    <div id="codeViewerPopupAccordion">
+        @if (Model.HasSeparatedSampleCode)
+        {
+            if (Model.HasJavaScript)
+            {
+                <h3>@Resources.Main.JavaScript</h3>
+                <div id="@string.Format("{0}_copy", Model.JavaScriptCodeID)" class="codeViewerPopupAccordionDiv"></div>
+            }
+            if (Model.HasHtml)
+            {
+                <h3>@Resources.Main.HTML</h3>
+                <div id="@string.Format("{0}_copy", Model.HtmlCodeID)" class="codeViewerPopupAccordionDiv"></div>
+            }
+            if (Model.HasCss)
+            {
+                <h3>@Resources.Main.CSS</h3>
+                <div id="@string.Format("{0}_copy", Model.CssCodeID)" class="codeViewerPopupAccordionDiv"></div>
+            }
+        }
+        @if (Model.HasFullHtml && !Model.HasAspNetMvcCode)
+        {
+            if (Model.HasSeparatedSampleCode)
+            {
+               <h3>@Resources.Main.Full_Page</h3>
+            }
+            else
+            {
+               <h3>@Resources.Main.HTML</h3>
+            }
+            <div id="@string.Format("{0}_copy", Model.FullHtmlCodeID)" class="codeViewerPopupAccordionDiv"></div>
+        }
+        @if (Model.HasData)
+        {
+            <h3>@Resources.Main.Details_Data_File</h3>
+            <div id="@string.Format("{0}_copy", Model.DataCodeID)" class="codeViewerPopupAccordionDiv"></div>
+        }
+        @if (Model.HasAspNetMvcCode)
+        {
+            if (Model.HasView)
+            {
+                <h3>@Resources.Main.ASPNET_View_Code</h3>
+                <div id="@string.Format("{0}_copy", Model.ViewCodeID)" class="codeViewerPopupAccordionDiv"></div>
+            }
+            if (Model.HasController)
+            {
+                <h3>@Resources.Main.ASPNET_Controller_Code</h3>
+                <div id="@string.Format("{0}_copy", Model.ControllerCodeID)" class="codeViewerPopupAccordionDiv"></div>
+            }
+            if (Model.HasModel)
+            {
+                <h3>@Resources.Main.ASPNET_Model_Code</h3>
+                <div id="@string.Format("{0}_copy", Model.ModelCodeID)" class="codeViewerPopupAccordionDiv"></div>
+            }
+        }
+    </div>
+</aside>

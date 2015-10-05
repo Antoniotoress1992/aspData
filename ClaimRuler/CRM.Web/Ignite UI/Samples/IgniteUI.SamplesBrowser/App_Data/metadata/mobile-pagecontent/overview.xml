@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>  
+  <RedirectToSample CopyTargetTitleAndDescription="none">mobile-page/basic-usage</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      The mobile page content ASP.NET MVC helper is a Microsoft® .NET programming interface used to render HTML and JavaScript 
+      for a content area within a jQuery Mobile page widget. See the complete list of samples in the menu.
+    ]]>
+    </Description>
+    <HelpTopics>
+      <HelpTopic Title="Adding PageContent" TopicName="Adding_PageContent" />
+      <HelpTopic Title="Overview" TopicName="PageContent_Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      Mobile Page Content ASP.NET MVC ヘルパーは、jQuery Mobile page ウィジェット内のコンテンツ領域の HTML および JavaScript を描画するための Microsoft® .NET プログラミング インターフェイスです。サンプルをすべて表示するには、メニューを参照してください。
+    ]]>
+    </Description>
+    <HelpTopics>
+      <HelpTopic Title="PageContent の追加" TopicName="Adding_PageContent" />
+      <HelpTopic Title="概要" TopicName="PageContent_Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+</Sample>

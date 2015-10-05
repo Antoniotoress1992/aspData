@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Binding to Collection</Title>
+    <Description>This sample demonstrates how to create maps and visualize a geographic symbol series with binding to a server side collection of geographic locations.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Overview" TopicName="Overview_igMap" />
+      <HelpTopic Title="Adding Map" TopicName="Adding_igMap" />
+      <HelpTopic Title="Data Binding" TopicName="Data_Binding_igMap" />
+      <HelpTopic Title="Configuring" TopicName="Configuring_igMap" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>コレクションにバインド</Title>
+    <Description>このサンプルでは、マップを作成し、サーバー側の地理位置のコレクションへのバインドを使用して地理記号系列を視覚化する方法を紹介します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="概要" TopicName="Overview_igMap" />
+      <HelpTopic Title="マップの追加" TopicName="Adding_igMap" />
+      <HelpTopic Title="データ バインディング" TopicName="Data_Binding_igMap" />
+      <HelpTopic Title="構成" TopicName="Configuring_igMap" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+</Sample>

@@ -1,0 +1,16 @@
+@{
+    ViewBag.Title = "Scheduler | Server Side filtering";
+    ViewBag.SampleTitle = "Integration with other controls";
+    ViewBag.ShortDescription = "Server Side filtering";
+    ViewBag.LongDescription = "Use control in the right corner of the page<br />    Page will be reloaded and scheduler will load only events of selected room.";
+}
+
+
+<div style="position:absolute; right:200px; top:10px">
+    @using(Html.BeginForm("Index", "ServerSideFiltering", FormMethod.Get, null)){
+        @Html.DropDownList("rooms", new SelectList(Model.Rooms, "key", "label", ViewData["rooms"]))
+        <input type="submit" name="filter" value="Filter" />
+    }
+</div>
+
+@Html.Raw(Model.Scheduler.Render()) 

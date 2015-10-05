@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Binding to Xmla Data Source</Title>
+    <Description>This sample demonstrates how to bind the igPivotView to an igOlapXmlaDataSource. As of the 2014.1 release the igPivotView supports visualizing Key Performance Indicators (KPIs) from an OLAP cube.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>Xmla データ ソースへのバインド</Title>
+    <Description>このサンプルでは、igPivotView を igOlapXmlaDataSource にバインドする方法を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>Remote</ServerRuntime>
+  <MinSampleSize>Desktop</MinSampleSize>
+  <Status>Updated</Status>
+</Sample>

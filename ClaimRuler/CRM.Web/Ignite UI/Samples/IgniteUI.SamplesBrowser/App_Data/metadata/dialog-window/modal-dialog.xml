@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Modal Dialog</Title>
+    <Description>This sample shows you how to create a modal igDialog.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Modal State" TopicName="igDialog Modal State" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>モーダル ダイアログ</Title>
+    <Description>このサンプルでは、モーダル igDialog を作成する方法を紹介します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="モーダル状態" TopicName="igDialog Modal State" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <TOC>
+    <Sample>modal-dialog</Sample>
+  </TOC>
+  <IsFullPostBack>False</IsFullPostBack>
+</Sample>

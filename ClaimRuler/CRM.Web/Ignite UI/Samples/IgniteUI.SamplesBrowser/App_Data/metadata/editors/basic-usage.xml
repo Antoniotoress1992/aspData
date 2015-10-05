@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Basic Usage</Title>
+    <Description>The sample shows a basic example of using the editor controls.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Configuring" TopicName="Configuring_igEditors_at_Runtime" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>基本的な使用方法</Title>
+    <Description>このサンプルはエディター コントロールの基本的な例を表示します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="構成" TopicName="Configuring_igEditors_at_Runtime" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

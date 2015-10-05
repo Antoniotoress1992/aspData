@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Dialog Window</Name>
+    <LocalizedSampleStrings>
+        <LocalizedSampleString Key="open" Value="Open Dialog" />
+        <LocalizedSampleString Key="closeButtonTitle" Value="Close Dialog Window" />
+        <LocalizedSampleString Key="minimizeButtonTitle" Value="Minimize Dialog Window" />
+        <LocalizedSampleString Key="maximizeButtonTitle" Value="Maximize Dialog Window" />
+        <LocalizedSampleString Key="pinButtonTitle" Value="Pin Dialog Window" />
+        <LocalizedSampleString Key="unpinButtonTitle" Value="Unpin Dialog Window" />
+        <LocalizedSampleString Key="restoreButtonTitle" Value="Restore Dialog Window" />
+        <LocalizedSampleString Key="api" Value="API" />
+        <LocalizedSampleString Key="changingStateProgrammatically" Value="Changing State Programmatically" />
+        <LocalizedSampleString Key="positioning" Value="Positioning" />
+        <LocalizedSampleString Key="create" Value="Create Dialog" />
+        <LocalizedSampleString Key="destroy" Value="Destroy Dialog" />
+        <LocalizedSampleString Key="maximize" Value="Maximize Dialog" />
+        <LocalizedSampleString Key="minimize" Value="Minimize Dialog" />
+        <LocalizedSampleString Key="pin" Value="Pin Dialog" />
+        <LocalizedSampleString Key="unpin" Value="Unpin Dialog" />
+        <LocalizedSampleString Key="close" Value="Close Dialog" />
+        <LocalizedSampleString Key="headerText" Value="This is my header text." />
+        <LocalizedSampleString Key="footerText" Value="This is my footer text." />
+        <LocalizedSampleString Key="igwebsite" Value="http://www.infragistics.com" />
+    </LocalizedSampleStrings>  
+    <Description>
+      Designed to replicate the functionality of a standard Windows Forms dialog box, the dialog window control allows you to popup both modal and non-modal dialogs in-browser that show all common dialog behaviors.
+    </Description>
+    <PageKeywords>igDialog</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Dialog Window</Name>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="open" Value="ダイアログを開く" />
+      <LocalizedSampleString Key="closeButtonTitle" Value="ダイアログ ウィンドウを閉じる" />
+      <LocalizedSampleString Key="minimizeButtonTitle" Value="ダイアログ ウィンドウを最小化" />
+      <LocalizedSampleString Key="maximizeButtonTitle" Value="ダイアログ ウィンドウを最大化" />
+      <LocalizedSampleString Key="pinButtonTitle" Value="ダイアログ ウィンドウをピン固定" />
+      <LocalizedSampleString Key="unpinButtonTitle" Value="ダイアログ ウィンドウのピン固定を解除" />
+      <LocalizedSampleString Key="restoreButtonTitle" Value="ダイアログ ウィンドウの復元" />
+      <LocalizedSampleString Key="api" Value="API" />
+      <LocalizedSampleString Key="changingStateProgrammatically" Value="状態をコードで変更" />
+      <LocalizedSampleString Key="positioning" Value="配置" />
+      <LocalizedSampleString Key="create" Value="ダイアログを作成" />
+      <LocalizedSampleString Key="destroy" Value="ダイアログを破棄" />
+      <LocalizedSampleString Key="maximize" Value="ダイアログを最大化" />
+      <LocalizedSampleString Key="minimize" Value="ダイアログを最小化" />
+      <LocalizedSampleString Key="pin" Value="ダイアログをピン固定" />
+      <LocalizedSampleString Key="unpin" Value="ダイアログのピン固定を解除" />
+      <LocalizedSampleString Key="close" Value="ダイアログを閉じる" />
+      <LocalizedSampleString Key="headerText" Value="これはヘッダー テキストです。" />
+      <LocalizedSampleString Key="footerText" Value="これはフッター テキストです。" />
+      <LocalizedSampleString Key="igwebsite" Value="http://jp.infragistics.com" />
+    </LocalizedSampleStrings>
+    <Description>
+      標準 Windows Forms ダイアロ グボックスの機能を再現します。ASP.NET AJAX ダイアログ ウィンドウ コントロールのポップアップ機能では、モーダルおよび非モーダルでダイアログを表示できます。
+    </Description>
+    <PageKeywords>igDialog</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>ui.igdialog</ClientApiUrl>
+  <HelpPageName>igDialog</HelpPageName>
+  <ForumNumber>690</ForumNumber>
+  <IconImage>jquery-dialog-window-logo.png</IconImage>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <TOC>
+    <Sample>basic-usage</Sample>
+    <Sample>icons</Sample>
+    <Sample>loading-external-page</Sample>
+    <Sample>modal-dialog</Sample>
+    <Sample>aspnet-mvc-helper</Sample>
+    <Sample>api-and-events</Sample>
+  </TOC>
+</Component>

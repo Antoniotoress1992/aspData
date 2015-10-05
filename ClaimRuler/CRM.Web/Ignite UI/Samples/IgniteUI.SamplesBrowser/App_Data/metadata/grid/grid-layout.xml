@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Grid Layout</Title>
+    <Description>
+        <![CDATA[
+        This sample demonstrates how to set up different layout properties of the igGrid. The following properties are exposed: <br/>
+        caption – caption text that will be shown above the grid header.<br/>
+        fixed headers - the column headers can be fixed so they are visible while scrolling.<br/>
+        default column width - when columns don’t have width assigned in the columns collection.<br/>
+        width (columns) – the width that is applied to the column.<br/>
+        width - the width of the grid. If a column’s width exceeds the grid’s width then a horizontal scroll bar appears.
+        ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+      <Title>グリッド レイアウト</Title>
+    <Description>
+        <![CDATA[
+      このサンプルは、igGrid のレイアウト プロパティを設定する方法を紹介します。以下のプロパティは公開されます。<br/>
+      キャプション - グリッド ヘッダーの上に表示されるキャプション テキスト。<br/>
+      固定ヘッダー - スクロールするときに表示するために列ヘッダーを固定できます。<br/>
+      デフォルトの列幅 - 列コレクションの列幅が割り当てられていないときに使用される幅。<br/>
+      幅 (列) - 列に適用される幅。<br/>
+      幅 - グリッドの幅。列の幅がグリッドの幅を超えると、水平スクロールバーが表示されます。
+      ]]>
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>  
+  <LocalizedContent Language="en">
+    <Name>Video Player</Name>
+    <Description>
+      Add online streaming video playback with an HTML 5 video tag in many different standard formats, and in any modern browser or device. Our jQuery video player control and accompanying controls for ASP.NET MVC video players lets your users interact with and control the online streaming of your video content
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="ig_pres" Value="Infragistics Presentation" />
+      <LocalizedSampleString Key="Design" Value="Design" />
+      <LocalizedSampleString Key="ig_design_pres" Value="Infragistics design presentation" />
+      <LocalizedSampleString Key="Develop" Value="Develop" />
+      <LocalizedSampleString Key="ig_develop_pres" Value="Infragistics develop presentation" />
+      <LocalizedSampleString Key="Experience" Value="Experience" />
+      <LocalizedSampleString Key="ig_experience_pres" Value="Infragistics experience presentation" />
+      <LocalizedSampleString Key="Final" Value="Final" />
+      <LocalizedSampleString Key="ig_logo" Value="Infragistics logo" />
+      <LocalizedSampleString Key="always_play" Value="Always Play Commercials" />
+      <LocalizedSampleString Key="pres" Value="Presentation" />
+      <LocalizedSampleString Key="p1" Value="Part 1" />
+      <LocalizedSampleString Key="p2" Value="Part 2" />
+      <LocalizedSampleString Key="Play" Value="Play" />
+      <LocalizedSampleString Key="add_screen" Value="Add screenshot" />
+      <LocalizedSampleString Key="Volume" Value="Volume" />
+      <LocalizedSampleString Key="current_time" Value="Current Time" />
+      <LocalizedSampleString Key="support_html5" Value="Supports HTML5 video:" />
+      <LocalizedSampleString Key="support_h264" Value="Supports H264/AVC video:" />
+      <LocalizedSampleString Key="support_ogg" Value="Supports Ogg/Theora video:" />
+      <LocalizedSampleString Key="support_webm" Value="Supports WebM video:" />
+      <LocalizedSampleString Key="Screenshots" Value="Screenshots" />
+      <LocalizedSampleString Key="bunny" Value="Big Buck Bunny" />
+      <LocalizedSampleString Key="River" Value="River" />
+      <LocalizedSampleString Key="bunny_appears" Value="Big Buck Bunny Appears" />
+      <LocalizedSampleString Key="YES" Value="YES" />
+      <LocalizedSampleString Key="NO" Value="NO" />
+      <LocalizedSampleString Key="Pause" Value="Pause" />
+    </LocalizedSampleStrings>
+    <PageKeywords>igVideoPlayer</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Video Player</Name>
+    <Description>
+      さまざまな表示形式に対応する HTML 5 ビデオ タグでオンライン ストリーミング ビデオ再生の追加、また、最新ブラウザーおよびデバイスでの再生が可能です。jQuery ビデオ プレーヤーおよび ASP.NET MVC ビデオ プレーヤーでは、ビデオ コンテンツのオンライン ストリーミングを制御することができます。
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="ig_pres" Value="Infragistics プレゼンテーション" />
+      <LocalizedSampleString Key="Design" Value="デザイン" />
+      <LocalizedSampleString Key="ig_design_pres" Value="Infragistics デザイン プレゼンテーション" />
+      <LocalizedSampleString Key="Develop" Value="開発" />
+      <LocalizedSampleString Key="ig_develop_pres" Value="Infragistics 開発プレゼンテーション" />
+      <LocalizedSampleString Key="Experience" Value="体験" />
+      <LocalizedSampleString Key="ig_experience_pres" Value="Infragistics エクスペリエンス プレゼンテーション" />
+      <LocalizedSampleString Key="Final" Value="最終" />
+      <LocalizedSampleString Key="ig_logo" Value="インフラジスティックスのロゴ" />
+      <LocalizedSampleString Key="always_play" Value="広告を常に再生する" />
+      <LocalizedSampleString Key="pres" Value="プレゼンテーション" />
+      <LocalizedSampleString Key="p1" Value="パート 1" />
+      <LocalizedSampleString Key="p2" Value="パート 2" />
+      <LocalizedSampleString Key="Play" Value="再生" />
+      <LocalizedSampleString Key="add_screen" Value="スクリーンショットの追加" />
+      <LocalizedSampleString Key="Volume" Value="音量" />
+      <LocalizedSampleString Key="current_time" Value="現在の値:" />
+      <LocalizedSampleString Key="support_html5" Value="HTML5 ビデオ：" />
+      <LocalizedSampleString Key="support_h264" Value="H264/AVC ビデオ：" />
+      <LocalizedSampleString Key="support_ogg" Value="Ogg/Theora ビデオ：" />
+      <LocalizedSampleString Key="support_webm" Value="WebM ビデオ：" />
+      <LocalizedSampleString Key="Screenshots" Value="スクリーンショット" />
+      <LocalizedSampleString Key="bunny" Value="Big Buck Bunny" />
+      <LocalizedSampleString Key="River" Value="川" />
+      <LocalizedSampleString Key="bunny_appears" Value="Big Buck Bunny の紹介" />
+      <LocalizedSampleString Key="YES" Value="はい" />
+      <LocalizedSampleString Key="NO" Value="いいえ" />
+      <LocalizedSampleString Key="Pause" Value="停止" />
+    </LocalizedSampleStrings>
+    <PageKeywords>igVideoPlayer</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>ui.igvideoplayer</ClientApiUrl>
+  <HelpPageName>VideoPlayer</HelpPageName>
+  <ForumNumber>508</ForumNumber>
+  <IconImage>jquery-video-player-logo.png</IconImage>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <TOC>
+    <Sample>basic-usage</Sample>
+    <Sample>aspnet-mvc-helper</Sample>
+    <Sample>common-features</Sample>
+    <Sample>related-videos</Sample>
+    <Sample>bookmarks</Sample>
+    <Sample>banner-advertisements</Sample>
+    <Sample>commercials-support</Sample>
+    <Sample>fallback-video</Sample>
+  </TOC>
+</Component>

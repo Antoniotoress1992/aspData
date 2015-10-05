@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Polar Series</title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="../../igniteui/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+    <link href="../../igniteui/css/structure/infragistics.css" rel="stylesheet" />
+    
+    <!--CSS file specific for chart styling -->
+    <link href="../../igniteui/css/structure/modules/infragistics.ui.chart.new.css" rel="stylesheet" />
+
+    <script src="../../js/modernizr.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="../../igniteui/js/infragistics.core.js"></script>
+    <script src="../../igniteui/js/infragistics.dv.js"></script>
+
+</head>
+<body>
+    <script type="text/javascript" src="../../data-files/wind.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            function createChart(selector, seriesType, data) {
+                $(selector).igDataChart({
+                    width: "400px",
+                    height: "400px",
+                    dataSource: data,
+                    title: "Wind Speed vs. Wind Direction",
+                    subtitle: "Los Angeles wind data over twelve hours",
+                    axes: [{
+                        name: "angleAxis",
+                        type: "numericAngle"
+                    },
+                    {
+                        name: "radiusAxis",
+                        type: "numericRadius",
+                        minimumValue: 0,
+                        maximumValue: 10,
+                        interval: 2
+                    }],
+                    series: [{
+                        name: "series1",
+                        //title: "$$(Chart_lbl_seriesTitle)",
+                        type: seriesType,
+                        angleAxis: "angleAxis",
+                        radiusAxis: "radiusAxis",
+                        angleMemberPath: "WindDirection",
+                        radiusMemberPath: "WindSpeed"
+                    }],
+                    horizontalZoomable: true,
+                    verticalZoomable: true,
+                    windowResponse: "immediate"
+                });
+            }
+
+            createChart("#chartScatter", "polarScatter", data);
+            createChart("#chartScatterLine", "polarLine", data);
+            createChart("#chartScatterArea", "polarArea", data);
+            createChart("#chartPolarSpline", "polarSpline", data);
+            createChart("#chartPolarSplineArea", "polarSplineArea", data);
+        });
+    </script>
+
+    <style type="text/css">
+        h4
+        {
+            width: 100%;
+            text-align: center;
+        }
+        
+        .chart
+        {
+            position: relative;
+            float: left;
+            margin-right: 10px;
+        }
+    </style>
+
+    <div class="chartContainer">
+        <div class="chart">
+            <h2 align="center">Polar Scatter</h2>
+            <div id="chartScatter"></div>
+        </div>
+        <div class="chart">
+            <h2 align="center">Polar Line</h2>
+            <div id="chartScatterLine"></div>
+        </div>
+        <div class="chart">
+            <h2 align="center">Polar Area</h2>
+            <div id="chartScatterArea"></div>
+        </div>
+        <div class="chart">
+            <h2 align="center">Polar Spline</h2>
+            <div id="chartPolarSpline"></div>
+        </div>
+        <div class="chart">
+            <h2 align="center">Polar Spline Area</h2>
+            <div id="chartPolarSplineArea"></div>
+        </div>
+    </div>
+
+    <div class="NOAAdata-attribution">
+        Weather data from:<br />
+        <a href="http://www.noaa.gov/" target="_blank">NOAA</a>
+    </div>
+</body>
+</html>

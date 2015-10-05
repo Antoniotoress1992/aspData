@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">video-player/basic-usage</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      The igVideoPlayer is a jQuery UI widget that displays HTML 5 video displaying a consistent user interface across browsers. 
+      It has a full set of playback controls and features including:
+      <ul>
+        <li><a href="~/video-player/related-videos">Related Videos</a></li>
+        <li><a href="~/video-player/bookmarks">Bookmarks</a></li>
+        <li><a href="~/video-player/banner-advertisements">Banner Advertisements</a></li>
+        <li><a href="~/video-player/commercials-support">Commercials</a></li>
+        <li><a href="~/video-player/fallback-video">Fallback Video</a></li>
+        <li>And more listed in the menu!</li>
+      </ul>
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      igVideoPlayer は、HTML 5 ビデオを表示する jQuery UI ウィジェットです。ブラウザーに関係なしで同じユーザー インターフェイスを表示します。
+      以下の再生コントロールおよび機能を提供します:
+      <ul>
+        <li><a href="~/video-player/related-videos">関連ビデオ</a></li>
+        <li><a href="~/video-player/bookmarks">ブックマーク</a></li>
+        <li><a href="~/video-player/banner-advertisements">バナー広告</a></li>
+        <li><a href="~/video-player/commercials-support">コマーシャル</a></li>
+        <li><a href="~/video-player/fallback-video">フォールバック ビデオ</a></li>
+        <li>すべてのサンプルを表示するには、メニューを参照してください。</li>
+      </ul>
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

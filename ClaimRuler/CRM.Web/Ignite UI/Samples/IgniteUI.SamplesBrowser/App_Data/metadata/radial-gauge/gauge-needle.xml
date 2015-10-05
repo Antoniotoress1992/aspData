@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Gauge Needle</Title>
+    <Description>Displayed as a pointer, the Needle indicates a single value on a scale. The table above allows you to interact with the Radial Gauge control's Needle. </Description>
+    <HelpTopics>
+      <HelpTopic Title="Configuring Needles (igRadialGauge)" TopicName="igRadialGauge_Configuring_Needles" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>ゲージ針</Title>
+    <Description>ポインターとして表示される針は、スケールで単一の値を示します。以上の表でラジアル ゲージ コントロールの針を操作できます。</Description>
+    <HelpTopics>
+      <HelpTopic Title="針の構成 (igRadialGauge)" TopicName="igRadialGauge_Configuring_Needles" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

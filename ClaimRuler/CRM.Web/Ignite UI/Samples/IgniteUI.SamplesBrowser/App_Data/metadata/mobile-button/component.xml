@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Button</Name>
+    <Description>
+      Go beyond simple web pages and build true mobile applications. With a selection seven types of mobile input controls, users can provide inputs and responses simply and easily.
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Basic_Button" Value="Basic Button" />
+      <LocalizedSampleString Key="Customized_Button" Value="Customized Button" />
+      <LocalizedSampleString Key="Inline_Buttons" Value="Inline Buttons" />
+      <LocalizedSampleString Key="Cancel" Value="Cancel" />
+      <LocalizedSampleString Key="OK" Value="OK" />
+      <LocalizedSampleString Key="Submit_Buttons" Value="Submit Buttons" />
+      <LocalizedSampleString Key="Submit" Value="Submit" />
+    </LocalizedSampleStrings>
+    <PageKeywords>MobileButton</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Button</Name>
+    <Description>
+      モバイル アプリケーションに対応するコントロールを提供します。モバイル入力コントロールの 7 つのタイプを提供します。
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Basic_Button" Value="基本ボタン" />
+      <LocalizedSampleString Key="Customized_Button" Value="カスタム ボタン" />
+      <LocalizedSampleString Key="Inline_Buttons" Value="インライン ボタン" />
+      <LocalizedSampleString Key="Cancel" Value="キャンセル" />
+      <LocalizedSampleString Key="OK" Value="OK" />
+      <LocalizedSampleString Key="Submit_Buttons" Value="送信ボタン" />
+      <LocalizedSampleString Key="Submit" Value="送信" />
+    </LocalizedSampleStrings>
+    <PageKeywords>MobileButton</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>http://api.jquerymobile.com/button/</ClientApiUrl>
+  <HelpPageName>button</HelpPageName>
+  <ForumNumber>691</ForumNumber>
+  <IconImage>jquery-mobile-button.png</IconImage>
+  <ClientRuntime>jQueryMobile</ClientRuntime>
+  <TOC>
+    <Sample>basic-usage</Sample>
+  </TOC>
+</Component>

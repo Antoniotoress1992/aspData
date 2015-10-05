@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>ASP.NET MVC Helper</Title>
+    <Description>This is a basic example showing the data chart created with the ASP.NET MVC helper.</Description>
+    <HelpTopics>
+      <HelpTopic Title="MVC Helper API Reference Links" TopicName="igDataChart_API_Links" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>ASP.NET MVC ヘルパー</Title>
+    <Description>このサンプルは、ASP.NET MVC ヘルパーによって作成されたデータ チャートを表示します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="MVC ヘルパー API リファレンス リンク" TopicName="igDataChart_API_Links" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+</Sample>

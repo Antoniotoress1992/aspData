@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Basic Usage</Title>
+    <Description>This sample shows several ASP.NET MVC helpers used to render a jQuery Mobile page, header, footer, and content element.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Adding Page" TopicName="Adding_Page" />
+      <HelpTopic Title="Configuring" TopicName="Page_Configuring" />
+      <HelpTopic Title="Overview" TopicName="Page_Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>基本的な使用方法</Title>
+    <Description>このサンプルでは、jQuery Mobile ページ、ヘッダー、フッター、およびコンテンツ要素を描画するために使用される複数の ASP.NET MVC ヘルパーを紹介します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="Page の追加" TopicName="Adding_Page" />
+      <HelpTopic Title="構成" TopicName="Page_Configuring" />
+      <HelpTopic Title="概要" TopicName="Page_Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+</Sample>

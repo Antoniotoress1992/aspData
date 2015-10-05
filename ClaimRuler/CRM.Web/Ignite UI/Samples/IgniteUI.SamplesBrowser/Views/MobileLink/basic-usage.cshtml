@@ -1,0 +1,80 @@
+﻿@using Infragistics.Web.Mvc.Mobile
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="@Url.Content("~/css/jqm/jquery.mobile.structure.min.css")" rel="stylesheet" />
+
+    <!-- Required Ignite UI Mobile Combined CSS Files -->
+    <link href="@Url.Content("~/igniteui/mobile/css/structure/infragistics.mobile.css")"  rel="stylesheet"/>
+    <link href="@Url.Content("~/igniteui/mobile/css/themes/ios/infragistics.mobile.theme.css")"  rel="stylesheet"/>
+    
+    <script src="@Url.Content("~/js/modernizr.min.js")"></script>
+    <script src="@Url.Content("~/js/jqm/jquery.min.js")"></script>
+    <script src="@Url.Content("~/js/jqm/jquery.mobile.min.js")"></script>
+
+    <!-- Required Ignite UI Mobile Combined JavaScript File -->
+    <script src="@Url.Content("~/igniteui/mobile/js/infragistics.mobile.js")"></script>
+</head>
+<body>
+    <div data-role="page">
+        <style type="text/css">
+            .sample-block { margin-top: 30px; }            
+            .sample-block h4 { padding: 0px; margin: 0px 10px; }
+        </style>          
+
+        <div data-role="content">
+
+            <div class="sample-block-basic">
+                @(
+                    Html.InfragisticsMobile()
+                    .Link()
+                    .ID("lnk1")
+                    .Text("Basic Link")
+                    .NavigateUrl("http://www.infragistics.com/")
+                    .Target("_blank")
+                    .Render()
+                )
+            </div>
+
+            <div class="sample-block">
+                @(
+                    Html.InfragisticsMobile()
+                    .Link()
+                    .ID("lnk2")
+                    .RenderMode(LinkRenderMode.Button)
+                    .Text("Button Link")
+                    .NavigateUrl("http://www.infragistics.com/")
+                    .Target("_blank")
+                    .Icon("grid")
+                    .Mini(true)
+                    .Shadow(true)
+                    .ReverseDirection(true)
+                    .Render()
+                )
+            </div>
+            <div class="sample-block">
+                @(
+                    Html.InfragisticsMobile()
+                    .Link()
+                    .ID("lnk3")
+                    .RenderMode(LinkRenderMode.Button)
+                    .Text("Pre-fetched Link")
+                    .NavigateUrl("http://jquerymobile.com/demos/1.1.1/docs/pages/page-links.html")
+                    .Prefetch(true)
+                    .DestinationRelationship(LinkDestinationRelationshipOptions.External)
+                    .Render()
+                )
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+</html>

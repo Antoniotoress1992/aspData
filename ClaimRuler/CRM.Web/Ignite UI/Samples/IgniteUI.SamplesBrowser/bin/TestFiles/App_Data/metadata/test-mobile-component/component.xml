@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Test Mobile Component Name</Name>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Beverages" Value="Beverages" />
+      <LocalizedSampleString Key="Dairy" Value="Dairy" />
+      <LocalizedSampleString Key="Seafood" Value="Seafood" />
+      <LocalizedSampleString Key="Confections" Value="Confections" />
+      <LocalizedSampleString Key="Expand_Presets" Value="Expand Presets" />
+    </LocalizedSampleStrings>
+    <Description>Test Description</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Test Component Name JA</Name>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Beverages" Value="飲料" />
+      <LocalizedSampleString Key="Dairy" Value="乳製品" />
+      <LocalizedSampleString Key="Seafood" Value="魚介類" />
+    </LocalizedSampleStrings>
+    <Description>Test Description JA</Description>
+  </LocalizedContent>
+  <ClientApiUrl>mobile.igListView</ClientApiUrl>
+  <HelpPageName>igListView</HelpPageName>
+  <ForumNumber>662</ForumNumber>
+  <IconImage>jquery-mobile-list-view.png</IconImage>
+  <ClientRuntime>jQueryMobile</ClientRuntime>
+  <TOC>
+    <Sample>json-binding</Sample>
+    <Sample>bind-to-rest-service</Sample>
+    <Sample>dynamic-binding</Sample>
+    <Sample>list-dividers</Sample>
+  </TOC>
+</Component>

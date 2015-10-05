@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Series Highlighting</Title>
+    <Description>This sample demonstrates the series highlighting feature which allows you to highlight either an entire series or individual items within a series.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Series Highlighting" TopicName="igDataChart_Series_Highlighting" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>系列の強調表示</Title>
+    <Description>このサンプルは系列の強調表示機能を紹介します。系列全体または系列の項目を強調表示できます。</Description>
+    <HelpTopics>
+      <HelpTopic Title="Series Highlighting" TopicName="igDataChart_Series_Highlighting" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Motion Framework</Title>
+    <Description>This sample demonstrates how to use the Motion Framework™ with the jQuery chart to build highly engaging visualizations and provide smooth playback of changes in data over time.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Animating Charts" TopicName="igDataChart_Animating_Charts" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>Motion Framework</Title>
+    <Description>このサンプルでは、jQuery チャートで Motion Framework を使用し、データの推移を効果的に視覚化しています。</Description>
+    <HelpTopics>
+      <HelpTopic Title="チャートのアニメーション" TopicName="igDataChart_Animating_Charts" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>TabletPortrait</MinSampleSize>
+</Sample>

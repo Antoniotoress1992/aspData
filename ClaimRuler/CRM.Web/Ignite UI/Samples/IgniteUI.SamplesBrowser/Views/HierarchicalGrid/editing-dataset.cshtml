@@ -1,0 +1,80 @@
+﻿@using Infragistics.Web.Mvc
+@using System.Data
+@using IgniteUI.SamplesBrowser.Models.Northwind
+@model System.Data.DataSet
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="@Url.Content("~/igniteui/css/themes/infragistics/infragistics.theme.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/igniteui/css/structure/infragistics.css")" rel="stylesheet" />
+
+    <script src="@Url.Content("~/js/modernizr.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery-ui.min.js")"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="@Url.Content("~/igniteui/js/infragistics.core.js")"></script>
+    <script src="@Url.Content("~/igniteui/js/infragistics.lob.js")"></script>
+
+</head>
+<body>
+@(Html.Infragistics().Grid<Category>()
+    .ID("grid1")
+    .Width("100%")
+    .AutoGenerateColumns(false)
+    .AutoGenerateLayouts(false)
+    .Columns(column =>
+    {
+        column.For(x => x.ID).Hidden(true);
+        column.For(x => x.CategoryName).HeaderText("Category Name").Width("30%");
+        column.For(x => x.Description).HeaderText("Description").Width("70%");
+    })
+    .PrimaryKey("ID")
+    .Features(features =>
+    {
+        features.Updating().EnableAddRow(false).Inherit(true);
+        features.Selection().Mode(SelectionMode.Row);
+    })
+    .ColumnLayouts(layouts =>
+    { 
+        layouts.For(x => x.Products)
+        .Width("100%")
+        .ForeignKey("CategoryID")
+        .AutoGenerateColumns(false)
+        .RenderCheckboxes(true)
+        .Columns(column =>
+        {
+            column.For(x => x.ID).Hidden(true);
+            column.For(x => x.ProductName).HeaderText("Product Name").Width("40%");
+            column.For(x => x.UnitPrice).HeaderText("Unit Price").Width("20%");        
+            column.For(x => x.UnitsInStock).HeaderText("Units In Stock").Width("20%");
+            column.For(x => x.Discontinued).HeaderText("Discontinued").Width("20%");
+        })
+        .PrimaryKey("ID")
+        .DataMember("Products");
+    })
+    .DataMember("Categories")
+    .UpdateUrl(Url.Action("EditingSaveChanges"))
+    .DataSourceUrl(Url.Action("editing-dataset"))
+    .Render()
+)
+    <br />
+    <input type="button" id="saveChanges" value="Save Changes"/>
+
+    <script type="text/javascript">
+        $( "#saveChanges" ).igButton( { labelText: $( "#saveChanges" ).val(), disabled: false } );
+        $( "#saveChanges" ).on( 'igbuttonclick',
+                function ( e )
+                {
+                    $( "#grid1" ).igHierarchicalGrid( "saveChanges" );
+                    return false;
+                }
+            );
+    </script>
+</body>
+</html>

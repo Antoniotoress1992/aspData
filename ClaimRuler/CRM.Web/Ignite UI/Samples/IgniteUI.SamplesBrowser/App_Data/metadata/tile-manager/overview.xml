@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">tile-manager/bind-json</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      The igTileManager is a layout control for rendering and arranging data into tiles. 
+      The tiles are displayed in a responsive grid layout and the control provides 
+      corresponding <a href="~/tile-manager/item-configurations">layout configurations</a> for each tile in terms to position 
+      (row and column spans) and dimensions (row and column position). 
+      See the complete list of samples in the menu.
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      igTileManager は、データをタイルに配置して描画するレイアウト コントロールです。
+      タイルはレスポンシブ グリッド レイアウトで表示され、コントロールは各タイルに対応する<a href="~/tile-manager/item-configurations">レイアウト構成</a>を提供します。位置 (行スパンと列スパン) およびディメンション (行位置と列位置) を設定します。
+      サンプルをすべて表示するには、メニューを参照してください。
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

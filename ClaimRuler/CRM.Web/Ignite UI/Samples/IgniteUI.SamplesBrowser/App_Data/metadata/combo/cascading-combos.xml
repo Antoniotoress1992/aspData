@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Cascading Combos</Title>
+    <Description>This sample demonstrates the use of three cascading combo controls. Imagine that you want to find the office of a multicultural company. By selecting the value in any previous combo the next control's values are automatically filtered by the selected value in the previous combo box. In this sample shows how to bind each instance of the igCombo control with separate data source, and how to bind an igCombo to a cascading data source. Notice that the results for the first two igCombo instances are the same. If you want to find more information about the cascading igCombo specific properties, please refer to the Cascading Combo topic or and API documentation.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Binding to Individual Data Sources" TopicName="igCombo_Binding_Cascading_igCombo_Controls_to_Individual_Data_Sources" />
+      <HelpTopic Title="Binding to Cascading Data Sources" TopicName="igCombo_Binding_Cascading_igCombo_Controls_to_Cascading_Data_Sources" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>コンボのカスケード</Title>
+    <Description>このサンプルでは、3 つのカスケードするコンボ コントロールの使用方法を紹介します。たとえば、多国籍企業のオフィスを検索します。前のコンボの値を選択すると、次のコントロールの値は前のコンボの値に基づいて自動的にフィルターされます。このサンプルでは、igCombo コントロールのインスタンスを別のデータ ソースにバインドし、igCombo をカスケード データ ソースにバインドする方法を紹介します。最初の 2 つの igCombo インスタンスの結果は同じです。カスケード igCombo のプロパティの詳細について、「カスケード コンボ」のトピックを参照するか、API ドキュメントを参照してください。</Description>
+    <HelpTopics>
+      <HelpTopic Title="特定のデータ ソースにバインド" TopicName="igCombo_Binding_Cascading_igCombo_Controls_to_Individual_Data_Sources" />
+      <HelpTopic Title="カスケード データ ソースにバインド" TopicName="igCombo_Binding_Cascading_igCombo_Controls_to_Cascading_Data_Sources" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

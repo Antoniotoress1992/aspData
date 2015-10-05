@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Basic Usage</Title>
+    <Description>This is a basic sample showing the ASP.NET MVC helper for the jQuery Mobile slider widget. 
+    By default, the slider renders with a textbox for device browsers with limited touch support.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Adding Slider" TopicName="Slider_Adding" />
+      <HelpTopic Title="Configuring" TopicName="Slider_Configuring" />
+      <HelpTopic Title="Overview" TopicName="Slider_Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>基本的な使用方法</Title>
+    <Description>
+      これは jQuery Mobile スライダー ウィジェットの ASP.NET MVC ヘルパーを紹介するサンプルです。
+      デフォルトでは、タッチがサポートされるデバイス ブラウザーでスライダーがテキストボックスと共に描画されます。
+    </Description>
+    <HelpTopics>
+      <HelpTopic Title="Slider の追加" TopicName="Slider_Adding" />
+      <HelpTopic Title="構成" TopicName="Slider_Configuring" />
+      <HelpTopic Title="概要" TopicName="Slider_Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+</Sample>

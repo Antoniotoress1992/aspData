@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Geographic Scatter Area Series</Title>
+    <Description>This sample demonstrates how to bind pre-triangulated files (.ITF) to the igMap control with using a geographic scatter area series.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Overview" TopicName="Overview_igMap" />
+      <HelpTopic Title="Creating Different Kinds of Maps" TopicName="igMap_Creating_Different_Kinds_Maps" />
+      <HelpTopic Title="Scatter Area Series" TopicName="igMap_Configuring_Geographic_Scatter_Area_Series" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>地理散布シリーズ</Title>
+    <Description>このサンプルでは、地理散布エリア系列で三角形分割済ファイル (.ITF) をマップ コントロールにバインドする方法を紹介します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="概要" TopicName="Overview_igMap" />
+      <HelpTopic Title="マップ種類の作成" TopicName="igMap_Creating_Different_Kinds_Maps" />
+      <HelpTopic Title="散布エリア シリーズ" TopicName="igMap_Configuring_Geographic_Scatter_Area_Series" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>Hosted</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>TabletLandscape</MinSampleSize>
+  <ExcludeFromZip>True</ExcludeFromZip>
+</Sample>

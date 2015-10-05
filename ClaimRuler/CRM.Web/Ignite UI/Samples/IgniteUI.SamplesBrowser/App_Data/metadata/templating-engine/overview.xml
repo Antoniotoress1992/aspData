@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">combo/templates</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      The Ignite UI® Templating Engine is a JavaScript library used to apply a content template to a set of HTML elements. It supports 
+      <a href="~/templating-engine/conditional-templates">conditional logic</a> and also <a href="~/templating-engine/nested-templates">nested templates</a>. 
+      See the complete list of samples in the menu.
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      Ignite UI® Templating Engine は、HTML 要素のセットにコンテンツ テンプレートを適用するための JavaScript ライブラリです。<a href="~/templating-engine/conditional-templates">条件付きのロジック</a>および<a href="~/templating-engine/nested-templates">ネスト テンプレート</a>をサポートします。       
+      サンプルをすべて表示するには、メニューを参照してください。
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

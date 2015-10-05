@@ -1,0 +1,64 @@
+﻿@using IgniteUI.SamplesBrowser.Application.Model
+@using Infragistics.IgniteUI.SamplesBrowser.Shared.Entities
+@using Infragistics.IgniteUI.SamplesBrowser.Shared.Enums
+@using Infragistics.IgniteUI.SamplesBrowser.Shared.HtmlHelperExtensions
+@using Infragistics.IgniteUI.SamplesBrowser.Shared.ViewModels
+@model IndexViewModel
+@{
+    Layout = "~/Views/Shared/_CoverLayout.cshtml";   
+}
+
+<section id="controls">
+    <div id="HomePageDesc" class="row">
+        <h1 class="pageTitle">@Html.Raw(Model.ControlListTitleHtml)</h1>
+        <div class="pageDesc">@Resources.Main.HomePageDesc</div>
+    </div>
+    <div class="row ui-helper-clearfix gs-row controlsList">
+        @Html.IndexControlList(Model.IndexControlList, Url, Model.Resources)
+        <div class="homeAppSamples">
+            @for (int i = 0; i < 3; i++)
+            {
+            var appSample = Model.ApplicationSamples.ElementAt(i);
+            string sampleTarget = "sampleTarget" + i, downloadTarget = "downloadTarget" + i;
+            <div class="appSamplesTitle">
+                @Html.Raw(string.Format(Resources.Main.App_Sample_Title_Format, appSample.Name))
+            </div>
+            <div class="appSamplesLinks">
+                <a class="appLaunchLink" href="@appSample.Url" style="text-decoration:none;padding: 0; margin-left: 0;" target="@sampleTarget">
+                    <span class="controlGroupIcon sprite-launchicon">&nbsp;</span>
+                    @if (Model.Url.Config.IsLocalInstall || Model.LocalZipInstall)
+                    {
+                        @Resources.Main.ViewOnline_sclbl
+                    }
+                    else{
+                        @Resources.Main.Launch_sclbl
+                    }
+                </a>&nbsp;
+                    <a class="appDownloadLink" href="@appSample.DownloadUrl" style="text-decoration: none; padding: 0; margin-left: 0;" target="@downloadTarget">
+                        <span class="controlGroupIcon sprite-downloadicon">&nbsp;</span>@Resources.Main.Download_sclbl
+                    </a>
+            </div>
+            <div class="appSamplesImage">
+                <a style="padding: 0px; margin: 0px" href="@appSample.Url" target="@sampleTarget">
+                    <img src="@Url.Content(appSample.ImageUrl)"/></a>
+            </div>
+            <div class="appSamplesDesc">
+                @appSample.ShortDescription
+            </div>
+            }
+            <a class="showcaseSamplesLink" href="@Url.Content("~/application-samples")">@Resources.Main.More</a>
+        </div>
+    </div>
+</section>
+
+    <div id="ExternalJS" class="row">
+        <label class="JSFrameworksInfo">@Resources.Main.JSFrameworksInfo</label>
+        <div class="framework-links">
+            <a class="externalSites" href="http://knockoutjs.com/"><span class="controlGroupIcon sprite-knockouticon">&nbsp;</span>@Resources.Main.Knockout</a>
+            <a class="externalSites" href="http://backbonejs.org/"><span class="controlGroupIcon sprite-backboneicon">&nbsp;</span>@Resources.Main.BackboneJS</a>
+            <a class="externalSites" href="http://angularjs.org/"><span class="controlGroupIcon sprite-angularicon">&nbsp;</span>@Resources.Main.AngularJS</a>
+            <a class="externalSites" href="http://emberjs.com/"><span class="controlGroupIcon sprite-ember">&nbsp;</span>@Resources.Main.EmberJS</a>
+            <a class="externalSites" href="http://getbootstrap.com/"><span class="controlGroupIcon sprite-twittericon">&nbsp;</span>@Resources.Main.TwitterBootstrap</a>
+            <a class="externalSites" href="http://zurb.com/"><span class="controlGroupIcon sprite-zurb">&nbsp;</span>@Resources.Main.Zurb</a>
+        </div>
+    </div>

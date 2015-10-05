@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>iOS 7 theme</Title>
+    <Description>This sample demonstrates the Ignite UI iOS 7 theme inspired by Apple iOS 7 design.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>iOS 7 テーマ</Title>
+    <Description>このサンプルは、Apple iOS 7 デザイン スタイルを持つ Ignite UI iOS 7 テーマを紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status>Ctp</Status>
+</Sample>

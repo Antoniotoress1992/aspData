@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Data Source</Name>
+    <SampleStrings>
+      <LocalizedSampleString Key="button_lbl_databind" Value="Databind"/>
+      <LocalizedSampleString Key="column_lbl_name" Value="Name"/>
+      <LocalizedSampleString Key="column_lbl_id" Value="ID"/>
+      <LocalizedSampleString Key="column_lbl_age" Value="Age"/>
+      <LocalizedSampleString Key="column_lbl_number" Value="Number"/>
+      <LocalizedSampleString Key="column_lbl_nameXML" Value="Name (from XML)"/>
+      <LocalizedSampleString Key="column_lbl_ageArray" Value="Age (from Array)"/>
+      <LocalizedSampleString Key="column_lbl_imageurl" Value="Image"/>
+      <LocalizedSampleString Key="column_lbl_notes" Value="Notes"/>
+      <LocalizedSampleString Key="column_lbl_email" Value="Email"/>
+    </SampleStrings>
+    <Description>
+      Our jQuery data source is the brain behind all data operations and manipulations that take place for our data bound views, and can be used to manage your own application's data access scenarios for mash-ups, hierarchical data, paging, sorting and filtering.
+    </Description>
+    <PageKeywords>ig.DataSource</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Data Source</Name>
+    <SampleStrings>
+      <LocalizedSampleString Key="button_lbl_databind" Value="データバインド"/>
+      <LocalizedSampleString Key="column_lbl_name" Value="名前"/>
+      <LocalizedSampleString Key="column_lbl_id" Value="ID"/>
+      <LocalizedSampleString Key="column_lbl_age" Value="年齢"/>
+      <LocalizedSampleString Key="column_lbl_number" Value="数値"/>
+      <LocalizedSampleString Key="column_lbl_nameXML" Value="名前 (XML から)"/>
+      <LocalizedSampleString Key="column_lbl_ageArray" Value="年齢 (配列から)"/>
+      <LocalizedSampleString Key="column_lbl_imageurl" Value="画像"/>
+      <LocalizedSampleString Key="column_lbl_notes" Value="メモ"/>
+      <LocalizedSampleString Key="column_lbl_email" Value="メール"/>
+    </SampleStrings>
+    <Description>
+      jQuery データ ソースは、データ バインド ビューなどすべてのデータ処理と操作を制御します。また、マッシュアップ、階層データ、ページング、並べ替え、フィルタリングなど、アプリケーション データのアクセス シナリオを管理できます。
+    </Description>
+    <PageKeywords>ig.DataSource</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>ig.datasource</ClientApiUrl>
+  <HelpPageName>igDataSource_igDataSource</HelpPageName>
+  <ForumNumber>555</ForumNumber>
+  <IconImage>jquery-data-source-logo.png</IconImage>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <TOC>
+    <Sample>json-binding</Sample>
+    <Sample>html-binding</Sample>
+    <Sample>mashup</Sample>
+    <Sample>odata</Sample>
+    <Sample>xml-binding</Sample>
+  </TOC>
+</Component>

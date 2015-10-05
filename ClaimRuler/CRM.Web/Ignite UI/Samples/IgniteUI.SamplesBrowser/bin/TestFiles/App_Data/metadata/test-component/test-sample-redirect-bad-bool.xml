@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title></Title>
+    <Description></Description>
+  </LocalizedContent>
+  <RedirectToSample CopyTargetTitleAndDescription="blah">test-component/test-html-responsive-sample</RedirectToSample>
+  <ServerRuntime></ServerRuntime>
+  <Status></Status>
+</Sample>

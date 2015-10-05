@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Binding to Flat Data Source</Title>
+    <Description>This sample demonstrates how to bind the igPivotGrid to an igOlapFlatDataSource and uses an igPivotDataSelector for data selection.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>フラット データ ソースへのバインド</Title>
+    <Description>このサンプルでは、igPivotGrid を igOlapFlatDataSource にバインドし、データ選択のために igPivotDataSelector を使用します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <MinSampleSize>Desktop</MinSampleSize>
+</Sample>

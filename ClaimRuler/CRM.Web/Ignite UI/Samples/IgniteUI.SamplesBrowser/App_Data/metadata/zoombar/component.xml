@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+	<LocalizedContent Language="en">
+		<Name>Zoombar</Name>
+		<SampleStrings>
+			<LocalizedSampleString Key="Zoombar_Custom_Button_Day" Value="Day"/>
+			<LocalizedSampleString Key="Zoombar_Custom_Button_Week" Value="Week"/>
+			<LocalizedSampleString Key="Zoombar_Custom_Button_Month" Value="Month"/>
+			<LocalizedSampleString Key="Chart_lbl_priceSeries" Value="Price Series" />
+			<LocalizedSampleString Key="Zoombar_Chart_Tooltip_Open" Value="Open" />
+			<LocalizedSampleString Key="Zoombar_Chart_Tooltip_Close" Value="Close" />
+			<LocalizedSampleString Key="Zoombar_Chart_Tooltip_High" Value="High" />
+			<LocalizedSampleString Key="Zoombar_Chart_Tooltip_Low" Value="Low" />
+		</SampleStrings>
+		<Description>The</Description>
+		<PageKeywords>igZoombar</PageKeywords>
+		<SampleGroups>
+			<SampleGroup ID="1">DataChart Integration</SampleGroup>
+		</SampleGroups>
+	</LocalizedContent>
+	<LocalizedContent Language="ja">
+		<Name>Zoombar</Name>
+		<SampleStrings>
+			<LocalizedSampleString Key="Zoombar_Custom_Button_Day" Value="日"/>
+			<LocalizedSampleString Key="Zoombar_Custom_Button_Week" Value="週"/>
+			<LocalizedSampleString Key="Zoombar_Custom_Button_Month" Value="月"/>
+			<LocalizedSampleString Key="Chart_lbl_priceSeries" Value="価格シリーズ" />
+			<LocalizedSampleString Key="Zoombar_Chart_Tooltip_Open" Value="始値" />
+			<LocalizedSampleString Key="Zoombar_Chart_Tooltip_Close" Value="終値" />
+			<LocalizedSampleString Key="Zoombar_Chart_Tooltip_High" Value="高値" />
+			<LocalizedSampleString Key="Zoombar_Chart_Tooltip_Low" Value="安値" />
+		</SampleStrings>
+		<Description></Description>
+		<PageKeywords>igZoombar</PageKeywords>
+		<SampleGroups>
+			<SampleGroup ID="1">DataChart の結合</SampleGroup>
+		</SampleGroups>
+	</LocalizedContent>
+	<ClientApiUrl>ui.igzoombar</ClientApiUrl>
+	<HelpPageName>igZoombar_LandingPage</HelpPageName>
+	<ForumNumber>815</ForumNumber>
+	<IconImage>jquery-zoombar-logo.png</IconImage>
+	<ClientRuntime>jQueryUI</ClientRuntime>
+	<IsFeatureComponent>True</IsFeatureComponent>
+	<Status>New</Status>
+	<TOC>
+		<Sample>financial-chart</Sample>
+	</TOC>
+</Component>

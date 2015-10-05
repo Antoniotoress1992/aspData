@@ -1,0 +1,22 @@
+﻿@using Infragistics.IgniteUI.SamplesBrowser.Shared.ViewModels
+@model GettingStartedViewModel
+@{
+    Layout = "~/Views/Shared/_CoverLayout.cshtml";   
+}
+@section HeadContent
+{
+    @Html.Raw(Model.GettingStartedContent.CombinedRunningHeadSource)
+}
+<div class="igsb-gs-tog">    
+    @if(Model.IsjQueryMobile)
+    {            
+    <a href="@Url.Content("~/getting-started")"><div class="igsb-gs-tog-btn igsb-lft-bord-rnd">jQuery UI</div></a>
+    <div class="igsb-gs-tog-btn-active igsb-rgt-bord-rnd">jQuery Mobile</div>   
+    }
+    else
+    {
+    <div class="igsb-gs-tog-btn-active igsb-lft-bord-rnd">jQuery UI</div>
+    <a href="@Url.Content("~/getting-started-mobile")"><div class="igsb-gs-tog-btn igsb-rgt-bord-rnd">jQuery Mobile</div></a>
+    }         
+</div>
+@Html.Partial("_HelpContent", Model.GettingStartedContent)

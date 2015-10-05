@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">editors/basic-usage</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      Ignite UI includes a set of editors including: igCurrencyEditor, igDateEditor, igMaskEditor, igNumericEditor, igPercentEditor, and igTextEditor. These widgets share a common core providing the following features:
+      <ul>
+        <li><a href="~/editors/date-and-time-formats">Formatting</a></li>
+        <li><a href="~/editors/localizing-editors">Localization</a></li>
+        <li><a href="~/editors/bind-editors-with-ko">KnockoutJS Data Binding</a></li>
+        <li><a href="~/editors/validation">Client-Side Validation</a></li>
+        <li><a href="~/editors/data-annotation-validation">ASP.NET MVC Data Annotation Validation</a></li>
+        <li>And more listed in the menu!</li>
+      </ul>
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      Ignite UI はエディターを提供します: igCurrencyEditor、igDateEditor、igMaskEditor、igNumericEditor、igPercentEditor、および igTextEditor。このウィジェットは以下の機能を提供する共有コアがあります:
+      <ul>
+        <li><a href="~/editors/date-and-time-formats">書式設定</a></li>
+        <li><a href="~/editors/localizing-editors">ローカライズ</a></li>
+        <li><a href="~/editors/bind-editors-with-ko">KnockoutJS データ バインディング</a></li>
+        <li><a href="~/editors/validation">クライアント側の検証</a></li>
+        <li><a href="~/editors/data-annotation-validation">ASP.NET MVC データ注釈の検証</a></li>
+        <li>すべてのサンプルを表示するには、メニューを参照してください。</li>
+      </ul>
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

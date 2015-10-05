@@ -1,0 +1,524 @@
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.Security;
+using System.Web.Services;
+using CRM.Data;
+using CRM.Data.Account;
+using LinqKit;
+using System.Linq.Expressions;
+
+using CRM.Core;
+using CRM.Repository;
+
+using Infragistics.WebUI.WebSchedule;
+using Infragistics.WebUI.Shared;
+using CRM.Data.Entities;
+
+namespace CRM.Web.Protected {
+
+
+	public partial class Dashboard : System.Web.UI.Page {
+		//int currentUserRoleId = 0;
+		//int currentUserId = 0;
+		int roleID = 0;
+		int clientID = 0;
+		int userID = 0;
+
+
+		protected void Page_Load(object sender, EventArgs e) {
+			//string[] userRoleName = (((FormsIdentity)HttpContext.Current.User.Identity).Ticket).UserData.Split('|');
+			//currentUserRoleId = Convert.ToInt32(userRoleName[1]);
+			//currentUserId = Convert.ToInt32(Session["UserId"]);
+
+			roleID = SessionHelper.getUserRoleId();
+			clientID = SessionHelper.getClientId();
+			userID = SessionHelper.getUserId();
+            string hiddenValue = claimProgressChart.hiddenvalue.Value;
+			hf_clientID.Value = clientID.ToString();
+
+			if (!Page.IsPostBack) {
+				this.TypeView = "day";
+
+				//LoginSettings loginSettings = new LoginSettings();
+
+				//loginSettings.Permissions = new string[] { "me", "friends", "publish_stream", "read_stream" };
+
+
+				bindData();
+			}
+			else {
+				bindResources();
+                if (hiddenValue == "1") 
+                {
+                    bindDataWithFilter();
+                }
+			}
+
+			//this.viewHolder.Controls.Add(GetView());
+
+
+			//checkForReminders();
+            Login login = new Login();
+            login.setGlobalSession();
+            login.formatException();
+            login.setRulexception();
+
+		}
+
+		private void bindData() {
+            Data.Entities.SecUser user = null;
+            user = new Data.Entities.SecUser();
+            var a = SecUserManager.GetByUserId(userID);
+            
+            switch (roleID) {
+				case (int)UserRole.Administrator:
+					break;
+
+
+				case (int)UserRole.Client:
+				case (int)UserRole.SiteAdministrator:
+					BindClientPanel();
+
+					claimProgressChart.bindData(clientID);
+
+					ruleExceptionChart.bindData(clientID);
+					break;
+
+				default:
+					BindUserPanel();
+                    if(a.isViewAllClaims == true)
+                    {
+                        claimProgressChart.bindData(clientID);
+                    }
+                    else
+                    {
+                        claimProgressChart.bindData(clientID, userID);
+                    }
+					
+
+					ruleExceptionChart.bindData(clientID);
+					break;
+			}
+
+		}
+
+        private void bindDataWithFilter()
+        {
+            switch (roleID)
+            {
+                case (int)UserRole.Administrator:
+                    break;
+
+
+                case (int)UserRole.Client:
+                case (int)UserRole.SiteAdministrator:
+                    BindClientPanel();
+
+                    claimProgressChart.bindData(clientID);
+
+                    ruleExceptionChart.bindData(clientID);
+                    break;
+
+                default:
+                    BindUserPanel();
+
+                    claimProgressChart.bindData(clientID);
+
+                    ruleExceptionChart.bindData(clientID);
+                    break;
+            }
+
+        }
+
+		private string TypeView {
+			get { return ViewState["TypeView"] as string; }
+			set { ViewState["TypeView"] = value; }
+		}
+
+		private string ActiveResourceKey {
+			get { return ViewState["ActiveResourceKey"] as string; }
+			set { ViewState["ActiveResourceKey"] = value; }
+		}
+
+		private void BindClientPanel() {
+			DateTime fromDate = SchedulerManager.GetScheduleFromDate(WebScheduleInfo1);
+			DateTime toDate = SchedulerManager.GetScheduleEndDate(WebDayView1);
+
+			// bind user names to schedule
+			bindResources();
+
+
+			bindTasks(fromDate, toDate);
+
+			List<LeadTask> appointments = null;
+
+			// active resouce
+			int userID = Convert.ToInt32(ActiveResourceKey);
+
+			// get taks and show in scheduler as appointment
+			Expression<Func<Task, bool>> predicate = PredicateBuilder.True<CRM.Data.Entities.Task>();
+			
+			// load events only
+			predicate = predicate.And(LeadTask => LeadTask.TaskType == 2);
+
+			predicate = predicate.And(LeadTask => LeadTask.start_date >= fromDate && LeadTask.start_date <= toDate);
+			predicate = predicate.And(LeadTask => LeadTask.owner_id == userID);
+			appointments = TasksManager.GetLeadTask(predicate, fromDate, toDate);
+
+			SchedulerManager.BindAppointment(WebScheduleInfo1, appointments);
+
+		}
+
+		private void BindUserPanel() {
+			DateTime fromDate = SchedulerManager.GetScheduleFromDate(WebScheduleInfo1);
+			DateTime toDate = SchedulerManager.GetScheduleEndDate(WebDayView1);
+
+			// bind user names to schedule
+			bindResources();
+
+
+			bindTasks(fromDate, toDate);
+
+			List<LeadTask> appointments = null;
+
+			// active resouce
+			int userID = Convert.ToInt32(ActiveResourceKey);
+
+			// get taks and show in scheduler as appointment
+			Expression<Func<Task, bool>> predicate = PredicateBuilder.True<CRM.Data.Entities.Task>();
+			// load events only
+			predicate = predicate.And(LeadTask => LeadTask.TaskType == 2);
+
+			predicate = predicate.And(LeadTask => LeadTask.start_date >= fromDate && LeadTask.end_date <= toDate);
+			predicate = predicate.And(LeadTask => LeadTask.owner_id == userID);
+			appointments = TasksManager.GetLeadTask(predicate, fromDate, toDate);
+
+			SchedulerManager.BindAppointment(WebScheduleInfo1, appointments);
+
+		}
+
+		// bind users to scheduler
+		private void bindResources() {
+			List<UserStaff> staffMembers = null;
+			Resource resource = null;
+			CRM.Data.Entities.SecUser secUser = null;
+
+			WebScheduleInfo1.VisibleResources.Clear();
+
+			switch (roleID) {
+				case (int)UserRole.Client:
+				case (int)UserRole.SiteAdministrator:
+
+					staffMembers = SecUserManager.GetStaff(clientID);
+
+					if (staffMembers != null && staffMembers.Count > 0) {
+						ActiveResourceKey = staffMembers[0].UserId.ToString();
+
+						foreach (UserStaff user in staffMembers) {
+							resource = new Resource();
+							resource.DataKey = user.UserId.ToString();
+							resource.Name = user.StaffName;
+							resource.EmailAddress = user.EmailAddress;
+							WebScheduleInfo1.VisibleResources.Add(resource);
+						}
+					}
+					break;
+
+				default:
+					secUser = SecUserManager.GetByUserId(userID);
+					if (secUser != null) {
+						resource = new Resource();
+						resource.DataKey = secUser.UserId.ToString();
+						resource.Name = string.Format("{0} {1}", secUser.FirstName, secUser.LastName);
+						resource.EmailAddress = secUser.Email;
+						WebScheduleInfo1.VisibleResources.Add(resource);
+					}
+					break;
+			}
+
+			//WebScheduleInfo1.VisibleResources[0] == unassigned
+			if (WebScheduleInfo1 != null && WebScheduleInfo1.VisibleResources != null && WebScheduleInfo1.VisibleResources.Count > 0) {
+				if (!string.IsNullOrEmpty(ActiveResourceKey)) {
+					Resource activeResource = WebScheduleInfo1.VisibleResources.GetResourceFromKey(ActiveResourceKey);
+					if (activeResource != null && !string.IsNullOrEmpty(activeResource.Name))
+						WebScheduleInfo1.ActiveResourceName = activeResource.Name;
+				}
+				else {
+					WebScheduleInfo1.ActiveResourceName = WebScheduleInfo1.VisibleResources[1].Name;
+
+					ActiveResourceKey = WebScheduleInfo1.VisibleResources[1].DataKey.ToString();
+				}
+			}
+		}
+
+		private void bindTasks(DateTime fromDate, DateTime toDate) {
+			List<LeadTask> tasks = null;
+
+			Expression<Func<Task, bool>> predicate = PredicateBuilder.True<CRM.Data.Entities.Task>();
+
+			if (roleID == (int)UserRole.Administrator) {
+			}
+			else if ((roleID == (int)UserRole.Client || roleID == (int)UserRole.SiteAdministrator) && clientID > 0) {
+				// load all tasks for client (sort of admin)			
+
+				predicate = predicate.And(LeadTask => LeadTask.creator_id == clientID);
+
+				predicate = predicate.And(LeadTask => LeadTask.start_date >= fromDate && LeadTask.end_date <= toDate);
+
+				// get overdue task for client
+				predicate = predicate.Or(LeadTask => LeadTask.status_id == 1 && LeadTask.end_date <= toDate && LeadTask.creator_id == clientID);
+			}
+			else {
+				// regular users					
+
+				predicate = predicate.And(LeadTask => LeadTask.start_date >= fromDate && LeadTask.end_date <= toDate);
+
+				predicate = predicate.And(LeadTask => LeadTask.owner_id == userID);
+			}
+
+			tasks = TasksManager.GetLeadTask(predicate, fromDate, toDate);
+
+			// show tasks
+			gvTasks.DataSource = tasks;
+			gvTasks.DataBind();
+
+
+		}
+
+   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/// <summary>
+/// </summary>
+/// <param name="sender"></param>
+/// <param name="e"></param>
+		protected void btnSnooze(object sender, EventArgs e) {
+
+		}
+
+		protected void changeCalendarView_Click(object sender, EventArgs e) {
+			if (sender == btn1Day)
+				this.WebDayView1.VisibleDays = 1;
+			else if (sender == btn5Days)
+				this.WebDayView1.VisibleDays = 5;
+
+			//this.viewHolder.Controls.Clear();
+			//this.viewHolder.Controls.Add(GetView());
+		}
+
+
+		private void checkForReminders_ori() {
+			List<vw_Reminder> reminders = SchedulerManager.GetUpcomingReminders(userID);
+
+			if (reminders != null && reminders.Count > 0) {
+				Session["vw_reminders"] = reminders;
+
+				string js = "PopupCenter('../../Content/Reminder.aspx', 'Reminder', 600, 400);";
+
+				Page.ClientScript.RegisterClientScriptBlock(this.GetType(), "rk", js, true);
+			}
+		}
+
+		//[System.Web.Services.WebMethod]
+		//public static string checkForReminders() {
+		//	string hasReminder = "0";
+
+		//	int userID = Convert.ToInt32(HttpContext.Current.Session["UserID"]);
+		//	List<vw_Reminder> reminders = SchedulerManager.GetUpcomingReminders(userID);
+
+		//	if (reminders != null && reminders.Count > 0) {
+		//		hasReminder = "1";
+		//		HttpContext.Current.Session["vw_reminders"] = reminders;
+		//	}
+		//	return hasReminder;
+		//}
+
+
+		//private void BindAdminPanel() {
+		//	string str = HttpContext.Current.Request.Url.AbsolutePath.ToLower();
+		//	string pagename = str.Substring(str.LastIndexOf("/") + 1);
+
+		//	if (pagename.ToLower().Contains("dashboard.aspx")) {
+		//		Response.Redirect("~/Protected/Admin/AllUsersLeads.aspx");
+		//	}
+		//}
+
+		protected void btnRefreshTasksFromCalendar_Click(object sender, EventArgs e) {
+			DateTime fromDate = DateTime.Now;
+
+			DateTime.TryParse(hf_taskDate.Value, out fromDate);
+		}
+
+		// client/admin changed to another user tab
+		protected void WebScheduleInfo1_ActiveResourceChanged(object sender, ActiveResourceChangedEventArgs e) {
+			List<LeadTask> tasks = null;
+
+			DateTime fromDate = SchedulerManager.GetScheduleFromDate(WebScheduleInfo1);
+			DateTime toDate = SchedulerManager.GetScheduleEndDate(WebDayView1);
+
+			int userID = Convert.ToInt32(e.ResourceDataKey);
+
+			// save it in viewstate
+			ActiveResourceKey = e.ResourceDataKey;
+
+			Expression<Func<Task, bool>> predicate = PredicateBuilder.True<CRM.Data.Entities.Task>();
+			predicate = predicate.And(LeadTask => LeadTask.start_date >= fromDate && LeadTask.end_date <= toDate);
+			predicate = predicate.And(LeadTask => LeadTask.owner_id == userID);
+			tasks = TasksManager.GetLeadTask(predicate, fromDate, toDate);
+
+			SchedulerManager.BindAppointment(WebScheduleInfo1, tasks);
+			//SchedulerManager.BindUserAppointments(WebScheduleInfo1, userID, fromDate, toDate);
+		}
+
+		// user changes date on calendar
+		protected void WebScheduleInfo1_ActiveDayChanged(object sender, ActiveDayChangedEventArgs e) {
+			List<LeadTask> tasks = null;
+			DateTime fromDate = e.NewDate.Value;
+			DateTime toDate = SchedulerManager.GetScheduleEndDate(WebDayView1);
+			int userID = 0;
+
+			Resource activeUserResource = ((WebScheduleInfo)sender).ActiveResource;
+			userID = Convert.ToInt32(activeUserResource.DataKey);
+
+			// save it in viewstate
+			ActiveResourceKey = activeUserResource.DataKey.ToString();
+
+			Expression<Func<Task, bool>> predicate = PredicateBuilder.True<CRM.Data.Entities.Task>();
+			predicate = predicate.And(LeadTask => LeadTask.start_date >= fromDate && LeadTask.end_date <= toDate);
+			predicate = predicate.And(LeadTask => LeadTask.owner_id == userID);
+			tasks = TasksManager.GetLeadTask(predicate, fromDate, toDate);
+
+			SchedulerManager.BindAppointment(WebScheduleInfo1, tasks);
+
+		}
+
+		//protected void WebMonthCalendar1_SelectedDateChanged(object sender, Infragistics.Web.UI.EditorControls.CalendarSelectedDateChangedEventArgs e) {
+		//	DateTime fromDate = e.NewDate;
+		//	DateTime toDate = e.NewDate;
+		//	string tempDate = null;
+
+		//	if (WebMonthCalendar1.SelectedDates.IndividualDates == null) {
+		//		// user selected multiple dates on calendar
+		//		bindTasks(WebMonthCalendar1.SelectedDates.RangeMin, WebMonthCalendar1.SelectedDates.RangeMax);
+		//	}
+		//	else {
+		//		// user picked a single date on calendar
+		//		tempDate = string.Format("{0} 11:59:59 PM", fromDate.ToShortDateString());
+
+		//		toDate = Convert.ToDateTime(tempDate);
+
+		//		bindTasks(fromDate, toDate);
+		//	}
+		//}
+
+		protected void gvTasks_InitializeRow(object sender, Infragistics.Web.UI.GridControls.RowEventArgs e) {
+
+			LeadTask task = null;
+
+			if (e.Row.DataItem != null) {
+				task = (LeadTask)e.Row.DataItem;
+
+				if (task.statusName == "Expired") {
+					e.Row.CssClass = "redstar";
+				}
+
+				HyperLink hlnkLead = e.Row.Items.FindItemByKey("lead_name").FindControl("hlnkLead") as HyperLink;
+
+				if (hlnkLead != null && task.lead_id != null) {
+					hlnkLead.Text = task.lead_name;
+
+					hlnkLead.NavigateUrl = "~/Protected/NewLead.aspx?q=" + Core.SecurityManager.EncryptQueryString(task.lead_id.ToString());
+				}
+			}
+
+		}
+
+		protected void timer1_Tick(object sender, EventArgs e) {
+			bindData();
+		}
+
+		//protected void btnSearch_Click(object sender, EventArgs e) {
+		//	Expression<Func<Lead, bool>> predicate = null;
+		//	AdjusterMaster adjuster = null;
+		//	int adjustID = 0;
+
+		//	List<Lead> leads = null;
+
+		//	string keyword = txtSearchText.Text;
+		//	if (string.IsNullOrEmpty(keyword))
+		//		return;
+
+		//	predicate = PredicateBuilder.True<CRM.Data.Lead>();
+		//	predicate = predicate.And(Lead => Lead.ClaimantFirstName.Contains(keyword) || Lead.ClaimantLastName.Contains(keyword));
+		//	predicate = predicate.And(Lead => Lead.Status != 0);
+		//	predicate = predicate.And(Lead => Lead.UserId != 0);
+
+		//	switch (roleID) {
+		//		case (int)UserRole.Administrator:
+		//			break;
+
+		//		case (int)UserRole.Client:
+		//		case (int)UserRole.SiteAdministrator:
+		//			if (clientID > 0)
+		//				predicate = predicate.And(Lead => Lead.ClientID == clientID);
+		//			break;
+
+		//		case (int)UserRole.Adjuster:
+		//			// get all leads assigned to adjuster
+		//			adjuster = AdjusterManager.GetAdjusterByUserID(userID);
+
+		//			if (adjuster != null) {
+		//				adjustID = adjuster.AdjusterId;
+
+		//				predicate = predicate.And(Lead => Lead.LeadPolicies.Any(x => x.IsActive && x.AdjusterID == adjustID));
+		//			}
+		//			else {
+		//				predicate = predicate.And(Lead => Lead.UserId == userID);
+		//			}
+		//			break;
+
+		//		default:
+		//			// get all leads created by user		
+		//			predicate = predicate.And(Lead => Lead.UserId == userID);
+		//			break;
+		//	}
+
+		//	leads = LeadsManager.GetPredicate(predicate);
+
+		//	gvSearchResult.Visible = true;
+
+		//	gvSearchResult.DataSource = leads;
+		//	gvSearchResult.DataBind();
+
+		//	// refesh rest of page
+		//	bindData();
+		//}
+
+		protected void gvSearchResult_RowDataBound(object sender, GridViewRowEventArgs e) {			 
+			if (e.Row.RowType == DataControlRowType.DataRow) {
+				Leads lead = e.Row.DataItem as Leads;
+
+				HyperLink lnk = e.Row.FindControl("hlnkLead") as HyperLink;
+				if (lnk != null) {
+					lnk.NavigateUrl = "~/Protected/NewLead.aspx?q=" + Core.SecurityManager.EncryptQueryString(lead.LeadId.ToString());
+
+					if (!string.IsNullOrEmpty(lead.BusinessName))
+						lnk.Text = string.Format("{0}, {1} ({2})", lead.ClaimantLastName, lead.ClaimantFirstName, lead.BusinessName);
+					else
+						lnk.Text = string.Format("{0}, {1}", lead.ClaimantLastName, lead.ClaimantFirstName);
+				}
+			}
+		}
+
+		protected void chartTimer_Tick(object sender, EventArgs e) {
+			claimProgressChart.bindData(clientID);
+		}
+		
+		
+
+
+	}
+}

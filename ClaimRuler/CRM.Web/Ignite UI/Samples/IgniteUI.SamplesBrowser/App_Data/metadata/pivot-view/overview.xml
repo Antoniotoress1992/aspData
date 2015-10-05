@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">pivot-view/binding-to-flat-data-source</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      The igPivotView is a two-panel control that combines a pivot grid and a data selector separated with a splitter. 
+      The view is a composite of three individual components: <a href="~/pivot-grid">igPivotGrid</a>, <a href="~/pivot-data-selector">igPivotDataSelector</a>, 
+      and <a href="~/splitter">igSplitter</a> assembled together to provide in one place as needed tools for manipulating multidimensional (OLAP data) in a pivot grid. 
+      See the complete list of samples in the menu.
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      igPivotView は、ピボット グリッドと、スプリッターで区切られるデータ選択ウィザードを組み合わせる 2 パネル コントロールです。
+      ビューは、<a href="~/pivot-grid">igPivotGrid</a>、<a href="~/pivot-data-selector">igPivotDataSelector</a> および <a href="~/splitter">igSplitter</a> の 3 つの個別コンポーネントの結合です。まとめてアセンブルし、ピボット グリッドで多次元 (OLAP) データを操作するために必要なすべてのツールを 1 か所で提供します。サンプルをすべて表示するには、メニューを参照してください。
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">loader/basic-usage</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      Infragistics Loader is a class component which asynchronously loads JavaScript and Cascading Styles Sheets files on a page. 
+      The loader API provides configuration for resource, JavaScript path, Cascading Styles Sheets path and preferred theme. 
+      The control can auto detect locale or you can manually set preferred locale and regional settings. After all the required 
+      scripts are loaded and ready to use, only then does the loader execute the specified callback function. See the complete list of samples in the menu.
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      Infragistics Loader は、JavaScript およびカスケーディング スタイル シートを非同期に読み込むクラス コンポーネントです。
+      ローダー API は、リソースの設定、JavaScript パス、カスケード スタイル シート パス、テーマを提供します。
+      コントロールは、ロケールを自動検出します。あるいは、手動でロケールおよび地域を設定することもできます。すべての必要なスクリプトを読み込んだ後、ローダーが指定したコールバック関数を実行します。サンプルをすべて表示するには、メニューを参照してください。
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

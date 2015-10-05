@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Twitter Bootstrap</Title>
+    <Description>
+        <![CDATA[
+            This sample demonstrates how to configure Responsive Web Design Mode feature to use Twitter Bootstrap Framework utility class for profile activation. This is done by using the Twitter Bootstrap responsive CSS classes (these classes are using CSS 3 media queries).<br/>
+            Depending on the device form factor (phone, tablet, desktop) in which this sample is viewed different set of columns are visible.<br/>
+            In Phone mode only 1 column is visible: Company Name. The other columns are configured to be hidden in this profile by using the hidden-phone Twitter Bootstrap CSS class.<br/>
+            In Tablet mode 4 columns are visible: Company Name, Contact Name, Address and City. The other columns are configured to be hidden in this profile by using the hidden-tablet Twitter Bootstrap CSS class.<br/>
+            In Desktop mode 7 columns are visible: Customer ID, Company Name, Contact Name, Contact Title, Address, City, and Country. All columns are visible in this profile.
+        ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+      <Title>Twitter Bootstrap</Title>
+    <Description>
+        <![CDATA[
+            このサンプルは、レスポンシブ Web デザイン モード機能について紹介します。Twitter Bootstrap Framework ユーティリティ クラスを使用してプロファイルをアクティブにします。Twitter Bootstrap レスポンシブ CSS クラスを使用します。このクラスは CSS 3 メディア クエリを使用しています。<br/>
+            サンプルが表示されるデバイスのフォーム ファクター (携帯、タブレット、デスクトップ) に基づいて、表示する列のセットを変更します。<br/>
+            Phone モードの場合、会社名の列のみを表示します。その他の列がこのプロファイルで Twitter Bootstrap の hidden-phone CSS クラスを使用して非表示されます。<br/>
+            Tablet モードの場合、会社名、名前、場所、市の 4 つの列を表示します。その他の列は、このプロファイルで Twitter Bootstrap の hidden-tablet CSS クラスを使用して非表示にされます。<br/>
+            Desktop モードの場合、顧客 ID、会社名、名前、連絡先、場所、市、国名の 7 つの列を表示します。このプロファイルではすべての列が表示されます。
+        ]]>
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhonePortrait</MinSampleSize>
+</Sample>

@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Scheduler | Customized time scale";
+    ViewBag.SampleTitle = "Customized time scale";
+    ViewBag.ShortDescription = "Remove hours and days from time scale";
+    ViewBag.LongDescription = "Event gets updated from server response after save. <br />    Dbl-click to open details form and change the checkbox state there - after saving, color will be updated from server side.";
+}
+
+<style>
+	.day_split {
+		  background-color: #77ff77;
+		  opacity: 0.25;
+	}
+</style>
+@Html.Raw(Model.Render()) 

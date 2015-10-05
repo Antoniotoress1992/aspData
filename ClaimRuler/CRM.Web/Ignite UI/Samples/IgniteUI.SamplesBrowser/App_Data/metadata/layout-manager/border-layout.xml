@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Border Layout - Initializing with JavaScript</Title>
+    <Description>This sample demonstrates initializing the Layout Manager control's Border layout from JavaScript, by handling itemrendered events and assigning content to the created regions.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>境界線のレイアウト - JavaScript の初期化</Title>
+    <Description>このサンプルでは、itemrendered イベントを処理してコンテンツを作成した領域に割り当て、JavaScript で境界線のレイアウトを初期化する方法を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <IsResponsive>True</IsResponsive>
+</Sample>

@@ -1,0 +1,50 @@
+﻿<%@ Master Language="VB" Inherits="System.Web.Mvc.ViewMasterPage" %>
+<%-- The following line works around an ASP.NET compiler warning --%>
+<%: ""%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    <style type="text/css">
+	    html, body
+	    {
+	        height:100%;
+	        padding:0px;
+	        margin:0px;
+	        overflow:hidden;
+	    }    
+	</style>
+</head>
+<body>   
+    <div id="header" class="header_class">
+        <asp:ContentPlaceHolder ID="Title" runat="server">        
+        </asp:ContentPlaceHolder>
+    </div>
+    
+    <div id="main_content">
+        <script type="text/javascript">
+            (function () {
+                var hold = false;
+                function initSize() {
+                    if (hold) return;
+                    setTimeout(function () { hold = false; }, 100);
+                    hold = true;
+                    var head = document.getElementById("header");
+                    var headHeight = 1 * (head.offsetHeight || head.clientHeight);
+                    document.getElementById("main_content").style.height = (window.innerHeight || window.document.body.clientHeight) - headHeight + "px";
+                }
+                if (window.attachEvent) {
+                    window.attachEvent("onresize", initSize);
+                } else {
+                    window.addEventListener("resize", initSize, false);
+                }
+                initSize();
+            })()
+        </script>
+        <asp:ContentPlaceHolder ID="Content" runat="server">      
+        </asp:ContentPlaceHolder>
+    </div>
+    
+</body>
+</html>

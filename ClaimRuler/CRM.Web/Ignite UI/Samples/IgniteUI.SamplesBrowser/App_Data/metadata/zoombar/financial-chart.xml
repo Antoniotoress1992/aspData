@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+	<LocalizedContent Language="en">
+		<Title>Zoombar Financial Chart</Title>
+		<Description>This sample demonstrates the basic Zoombar functionality along an igDataChart with financial series. Additional controls enable resizing of the zoom window to a specific period of time and show popovers with date information for the left and right borders of it.</Description>
+	</LocalizedContent>
+	<LocalizedContent Language="ja">
+		<Title>ズームバーの財務チャート</Title>
+		<Description>
+      このサンプルでは、igDataChart の財務シリーズで基本ズームバー機能を紹介します。追加のコントロールは、ズーム ウィンドウを時間の指定した範囲にサイズ変更し、日付情報を含むポップオーバーを表示します。
+    </Description>
+	</LocalizedContent>
+	<ServerRuntime>File</ServerRuntime>
+	<Status></Status>
+	<MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

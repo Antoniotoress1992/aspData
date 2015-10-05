@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>XML Binding</Title>
+    <Description>This sample demonstrates how to data bind the igTree to a XML data.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>XML のバインド</Title>
+    <Description>このサンプルでは、igTree を XML データにバインドする方法を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

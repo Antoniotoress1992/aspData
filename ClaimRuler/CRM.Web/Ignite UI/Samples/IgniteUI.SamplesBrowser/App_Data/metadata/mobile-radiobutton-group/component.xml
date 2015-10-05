@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>RadioButton Group</Name>
+    <Description>
+      Go beyond simple web pages and build true mobile applications. With a selection seven types of mobile input controls, users can provide inputs and responses simply and easily.
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Gender" Value="Gender"/>
+      <LocalizedSampleString Key="Size" Value="Size"/>
+      <LocalizedSampleString Key="Male" Value="Male"/>
+      <LocalizedSampleString Key="Female" Value="Female"/>
+      <LocalizedSampleString Key="Small" Value="Small"/>
+      <LocalizedSampleString Key="Medium" Value="Medium"/>
+      <LocalizedSampleString Key="Large" Value="Large"/>
+    </LocalizedSampleStrings>
+    <PageKeywords>MobileRadioButtonGroup</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>RadioButton Group</Name>
+    <Description>
+      モバイル アプリケーションに対応するコントロールを提供します。モバイル入力コントロールの 7 つのタイプを提供します。
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Gender" Value="性別"/>
+      <LocalizedSampleString Key="Size" Value="サイズ"/>
+      <LocalizedSampleString Key="Male" Value="男性"/>
+      <LocalizedSampleString Key="Female" Value="女性"/>
+      <LocalizedSampleString Key="Small" Value="小"/>
+      <LocalizedSampleString Key="Medium" Value="中"/>
+      <LocalizedSampleString Key="Large" Value="大"/>
+    </LocalizedSampleStrings>
+    <PageKeywords>MobileRadioButtonGroup</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>http://api.jquerymobile.com/checkboxradio/</ClientApiUrl>
+  <HelpPageName>RadioButtonGroup</HelpPageName>
+  <ForumNumber>691</ForumNumber>
+  <IconImage>jquery-mobile-radiobuttons.png</IconImage>
+  <ClientRuntime>jQueryMobile</ClientRuntime>
+  <TOC>
+    <Sample>basic-usage</Sample>
+  </TOC>
+</Component>

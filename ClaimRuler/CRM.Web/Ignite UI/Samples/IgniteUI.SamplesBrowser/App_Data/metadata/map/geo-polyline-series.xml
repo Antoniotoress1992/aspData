@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Geographic Polyline Series</Title>
+    <Description>This sample demonstrates how a geographic polyline series of the igMap control can be used to show flights between major airports in North America.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Overview" TopicName="Overview_igMap" />
+      <HelpTopic Title="Creating Different Kinds of Maps" TopicName="igMap_Creating_Different_Kinds_Maps" />
+      <HelpTopic Title="Polyline Series" TopicName="igMap_Configuring_Geographic_Polyline_Series" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>地理的ポリライン シリーズ</Title>
+    <Description>このサンプルは、マップ コントロールで地理ポリライン系列を使用し、北アメリカの主要な空港の間のフライトを表示します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="概要" TopicName="Overview_igMap" />
+      <HelpTopic Title="マップ種類の作成" TopicName="igMap_Creating_Different_Kinds_Maps" />
+      <HelpTopic Title="ポリライン シリーズ" TopicName="igMap_Configuring_Geographic_Polyline_Series" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>Hosted</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>TabletLandscape</MinSampleSize>
+  <ExcludeFromZip>True</ExcludeFromZip>
+</Sample>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Color Picker</Title>
+    <Description>This sample demonstrates how the Slider ASP.NET MVC helper is used in a Color Picker scenario. When the sliders are moved the color of the square changes accordingly.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Adding Slider" TopicName="Slider_Adding" />
+      <HelpTopic Title="Configuring" TopicName="Slider_Configuring" />
+      <HelpTopic Title="Overview" TopicName="Slider_Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>カラー ピッカー</Title>
+    <Description>このサンプルでは、カラー ピッカー シナリオで Slider ASP.NET MVC ヘルパーを使用する方法を紹介します。スライダーの移動に従って、四角の色も変更されます。</Description>
+    <HelpTopics>
+      <HelpTopic Title="Slider の追加" TopicName="Slider_Adding" />
+      <HelpTopic Title="構成" TopicName="Slider_Configuring" />
+      <HelpTopic Title="概要" TopicName="Slider_Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+</Sample>

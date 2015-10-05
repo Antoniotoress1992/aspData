@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Linear Gauge</Name>
+    <Description></Description>
+    <LocalizedSampleStrings>      
+      <LocalizedSampleString Key="AbsoluteZero" Value="Absolute Zero"/>
+      <LocalizedSampleString Key="AbsoluteZero_Description" Value="By international agreement, absolute zero is defined as 0K on the Kelvin scale and as −273.15° on the Celsius scale."/>
+      <LocalizedSampleString Key="April" Value="April"/>
+      <LocalizedSampleString Key="Brush" Value="Brush"/>
+      <LocalizedSampleString Key="ChooseSetting" Value="Choose a setting"/>
+      <LocalizedSampleString Key="CranberryAirPressure" Value="Air Pressure (hPa)"/>
+      <LocalizedSampleString Key="CranberryDescription" Value="RAWS WANAKENA NY US, Newton Falls, 9/26/2013"/>
+      <LocalizedSampleString Key="CranberryHumidity" Value="Humidity"/>
+      <LocalizedSampleString Key="CranberryTemperature" Value="Temperature"/>
+      <LocalizedSampleString Key="CranberryTitle" Value="Cranberry Lake Weather"/>
+      <LocalizedSampleString Key="EnergySource" Value="Energy Source"/>
+      <LocalizedSampleString Key="February" Value="February"/>
+      <LocalizedSampleString Key="FontBrush" Value="Font Brush"/>
+      <LocalizedSampleString Key="FontSize" Value="Font Size"/>
+      <LocalizedSampleString Key="Graph" Value="Graph"/>
+      <LocalizedSampleString Key="Horizontal" Value="Horizontal"/>
+      <LocalizedSampleString Key="InnerEndExtent" Value="Inner End Extent"/>
+      <LocalizedSampleString Key="InnerStartExtent" Value="Inner Start Extent"/>
+      <LocalizedSampleString Key="Interval" Value="Interval"/>
+      <LocalizedSampleString Key="IsScaleInverted" Value="Is Scale Inverted"/>
+      <LocalizedSampleString Key="January" Value="January"/>      
+      <LocalizedSampleString Key="March" Value="March"/> 
+      <LocalizedSampleString Key="Month" Value="Month"/>
+      <LocalizedSampleString Key="NutritionCarbohydrates" Value="Carbohydrates"/>
+      <LocalizedSampleString Key="NutritionFat" Value="Fat"/>
+      <LocalizedSampleString Key="NutritionProtein" Value="Protein"/>
+      <LocalizedSampleString Key="NutritionTitle" Value="Healthy Eating"/>
+      <LocalizedSampleString Key="NutritionDescription" Value="Total calories intake ratio between fat, carbohydrates and protein, where middle ranges are healthy ratios and the target values - ideally set goals."/>
+      <LocalizedSampleString Key="Options" Value="Options"/>
+      <LocalizedSampleString Key="Orientation" Value="Orientation"/>
+      <LocalizedSampleString Key="SaharaDesert" Value="Sahara Desert"/>
+      <LocalizedSampleString Key="SaharaDesert_Cold" Value="Cold"/>
+      <LocalizedSampleString Key="SaharaDesert_Description" Value="Sahara summer temperatures can show a daily range of more than 50 ºC - reaching that temperature during the day then plunging below freezing at night. The highest recorded temperature was 58 ºC (136.4 ºF), in Libya."/>
+      <LocalizedSampleString Key="SaharaDesert_Hot" Value="Hot"/>
+      <LocalizedSampleString Key="SaharaDesert_Mild" Value="Mild"/>
+      <LocalizedSampleString Key="SaharaDesert_Warm" Value="Warm"/>
+      <LocalizedSampleString Key="Setting1" Value="Setting One"/>
+      <LocalizedSampleString Key="Setting2" Value="Setting Two"/>
+      <LocalizedSampleString Key="Setting3" Value="Setting Three"/>
+      <LocalizedSampleString Key="SunkostSalesAvgOrder" Value="Avg Order"/>
+      <LocalizedSampleString Key="SunkostSalesDescription" Value="The sales totals to date for 2013 (white horizontal line), clearly exceed the total sales for all of 2012 (the beginning of the middle range). The 2013 sales numbers suggest that our new marketing campaign is successful, resulting in increased product penetration and a significant sales boost, working our way up to the targeted goals for the whole year (vertical white lines)."/>
+      <LocalizedSampleString Key="SunkostSalesHeader" Value="Sunkost: Sales Target of 2013"/>
+      <LocalizedSampleString Key="SunkostSalesNewCustomers" Value="New Customers"/>
+      <LocalizedSampleString Key="SunkostSalesProfit" Value="Profit"/>
+      <LocalizedSampleString Key="SunkostSalesRevenue" Value="YTD Revenue"/>       
+      <LocalizedSampleString Key="Time" Value="Time"/>
+      <LocalizedSampleString Key="TransitionDuration" Value="Transition Duration"/> 
+      <LocalizedSampleString Key="Vertical" Value="Vertical" />
+      <LocalizedSampleString Key="WindSpeed" Value="Wind Speed (mph)" />
+      <LocalizedSampleString Key="WindSpeedCaption" Value="Raw Data from NOAA. Wind information from Los Angeles (07\\16\\2013) weather station." />
+      <LocalizedSampleString Key="WindSpeedGauge" Value="Wind Speed Gauge (mph)" />
+    </LocalizedSampleStrings>
+    <PageKeywords>igLinearGauge</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Linear Gauge</Name>
+    <Description></Description>
+    <LocalizedSampleStrings>      
+      <LocalizedSampleString Key="AbsoluteZero" Value="絶対零度"/>
+      <LocalizedSampleString Key="AbsoluteZero_Description" Value="国際協定により、「絶対零度」は 0 K (ケルビン スケール) および -273.15° C (摂氏スケール) として定義されます。"/>
+      <LocalizedSampleString Key="April" Value="4 月"/>
+      <LocalizedSampleString Key="Brush" Value="ブラシ"/>
+      <LocalizedSampleString Key="ChooseSetting" Value="設定の選択"/>
+      <LocalizedSampleString Key="CranberryAirPressure" Value="気圧 (hPA)"/>
+      <LocalizedSampleString Key="CranberryDescription" Value="米国、ニュー ヨーク、2013/09/26"/>
+      <LocalizedSampleString Key="CranberryHumidity" Value="湿度"/>
+      <LocalizedSampleString Key="CranberryTemperature" Value="温度"/>
+      <LocalizedSampleString Key="CranberryTitle" Value="クランベリー レイクの天気"/>
+      <LocalizedSampleString Key="EnergySource" Value="エネルギー源"/>
+      <LocalizedSampleString Key="February" Value="2 月"/>
+      <LocalizedSampleString Key="FontBrush" Value="フォント ブラシ"/>
+      <LocalizedSampleString Key="FontSize" Value="フォント サイズ"/>
+      <LocalizedSampleString Key="Graph" Value="グラフ"/>
+      <LocalizedSampleString Key="Horizontal" Value="水平方向"/>
+      <LocalizedSampleString Key="InnerEndExtent" Value="内部の終了範囲"/>
+      <LocalizedSampleString Key="InnerStartExtent" Value="内部の開始範囲"/>
+      <LocalizedSampleString Key="Interval" Value="間隔"/>
+      <LocalizedSampleString Key="IsScaleInverted" Value="スケールの反転"/>
+      <LocalizedSampleString Key="January" Value="1 月"/>      
+      <LocalizedSampleString Key="March" Value="3 月"/> 
+      <LocalizedSampleString Key="Month" Value="月"/>
+      <LocalizedSampleString Key="NutritionCarbohydrates" Value="炭水化物"/>
+      <LocalizedSampleString Key="NutritionFat" Value="脂質"/>
+      <LocalizedSampleString Key="NutritionProtein" Value="たんぱく質"/>
+      <LocalizedSampleString Key="NutritionTitle" Value="健康的な食事"/>
+      <LocalizedSampleString Key="NutritionDescription" Value="脂質、炭水化物、たんぱく質の合計カロリーの比率。中の範囲は健康的な食事の比率です。目標値が設定されています。"/>
+      <LocalizedSampleString Key="Options" Value="オプション"/>
+      <LocalizedSampleString Key="Orientation" Value="方向"/>
+      <LocalizedSampleString Key="SaharaDesert" Value="サハラ砂漠"/>
+      <LocalizedSampleString Key="SaharaDesert_Cold" Value="寒い"/>
+      <LocalizedSampleString Key="SaharaDesert_Description" Value="夏の平均気温は 30º C (86º F)、冬の平均気温は 13º C (55º F) です。その他の地域の砂漠に比べ気温が低くなります。月の平均気温が 40º C (104º F) になる月もあり、50º C (122º F) に達することが多々あります。夏の気温では 50º C 以上の日較差を表示します。日中は高温で、夜は 0º C 以下になります。リビアで 58º C (136.4º F) の最高気温を記録しました。"/>
+      <LocalizedSampleString Key="SaharaDesert_Hot" Value="暑い"/>
+      <LocalizedSampleString Key="SaharaDesert_Mild" Value="穏やか"/>
+      <LocalizedSampleString Key="SaharaDesert_Warm" Value="暖かい"/>
+      <LocalizedSampleString Key="Setting1" Value="設定 1"/>
+      <LocalizedSampleString Key="Setting2" Value="設定 2"/>
+      <LocalizedSampleString Key="Setting3" Value="設定 3"/>
+      <LocalizedSampleString Key="SunkostSalesAvgOrder" Value="平均注文"/>
+      <LocalizedSampleString Key="SunkostSalesDescription" Value="2013 年度の販売 (水平の白線) は、2012 年全体 (垂直の白線) の販売を 400 万ドル超えました。2013 年度の販売において、新しく導入した販売活動が成功したことを示しています。更に市場浸透が増加し、販売も向上しました。"/>
+      <LocalizedSampleString Key="SunkostSalesHeader" Value="Sunkost: 2013 年の売上げ目標"/>
+      <LocalizedSampleString Key="SunkostSalesNewCustomers" Value="新しい顧客"/>
+      <LocalizedSampleString Key="SunkostSalesProfit" Value="利益"/>
+      <LocalizedSampleString Key="SunkostSalesRevenue" Value="年度売上"/>       
+      <LocalizedSampleString Key="Time" Value="時間"/>
+      <LocalizedSampleString Key="TransitionDuration" Value="トランジション期間"/> 
+      <LocalizedSampleString Key="Vertical" Value="垂直方向" />
+      <LocalizedSampleString Key="WindSpeed" Value="風速 (mph)" />
+      <LocalizedSampleString Key="WindSpeedCaption" Value="NOAA からの生データ。ロサンゼルス観測所からの風情報 (2013/07/16)。" />
+      <LocalizedSampleString Key="WindSpeedGauge" Value="風速ゲージ (mph)" />
+    </LocalizedSampleStrings>
+    <PageKeywords>igLinearGauge</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>ui.igLinearGauge</ClientApiUrl>
+  <HelpPageName>igLinearGauge_Overview</HelpPageName>
+  <ForumNumber>813</ForumNumber>
+  <IconImage>jquery-bullet-graph.png</IconImage>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <TOC>
+    <Sample>basic-configuration</Sample>
+    <Sample>scale-settings</Sample>
+    <Sample>range-settings</Sample>
+    <Sample>mvc-initialization</Sample>
+    <Sample>grid-integration</Sample>
+    <Sample>animated-transitions</Sample>
+    <Sample>needle-settings</Sample>    
+    <Sample>vertical-horizontal-orientation</Sample>
+    <Sample>needle-dragging</Sample>
+  </TOC>
+</Component>

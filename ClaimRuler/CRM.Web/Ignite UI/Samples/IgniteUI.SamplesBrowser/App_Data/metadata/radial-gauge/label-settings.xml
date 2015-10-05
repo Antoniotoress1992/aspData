@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Label Settings</Title>
+    <Description>This sample demonstrates how to configure the Radial Gauge control's Label settings. Use the slider to see how the labelExtent and labelInterval properties affect the Label.  </Description>
+    <HelpTopics>
+      <HelpTopic Title="Configuring Labels (igRadialGauge)" TopicName="igRadialGauge_Configuring_Labels" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>ラベル設定</Title>
+    <Description>このサンプルは、ラジアル ゲージ コントロールのラベル設定の方法を紹介します。スライダーは、labelExtent および labelInterval プロパティの Label への影響を確認できます。</Description>
+    <HelpTopics>
+      <HelpTopic Title="ラベルの構成 (igRadialGauge)" TopicName="igRadialGauge_Configuring_Labels" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

@@ -1,0 +1,64 @@
+﻿@using Infragistics.Web.Mvc
+@using IgniteUI.SamplesBrowser.Models
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="@Url.Content("~/igniteui/css/themes/infragistics/infragistics.theme.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/igniteui/css/structure/infragistics.css")" rel="stylesheet" />
+
+    <script src="@Url.Content("~/js/modernizr.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery-ui.min.js")"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="@Url.Content("~/igniteui/js/infragistics.core.js")"></script>
+    <script src="@Url.Content("~/igniteui/js/infragistics.lob.js")"></script>
+    <style>
+        #dataSelector, #pivotGrid {
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="dataSelector"></div>
+    <div id="pivotGrid"></div>
+
+    <script type="text/javascript">
+        $.support.cors = true;
+        $(function () {
+            var adomdDataSource = new $.ig.OlapXmlaDataSource({
+                isRemote: true,
+                serverUrl: '@Url.Action("adomd-provider-endpoint")',
+                catalog: 'Adventure Works DW Standard Edition',
+                cube: 'Adventure Works',
+                rows: '[Date].[Calendar]',
+                columns: '[Product].[Product Categories]',
+                measures: '[Measures].[Internet Order Count]'
+            });
+
+            adomdDataSource.initialize()
+                .done(function(rootMetadataItem) {
+                    $('#dataSelector').igPivotDataSelector({
+                        dataSource: adomdDataSource,
+                        height: "650px",
+                        width: "240px"
+                    });
+
+                    $("#pivotGrid").igPivotGrid({
+                        dataSource: adomdDataSource,
+                        height: "650px",
+                        width: "670px"
+                    });
+                })
+                .fail(function (error) {
+                    $("#pivotGrid").html("<h4>An error has occured on the server. <br>         One of the possible reasons is that you do not have the Microsoft.AnalysisServices.AdomdClient assembly installed. <br>         You can download Microsoft® SQL Server® 2008 R2 ADOMD.NET from         <a target='_blank' href='http://www.microsoft.com/en-us/download/confirmation.aspx?id=16978'>here</a>.         <br>Alternatively if you already have another version of this assembly installed, you can configure a binding redirect in the web.config file.         For more information see this          <a target='_blank'  href='http://help.infragistics.com/doc/jquery/?page=igOlapXmlaDataSource_Configuring_Through_a_Remote_Provider.html'>help topic</a>.</h4>");
+            });
+        });
+    </script>
+</body>
+</html>

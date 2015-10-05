@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Using the ASP.NET MVC Helper with Xmla Data Source</Title>
+    <Description>This sample demonstrates how to use the ASP.NET MVC Helper for the igOlapXmlaDataSource and how to use this data source in igPivotDataSelector and igPivotGrid.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>ASP.NET MVC ヘルパーと XMLA データ ソースの使用</Title>
+    <Description>このサンプルでは、igOlapXmlaDataSource に ASP.NET MVC ヘルパーを使用し、このデータ ソースを igPivotDataSelector および igPivotGrid に使用する方法を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <MinSampleSize>Desktop</MinSampleSize>
+</Sample>

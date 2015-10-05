@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Device Manager</Title>
+    <Description>This sample demonstrates how the Toggle Switch ASP.NET MVC helper is used in a device manager scenario where devices can be turned on and off.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Adding ToggleSwitch" TopicName="ToggleSwitch_Adding" />
+      <HelpTopic Title="Configuring" TopicName="ToggleSwitch_Configuring" />
+      <HelpTopic Title="Overview" TopicName="ToggleSwitch_Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>デバイス マネージャー</Title>
+    <Description>このサンプルは、デバイスをオン/オフにできるデバイス マネージャーで Toggle Switch MVC ヘルパーを使用する方法を紹介します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="ToggleSwitch の追加" TopicName="ToggleSwitch_Adding" />
+      <HelpTopic Title="構成" TopicName="ToggleSwitch_Configuring" />
+      <HelpTopic Title="概要" TopicName="ToggleSwitch_Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+</Sample>

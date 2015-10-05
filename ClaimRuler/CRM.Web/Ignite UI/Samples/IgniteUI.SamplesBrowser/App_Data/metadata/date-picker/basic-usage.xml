@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Basic Usage</Title>
+    <Description>This is a basic example for implementing a date picker.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Overview" TopicName="igDatePicker_Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>基本的な使用方法</Title>
+    <Description>このサンプルは日付ピッカーの実装の例です。</Description>
+    <HelpTopics>
+      <HelpTopic Title="概要" TopicName="igDatePicker_Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhonePortrait</MinSampleSize>
+</Sample>

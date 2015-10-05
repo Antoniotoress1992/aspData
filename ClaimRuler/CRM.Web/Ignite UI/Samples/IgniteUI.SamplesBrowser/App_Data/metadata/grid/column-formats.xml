@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Column Formats</Title>
+    <Description>
+        This sample demonstrates the grid column formatting capabilities. The Sell Start Date and Modified Date columns use different date formatting. The List Price number column uses the currency format.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+      <Title>列の書式設定</Title>
+    <Description>
+      このサンプルはグリッドの列書式設定の機能を紹介します。「販売の開始日付」および「変更日付」列は別の日付書式設定を使用します。「価格」の数値列は通貨の書式設定を使用します。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

@@ -1,0 +1,314 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Dashboard.master.cs" Inherits="CRM.Web.Protected.Dashboard1" %>
+
+<%@ Register Assembly="Infragistics45.Web.v14.1, Version=14.1.20141.2011, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" Namespace="Infragistics.Web.UI.EditorControls" TagPrefix="ig" %>
+
+<%@ Register Assembly="Infragistics45.Web.v14.1, Version=14.1.20141.2011, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" Namespace="Infragistics.Web.UI.LayoutControls" TagPrefix="ig" %>
+<%@ Register Assembly="Infragistics45.Web.v14.1, Version=14.1.20141.2011, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" Namespace="Infragistics.Web.UI.NavigationControls" TagPrefix="ig" %>
+<%@ Register Src="~/UserControl/Admin/ucFooter.ascx" TagName="ucFooter" TagPrefix="uc2" %>
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Claim Ruler - Industrial Strength Property Claim Management Software</title>
+    <link type="text/css" rel="stylesheet" runat="server" href="~/Css/ClaimRuler.css" />
+    <link type="text/css" rel="Stylesheet" runat="server" href="~/Css/cupertino/jquery-ui-1.10.4.custom.css" />
+       <link type="text/css" rel="Stylesheet" runat="server" href="~/ig_ui/css/themes/infragistics/infragistics.theme.css" />
+    <link type="text/css" rel="Stylesheet" runat="server" href="~/ig_ui/css/structure/infragistics.css" />
+
+      <!-- Ignite UI Required Combined CSS Files -->
+    <link href="~/js/IgniteUI/css/themes/infragistics/infragistics.theme.css" rel="stylesheet"  runat="server"/>
+    <link href="~/js/IgniteUI/css/structure/infragistics.css" rel="stylesheet"  runat="server"/>
+
+
+    <%--<link type="text/css" rel="stylesheet" runat="server" href="~/Css/toggle-switch.css" />--%>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+
+</head>
+<body id="main_body" runat="server">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" EnablePartialRendering="true" runat="server"
+            EnablePageMethods="true">
+            <Scripts>
+                <asp:ScriptReference Path="~/js/jquery-1.8.3.js" />
+               <%-- <asp:ScriptReference Path="~/js/jquery-ui-1.9.2.custom.js" />--%>
+                  <asp:ScriptReference Path="~/js/jquery-1.10.2.js" />
+                <asp:ScriptReference Path="~/js/jquery-ui-1.10.4.custom.js" />
+                <asp:ScriptReference Path="~/js/reminder.js" />
+                <asp:ScriptReference Path="~/js/general.js" />
+                <asp:ScriptReference Path="~/ig_ui/js/infragistics.js" />
+                <asp:ScriptReference Path="https://js.appcenter.intuit.com/Content/IA/intuit.ipp.anywhere.js" />
+                <asp:ScriptReference Path="~/js/jquery.tools.min.js" />
+                <asp:ScriptReference Path="~/js/jquery.blockUI.js" />
+
+                 <%--  Ignite UI Required Combined JavaScript Files --%>
+                <asp:ScriptReference Path="~/js/IgniteUI/js/infragistics.core.js" />
+                <asp:ScriptReference Path="~/js/IgniteUI/js/infragistics.lob.js" />
+            </Scripts>
+        </asp:ScriptManager>
+        <div id="divAlert"></div>
+
+        <div style="margin: 0px 0px 0px 5px;">
+            <table style="width: 100%; border-collapse: separate; border-spacing: 0px; padding: 1px;" border="0">
+                <tr>
+                    <td style="width: 200px; text-align: center;">
+                        <asp:Image ID="logo" runat="server" ImageUrl="~/Images/claim_ruler_logo.png" Width="64px" Height="64px" ImageAlign="Middle" />
+                    </td>
+                    <td class="center">
+                        <div class="search_box">
+                            <asp:Panel ID="pnlSearch" runat="server" DefaultButton="ibtnSearch">
+                                <ig:WebTextEditor ID="txtSearchText" runat="server" BorderStyle="Solid" BorderWidth="1" BorderColor="Gray" Width="300px" Height="16px" />
+                                <asp:ImageButton ID="ibtnSearch" runat="server" OnClick="ibtnSearch_Click" ImageAlign="Top" ImageUrl="~/Images/search_button_32x32.png" Height="24px" />
+                                <asp:ImageButton ID="ibtnNew" runat="server" ImageAlign="Top" ImageUrl="~/Images/button_add.png" Height="24px" OnClientClick="return false;" />
+                            </asp:Panel>
+                        </div>
+                    </td>
+
+
+                    <td style="width: 200px;">
+                        <div class="paneContentInner nowrap middle center">
+                            <div class="photo_thumbnail">
+                                <a id="user_avatar">
+                                    <asp:Image ID="user_thumbnail" runat="server" Width="38px" Height="38px" ImageAlign="Middle" EnableViewState="false" />
+                                </a>
+                                <div id="current_user" class="socialbox">
+                                    <div class="paneContentInner">
+                                        <div class="float_left">
+
+                                            <a href="javascript:showPhotoUploadDialog();">
+                                                <asp:Image ID="imgUser" runat="server" CssClass="boxContainer"
+                                                    Style="float: left; margin: 0 15px 20px 0; cursor: pointer;"
+                                                    Width="75px" Height="75px"
+                                                    ToolTip="Change"
+                                                    EnableViewState="false" />
+                                            </a>
+
+                                        </div>
+                                        <div class="float_right">
+                                            <table style="margin: 0">
+                                                <tr>
+                                                    <td class="center nowrap">
+                                                        <asp:Label ID="lblUserName" runat="server" /></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="center nowrap">
+                                                        <asp:Label ID="lblUserEmail" runat="server" Font-Size="0.8em" /></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                            </table>
+
+                                            <div class="float_right paneContentInner">
+                                                <asp:LinkButton ID="lbtnLogout" runat="server" CssClass="link" Text="Logout" OnClick="lbtnLogout_Click" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div>
+                                <asp:Label ID="lblUserWelcome" runat="server" Style="font-weight: bold;"></asp:Label>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="text-align: left;">
+                        <ig:WebSplitter runat="server" ID="WebSplitter1" Orientation="Vertical" Height="780px"
+                            Width="99%" DynamicResize="true" ResizeWithBrowser="true">
+                            <Panes>
+                                <ig:SplitterPane runat="server" Size="200px" CollapsedDirection="PreviousPane">
+                                    <Template>
+                                        <ig:WebExplorerBar ID="navBar" runat="server" Width="200px" GroupExpandBehavior="SingleExpanded">
+                                            <Groups>
+                                                <ig:ExplorerBarGroup Text="Social Media">
+                                                    <Items>
+                                                        <ig:ExplorerBarItem Text="Facebook" NavigateUrl="~/Protected/FBDashboard.aspx" ImageUrl="~/Images/facebook.jpg">
+                                                        </ig:ExplorerBarItem>
+                                                    </Items>
+                                                </ig:ExplorerBarGroup>
+                                            </Groups>
+                                            <Groups>
+                                                <ig:ExplorerBarGroup Text="Help">
+                                                    <Items>
+                                                        <ig:ExplorerBarItem Text="User's Manual" NavigateUrl="~/Content/Claim_Ruler_Instructions.pdf" Target="_blank">
+                                                        </ig:ExplorerBarItem>
+                                                        <ig:ExplorerBarItem Text="Merge Mail Instructions" NavigateUrl="~/Content/ClaimRulerMergeMailInstructions.pdf" Target="_blank">
+                                                        </ig:ExplorerBarItem>
+                                                        <ig:ExplorerBarItem Text="Contact Support" NavigateUrl="mailto:support@itstrategiesgroup.com" Target="_blank">
+                                                        </ig:ExplorerBarItem>
+                                                    </Items>
+                                                </ig:ExplorerBarGroup>
+                                            </Groups>
+                                        </ig:WebExplorerBar>
+                                    </Template>
+                                </ig:SplitterPane>
+                                <ig:SplitterPane runat="server" CollapsedDirection="none">
+                                    <Template>
+                                        <div class="paneContent">
+                                            <asp:ContentPlaceHolder ID="ContentPlaceHolderMiddArea" runat="server">
+                                            </asp:ContentPlaceHolder>
+                                        </div>
+
+                                    </Template>
+                                </ig:SplitterPane>
+                            </Panes>
+                        </ig:WebSplitter>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <uc2:ucFooter ID="ucFooter1" runat="server" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <input type="hidden" id="startDateTime" name="startDateTime" />
+        <input type="hidden" id="pos_top" name="pos_top" />
+        <input type="hidden" id="pos_left" name="pos_left" />
+        <input type="hidden" id="isFullScreen" name="isFullScreen" />
+        <input type="submit" id="btnSubmit" style="display: none;" />
+        <asp:HiddenField ID="hf_userID" runat="server" />
+        <div id="div_userPhotoDialog" class="boxContainer" title="Upload User Photo" style="display: none;">
+            <div class="paneContentInner">
+                <span class="red">Files of type JPG are valid only.</span>
+            </div>
+            <div id="webUpload_userphoto">
+            </div>
+        </div>
+    </form>
+    <script type="text/javascript">
+        // user photo
+        function showPhotoUploadDialog() {
+            $("#webUpload_userphoto").igUpload({
+                mode: 'single',
+                progressUrl: "http://appv3.claimruler.com/IGUploadStatusHandler.ashx",
+                autostartupload: true,
+                onError: function (e, args) {
+                    showAlert(args.errorMessage);
+                },
+                fileSelected: function (e, args) {
+                    if (args.filePath.toLowerCase().indexOf('.jpg') == -1) {
+                        return false; // cancel
+                    }
+                },
+                fileUploading: function (e, args) {
+                    if (args.filePath.toLowerCase().indexOf('.jpg') == -1) {
+                        return false; // cancel
+                    }
+                },
+                fileUploaded: function (e, args) {
+                    var userID = parseInt($("#<%= hf_userID.ClientID %>").val());
+
+                    saveUserPhoto(userID, args.filePath);
+                }
+            });
+
+
+                $("#div_userPhotoDialog").dialog({
+                    modal: true,
+                    width: 600,
+                    close: function () {
+                        $(this).dialog('destroy');
+                    },
+                    buttons:
+                    {
+                        'Close': function () {
+                            $(this).dialog('close');
+                        }
+                    }
+                });
+                return false;
+            }
+            function saveUserPhoto(userID, filePath) {
+                var myParams = "{ 'userID':'" + userID + "', 'filePath':'" + filePath + "'}";
+
+                $.ajax({
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    type: 'POST',
+                    data: myParams,
+                    url: '<%= ResolveUrl("~/protected/AjaxClientServices.aspx/saveUserPhoto") %>',
+                    success: function (data) {
+                        // refresh user photo
+                        $("#div_userPhotoDialog").dialog('close');
+                        window.location.reload();
+
+                  <%--  var url = window.location.pathname.split('/');
+
+                    var imageUrl = window.location.protocol + "//" + window.location.hostname + "/" + url[1] + "/UserPhoto/" + userID + ".jpg";
+
+                    $("#<%= user_thumbnail.ClientID %>").removeAttr("src").attr("src", imageUrl);--%>
+
+                    },
+                    error: function (xhr, err) {
+                        showAlert(xhr.responseText);
+                    }
+                });
+            }
+
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $(".helptip img[title]").tooltip();
+
+
+            //When the Show button is clicked, reveal the hidden div
+            $("#user_avatar").click(function (e) {
+                var o = {
+                    left: e.pageX - 250,
+                    top: 60 // top
+                };
+                $('#current_user').show().offset(o);
+
+            });
+
+            //When the Default Div is hovered away from, hide the div
+            $('#current_user').on("mouseleave", function () {
+
+                $('#current_user').hide();
+
+            });
+
+            checkForReminders();
+        });
+       <%-- var appBaseUrl = '<%=Request.Url.GetLeftPart(UriPartial.Authority) %>';
+
+        $(document).ready(function () {
+            checkForReminders();
+
+            intuit.ipp.anywhere.setup({
+                menuProxy: appBaseUrl + '/IPP/BlueDotMenuProxy.aspx',
+                grantUrl: appBaseUrl + '/OAuth/Grant.aspx'
+            });
+        });--%>
+
+
+
+        Sys.WebForms.PageRequestManager.getInstance().add_beginRequest(beginRequestHandler);
+        Sys.WebForms.PageRequestManager.getInstance().add_endRequest(endRequestHandler);
+        function beginRequestHandler(sender, args) {
+            $.blockUI({ message: '<div style="padding:5px;"><img runat="server" src="~/images/ajax-loader.gif" /></di>' });
+        }
+
+        function endRequestHandler(sender, args) {
+            $.unblockUI();
+        }
+        function reloadPage() {
+            window.location.reload();
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Needle Settings</Title>
+    <Description>This sample demonstrates configuring the value needle, by using the predefined shapes, or creating a custom one.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>針設定</Title>
+    <Description>このサンプルでは、定義済み図形を使用するか、カスタム図形を作成すると、値針を構成する方法を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

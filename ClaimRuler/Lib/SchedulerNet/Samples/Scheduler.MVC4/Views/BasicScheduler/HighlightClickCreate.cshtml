@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Scheduler | Create on click";
+    ViewBag.SampleTitle = "Create on click";
+    ViewBag.ShortDescription = "Create events in highlighted slots";
+    ViewBag.LongDescription = "Create an event on click in highlighted slots.<br />The default event duration determines the size of highlighted area. ";
+}
+
+@Html.Raw(Model.GenerateJS())
+@Html.Raw(Model.GenerateCSS())
+<style>
+    .dhx_cal_event {
+        z-index:1;
+    }
+    .highlight_section {
+        opacity: 0.25;
+        filter:alpha(opacity=25);
+        z-index:0;
+    } 
+    .highlight_section:hover {
+		background-color: #90ee90;
+	}
+</style>
+
+@Html.Raw(Model.GenerateHTML())

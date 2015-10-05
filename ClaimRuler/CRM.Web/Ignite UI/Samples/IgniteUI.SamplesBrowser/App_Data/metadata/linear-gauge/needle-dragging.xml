@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Needle Dragging</Title>
+    <Description>This sample demonstrates how you can drag the igLinearGauge control's needle by using the Mouse events. On mobile devices, you can simply tap on a value and the needle moves to that value.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>針のドラッグ</Title>
+    <Description>このサンプルは、Mouse イベントを使用して igLinearGauge コントロールの針をドラッグする方法を紹介します。モバイル デバイスでは、値をタップすると、針がその値に移動します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

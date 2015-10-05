@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component> 
+  <LocalizedContent Language="en">
+    <Name>ToggleSwitch</Name>
+    <Description>
+      Go beyond simple web pages and build true mobile applications. With a selection seven types of mobile input controls, users can provide inputs and responses simply and easily.
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Enable_Permissions" Value="Enable Permissions" />
+      <LocalizedSampleString Key="Wireless" Value="Wireless" />
+      <LocalizedSampleString Key="On" Value="On" />
+      <LocalizedSampleString Key="Device_Manager" Value="Device Manager" />
+      <LocalizedSampleString Key="Off" Value="Off" />
+      <LocalizedSampleString Key="Bluetooth" Value="Bluetooth" />
+      <LocalizedSampleString Key="GPS" Value="GPS" />
+      <LocalizedSampleString Key="Enabled" Value="Enabled" />
+      <LocalizedSampleString Key="Disabled" Value="Disabled" />
+      <LocalizedSampleString Key="Yes" Value="Yes" />
+      <LocalizedSampleString Key="No" Value="No" />
+    </LocalizedSampleStrings>
+    <PageKeywords>MobileToggleSwitch</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>ToggleSwitch</Name>
+    <Description>
+      モバイル アプリケーションに対応するコントロールを提供します。モバイル入力コントロールの 7 つのタイプを提供します。
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Enable_Permissions" Value="アクセス許可を有効にする" />
+      <LocalizedSampleString Key="Wireless" Value="ワイヤレス" />
+      <LocalizedSampleString Key="On" Value="オン" />
+      <LocalizedSampleString Key="Device_Manager" Value="デバイス マネージャー" />
+      <LocalizedSampleString Key="Off" Value="オフ" />
+      <LocalizedSampleString Key="Bluetooth" Value="Bluetooth" />
+      <LocalizedSampleString Key="GPS" Value="GPS" />
+      <LocalizedSampleString Key="Enabled" Value="有効" />
+      <LocalizedSampleString Key="Disabled" Value="無効" />
+      <LocalizedSampleString Key="Yes" Value="はい" />
+      <LocalizedSampleString Key="No" Value="いいえ" />
+    </LocalizedSampleStrings>
+    <PageKeywords>MobileToggleSwitch</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>http://api.jquerymobile.com/slider/</ClientApiUrl>
+  <HelpPageName>ToggleSwitch_Landing_Page</HelpPageName>
+  <ForumNumber>691</ForumNumber>
+  <IconImage>jquery-mobile-toggleswitch.png</IconImage>
+  <ClientRuntime>jQueryMobile</ClientRuntime>
+  <TOC>
+    <Sample>basic-usage</Sample>
+    <Sample>device-manager</Sample>
+  </TOC>
+</Component>

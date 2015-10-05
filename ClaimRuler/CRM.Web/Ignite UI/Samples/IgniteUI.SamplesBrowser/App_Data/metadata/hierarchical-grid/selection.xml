@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Selection</Title>
+    <Description>
+        <![CDATA[
+        This sample demonstrates the Selection feature of the igHierarchicalGrid. Selection operates in two distinct modes: cell and row. Cell mode allows you to select individual cells. Row mode allows you to select individual rows. Each of the two modes can be configure in either single or multiple selection by setting the multipleSelection to true.<br/>
+        The grid on the top is configured in single cell selection mode.<br/>
+        The grid on the bottom is configured in the multiple row selection mode.
+        ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>選択</Title>
+    <Description>
+    <![CDATA[
+        このサンプルでは、igHierarchicalGrid の選択機能を紹介します。選択はセルおよび行モードがあります。セル モードでは特定のセルを選択できます。行モードでは特定の行を選択できます。2 つのモードを単一選択または複数選択に設定できます。multipleSelection を true に設定すると、複数選択が有効になります。<br/>
+        上のグリッドは単一セル選択モードに構成されます。<br/>
+        下のグリッドは複数行選択モードに構成されます。
+     ]]>
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>TabletPortrait</MinSampleSize>
+</Sample>

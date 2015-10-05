@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Dynamic Binding</Title>
+    <Description>There are times when you may need to bind data during run-time. This sample shows how the ListView is created in a button click using the JavaScript API.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Overview" TopicName="igListView_Overview" />
+      <HelpTopic Title="Data Attributes" TopicName="igListView_Data_Attributes_Reference" />
+      <HelpTopic Title="Multi-Level Data Binding" TopicName="igListView_Configuring_Multi-Level_Data_Binding" />
+      <HelpTopic Title="Known Issues and Limitations" TopicName="igListView_Known_Issues" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>動的バインド</Title>
+    <Description>ランタイムでデータをバインドすることができます。このサンプルでは、JavaScript API を使用してボタン クリック イベントで ListView を作成する方法を紹介します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="概要" TopicName="igListView_Overview" />
+      <HelpTopic Title="データ属性" TopicName="igListView_Data_Attributes_Reference" />
+      <HelpTopic Title="マルチレベル データ バインド" TopicName="igListView_Configuring_Multi-Level_Data_Binding" />
+      <HelpTopic Title="既知の問題と制限" TopicName="igListView_Known_Issues" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <!-- Excluding from jsFiddle because it does not process javascript correctly for mobile widgets when you seperate js into the js window and html into the html window. -->
+  <JsFiddle Exclude="true"></JsFiddle>
+</Sample>

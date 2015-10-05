@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>jQuery UI Code Examples</Name>
+    <SampleStrings>
+      
+    </SampleStrings>
+    <Description>jQuery UI Code Examples</Description>
+    <PageKeywords>jQuery UI Code Examples</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>jQuery UI Code Examples</Name>
+    <SampleStrings>
+
+    </SampleStrings>
+    <Description>jQuery UI Code Examples</Description>
+    <PageKeywords>jQuery UI Code Examples</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl></ClientApiUrl>
+  <HelpPageName></HelpPageName>
+  <ForumNumber></ForumNumber>
+  <IconImage></IconImage>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <IsFeatureComponent>False</IsFeatureComponent>
+  <TOC>
+    <Sample>ignite-ui-boilerplate-jquery-ui</Sample>
+    <Sample>getting-started-grid-and-chart</Sample>
+  </TOC>
+</Component>

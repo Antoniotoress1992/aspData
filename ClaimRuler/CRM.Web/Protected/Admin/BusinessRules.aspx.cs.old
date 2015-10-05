@@ -1,0 +1,223 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+using CRM.Core;
+using CRM.Data;
+using CRM.Repository;
+using CRM.Data.Entities;
+
+namespace CRM.Web.Protected.Admin {
+	public partial class BusinessRules : System.Web.UI.Page {
+		protected void Page_Load(object sender, EventArgs e) {
+			ucRule1.cancelButtonClick += new EventHandler(refreshBusinessRuleGrid);
+			ucRule2.cancelButtonClick += new EventHandler(refreshBusinessRuleGrid);
+			ucRule8.cancelButtonClick += new EventHandler(refreshBusinessRuleGrid);
+
+			if (!Page.IsPostBack) {
+				bindData();
+			}
+		}
+
+		private void bindData() {
+			List<Rule> rules = null;
+
+			// load all system rule types
+			using (BusinessRuleManager repository = new BusinessRuleManager()) {
+				rules = repository.GetAll();
+			}
+
+			Core.CollectionManager.FillCollection(ddlRules, "RuleID", "RuleName", rules);
+
+			ddlRules.SelectedIndex = -1;
+
+			bindBusinessRules();
+		}
+
+
+		private void bindBusinessRules(int ruleTypeID) {
+			List<BusinessRule> rules = null;
+
+			using (BusinessRuleManager repository = new BusinessRuleManager()) {
+				rules = repository.GetBusinessRules(ruleTypeID);
+			}
+
+			gvBsuinessRules.DataSource = rules;
+			gvBsuinessRules.DataBind();
+		}
+
+		private void bindBusinessRules() {
+			int clientID = SessionHelper.getClientId();
+			List<BusinessRule> rules = null;
+
+			using (BusinessRuleManager repository = new BusinessRuleManager()) {
+				rules = repository.GetBusinessRules(clientID);
+			}
+
+			gvBsuinessRules.DataSource = rules;
+			gvBsuinessRules.DataBind();
+		}
+
+
+		private void editBusinessRule(int ruleTypeID, string ruleTypeDescription,CRM.Data.Entities.BusinessRule businessRule) {
+			hidePanels();
+
+			switch (ruleTypeID) {
+				case (int)Globals.RuleType.AdjusterClaimReview:
+					pnlGrid.Visible = false;
+
+					pnlRule1.Visible = true;
+
+					lblRuleTitle.Text = ruleTypeDescription;
+
+					ucRule1.bindData(businessRule);
+					break;
+
+				case (int) Globals.RuleType.ClaimAssingmentReview:
+					pnlGrid.Visible = false;
+
+					pnlRule2.Visible = true;
+
+					ucRule2.title = ruleTypeDescription;
+
+					ucRule2.bindData(businessRule);
+					break;
+
+				case (int)Globals.RuleType.SpecificExpenseTypePerCarrier:
+					pnlGrid.Visible = false;
+
+					pnlRule8.Visible = true;
+
+					ucRule8.title = ruleTypeDescription;
+
+					this.ucRule8.bindData(businessRule);
+					break;
+
+				default:
+					break;
+			}
+		}
+
+		protected void gvBsuinessRules_RowCommand(object sender, GridViewCommandEventArgs e) {
+			BusinessRule businessRule = null;
+			int businessRuleID = 0;
+
+			lblMessage.Text = string.Empty;
+			lblMessage.Visible = false;
+
+			if (e.CommandName == "DoEdit") {
+				businessRuleID = Convert.ToInt32(e.CommandArgument);
+				using (BusinessRuleManager repository = new BusinessRuleManager()) {
+					businessRule = repository.GetBusinessRule(businessRuleID);
+
+					if (businessRule != null) {
+						editBusinessRule((int)businessRule.RuleID, businessRule.Rule.RuleName, businessRule);
+					}
+				}
+			}
+			else if (e.CommandName == "DoDelete") {
+				try {
+					businessRuleID = Convert.ToInt32(e.CommandArgument);
+
+					using (BusinessRuleManager repository = new BusinessRuleManager()) {
+						businessRule = repository.GetBusinessRule(businessRuleID);
+
+						businessRule.IsActive = false;
+
+						repository.Save(businessRule);
+
+						refreshBusinessRuleGrid();
+
+						lblMessage.Text = "Rule was deactivate successfully.";
+						lblMessage.CssClass = "ok";
+						lblMessage.Visible = true;
+					}
+				}
+				catch (Exception ex) {
+					lblMessage.Text = "Rule was not deactivate.";
+					lblMessage.CssClass = "ok";
+					lblMessage.Visible = true;
+				}
+			}
+		}
+
+		protected void gvBsuinessRules_RowDataBound(object sender, GridViewRowEventArgs e) {
+
+		}
+
+		protected void gvBsuinessRules_PageIndexChanging(object sender, GridViewPageEventArgs e) {
+
+		}
+
+		protected void gvBsuinessRules_Sorting(object sender, GridViewSortEventArgs e) {
+
+		}
+
+		protected void lbtnNewRule_Click(object sender, EventArgs e) {
+			int ruleTypeID = 0;
+			ruleTypeID = Convert.ToInt32(ddlRules.SelectedValue);
+			BusinessRule businessRule = new BusinessRule();
+
+			pnlNew.Visible = true;
+			
+			pnlGrid.Visible = false;
+			hidePanels();
+			
+		}
+
+		private void hidePanels() {
+			//pnlRule1.Visible = false;
+			//pnlRule2.Visible = false;
+			//pnlRule8.Visible = false;
+			disablePanels(Page, false);
+		}
+
+		public void disablePanels(Control parent, bool isVisible) {
+			foreach (Control c in parent.Controls) {
+				if (c is Panel && c.ID.Contains("Rule")) {
+					((Panel)(c)).Visible = isVisible;
+				}
+
+				disablePanels(c, isVisible);
+			}
+		}
+
+		private void refreshBusinessRuleGrid(object sender, EventArgs e) {
+			refreshBusinessRuleGrid();
+		}
+
+		private void refreshBusinessRuleGrid() {
+			hidePanels();
+
+			pnlGrid.Visible = true;
+			pnlNew.Visible = false;
+
+			bindBusinessRules();			
+		}
+
+		protected void ddlRules_SelectedIndexChanged(object sender, EventArgs e) {
+			BusinessRule businessRule = null;
+			int ruleTypeID = 0;
+			
+			ruleTypeID = Convert.ToInt32(ddlRules.SelectedValue);
+
+			hidePanels();
+
+			if (ruleTypeID > 0) {		
+				businessRule = new BusinessRule();
+				editBusinessRule(ruleTypeID, ddlRules.SelectedItem.Text, businessRule);	
+			}
+		}
+
+		protected void btnBackToList_Click(object sender, EventArgs e) {
+			pnlNew.Visible = false;
+			pnlGrid.Visible = true;
+			hidePanels();
+
+			bindBusinessRules();
+		}
+	}
+}

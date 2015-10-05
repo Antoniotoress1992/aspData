@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">doughnut-chart/bind-json</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      The igDoughnutChart displays data similar to a <a href="~/pie-chart">pie chart</a> and can display multiple sets of data around a common center. 
+      You can create a <a href="~/doughnut-chart/configure-legend">legend for the igDoughnutChart</a> and also <a href="~/doughnut-chart/other-category">define categories</a>, 
+      <a href="~/doughnut-chart/labels-tooltips">labels, and tooltips</a>.      
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      igDoughnutChart は<a href="~/pie-chart">円チャート</a>に似たデータを表示し、共通の中心部の周りに複数のデータ セットを表示できます。
+      <a href="~/doughnut-chart/configure-legend">igDoughnutChart の凡例</a>を作成し、<a href="~/doughnut-chart/other-category">カテゴリ</a>、<a href="~/doughnut-chart/labels-tooltips">ラベル、およびツールチップ</a>を定義できます。
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

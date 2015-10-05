@@ -1,0 +1,652 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Data Chart</Name>
+    <SampleStrings>
+      <LocalizedSampleString Key="Chart_lbl_AxisStokeLines" Value="Axis Stoke Lines" />
+      <LocalizedSampleString Key="Chart_lbl_AxisMajorLines" Value="Axis Major Lines" />
+      <LocalizedSampleString Key="Chart_lbl_AxisMinorLines" Value="Axis Minor Lines" />
+      <LocalizedSampleString Key="Chart_lbl_AxisTickmarks" Value="Axis Tickmarks" />
+      <LocalizedSampleString Key="Chart_lbl_AxisTitles" Value="Axis Titles" />
+      <LocalizedSampleString Key="Chart_lbl_AxisStripes" Value="Axis Stripes" />
+      <LocalizedSampleString Key="Chart_lbl_AxisLabels" Value="Axis Labels" />
+      <LocalizedSampleString Key="Chart_lbl_PriceSeries" Value="Price Series" />
+      <LocalizedSampleString Key="Chart_lbl_PriceTrendLine" Value="Price Trend Line" />
+      <LocalizedSampleString Key="Chart_lbl_LineSeries" Value="Line Series" />
+      <LocalizedSampleString Key="Chart_lbl_LineMarkers" Value="Line Markers" />
+      <LocalizedSampleString Key="Chart_lbl_Legend" Value="Chart Legend" />
+      <LocalizedSampleString Key="Chart_lbl_Crosshairs" Value="Chart Crosshairs" />
+      <LocalizedSampleString Key="Chart_lbl_OverviewPane" Value="Chart Overview Pane" />
+      <LocalizedSampleString Key="Column_Chart" Value="Column Chart"/>
+      <LocalizedSampleString Key="Bar_Chart" Value="Bar Chart" />
+      <LocalizedSampleString Key="Line_Chart" Value="Line Chart" />
+      <LocalizedSampleString Key="Canada" Value="Canada" />
+      <LocalizedSampleString Key="Chart_lbl_refresh" Value="Refresh" />
+      <LocalizedSampleString Key="Chart_lbl_refreshTime" Value="Refresh time" />
+      <LocalizedSampleString Key="Chart_lbl_datapoints" Value="Data Points" />
+      <LocalizedSampleString Key="Chart_lbl_seriesType" Value="Series type" />
+      <LocalizedSampleString Key="Chart_lbl_testSeries" Value="Test Series" />
+      <LocalizedSampleString Key="Chart_sel_area" Value="Area" />
+      <LocalizedSampleString Key="Chart_sel_column" Value="Column" />
+      <LocalizedSampleString Key="Chart_sel_line" Value="Line" />
+      <LocalizedSampleString Key="Chart_sel_splineArea" Value="Spline Area" />
+      <LocalizedSampleString Key="Chart_sel_spline" Value="Spline" />
+      <LocalizedSampleString Key="Chart_sel_stepArea" Value="Step Area" />
+      <LocalizedSampleString Key="Chart_sel_stepLine" Value="Step Line" />
+      <LocalizedSampleString Key="Chart_sel_waterfall" Value="Waterfall" />
+      <LocalizedSampleString Key="Chart_sel_bar" Value="Bar" />
+      <LocalizedSampleString Key="Chart_Composite_China_DS" Value="China" />
+      <LocalizedSampleString Key="Chart_Composite_US_DS" Value="US" />
+      <LocalizedSampleString Key="Chart_Composite_Russia_DS" Value="Russia" />
+      <LocalizedSampleString Key="Chart_Composite_Coal_DS" Value="Coal" />
+      <LocalizedSampleString Key="Chart_Composite_Hydro_DS" Value="Hydro" />
+      <LocalizedSampleString Key="Chart_Composite_Nuclear_DS" Value="Nuclear" />
+      <LocalizedSampleString Key="Chart_Composite_Gas_DS" Value="Gas" />
+      <LocalizedSampleString Key="Chart_Composite_Oil_DS" Value="Oil" />
+      <LocalizedSampleString Key="Chart_Composite_Total_DS" Value="Total Energy" />
+      <LocalizedSampleString Key="Chart_Select_Indicator" Value="Select Indicator" />
+      <LocalizedSampleString Key="Chart_sel_candleStick" Value="Candlestick" />
+      <LocalizedSampleString Key="Chart_sel_ohlc" Value="OHLC" />
+      <LocalizedSampleString Key="Chart_genre_Indie" Value="Indie" />
+      <LocalizedSampleString Key="Chart_genre_ShortFilm" Value="Short Film" />
+      <LocalizedSampleString Key="Chart_genre_SilentFilm" Value="Silent Film" />
+      <LocalizedSampleString Key="Chart_genre_Animation" Value="Animation" />
+      <LocalizedSampleString Key="Chart_genre_Documentary" Value="Documentary" />
+      <LocalizedSampleString Key="Chart_genre_Comedy" Value="Comedy" />
+      <LocalizedSampleString Key="Chart_genre_Horror" Value="Horror" />
+      <LocalizedSampleString Key="Chart_genre_Adventure" Value="Adventure" />
+      <LocalizedSampleString Key="Chart_genre_Drama" Value="Drama" />
+      <LocalizedSampleString Key="Chart_genre_Family" Value="Family" />
+      <LocalizedSampleString Key="Chart_genre_CrimeFiction" Value="Crime Fiction" />
+      <LocalizedSampleString Key="Chart_genre_ScienceFiction" Value="Science Fiction" />
+      <LocalizedSampleString Key="Chart_genre_Romance" Value="Romance" />
+      <LocalizedSampleString Key="Chart_genre_Thriller" Value="Thriller" />
+      <LocalizedSampleString Key="Chart_genre_Action" Value="Action" />
+      <LocalizedSampleString Key="Chart_genre_Musical" Value="Musical" />
+      <LocalizedSampleString Key="Chart_genre_ActionAdventure" Value="Action Adventure" />
+      <LocalizedSampleString Key="Chart_genre_Sports" Value="Sports" />
+      <LocalizedSampleString Key="Chart_lbl_genre" Value="Genre" />
+      <LocalizedSampleString Key="Chart_lbl_generatingData" Value="Generating and assigning data..." />
+      <LocalizedSampleString Key="Chart_lbl_count" Value="Count" />
+      <LocalizedSampleString Key="Chart_lbl_changeChartType" Value="Change Chart Type" />
+      <LocalizedSampleString Key="Chart_lbl_otherContentFrom" Value="Other content from" />
+      <LocalizedSampleString Key="Chart_lbl_licensedUnder" Value="licensed under" />
+      <LocalizedSampleString Key="Chart_lbl_moviesDataFrom" Value="Movies Data from" />
+      <LocalizedSampleString Key="Chart_lbl_faoDataFrom" Value="Agricultural data from" />
+      <LocalizedSampleString Key="Chart_lbl_popDataFrom" Value="Population data from" />
+      <LocalizedSampleString Key="Chart_lbl_energyDataFrom" Value="Energy data from" />
+      <LocalizedSampleString Key="Chart_lbl_weatherDataFrom" Value="Weather data from" />
+      <LocalizedSampleString Key="Chart_lbl_stockDataFrom" Value="Stock data from" />
+      <LocalizedSampleString Key="Chart_lbl_seriesCloseValue" Value="Close" />
+      <LocalizedSampleString Key="Chart_lbl_seriesHighValue" Value="High" />
+      <LocalizedSampleString Key="Chart_lbl_seriesLowValue" Value="Low" />
+      <LocalizedSampleString Key="Chart_lbl_seriesOpenValue" Value="Open" />
+      <LocalizedSampleString Key="Chart_lbl_seriesValue" Value="Value"/>
+      <LocalizedSampleString Key="Chart_lbl_source" Value="Source" />
+      <LocalizedSampleString Key="Polar_Scatter" Value="Polar Scatter" />
+      <LocalizedSampleString Key="Polar_Line" Value="Polar Line" />
+      <LocalizedSampleString Key="Polar_Area" Value="Polar Area" />
+      <LocalizedSampleString Key="Chart_lbl_administration" Value="Administration" />
+      <LocalizedSampleString Key="Chart_lbl_sales" Value="Sales" />
+      <LocalizedSampleString Key="Chart_lbl_it" Value="IT" />
+      <LocalizedSampleString Key="Chart_lbl_marketing" Value="Marketing" />
+      <LocalizedSampleString Key="Chart_lbl_development" Value="Development" />
+      <LocalizedSampleString Key="Chart_lbl_support" Value="Support" />
+      <LocalizedSampleString Key="Chart_lbl_nyc" Value="New York City" />
+      <LocalizedSampleString Key="Chart_lbl_philadelphia" Value="Philadelphia" />
+      <LocalizedSampleString Key="Radial_Line" Value="Radial Line" />
+      <LocalizedSampleString Key="Radial_Column" Value="Radial Column" />
+      <LocalizedSampleString Key="Radial_Pie" Value="Radial Pie" />
+      <LocalizedSampleString Key="Chart_sel_rangeArea" Value="Range Area" />
+      <LocalizedSampleString Key="Chart_sel_rangeColumn" Value="Range Column" />
+      <LocalizedSampleString Key="Chart_sel_scatter" Value="Scatter" />
+      <LocalizedSampleString Key="Chart_sel_scatterLine" Value="Scatter Line" />
+      <LocalizedSampleString Key="Chart_sel_bubble" Value="Bubble Chart" />
+      <LocalizedSampleString Key="Chart_lbl_priceSeries" Value="Price Series" />
+      <LocalizedSampleString Key="Chart_lbl_volumeSeries" Value="Volume Series" />
+      <LocalizedSampleString Key="Chart_sel_point" Value="Point" />
+      <LocalizedSampleString Key="Radial_Area" Value="Radial Area" />    
+      <LocalizedSampleString Key="Polar_Spline" Value="Polar Spline" />
+      <LocalizedSampleString Key="Polar_Spline_Area" Value="Polar Spline Area" />
+      <LocalizedSampleString Key="Chart_sel_scatterSpline" Value="Scatter Spline" />
+      <LocalizedSampleString Key="SaudiArabia" Value="Saudi Arabia" />
+      <LocalizedSampleString Key="Stacked_Bar" Value="Stacked Bar" />
+      <LocalizedSampleString Key="Stacked_100_Bar" Value="Stacked 100 Bar" />
+      <LocalizedSampleString Key="Stacked_Area" Value="Stacked Area" />
+      <LocalizedSampleString Key="Stacked_Column" Value="Stacked Column" />
+      <LocalizedSampleString Key="Stacked_Line" Value="Stacked Line" />
+      <LocalizedSampleString Key="Stacked_Spline" Value="Stacked Spline" />
+      <LocalizedSampleString Key="Stacked_Spline_Area" Value="Stacked Spline Area" />
+      <LocalizedSampleString Key="Stacked_100_Area" Value="Stacked 100 Area" />
+      <LocalizedSampleString Key="Stacked_100_Column" Value="Stacked 100 Column" />
+      <LocalizedSampleString Key="Stacked_100_Line" Value="Stacked 100 Line" />
+      <LocalizedSampleString Key="Stacked_100_Spline" Value="Stacked 100 Spline" />
+      <LocalizedSampleString Key="Stacked_100_Spline_Area" Value="Stacked 100 Spline Area" />
+      <LocalizedSampleString Key="Chart_Title" Value="Energy Use Per Country" />
+      <LocalizedSampleString Key="Chart_Subtitle" Value="Results over a two year period" />
+      <LocalizedSampleString Key="Chart_title_us_fao" Value="U.S. Agricultural Production Per Year" />
+      <LocalizedSampleString Key="Chart_title_countries_pop" Value="Population per Country" />
+      <LocalizedSampleString Key="Chart_title_energy_production" Value="Energy Production Per Country" />
+      <LocalizedSampleString Key="Chart_title_temperature" Value="New York City vs. Philadelphia" />
+      <LocalizedSampleString Key="Chart_title_wind" Value="Wind Speed vs. Wind Direction" />
+      <LocalizedSampleString Key="Chart_title_ukfrance" Value="U.K. vs. France" />
+      <LocalizedSampleString Key="Chart_title_msft_stock" Value="Microsoft Stock (MSFT)" />
+      <LocalizedSampleString Key="Chart_title_financial_indicators" Value="Financial Chart" />
+      <LocalizedSampleString Key="Chart_title_financial_series" Value="Microsoft (MSFT) vs. Adobe (ADBE)" />
+      <LocalizedSampleString Key="Chart_subtitle_us_fao" Value="Data from 1961-2007" />
+      <LocalizedSampleString Key="Chart_subtitle_countries_pop" Value="Five largest projected populations for 2015" />
+      <LocalizedSampleString Key="Chart_subtitle_energy_production" Value="The top five Total Primary Energy producers" />
+      <LocalizedSampleString Key="Chart_subtitle_energy_production_three" Value="The top three Total Primary Energy producers" />
+      <LocalizedSampleString Key="Chart_subtitle_temperature" Value="A comparison of daily temperatures"/>
+      <LocalizedSampleString Key="Chart_subtitle_wind" Value="Los Angeles wind data over twelve hours" />
+      <LocalizedSampleString Key="Chart_subtitle_ukfrance" Value="A comparison of populations over time" />
+      <LocalizedSampleString Key="Chart_subtitle_msft_stock" Value="Data over two months" />
+      <LocalizedSampleString Key="Chart_subtitle_financial_series" Value="A comparison of stocks over time" />
+      <LocalizedSampleString Key="Chart_subtitle_countries_1995_v_2005" Value="A comparison of population in 1995 and 2005" />
+      <LocalizedSampleString Key="XAxis_title_us_fao" Value="Year" />
+      <LocalizedSampleString Key="CategoryAxis_title_countries_pop" Value="Country" />
+      <LocalizedSampleString Key="CategoryAxis_title_energy_production" Value="Year" />
+      <LocalizedSampleString Key="CategoryAxis_title_ukfrance" Value="Year" />
+      <LocalizedSampleString Key="CategoryAxis_title_date" Value="Date" />
+      <LocalizedSampleString Key="CategoryAxis_title_time" Value="Time" />
+      <LocalizedSampleString Key="YAxis_title_us_fao" Value="Billions of USD" />
+      <LocalizedSampleString Key="NumericAxis_title_countries_pop" Value="Millions of People" />
+      <LocalizedSampleString Key="NumericAxis_title_energy_production" Value="Quadrillion Btu" />
+      <LocalizedSampleString Key="NumericAxis_title_total_energy_production" Value="Quadrillion Btu" />
+      <LocalizedSampleString Key="NumericAxis_title_population" Value="Millions of People" />
+      <LocalizedSampleString Key="NumericAxis_title_price" Value="Price" />
+      <LocalizedSampleString Key="NumericAxis_title_volume" Value="Volume" />
+      <LocalizedSampleString Key="NumericAxis_title_temperature" Value="Temperature (Degrees Fahrenheit)" />
+      <LocalizedSampleString Key="Chart_KO_Change_Editor_Values" Value="Change editor values to update the charts below" />
+      <LocalizedSampleString Key="Chart_KO_Move_Sliders" Value="Move slider to select month and view or change its data" />
+      <LocalizedSampleString Key="Chart_KO_Label" Value="Label" />
+      <LocalizedSampleString Key="Chart_KO_Value" Value="Value" />
+      <LocalizedSampleString Key="Chart_KO_Refresh" Value="Randomize Chart Data" />
+      <LocalizedSampleString Key="Chart_KO_Select_Current" Value="Select Day" />
+      <LocalizedSampleString Key="Chart_KO_Add_Start" Value="Add item as first in the igDataChart" />
+      <LocalizedSampleString Key="Chart_KO_Remove_Start" Value="Remove the first item from the igDataChart" />
+      <LocalizedSampleString Key="Chart_KO_Add_Before_Current" Value="Add new item before the current item in the igDataChart" />
+      <LocalizedSampleString Key="Chart_KO_Delete_Current" Value="Remove current item in the igDataChart" />
+      <LocalizedSampleString Key="Chart_KO_Add_End" Value="Add item at the end of the igDataChart" />
+      <LocalizedSampleString Key="Chart_KO_Remove_End" Value="Remove the last item from the igDataChart" />
+      <LocalizedSampleString Key="Chart_KO_Move_Current_Backward" Value="Move current item backward" />
+      <LocalizedSampleString Key="Chart_KO_Move_Current_Each_Second" Value="Move current item with one step forward each second" />
+      <LocalizedSampleString Key="Chart_KO_Move_Current_Forward" Value="Move current item forward" />
+      <LocalizedSampleString Key="Chart_KO_Pause_Current" Value="Pause the simulation" />
+      <LocalizedSampleString Key="Chart_KO_Revenue" Value="Revenue" />
+      <LocalizedSampleString Key="Chart_KO_Expenses" Value="Expenses" />
+      <LocalizedSampleString Key="Chart_KO_Profit" Value="Profit" />
+      <LocalizedSampleString Key="Chart_KO_Daily" Value="per day (in thousands)" />
+      <LocalizedSampleString Key="Chart_KO_Monthly" Value="per month (in millions)" />
+      <LocalizedSampleString Key="Chart_KO_Month" Value="Month Name" />
+	    <LocalizedSampleString Key="Chart_KO_Select_Month" Value="Select Month" />
+      <LocalizedSampleString Key="Chart_KO_Overall_Profit" Value="Overall Year Profit" />
+      <LocalizedSampleString Key="Chart_KO_Revenue_Profit" Value="Revenue-Profit Delta" />
+      <LocalizedSampleString Key="Chart_KO_Load_More_Charts" Value="Load Hidden Charts" />
+      <LocalizedSampleString Key="Chart_KO_Load_Initial_Charts" Value="Load Initial Charts" />
+      <LocalizedSampleString Key="Chart_KO_Legend" Value="Simulation options:" />
+      <LocalizedSampleString Key="Chart_KO_Add_Day" Value="Add a new day" />
+      <LocalizedSampleString Key="Chart_KO_Delete_Day" Value="Delete the selected day" />
+      <LocalizedSampleString Key="Chart_KO_Prev_Day" Value="Move the selected day backwards" />
+      <LocalizedSampleString Key="Chart_KO_Next_Day" Value="Move the selected day forward" />
+      <LocalizedSampleString Key="Chart_KO_Play_Day" Value="Play continuous moving simulation" />
+      <LocalizedSampleString Key="Chart_KO_Expense_Revenue_Title" Value="Daily expense-revenue simulation" />
+      <LocalizedSampleString Key="Brush" Value="Brush" />
+      <LocalizedSampleString Key="Outline" Value="Outline" />
+      <LocalizedSampleString Key="Thickness" Value="Thickness" />
+      <LocalizedSampleString Key="Opacity" Value="Opacity" />
+      <LocalizedSampleString Key="UseInterpolation" Value="Use Interpolation" />
+      <LocalizedSampleString Key="HighlightType" Value="Highlight Type" />
+      <LocalizedSampleString Key="BandHighlightWidth" Value="Band Highlight Width" />
+      <LocalizedSampleString Key="TransitionDuration" Value="Transition Duration" />
+      <LocalizedSampleString Key="CategoryItemHighlightOptions" Value="Category Item Highlight Options" />
+      <LocalizedSampleString Key="January" Value="January" />
+      <LocalizedSampleString Key="February" Value="February" />
+      <LocalizedSampleString Key="March" Value="March" />
+      <LocalizedSampleString Key="April" Value="April" />
+      <LocalizedSampleString Key="May" Value="May" />
+      <LocalizedSampleString Key="June" Value="June" />
+      <LocalizedSampleString Key="July" Value="July" />
+      <LocalizedSampleString Key="August" Value="August" />
+      <LocalizedSampleString Key="September" Value="September" />
+      <LocalizedSampleString Key="October" Value="October" />
+      <LocalizedSampleString Key="November" Value="November" />
+      <LocalizedSampleString Key="December" Value="December" />
+      <LocalizedSampleString Key="Jan" Value="Jan" />
+      <LocalizedSampleString Key="Feb" Value="Feb" />
+      <LocalizedSampleString Key="Mar" Value="Mar" />
+      <LocalizedSampleString Key="Apr" Value="Apr" />
+      <LocalizedSampleString Key="Jun" Value="Jun" />
+      <LocalizedSampleString Key="Jul" Value="Jul" />
+      <LocalizedSampleString Key="Aug" Value="Aug" />
+      <LocalizedSampleString Key="Sep" Value="Sep" />
+      <LocalizedSampleString Key="Oct" Value="Oct" />
+      <LocalizedSampleString Key="Nov" Value="Nov" />
+      <LocalizedSampleString Key="Dec" Value="Dec" />
+      <LocalizedSampleString Key="Options" Value="Chart Options" />
+      <LocalizedSampleString Key="Yearly_Profit" Value="Yearly Profit" />
+      <LocalizedSampleString Key="revenue" Value="Revenue" />
+      <LocalizedSampleString Key="expenses" Value="Expenses" />
+      <LocalizedSampleString Key="profit" Value="Profit" />
+      <LocalizedSampleString Key="ExpenseRevenuePerDay" Value="Expense VS Revenue Per Day" />
+      <LocalizedSampleString Key="RandomData" Value="Random Generated Data" />
+      <LocalizedSampleString Key="Chart_subtitle_countries_2005" Value="Population from 2005" />
+      <LocalizedSampleString Key="TransitionTypes" Value="Transition Types" />
+      <LocalizedSampleString Key="TransitionSpeedType" Value="Speed Type" />
+      <LocalizedSampleString Key="TransitionEasingFunction" Value="Easing Function" />
+      <LocalizedSampleString Key="absoluteVolumeOscillatorIndicator" Value="Absolute Volume Oscillator" />
+      <LocalizedSampleString Key="averageTrueRangeIndicator" Value="Average True Range" />
+      <LocalizedSampleString Key="accumulationDistributionIndicator" Value="Accumulation Distribution" />
+      <LocalizedSampleString Key="averageDirectionalIndexIndicator" Value="Average Directional Index" />
+      <LocalizedSampleString Key="bollingerBandsOverlay" Value="Bollinger Bands Overlay" />
+      <LocalizedSampleString Key="bollingerBandWidthIndicator" Value="Bollinger Band Width" />
+      <LocalizedSampleString Key="chaikinOscillatorIndicator" Value="Chaikin Oscillator" />
+      <LocalizedSampleString Key="chaikinVolatilityIndicator" Value="Chaikin Volatility" />
+      <LocalizedSampleString Key="commodityChannelIndexIndicator" Value="Commodity Channel Index" />
+      <LocalizedSampleString Key="detrendedPriceOscillatorIndicator" Value="Detrended Price Oscillator" />
+      <LocalizedSampleString Key="easeOfMovementIndicator" Value="Ease Of Movement" />
+      <LocalizedSampleString Key="fastStochasticOscillatorIndicator" Value="Fast Stochastic Oscillator" />
+      <LocalizedSampleString Key="forceIndexIndicator" Value="Force Index" />
+      <LocalizedSampleString Key="fullStochasticOscillatorIndicator" Value="Full Stochastic Oscillator" />
+      <LocalizedSampleString Key="marketFacilitationIndexIndicator" Value="Market Facilitation Index" />
+      <LocalizedSampleString Key="massIndexIndicator" Value="Mass Index" />
+      <LocalizedSampleString Key="medianPriceIndicator" Value="Median Price" />
+      <LocalizedSampleString Key="moneyFlowIndexIndicator" Value="Money Flow Index" />
+      <LocalizedSampleString Key="movingAverageConvergenceDivergenceIndicator" Value="Moving Average Convergence Divergence" />
+      <LocalizedSampleString Key="negativeVolumeIndexIndicator" Value="Negative Volume Index" />
+      <LocalizedSampleString Key="onBalanceVolumeIndicator" Value="On Balance Volume" />
+      <LocalizedSampleString Key="percentagePriceOscillatorIndicator" Value="Percentage Price Oscillator" />
+      <LocalizedSampleString Key="percentageVolumeOscillatorIndicator" Value="Percentage Volume Oscillator" />
+      <LocalizedSampleString Key="positiveVolumeIndexIndicator" Value="Positive Volume Index" />
+      <LocalizedSampleString Key="priceChannelOverlay" Value="Price Channel Overlay" />
+      <LocalizedSampleString Key="priceVolumeTrendIndicator" Value="Price Volume Trend" />
+      <LocalizedSampleString Key="rateOfChangeAndMomentumIndicator" Value="Rate Of Change And Momentum" />
+      <LocalizedSampleString Key="relativeStrengthIndexIndicator" Value="Relative Strength Index" />
+      <LocalizedSampleString Key="slowStochasticOscillatorIndicator" Value="Slow Stochastic Oscillator" />
+      <LocalizedSampleString Key="standardDeviationIndicator" Value="Standard Deviation" />
+      <LocalizedSampleString Key="stochRSIIndicator" Value="Stoch RSI" />
+      <LocalizedSampleString Key="trixIndicator" Value="Trix" />
+      <LocalizedSampleString Key="typicalPriceIndicator" Value="Typical Price" />
+      <LocalizedSampleString Key="ultimateOscillatorIndicator" Value="Ultimate Oscillator" />
+      <LocalizedSampleString Key="weightedCloseIndicator" Value="Weighted Close" />
+      <LocalizedSampleString Key="williamsPercentRIndicator" Value="Williams Percent R" />
+      <LocalizedSampleString Key="WindSpeedMPH" Value="Wind Speed (mph)" />
+      <LocalizedSampleString Key="Year_Production_Population" Value="(Year, Production), Population" />
+      <LocalizedSampleString Key="Tooltip_Position" Value="Tooltip Position" />
+      <LocalizedSampleString Key="auto" Value="auto" />
+      <LocalizedSampleString Key="outsideStart" Value="outsideStart" />
+      <LocalizedSampleString Key="outsideEnd" Value="outsideEnd" />
+      <LocalizedSampleString Key="insideStart" Value="insideStart" />
+      <LocalizedSampleString Key="insideEnd" Value="insideEnd" />
+      <LocalizedSampleString Key="AxisTitleOptions" Value="Axis Angle" />
+      <LocalizedSampleString Key="StopDataFeed" Value="Stop Data Feed" />
+      <LocalizedSampleString Key="StartDataFeed" Value="Start Data Feed" />
+      <LocalizedSampleString Key="RefreshesPerSecond" Value="Refreshes Per Second" />
+      <LocalizedSampleString Key="AddDataPoints" Value="Add Data Points" />
+      <LocalizedSampleString Key="Interactions" Value="Interactions" />
+      <LocalizedSampleString Key="VerticalZooming" Value="Vertical Zooming" />
+      <LocalizedSampleString Key="EnableZooming" Value="Enable Zooming" />
+      <LocalizedSampleString Key="PanModifier" Value="Pan Modifier" />
+      <LocalizedSampleString Key="Zoom" Value="Zoom" />
+      <LocalizedSampleString Key="DragModifier" Value="Drag Modifier" />
+      <LocalizedSampleString Key="HorizontalZooming" Value="Horizontal Zooming" />
+      <LocalizedSampleString Key="OverviewDetailPane" Value="Overview Plus Detail Pane" />
+      <LocalizedSampleString Key="EnablePane" Value="Enable Pane" />
+      <LocalizedSampleString Key="Default" Value="Default" />
+      <LocalizedSampleString Key="Population" Value="Population" />
+      <LocalizedSampleString Key="YAxisRotate" Value="Rotate Y Axis" />
+      <LocalizedSampleString Key="XAxisRotate" Value="Rotate X Axis" />
+    </SampleStrings>
+    <Description>
+      Let your data tell the story, with the broadest range of interactive, high-performance HTML5 data charts that include support for a full range of business, scientific and financial charting scenarios, as well as animation, trend line and Touch support capabilities "right out of the box."
+    </Description>
+    <PageKeywords>igDataChart</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Data Chart</Name>
+    <SampleStrings>
+      <LocalizedSampleString Key="Chart_lbl_AxisStokeLines" Value="軸のストローク線" />
+      <LocalizedSampleString Key="Chart_lbl_AxisMajorLines" Value="軸の主線" />
+      <LocalizedSampleString Key="Chart_lbl_AxisMinorLines" Value="軸の副線" />
+      <LocalizedSampleString Key="Chart_lbl_AxisTickmarks" Value="軸の目盛り" />
+      <LocalizedSampleString Key="Chart_lbl_AxisTitles" Value="軸のタイトル" />
+      <LocalizedSampleString Key="Chart_lbl_AxisStripes" Value="軸のストライプ" />
+      <LocalizedSampleString Key="Chart_lbl_AxisLabels" Value="軸のラベル" />
+      <LocalizedSampleString Key="Chart_lbl_PriceSeries" Value="価格系列" />
+      <LocalizedSampleString Key="Chart_lbl_PriceTrendLine" Value="価格トレンドライン" />
+      <LocalizedSampleString Key="Chart_lbl_LineSeries" Value="折れ線系列" />
+      <LocalizedSampleString Key="Chart_lbl_LineMarkers" Value="折れ線マーカー" />
+      <LocalizedSampleString Key="Chart_lbl_Legend" Value="チャートの凡例" />
+      <LocalizedSampleString Key="Chart_lbl_Crosshairs" Value="チャートの十字線" />
+      <LocalizedSampleString Key="Chart_lbl_OverviewPane" Value="チャートの概要ペイン" />
+      <LocalizedSampleString Key="Column_Chart" Value="柱状チャート"/>
+      <LocalizedSampleString Key="Bar_Chart" Value="棒チャート" />
+      <LocalizedSampleString Key="Line_Chart" Value="折れ線チャート" />
+      <LocalizedSampleString Key="Canada" Value="カナダ" />
+      <LocalizedSampleString Key="Chart_lbl_refresh" Value="更新" />
+      <LocalizedSampleString Key="Chart_lbl_refreshTime" Value="更新時間" />
+      <LocalizedSampleString Key="Chart_lbl_datapoints" Value="データ ポイント" />
+      <LocalizedSampleString Key="Chart_lbl_seriesType" Value="シリーズ タイプ" />
+      <LocalizedSampleString Key="Chart_lbl_testSeries" Value="テスト系列" />
+      <LocalizedSampleString Key="Chart_sel_area" Value="エリア チャート" />
+      <LocalizedSampleString Key="Chart_sel_column" Value="柱状チャート" />
+      <LocalizedSampleString Key="Chart_sel_line" Value="折れ線チャート" />
+      <LocalizedSampleString Key="Chart_sel_splineArea" Value="スプライン エリア チャート" />
+      <LocalizedSampleString Key="Chart_sel_spline" Value="スプライン チャート" />
+      <LocalizedSampleString Key="Chart_sel_stepArea" Value="ステップ エリア チャート" />
+      <LocalizedSampleString Key="Chart_sel_stepLine" Value="ステップ折れ線チャート" />
+      <LocalizedSampleString Key="Chart_sel_waterfall" Value="ウォーターフォール" />
+      <LocalizedSampleString Key="Chart_sel_bar" Value="棒チャート" />
+      <LocalizedSampleString Key="Chart_Composite_China_DS" Value="中国" />
+      <LocalizedSampleString Key="Chart_Composite_US_DS" Value="アメリカ" />
+      <LocalizedSampleString Key="Chart_Composite_Russia_DS" Value="ロシア" />
+      <LocalizedSampleString Key="Chart_Composite_Coal_DS" Value="石炭" />
+      <LocalizedSampleString Key="Chart_Composite_Hydro_DS" Value="水力" />
+      <LocalizedSampleString Key="Chart_Composite_Nuclear_DS" Value="原子力" />
+      <LocalizedSampleString Key="Chart_Composite_Gas_DS" Value="ガソリン" />
+      <LocalizedSampleString Key="Chart_Composite_Oil_DS" Value="石油" />
+      <LocalizedSampleString Key="Chart_Composite_Total_DS" Value="総エネルギー" />
+      <LocalizedSampleString Key="Chart_Select_Indicator" Value="インジケーターの選択" />
+      <LocalizedSampleString Key="Chart_sel_candleStick" Value="ローソク足チャート" />
+      <LocalizedSampleString Key="Chart_sel_ohlc" Value="OHLC" />
+      <LocalizedSampleString Key="Chart_genre_Indie" Value="インディーズ" />
+      <LocalizedSampleString Key="Chart_genre_ShortFilm" Value="ショート フィルム" />
+      <LocalizedSampleString Key="Chart_genre_SilentFilm" Value="無声映画" />
+      <LocalizedSampleString Key="Chart_genre_Animation" Value="アニメーション" />
+      <LocalizedSampleString Key="Chart_genre_Documentary" Value="ドキュメンタリー" />
+      <LocalizedSampleString Key="Chart_genre_Comedy" Value="コメディ" />
+      <LocalizedSampleString Key="Chart_genre_Horror" Value="ホラー" />
+      <LocalizedSampleString Key="Chart_genre_Adventure" Value="アドベンチャー" />
+      <LocalizedSampleString Key="Chart_genre_Drama" Value="ドラマ" />
+      <LocalizedSampleString Key="Chart_genre_Family" Value="家族" />
+      <LocalizedSampleString Key="Chart_genre_CrimeFiction" Value="犯罪フィクション" />
+      <LocalizedSampleString Key="Chart_genre_ScienceFiction" Value="サイエンス フィクション" />
+      <LocalizedSampleString Key="Chart_genre_Romance" Value="恋愛" />
+      <LocalizedSampleString Key="Chart_genre_Thriller" Value="スリラー" />
+      <LocalizedSampleString Key="Chart_genre_Action" Value="アクション" />
+      <LocalizedSampleString Key="Chart_genre_Musical" Value="ミュージカル" />
+      <LocalizedSampleString Key="Chart_genre_ActionAdventure" Value="アクション/アドベンチャー" />
+      <LocalizedSampleString Key="Chart_genre_Sports" Value="スポーツ" />
+      <LocalizedSampleString Key="Chart_lbl_genre" Value="ジャンル" />
+      <LocalizedSampleString Key="Chart_lbl_generatingData" Value="データの生成と割り当て" />
+      <LocalizedSampleString Key="Chart_lbl_count" Value="カウント" />
+      <LocalizedSampleString Key="Chart_lbl_changeChartType" Value="チャート タイプの変更" />
+      <LocalizedSampleString Key="Chart_lbl_otherContentFrom" Value="他のコンテンツのソース:" />
+      <LocalizedSampleString Key="Chart_lbl_licensedUnder" Value="ライセンス情報:" />
+      <LocalizedSampleString Key="Chart_lbl_moviesDataFrom" Value="映画のデータ ソース" />
+      <LocalizedSampleString Key="Chart_lbl_faoDataFrom" Value="農業のデータ ソース" />
+      <LocalizedSampleString Key="Chart_lbl_popDataFrom" Value="人口のデータ ソース" />
+      <LocalizedSampleString Key="Chart_lbl_energyDataFrom" Value="エネルギーのデータ ソース" />
+      <LocalizedSampleString Key="Chart_lbl_weatherDataFrom" Value="天気のデータ ソース" />
+      <LocalizedSampleString Key="Chart_lbl_stockDataFrom" Value="株価のデータ ソース" />
+      <LocalizedSampleString Key="Chart_lbl_seriesCloseValue" Value="終値" />
+      <LocalizedSampleString Key="Chart_lbl_seriesHighValue" Value="高値" />
+      <LocalizedSampleString Key="Chart_lbl_seriesLowValue" Value="安値" />
+      <LocalizedSampleString Key="Chart_lbl_seriesOpenValue" Value="始値" />
+      <LocalizedSampleString Key="Chart_lbl_seriesValue" Value="値"/>
+      <LocalizedSampleString Key="Chart_lbl_source" Value="ソース" />
+      <LocalizedSampleString Key="Polar_Scatter" Value="極座標散布図" />
+      <LocalizedSampleString Key="Polar_Line" Value="極座標折れ線チャート" />
+      <LocalizedSampleString Key="Polar_Area" Value="極座標エリア チャート" />
+      <LocalizedSampleString Key="Chart_lbl_administration" Value="事務" />
+      <LocalizedSampleString Key="Chart_lbl_sales" Value="セールス" />
+      <LocalizedSampleString Key="Chart_lbl_it" Value="IT" />
+      <LocalizedSampleString Key="Chart_lbl_marketing" Value="マーケティング" />
+      <LocalizedSampleString Key="Chart_lbl_development" Value="開発" />
+      <LocalizedSampleString Key="Chart_lbl_support" Value="サポート" />
+      <LocalizedSampleString Key="Chart_lbl_nyc" Value="ニューヨーク市" />
+      <LocalizedSampleString Key="Chart_lbl_philadelphia" Value="フィラデルフィア" />
+      <LocalizedSampleString Key="Radial_Line" Value="ラジアル折れ線チャート" />
+      <LocalizedSampleString Key="Radial_Column" Value="ラジアル柱状チャート" />
+      <LocalizedSampleString Key="Radial_Pie" Value="ラジアル円チャート" />
+      <LocalizedSampleString Key="Chart_sel_rangeArea" Value="範囲エリア チャート" />
+      <LocalizedSampleString Key="Chart_sel_rangeColumn" Value="範囲柱状チャート" />
+      <LocalizedSampleString Key="Chart_sel_scatter" Value="散布図" />
+      <LocalizedSampleString Key="Chart_sel_scatterLine" Value="散布図 - 折れ線" />
+      <LocalizedSampleString Key="Chart_sel_bubble" Value="バブル" />
+      <LocalizedSampleString Key="Chart_lbl_priceSeries" Value="価格シリーズ" />
+      <LocalizedSampleString Key="Chart_lbl_volumeSeries" Value="ボリューム シリーズ" />
+      <LocalizedSampleString Key="Chart_sel_point" Value="ポイント" />
+      <LocalizedSampleString Key="Radial_Area" Value="ラジアル エリア" />
+      <LocalizedSampleString Key="Polar_Spline" Value="極座標スプライン" />
+      <LocalizedSampleString Key="Polar_Spline_Area" Value="極座標スプライン エリア" />
+      <LocalizedSampleString Key="Chart_sel_scatterSpline" Value="散布図 - スプライン" />
+      <LocalizedSampleString Key="SaudiArabia" Value="サウジアラビア" />
+      <LocalizedSampleString Key="Stacked_Bar" Value="積層型棒" />
+      <LocalizedSampleString Key="Stacked_100_Bar" Value="積層型 100 棒" />
+      <LocalizedSampleString Key="Stacked_Area" Value="積層型エリア" />
+      <LocalizedSampleString Key="Stacked_Column" Value="積層型柱状" />
+      <LocalizedSampleString Key="Stacked_Line" Value="積層型折れ線" />
+      <LocalizedSampleString Key="Stacked_Spline" Value="積層型スプライン" />
+      <LocalizedSampleString Key="Stacked_Spline_Area" Value="積層型スプライン エリア" />
+      <LocalizedSampleString Key="Stacked_100_Area" Value="積層型 100 エリア" />
+      <LocalizedSampleString Key="Stacked_100_Column" Value="積層型 100 柱状" />
+      <LocalizedSampleString Key="Stacked_100_Line" Value="積層型 100 折れ線" />
+      <LocalizedSampleString Key="Stacked_100_Spline" Value="積層型 100 スプライン" />
+      <LocalizedSampleString Key="Stacked_100_Spline_Area" Value="積層型 100 スプライン エリア" />
+      <LocalizedSampleString Key="Chart_Title" Value="国別エネルギー消費量" />
+      <LocalizedSampleString Key="Chart_Subtitle" Value="2 年間の結果" />
+      <LocalizedSampleString Key="Chart_title_us_fao" Value="年の米国農業生産" />
+      <LocalizedSampleString Key="Chart_title_countries_pop" Value="国別人口" />
+      <LocalizedSampleString Key="Chart_title_energy_production" Value="国別エネルギー生産量" />
+      <LocalizedSampleString Key="Chart_title_temperature" Value="ニューヨーク市 vs. フィラデルフィア" />
+      <LocalizedSampleString Key="Chart_title_wind" Value="風速 vs. 風向" />
+      <LocalizedSampleString Key="Chart_title_ukfrance" Value="U.K. vs. フランス" />
+      <LocalizedSampleString Key="Chart_title_msft_stock" Value="Microsoft 株 (MSFT)" />
+      <LocalizedSampleString Key="Chart_title_financial_indicators" Value="財務チャート" />
+      <LocalizedSampleString Key="Chart_title_financial_series" Value="Microsoft (MSFT) vs. Adobe (ADBE)" />
+      <LocalizedSampleString Key="Chart_subtitle_us_fao" Value="1961 年 - 2007 年のデータ" />
+      <LocalizedSampleString Key="Chart_subtitle_countries_pop" Value="2015 年推計人口トップ 5" />
+      <LocalizedSampleString Key="Chart_subtitle_energy_production" Value="総一次エネルギー生産国トップ 5 " />
+      <LocalizedSampleString Key="Chart_subtitle_energy_production_three" Value="総一次エネルギー生産国トップ 3" />
+      <LocalizedSampleString Key="Chart_subtitle_temperature" Value="気温の比較"/>
+      <LocalizedSampleString Key="Chart_subtitle_wind" Value="ロサンゼルスの風データ (12 時間)" />
+      <LocalizedSampleString Key="Chart_subtitle_ukfrance" Value="人口の比較 (年)" />
+      <LocalizedSampleString Key="Chart_subtitle_msft_stock" Value="2 か月間のデータ" />
+      <LocalizedSampleString Key="Chart_subtitle_financial_series" Value="株価の比較" />
+      <LocalizedSampleString Key="Chart_subtitle_countries_1995_v_2005" Value="1995 年と 2005 年の人口の比較" />
+      <LocalizedSampleString Key="XAxis_title_us_fao" Value="年" />
+      <LocalizedSampleString Key="CategoryAxis_title_countries_pop" Value="国" />
+      <LocalizedSampleString Key="CategoryAxis_title_energy_production" Value="年" />
+      <LocalizedSampleString Key="CategoryAxis_title_ukfrance" Value="年" />
+      <LocalizedSampleString Key="CategoryAxis_title_date" Value="日付" />
+      <LocalizedSampleString Key="CategoryAxis_title_time" Value="時間" />
+      <LocalizedSampleString Key="YAxis_title_us_fao" Value="合計農業生産 (USD 10 億単位)" />
+      <LocalizedSampleString Key="NumericAxis_title_countries_pop" Value="予期人口 (百万人単位)" />
+      <LocalizedSampleString Key="NumericAxis_title_energy_production" Value="生産されたエネルギー (BTU 40 億単位)" />
+      <LocalizedSampleString Key="NumericAxis_title_total_energy_production" Value="生産された総エネルギー (BTU 40 億単位)" />
+      <LocalizedSampleString Key="NumericAxis_title_population" Value="人口 (百万人単位)" />
+      <LocalizedSampleString Key="NumericAxis_title_price" Value="価格" />
+      <LocalizedSampleString Key="NumericAxis_title_volume" Value="出来高" />
+      <LocalizedSampleString Key="NumericAxis_title_temperature" Value="温度 (華氏)" />
+      <LocalizedSampleString Key="Chart_KO_Change_Editor_Values" Value="エディター値を変更すると、以下のチャートを更新します。" />
+      <LocalizedSampleString Key="Chart_KO_Move_Sliders" Value="スライダーを移動すると、データを表示するか編集するために月を選択します。" />
+      <LocalizedSampleString Key="Chart_KO_Label" Value="ラベル" />
+      <LocalizedSampleString Key="Chart_KO_Value" Value="値" />
+      <LocalizedSampleString Key="Chart_KO_Refresh" Value="新しいチャート データを生成する" />
+      <LocalizedSampleString Key="Chart_KO_Select_Current" Value="現在の項目を選択" />
+      <LocalizedSampleString Key="Chart_KO_Add_Start" Value="項目を igDataChart の開始に追加する" />
+      <LocalizedSampleString Key="Chart_KO_Remove_Start" Value="最初の項目を igDataChart から削除する" />
+      <LocalizedSampleString Key="Chart_KO_Add_Before_Current" Value="新しい項目を igDataChart の現在項目の前に追加する" />
+      <LocalizedSampleString Key="Chart_KO_Delete_Current" Value="igDataChart の現在項目を削除する" />
+      <LocalizedSampleString Key="Chart_KO_Add_End" Value="項目を igDataChart の終了に追加する" />
+      <LocalizedSampleString Key="Chart_KO_Remove_End" Value="最後の項目を igDataChart から削除する" />
+      <LocalizedSampleString Key="Chart_KO_Move_Current_Backward" Value="現在の項目の選択を左に移動する" />
+      <LocalizedSampleString Key="Chart_KO_Move_Current_Each_Second" Value="現在の項目を秒によって右に移動する" />
+      <LocalizedSampleString Key="Chart_KO_Move_Current_Forward" Value="現在の項目の選択を右に移動する" />
+      <LocalizedSampleString Key="Chart_KO_Pause_Current" Value="シミュレーションを一時停止する" />
+      <LocalizedSampleString Key="Chart_KO_Revenue" Value="売上" />
+      <LocalizedSampleString Key="Chart_KO_Expenses" Value="経費" />
+      <LocalizedSampleString Key="Chart_KO_Profit" Value="利益" />
+      <LocalizedSampleString Key="Chart_KO_Daily" Value="日ごと (千単位)" />
+      <LocalizedSampleString Key="Chart_KO_Monthly" Value="月ごと (百万単位)" />
+      <LocalizedSampleString Key="Chart_KO_Month" Value="月" />
+	    <LocalizedSampleString Key="Chart_KO_Select_Month" Value="月の選択" />
+      <LocalizedSampleString Key="Chart_KO_Overall_Profit" Value="年利益" />
+      <LocalizedSampleString Key="Chart_KO_Revenue_Profit" Value="売上/利益のデルタ" />
+      <LocalizedSampleString Key="Chart_KO_Load_More_Charts" Value="その他のチャートを読み込む" />
+      <LocalizedSampleString Key="Chart_KO_Load_Initial_Charts" Value="最初のチャートを読み込む" />
+      <LocalizedSampleString Key="Chart_KO_Legend" Value="シミュレーション オプション:" />
+      <LocalizedSampleString Key="Chart_KO_Add_Day" Value="新しい日を追加する" />
+      <LocalizedSampleString Key="Chart_KO_Delete_Day" Value="選択した日を削除する" />
+      <LocalizedSampleString Key="Chart_KO_Prev_Day" Value="選択した日を左へ移動" />
+      <LocalizedSampleString Key="Chart_KO_Next_Day" Value="選択した日を右へ移動" />
+      <LocalizedSampleString Key="Chart_KO_Play_Day" Value="連続移動シミュレーションを再生する" />
+      <LocalizedSampleString Key="Chart_KO_Expense_Revenue_Title" Value="日の経費/売上シミュレーション" />
+      <LocalizedSampleString Key="Brush" Value="ブラシ" />
+      <LocalizedSampleString Key="Outline" Value="アウトライン" />
+      <LocalizedSampleString Key="Thickness" Value="ブラシの幅" />
+      <LocalizedSampleString Key="Opacity" Value="不透明度" />
+      <LocalizedSampleString Key="UseInterpolation" Value="補間の使用" />
+      <LocalizedSampleString Key="HighlightType" Value="強調表示タイプ" />
+      <LocalizedSampleString Key="BandHighlightWidth" Value="バンド強調表示の幅" />
+      <LocalizedSampleString Key="TransitionDuration" Value="トランジション期間" />
+      <LocalizedSampleString Key="CategoryItemHighlightOptions" Value="カテゴリ項目強調表示オプション" />
+      <LocalizedSampleString Key="January" Value="1 月" />
+      <LocalizedSampleString Key="February" Value="2 月" />
+      <LocalizedSampleString Key="March" Value="3 月" />
+      <LocalizedSampleString Key="April" Value="4 月" />
+      <LocalizedSampleString Key="May" Value="5 月" />
+      <LocalizedSampleString Key="June" Value="6 月" />
+      <LocalizedSampleString Key="July" Value="7 月" />
+      <LocalizedSampleString Key="August" Value="8 月" />
+      <LocalizedSampleString Key="September" Value="9 月" />
+      <LocalizedSampleString Key="October" Value="10 月" />
+      <LocalizedSampleString Key="November" Value="11 月" />
+      <LocalizedSampleString Key="December" Value="12 月" />
+      <LocalizedSampleString Key="Jan" Value="1 月" />
+      <LocalizedSampleString Key="Feb" Value="2 月" />
+      <LocalizedSampleString Key="Mar" Value="3 月" />
+      <LocalizedSampleString Key="Apr" Value="4 月" />
+      <LocalizedSampleString Key="Jun" Value="6 月" />
+      <LocalizedSampleString Key="Jul" Value="7 月" />
+      <LocalizedSampleString Key="Aug" Value="8 月" />
+      <LocalizedSampleString Key="Sep" Value="9 月" />
+      <LocalizedSampleString Key="Oct" Value="10 月" />
+      <LocalizedSampleString Key="Nov" Value="11 月" />
+      <LocalizedSampleString Key="Dec" Value="12 月" />
+      <LocalizedSampleString Key="Options" Value="チャート オプション" />
+      <LocalizedSampleString Key="Yearly_Profit" Value="年間利益" />
+      <LocalizedSampleString Key="revenue" Value="売上" />
+      <LocalizedSampleString Key="expenses" Value="経費" />
+      <LocalizedSampleString Key="profit" Value="利益" />
+      <LocalizedSampleString Key="ExpenseRevenuePerDay" Value="経費 vs. 売上 (日単位)" />
+      <LocalizedSampleString Key="RandomData" Value="ランダムに生成されたデータ" />
+      <LocalizedSampleString Key="Chart_subtitle_countries_2005" Value="2005 年の人口" />
+      <LocalizedSampleString Key="TransitionTypes" Value="トランジション タイプ" />
+      <LocalizedSampleString Key="TransitionSpeedType" Value="スピード タイプ" />
+      <LocalizedSampleString Key="TransitionEasingFunction" Value="イージング関数" />
+      <LocalizedSampleString Key="absoluteVolumeOscillatorIndicator" Value="絶対出来高オシレーター" />
+      <LocalizedSampleString Key="averageTrueRangeIndicator" Value="ATR (アベレージ トゥルー レンジ)" />
+      <LocalizedSampleString Key="accumulationDistributionIndicator" Value="蓄積/分配" />
+      <LocalizedSampleString Key="averageDirectionalIndexIndicator" Value="平均方向性指数" />
+      <LocalizedSampleString Key="bollingerBandsOverlay" Value="ボリンジャー バンド オーバーレイ" />
+      <LocalizedSampleString Key="bollingerBandWidthIndicator" Value="ボリンジャー バンド幅" />
+      <LocalizedSampleString Key="chaikinOscillatorIndicator" Value="チャイキン オシレーター" />
+      <LocalizedSampleString Key="chaikinVolatilityIndicator" Value="チャイキン ボラティリティ" />
+      <LocalizedSampleString Key="commodityChannelIndexIndicator" Value="商品チャネル指数 (CCI)" />
+      <LocalizedSampleString Key="detrendedPriceOscillatorIndicator" Value="トレンド除去価格オシレーター" />
+      <LocalizedSampleString Key="easeOfMovementIndicator" Value="イーズ オブ ムーブメント" />
+      <LocalizedSampleString Key="fastStochasticOscillatorIndicator" Value="ファスト スト キャスティクス オシレーター" />
+      <LocalizedSampleString Key="forceIndexIndicator" Value="フォース インデックス" />
+      <LocalizedSampleString Key="fullStochasticOscillatorIndicator" Value="フル ストキャスティクス オシレーター" />
+      <LocalizedSampleString Key="marketFacilitationIndexIndicator" Value="マーケット ファシリテーション インデックス" />
+      <LocalizedSampleString Key="massIndexIndicator" Value="マス インデックス" />
+      <LocalizedSampleString Key="medianPriceIndicator" Value="メディアンプライス" />
+      <LocalizedSampleString Key="moneyFlowIndexIndicator" Value="マネー フロー インデックス" />
+      <LocalizedSampleString Key="movingAverageConvergenceDivergenceIndicator" Value="移動平均収束拡散" />
+      <LocalizedSampleString Key="negativeVolumeIndexIndicator" Value="負出来高指数 (NVI)" />
+      <LocalizedSampleString Key="onBalanceVolumeIndicator" Value="OBV (オン バランス ボリューム)" />
+      <LocalizedSampleString Key="percentagePriceOscillatorIndicator" Value="パーセンテージ価格オシレーター" />
+      <LocalizedSampleString Key="percentageVolumeOscillatorIndicator" Value="パーセンテージ出来高オシレーター" />
+      <LocalizedSampleString Key="positiveVolumeIndexIndicator" Value="PVI (ポジティブ ボリューム インデックス)" />
+      <LocalizedSampleString Key="priceChannelOverlay" Value="プライス チャネル オーバーレイ" />
+      <LocalizedSampleString Key="priceVolumeTrendIndicator" Value="価格出来高トレンド" />
+      <LocalizedSampleString Key="rateOfChangeAndMomentumIndicator" Value="変化率およびモメンタム" />
+      <LocalizedSampleString Key="relativeStrengthIndexIndicator" Value="相対力指数" />
+      <LocalizedSampleString Key="slowStochasticOscillatorIndicator" Value="スロー ストキャスティクス オシレーター" />
+      <LocalizedSampleString Key="standardDeviationIndicator" Value="標準偏差" />
+      <LocalizedSampleString Key="stochRSIIndicator" Value="ストキャスティクス RSI" />
+      <LocalizedSampleString Key="trixIndicator" Value="TRIX" />
+      <LocalizedSampleString Key="typicalPriceIndicator" Value="代表価格" />
+      <LocalizedSampleString Key="ultimateOscillatorIndicator" Value="アルティメット オシレーター" />
+      <LocalizedSampleString Key="weightedCloseIndicator" Value="重み付きクローズ" />
+      <LocalizedSampleString Key="williamsPercentRIndicator" Value="ウィリアム パーセント レンジ" />
+      <LocalizedSampleString Key="WindSpeedMPH" Value="風速 (mph)" />
+      <LocalizedSampleString Key="Year_Production_Population" Value="(年, 生産), 人口" />
+      <LocalizedSampleString Key="Tooltip_Position" Value="ツールチップの位置" />
+      <LocalizedSampleString Key="auto" Value="auto" />
+      <LocalizedSampleString Key="outsideStart" Value="outsideStart" />
+      <LocalizedSampleString Key="outsideEnd" Value="outsideEnd" />
+      <LocalizedSampleString Key="insideStart" Value="insideStart" />
+      <LocalizedSampleString Key="insideEnd" Value="insideEnd" />
+      <LocalizedSampleString Key="AxisTitleOptions" Value="軸角度" />
+      <LocalizedSampleString Key="StopDataFeed" Value="データ フィードの中止" />
+      <LocalizedSampleString Key="StartDataFeed" Value="データ フィードの開始" />
+      <LocalizedSampleString Key="RefreshesPerSecond" Value="毎秒の更新の数" />
+      <LocalizedSampleString Key="AddDataPoints" Value="データ ポイントの追加" />
+      <LocalizedSampleString Key="Interactions" Value="操作" />
+      <LocalizedSampleString Key="VerticalZooming" Value="水平ズーム" />
+      <LocalizedSampleString Key="EnableZooming" Value="ズームを有効にする" />
+      <LocalizedSampleString Key="PanModifier" Value="パニング修飾子" />
+      <LocalizedSampleString Key="Zoom" Value="ズーム" />
+      <LocalizedSampleString Key="DragModifier" Value="ドラッグ修飾子" />
+      <LocalizedSampleString Key="HorizontalZooming" Value="水平ズーム" />
+      <LocalizedSampleString Key="OverviewDetailPane" Value="概要と詳細ペイン" />
+      <LocalizedSampleString Key="EnablePane" Value="ペインを有効にする" />
+      <LocalizedSampleString Key="Default" Value="デフォルト" />
+      <LocalizedSampleString Key="Population" Value="人口" />
+      <LocalizedSampleString Key="YAxisRotate" Value="Y 軸を回転" />
+      <LocalizedSampleString Key="XAxisRotate" Value="X 軸を回転" />
+    </SampleStrings>
+    <Description>
+      HTML5 データ チャート タイプが複数提供されるチャートは、さまざまなデータを視覚的に表示します。ビジネス、科学、ファイナンシャル チャートなどのシナリオをサポートし、アニメーションやトレンドライン機能に対応しています。
+    </Description>
+    <PageKeywords>igDataChart</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>ui.igDataChart</ClientApiUrl>
+  <HelpPageName>igDataChart_Landing_Page</HelpPageName>
+  <ForumNumber>592</ForumNumber>
+  <IconImage>jquery-bar-chart-logo.png</IconImage>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <IsFeatureComponent>True</IsFeatureComponent>
+  <Status>Updated</Status>
+  <TOC>
+    <Sample>binding-real-time-data</Sample>
+    <Sample>binding-high-volume-data</Sample>
+    <Sample>bind-data-chart-with-ko</Sample>
+    <Sample>json-binding</Sample>
+    <Sample>xml-binding</Sample>
+    <Sample>edit-chart-items-with-knockout</Sample>
+    <Sample>aspnet-mvc-helper</Sample>
+    <Sample>axis-title</Sample>
+    <Sample>bar-and-column-series</Sample>
+    <Sample>category-series</Sample>
+    <Sample>category-highlight-layer</Sample>
+    <Sample>category-item-highlight-layer</Sample>
+    <Sample>category-tooltip-layer</Sample>
+    <Sample>crosshair-layer</Sample>
+    <Sample>item-tooltip-layer</Sample>
+    <Sample>multiple-layers</Sample>
+    <Sample>series-tooltips</Sample>
+    <Sample>series-highlighting</Sample>
+    <Sample>series-highlighting-financial</Sample>
+    <Sample>custom-series-highlighting</Sample>
+    <Sample>polar-series</Sample>
+    <Sample>radial-series</Sample>
+    <Sample>range-category-series</Sample>
+    <Sample>scatter-series</Sample>
+    <Sample>financial-indicators</Sample>
+    <Sample>financial-series</Sample>
+    <Sample>stacked-series</Sample>
+    <Sample>chart-title</Sample>
+    <Sample>chart-navigation</Sample>
+    <Sample>chart-elements</Sample>
+    <Sample>chart-fill-gradients</Sample>
+    <Sample>composite-chart</Sample>
+    <Sample>drop-shadows</Sample>
+    <Sample>motion-framework</Sample>
+    <Sample>transition-animation</Sample>
+    <Sample>transition-animation-financial</Sample>
+  </TOC>
+</Component>

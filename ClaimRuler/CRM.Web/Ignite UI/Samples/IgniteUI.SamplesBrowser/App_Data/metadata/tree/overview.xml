@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">tree/json-binding</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      The igTree control is a jQuery tree control. It binds to <a href="~/tree/html-binding">UL HTML elements</a>, 
+      <a href="~/tree/json-binding">JSON</a>, <a href="~/tree/xml-binding">XML</a>, <a href="~/tree/aspnet-mvc-helper">.NET collections</a>, 
+      and remote data sources. The igTree supports these features:
+      <ul>
+        <li><a href="~/tree/drag-and-drop-single-tree">Checkboxes</a></li>
+        <li><a href="~/tree/api-and-events">Keyboard Navigation</a></li>
+        <li><a href="~/tree/drag-and-drop-single-tree">Node Images</a></li>
+        <li><a href="~/tree/drag-and-drop-multiple-trees">Drag-and-Drop</a></li>
+        <li><a href="~/tree/aspnet-mvc-load-on-demand">Load on Demand</a></li>
+        <li><a href="~/tree/bind-tree-with-ko">KnockoutJS Binding</a></li>
+        <li>And more listed in the menu!</li>
+      </ul>
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      igTree コントロールは jQuery ツリー コントロールです。<a href="~/tree/html-binding">UL HTML 要素</a>、<a href="~/tree/json-binding">JSON</a>、<a href="~/tree/xml-binding">XML</a>、<a href="~/tree/aspnet-mvc-helper">.NET コレクション</a>、およびリモート データ ソースにバインドします。
+      igTree は以下の機能をサポートします:
+      <ul>
+        <li><a href="~/tree/drag-and-drop-single-tree">チェックボックス</a></li>
+        <li><a href="~/tree/api-and-events">キーボード ナビゲーション</a></li>
+        <li><a href="~/tree/drag-and-drop-single-tree">ノードの画像</a></li>
+        <li><a href="~/tree/drag-and-drop-multiple-trees">ドラッグ アンド ドロップ</a></li>
+        <li><a href="~/tree/aspnet-mvc-load-on-demand">ロードオンデマンド</a></li>
+        <li><a href="~/tree/bind-tree-with-ko">KnockoutJS のバインド</a></li>
+        <li>すべてのサンプルを表示するには、メニューを参照してください。</li>
+      </ul>
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

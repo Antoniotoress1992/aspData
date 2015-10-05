@@ -1,0 +1,74 @@
+﻿@using Infragistics.Web.Mvc
+@using IgniteUI.SamplesBrowser.Models
+
+@model IgniteUI.SamplesBrowser.Models.Financial.StockMarketDataCollection
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="@Url.Content("~/igniteui/css/themes/infragistics/infragistics.theme.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/igniteui/css/structure/infragistics.css")" rel="stylesheet" />
+    <!--CSS file specific for chart styling -->
+    <link href="@Url.Content("~/igniteui/css/structure/modules/infragistics.ui.chart.new.css")" rel="stylesheet" />
+
+    <script src="@Url.Content("~/js/modernizr.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery-ui.min.js")"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="@Url.Content("~/igniteui/js/infragistics.core.js")"></script>
+    <script src="@Url.Content("~/igniteui/js/infragistics.dv.js")"></script>
+</head>
+<body>
+
+    <style type="text/css">
+        #chart {
+            position: relative;
+            float: left;
+            margin-right: 2%;
+            margin-bottom: 2%;
+            min-width: 210px;
+        }
+
+        #legend {
+            position: relative;
+            float: left;
+        }
+    </style>
+
+    <div style="height: 400px">
+        @(Html.Infragistics().DataChart(Model.AsQueryable())
+        .ID("chart")
+        .Width("800px")
+        .Height("400px")
+        .VerticalZoomable(true)
+        .HorizontalZoomable(true)
+        .Title("Energy Production Per Country")
+        .Legend(legend => legend.ID("legend"))
+        .Axes(axes =>
+            {
+                axes.CategoryX("xAxis")
+                    .Label(item => item.FormattedDate);
+                axes.NumericY("yAxis")
+                    .Title("Quadrillion Btu");
+            })
+        .Series(series => series
+                            .Financial("series1")
+                            .Title("Price Series")
+                            .XAxis("xAxis").YAxis("yAxis")
+                            .OpenMemberPath(item => item.Open)
+                            .HighMemberPath(item => item.High)
+                            .LowMemberPath(item => item.Low)
+                            .CloseMemberPath(item => item.Close)
+                            .VolumeMemberPath(item => item.Volume)
+                            .ShowTooltip(true))
+        .DataBind()
+        .Render()
+    )
+    </div>
+</body>
+</html>

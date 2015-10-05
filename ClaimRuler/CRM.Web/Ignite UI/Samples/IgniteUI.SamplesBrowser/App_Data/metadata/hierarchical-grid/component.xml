@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Hierarchical Grid</Name>
+    <SampleStrings>
+      <LocalizedSampleString Key="BasicEditing_SaveChanges" Value="Save Changes"/>
+      <LocalizedSampleString Key="BasicEditing_Undo" Value="Undo"/>
+      <LocalizedSampleString Key="BasicEditing_Redo" Value="Redo"/>
+      <LocalizedSampleString Key="legend_lbl_initState" Value="InitialState"/>
+      <LocalizedSampleString Key="radio_lbl_regular" Value="Regular"/>
+      <LocalizedSampleString Key="radio_lbl_merged" Value="Merged"/>
+      <LocalizedSampleString Key="legend_lbl_cellSelOpt" Value="Cell Selection Options"/>
+      <LocalizedSampleString Key="chckbx_lbl_multiSel" Value="Multiple Selection"/>
+      <LocalizedSampleString Key="chckbx_lbl_multiSelClick" Value="Multiple Cell Select On Click"/>
+      <LocalizedSampleString Key="chckbx_lbl_touchDrag" Value="Touch Drag Select"/>
+      <LocalizedSampleString Key="button_lbl_applyCellSel" Value="Apply Cell Selection"/>
+      <LocalizedSampleString Key="legend_lbl_rowSelOpt" Value="RowSelectors Options "/>
+      <LocalizedSampleString Key="chckbx_lbl_enblRowNum" Value="Enable RowNumbering"/>
+      <LocalizedSampleString Key="chckbx_lbl_enblChckbxs" Value="Enable Checkboxes"/>
+      <LocalizedSampleString Key="lbl_selMode" Value="Selection Mode"/>
+      <LocalizedSampleString Key="lbl_rowSelColWidth" Value="Row Selector Column Width"/>
+      <LocalizedSampleString Key="chckbx_multiSel" Value="Multiple Selection"/>
+      <LocalizedSampleString Key="button_lbl_applyRowSelOpt" Value="Apply RowSelectors options"/>
+      <LocalizedSampleString Key="button_setUnboundValues" Value="SetUnboundValues"/>
+      <LocalizedSampleString Key="HierarchicalGrid_Knockoutjs_FirstRootRow" Value="Parent first row"/>
+      <LocalizedSampleString Key="HierarchicalGrid_Knockoutjs_FirstChildOfTheFirstRootRow" Value="First child's first row"/>
+      <LocalizedSampleString Key="CellMerging_Logging_Caption" Value="Logging cellsMerged event"/>
+      <LocalizedSampleString Key="CellMerging_Logging_RowIndex" Value="The index of the row the merged group starts in is: "/>
+      <LocalizedSampleString Key="CellMerging_Logging_RowKey" Value="The key of the row the merged group starts in is: "/>
+      <LocalizedSampleString Key="CellMerging_Logging_CellValue" Value="The cells value which is repeated and caused the merged group to be created is: "/>
+      <LocalizedSampleString Key="CellMerging_Logging_CellCount" Value="The total count of cells that were merged is: "/>
+      <LocalizedSampleString Key="single_cell_selection" Value="Single Cell Selection"/>
+      <LocalizedSampleString Key="multiple_row_selection" Value="Multiple Row Selection"/>
+      <LocalizedSampleString Key="default_row_selectors" Value="Default Row Selectors"/>
+      <LocalizedSampleString Key="row_selectors_with_checkboxes" Value="Row Selectors With Checkboxes"/>
+      <LocalizedSampleString Key="row_numbering" Value="Row Numbering"/>
+      <LocalizedSampleString Key="Northwind_Customers_CustomerID" Value="Customer ID"/>
+      <LocalizedSampleString Key="Northwind_Customers_ContactName" Value="Contact Name"/>
+      <LocalizedSampleString Key="Northwind_Customers_City" Value="City"/>
+      <LocalizedSampleString Key="Northwind_Customers_Country" Value="Country"/>
+      <LocalizedSampleString Key="Northwind_Employees_EmployeeID" Value="Employee ID"/>
+      <LocalizedSampleString Key="Northwind_Employees_FirstName" Value="First Name"/>
+      <LocalizedSampleString Key="Northwind_Employees_LastName" Value="Last Name"/>
+      <LocalizedSampleString Key="Northwind_Employees_Title" Value="Title"/>
+      <LocalizedSampleString Key="Northwind_Employees_Address" Value="Address"/>
+      <LocalizedSampleString Key="Northwind_Employees_City" Value="City"/>
+      <LocalizedSampleString Key="Northwind_Employees_Region" Value="Region"/>
+      <LocalizedSampleString Key="Northwind_Employees_Country" Value="Country"/>
+      <LocalizedSampleString Key="Northwind_Employees_PostCode" Value="Postal Code"/>
+      <LocalizedSampleString Key="Northwind_Employees_HomePhone" Value="Home Phone"/>
+      <LocalizedSampleString Key="Northwind_Employees_Extension" Value="Extension"/>
+      <LocalizedSampleString Key="Northwind_Employees_AllEmployees" Value="All Employees"/>
+      <LocalizedSampleString Key="Northwind_Products_ProductID" Value="Product ID"/>
+      <LocalizedSampleString Key="Northwind_Products_ProductName" Value="Product Name"/>
+      <LocalizedSampleString Key="Northwind_Products_Category" Value="Category"/>
+      <LocalizedSampleString Key="Northwind_Products_UnitsInStock" Value="Units In Stock"/>
+      <LocalizedSampleString Key="Northwind_Products_SupplierName" Value="Supplier Name"/>
+      <LocalizedSampleString Key="Northwind_Products_Discontinued" Value="Discontinued"/>
+      <LocalizedSampleString Key="Northwind_Products_UnitPrice" Value="Unit Price"/>
+      <LocalizedSampleString Key="Northwind_Products_UnitsOnOrder" Value="Units On Order"/>
+      <LocalizedSampleString Key="Northwind_Category_CategoryID" Value="Category ID"/>
+      <LocalizedSampleString Key="Northwind_Category_CategoryName" Value="Category Name"/>
+      <LocalizedSampleString Key="Northwind_Category_Description" Value="Description"/>
+      <LocalizedSampleString Key="Northwind_Category_ProductsCount" Value="Products Count"/>
+      <LocalizedSampleString Key="Northwind_Orders_OrderID" Value="Order ID"/>
+      <LocalizedSampleString Key="Northwind_Orders_CustomerID" Value="Customer ID"/>
+      <LocalizedSampleString Key="Northwind_Orders_Freight" Value="Freight"/>
+      <LocalizedSampleString Key="Northwind_Orders_FreightExpense" Value="Freight Expense"/>      
+      <LocalizedSampleString Key="Northwind_Orders_TotalItems" Value="Total Items"/>
+      <LocalizedSampleString Key="Northwind_Orders_TotalPrice" Value="Total Price"/>
+      <LocalizedSampleString Key="Northwind_Orders_OrderDate" Value="Order Date"/>      
+      <LocalizedSampleString Key="Northwind_Orders_ShipName" Value="Ship Name"/>
+      <LocalizedSampleString Key="Northwind_Orders_ShipAddress" Value="Ship Address"/>
+      <LocalizedSampleString Key="Northwind_Orders_ShipCity" Value="Ship City"/>
+      <LocalizedSampleString Key="Northwind_Orders_ShipCountry" Value="Ship Country"/>
+      <LocalizedSampleString Key="Northwind_Orders_Name" Value="Name"/>
+      <LocalizedSampleString Key="Northwind_Orders_Age" Value="Age"/>
+      <LocalizedSampleString Key="Northwind_Orders_Email" Value="Email"/>
+      <LocalizedSampleString Key="Northwind_Orders_Quantity" Value="Quantity"/>
+      <LocalizedSampleString Key="Northwind_Orders_USA" Value="In USA"/>
+      <LocalizedSampleString Key="fruit_punch" Value="Fruit punch" />
+      <LocalizedSampleString Key="Bread" Value="Bread" />
+      <LocalizedSampleString Key="Milk" Value="Milk" />
+      <LocalizedSampleString Key="Food" Value="Food" />
+      <LocalizedSampleString Key="Beverages" Value="Beverages" />
+      <LocalizedSampleString Key="Pizza" Value="Pizza" />
+    </SampleStrings>
+    <Description>
+      Show multiple parent-child relationships in an expandable, hierarchical data grid that stands as the backbone of your data-centric JavaScript-based client applications. Users can drill down, as well as add, edit, delete, select, sort, group and filter rows using their mouse or keyboard.
+    </Description>
+    <PageKeywords>igHierarchicalGrid</PageKeywords>
+      <SampleGroups>
+          <SampleGroup ID="1">Data Binding</SampleGroup>
+          <SampleGroup ID="2">Features</SampleGroup>
+          <SampleGroup ID="3">Responsive Web Design</SampleGroup>
+          <SampleGroup ID="4">Templates and Layout</SampleGroup>
+          <SampleGroup ID="5">API Usage</SampleGroup>
+          <SampleGroup ID="6">Performance</SampleGroup>
+          <SampleGroup ID="7">Editing</SampleGroup>
+          <SampleGroup ID="8">Styling</SampleGroup>
+      </SampleGroups>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Hierarchical Grid</Name>
+    <SampleString>
+      <LocalizedSampleString Key="BasicEditing_SaveChanges" Value="変更の保存"/>
+      <LocalizedSampleString Key="BasicEditing_Undo" Value="元に戻す"/>
+      <LocalizedSampleString Key="BasicEditing_Redo" Value="やり直し"/>
+      <LocalizedSampleString Key="legend_lbl_initState" Value="初期状態"/>
+      <LocalizedSampleString Key="radio_lbl_regular" Value="標準"/>
+      <LocalizedSampleString Key="radio_lbl_merged" Value="結合"/>
+      <LocalizedSampleString Key="legend_lbl_cellSelOpt" Value="セル選択のオプション"/>
+      <LocalizedSampleString Key="chckbx_lbl_multiSel" Value="複数選択"/>
+      <LocalizedSampleString Key="chckbx_lbl_multiSelClick" Value="クリックして複数セルの選択"/>
+      <LocalizedSampleString Key="chckbx_lbl_touchDrag" Value="タッチしてドラッグ選択"/>
+      <LocalizedSampleString Key="button_lbl_applyCellSel" Value="セル選択の適用"/>
+      <LocalizedSampleString Key="legend_lbl_rowSelOpt" Value="RowSelectors オプション"/>
+      <LocalizedSampleString Key="chckbx_lbl_enblRowNum" Value="RowNumbering を有効にする"/>
+      <LocalizedSampleString Key="chckbx_lbl_enblChckbxs" Value="チェックボックスを有効にする"/>
+      <LocalizedSampleString Key="lbl_selMode" Value="選択モード"/>
+      <LocalizedSampleString Key="lbl_rowSelColWidth" Value="行セレクター列の幅"/>
+      <LocalizedSampleString Key="chckbx_multiSel" Value="複数選択"/>
+      <LocalizedSampleString Key="button_lbl_applyRowSelOpt" Value="RowSelectors オプションの適用"/>
+      <LocalizedSampleString Key="button_setUnboundValues" Value="バインドされていない値の設定" />
+      <LocalizedSampleString Key="HierarchicalGrid_Knockoutjs_FirstRootRow" Value="親の最初の行"/>
+      <LocalizedSampleString Key="HierarchicalGrid_Knockoutjs_FirstChildOfTheFirstRootRow" Value="最初の子の最初の行"/>
+      <LocalizedSampleString Key="CellMerging_Logging_Caption" Value="cellsMerged イベントのログ有効"/>
+      <LocalizedSampleString Key="CellMerging_Logging_RowIndex" Value="結合グループの開始行インデックス: "/>
+      <LocalizedSampleString Key="CellMerging_Logging_RowKey" Value="結合グループの開始行キー: "/>
+      <LocalizedSampleString Key="CellMerging_Logging_CellValue" Value="結合グループを作成し、繰り返されたセル値: "/>
+      <LocalizedSampleString Key="CellMerging_Logging_CellCount" Value="結合セルの合計数: "/>
+      <LocalizedSampleString Key="single_cell_selection" Value="単一のセル選択"/>
+      <LocalizedSampleString Key="multiple_row_selection" Value="複数の行選択"/>
+      <LocalizedSampleString Key="default_row_selectors" Value="デフォルトの行セレクター"/>
+      <LocalizedSampleString Key="row_selectors_with_checkboxes" Value="チェックボックス付きの行セレクター"/>
+      <LocalizedSampleString Key="row_numbering" Value="行番号"/>
+      <LocalizedSampleString Key="Northwind_Customers_CustomerID" Value="顧客 ID"/>
+      <LocalizedSampleString Key="Northwind_Customers_ContactName" Value="名前"/>
+      <LocalizedSampleString Key="Northwind_Customers_City" Value="市"/>
+      <LocalizedSampleString Key="Northwind_Customers_Country" Value="国名"/>      
+      <LocalizedSampleString Key="Northwind_Employees_EmployeeID" Value="社員 ID"/>
+      <LocalizedSampleString Key="Northwind_Employees_FirstName" Value="名前"/>
+      <LocalizedSampleString Key="Northwind_Employees_LastName" Value="名字"/>
+      <LocalizedSampleString Key="Northwind_Employees_Title" Value="役職"/>
+      <LocalizedSampleString Key="Northwind_Employees_Address" Value="住所"/>
+      <LocalizedSampleString Key="Northwind_Employees_City" Value="市"/>
+      <LocalizedSampleString Key="Northwind_Employees_Region" Value="領域"/>
+      <LocalizedSampleString Key="Northwind_Employees_Country" Value="国名"/>
+      <LocalizedSampleString Key="Northwind_Employees_PostCode" Value="郵便番号"/>
+      <LocalizedSampleString Key="Northwind_Employees_HomePhone" Value="電話"/>
+      <LocalizedSampleString Key="Northwind_Employees_Extension" Value="内線"/>
+      <LocalizedSampleString Key="Northwind_Employees_AllEmployees" Value="全従業員"/>
+      <LocalizedSampleString Key="Northwind_Products_ProductID" Value="製品 ID"/>
+      <LocalizedSampleString Key="Northwind_Products_ProductName" Value="製品名"/>
+      <LocalizedSampleString Key="Northwind_Products_Category" Value="カテゴリ"/>
+      <LocalizedSampleString Key="Northwind_Products_UnitsInStock" Value="在庫数"/>
+      <LocalizedSampleString Key="Northwind_Products_SupplierName" Value="仕入先名"/>
+      <LocalizedSampleString Key="Northwind_Products_Discontinued" Value="製造中止"/>
+      <LocalizedSampleString Key="Northwind_Products_UnitPrice" Value="単価"/>
+      <LocalizedSampleString Key="Northwind_Products_UnitsOnOrder" Value="入荷待ち"/>
+      <LocalizedSampleString Key="Northwind_Category_CategoryID" Value="カテゴリ ID"/>
+      <LocalizedSampleString Key="Northwind_Category_CategoryName" Value="カテゴリ名"/>
+      <LocalizedSampleString Key="Northwind_Category_Description" Value="説明"/>
+      <LocalizedSampleString Key="Northwind_Category_ProductsCount" Value="製品数"/>
+      <LocalizedSampleString Key="Northwind_Orders_OrderID" Value="注文 ID"/>
+      <LocalizedSampleString Key="Northwind_Orders_CustomerID" Value="顧客 ID"/>
+      <LocalizedSampleString Key="Northwind_Orders_Freight" Value="輸送"/>
+      <LocalizedSampleString Key="Northwind_Orders_FreightExpense" Value="輸送費"/>      
+      <LocalizedSampleString Key="Northwind_Orders_TotalItems" Value="項目の合計数"/>
+      <LocalizedSampleString Key="Northwind_Orders_TotalPrice" Value="総額"/>
+      <LocalizedSampleString Key="Northwind_Orders_OrderDate" Value="注文日"/>      
+      <LocalizedSampleString Key="Northwind_Orders_ShipName" Value="出荷名"/>
+      <LocalizedSampleString Key="Northwind_Orders_ShipAddress" Value="配送先住所"/>
+      <LocalizedSampleString Key="Northwind_Orders_ShipCity" Value="配送先市町村"/>
+      <LocalizedSampleString Key="Northwind_Orders_ShipCountry" Value="配送先の国"/>
+      <LocalizedSampleString Key="Northwind_Orders_Name" Value="名前"/>
+      <LocalizedSampleString Key="Northwind_Orders_Age" Value="年齢"/>
+      <LocalizedSampleString Key="Northwind_Orders_Email" Value="メール"/>
+      <LocalizedSampleString Key="Northwind_Orders_Quantity" Value="数量"/>
+      <LocalizedSampleString Key="Northwind_Orders_USA" Value="米国内"/>
+      <LocalizedSampleString Key="fruit_punch" Value="コーヒーマイルド" />
+      <LocalizedSampleString Key="Bread" Value="パン" />
+      <LocalizedSampleString Key="Milk" Value="果汁 100% オレンジ" />
+      <LocalizedSampleString Key="Food" Value="食品" />
+      <LocalizedSampleString Key="Beverages" Value="飲料" />
+      <LocalizedSampleString Key="Pizza" Value="ピザ" />
+    </SampleString>
+    <Description>
+      JavaScript のクライアント アプリケーションでは、展開可能な階層グリッドを使用して複数の親子関係を表示できます。ドリルダウン、行の追加、編集、削除、選択、並べ替え、グループ化、フィルタリングをサポートします。また、マウスおよびキーボードもサポートされます。
+    </Description>
+    <PageKeywords>igHierarchicalGrid</PageKeywords>
+      <SampleGroups>
+          <SampleGroup ID="1">データ バインディング</SampleGroup>
+          <SampleGroup ID="2">機能</SampleGroup>
+          <SampleGroup ID="3">レスポンシブ Web デザイン</SampleGroup>
+          <SampleGroup ID="4">テンプレートとレイアウト</SampleGroup>
+          <SampleGroup ID="5">API 使用</SampleGroup>
+          <SampleGroup ID="6">パフォーマンス</SampleGroup>
+          <SampleGroup ID="7">編集</SampleGroup>
+          <SampleGroup ID="8">スタイル設定</SampleGroup>
+      </SampleGroups>
+  </LocalizedContent>
+  <ClientApiUrl>ui.ighierarchicalgrid</ClientApiUrl>
+  <HelpPageName>igHierarchicalGrid_igHierarchicalGrid</HelpPageName>
+  <ForumNumber>589</ForumNumber>
+  <IconImage>jquery-hierarchical-grid-logo.png</IconImage>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <Status>Updated</Status>
+  <TOC>
+      <SampleGroup ID="1">
+          <Sample>json-binding</Sample>
+          <Sample>xml-binding</Sample>
+          <Sample>dataset-binding</Sample>
+          <Sample>load-on-demand</Sample>
+          <Sample>bind-hgrid-with-ko</Sample>
+      </SampleGroup>
+      <SampleGroup ID="2">
+          <Sample>cell-merging</Sample>
+          <Sample>unbound-column</Sample>
+          <Sample>row-edit-template</Sample>
+          <Sample>selection</Sample>
+          <Sample>row-selectors</Sample>
+          <Sample>aspnet-mvc-helper</Sample>
+      </SampleGroup>
+      <SampleGroup ID="7">
+          <Sample>editing-dataset</Sample>
+      </SampleGroup>
+  </TOC>
+</Component>

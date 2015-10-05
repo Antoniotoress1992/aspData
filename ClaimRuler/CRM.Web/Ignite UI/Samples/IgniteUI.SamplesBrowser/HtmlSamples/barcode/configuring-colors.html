@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head> 
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="../../igniteui/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+    <link href="../../igniteui/css/structure/infragistics.css" rel="stylesheet" />
+
+    <!-- Used to style the API Viewer and Explorer UI -->
+    <link href="../../css/apiviewer.css" rel="stylesheet" type="text/css" />
+
+    <script src="../../js/modernizr.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="../../igniteui/js/infragistics.core.js"></script>
+    <script src="../../igniteui/js/infragistics.dv.js"></script>
+
+</head>
+<body>
+    <div id="barcode" style="max-width: 300px"></div>
+
+    <script type="text/javascript">
+        $(function () {
+            $("#barcode").igQRCodeBarcode({
+                height: "300px",
+                width: "100%",
+                data: "http://www.infragistics.com/products/jquery/",
+                backingStrokeThickness: 1
+            });
+
+            $("#backingBrush").change(function () {
+                var val = $("#backingBrush").val().toLowerCase();
+                $("#barcode").igQRCodeBarcode("option", "backingBrush", val);
+            });
+
+            $("#backingOutline").change(function () {
+                var val = $("#backingOutline").val().toLowerCase();
+                $("#barcode").igQRCodeBarcode("option", "backingOutline", val);
+            });
+
+            $("#barBrush").change(function () {
+                var val = $("#barBrush").val().toLowerCase();
+                $("#barcode").igQRCodeBarcode("option", "barBrush", val);
+            });
+
+            $("#backingStrokeThickness").slider({
+                min: 0,
+                max: 10,
+                value: 1,
+                step: 1,
+                slide: function (event, ui) {
+                    $("#barcode").igQRCodeBarcode("option", "backingStrokeThickness", ui.value == 0 ? 0.01 : ui.value);
+                    $("#backingStrokeThicknessLabel").text(ui.value);
+                }
+            });
+        });
+    </script>
+    
+    <fieldset id="barcodeOptions" style="margin: 30px 20px 0px 0px;">
+        <legend>Options</legend>
+        <div>
+            <div>
+                Bars Brush
+                <select id="barBrush" style="width: 100px; margin: 12px">
+                    <option>Black</option>
+                    <option>Blue</option>
+                    <option>Green</option>
+                </select>
+            </div>
+            <div>
+                Backing Brush
+                <select id="backingBrush" style="width: 100px; margin: 12px">
+                    <option>White</option>
+                    <option>Yellow</option>
+                    <option>Gray</option>
+                </select>
+            </div>
+            <div>
+                Backing Outline
+                <select id="backingOutline" style="width: 100px; margin: 12px">
+                    <option>Transparent</option>
+                    <option>Black</option>
+                    <option>Green</option>
+                </select>
+            </div>
+            <div style="margin: 12px 0px;">
+                <div style="float: left; margin: 0 5px">Backing Stroke Thickness</div>
+                <div id="backingStrokeThickness" style="width: 100px; float: left; margin: 10px 15px"></div>
+                <label id="backingStrokeThicknessLabel">1</label>
+            </div>
+        </div>
+    </fieldset>
+</body>
+</html>

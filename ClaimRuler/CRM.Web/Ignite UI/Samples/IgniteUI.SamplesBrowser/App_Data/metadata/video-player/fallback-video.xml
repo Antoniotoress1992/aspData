@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Fallback Video</Title>
+    <Description>If you handle the browserNotSupported event of the jQuery Video Player control then you can execute custom code which manages the situation in which an end-user tries to browse the web page with a browser not supporting HTML5 video. In the following sample the jQuery Video Player is replaced by a Microsoft® Silverlight™ media control should the aforementioned situation occurs. Please view the sample in a browser without HTML5 video support (e.g. IE8) for the best understanding of how this sample works. The video used for this sample does not contain audio. Note: When running this sample on a mobile device, the default device video player controls are rendered, unless the Modernizr JavaScript library is undefined. If for some reason you don't have the Modernizr library available on your page, then the igVideoPlayer control is rendered, which in some cases may have fewer touch capabilities than the default device video player. That's why this sample uses the Modernizr library and in mobile contexts the igVideoPlayer falls back to the default device video player.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>フォールバック ビデオ</Title>
+    <Description>jQuery ビデオ プレーヤー コントロールの browserNotSupported イベントを処理します。エンドユーザーが HTML5 ビデオをサポートしないブラウザーでページをブラウズしようとしたときの状況を管理するカスタム コードを実行できます。jQuery ビデオ プレーヤーは Microsoft® Silverlight メディア コントロールで置き換えることができます。HTML5 ビデオのサポートがないブラウザー (IE8 など)でサンプルが実際にどのように動作するかを確認できます。このサンプルのビデオに音声は含まれません。注: このサンプルをモバイル デバイスで実行する場合、Modernizr JavaScript ライブラリが未定義である以外、デフォルトのデバイス ビデオ プレーヤー コントロールを描画します。Modernizr ライブラリがページで利用できない場合、igVideoPlayer コントロールを描画します。この場合、デフォルト デバイス ビデオ プレーヤーよりタッチ機能が少ない場合があります。そのため、このサンプルでは Modernizr ライブラリを使用し、モバイル デバイスでは igVideoPlayer ではなくデフォルト デバイス ビデオ プレーヤーを使用します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>TabletLandscape</MinSampleSize>
+</Sample>

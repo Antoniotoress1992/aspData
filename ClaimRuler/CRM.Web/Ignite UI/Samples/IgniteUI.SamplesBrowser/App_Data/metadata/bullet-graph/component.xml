@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Bullet Graph</Name>
+    <Description></Description>
+    <LocalizedSampleStrings>  
+      <LocalizedSampleString Key="April" Value="April"/> 
+      <LocalizedSampleString Key="ChooseSetting" Value="Choose a setting"/>
+      <LocalizedSampleString Key="Consumption" Value="Consumption (TWh)"/>
+      <LocalizedSampleString Key="ConsumptionGraph" Value="Consumption Graph (TWh)"/>
+      <LocalizedSampleString Key="EnergySource" Value="Energy Source"/>
+      <LocalizedSampleString Key="EnergySourceDescription" Value="A particularly warm winter season reduced natural gas demand in the United States for home heating year-over-year, combined with reduced demand coming from the plastics and petrochemicals industry. May was unusually cool throughout much of the country, which led to unusually higher demand in that month, although weather forecasts anticipate warmer temperatures during the summer and continuing weak demand from industry."/>
+      <LocalizedSampleString Key="February" Value="February"/>
+      <LocalizedSampleString Key="FiscalYear_Header" Value="Fiscal Year Sales Target"/>
+      <LocalizedSampleString Key="FiscalYear_SideDescription" Value="Sales revenue this year (the horizontal white line) has exceeded last year's sales of 15k (the beginning of the acceptable range) by an average of 10% each quarter. Still there is a long way to go in order to reach our total target  for the year (vertical white line). Interestingly, sales have followed roughly the same trajectory as last year, reinforcing a pattern of buying habits we've witnessed over the past five years."/>
+      <LocalizedSampleString Key="Graph" Value="Graph"/>
+      <LocalizedSampleString Key="Hardware" Value="Hardware"/>
+      <LocalizedSampleString Key="Horizontal" Value="Horizontal"/> 
+      <LocalizedSampleString Key="IsScaleInverted" Value="Is Scale Inverted"/>
+      <LocalizedSampleString Key="January" Value="January"/> 
+      <LocalizedSampleString Key="March" Value="March"/> 
+      <LocalizedSampleString Key="Month" Value="Month"/>
+      <LocalizedSampleString Key="NutritionCarbohydrates" Value="Carbohydrates"/>
+      <LocalizedSampleString Key="NutritionFat" Value="Fat"/>
+      <LocalizedSampleString Key="NutritionProtein" Value="Protein"/>
+      <LocalizedSampleString Key="NutritionTitle" Value="Healthy Eating"/>
+      <LocalizedSampleString Key="NutritionDescription" Value="Total calories intake ratio between fat, carbohydrates and protein, where middle ranges are healthy ratios and the target values - ideally set goals."/>
+      <LocalizedSampleString Key="Options" Value="Options"/>
+      <LocalizedSampleString Key="Orientation" Value="Orientation"/> 
+      <LocalizedSampleString Key="Production" Value="Production (TWh)"/>     
+      <LocalizedSampleString Key="Services" Value="Services"/>
+      <LocalizedSampleString Key="Setting1" Value="Setting One"/>
+      <LocalizedSampleString Key="Setting2" Value="Setting Two"/>
+      <LocalizedSampleString Key="Setting3" Value="Setting Three"/>
+      <LocalizedSampleString Key="Software" Value="Software"/>
+      <LocalizedSampleString Key="SunkostSalesAvgOrder" Value="Avg Order"/>
+      <LocalizedSampleString Key="SunkostSalesDescription" Value="The sales totals to date for 2013 (white horizontal line), clearly exceed the total sales for all of 2012 (the beginning of the middle range). The 2013 sales numbers suggest that our new marketing campaign is successful, resulting in increased product penetration and a significant sales boost, working our way up to the targeted goals for the whole year (vertical white lines)."/>
+      <LocalizedSampleString Key="SunkostSalesHeader" Value="Sunkost: Sales Target of 2013"/>
+      <LocalizedSampleString Key="SunkostSalesNewCustomers" Value="New Customers"/>
+      <LocalizedSampleString Key="SunkostSalesProfit" Value="Profit"/>
+      <LocalizedSampleString Key="SunkostSalesRevenue" Value="YTD Revenue"/>      
+      <LocalizedSampleString Key="Task_Dev" Value="Development Task"/>
+      <LocalizedSampleString Key="Task_QA" Value="Quality Assurance Task"/>
+      <LocalizedSampleString Key="TaskEnd" Value="Ends"/>
+      <LocalizedSampleString Key="Tasks_Description" Value="Even though these tasks are executed simultaneously at the course of three weeks, initially more time has been spent on development. This is demonstrated by the progress bars’ placement amongst the three different ranges (“Low, “Medium” and “High”), that represent the level of confidence for delivering the needed results."/>
+      <LocalizedSampleString Key="Tasks_Hours" Value="h"/>
+      <LocalizedSampleString Key="Tasks_Planned" Value="Planned Time"/>
+      <LocalizedSampleString Key="Tasks_Spent" Value="Spent Time"/>
+      <LocalizedSampleString Key="Tasks_Title" Value="Task Implementation Progress"/>
+      <LocalizedSampleString Key="TaskStart" Value="Starts"/>
+      <LocalizedSampleString Key="TeamBudget" Value="Team Events’ Budget Utilization"/>
+      <LocalizedSampleString Key="TeamBudgetDescription" Value="The target value shows the allocated budget, the progress bar shows the amount spent until now and the exploded range emphasizes on the progress that has been made."/>
+      <LocalizedSampleString Key="TechIndustrySale" Value="Tech Industry Sale"/> 
+      <LocalizedSampleString Key="ToolTipSettings_High" Value="High"/>
+      <LocalizedSampleString Key="ToolTipSettings_Low" Value="Low"/>
+      <LocalizedSampleString Key="ToolTipSettings_Medium" Value="Medium"/>
+      <LocalizedSampleString Key="TransitionDuration" Value="Transition Duration"/> 
+      <LocalizedSampleString Key="Vertical" Value="Vertical" />
+    </LocalizedSampleStrings>
+    <PageKeywords>igBulletGraph</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Bullet Graph</Name>
+    <Description></Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="April" Value="4 月"/> 
+      <LocalizedSampleString Key="ChooseSetting" Value="設定の選択"/>
+      <LocalizedSampleString Key="Consumption" Value="消費 (TWh)"/>
+      <LocalizedSampleString Key="ConsumptionGraph" Value="消費チャート (TWh)"/>
+      <LocalizedSampleString Key="EnergySource" Value="エネルギー源"/>
+      <LocalizedSampleString Key="EnergySourceDescription" Value="暖冬により、米国における家庭暖房の天然ガスの需要を縮小しています。さらに、プラスティックや石油化学産業における天然ガスの需要も減ってきています。今年の夏は猛暑になると予測されてはいるものの、平年、5 月は全国的に涼しいために需要が高くなることが予想されていました。しかしながら、需要は低迷しています。"/>
+      <LocalizedSampleString Key="February" Value="2 月"/>
+      <LocalizedSampleString Key="FiscalYear_Header" Value="会計年度の営業目標"/>
+      <LocalizedSampleString Key="FiscalYear_SideDescription" Value="今年の売上 (水平方向の白線) は、昨年の各四半期売上 15k より 10% 増加しました。今年の売上目標は垂直の白線で示されます。売上高は昨年とほぼ同じ曲線をたどり、過去 5 年間に見られる購買動向のパターンを強めています。"/>
+      <LocalizedSampleString Key="Graph" Value="グラフ"/>
+      <LocalizedSampleString Key="Hardware" Value="ハードウェア"/>
+      <LocalizedSampleString Key="Horizontal" Value="水平方向"/> 
+      <LocalizedSampleString Key="IsScaleInverted" Value="スケールの反転"/>
+      <LocalizedSampleString Key="January" Value="1 月"/> 
+      <LocalizedSampleString Key="March" Value="3 月"/> 
+      <LocalizedSampleString Key="Month" Value="月"/>
+      <LocalizedSampleString Key="NutritionCarbohydrates" Value="炭水化物"/>
+      <LocalizedSampleString Key="NutritionFat" Value="脂質"/>
+      <LocalizedSampleString Key="NutritionProtein" Value="たんぱく質"/>
+      <LocalizedSampleString Key="NutritionTitle" Value="健康的な食事"/>
+      <LocalizedSampleString Key="NutritionDescription" Value="脂質、炭水化物、たんぱく質の合計カロリーの比率。中の範囲は健康的な食事の比率です。目標値が設定されています。"/>
+      <LocalizedSampleString Key="Options" Value="オプション"/>
+      <LocalizedSampleString Key="Orientation" Value="方向"/> 
+      <LocalizedSampleString Key="Production" Value="生産 (TWh)"/> 
+      <LocalizedSampleString Key="Services" Value="サービス"/>
+      <LocalizedSampleString Key="Setting1" Value="設定 1"/>
+      <LocalizedSampleString Key="Setting2" Value="設定 2"/>
+      <LocalizedSampleString Key="Setting3" Value="設定 3"/>
+      <LocalizedSampleString Key="Software" Value="ソフトウェア"/>
+      <LocalizedSampleString Key="SunkostSalesAvgOrder" Value="平均注文"/>
+      <LocalizedSampleString Key="SunkostSalesDescription" Value="2013 年度の販売 (水平の白線) は、2012 年全体 (中範囲の開始) の販売を超えました。2013 年度の販売において、新しく導入した販売活動が成功したことを示しています。更に市場浸透が増加し、販売も向上しました。"/>
+      <LocalizedSampleString Key="SunkostSalesHeader" Value="Sunkost: 2013 年の売上げ目標"/>
+      <LocalizedSampleString Key="SunkostSalesNewCustomers" Value="新しい顧客"/>
+      <LocalizedSampleString Key="SunkostSalesProfit" Value="利益"/>
+      <LocalizedSampleString Key="SunkostSalesRevenue" Value="年度売上"/> 
+      <LocalizedSampleString Key="Task_Dev" Value="開発タスク"/>
+      <LocalizedSampleString Key="Task_QA" Value="品質保証タスク"/>
+      <LocalizedSampleString Key="TaskEnd" Value="終了日付"/>
+      <LocalizedSampleString Key="Tasks_Description" Value="このタスクは 3 週間で同時に実行されますが、開発に他のタスク以上の時間が費やされました。進行状況バーは、タスク完了の可能性を表す状態範囲 (「高」、「中」、「低」) を表します。"/>
+      <LocalizedSampleString Key="Tasks_Hours" Value="h"/>
+      <LocalizedSampleString Key="Tasks_Planned" Value="予定期間"/>
+      <LocalizedSampleString Key="Tasks_Spent" Value="消費時間"/>
+      <LocalizedSampleString Key="Tasks_Title" Value="タスク実装の進行状況"/>
+      <LocalizedSampleString Key="TaskStart" Value="開始日付"/>
+      <LocalizedSampleString Key="TeamBudget" Value="チーム イベントの予算使用"/>
+      <LocalizedSampleString Key="TeamBudgetDescription" Value="目標値は予算を示し、進行状況バーは使用した予算を示します。また、展開した範囲は、タスクの進行状況を表します。"/>
+      <LocalizedSampleString Key="TechIndustrySale" Value="ハイテク産業の売上高"/> 
+      <LocalizedSampleString Key="ToolTipSettings_High" Value="高"/>
+      <LocalizedSampleString Key="ToolTipSettings_Low" Value="低"/>
+      <LocalizedSampleString Key="ToolTipSettings_Medium" Value="中"/>
+      <LocalizedSampleString Key="TransitionDuration" Value="トランジション期間"/> 
+      <LocalizedSampleString Key="Vertical" Value="垂直方向" /> 
+    </LocalizedSampleStrings>
+    <PageKeywords>igBulletGraph</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>ui.igBulletGraph</ClientApiUrl>
+  <HelpPageName>igBulletGraph_Overview</HelpPageName>
+  <ForumNumber>812</ForumNumber>
+  <IconImage>jquery-bullet-graph.png</IconImage>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <TOC>
+    <Sample>basic-configuration</Sample>
+    <Sample>animated-transitions</Sample>
+    <Sample>scale-labeling-settings</Sample>
+    <Sample>tick-marks-settings</Sample>
+    <Sample>range-settings</Sample>
+    <Sample>performance-bar-settings</Sample>
+    <Sample>vertical-orientation</Sample>
+    <Sample>grid-integration</Sample>
+    <Sample>tooltip-settings</Sample>
+    <Sample>mvc-initialization</Sample>
+  </TOC>
+</Component>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Basic Configuration</Title>
+    <Description>This sample demonstrates a simple configuration of the igLinearGauge control.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>基本構成</Title>
+    <Description>このサンプルでは、igLinearGauge コントロールのページング構成を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

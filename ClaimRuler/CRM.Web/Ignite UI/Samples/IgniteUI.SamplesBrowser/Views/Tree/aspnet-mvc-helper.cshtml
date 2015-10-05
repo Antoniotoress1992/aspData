@@ -1,0 +1,43 @@
+﻿@using Infragistics.Web.Mvc
+@using IgniteUI.SamplesBrowser.Models
+
+@model IEnumerable<IgniteUI.SamplesBrowser.Models.Northwind.Category>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="@Url.Content("~/igniteui/css/themes/infragistics/infragistics.theme.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/igniteui/css/structure/infragistics.css")" rel="stylesheet" />
+
+    <script src="@Url.Content("~/js/modernizr.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery-ui.min.js")"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="@Url.Content("~/igniteui/js/infragistics.core.js")"></script>
+    <script src="@Url.Content("~/igniteui/js/infragistics.lob.js")"></script>
+
+</head>
+<body>
+
+    @(Html.Infragistics().Tree()
+        .DataSource(Model)
+        .Bindings(b => 
+            b.TextKey("CategoryName")
+            .ValueKey("ID")
+            .ChildDataProperty("Products")
+            .Bindings(b2 =>
+                b2.TextKey("ProductName")
+                .ValueKey("ID")
+            )
+        )
+        .DataBind()
+        .Render()
+    )
+
+</body>
+</html>

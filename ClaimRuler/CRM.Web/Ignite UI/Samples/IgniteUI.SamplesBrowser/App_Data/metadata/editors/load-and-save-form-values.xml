@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Load and Save Form Values</Title>
+    <Description>Multiple igEditor controls are shown in this example of an edit form. The values of the editors are set on the server and the code example demonstrates how the changes are saved back to the server once the “Submit” button is pressed.</Description>
+    <HelpTopics>
+      <HelpTopic Title="API" TopicName="igTextEditor_jQuery_API" />
+      <HelpTopic Title="Validation" TopicName="Configuring ASP.NET MVC Validation" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>フォーム値の保存と読み込み</Title>
+    <Description>この編集フォームのサンプルでは、複数の igEditor コントロールがあります。エディターの値はサーバーで設定されています。サンプル コードは、[送信] ボタンを押すときに、変更をサーバーに保存します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="API" TopicName="igTextEditor_jQuery_API" />
+      <HelpTopic Title="検証" TopicName="Configuring ASP.NET MVC Validation" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhonePortrait</MinSampleSize>
+</Sample>

@@ -1,0 +1,497 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{E0F7004C-9E68-42B2-90E2-D16FE9A66AF3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SchedulerAspNetVB</RootNamespace>
+    <AssemblyName>SchedulerAspNetVB</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>SchedulerAspNetVB.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>SchedulerAspNetVB.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DHTMLX, Version=3.0.4975.19286, Culture=neutral, PublicKeyToken=53f24791214eb8ac, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>App_Data\DHTMLX.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\Scheduler.mdf" />
+    <Content Include="App_Data\Scheduler_log.ldf">
+      <DependentUpon>Scheduler.mdf</DependentUpon>
+    </Content>
+    <Content Include="Recurring.aspx" />
+    <Content Include="Scripts\dhtmlxScheduler\dhtmlxscheduler.css" />
+    <Content Include="Scripts\dhtmlxScheduler\dhtmlxscheduler.js" />
+    <Content Include="Scripts\dhtmlxScheduler\dhtmlxscheduler_custom_lightbox.js" />
+    <Content Include="Scripts\dhtmlxScheduler\dhtmlxscheduler_dhx_terrace.css" />
+    <Content Include="Scripts\dhtmlxScheduler\dhtmlxscheduler_glossy.css" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_active_links.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_agenda_view.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_all_timed.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_collision.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_container_autoresize.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_cookie.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_dhx_terrace.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_editors.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_expand.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_grid_view.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_html_templates.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_key_nav.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_limit.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_live_updates.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_map_view.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_minical.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_multiselect.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_multisource.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_offline.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_outerdrag.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_pdf.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_quick_info.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_readonly.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_recurring.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_serialize.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_timeline.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_tooltip.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_treetimeline.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_units.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_url.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_week_agenda.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_year_view.js" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\buttons.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\but_repeat.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\calendar.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\clock_big.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\clock_small.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\collapse_expand_icon.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\controls.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\databg.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\databg_now.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\icon.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\images.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\loading.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\resize_dots.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\arrow_left.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\arrow_right.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\but_repeat.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\calendar.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\clock_big.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\clock_small.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\close_icon.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\collapse_expand_icon.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\controls.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\databg.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\databg_now.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\resize_dots.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\resizing.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\blue_tab.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\blue_tab_wide.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\buttons.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\but_repeat.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\calendar.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\clock_big.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\clock_small.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\collapse_expand_icon.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\controlls5.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\databg.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\databg_now.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\event-bg.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\icon.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\left-separator.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\left-time-bg.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\lightbox.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\loading.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\move.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\multi-days-bg.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\second-top-days-bg.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\top-days-bg.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\top-separator.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\white_tab.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\white_tab_wide.png" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_ar.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_be.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_ca.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_cn.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_cs.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_da.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_de.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_el.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_es.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_fi.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_fr.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_he.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_hu.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_id.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_it.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_jp.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_nb.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_nl.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_no.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_pl.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_pt.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_be.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_cn.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_cs.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_da.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_de.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_el.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_es.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_fi.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_fr.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_it.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_nb.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_nl.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_pl.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_pt.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_ru.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_sv.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_ua.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_ru.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_si.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_sv.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_tr.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_ua.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\dhtmlxscheduler.css" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\dhtmlxscheduler.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\dhtmlxscheduler_custom_lightbox.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\dhtmlxscheduler_dhx_terrace.css" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\dhtmlxscheduler_glossy.css" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_active_links.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_agenda_view.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_all_timed.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_collision.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_container_autoresize.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_cookie.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_dhx_terrace.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_editors.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_expand.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_grid_view.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_html_templates.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_key_nav.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_limit.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_live_updates.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_map_view.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_minical.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_multiselect.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_multisource.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_offline.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_outerdrag.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_pdf.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_quick_info.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_readonly.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_recurring.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_serialize.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_timeline.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_tooltip.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_treetimeline.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_units.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_url.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_week_agenda.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_year_view.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs\buttons.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs\but_repeat.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs\calendar.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs\clock_big.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs\clock_small.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs\collapse_expand_icon.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs\controls.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs\databg.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs\databg_now.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs\icon.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs\images.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs\loading.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs\resize_dots.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_dhx_terrace\arrow_left.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_dhx_terrace\arrow_right.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_dhx_terrace\but_repeat.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_dhx_terrace\calendar.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_dhx_terrace\clock_big.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_dhx_terrace\clock_small.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_dhx_terrace\close_icon.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_dhx_terrace\collapse_expand_icon.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_dhx_terrace\controls.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_dhx_terrace\databg.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_dhx_terrace\databg_now.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_dhx_terrace\resize_dots.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_dhx_terrace\resizing.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\blue_tab.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\blue_tab_wide.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\buttons.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\but_repeat.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\calendar.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\clock_big.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\clock_small.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\collapse_expand_icon.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\controlls5.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\databg.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\databg_now.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\event-bg.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\icon.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\left-separator.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\left-time-bg.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\lightbox.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\loading.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\move.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\multi-days-bg.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\second-top-days-bg.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\top-days-bg.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\top-separator.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\white_tab.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\white_tab_wide.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_ar.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_be.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_ca.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_cn.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_cs.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_da.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_de.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_el.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_es.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_fi.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_fr.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_he.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_hu.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_id.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_it.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_jp.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_nb.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_nl.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_no.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_pl.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_pt.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_be.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_cn.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_cs.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_da.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_de.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_el.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_es.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_fi.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_fr.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_it.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_nb.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_nl.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_pl.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_pt.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_ru.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_sv.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_ua.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_ru.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_si.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_sv.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_tr.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_ua.js" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data.ashx.vb">
+      <DependentUpon>Data.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Scheduler.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Scheduler.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Scheduler.vb">
+      <DependentUpon>Scheduler.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Recurring.aspx.designer.vb">
+      <DependentUpon>Recurring.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Recurring.aspx.vb">
+      <DependentUpon>Recurring.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Save.ashx.vb">
+      <DependentUpon>Save.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="SaveRecurring.ashx.vb">
+      <DependentUpon>SaveRecurring.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.designer.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\Scheduler.dbml.layout">
+      <DependentUpon>Scheduler.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="Save.ashx" />
+    <Content Include="SaveRecurring.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data.ashx" />
+    <None Include="Data\Scheduler.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Scheduler.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4491</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,583 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="All_Components" xml:space="preserve">
+    <value>すべてのコンポーネント</value>
+  </data>
+  <data name="All_Controls" xml:space="preserve">
+    <value>すべてのコントロール</value>
+  </data>
+  <data name="Featured_Controls" xml:space="preserve">
+    <value>注目のコントロール</value>
+  </data>
+  <data name="Features" xml:space="preserve">
+    <value>機能</value>
+  </data>
+  <data name="jQuery_For_Desktop" xml:space="preserve">
+    <value>デスクトップの jQuery UI</value>
+  </data>
+  <data name="jQuery_Mobile" xml:space="preserve">
+    <value>jQuery Mobile</value>
+  </data>
+  <data name="Responsive_Web_Design" xml:space="preserve">
+    <value>すべてのブラウザー、プラットフォーム、デバイスに対応するレスポンシブ Web デザイン</value>
+  </data>
+  <data name="Status_CTP" xml:space="preserve">
+    <value>CTP</value>
+  </data>
+  <data name="Status_New" xml:space="preserve">
+    <value>新規</value>
+  </data>
+  <data name="Status_Updated" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="Alt_Infragistics_Home" xml:space="preserve">
+    <value>Infragistics&amp;copy; ホーム</value>
+  </data>
+  <data name="Application_Samples" xml:space="preserve">
+    <value>アプリケーション サンプル</value>
+  </data>
+  <data name="ASPNET_Controller_Code" xml:space="preserve">
+    <value>ASP.NET コントローラー</value>
+  </data>
+  <data name="ASPNET_Model_Code" xml:space="preserve">
+    <value>ASP.NET モデル</value>
+  </data>
+  <data name="ASPNET_View_Code" xml:space="preserve">
+    <value>ASP.NET ビュー</value>
+  </data>
+  <data name="Client_API_Docs" xml:space="preserve">
+    <value>API ドキュメント</value>
+  </data>
+  <data name="Components" xml:space="preserve">
+    <value>コンポーネント</value>
+  </data>
+  <data name="Contact_Support" xml:space="preserve">
+    <value>お問い合わせとサポート</value>
+  </data>
+  <data name="Contact_Support_Url" xml:space="preserve">
+    <value>http://jp.infragistics.com/corporate/contactus.aspx#1586</value>
+  </data>
+  <data name="Request_Culture" xml:space="preserve">
+    <value>JA</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>説明</value>
+  </data>
+  <data name="Footer_Links" xml:space="preserve">
+    <value>&lt;li&gt;&lt;a href="http://jp.infragistics.com/products/license.aspx" target="_blank"&gt;使用許諾契約&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="http://jp.infragistics.com/corporate/contactus.aspx" target="_blank"&gt;お問い合わせ&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="http://help.jp.infragistics.com" target="_blank"&gt;ヘルプ&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="http://jp.infragistics.com/corporate/default.aspx#1400" target="_blank"&gt;会社概要&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="http://jp.infragistics.com/corporate/privacy.aspx" target="_blank"&gt;プライバシー ポリシー&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="http://www.infragistics.com/legal/information/" target="_blank"&gt;著作権および商標 (英語)&lt;/a&gt;&lt;/li&gt;</value>
+  </data>
+  <data name="Footer_Tagline" xml:space="preserve">
+    <value>デザイン / 開発 / エクスペリエンス</value>
+  </data>
+  <data name="Forum" xml:space="preserve">
+    <value>フォーラム</value>
+  </data>
+  <data name="Forums_Url" xml:space="preserve">
+    <value>http://www.infragistics.com/community/forums/default.aspx?GroupID=80</value>
+  </data>
+  <data name="Forum_Url_Format" xml:space="preserve">
+    <value>http://www.infragistics.com/community/forums/{0}.aspx</value>
+  </data>
+  <data name="Help_Documentation" xml:space="preserve">
+    <value>ヘルプの概要</value>
+  </data>
+  <data name="IG_Website" xml:space="preserve">
+    <value>http://jp.infragistics.com</value>
+  </data>
+  <data name="Index_Marketing_Desc" xml:space="preserve">
+    <value>HTML5 / jQuery 対応コントロールは、あらゆるブラウザーおよびデバイスで高度な UX をユーザーに提供できます。プラグインや拡張機能を使用する必要がなく、Web テクノロジーを構築する強固な基盤となります。</value>
+  </data>
+  <data name="Index_Marketing_Title" xml:space="preserve">
+    <value>&lt;span&gt;Ignite UI&lt;/span&gt; &amp;ndash; Web 開発のための HTML5 と jQuery コントロール</value>
+  </data>
+  <data name="More_Details" xml:space="preserve">
+    <value>詳細について</value>
+  </data>
+  <data name="Product_Title" xml:space="preserve">
+    <value>Ignite UI™</value>
+  </data>
+  <data name="IndexPage_Title" xml:space="preserve">
+    <value>jQuery コントロール - jQuery コントロールのサンプル - IgniteUI 注目のコントロール</value>
+  </data>
+  <data name="ComponentTitle_Format" xml:space="preserve">
+    <value>{1} コントロール - jQuery {1} コンポーネント - {0}</value>
+  </data>
+  <data name="SampleTitle_Format" xml:space="preserve">
+    <value>{1} サンプル - {2} コントロールの {1} - {0}</value>
+  </data>
+  <data name="Meta_Description" xml:space="preserve">
+    <value>Ignite UI コントロールは、高いパフォーマンスの Web アプリケーションを作成するためのユーザー インターフェイス開発ツールセットです。</value>
+  </data>
+  <data name="Meta_Keywords" xml:space="preserve">
+    <value>HTML5, html 5, javascript, Infragistics, ユーザー エクスペリエンス, ユーザー インターフェイス, プレゼンテーション レイヤー, asp.net mvc コントロール, web アプリケーション, NetAdvantage jQuery コントロール, IgniteUI, Ignite UI, クライアント側 JavaScript, データ ビジュアライゼーション, ui コンポーネント, ui コントロール, jQuery コントロール</value>
+  </data>
+  <data name="IndexPage_Keywords" xml:space="preserve">
+    <value>jQuery グリッド, GroupBy, HTML エディター, HTML5 チャート, jquery エディター, モバイル jquery コントロール</value>
+  </data>
+  <data name="Samples" xml:space="preserve">
+    <value>サンプル</value>
+  </data>
+  <data name="Supported_Environments" xml:space="preserve">
+    <value>サポート環境</value>
+  </data>
+  <data name="Supported_Environments_Url" xml:space="preserve">
+    <value>http://jp.infragistics.com/supportedenvironment/default.aspx#5195</value>
+  </data>
+  <data name="Forums" xml:space="preserve">
+    <value>フォーラム</value>
+  </data>
+  <data name="Sample_Status_Ctp" xml:space="preserve">
+    <value>~/images/ctp.png</value>
+  </data>
+  <data name="Sample_Status_New" xml:space="preserve">
+    <value>~/images/new.png</value>
+  </data>
+  <data name="Sample_Status_Updated" xml:space="preserve">
+    <value>~/images/updated.png</value>
+  </data>
+  <data name="Getting_Started" xml:space="preserve">
+    <value>ヘルプ リソース</value>
+  </data>
+  <data name="Open_Responsive" xml:space="preserve">
+    <value>レスポンシブ サンプルを開く</value>
+  </data>
+  <data name="Resize_Window" xml:space="preserve">
+    <value>ブラウザー ウィンドウのサイズを変更し、レスポンシブ デザイン機能を確認できます。</value>
+  </data>
+  <data name="Show_In_JsFiddle" xml:space="preserve">
+    <value>JsFiddle で表示</value>
+  </data>
+  <data name="Desktop" xml:space="preserve">
+    <value>デスクトップ</value>
+  </data>
+  <data name="Details_Data_File" xml:space="preserve">
+    <value>データ</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>モバイル</value>
+  </data>
+  <data name="Popout_Description" xml:space="preserve">
+    <value>このサンプルをスマート
+フォンで表示</value>
+  </data>
+  <data name="Popout_Sample" xml:space="preserve">
+    <value>ポップアウト
+サンプル</value>
+  </data>
+  <data name="Select_Theme" xml:space="preserve">
+    <value>テーマの選択</value>
+  </data>
+  <data name="Showcase_Gallery" xml:space="preserve">
+    <value>アプリケーション サンプル</value>
+  </data>
+  <data name="Banner_Image" xml:space="preserve">
+    <value>バナー画像</value>
+  </data>
+  <data name="Controls" xml:space="preserve">
+    <value>jQuery コントロール</value>
+  </data>
+  <data name="AngularJS" xml:space="preserve">
+    <value>Angular JS</value>
+  </data>
+  <data name="BackboneJS" xml:space="preserve">
+    <value>Backbone JS</value>
+  </data>
+  <data name="Blogs" xml:space="preserve">
+    <value>ブログ</value>
+  </data>
+  <data name="DownloadNow" xml:space="preserve">
+    <value>ダウンロード</value>
+  </data>
+  <data name="EmberJS" xml:space="preserve">
+    <value>Ember JS</value>
+  </data>
+  <data name="FAQ" xml:space="preserve">
+    <value>FAQ</value>
+  </data>
+  <data name="Getting_Started_Header" xml:space="preserve">
+    <value>ヘルプ リソース</value>
+  </data>
+  <data name="HomePageDesc" xml:space="preserve">
+    <value>すべてのブラウザー、プラットフォーム、デバイスに対応するレスポンシブ Web デザイン</value>
+  </data>
+  <data name="HomePageTitle" xml:space="preserve">
+    <value>jQuery コントロール</value>
+  </data>
+  <data name="Knockout" xml:space="preserve">
+    <value>Knockout</value>
+  </data>
+  <data name="Support" xml:space="preserve">
+    <value>サポート</value>
+  </data>
+  <data name="TwitterBootstrap" xml:space="preserve">
+    <value>Twitter Bootstrap</value>
+  </data>
+  <data name="Zurb" xml:space="preserve">
+    <value>Zurb</value>
+  </data>
+  <data name="Contols_sclbl" xml:space="preserve">
+    <value>コントロール</value>
+  </data>
+  <data name="Download_sclbl" xml:space="preserve">
+    <value>ダウンロード</value>
+  </data>
+  <data name="Launch_sclbl" xml:space="preserve">
+    <value>起動</value>
+  </data>
+  <data name="PageDescripton_sclbl" xml:space="preserve">
+    <value>このアプリケーションは HTML5 および jQuery で実装される Ignite UI コントロールを紹介します。</value>
+  </data>
+  <data name="Sample_sclbl" xml:space="preserve">
+    <value>サンプル</value>
+  </data>
+  <data name="ScanText_sclbl" xml:space="preserve">
+    <value>スキャンしてモバイル デバイスで {0} します。</value>
+  </data>
+  <data name="Showcase_sclbl" xml:space="preserve">
+    <value>アプリケーション</value>
+  </data>
+  <data name="View_sclbl" xml:space="preserve">
+    <value>表示</value>
+    <comment>Inserted into ScanText</comment>
+  </data>
+  <data name="JSFrameworksInfo" xml:space="preserve">
+    <value>IgniteUI は、人気の JavaScript フレームワークで使用できます</value>
+  </data>
+  <data name="Other_Viewing_Options_Format" xml:space="preserve">
+    <value>モバイル デバイスで画面を回転、&lt;a href="{0}"&gt;フル サイズ表示&lt;/a&gt;、または&lt;a href="{1}"&gt;その他のデバイスにメールで送信します。&lt;/a&gt;</value>
+  </data>
+  <data name="Screen_Size_Message" xml:space="preserve">
+    <value>このサンプルは、より大きい画面サイズのためにデザインされました。</value>
+  </data>
+  <data name="Api_Reference" xml:space="preserve">
+    <value>API リファレンス</value>
+  </data>
+  <data name="Community" xml:space="preserve">
+    <value>コミュニティ</value>
+  </data>
+  <data name="Control_Forum_Format" xml:space="preserve">
+    <value>{0} フォーラム (英語)</value>
+  </data>
+  <data name="Control_Help_Overview_Format" xml:space="preserve">
+    <value>{0} ヘルプ概要</value>
+  </data>
+  <data name="Help_Topics" xml:space="preserve">
+    <value>ヘルプ トピック</value>
+  </data>
+  <data name="HomePageTitleHighlightedWords" xml:space="preserve">
+    <value>コントロール</value>
+  </data>
+  <data name="Free_Trial" xml:space="preserve">
+    <value>30日間無償トライアル</value>
+  </data>
+  <data name="Blogs_Desc" xml:space="preserve">
+    <value>Ignite UI のブログで新機能および開発ヒントについての情報を含みます。</value>
+  </data>
+  <data name="Blogs_Url" xml:space="preserve">
+    <value>http://blogs.jp.infragistics.com/blogs/</value>
+  </data>
+  <data name="Contact_Us" xml:space="preserve">
+    <value>お問い合わせ</value>
+  </data>
+  <data name="FAQ_Desc" xml:space="preserve">
+    <value>ライセンスについてなど、よく寄せられる質問の答えを参照できます。</value>
+  </data>
+  <data name="FAQ_Url" xml:space="preserve">
+    <value>http://jp.infragistics.com/faqs.aspx#4995</value>
+  </data>
+  <data name="Get_Help" xml:space="preserve">
+    <value>ヘルプ</value>
+  </data>
+  <data name="Legal_Information" xml:space="preserve">
+    <value>技術トレーニング</value>
+    <comment>Changed to training because we don't have a legal information page.</comment>
+  </data>
+  <data name="License_Agreement" xml:space="preserve">
+    <value>使用許諾契約</value>
+  </data>
+  <data name="Meet_Us" xml:space="preserve">
+    <value>会社概要</value>
+  </data>
+  <data name="Privacy_Agreement" xml:space="preserve">
+    <value>プライバシー ポリシー</value>
+  </data>
+  <data name="Site_Map" xml:space="preserve">
+    <value>製品ラインアップ</value>
+    <comment>Changed to "product lineup" because we don't have a site map.</comment>
+  </data>
+  <data name="API" xml:space="preserve">
+    <value>API</value>
+  </data>
+  <data name="API_Desc" xml:space="preserve">
+    <value>特定の API メンバーまたは CSS クラスをお探しですか？Ignite UI ヘルプに詳細な情報があります。</value>
+  </data>
+  <data name="Forums_Desc" xml:space="preserve">
+    <value>Infragistics フォーラムでは、製品に関する役に立つ情報を多数発信しています。フォーラムでの意見交換も可能です。(英語)</value>
+  </data>
+  <data name="Getting_Started_Description_Format" xml:space="preserve">
+    <value>上記コントロールまたはアプリケーション サンプルを参照、または、&lt;a href="{0}"&gt;こちら&lt;/a&gt;から Ignite UI コードの概要を参照できます。</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>アプリケーション サンプル</value>
+  </data>
+  <data name="Control_App_Sample_Desc" xml:space="preserve">
+    <value>以下のアプリケーション サンプルでコントロールを参照します。</value>
+  </data>
+  <data name="CSS" xml:space="preserve">
+    <value>CSS</value>
+  </data>
+  <data name="Full_Page" xml:space="preserve">
+    <value>ページ全体</value>
+  </data>
+  <data name="HTML" xml:space="preserve">
+    <value>HTML</value>
+  </data>
+  <data name="JavaScript" xml:space="preserve">
+    <value>JavaScript</value>
+  </data>
+  <data name="SelectAll_ButtonLabel" xml:space="preserve">
+    <value>すべて選択</value>
+  </data>
+  <data name="Search_NullText" xml:space="preserve">
+    <value>サンプルの検索</value>
+  </data>
+  <data name="Search_ShowLabel" xml:space="preserve">
+    <value>表示:</value>
+  </data>
+  <data name="Search_AllSamplesLabel" xml:space="preserve">
+    <value>すべてのサンプル</value>
+  </data>
+  <data name="Search_NewUpdated" xml:space="preserve">
+    <value>新規/更新</value>
+  </data>
+  <data name="Control_Overview_Title_Format" xml:space="preserve">
+    <value>概要</value>
+  </data>
+  <data name="Server_Runtime_Message_Hosted" xml:space="preserve">
+    <value>このサンプルは web サーバーでホストする必要があります。</value>
+  </data>
+  <data name="Server_Runtime_Message_Remote" xml:space="preserve">
+    <value>このサンプルはインターネット接続が必要です。</value>
+  </data>
+  <data name="Server_Runtime_Message_Remote_Hosted" xml:space="preserve">
+    <value>このサンプルは web サーバーでホストし、インターネット接続が必要です。</value>
+  </data>
+  <data name="Server_Runttime_Message_See" xml:space="preserve">
+    <value>ホストされているサンプルを表示するには、</value>
+  </data>
+  <data name="Server_Runttime_Message_Here" xml:space="preserve">
+    <value>ここをクリックしてください。</value>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>メニュー</value>
+  </data>
+  <data name="Back_To_Sample" xml:space="preserve">
+    <value>サンプルへ戻る</value>
+  </data>
+  <data name="Code_View" xml:space="preserve">
+    <value>コード ビュー</value>
+  </data>
+  <data name="Code_Viewer" xml:space="preserve">
+    <value>コード ビューアー</value>
+  </data>
+  <data name="CTP_Sample_Label" xml:space="preserve">
+    <value>このサンプルは CTP 機能を使用しています。製品版では、API や動作が変更する場合があります。</value>
+  </data>
+  <data name="Overview" xml:space="preserve">
+    <value>概要</value>
+  </data>
+  <data name="Contact_UsURL" xml:space="preserve">
+    <value>http://jp.infragistics.com/corporate/contactus.aspx</value>
+  </data>
+  <data name="Get_HelpURL" xml:space="preserve">
+    <value>http://jp.infragistics.com/support/default.aspx</value>
+  </data>
+  <data name="Legal_InformationURL" xml:space="preserve">
+    <value>http://jp.infragistics.com/services/training.aspx</value>
+  </data>
+  <data name="License_AgreementURL" xml:space="preserve">
+    <value>http://jp.infragistics.com/licenseagreement.aspx</value>
+  </data>
+  <data name="Meet_UsURL" xml:space="preserve">
+    <value>http://jp.infragistics.com/corporate/fastfacts.aspx</value>
+  </data>
+  <data name="Privacy_AgreementURL" xml:space="preserve">
+    <value>http://jp.infragistics.com/corporate/privacy.aspx</value>
+  </data>
+  <data name="Site_MapURL" xml:space="preserve">
+    <value>http://jp.infragistics.com/dotnet/netadvantage.aspx</value>
+  </data>
+  <data name="App_Sample_Title_Format" xml:space="preserve">
+    <value>&lt;span class="igsb-highlight"&gt;{0}&lt;/span&gt;</value>
+  </data>
+  <data name="ViewOnline_sclbl" xml:space="preserve">
+    <value>オンライン サンプル</value>
+  </data>
+  <data name="GettingStarted_PageTitle" xml:space="preserve">
+    <value>Ignite UI を使用した作業の開始 - ボイラープレート jQuery テンプレート - Ignite UI を使用した作業の開始</value>
+  </data>
+  <data name="GettingStarted_PageDescription" xml:space="preserve">
+    <value>ボイラープレートは、Ignite UI の jQuery UI ベースのコントロールに必要なすべての依存関係を含むテンプレートです。このボイラープレート コードを空の HTML ファイルにコピーします。すべての必要な JavaScript ファイルおよび CSS ファイルは CDN から参照されています。それらのファイルをダウンロードせずに Ignite UI を使用できます。</value>
+  </data>
+  <data name="GettingStarted_Mobile_PageTitle" xml:space="preserve">
+    <value>Ignite UI Mobile を使用した作業の開始 - ボイラープレート jQuery Mobile テンプレート - Ignite UI を使用した作業の開始</value>
+  </data>
+  <data name="GettingStarted_Mobile_PageDescription" xml:space="preserve">
+    <value>ボイラープレートは、Ignite UI の jQuery Mobile ベースのコントロールに必要なすべての依存関係を含むテンプレートです。このボイラープレート コードを空の HTML ファイルにコピーします。すべての必要な JavaScript ファイルおよび CSS ファイルは CDN から参照されるため、それらのファイルをダウンロードせずに Ignite UI を使用できます。</value>
+  </data>
+  <data name="Showcase_PageTitle" xml:space="preserve">
+    <value>jQuery アプリケーション サンプル - HTML5 UI コントロール - Ignite UI ショーケース</value>
+  </data>
+  <data name="Showcase_PageDescription" xml:space="preserve">
+    <value>このアプリケーションは HTML5 および jQuery で実装される Ignite UI コントロールを紹介します。</value>
+  </data>
+  <data name="Error_404_Heading" xml:space="preserve">
+    <value>ページが見つかりません</value>
+  </data>
+  <data name="Error_404_Message" xml:space="preserve">
+    <value>ご迷惑をおかけしております。ページは削除された、名前が変更された、または現在利用できない可能性があります。しばらく時間をおいてからアクセスしてください。問題が解決しない場合は、弊社サポートにお問い合わせください。</value>
+  </data>
+  <data name="Error_404_Page_Title" xml:space="preserve">
+    <value>ページが見つかりません</value>
+  </data>
+  <data name="Error_500_Heading" xml:space="preserve">
+    <value>システム エラーが発生しました</value>
+  </data>
+  <data name="Error_500_Message" xml:space="preserve">
+    <value>ご迷惑をおかけしておりま。システムでエラーが発生しています。しばらく時間をおいてからアクセスしてください。問題が解決しない場合は、弊社サポートにお問い合わせください。</value>
+  </data>
+  <data name="Error_500_Page_Title" xml:space="preserve">
+    <value>システム エラーが発生しました</value>
+  </data>
+  <data name="Error_Sql_Heading" xml:space="preserve">
+    <value>SQL データベースに接続できませんでした。</value>
+  </data>
+  <data name="Error_Sql_Message" xml:space="preserve">
+    <value>このページは、このプロジェクトで提供される SQL データベースへの接続が必要です。web.config ファイルの接続文字列を変更することにより、問題が解決する場合があります。接続文字列についての詳細は、README.txt をご覧ください。</value>
+  </data>
+  <data name="Error_Sql_Page_Title" xml:space="preserve">
+    <value>SQL エラー</value>
+  </data>
+</root>

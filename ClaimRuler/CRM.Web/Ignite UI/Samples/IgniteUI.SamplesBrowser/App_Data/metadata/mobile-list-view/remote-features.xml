@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Remote Features</Title>
+    <Description>The ListView supports sorting and filtering remotely. The ListView can request data from a variety of endpoints including OData, REST-based services, and ASP.NET MVC Action Methods. In this example, the ASP.NET MVC controller is decorated with the ListViewDataSourceAction attribute. By using this attribute, you can return an unmodified collection and the ListViewDataSourceAction will apply the appropriate filtering and sorting parameters from the request URL.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Adding to Web Page" TopicName="igListView_Adding_igListView_to_a_Web_Page" />
+      <HelpTopic Title="Overview" TopicName="igListView_Overview" />
+      <HelpTopic Title="Known Issues and Limitations" TopicName="igListView_Known_Issues" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>リモート機能</Title>
+    <Description>ListView はリモート並べ替えとフィルタリングをサポートします。ListView は OData、REST サービス、ASP.NET MVC アクション メソッドなどのエンドポイントからデータを要求できます。このサンプルでは、ASP.NET MVC コントローラーに ListViewDataSourceAction 属性を使用しています。この属性を使用すると、変更されなかったコレクションを返します。ListViewDataSourceAction は要求 URL から適切なフィルタリングと並べ替えパラメーターを適用します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="Web ページへの追加" TopicName="igListView_Adding_igListView_to_a_Web_Page" />
+      <HelpTopic Title="概要" TopicName="igListView_Overview" />
+      <HelpTopic Title="既知の問題と制限" TopicName="igListView_Known_Issues" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

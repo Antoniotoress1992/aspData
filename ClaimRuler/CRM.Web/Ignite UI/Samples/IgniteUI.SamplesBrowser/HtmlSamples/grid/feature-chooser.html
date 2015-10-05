@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="../../igniteui/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+    <link href="../../igniteui/css/structure/infragistics.css" rel="stylesheet" />
+
+    <script src="../../js/modernizr.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="../../igniteui/js/infragistics.core.js"></script>
+    <script src="../../igniteui/js/infragistics.lob.js"></script>
+
+</head>
+<body>
+
+    <table id="grid"></table>
+
+    <script src="../../data-files/northwind.js"></script>
+    <script>
+        $(function () {
+            $("#grid").igGrid({
+                primaryKey: "EmployeeID",
+                width: '100%',
+                columns: [
+                    { headerText: "Employee ID", key: "EmployeeID", dataType: "number", width: "15%" },
+                    { headerText: "First Name", key: "FirstName", dataType: "string", width: "25%" },
+                    { headerText: "Last Name", key: "LastName", dataType: "string", width: "25%"},
+                    { headerText: "Title", key: "Title", dataType: "string", width: "35%" }
+                ],
+                autofitLastColumn: false,
+                autoGenerateColumns: false,
+                dataSource: northwind,
+                responseDataKey: "results",
+                features: [
+                    {
+                        name: "Sorting",
+                        type: "local",
+                        mode: "multi"
+                    },
+                    {
+                        name: "Filtering",
+                        type: "local",
+                        mode: "advanced"
+                    },
+                    {
+                        name: "Hiding"
+                    },
+                    {
+                        name: "ColumnMoving"
+                    },
+                    {
+                        name: "Summaries"
+                    }
+                ]
+            });
+        });
+     </script>
+</body>
+</html>

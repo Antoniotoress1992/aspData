@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Radial Menu</Name>
+    <Description>A context menu that presents items in a circular arrangement.</Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="lblOptions" Value="Options"/>
+      <LocalizedSampleString Key="lblRadialMenuWidth" Value="Radial Menu Width:"/>
+      <LocalizedSampleString Key="lblRadialMenuHeight" Value="Radial Menu Height:"/>
+      <LocalizedSampleString Key="lblCloseOnSelect" Value="Close Menu on Selecting an Item"/>
+      <LocalizedSampleString Key="lblMinimumWedgeCount" Value="Minimum Wedge Count:"/>
+      <LocalizedSampleString Key="lblStartAngleOfWedges" Value="StartAngleOfWedges:"/>
+      <LocalizedSampleString Key="lblWedgeIndex" Value="Wedge Index:"/>
+      <LocalizedSampleString Key="lblWedgeSpan" Value="Wedge Span:"/>
+      <LocalizedSampleString Key="btnBold" Value="Bold"/>
+      <LocalizedSampleString Key="btnItalic" Value="Italic"/>
+      <LocalizedSampleString Key="btnSet" Value="Set"/>
+      <LocalizedSampleString Key="btnForeground" Value="Foreground"/>
+      <LocalizedSampleString Key="btnBackground" Value="Background"/>
+      <LocalizedSampleString Key="btnColor" Value="Color"/>
+      <LocalizedSampleString Key="btnFontSize" Value="Font Size"/>
+      <LocalizedSampleString Key="btnFont" Value="Font"/>
+      <LocalizedSampleString Key="errIntegerValue" Value="Please specify an integer value."/>
+      <LocalizedSampleString Key="errIntegerValue1More" Value="Please specify an integer value bigger than 0."/>
+      <LocalizedSampleString Key="ContentText" Value="The Radial Menu control is essentially a context menu presenting its items in a circular arrangement around a center button. The circular arrangement of the items speeds up items selection, because each item is equally positioned in relation to the center. The Radial Menu supports different item types for choosing numerical values, color values or performs actions. Sub-Items are also supported.&lt;br/&gt;By default the only visible part of the Radial Menu is the center button. When the user click on the center button, the Radial Menu opens and shows the root level menu items. Clicking on the center button when the root level items are shown closes the Radial Menu. To navigate Sub-Items the user should click the arrows in the outer ring and the corresponding sub-items group will be displayed. Clicking on the center button when a sub-items group is shown will display the items on the previous level."/>
+      <LocalizedSampleString Key="clicked" Value="clicked"/>
+    </LocalizedSampleStrings>
+    <PageKeywords>igRadialMenu</PageKeywords>
+    <SampleGroups>
+      <SampleGroup ID="1">Overview</SampleGroup>
+      <SampleGroup ID="2">Styling</SampleGroup>
+    </SampleGroups>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Radial Menu</Name>
+    <Description>円配置で項目を表示するコンテキスト メニュー。</Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="lblOptions" Value="オプション"/>
+      <LocalizedSampleString Key="lblRadialMenuWidth" Value="ラジアル メニューの幅:"/>
+      <LocalizedSampleString Key="lblRadialMenuHeight" Value="ラジアル メニューの高さ:"/>
+      <LocalizedSampleString Key="lblCloseOnSelect" Value="項目を選択した後にメニューを閉じる"/>
+      <LocalizedSampleString Key="lblMinimumWedgeCount" Value="ウェッジの最小数:"/>
+      <LocalizedSampleString Key="lblStartAngleOfWedges" Value="StartAngleOfWedges:"/>
+      <LocalizedSampleString Key="lblWedgeIndex" Value="ウェッジのインデックス:"/>
+      <LocalizedSampleString Key="lblWedgeSpan" Value="ウェッジのスパン:"/>
+      <LocalizedSampleString Key="btnBold" Value="太字"/>
+      <LocalizedSampleString Key="btnItalic" Value="イタリック"/>
+      <LocalizedSampleString Key="btnSet" Value="設定"/>
+      <LocalizedSampleString Key="btnForeground" Value="前景"/>
+      <LocalizedSampleString Key="btnBackground" Value="背景"/>
+      <LocalizedSampleString Key="btnColor" Value="色"/>
+      <LocalizedSampleString Key="btnFontSize" Value="フォント サイズ"/>
+      <LocalizedSampleString Key="btnFont" Value="フォント"/>
+      <LocalizedSampleString Key="errIntegerValue" Value="整数値を指定してください。"/>
+      <LocalizedSampleString Key="errIntegerValue1More" Value="0 より大きい整数値を指定してください。"/>
+      <LocalizedSampleString Key="ContentText" Value="ラジアル メニュー コントロールは、中央ボタンの周りに項目を表示するコンテキスト メニューです。項目を円形に配置することで項目をすばやく選択できます。各項目は中央に対して均等に配置されます。ラジアル メニューは、数値、色値、または操作を実行する項目タイプをサポートします。サブ項目もサポートします。&lt;br/&gt;デフォルトで、ラジアル メニューの中央ボタンのみを表示します。ユーザーが中央ボタンをクリックすると、ラジアル メニューが開き、ルート レベルのメニュー項目を表示します。ルート レベル項目が表示されたときに中央ボタンをクリックすると、ラジアル メニューが閉じます。サブ項目に移動するには、外部リングの矢印をクリックし対応するサブ項目グループを表示します。サブ項目グループが表示されたときに中央ボタンをクリックすると、以前のレベルの項目を表示します。"/>
+      <LocalizedSampleString Key="clicked" Value="をクリックしました"/>
+    </LocalizedSampleStrings>
+    <PageKeywords>igRadialMenu</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>ui.igRadialMenu</ClientApiUrl>
+  <ForumNumber>832</ForumNumber>
+  <IconImage>jquery-radial-gauge.png</IconImage>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <Status>New</Status>
+  <TOC>
+    <Sample>button-items</Sample>
+    <Sample>color-items</Sample>
+    <Sample>configure-items</Sample>
+    <Sample>numeric-items</Sample>
+    <Sample>mvc-initialization</Sample>
+  </TOC>
+</Component>

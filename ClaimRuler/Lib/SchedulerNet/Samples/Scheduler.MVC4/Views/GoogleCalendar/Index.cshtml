@@ -1,0 +1,17 @@
+@{
+    ViewBag.Title = "Scheduler | Google Calendar";
+    ViewBag.SampleTitle = "Integration with Google Calendar";
+    ViewBag.ShortDescription = "Loading events from calendar";
+    ViewBag.LongDescription = "Events get loaded from the public google calendar. <br />    .";
+}
+
+
+@Html.Raw(Model.Render()) 
+<script>
+    scheduler.attachEvent("onEventLoading", function (event_object) {
+        var offset = new Date(event_object.start_date).getTimezoneOffset();
+        event_object.start_date = new Date(event_object.start_date.getTime() - offset * 60 * 1000);
+        event_object.end_date = new Date(event_object.end_date.getTime() - offset * 60 * 1000);
+        return true;
+    });
+</script>

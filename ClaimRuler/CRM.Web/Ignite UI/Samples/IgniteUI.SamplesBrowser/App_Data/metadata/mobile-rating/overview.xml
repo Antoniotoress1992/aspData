@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">mobile-rating/basic-usage</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      The Mobile Rating control is a jQuery Mobile widget that has been written and adapted specifically for mobile form factors, 
+      allowing for easy interaction with Touch gestures. See the complete list of samples in the menu.
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+     Mobile Rating コントロールは、モバイル端末用に開発された jQuery Mobile ウィジェットです。タッチ ジェスチャが最適化されています。サンプルをすべて表示するには、メニューを参照してください。
+    ]]></Description>
+  </LocalizedContent>
+</Sample>

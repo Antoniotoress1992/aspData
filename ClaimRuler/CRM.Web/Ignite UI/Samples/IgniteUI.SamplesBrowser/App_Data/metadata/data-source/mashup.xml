@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Mashup</Title>
+    <Description>
+        When using the igMashupDataSource you can define and combine different sources into one source. This sample demonstrates how to combine data in JavaScript Array and XML into one Mashup data source.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>マッシュアップ</Title>
+    <Description>
+      igMashupDataSource を使用するときに、さまざまなデータ ソースを定義して 1 つのデータ ソースに結合できます。このサンプルは JavaScript 配列および XML 形式のデータを 1 つのマッシュアップ データ ソースに結合する方法を紹介します。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Column Template</Title>
+    <Description>
+        This sample shows how to insert a button into a column using igGrid column template functionality.
+        In the most right column there is button for each row. Pressing a button will delete its containing row.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+      <Title>列テンプレート</Title>
+    <Description>
+      このサンプルは、igGrid の列テンプレート機能を使用して列にボタンを挿入する方法を紹介します。
+      各行の右の列にボタンがあります。ボタンを押すと、含まれる行を削除します。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

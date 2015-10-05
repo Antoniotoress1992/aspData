@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="771d6dd05687431ca8da7272d268ae1d" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="CRMModel.Action" Width="1.5" PointX="7.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.AdjusterDeploymentAddress" Width="1.5" PointX="21.75" PointY="97.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.AdjusterDeploymentEvent" Width="1.5" PointX="5.25" PointY="96" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.AdjusterHandleClaimType" Width="1.5" PointX="8.25" PointY="96.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.AdjusterLicenseAppointmentType" Width="1.5" PointX="3" PointY="87.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.AdjusterMaster" Width="1.5" PointX="3" PointY="91.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.AdjusterNote" Width="1.5" PointX="8.25" PointY="93.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.AdjusterReference" Width="1.5" PointX="5.25" PointY="101.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.AdjusterServiceArea" Width="1.5" PointX="5.25" PointY="92.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.AdjusterSettingsPayroll" Width="1.5" PointX="5.25" PointY="112.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.ApplicationConfiguration" Width="1.5" PointX="4.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.AppraiserMaster" Width="1.5" PointX="14.25" PointY="69.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.BusinessRule" Width="1.5" PointX="13.5" PointY="115.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.Carrier" Width="1.5" PointX="5.25" PointY="104.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.CarrierChannel" Width="1.5" PointX="10.5" PointY="102" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.CarrierComment" Width="1.5" PointX="10.5" PointY="111.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.CarrierContact" Width="1.5" PointX="33" PointY="105.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.CarrierDocument" Width="1.5" PointX="7.5" PointY="114.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.CarrierInvoiceProfile" Width="1.5" PointX="13.5" PointY="109.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.CarrierInvoiceProfileFeeItemized" Width="1.5" PointX="21.75" PointY="114.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.CarrierInvoiceProfileFeeProvision" Width="1.5" PointX="15.75" PointY="124.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.CarrierInvoiceProfileFeeSchedule" Width="1.5" PointX="15.75" PointY="127.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.CarrierInvoiceType" Width="1.5" PointX="11.25" PointY="121.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.CarrierLocation" Width="1.5" PointX="10.5" PointY="115.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.ChannelType" Width="1.5" PointX="8.25" PointY="100.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.CityMaster" Width="1.5" PointX="3" PointY="116.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.Claim" Width="1.5" PointX="14.25" PointY="87.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.ClaimComment" Width="1.5" PointX="21.75" PointY="93.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.ClaimContact" Width="1.5" PointX="27" PointY="92" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.ClaimDocument" Width="1.5" PointX="19.5" PointY="92.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.ClaimExpense" Width="1.5" PointX="11.25" PointY="95.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.ClaimImage" Width="1.5" PointX="24.75" PointY="97.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.ClaimLimit" Width="1.5" PointX="22.5" PointY="89" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.Claims" Width="1.5" PointX="6.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.ClaimService" Width="1.5" PointX="24.75" PointY="92" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.ClaimSubLimit" Width="1.5" PointX="19.5" PointY="88.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.Client" Width="1.5" PointX="8.25" PointY="103.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.ClientFieldColumn" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.ClientLetterTemplate" Width="1.5" PointX="8.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.Contact" Width="1.5" PointX="24.75" PointY="101.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.ContractorMaster" Width="1.5" PointX="14.25" PointY="74.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.CountryMaster" Width="1.5" PointX="3" PointY="105.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.DataForm" Width="1.5" PointX="2.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.DataFormField" Width="1.5" PointX="5" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.DataFormFieldTemplate" Width="1.5" PointX="7.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.DocumentCategory" Width="1.5" PointX="17.25" PointY="79.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.DocumentListMaster" Width="1.5" PointX="2.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.EarningCode" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.ExpenseType" Width="1.5" PointX="9" PointY="89.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.FieldColumn" Width="1.5" PointX="9.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.FloodPolicyMaster" Width="1.5" PointX="14.25" PointY="80" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.HabitableMaster" Width="1.5" PointX="14.25" PointY="65.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.ImportField" Width="1.5" PointX="10.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.InspectorMaster" Width="1.5" PointX="14.25" PointY="61.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.InsuranceType" Width="1.5" PointX="22.5" PointY="127.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.Invitee" Width="1.5" PointX="33" PointY="101.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.Invoice" Width="1.5" PointX="22.5" PointY="105.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.InvoiceDetail" Width="1.5" PointX="30.75" PointY="105.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.InvoiceFeeProfile" Width="1.5" PointX="11.25" PointY="124.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.InvoiceFeeProfileDetail" Width="1.5" PointX="13.5" PointY="124.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.InvoiceFeeProfileProvision" Width="1.5" PointX="13.5" PointY="128.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.InvoiceServiceType" Width="1.5" PointX="22.5" PointY="78.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.InvoiceServiceUnit" Width="1.5" PointX="20.25" PointY="79.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.LeadComment" Width="1.5" PointX="27.75" PointY="102.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.LeadContact" Width="1.5" PointX="24.75" PointY="121.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.LeadContactType" Width="1.5" PointX="22.5" PointY="121.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.LeadDocumentList" Width="1.5" PointX="5" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.LeadInvoice" Width="1.5" PointX="18.75" PointY="110" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.LeadInvoiceDetail" Width="1.5" PointX="24" PointY="116.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.LeadLog" Width="1.5" PointX="8.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.LeadPolicy" Width="1.5" PointX="27.75" PointY="107" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.LeadPolicyCoverage" Width="1.5" PointX="30" PointY="112.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.LeadPolicyDamageType" Width="1.5" PointX="33" PointY="114.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.LeadPolicyLienholder" Width="1.5" PointX="21.75" PointY="111.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.LeadPolicyType" Width="1.5" PointX="6" PointY="88.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.LeadReportGenerateLog" Width="1.5" PointX="10.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.Leads" Width="1.5" PointX="16.5" PointY="88.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.LeadsDocument" Width="1.5" PointX="18.75" PointY="142.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.LeadsImage" Width="1.5" PointX="18.75" PointY="147.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.LeadSourceMaster" Width="1.5" PointX="14.25" PointY="120.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.Ledger" Width="1.5" PointX="33" PointY="108.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.Limit" Width="1.5" PointX="20.25" PointY="84.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.Mortgagee" Width="1.5" PointX="11.25" PointY="105.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.OtherSourceMaster" Width="1.5" PointX="14.25" PointY="131.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.OwnerSameMaster" Width="1.5" PointX="14.25" PointY="135" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.PolicyLienholder" Width="1.5" PointX="33" PointY="117.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.PolicyLimit" Width="1.5" PointX="36" PointY="113.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.PolicyNote" Width="1.5" PointX="36" PointY="108.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.PolicySubLimit" Width="1.5" PointX="30" PointY="131.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.ProducerMaster" Width="1.5" PointX="14.25" PointY="138.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.ProgressStatus" Width="1.5" PointX="11.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.Recurrence" Width="1.5" PointX="30" PointY="96.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.Reminder" Width="1.5" PointX="30" PointY="92.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.ReminderMaster" Width="1.5" PointX="12" PointY="154.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.ReportedToInsurerMaster" Width="1.5" PointX="14.25" PointY="142.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.RoleAction" Width="1.5" PointX="0.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.Rule" Width="1.5" PointX="11.25" PointY="128.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.RuleException" Width="1.5" PointX="24.75" PointY="111.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.RuleObject" Width="1.5" PointX="22.5" PointY="124.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.SecLoginLog" Width="1.5" PointX="2.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.SecModule" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.SecondaryProducerMaster" Width="1.5" PointX="14.25" PointY="146.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.SecRole" Width="1.5" PointX="17.25" PointY="83.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.SecRoleInvoiceApprovalPermission" Width="1.5" PointX="19.5" PointY="107" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.SecRoleModule" Width="1.5" PointX="19.5" PointY="42" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.SecUser" Width="1.5" PointX="19.5" PointY="96.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.SecUserLock" Width="1.5" PointX="21.75" PointY="101.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.SiteInspectionCompleteMaster" Width="1.5" PointX="14.25" PointY="150.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.StateMaster" Width="1.5" PointX="0.75" PointY="95.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.StatusMaster" Width="1.5" PointX="14.25" PointY="153.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.SubLimitOfLiabilityMaster" Width="1.5" PointX="25.5" PointY="71.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.SubStatusMaster" Width="1.5" PointX="14.25" PointY="158.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.sysdiagrams" Width="1.5" PointX="11.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.Task" Width="1.5" PointX="27.75" PointY="95" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.TaskPriority" Width="1.5" PointX="25.5" PointY="89.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.TaskReminderMaster" Width="1.5" PointX="12.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.TaskStatus" Width="1.5" PointX="12.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.TypeOfDamageMaster" Width="1.5" PointX="25.5" PointY="74.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.TypeOfPropertyMaster" Width="1.5" PointX="14.25" PointY="163.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.UmpireMaster" Width="1.5" PointX="14.25" PointY="166.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.WebformSourceMaster" Width="1.5" PointX="14.25" PointY="172.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.WindPolicyMaster" Width="1.5" PointX="14.25" PointY="175.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.ZipCodeMaster" Width="1.5" PointX="3" PointY="109" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.PropertyType" Width="1.5" PointX="12.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.vw_Adjuster" Width="1.5" PointX="13.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.vw_AdjusterPayout" Width="1.5" PointX="14.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.vw_AdjusterPayoutSubReport" Width="1.5" PointX="14.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.vw_AdjusterPayrollForAllBilled" Width="1.5" PointX="14.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.vw_AdjusterPayrollForAllBilledDetailed" Width="1.5" PointX="4.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.vw_ClaimLimit" Width="1.5" PointX="16.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.vw_ClaimsClosedListing" Width="1.5" PointX="0.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.vw_closeLeadClaim" Width="1.5" PointX="16.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.vw_Contact" Width="1.5" PointX="16.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.vw_FieldColumn" Width="1.5" PointX="10.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.vw_FormField" Width="1.5" PointX="16.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.vw_InvoiceApprovalQueue" Width="1.5" PointX="16.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.vw_Lead_Search" Width="1.5" PointX="18.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.vw_OpenClaimsListing" Width="1.5" PointX="18.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.vw_openLeadClaim" Width="1.5" PointX="18.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.vw_Reminder" Width="1.5" PointX="10.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMModel.vw_Task" Width="1.5" PointX="18.75" PointY="19.75" IsExpanded="true" />
+        <AssociationConnector Association="CRMModel.FK__AdjusterD__Deplo__0CFADF99" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK__AdjusterD__UserI__07420643" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK__AdjusterD__Adjus__0C06BB60" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_AdjusterHandleClaimType_AdjusterMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_AdjusterHandleClaimType_LeadPolicyType" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_AdjusterServiceArea_AdjusterLicenseAppointmentType" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK__AdjusterS__Adjus__7BD05397" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_AdjusterMaster_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_AdjusterMaster_DeploymentState" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_AdjusterNote_AdjusterMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_AdjusterReference_AdjusterMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_AdjusterServiceArea_AdjusterMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_Claim_AdjusterMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_ClaimExpense_AdjusterMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_ClaimService_AdjusterMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadAdjuster" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_LeadInvoice_AdjusterMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadPolicy_Adjuster" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_Ledger_AdjusterMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_AdjusterNote_SecUser" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_AdjusterServiceArea_StateMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_Lead_Appraiser" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_BusinessRule_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_BusinessRule_Rule" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_RuleException_BusinessRule" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_Carrier_CityMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_Carrier_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_Carrier_stateMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_Carrier_ZipCodeMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_CarrierChannel_CarrierChannel" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_CarrierComment_Carrier" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_CarrierContact_Carrier" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_CarrierDocument_Carrier" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_CarrierInvoiceProfile_Carrier" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_CarrierLocation_Carrier" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_LeadInvoice_Carrier" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadPolicy_Carrier" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_CarrierChannel_ChannelType" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_CarrierComment_SecUser" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_CarrierContact_Contact" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_CarrierInvoiceProfile_CarrierInvoiceType" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_CarrierInvoiceProfile_InvoiceFeeProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_CarrierInvoiceProfileFeeItemized_CarrierInvoiceProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_CarrierInvoiceProfileFeeProvision_CarrierInvoiceProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_CarrierInvoiceProfileFeeSchedule_CarrierInvoiceProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_Invoice_CarrierInvoiceProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_LeadInvoice_CarrierInvoiceProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_CarrierInvoiceProfileFeeItemized_ExpenseType" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_CarrierInvoiceProfileFeeItemized_InvoiceServiceType" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_Invoice_CarrierInvoiceType" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_CarrierLocation_CityMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_CarrierLocation_CountryMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_CarrierLocation_StateMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_CityMaster_StateMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_Client_CityMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_Contact_CityMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_InsuranceCity" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadCityId" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadPolictyCityMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_Mortgagee_CityMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_Claim_LeadPolicy" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_Claim_StatusMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_Claim_SubStatusMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_ClaimComment_Claim" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_ClaimDocument_Claim" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_ClaimImage_Claim" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_ClaimLimit_Claim" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_ClaimService_Claim" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_ClaimSubLimit_Claim" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_Invoice_Claim" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_ClaimComment_SecUser" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_ClaimContact_Contact" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_ClaimDocument_DocumentCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_ClaimExpense_ClaimExpense" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_ClaimExpense_SecUser" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_ClaimImage_SecUser" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_ClaimLimit_Limit" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_ClaimService_InvoiceServiceType" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_ClaimService_SecUser" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_ClaimSubLimit_PolicySubLimit" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_Client_SecUser" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_Client_StateMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_ClientSecUSer" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_Lead_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_RuleException_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_SecRoleInvoiceApprovalRule_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_Contact_LeadContactType" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_Contact_Leads" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_Contact_SecUser" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_Contact_StateMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_Invitee_Contact" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_Lead_Contractor" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_DataFormFields_DataForm" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_DataFormFieldTemplate_DataForm" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_DataFormFieldTemplate_DataFormFields" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadDocumentList" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadFloodPolicy" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadHabitable" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadInspectorName" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadContactInsuranceType" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_Invitee_Leads" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_Invitee_SecUser" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_Invitee_Task" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_InvoiceDetail_Invoice" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_InvoiceDetail_InvoiceServiceType" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_InvoiceDetail_InvoiceServiceUnit" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_InvoiceFeeProfileDetail_InvoiceFeeProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_InvoiceFeeProfileProvision_InvoiceFeeProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_InvoiceServiceType_InvoiceServiceUnit" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadInvoiceDetail_ServiceType" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadComment" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadCommentUserId" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadContactType" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_Invoice_Lead" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadInvoice" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_Ledger_LeadInvoice" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadPolicty" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadPolictyState" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadPolicy_LeadPolicyType" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadPolicy_Mortgagee" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadPolicy_SubLimitOfLiabilityMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadPolicy_TypeOfDamageMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_LeadPolicyCoverage_LeadPolicy" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_LeadPolicyDamageType_LeadPolicy" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadPolicyStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadPolicySubStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_PolicyLienholder_LeadPolicy" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_PolicyNote_LeadPolicy" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_PolicyPropertyLimit_LeadPolicy" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_PolicySubLimit_LeadPolicy" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_LeadPolicyDamageType_TypeOfDamageMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadPolicyLienholder_Lead" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadPolicyLienholder_Mortgagee" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_InsuranceState" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_Lead" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_Lead_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_Lead_Umpire" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadOtherSource" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadOwnerSame" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadReporterToInsurer" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_LeadsDocument" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_LeadsImage" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadSiteInspectionCompleted" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadSource" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadStateId" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadSubStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadTypeofProperty" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadUserId" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadWebformSource" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_LeadWindPolicy" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_Ledger_Leads" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_PrimaryProducerId" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_SecondaryProducerId" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_PolicyLimit_Limit" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_Mortgagee_StateMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_Mortgagee_ZipCodeMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_PolicyLienholder_Mortgagee" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_PolicyNote_SecUser" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_Recurring_Task" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_Reminder_Task" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_ReminderMaster_StatusMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_RuleException_RuleObject" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_RuleException_SecUser" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_SecModule_SecModule" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_SecRoleModule_SecModule" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_LotteryUser_LotteryRole" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_SecRoleInvoiceApprovalRule_SecRole" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.FK_SecRoleModule_SecRole" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_SecUSer" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="CRMModel.fk_Task_TaskPriority" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="CRMModel.vw_AdjusterNames" Width="1.5" PointX="13.375" PointY="20.75" />
+        <EntityTypeShape EntityType="CRMModel.Xactimate" Width="1.5" PointX="21.75" PointY="0.75" />
+        <EntityTypeShape EntityType="CRMModel.C__leads_20130913" Width="1.5" PointX="0.75" PointY="21.75" />
+        <AssociationConnector Association="CRMModel.FK_ClaimLimit_ClaimLimit" />
+        <AssociationConnector Association="CRMModel.FK_PolicyLimit_ClaimLimit" />
+        <AssociationConnector Association="CRMModel.FK_PolicyLimit_PolicyLimit" />
+        <EntityTypeShape EntityType="CRMModel.Activity" Width="1.5" PointX="21.375" PointY="0.75" />
+        <EntityTypeShape EntityType="CRMModel.InvoiceType" Width="1.5" PointX="0.75" PointY="21.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">bullet-graph/basic-configuration</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+        <![CDATA[
+      The igBulletGraph is an HTML5, canvas-based bullet graph control. It displays a single primary measure and compares to one or more other measures to create a concise data visualization. 
+      The igBulletGraph supports a <a href="~/bullet-graph/scale-labeling-settings">variety of configurations</a> and includes <a href="~/bullet-graph/animated-transitions">animation</a> 
+      and <a href="~/bullet-graph/tooltip-settings">tooltip</a> features. See the complete list of samples in the menu.
+    ]]></Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      igBulletGraph は HTML5 キャンバス ベース ブレット グラフ コントロールです。単一のプライマリ メジャーを表示し、1 つ以上のその他のメジャーと比較し、簡潔なデータ ビジュアライゼーションを作成します。
+      igBulletGraph は、<a href="~/bullet-graph/scale-labeling-settings">複数の構成</a>をサポートし、<a href="~/bullet-graph/animated-transitions">アニメーション</a>および<a href="~/bullet-graph/tooltip-settings">ツールチップ</a>機能を提供します。サンプルをすべて表示するには、メニューを参照してください。
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

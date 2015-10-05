@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Grid Integration</Title>
+    <Description>This sample demonstrates how to use the igLinearGauge control in a grid.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>グリッドの結合</Title>
+    <Description>このサンプルは、igLinearGauge コントロールをグリッドで使用する方法を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

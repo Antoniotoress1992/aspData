@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>API and Events</Title>
+    <Description>This sample demonstrates how to handle events in the Dialog Window control and API usage.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Event Reference" TopicName="igDialog Event Reference" />
+      <HelpTopic Title="Method Reference" TopicName="igDialog Method Reference" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>API およびイベント</Title>
+    <Description>このサンプルでは、ダイアログ ウィンドウ コントロールのイベントを処理および API を使用する方法を紹介します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="イベント リファレンス" TopicName="igDialog Event Reference" />
+      <HelpTopic Title="メソッド リファレンス" TopicName="igDialog Method Reference" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <TOC>
+    <Sample>api-and-events</Sample>
+  </TOC>
+  <IsFullPostBack>False</IsFullPostBack>
+  <MinSampleSize>PhonePortrait</MinSampleSize>
+</Sample>

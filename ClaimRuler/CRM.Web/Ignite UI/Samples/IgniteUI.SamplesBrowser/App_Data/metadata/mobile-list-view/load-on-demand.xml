@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Load On Demand</Title>
+    <Description>The ListView supports load-on-demand scenarios in two ways. First, child data can be requested on demand for multi-level layouts using the LoadChildrenOnDemand option. Second, lists can be configured by level to load their own items on demand. On the parent level, this sample demonstrates loading children on demand. When the child level of data is loaded, a portion of the data is loaded and pressing the 'Load more items' buttom loads more of the data. On the server, this sample shows how the request parameters are parsed to manually retrieve the desired items as well as how to configure the JSON response to contain the appropriate schema for the ListView.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Configuring Load-on-Demand" TopicName="igListView_Configuring_Load-on-Demand" />
+      <HelpTopic Title="Overview" TopicName="igListView_Overview" />
+      <HelpTopic Title="Known Issues and Limitations" TopicName="igListView_Known_Issues" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>ロードオンデマンド</Title>
+    <Description>ListView はロードオンデマンドを 2 つの方法でサポートします。最初の方法は、複数レベルのレイアウトで LoadChildrenOnDemand オプションを使用し、子データをロードオンデマンドによって要求できます。他の方法は、リストのレベルに項目をロードオンデマンドで構成できます。オンデマンドで親レベルから子を読み込むサンプルです。子レベルのデータが読み込まれると、データの一部が表示されます。[更に読み込む] ボタンを押すと更にデータを読み込みます。サーバーで要求パラメーターを手動で解析し、項目を取得する方法を紹介します。また、ListView の適切なスキーマを含むために JSON 応答を構成する方法を紹介します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="ロードオンデマンドの構成" TopicName="igListView_Configuring_Load-on-Demand" />
+      <HelpTopic Title="概要" TopicName="igListView_Overview" />
+      <HelpTopic Title="既知の問題と制限" TopicName="igListView_Known_Issues" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+</Sample>

@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Index>
+  <TOC>
+    <Link ID="1"/>
+    <Link ID="2"/>
+    <Link ID="3"/>
+    <Link ID="4"/>
+    <TocGroup ID="1">
+      <ControlGroup ID="1" Class="data-grids">
+        <Component>grid</Component>
+        <Component>hierarchical-grid</Component>
+      </ControlGroup>
+      <ControlGroup ID="2" Class="olap-pivot">
+        <Component>pivot-data-selector</Component>
+        <Component>pivot-grid</Component>
+        <Component>pivot-view</Component>
+      </ControlGroup>
+      <ControlGroup ID="3" Class="data-visualization">
+        <Component>data-chart</Component>
+        <Component>pie-chart</Component>
+        <Component>doughnut-chart</Component>
+        <Component>funnel-chart</Component>
+        <Component>radial-gauge</Component>
+        <Component>sparkline</Component>
+        <Component>bullet-graph</Component>
+        <Component>linear-gauge</Component>
+        <Component>map</Component>
+        <Component>barcode</Component>
+				<Component>zoombar</Component>
+      </ControlGroup>
+      <ControlGroup ID="4" Class="layout">
+        <Component>layout-manager</Component>
+        <Component>splitter</Component>
+        <Component>tile-manager</Component>
+      </ControlGroup>
+      <ControlGroup ID="5" Class="editors">
+        <Component>combo</Component>
+        <Component>date-picker</Component>
+        <Component>editors</Component>
+        <Component>html-editor</Component>
+        <Component>split-button</Component>
+      </ControlGroup>
+      <ControlGroup ID="6" Class="frameworks">
+        <Component>loader</Component>
+        <Component>data-source</Component>
+        <Component>infragistics-documents</Component>
+        <Component>infragistics-excel</Component>
+        <Component>infragistics-word</Component>
+        <Component>templating-engine</Component>        
+      </ControlGroup>
+      <ControlGroup ID="7" Class="interactions">
+        <Component>tree</Component>
+        <Component>dialog-window</Component>
+        <Component>file-upload</Component>
+        <Component>popover</Component>
+        <Component>rating</Component>
+        <Component>video-player</Component>
+        <Component>radial-menu</Component>
+      </ControlGroup>
+      <ControlGroup ID="8" Class="mobile-phone">
+        <Component>mobile-list-view</Component>
+        <Component>mobile-rating</Component>
+        <Component>mobile-button</Component>
+        <Component>mobile-checkbox</Component>
+        <Component>mobile-checkbox-group</Component>
+        <Component>mobile-collapsible</Component>
+        <Component>mobile-collapsible-set</Component>
+        <Component>mobile-radiobutton-group</Component>
+        <Component>mobile-selectmenu</Component>
+        <Component>mobile-slider</Component>
+        <Component>mobile-toggleswitch</Component>
+        <Component>mobile-textbox</Component>
+        <Component>mobile-page</Component>
+        <Component>mobile-pagecontent</Component>
+        <Component>mobile-pagefooter</Component>
+        <Component>mobile-pageheader</Component>
+        <Component>mobile-popup</Component>
+        <Component>mobile-link</Component>
+        <Component>mobile-navbar</Component>
+      </ControlGroup>
+      <ControlGroup ID="9" Class="themes">
+        <Component>themes</Component>
+      </ControlGroup>
+    </TocGroup>
+  </TOC>
+  <LocalizedContent Language="en">
+    <ControlGroups>
+      <ControlGroup ID="1">Data Grids</ControlGroup>
+      <ControlGroup ID="2">OLAP Pivot</ControlGroup>
+      <ControlGroup ID="3">Data Visualization</ControlGroup>
+      <ControlGroup ID="4">Layout</ControlGroup>
+      <ControlGroup ID="5">Editors</ControlGroup>
+      <ControlGroup ID="6">Frameworks</ControlGroup>
+      <ControlGroup ID="7">Interactions</ControlGroup>
+      <ControlGroup ID="8">Mobile Phone</ControlGroup>
+      <ControlGroup ID="9">Theming</ControlGroup>
+    </ControlGroups>
+    <TocGroups>
+      <TocGroup ID="1">jQuery Controls</TocGroup>
+    </TocGroups>
+    <Links>
+      <Link ID="1" LinkUrl="~/download" Text="Download"/>
+      <Link ID="2" LinkUrl="~/application-samples" Text="Application Samples"/>
+      <Link ID="3" LinkUrl="~/getting-started" Text="Getting Started"/>
+      <Link ID="4" LinkUrl="http://labs.infragistics.com/jquery/configure/" Text="Configurator"/>
+    </Links>
+    <ApplicationSamples>
+      <ImageLink LinkUrl="http://labs.infragistics.com/jquery/showcases/mobile/" ImageAltText="Mobile Samples" ImageUrl="~/images/marketing/app-samples/mobile-samples.png" Text="Mobile Samples"/>
+      <ImageLink LinkUrl="http://labs.infragistics.com/jquery/showcases/healthcare" ImageAltText="Healthcare Dashboard" ImageUrl="~/images/marketing/app-samples/infragistics_healthcare.png" Text="Healthcare Dashboard"/>
+      <ImageLink LinkUrl="http://labs.infragistics.com/jquery/showcases/finance" ImageAltText="Personal Finance Dashboard" ImageUrl="~/images/marketing/app-samples/infragistics_finance.png" Text="Personal Finance Dashboard"/>
+    </ApplicationSamples>
+    <Videos>
+      <Video Title="Download and Installation" VideoUrl="http://www.infragistics.com/products/aspnet/data-grid/videos/downloading-installing-infragistics-products" />
+      <Video Title="Upgrading a Project or Solution" VideoUrl="http://www.infragistics.com/products/windows-forms/grid/videos/version-utility-how-to" />
+      <Video Title="Finding and Using Help" VideoUrl="http://www.infragistics.com/products/aspnet/data-grid/videos/finding-using-help" />
+      <Video Title="Bind the igGrid to JSON Data" VideoUrl="http://www.infragistics.com/products/jquery/data-source/videos/binding-iggrid-to-odata-using-igdatasource" />
+      <Video Title="Setting Up Your ASP.NET MVC Project" VideoUrl="http://www.infragistics.com/products/jquery/grid/videos/setting-up-your-mvc-project" />
+    </Videos>
+    <YouTubeVideos>
+      <Video Title="Downloading and Installing Infragistics Products"
+        Description="Learn how easy it is to download and install Infragistics Products. If you plan on doing pure client development using Javascript, then you can pick the IDE of your choice to write HTML and Javascript and just use jQuery script extensions with CSS styles to build your application interface with IGNITE UI."
+        VideoUrl="http://www.youtube.com/embed/DYJ0wdc0bf4" />
+      <Video Title="Bind the igGrid to OData"
+        Description="Get started with the basics of data binding. Learn how to bind the Infragistics grid to OData using igDataSource."
+        VideoUrl="http://www.youtube.com/embed/wht84sOS8hg" />
+      <Video Title="Downloading and Installing Infragistics Products2"
+        Description="Learn how easy it is to download and install Infragistics Products. If you plan on doing pure client development using Javascript, then you can pick the IDE of your choice to write HTML and Javascript and just use jQuery script extensions with CSS styles to build your application interface with IGNITE UI."
+        VideoUrl="http://www.youtube.com/embed/DYJ0wdc0bf4" />
+    </YouTubeVideos>
+    <HelpTopics>
+      <HelpTopic Title="Ignite UI Overview" TopicName="NetAdvantage_for_jQuery_Overview" />
+      <HelpTopic Title="Using JavaScript Resources" TopicName="Deployment_Guide_JavaScript_Resouces" />
+      <HelpTopic Title="Styling and Theming" TopicName="Deployment_Guide_Styling_and_Theming" />
+      <HelpTopic Title="Using the Infragistics Loader" TopicName="Using_Infragistics_Loader" />
+      <HelpTopic Title="Using Browsers that Don't Support HTML5 or CSS3" TopicName="Deployment_Guide_Using_NetAdvantage_for_jQuery_in_Browsers_that_Dont_Support_HTML5_or_CSS3" Description=""/>
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <ControlGroups>
+      <ControlGroup ID="1">データ グリッド</ControlGroup>
+      <ControlGroup ID="2">OLAP ピボット</ControlGroup>
+      <ControlGroup ID="3">データ ビジュアライゼーション</ControlGroup>
+      <ControlGroup ID="4">レイアウト</ControlGroup>
+      <ControlGroup ID="5">エディター</ControlGroup>
+      <ControlGroup ID="6">フレームワーク</ControlGroup>
+      <ControlGroup ID="7">操作</ControlGroup>
+      <ControlGroup ID="8">モバイル</ControlGroup>
+      <ControlGroup ID="9">テーマ</ControlGroup>
+    </ControlGroups>
+    <TocGroups>
+      <TocGroup ID="1">jQuery コントロール</TocGroup>
+    </TocGroups>
+    <Links>
+      <Link ID="1" LinkUrl="~/download" Text="ダウンロード"/>
+      <Link ID="2" LinkUrl="~/application-samples" Text="アプリケーション サンプル"/>
+      <Link ID="3" LinkUrl="~/getting-started" Text="ヘルプ リソース"/>
+      <Link ID="4" LinkUrl="http://labs.infragistics.com/jquery/configure/" Text="デザイナー (英語)"/>
+    </Links>
+    <ApplicationSamples>
+      <ImageLink LinkUrl="http://labs.infragistics.com/jquery/showcases/mobile/" ImageAltText="モバイル サンプル" ImageUrl="~/images/marketing/app-samples/mobile-samples.png" Text="モバイル サンプル"/>
+      <ImageLink LinkUrl="http://labs.infragistics.com/jquery/showcases/healthcare" ImageAltText="ヘルスケア ダッシュボード" ImageUrl="~/images/marketing/app-samples/infragistics_healthcare.png" Text="ヘルスケア ダッシュボード"/>
+      <ImageLink LinkUrl="http://labs.infragistics.com/jquery/showcases/finance" ImageAltText="ファイナンス ダッシュボード" ImageUrl="~/images/marketing/app-samples/infragistics_finance.png" Text="ファイナンス ダッシュボード"/>
+    </ApplicationSamples>
+    <Videos>
+      <Video Title="ダウンロードとインストール (英語)" VideoUrl="http://www.infragistics.com/products/aspnet/data-grid/videos/downloading-installing-infragistics-products" />
+      <Video Title="プロジェクトまたはソリューションのアップグレード (英語)" VideoUrl="http://www.infragistics.com/products/windows-forms/grid/videos/version-utility-how-to" />
+      <Video Title="ヘルプについて (英語)" VideoUrl="http://www.infragistics.com/products/aspnet/data-grid/videos/finding-using-help" />
+      <Video Title="igGrid を JSON データへのバインド (英語)" VideoUrl="http://www.infragistics.com/products/jquery/data-source/videos/binding-iggrid-to-odata-using-igdatasource" />
+      <Video Title="ASP.NET MVC プロジェクトの設定 (英語)" VideoUrl="http://www.infragistics.com/products/jquery/grid/videos/setting-up-your-mvc-project" />
+    </Videos>
+    <YouTubeVideos>
+      <Video Title="Infragistics 製品のダウンロードとインストール (英語)"
+        Description="Infragistics 製品のダウンロードおよびインストール方法を紹介します。JavaScript を使用してクライアント側で開発する場合、任意の IDE で HTML、Javascript、CSS スタイル、および IGNITE UI の jQuery スクリプトの拡張を使用できます。"
+        VideoUrl="http://www.youtube.com/embed/DYJ0wdc0bf4" />
+      <Video Title="igGrid を OData にバインド (英語)"
+        Description="データ バインディングの基本機能を使用した作業を開始します。igDataSource を使用して Infragistics グリッドを OData にバインドする方法を紹介します。"
+        VideoUrl="http://www.youtube.com/embed/wht84sOS8hg" />
+      <Video Title="Infragistics 製品のダウンロードとインストール 2 (英語)"
+        Description="Infragistics 製品のダウンロードおよびインストール方法を紹介します。JavaScript を使用してクライアント側で開発する場合、任意の IDE で HTML、Javascript、CSS スタイル、および IGNITE UI の jQuery スクリプトの拡張を使用できます。"
+        VideoUrl="http://www.youtube.com/embed/DYJ0wdc0bf4" />
+    </YouTubeVideos>
+    <HelpTopics>
+      <HelpTopic Title="製品の概要" TopicName="NetAdvantage_for_jQuery_Overview" />
+      <HelpTopic Title="JavaScript リソースの使用" TopicName="Deployment_Guide_JavaScript_Resouces" />
+      <HelpTopic Title="スタイル設定およびテーマ設定" TopicName="Deployment_Guide_Styling_and_Theming" />
+      <HelpTopic Title="Infragistics Loader の使用" TopicName="Using_Infragistics_Loader" />
+      <HelpTopic Title="HTML5 と CSS3 をサポートしないブラウザーの使用" TopicName="Deployment_Guide_Using_NetAdvantage_for_jQuery_in_Browsers_that_Dont_Support_HTML5_or_CSS3" Description=""/>
+    </HelpTopics>
+  </LocalizedContent>
+</Index>

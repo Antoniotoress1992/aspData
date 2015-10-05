@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Collapsible</Name>
+    <Description>
+      With a full range of Mobile Layout controls, you can be sure your mobile application's presentation is optimized for mobile devices.
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Main_Course" Value="Main Course" />
+      <LocalizedSampleString Key="Chicken" Value="Chicken" />
+      <LocalizedSampleString Key="Veal" Value="Veal" />
+      <LocalizedSampleString Key="Pork_Chop" Value="Pork Chop" />
+    </LocalizedSampleStrings>
+    <PageKeywords>MobileCollapsible</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Collapsible</Name>
+    <Description>
+      モバイル レイアウト コントロールを使用すると、アプリケーションをモバイル デバイスのために最適化できます。
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Main_Course" Value="メイン コース" />
+      <LocalizedSampleString Key="Chicken" Value="チキン" />
+      <LocalizedSampleString Key="Veal" Value="ビーフ" />
+      <LocalizedSampleString Key="Pork_Chop" Value="ポークチョップ" />
+    </LocalizedSampleStrings>
+    <PageKeywords>MobileCollapsible</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>http://api.jquerymobile.com/collapsible/</ClientApiUrl>
+  <HelpPageName>Collapsible_Landing_Page</HelpPageName>
+  <ForumNumber>692</ForumNumber>
+  <IconImage>jquery-mobile-collapsible.png</IconImage>
+  <ClientRuntime>jQueryMobile</ClientRuntime>
+  <TOC>
+    <Sample>basic-usage</Sample>
+  </TOC>
+</Component>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Server Side Bindings</Title>
+    <Description>
+      This sample shows how to render an igFunnelChart in ASP.NET MVC. The example features two funnel charts. The first one is bound on the server side with a model object passed to the strongly typed Razor view. The second chart is bound to a remote data service.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>サーバー側バインド</Title>
+    <Description>
+      このサンプルは、ASP.NET MVC で igFunnelChart を描画する方法を紹介します。2 つのファンネル チャートを表示します。1 つ目は厳密に型指定された Razor ビューに渡したモデル オブジェクトとサーバー側にバインドされます。2 つ目はリモート データ サービスにバインドされます。
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>サーバー側バインド</Title>
+    <Description>
+      このサンプルは、ASP.NET MVC で igFunnelChart を描画する方法を紹介します。2 つのファンネル チャートを表示します。1 つ目は厳密に型指定された Razor ビューに渡したモデル オブジェクトとサーバー側にバインドされます。2 つ目はリモート データ サービスにバインドされます。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+</Sample>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Layout Manager</Name>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="equal_items" Value="Equal Items" />
+      <LocalizedSampleString Key="variable_items" Value="Variable width/height items" />
+      <LocalizedSampleString Key="left_area" Value="LEFT AREA" />
+      <LocalizedSampleString Key="right_area" Value="RIGHT AREA" />
+      <LocalizedSampleString Key="center_area_caps" Value="CENTER AREA" />
+      <LocalizedSampleString Key="header_area" Value="HEADER - some text here" />
+      <LocalizedSampleString Key="footer_area" Value="FOOTER - some text here " />
+      <LocalizedSampleString Key="center_area" Value="center text" />
+      <LocalizedSampleString Key="heading" Value="Heading" />
+      <LocalizedSampleString Key="grid_size" Value="The grid is a 3 x 3" />
+      <LocalizedSampleString Key="seven_cols_text" Value="This is a paragraph that spans 7 cols" />
+      <LocalizedSampleString Key="two_cols_text_simple" Value="This paragraph spans 2 cols." />
+      <LocalizedSampleString Key="two_cols_text" Value="This is a paragraph that spans 2 cols. it goes to the next line because the above paragraph is wrapped in a 12-col container (pink border) " />
+      <LocalizedSampleString Key="five_cols_text" Value="This is a paragraph that spans 5 cols" />
+      <LocalizedSampleString Key="grid_layout_heading" Value="This sample demonstrates a grid layout where items can have arbitrary row and col spans and arbitrary location in the grid" />
+    </LocalizedSampleStrings>
+    <Description>The Layout Manager component provides different responsive layout modes, which do not use tables. The supported algorithms include a border layout, which has different regions - left, right, center, header and footer; a grid layout, with support for col and row spans; a vertical as well as flow layouts; and a column layout which can be used with css classes only</Description>
+    <PageKeywords>igLayoutManager</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Layout Manager</Name>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="equal_items" Value="等しい項目" />
+      <LocalizedSampleString Key="variable_items" Value="変更可能な幅/高さを持つ項目" />
+      <LocalizedSampleString Key="left_area" Value="左領域" />
+      <LocalizedSampleString Key="right_area" Value="右領域" />
+      <LocalizedSampleString Key="center_area_caps" Value="中央領域" />
+      <LocalizedSampleString Key="header_area" Value="ヘッダー テキスト" />
+      <LocalizedSampleString Key="footer_area" Value="フッター テキスト" />
+      <LocalizedSampleString Key="center_area" Value="中央テキスト" />
+      <LocalizedSampleString Key="heading" Value="見出し" />
+      <LocalizedSampleString Key="grid_size" Value="このグリッドは 3 x 3 です" />
+      <LocalizedSampleString Key="seven_cols_text" Value="この段落は 7 列に及びます " />
+      <LocalizedSampleString Key="two_cols_text_simple" Value="この段落は 2 列に及びます " />
+      <LocalizedSampleString Key="two_cols_text" Value="この段落は 2 列に及びます 。上の段落が 12 列のコンテナー (ピンク境界線) でラップされたため、次の行にラップします。 " />
+      <LocalizedSampleString Key="five_cols_text" Value="この段落は 5 列に及びます " />
+      <LocalizedSampleString Key="grid_layout_heading" Value="このサンプルでは、項目が任意の行スパンおよび列スパンを持ち、グリッドを任意の位置に設定可能なグリッド レイアウトを紹介します。" />
+    </LocalizedSampleStrings>
+    <Description>レイアウト マネージャー コンポーネントは、テーブルを使用しない複数のレスポンシブ レイアウト モードを提供します。サポートされるアルゴリズムは、右、左、中央、ヘッダー、およびフッターの複数の領域を含む境界線レイアウト、列および行スパンをサポートするグリッド レイアウト、垂直方向およびフロー レイアウト、CSS クラスのみに使用可能な列レイアウトなどがあります。</Description>
+    <PageKeywords>igLayoutManager</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>ui.iglayoutmanager</ClientApiUrl>
+  <ForumNumber>752</ForumNumber>
+  <IconImage>jquery-layout-manager.png</IconImage>
+  <HelpPageName>igLayoutManager_Overview</HelpPageName>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <IsFeatureComponent>True</IsFeatureComponent>
+  <Status></Status>
+  <TOC>
+    <Sample>border-layout-markup</Sample>
+    <Sample>border-layout</Sample>
+    <Sample>column-layout-markup</Sample>
+    <Sample>flow-layout</Sample>
+    <Sample>grid-layout</Sample>
+    <Sample>vertical-layout</Sample>
+    <Sample>aspnet-mvc-helper</Sample>
+  </TOC>
+</Component>

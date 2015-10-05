@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="CustomFields">
+  <DataContextMoniker Name="/CustomFieldsDataContext" />
+  <nestedChildShapes>
+    <classShape Id="03f0cc42-acc9-428a-8ee0-b119b17d667d" absoluteBounds="2, 0.625, 2, 1.9631982421875">
+      <DataClassMoniker Name="/CustomFieldsDataContext/ColoredEvent" />
+      <nestedChildShapes>
+        <elementListCompartment Id="63a02f03-bdfe-4b90-87f2-b026ab5feb36" absoluteBounds="2.015, 1.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cd1e777b-cb50-4632-8f82-54fcc837b6b4" absoluteBounds="5.125, 0.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/CustomFieldsDataContext/Grid" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6fa4ecac-a0c6-47d5-b919-a721b5bd38d5" absoluteBounds="5.14, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

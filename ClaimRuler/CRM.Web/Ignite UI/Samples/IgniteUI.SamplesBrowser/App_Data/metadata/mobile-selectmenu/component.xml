@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>SelectMenu</Name>
+    <Description>
+      Go beyond simple web pages and build true mobile applications. With a selection seven types of mobile input controls, users can provide inputs and responses simply and easily.
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Salads" Value="Salads" />
+      <LocalizedSampleString Key="Choose_Time" Value="Choose Time" />
+      <LocalizedSampleString Key="House" Value="House" />
+      <LocalizedSampleString Key="Greek" Value="Greek" />
+      <LocalizedSampleString Key="Caesar" Value="Caesar" />
+      <LocalizedSampleString Key="Monday" Value="Monday" />
+      <LocalizedSampleString Key="Tuesday" Value="Tuesday" />
+      <LocalizedSampleString Key="Wednesday" Value="Wednesday" />
+      <LocalizedSampleString Key="Thursday" Value="Thursday" />
+      <LocalizedSampleString Key="Friday" Value="Friday" />
+      <LocalizedSampleString Key="Saturday" Value="Saturday" />
+      <LocalizedSampleString Key="Sunday" Value="Sunday" />
+      <LocalizedSampleString Key="Morning" Value="Morning" />
+      <LocalizedSampleString Key="Afternoon" Value="Afternoon" />
+      <LocalizedSampleString Key="Evening" Value="Evening" />
+    </LocalizedSampleStrings>
+    <PageKeywords>MobileSelectMenu</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>SelectMenu</Name>
+    <Description>
+      モバイル アプリケーションに対応するコントロールを提供します。モバイル入力コントロールの 7 つのタイプを提供します。
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Salads" Value="サラダ" />
+      <LocalizedSampleString Key="Choose_Time" Value="時間の選択" />
+      <LocalizedSampleString Key="House" Value="ガーデン サラダ" />
+      <LocalizedSampleString Key="Greek" Value="トマトとキュウリ" />
+      <LocalizedSampleString Key="Caesar" Value="シーザー サラダ" />
+      <LocalizedSampleString Key="Monday" Value="月曜日" />
+      <LocalizedSampleString Key="Tuesday" Value="火曜日" />
+      <LocalizedSampleString Key="Wednesday" Value="水曜日" />
+      <LocalizedSampleString Key="Thursday" Value="木曜日" />
+      <LocalizedSampleString Key="Friday" Value="金曜日" />
+      <LocalizedSampleString Key="Saturday" Value="土曜日" />
+      <LocalizedSampleString Key="Sunday" Value="日曜日" />
+      <LocalizedSampleString Key="Morning" Value="午前" />
+      <LocalizedSampleString Key="Afternoon" Value="午後" />
+      <LocalizedSampleString Key="Evening" Value="夜間" />
+    </LocalizedSampleStrings>
+    <PageKeywords>MobileSelectMenu</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>http://api.jquerymobile.com/selectmenu/</ClientApiUrl>
+  <HelpPageName>SelectMenu_Landing_Page</HelpPageName>
+  <ForumNumber>691</ForumNumber>
+  <IconImage>jquery-mobile-selectmenu.png</IconImage>
+  <ClientRuntime>jQueryMobile</ClientRuntime>
+  <TOC>
+    <Sample>basic-usage</Sample>
+  </TOC>
+</Component>

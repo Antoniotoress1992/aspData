@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Column Fixing</Title>
+    <Description>
+        This sample demonstrates igGrid Column Fixing feature. Company Name and Contact Name columns are configured initially as fixed columns.
+        Columns can be fixed also to the right of the grid. This is controlled by "fixingDirection" option.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>列の固定</Title>
+    <Description>
+      このサンプルでは、igGrid の列固定機能を紹介します。「会社名」および「連絡先」列は最初に固定列として構成されます。
+      列はグリッドの右側にも固定できます。fixingDirection オプションを設定して制御します。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>TabletLandscape</MinSampleSize>
+</Sample>

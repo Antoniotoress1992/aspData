@@ -1,0 +1,304 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="../../igniteui/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+    <link href="../../igniteui/css/structure/infragistics.css" rel="stylesheet" />
+
+    <script src="../../js/modernizr.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="../../igniteui/js/infragistics.core.js"></script>
+    <script src="../../igniteui/js/infragistics.dv.js"></script>
+
+</head>
+
+<body>
+    <style type="text/css">
+    	.sliderBounds {
+    	   width: 95px;
+    	   margin: 6px 3px 6px 6px;
+			display: inline-block;
+    	}
+    	.optionContainer {
+    	   width: 145px;
+    	   margin: 2px;
+			padding: 2px;
+			display: inline-block;
+			border: 1px solid #e0e0e0;
+			-moz-border-radius: 4px;
+			-webkit-border-radius: 4px;
+			border-radius: 4px;
+    	}
+    	.selectBounds {
+    	   min-width: 120px;
+    	   max-width: 132px;
+    	}
+    </style>
+
+    <!-- Target element for the igRadialGauge -->
+    <div id="radialgauge"></div>
+
+    <div>
+        <fieldset id="gaugeOptions">
+            <legend>Options</legend>
+            <strong>Radial Gauge Options</strong>
+				<br />
+				<div class="optionContainer">
+					Needle Value
+					<br />
+					<div id="needleValueSlider" class="sliderBounds"></div>
+					<label id="needleValueLabel">60</label>
+				</div>
+				<div class="optionContainer">
+               Start Extent
+					<br />
+               <div id="startExtentSlider" class="sliderBounds"></div>
+               <label id="startExtentLabel">0</label>
+				</div>
+				<div class="optionContainer">
+              End Extent
+				  <br />
+              <div id="endExtentSlider" class="sliderBounds"></div>
+              <label id="endExtentLabel">0.48</label>
+				</div>
+				<div class="optionContainer">
+              Start Width Ratio
+					<br />
+              <div id="startWidthRatioSlider" class="sliderBounds"></div>
+              <label id="startWidthRatioLabel">0</label>
+				</div>
+				<div class="optionContainer">
+               End Width Ratio
+					<br />
+               <div id="endWidthRatioSlider" class="sliderBounds"></div>
+               <label id="endWidthRatioLabel">0</label>
+				</div>
+				<br />
+            <strong>Needle Shapes</strong>
+				<br />
+				<div class="optionContainer">
+               Needle Shape
+					<br />
+               <select id="needleShapeDropdown" class="selectBounds">
+                   <option value="none">None</option>
+                   <option value="rectangle">rectangle</option>
+                   <option value="triangle">triangle</option>
+                   <option value="needle" selected="selected">needle</option>
+                   <option value="trapezoid">trapezoid</option>
+                   <option value="rectangleWithBulb">rectangleWithBulb</option>
+                   <option value="triangleWithBulb">triangleWithBulb</option>
+                   <option value="needleWithBulb">needleWithBulb</option>
+                   <option value="trapezoidWithBulb">trapezoidWithBulb</option>
+               </select>
+				</div>
+				<div class="optionContainer">
+                Pivot Shape
+					 <br />
+                <select id="pivotShapesDropdown" class="selectBounds">
+                   <option value="none">None</option>
+                   <option value="circle">circle</option>
+                   <option value="circleWithHole">circleWithHole</option>
+                   <option value="circleOverlay" selected="selected">circleOverlay</option>
+                   <option value="circleOverlayWithHole">circleOverlayWithHole</option>
+                   <option value="circleUnderlay">circleUnderlay</option>
+                   <option value="circleUnderlayWithHole">circleUnderlayWithHole</option>
+                </select>
+				</div>
+				<br />
+            <strong>Needle Brushes</strong>
+				<br />
+				<div class="optionContainer">
+                Needle Brush
+					 <br />
+                <select id="needleBrushDropdown" class="selectBounds">
+                   <option value="red">Red</option>
+                   <option value="blue">Blue</option>
+                   <option value="green">Green</option>
+                   <option value="yellow">Yellow</option>
+                   <option value="black" selected="selected">Black</option>
+                </select>
+				</div>
+				<div class="optionContainer">
+               Needle Outline
+					<br />
+               <select id="needleOutlineDropdown" class="selectBounds">
+                   <option value="red">Red</option>
+                   <option value="blue">Blue</option>
+                   <option value="green">Green</option>
+                   <option value="yellow">Yellow</option>
+                   <option value="black" selected="selected">Black</option>
+               </select>
+				</div>
+				<div class="optionContainer">
+               Pivot Brush
+					<br />
+               <select id="pivotBrushDropdown" class="selectBounds">
+                   <option value="red">Red</option>
+                   <option value="blue">Blue</option>
+                   <option value="green">Green</option>
+                   <option value="yellow">Yellow</option>
+                   <option value="black" selected="selected">Black</option>
+               </select>
+				</div>
+				<div class="optionContainer">
+               Pivot Outline
+					<br />
+               <select id="pivotOutlineDropdown" class="selectBounds">
+                   <option value="red">Red</option>
+                   <option value="blue">Blue</option>
+                   <option value="green">Green</option>
+                   <option value="yellow">Yellow</option>
+                   <option value="black" selected="selected">Black</option>
+               </select>
+				</div>
+				<br />
+            <strong>Transition Duration:</strong>
+				<div class="optionContainer">
+               <div id="transitionDurationSlider" class="sliderBounds"></div>
+               <label id="transitionDurationLabel">2</label>
+				</div>
+        </fieldset>
+    </div>
+
+    <script>
+
+        $(function () {
+            $("#radialgauge").igRadialGauge({
+                height: "500px",
+                width: "100%",
+                transitionDuration: "1500",
+                value: "60"
+            });
+
+
+            // Needle Value
+            $("#needleValueSlider").slider({
+                min: 0,
+                max: 100,
+                value: 60,
+                slide: function (event, ui) {
+                    $("#radialgauge").igRadialGauge("option", "value", ui.value);
+                    $("#needleValueLabel").text(ui.value);
+                }
+            });
+
+            // Start Extent
+            $("#startExtentSlider").slider({
+                min: 0,
+                max: 1,
+                step: 0.01,
+                value: 0,
+                slide: function (event, ui) {
+                    $("#radialgauge").igRadialGauge("option", "needleStartExtent", ui.value);
+                    $("#startExtentLabel").text(ui.value);
+                }
+            });
+
+            // End Extent
+            $("#endExtentSlider").slider({
+                min: 0,
+                max: 1,
+                step: 0.01,
+                value: 0.48,
+                slide: function (event, ui) {
+                    $("#radialgauge").igRadialGauge("option", "needleEndExtent", ui.value);
+                    $("#endExtentLabel").text(ui.value);
+                }
+            });
+
+            // Start Width Ratio
+            $("#startWidthRatioSlider").slider({
+                min: 0,
+                max: 1,
+                step: 0.01,
+                value: 0,
+                slide: function (event, ui) {
+                    $("#radialgauge").igRadialGauge("option", "needleStartWidthRatio", ui.value);
+                    $("#startWidthRatioLabel").text(ui.value);
+                }
+            });
+
+            // End Width Ratio
+            $("#endWidthRatioSlider").slider({
+                min: 0,
+                max: 1,
+                step: 0.01,
+                value: 0,
+                slide: function (event, ui) {
+                    $("#radialgauge").igRadialGauge("option", "needleEndWidthRatio", ui.value);
+                    $("#endWidthRatioLabel").text(ui.value);
+                }
+            });
+
+            // Needle Shape
+            $("#needleShapeDropdown").change(function (e) {
+                var needleShape = $(this).val();
+                $("#radialgauge").igRadialGauge("option", "needleShape", needleShape);
+
+                if (needleShape == "rectangle" || needleShape == "trapezoid" || needleShape == "rectangleWithBulb" || needleShape == "trapezoidWithBulb") {
+                    $("#endWidthRatioSlider").slider("enable");
+                }
+                else {
+                    $("#endWidthRatioSlider").slider("disable");
+                }
+            });
+
+            // Pivot Shape
+            $("#pivotShapesDropdown").change(function (e) {
+                var pivotShape = $(this).val();
+                $("#radialgauge").igRadialGauge("option", "needlePivotShape", pivotShape);
+            });
+
+
+            // Needle Brush
+            $("#needleBrushDropdown").on({
+                change: function (e) {
+                    var needleColor = $(this).val();
+                    $("#radialgauge").igRadialGauge("option", "needleBrush", needleColor);
+                }
+            });
+
+            // Needle Outline Brush
+            $("#needleOutlineDropdown").on({
+                change: function (e) {
+                    var needleOutlineColor = $(this).val();
+                    $("#radialgauge").igRadialGauge("option", "needleOutline", needleOutlineColor);
+                }
+            });
+
+            // Pivot Brush
+            $("#pivotBrushDropdown").on({
+                change: function (e) {
+                    var pivotColor = $(this).val();
+                    $("#radialgauge").igRadialGauge("option", "needlePivotBrush", pivotColor);
+                }
+            });
+
+            // Pivot Outline Brush
+            $("#pivotOutlineDropdown").on({
+                change: function (e) {
+                    var pivotOutlineColor = $(this).val();
+                    $("#radialgauge").igRadialGauge("option", "needlePivotOutline", pivotOutlineColor);
+                }
+            });
+
+            // Transiton Duration Slider
+            $("#transitionDurationSlider").slider({
+                min: 0,
+                max: 5,
+                step: 0.01,
+                value: 2,
+                slide: function (event, ui) {
+                    $("#radialgauge").igRadialGauge("option", "transitionDuration", ui.value * 1000);
+                    $("#transitionDurationLabel").text(ui.value);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

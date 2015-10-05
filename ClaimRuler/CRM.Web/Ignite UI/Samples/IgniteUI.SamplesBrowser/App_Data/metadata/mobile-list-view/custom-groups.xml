@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Custom Groups</Title>
+    <Description>To override the default grouping behavior of the ListView, you can supply a JavaScript function to provide custom grouping logic. In addition, this sample shows how to apply a custom template to the group items to override the visual appearance and has collapsible groups enabled.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Configuring Grouping" TopicName="igListView_Configuring_Grouping" />
+      <HelpTopic Title="Overview" TopicName="igListView_Overview" />
+      <HelpTopic Title="Known Issues and Limitations" TopicName="igListView_Known_Issues" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>カスタム グループ</Title>
+    <Description>ListView のデフォルトのグループ化動作をオーバーライドするには、カスタム グループ化ロジックを提供する JavaScript 関数を定義します。また、ビジュアル外観をオーバーライドするには、グループ項目にカスタム テンプレートを適用できます。縮小可能なグループが有効になります。</Description>
+    <HelpTopics>
+      <HelpTopic Title="グループ化の構成" TopicName="igListView_Configuring_Grouping" />
+      <HelpTopic Title="概要" TopicName="igListView_Overview" />
+      <HelpTopic Title="既知の問題と制限" TopicName="igListView_Known_Issues" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+
+  <!-- Excluding from jsFiddle because it does not process javascript correctly for mobile widgets when you seperate js into the js window and html into the html window. -->
+  <JsFiddle Exclude="true"></JsFiddle>
+</Sample>

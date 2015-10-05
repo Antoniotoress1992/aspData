@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="../../igniteui/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+    <link href="../../igniteui/css/structure/infragistics.css" rel="stylesheet" />
+
+    <script src="../../js/modernizr.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="../../igniteui/js/infragistics.core.js"></script>
+    <script src="../../igniteui/js/infragistics.dv.js"></script>
+    <style>
+        #tooltipTable
+        {
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        #tooltipTable td, #tooltipTable th
+        {
+            font-size: 9px;
+            border: 1px solid #269bc9;
+            padding: 3px 7px 2px 7px;
+        }
+        #tooltipTable th
+        {
+            font-weight: bold;
+            font-size: 11px;
+            text-align: left;
+            padding-top: 5px;
+            padding-bottom: 4px;
+            background-color: #269bc9;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Target element for the map -->
+    <div id="map"></div>
+
+    <script src="../../js/map-helper.js" type="text/javascript" ></script>
+    <script src="../../data-files/world-cities.js"></script>
+
+    <script>
+
+        $(function () {
+
+            $("#map").igMap({
+                width: "700px",
+                height: "500px",
+                windowRect: { left: 0.1, top: 0.1, height: 0.7, width: 0.7 },
+                // specifies imagery tiles from BingMaps
+                backgroundContent: {
+                    type: "bing",
+                    key: mapHelper.bingData(),
+                    imagerySet: "AerialWithLabels", // alternative: "Road" | "Aerial"
+                },
+                series: [{
+                    type: "geographicSymbol",
+                    name: "worldCities",
+                    dataSource: data,
+                    latitudeMemberPath: "Latitude",
+                    longitudeMemberPath: "Longitude",
+                    markerType: "automatic",
+                    markerCollisionAvoidance: "fade",
+                    markerOutline: "#269bc9",
+                    markerBrush: "#269bc9",
+                    showTooltip: true,
+                    tooltipTemplate: "tooltipTemplate"
+                }],
+                
+            });
+
+        });
+
+    </script>
+    <script id="tooltipTemplate" type="text/x-jquery-tmpl">
+        <table id="tooltipTable" >
+            <tr><th class="tooltipHeading" colspan="2">${item.Name}, ${item.Country}</th></tr>
+            <tr>
+                <td>Latitude:</td>
+                <td>${item.Latitude}</td>
+            </tr>
+            <tr>
+                <td>Longitude:</td>
+                <td>${item.Longitude}</td>
+            </tr>
+        </table>
+    </script>
+</body>
+</html>

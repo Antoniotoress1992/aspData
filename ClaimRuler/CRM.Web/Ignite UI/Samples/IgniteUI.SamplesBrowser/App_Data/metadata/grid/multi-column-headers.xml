@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Multi-Column Headers</Title>
+    <Description>
+        Multi-Column Headers feature of the igGrid which allows you to group columns under a parent column header.
+        This sample has three multi-column header columns. "Company Information" and "Phone Information" have two levels while "Address Information" has three levels.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>複数列ヘッダー</Title>
+    <Description>
+      igGrid の複数列ヘッダー機能は、親列ヘッダーの下で列をグループ化できます。
+      このサンプルは 3 つの複数列ヘッダーの列があります。「会社情報」および「電話情報」は 2 つのレベルがあり、「アドレス情報」は 3 つのレベルがあります。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

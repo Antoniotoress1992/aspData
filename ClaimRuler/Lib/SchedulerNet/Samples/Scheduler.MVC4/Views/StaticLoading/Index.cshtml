@@ -1,0 +1,9 @@
+@{
+    ViewBag.Title = "Scheduler | Static Loading";
+    ViewBag.SampleTitle = "Static Loading";
+    ViewBag.ShortDescription = "Static Loading";
+    ViewBag.LongDescription = "Data was parsed during scheduler configuration and rendered to html.";
+}
+
+
+@Html.Raw(Model.Render()) 

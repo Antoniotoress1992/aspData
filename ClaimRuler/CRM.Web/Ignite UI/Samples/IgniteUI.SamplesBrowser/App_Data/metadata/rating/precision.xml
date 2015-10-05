@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Precision</Title>
+    <Description>This sample illustrates how to dynamically change options responsible for the size of the step of the selected items. The first option configured is for precision. Possible precision values include: Exact, Half and Whole. When the control is configured to use the Exact mode you have precise control over the portion of the rating item selected. Configuring the roundedDecimalPlaces property sets the accuracy of the value.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>精度</Title>
+    <Description>選択した項目のサイズを動的に変更するオプションのサンプルです。最初のオプションは精度です。Exact (正確)、Half (半分)、Whole (完全) 値が提供されます。Exact に設定した場合は、選択したレーティング項目を詳細に制御できます。roundedDecimalPlaces プロパティは正確な値を設定します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

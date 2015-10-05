@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Barcode</Name>
+    <Description></Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="BackingBrush" Value="Backing Brush"/>
+      <LocalizedSampleString Key="BackingOutline" Value="Backing Outline"/>
+      <LocalizedSampleString Key="BackingStrokeThickness" Value="Backing Stroke Thickness"/>
+      <LocalizedSampleString Key="BarsFillMode" Value="Bars Fill Mode"/>
+      <LocalizedSampleString Key="BarsBrush" Value="Bars Brush"/>
+      <LocalizedSampleString Key="EccLevel" Value="ECC Level"/>
+      <LocalizedSampleString Key="EciHeaderDisplayMode" Value="Eci Header Display Mode"/>
+      <LocalizedSampleString Key="EciNumber" Value="Eci Number"/>
+      <LocalizedSampleString Key="EncodingMode" Value="Encoding Mode"/>
+      <LocalizedSampleString Key="Data" Value="Data"/>
+      <LocalizedSampleString Key="Options" Value="Options"/>
+      <LocalizedSampleString Key="Set" Value="Set"/>
+      <LocalizedSampleString Key="SizeVersion" Value="Size Version"/>
+      <LocalizedSampleString Key="Stretch" Value="Stretch"/>
+      <LocalizedSampleString Key="XDimension" Value="XDimension"/>
+    </LocalizedSampleStrings>
+    <PageKeywords>igBarcode</PageKeywords>
+  </LocalizedContent>
+  
+  <LocalizedContent Language="ja">
+    <Name>Barcode</Name>
+    <Description></Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="BackingBrush" Value="バッキング ブラシ"/>
+      <LocalizedSampleString Key="BackingOutline" Value="バッキング アウトライン"/>
+      <LocalizedSampleString Key="BackingStrokeThickness" Value="バッキングのストロークの太さ"/>
+      <LocalizedSampleString Key="BarsFillMode" Value="バー塗りつぶしモード"/>
+      <LocalizedSampleString Key="BarsBrush" Value="バー ブラシ"/>
+      <LocalizedSampleString Key="EccLevel" Value="ECC レベル"/>
+      <LocalizedSampleString Key="EciHeaderDisplayMode" Value="ECI ヘッダーの表示モード"/>
+      <LocalizedSampleString Key="EciNumber" Value="ECI 番号"/>
+      <LocalizedSampleString Key="EncodingMode" Value="エンコード モード"/>
+      <LocalizedSampleString Key="Data" Value="データ"/>
+      <LocalizedSampleString Key="Options" Value="オプション"/>
+      <LocalizedSampleString Key="Set" Value="適用"/>
+      <LocalizedSampleString Key="SizeVersion" Value="サイズ バージョン"/>
+      <LocalizedSampleString Key="Stretch" Value="引き伸ばし"/>
+      <LocalizedSampleString Key="XDimension" Value="XDimension"/>
+    </LocalizedSampleStrings>
+    <PageKeywords>igBarcode</PageKeywords>
+  </LocalizedContent>
+  
+  <ClientApiUrl>ui.igQrCodeBarcode</ClientApiUrl>
+  <HelpPageName>igQRCodeBarcode_Overview</HelpPageName>
+  <ForumNumber>811</ForumNumber>
+  <IconImage>jquery-barcode.png</IconImage>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <TOC>
+    <Sample>basic-configuration</Sample>
+    <Sample>configuring-the-qr-code-specific-settings</Sample>
+    <Sample>qr-barcode-dimensions</Sample>
+    <Sample>configuring-colors</Sample>
+    <Sample>mvc-initialization</Sample>
+  </TOC>
+</Component>

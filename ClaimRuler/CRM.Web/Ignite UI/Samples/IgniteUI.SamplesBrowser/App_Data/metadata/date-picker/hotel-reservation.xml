@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Hotel Reservation</Title>
+    <Description>This is an example using two igDatePicker controls for reserving a hotel room. The initial value of the start date is set on the server with the igDatePicker control's ASP.NET MVC Helper and entering incorrect values will cause validation to trigger. The code example demonstrates how these values can be saved on the server.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Styling and Theming" TopicName="igDatePicker_Styling_and_Theming" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>ホテルの予約</Title>
+    <Description>このサンプルは、2 つの igDatePicker コントロールを使用してホテルの予約を処理をする機能を紹介します。開始日付の初期値は、igDatePicker コントロールの ASP.NET MVC ヘルパーとサーバーで設定されています。無効な値を入力すると、検証をトリガーします。コード例は、この値をサーバーで保存します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="スタイル設定とテーマ設定" TopicName="igDatePicker_Styling_and_Theming" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhonePortrait</MinSampleSize>
+</Sample>

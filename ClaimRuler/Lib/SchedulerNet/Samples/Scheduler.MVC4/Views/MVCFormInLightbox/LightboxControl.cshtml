@@ -1,0 +1,31 @@
+﻿@model DHXScheduler_MVC4.Models.Event
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<body>
+    @using(Html.BeginForm("Save", "MVCFormInLightbox", new { id = "schedulerForm" })){   
+        @Html.HiddenFor(m => m.id)
+        @Html.HiddenFor(m=>m.user_id)
+        <div>
+            @Html.TextAreaFor(m=>m.text,  5, 42, null)
+        </div>    
+        <div>
+            From
+            @Html.TextBoxFor(m=>m.start_date, new { @readonly="readonly"  })
+            To
+            @Html.TextBoxFor(m=>m.end_date, new { @readonly = "readonly" })
+        </div>
+        
+        <p>
+            <input type="submit" name="actionButton" value="Save" />
+            <input type="button" onclick="lightbox.close()/* helper-method, only available in custom lightbox */" value="Close" />
+            <input type="submit" name="actionButton" value="Delete" />
+        </p>
+    }
+</body>
+</html>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">themes/metro</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

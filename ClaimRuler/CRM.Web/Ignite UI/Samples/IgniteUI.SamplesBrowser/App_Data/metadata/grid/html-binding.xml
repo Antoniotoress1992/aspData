@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>HTML Binding</Title>
+    <Description>This sample demonstrates you how to bind our jQuery Grid to a table's DOM element.
+    It also shows how to set a custom header when binding to HTML table data.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>HTML のバインド</Title>
+    <Description>このサンプルでは、jQuery グリッドを表の DOM 要素にバインドする方法を紹介します。HTML 表データにバインドする場合にカスタム ヘッダーを設定する方法も紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Data Annotation Validation</Title>
+    <Description>This sample demonstrates how to use data annotation attributes to set validation options on igEditors. In the example the standard data annotation attributes are applied to the model class to set the validation options. In this sample, the ValidationMessage is applied to the order due date and ship method fields. This implementation shows how the igValidators automatically swap the error message into the helper and their default message is not shown. Use of ValidationMessageFor frees you to group and rearrange the validation messages in ways specific to your application when using the Infragistics Validator.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Configuring" TopicName="Configuring_igEditors_at_Runtime" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>データ注釈の検証</Title>
+    <Description>このサンプルでは、igEditors でデータ注釈属性を使用して検証オプションを設定する方法を紹介します。標準のデータ注釈属性はモデル クラスで検証オプションを設定するために適用されます。このサンプルでは、ValidationMessage は「注文期限」と「出荷方法」フィールドに適用されます。この実装は、igValidators がエラー メッセージを自動的にヘルパーに切り替え、デフォルトのメッセージを表示しない方法を紹介します。ValidationMessageFor を使用すると、Infragistics 検証を使用する場合、検証メッセージを再配置できます。</Description>
+    <HelpTopics>
+      <HelpTopic Title="構成" TopicName="Configuring_igEditors_at_Runtime" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+</Sample>

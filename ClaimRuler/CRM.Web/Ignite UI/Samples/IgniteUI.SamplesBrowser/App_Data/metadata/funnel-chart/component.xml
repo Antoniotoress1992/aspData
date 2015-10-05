@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>  
+  <LocalizedContent Language="en">
+    <Name>Funnel Chart</Name>
+    <SampleStrings>
+      <LocalizedSampleString Key="Normal_Funnel" Value="Funnel Chart"/>
+      <LocalizedSampleString Key="Inverted_Funnel" Value="Inverted Funnel Chart"/>
+      <LocalizedSampleString Key="Uniform_Slices" Value="Uniform Slices"/>
+      <LocalizedSampleString Key="Weighted_Slices" Value="Weighted Slices"/>
+      <LocalizedSampleString Key="Styled_CSS" Value="Styled by CSS"/>
+      <LocalizedSampleString Key="Styled_Options" Value="Styled by Widget Options"/>
+      <LocalizedSampleString Key="Selection_Default_Styles" Value="Selection with Built-In Styles"/>
+      <LocalizedSampleString Key="Selected_Slices" Value="Selected Slices"/>
+      <LocalizedSampleString Key="Selection_Custom_Styles" Value="Selection with Custom Styles"/>
+      <LocalizedSampleString Key="Bezier_Curved" Value="Bezier Curve Shaped Chart"/>
+      <LocalizedSampleString Key="Server_Bound" Value="Bound to server side collection"/>
+      <LocalizedSampleString Key="Remote_Data_Bound" Value="Bound to remote data"/>
+      <LocalizedSampleString Key="Chart_lbl_administration" Value="Administration" />
+      <LocalizedSampleString Key="Chart_lbl_sales" Value="Sales" />
+      <LocalizedSampleString Key="Chart_lbl_it" Value="IT" />
+      <LocalizedSampleString Key="Chart_lbl_marketing" Value="Marketing" />
+      <LocalizedSampleString Key="Chart_lbl_development" Value="Development" />
+      <LocalizedSampleString Key="Chart_lbl_support" Value="Support" />
+      <LocalizedSampleString Key="Budget" Value="Budget" />
+      <LocalizedSampleString Key="Department" Value="Department" />
+      <LocalizedSampleString Key="ID" Value="ID" />
+      <LocalizedSampleString Key="Dept" Value="Dept" />
+      <LocalizedSampleString Key="Item" Value="Item" />
+    </SampleStrings>
+    <Description>
+      Chart diminishing values with Funnel Chart, a single series chart that displays data in a funnel shape with a variable number of section each representing the data as different portions of 100%. The funnel chart makes it easy for end users to illustrate value "fallout" in the sales process or bottlenecks in the flow of a multi-step process.
+    </Description>
+    <PageKeywords>igFunnelChart</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Funnel Chart</Name>
+    <SampleStrings>
+      <LocalizedSampleString Key="Normal_Funnel" Value="ファンネル チャート"/>
+      <LocalizedSampleString Key="Inverted_Funnel" Value="反転のファンネル チャート"/>
+      <LocalizedSampleString Key="Uniform_Slices" Value="均一スライス"/>
+      <LocalizedSampleString Key="Weighted_Slices" Value="重み付けスライス"/>
+      <LocalizedSampleString Key="Styled_CSS" Value="CSS のスタイル設定"/>
+      <LocalizedSampleString Key="Styled_Options" Value="Widget オプションのスタイル設定"/>
+      <LocalizedSampleString Key="Selection_Default_Styles" Value="定義済みスタイルの選択"/>
+      <LocalizedSampleString Key="Selected_Slices" Value="選択されたスライス"/>
+      <LocalizedSampleString Key="Selection_Custom_Styles" Value="カスタム スタイルの選択"/>
+      <LocalizedSampleString Key="Bezier_Curved" Value="ベジエ曲線図形のチャート"/>
+      <LocalizedSampleString Key="Server_Bound" Value="サーバー側コレクションへのバインド"/>
+      <LocalizedSampleString Key="Remote_Data_Bound" Value="リモート データへのバインド"/>
+      <LocalizedSampleString Key="Chart_lbl_administration" Value="事務" />
+      <LocalizedSampleString Key="Chart_lbl_sales" Value="セールス" />
+      <LocalizedSampleString Key="Chart_lbl_it" Value="IT" />
+      <LocalizedSampleString Key="Chart_lbl_marketing" Value="マーケティング" />
+      <LocalizedSampleString Key="Chart_lbl_development" Value="開発" />
+      <LocalizedSampleString Key="Chart_lbl_support" Value="サポート" />
+      <LocalizedSampleString Key="Budget" Value="予算" />
+      <LocalizedSampleString Key="Department" Value="グループ" />
+      <LocalizedSampleString Key="ID" Value="ID" />
+      <LocalizedSampleString Key="Dept" Value="分門" />
+      <LocalizedSampleString Key="Item" Value="項目" />
+    </SampleStrings>
+    <Description>
+      ファンネル チャートは、ファンネル図形の単一シリーズでデータを表示するチャートです。セクションを複数含むことが可能で、データ全体に対する割合が一目で分かります。ファンネル チャートは、営業プロセスの課題やプロセスの手順をフローで表示することなどに使用できます。
+    </Description>
+    <PageKeywords>igFunnelChart</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>ui.igFunnelChart</ClientApiUrl>
+  <HelpPageName>igFunnelChart_Overview</HelpPageName>
+  <ForumNumber>723</ForumNumber>
+  <IconImage>jquery-funnel-chart.png</IconImage>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <TOC>
+    <Sample>funnel-chart</Sample>
+    <Sample>server-binding</Sample>
+    <Sample>xml-binding</Sample>
+    <Sample>slice-selection</Sample>
+    <Sample>styling</Sample>
+    <Sample>bezier-curve-and-tooltips</Sample>
+  </TOC>
+</Component>

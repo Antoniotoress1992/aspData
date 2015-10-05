@@ -1,0 +1,113 @@
+﻿@using Infragistics.IgniteUI.SamplesBrowser.Shared.Entities
+@using Infragistics.IgniteUI.SamplesBrowser.Shared.Contracts
+@using Infragistics.IgniteUI.SamplesBrowser.Shared.Enums
+@using Infragistics.IgniteUI.SamplesBrowser.Shared.ViewModels
+@model ViewModelBase
+@helper RenderTableOfContentsEntity(ITableOfContentsEntity tocEntity)
+{            
+    Type tocType = tocEntity.GetType();
+    if (tocType == typeof(TableOfContentsGroup))
+    {
+        var item = tocEntity as TableOfContentsGroup;
+        <li><div class="navCategory">
+            <div class="navCategoryTitle igsb-expanded">@item.Name<span class="nav-icon"></span></div>
+            <div class="navCategoryFeatures">
+					<div class="searchContainer">
+						<span class="searchFieldContainer" unselectable="on">
+							<span class="searchIcon" unselectable="on"></span><span class="searchHint" unselectable="on">@Resources.Main.Search_NullText</span><input id="searchField" /><span unselectable="on" class="searchClearIcon"></span>
+						</span>
+						<span class="searchToggleContainer">
+							<span class="searchToggleLabel">@Resources.Main.Search_ShowLabel</span>
+							<span class="searchButtonContainer">
+								<span class="searchToggleButton searchToggleAll searchToggleSelected">@Resources.Main.Search_AllSamplesLabel</span><span class="searchToggleButton searchToggleNew">@Resources.Main.Search_NewUpdated</span>
+							</span>
+						</span>
+					</div>
+					<div id="menuSamplesContainer" style="overflow: auto">
+						@RenderTableOfContentsChildren(item)
+					</div>
+            </div>
+        </div></li>
+    }
+    if (tocType == typeof(NavItem))
+    {
+        var item = tocEntity as NavItem;
+        var target = "";
+        var itemUrl = item != null && item.Url != null ? item.Url : "";
+        if (!Model.ShowDownloadButton && itemUrl.EndsWith("download")) { return; }
+
+        if (itemUrl == "http://labs.infragistics.com/jquery/configure/")
+        { target = "_blank"; }
+        <li class="navSampleApp navSampleTag"><div class="navCategory">
+            <div class="navCategoryTitle"><a href="@Model.Url.SamplesBrowserContent(itemUrl)" target="@target">@item.Text</a></div>
+        </div></li>        
+    }
+    if (tocType == typeof(ControlGroup))
+    {
+        var item = tocEntity as ControlGroup;
+        <div class="navCategoryFeature">
+            <div class="navControlHeader @item.CssClass"><span class="nav-icon"></span>@item.Title</div>
+            <ul class="navControlsList">
+                @RenderTableOfContentsChildren(item)
+            </ul>
+        </div>
+    }
+    if (tocType == typeof(Infragistics.IgniteUI.SamplesBrowser.Shared.Entities.Control))
+    {
+        var item = tocEntity as Infragistics.IgniteUI.SamplesBrowser.Shared.Entities.Control;
+        <li class="navControl">
+            <div class="navControlTitle">@item.Name</div>
+            <ul class="navSampleGroupsList navSamplesList">
+                <li class="navSample navSampleTag"><a href="@Model.Url.SamplesBrowserContent(item.OverviewUrl)">
+                    <span class="igsb-sampleTitle">@Model.Resources.GetControlOverviewTitle(item.Name)</span></a></li>
+                @RenderTableOfContentsChildren(item)
+            </ul>
+        </li>
+    }
+    if (tocType == typeof(SampleGroup))
+    {
+        var item = tocEntity as SampleGroup;
+        <li class="navSampleGroup">
+            <div class="navSampleGroupTitle">@item.Title</div>
+            <ul class="navSamplesList">                
+                @RenderTableOfContentsChildren(item)
+            </ul>
+        </li>
+    }
+    if (tocType == typeof(Sample))
+    {
+        var item = tocEntity as Sample;
+		  string ctp = item.Status == HighlightStatusValue.Ctp ? "ctp=\"true\"" : "";
+        <li class="navSample navSampleTag" @ctp>
+            @if(item.IsFullPostBack)
+            {
+                <a href="@Model.Url.SamplesBrowserContent(item.Url)" class="fullPostBack">@item.Title</a>
+            }
+            @if(!item.IsFullPostBack)
+            {
+                <a href="@Model.Url.SamplesBrowserContent(item.Url)">
+                @if(item.HasHighlightStatus)
+                {
+                    <span class="controlItemStatus @HighlightStatus.CssClass(item.Status)">@HighlightStatus.ToString(item.Status, Model.Resources)</span>
+                }     
+                <span class="igsb-sampleTitle">@item.Title</span>
+                </a>
+            }
+        </li>
+    }
+}
+@helper RenderTableOfContentsChildren(ITableOfContentsParent tocParent)
+{
+    if (tocParent.TableOfContents != null && tocParent.TableOfContents.Count() > 0)
+    {
+        foreach (ITableOfContentsEntity tocEntity in tocParent.TableOfContents)
+        {
+            @RenderTableOfContentsEntity(tocEntity)
+        }
+    }
+}
+<nav id="controlsMenu" class="hamburgerMenu">
+    <ul>
+        @RenderTableOfContentsChildren(Model.MasterTableOfContents)
+    </ul>
+</nav>

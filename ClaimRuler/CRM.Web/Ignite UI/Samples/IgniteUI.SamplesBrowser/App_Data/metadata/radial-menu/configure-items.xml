@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Configure Items</Title>
+    <Description>This sample demonstrates how to configure igRadialMenu items’ position and span.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Configuring the Tick Marks (igRadialGauge)" TopicName="igRadialGauge_Configuring_Tick_Marks" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>項目の構成</Title>
+    <Description>このサンプルでは、igRadialMenu 項目の位置およびスパンを構成する方法を紹介します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="目盛りの構成 (igRadialGauge)" TopicName="igRadialGauge_Configuring_Tick_Marks" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status>new</Status>
+</Sample>

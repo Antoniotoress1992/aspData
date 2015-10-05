@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Leading Tile Configuration</Title>
+    <Description>This sample demonstrates instantiating the Tile Manager on existing markup in a container with a configuration that defines a leading tile. The leading tile swaps with the rest of the tiles upon expanding.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>リード タイルを構成</Title>
+    <Description>このサンプルでは、既存のマークアップでコンテナーに igTileManager をインスタンス化する方法を紹介します。タイルを展開した際に、残りのタイルと切り替えるリード タイルを定義する構成があります。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <IsResponsive>True</IsResponsive>
+  <MinSampleSize>PhonePortrait</MinSampleSize>
+</Sample>

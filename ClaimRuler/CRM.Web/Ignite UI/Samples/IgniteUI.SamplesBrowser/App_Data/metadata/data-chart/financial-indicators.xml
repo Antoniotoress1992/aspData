@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Financial Indicators</Title>
+    <Description>This sample shows the variety of financial indicators that are supported by the chart control. Financial indicators are exposed as separate chart series types and they complement the financial chart series. Financial indicators provide additional information about stocks prices and trends.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Series Types" TopicName="igDataChart_Series_Types" />
+      <HelpTopic Title="Visual Elements" TopicName="igDataChart_Visual_Elements" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>財務指標</Title>
+    <Description>このサンプルでは、チャート コントロールの財務指標を紹介します。財務指標は別のチャート シリーズ タイプとして公開され、ファイナンシャル チャート シリーズで使用できます。財務指標は株価およびトレンドについての情報を提供します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="シリーズ タイプ" TopicName="igDataChart_Series_Types" />
+      <HelpTopic Title="視覚要素" TopicName="igDataChart_Visual_Elements" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

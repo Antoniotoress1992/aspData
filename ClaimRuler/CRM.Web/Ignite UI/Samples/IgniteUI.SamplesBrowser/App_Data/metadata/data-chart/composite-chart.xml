@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Composite Chart</Title>
+    <Description>This sample demonstrates how to configure a composite chart with two Y-axes with different range and two different data series types: column and line series.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Series Types" TopicName="igDataChart_Series_Types" />
+      <HelpTopic Title="Visual Elements" TopicName="igDataChart_Visual_Elements" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>複合チャート</Title>
+    <Description>このサンプルでは、別の範囲を持つ 2 つの Y 軸と柱状シリーズと折れ線シリーズの 2 つのデータ シリーズ タイプを含む複合チャートを構成する方法を紹介します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="シリーズ タイプ" TopicName="igDataChart_Series_Types" />
+      <HelpTopic Title="視覚要素" TopicName="igDataChart_Visual_Elements" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

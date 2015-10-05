@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Grid API and Events</Title>
+    <Description>This sample demonstrates how our Grid API can be put to use and grid-specific events processed by custom handlers.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>グリッド API およびイベント</Title>
+    <Description>このサンプルでは、グリッド API の使用方法およびグリッド イベント (カスタム ハンドラーに処理されます) を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

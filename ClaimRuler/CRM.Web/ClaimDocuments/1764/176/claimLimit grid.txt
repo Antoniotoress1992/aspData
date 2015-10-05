@@ -1,0 +1,136 @@
+<asp:GridView ID="gvLimits"
+    CssClass="gridView no_min_width"
+    runat="server"
+    AutoGenerateColumns="False"
+    CellPadding="2"
+    DataKeyNames="ClaimLimitID, LimitID"
+    HorizontalAlign="Center"   
+    ShowFooter="true"
+    Width="100%">
+    <RowStyle HorizontalAlign="Center" />
+    <FooterStyle HorizontalAlign="Center" />
+    <Columns>
+        <asp:TemplateField HeaderText="Coverage">
+            <ItemTemplate>
+                <%# Eval("LimitLetter") %>
+            </ItemTemplate>
+        </asp:TemplateField>
+        <asp:TemplateField HeaderText="Description">
+            <ItemTemplate>
+                <%# Eval("LimitDescription") %>
+            </ItemTemplate>
+            <FooterTemplate>
+                <b>Total</b>
+            </FooterTemplate>
+            <FooterStyle HorizontalAlign="Center" />
+        </asp:TemplateField>
+          <asp:TemplateField HeaderText="Policy Limit">
+            <ItemTemplate>
+                <%# Eval("LimitAmount") %>
+            </ItemTemplate>           
+        </asp:TemplateField>
+       <%-- <asp:TemplateField HeaderText="Deductible">
+            <ItemTemplate>
+                <%# Eval("LimitDeductible") %>
+            </ItemTemplate>          
+        </asp:TemplateField>--%>
+        <asp:TemplateField HeaderText="Apply To">
+            <ItemTemplate>
+               <%# Eval("ApplyTo") %>
+            </ItemTemplate>           
+        </asp:TemplateField>
+        <asp:TemplateField HeaderText="ITV">
+            <ItemTemplate>
+                 <%# Eval("ITV") %>
+            </ItemTemplate>           
+        </asp:TemplateField>
+
+        <asp:TemplateField HeaderText="Reserve">            
+            <ItemTemplate>
+                 <%# Eval("Reserve") %>
+            </ItemTemplate>           
+        </asp:TemplateField> 
+        <asp:TemplateField HeaderText="Loss Amount(ACV)">
+            <ItemTemplate>
+                <ig:WebNumericEditor ID="txtLossAmountACV" runat="server" Width="70px" MinDecimalPlaces="2" Value='<%# Bind("LossAmountACV") %>'
+                    Visible='<%# !Eval("LimitLetter").Equals("D") %>'>
+                    <ClientEvents ValueChanged="calculatePropertyLimitsTotal" />
+                </ig:WebNumericEditor>
+            </ItemTemplate>
+            <FooterTemplate>
+                <ig:WebNumericEditor ID="lblTotalLossAmountACV" runat="server" Enabled="false" CssClass="total" MinDecimalPlaces="2"/>
+            </FooterTemplate>
+        </asp:TemplateField>
+        <asp:TemplateField HeaderText="Loss Amount(RCV)">
+            <ItemTemplate>
+                <ig:WebNumericEditor ID="txtLossAmountRCV" runat="server" Width="70px" MinDecimalPlaces="2" Value='<%# Bind("LossAmountRCV") %>'>
+                    <ClientEvents ValueChanged="calculatePropertyLimitsTotal" />
+                </ig:WebNumericEditor>
+            </ItemTemplate>
+            <FooterTemplate>
+                <ig:WebNumericEditor ID="lblTotalLossAmountRCV" runat="server" Enabled="false" CssClass="total" MinDecimalPlaces="2"/>
+            </FooterTemplate>
+        </asp:TemplateField>
+        <asp:TemplateField HeaderText="Recoverable Depreciation">
+            <ItemTemplate>
+                <ig:WebNumericEditor ID="txtDepreciation" runat="server" Width="70px" MinDecimalPlaces="2" Value='<%# Bind("Depreciation") %>'
+                    Visible='<%# !Eval("LimitLetter").Equals("D") %>'>
+                    <ClientEvents ValueChanged="calculatePropertyLimitsTotal" />
+                </ig:WebNumericEditor>
+            </ItemTemplate>
+            <FooterTemplate>
+                <ig:WebNumericEditor ID="lblTotalDepreciation" runat="server" Enabled="false" CssClass="total" MinDecimalPlaces="2">                   
+                </ig:WebNumericEditor>
+            </FooterTemplate>
+        </asp:TemplateField>
+        <asp:TemplateField HeaderText="Non Recoverable Depreciation">
+            <ItemTemplate>
+                <ig:WebNumericEditor ID="txtNonRecoverableDepreciation" runat="server" Width="70px" MinDecimalPlaces="2" Value='<%# Bind("NonRecoverableDepreciation") %>'
+                    Visible='<%# !Eval("LimitLetter").Equals("D") %>'>
+                    <ClientEvents ValueChanged="calculatePropertyLimitsTotal" />
+                </ig:WebNumericEditor>
+            </ItemTemplate>
+            <FooterTemplate>
+                <ig:WebNumericEditor ID="lblTotalNonRecoverableDepreciation" runat="server" Enabled="false" CssClass="total" MinDecimalPlaces="2">                   
+                </ig:WebNumericEditor>
+            </FooterTemplate>
+        </asp:TemplateField>
+
+        <asp:TemplateField HeaderText="Deductible">            
+            <ItemTemplate>
+                <ig:WebTextEditor ID="lblDeductible" runat="server" Value='<%# Eval("LimitDeductible", "{0:N2}") %>'  CssClass="locked" />
+            </ItemTemplate>
+            <FooterTemplate>
+                <ig:WebNumericEditor ID="lblTotalDeductible" runat="server" Enabled="false" CssClass="total" MinDecimalPlaces="2"/>
+            </FooterTemplate>
+        </asp:TemplateField>
+        <asp:TemplateField HeaderText="CAT Deductible">
+            <ItemTemplate>
+                <asp:Label ID="lblCATDeductible" runat="server" Width="70px" Text='<%# Bind("CATDeductible","{0:N2}") %>'  />
+            </ItemTemplate>
+        </asp:TemplateField>
+        <asp:TemplateField HeaderText="Limit">
+            <ItemStyle Width="70px" />
+            <ItemTemplate>
+                <%# Eval("LimitAmount", "{0:N2}") %>
+            </ItemTemplate>
+        </asp:TemplateField>
+        <asp:TemplateField HeaderText="Overage">
+            <ItemTemplate>
+                <ig:WebNumericEditor ID="txtOverageAmount" runat="server" Width="70px" Value='<%# Eval("OverageAmount", "{0:N2}") %>' MinDecimalPlaces="2" />
+            </ItemTemplate>
+        </asp:TemplateField>
+       <%-- <asp:TemplateField HeaderText="Type of Settlement">
+            <ItemStyle Width="70px" />
+            <ItemTemplate>
+                <asp:Label ID="txtSettlementType" runat="server" Text='<%# Bind("SettlementType") %>' Visible='<%# Eval("LimitType").Equals(1) %>' />
+            </ItemTemplate>
+        </asp:TemplateField>--%>
+        <asp:TemplateField HeaderText="CoInsurance Limit">            
+            <ItemTemplate>                
+                <asp:Label ID="txtCoInsuranceLimit" runat="server" Text='<%# Bind("ConInsuranceLimit", "{0:N2}") %>'
+                    Visible='<%# Eval("LimitType").Equals(1) %>' />
+            </ItemTemplate>
+        </asp:TemplateField>
+    </Columns>
+</asp:GridView>

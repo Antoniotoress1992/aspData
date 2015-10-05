@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">combo/json-binding</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+    The igCombo is a full-featured combo box control. It binds to a variety of data sources including 
+    <a href="~/combo/json-binding">JSON</a>, <a href="~/combo/html-binding">HTML select</a>, 
+    <a href="~/combo/xml-binding">XML</a>, and <a href="~/combo/aspnet-mvc-helper">.NET collections</a>. The igCombo includes many features including:
+    <ul>
+      <li><a href="~/combo/filtering">Filtering and Auto-Complete</a></li>
+      <li><a href="~/combo/cascading-combos">Cascading Multiple Combo Boxes</a></li>
+      <li><a href="~/combo/selection-and-checkboxes">Checkboxes</a></li>
+      <li><a href="~/combo/templates">Templates</a></li>
+      <li><a href="~/combo/load-on-demand">Load on Demand</a></li>
+      <li>And more listed in the menu!</li>
+    </ul>
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+    igCombo はコンボ ボックス コントロールです。<a href="~/combo/json-binding">JSON</a>、<a href="~/combo/html-binding">HTML select</a>、<a href="~/combo/xml-binding">XML</a>、および <a href="~/combo/aspnet-mvc-helper">.NET コレクション</a>などのデータ ソースにバインドできます。igCombo の機能:
+    <ul>
+      <li><a href="~/combo/filtering">フィルタリングとオート コンプリート</a></li>
+      <li><a href="~/combo/cascading-combos">カスケード複数のコンボ ボックス</a></li>
+      <li><a href="~/combo/selection-and-checkboxes">チェックボックス</a></li>
+      <li><a href="~/combo/templates">テンプレート</a></li>
+      <li><a href="~/combo/load-on-demand">ロードオンデマンド</a></li>
+      <li>すべてのサンプルを表示するには、メニューを参照してください。</li>
+    </ul>
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

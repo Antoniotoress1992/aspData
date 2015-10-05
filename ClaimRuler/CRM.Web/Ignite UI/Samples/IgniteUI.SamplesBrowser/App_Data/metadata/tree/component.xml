@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Tree</Name>
+    <SampleStrings>
+      <LocalizedSampleString Key="KO_Getting_Data" Value="Getting data from server..."/>
+      <LocalizedSampleString Key="Getting_Data_Error" Value="Error getting product categories!"/>
+      <LocalizedSampleString Key="KO_Category" Value="Category" />
+      <LocalizedSampleString Key="KO_Name" Value="Name" />
+      <LocalizedSampleString Key="KO_Description" Value="Description" />
+      <LocalizedSampleString Key="KO_Product_Count" Value="Product Count" />
+      <LocalizedSampleString Key="KO_Product" Value="Product" />
+      <LocalizedSampleString Key="KO_Quantity_per_Unit" Value="Quantity per Unit" />
+      <LocalizedSampleString Key="KO_Unit_Price" Value="Unit Price" />
+      <LocalizedSampleString Key="KO_Units_in_Stock" Value="Units in Stock" />
+      <LocalizedSampleString Key="KO_Units_on_Order" Value="Units on Order" />
+      <LocalizedSampleString Key="KO_Discontinued" Value="Discontinued" />
+      <LocalizedSampleString Key="Data_NorthAmerica" Value="North America" />
+      <LocalizedSampleString Key="Data_UnitedStates" Value="United States" />
+      <LocalizedSampleString Key="Data_Canada" Value="Canada" />
+      <LocalizedSampleString Key="Data_Mexico" Value="Mexico" />
+      <LocalizedSampleString Key="Data_SouthAmerica" Value="South America" />
+      <LocalizedSampleString Key="Data_Brazil" Value="Brazil" />
+      <LocalizedSampleString Key="Data_Uruguay" Value="Uruguay" />
+      <LocalizedSampleString Key="Data_Europe" Value="Europe" />
+      <LocalizedSampleString Key="Data_UnitedKingdom" Value="United Kingdom" />
+      <LocalizedSampleString Key="Data_Germany" Value="Germany" />
+      <LocalizedSampleString Key="Data_Bulgaria" Value="Bulgaria" />
+      <LocalizedSampleString Key="All_Employees" Value="All Employees" />
+      <LocalizedSampleString Key="Tech" Value="Tech" />
+      <LocalizedSampleString Key="remove_node" Value="Remove Selected Node" />
+      <LocalizedSampleString Key="select_node" Value="Select Tech Node" />
+      <LocalizedSampleString Key="add_node" Value="Add Node" />
+      <LocalizedSampleString Key="tech_not_removed" Value="Tech node cannot be removed" />
+      <LocalizedSampleString Key="node_removed" Value="Node Removed:" />
+      <LocalizedSampleString Key="select_try_again" Value="Please select a node and try again." />
+      <LocalizedSampleString Key="selection_changed" Value="Selection Changed:" />
+      <LocalizedSampleString Key="node_clicked" Value="Node Clicked:" />
+      <LocalizedSampleString Key="drag_start" Value="Node Drag Start:" />
+      <LocalizedSampleString Key="Trash" Value="Trash" />
+      <LocalizedSampleString Key="Deleted" Value="Deleted" />
+      <LocalizedSampleString Key="permanently_delete" Value="Permanently delete" />
+      <LocalizedSampleString Key="Yes" Value="Yes" />
+      <LocalizedSampleString Key="No" Value="No" />
+      <LocalizedSampleString Key="NewNode" Value="New Node" />
+	  <LocalizedSampleString Key="file_manager" Value="File Manager" />
+    </SampleStrings>
+    <Description>
+      Simplify the look of your hierarchical data into a web-based tree, depicting familiar parent-child relationships between nodes of information. Sporting a responsive user experience and high performance design, your users will love its comprehensive function features like checkbox selection, node templates and more.
+    </Description>
+    <PageKeywords>igTree</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Tree</Name>
+    <SampleStrings>
+      <LocalizedSampleString Key="KO_Getting_Data" Value="データをサーバーから取得しています..."/>
+      <LocalizedSampleString Key="Getting_Data_Error" Value="製品カテゴリを取得するエラーが発生しました。"/>
+      <LocalizedSampleString Key="KO_Category" Value="カテゴリ" />
+      <LocalizedSampleString Key="KO_Name" Value="名前" />
+      <LocalizedSampleString Key="KO_Description" Value="説明" />
+      <LocalizedSampleString Key="KO_Product_Count" Value="製品数" />
+      <LocalizedSampleString Key="KO_Product" Value="製品" />
+      <LocalizedSampleString Key="KO_Quantity_per_Unit" Value="数量" />
+      <LocalizedSampleString Key="KO_Unit_Price" Value="単価" />
+      <LocalizedSampleString Key="KO_Units_in_Stock" Value="在庫数" />
+      <LocalizedSampleString Key="KO_Units_on_Order" Value="入荷待ち" />
+      <LocalizedSampleString Key="KO_Discontinued" Value="製造中止" />
+      <LocalizedSampleString Key="Data_NorthAmerica" Value="北アメリカ" />
+      <LocalizedSampleString Key="Data_UnitedStates" Value="米国" />
+      <LocalizedSampleString Key="Data_Canada" Value="カナダ" />
+      <LocalizedSampleString Key="Data_Mexico" Value="メキシコ" />
+      <LocalizedSampleString Key="Data_SouthAmerica" Value="南アメリカ" />
+      <LocalizedSampleString Key="Data_Brazil" Value="ブラジル" />
+      <LocalizedSampleString Key="Data_Uruguay" Value="ウルグアイ" />
+      <LocalizedSampleString Key="Data_Europe" Value="ヨーロッパ" />
+      <LocalizedSampleString Key="Data_UnitedKingdom" Value="イギリス" />
+      <LocalizedSampleString Key="Data_Germany" Value="ドイツ" />
+      <LocalizedSampleString Key="Data_Bulgaria" Value="ブルガリア" />
+      <LocalizedSampleString Key="All_Employees" Value="全社員" />
+      <LocalizedSampleString Key="Tech" Value="テクノロジー" />
+      <LocalizedSampleString Key="remove_node" Value="選択したノードの削除" />
+      <LocalizedSampleString Key="select_node" Value="「テクノロジー」ノードを選択" />
+      <LocalizedSampleString Key="add_node" Value="ノードを追加" />
+      <LocalizedSampleString Key="tech_not_removed" Value="「テクノロジー」ノードを削除できません。" />
+      <LocalizedSampleString Key="node_removed" Value="ノードが削除されました:" />
+      <LocalizedSampleString Key="select_try_again" Value="ノードを選択して、もう一度試しください。" />
+      <LocalizedSampleString Key="selection_changed" Value="選択が変更されました:" />
+      <LocalizedSampleString Key="node_clicked" Value="ノードがクリックされました:" />
+      <LocalizedSampleString Key="drag_start" Value="ノードのドラッグ開始:" />
+      <LocalizedSampleString Key="Trash" Value="ゴミ箱" />
+      <LocalizedSampleString Key="Deleted" Value="削除済み" />
+      <LocalizedSampleString Key="permanently_delete" Value="削除" />
+      <LocalizedSampleString Key="Yes" Value="はい" />
+      <LocalizedSampleString Key="No" Value="いいえ" />
+      <LocalizedSampleString Key="NewNode" Value="新しいノード" />
+	  <LocalizedSampleString Key="file_manager" Value="ファイル マネージャー" />
+    </SampleStrings>
+    <Description>
+      階層データをツリーに変換すると、情報のノードの親子関係を表示できます。チェックボックス選択、ノードテンプレートなどの機能を提供し、高いパフォーマンスを持つツリー コントロールを実現できます。
+    </Description>
+    <PageKeywords>igTree</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>ui.igtree</ClientApiUrl>
+  <HelpPageName>igTree_igTree</HelpPageName>
+  <ForumNumber>591</ForumNumber>
+  <IconImage>jquery-tree-logo.png</IconImage>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <TOC>
+    <Sample>json-binding</Sample>
+    <Sample>html-binding</Sample>
+    <Sample>xml-binding</Sample>
+    <Sample>aspnet-mvc-helper</Sample>
+    <Sample>aspnet-mvc-load-on-demand</Sample>
+    <Sample>bind-tree-with-ko</Sample>
+    <Sample>drag-and-drop-single-tree</Sample>
+	<Sample>drag-and-drop-multiple-trees</Sample>
+    <Sample>api-and-events</Sample>
+  </TOC>
+</Component>

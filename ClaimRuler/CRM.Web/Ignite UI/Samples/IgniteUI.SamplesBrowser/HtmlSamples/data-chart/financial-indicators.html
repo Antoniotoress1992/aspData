@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Financial Indicators</title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="../../igniteui/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+    <link href="../../igniteui/css/structure/infragistics.css" rel="stylesheet" />
+    
+    <!--CSS file specific for chart styling -->
+    <link href="../../igniteui/css/structure/modules/infragistics.ui.chart.new.css" rel="stylesheet" />
+
+    <script src="../../js/modernizr.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="../../igniteui/js/infragistics.core.js"></script>
+    <script src="../../igniteui/js/infragistics.lob.js"></script>
+    <script src="../../igniteui/js/infragistics.dv.js"></script>
+
+</head>
+<body>
+    <script type="text/javascript" src="../../data-files/financial-indicators.js"></script>
+    <script type="text/javascript" src="../../data-files/financial-data.js"></script>
+
+    <script type="text/javascript">
+
+        $(function () {
+            $("#priceChart").igDataChart({
+                width: "450px",
+                height: "400px",
+                dataSource: data,
+                title: "Microsoft Stock (MSFT)",
+                subtitle: "Data over two months",
+                axes: [{
+                    type: "categoryX",
+                    label: "Date",
+                    name: "xAxis",
+                    interval: 10,
+                    title: "Date"
+                }, {
+                    type: "numericY",
+                    name: "yAxis",
+                    title: "Price"
+                }],
+                series: [{
+                    type: "financial",
+                    isTransitionInEnabled: true,
+                    closeMemberPath: "Close",
+                    highMemberPath: "High",
+                    lowMemberPath: "Low",
+                    openMemberPath: "Open",
+                    volumeMemberPath: "Volume",
+                    xAxis: "xAxis",
+                    yAxis: "yAxis",
+                    name: "priceSeries",
+                    title: "Price Data"
+                }]
+            });
+
+            $("#indicatorChart").igDataChart({
+                width: "450px",
+                height: "400px",
+                dataSource: data,
+                title: "Financial Chart",
+                axes: [{
+                    type: "categoryX",
+                    label: "Date",
+                    name: "xAxis",
+                    interval: 10,
+                    title: "Date"
+                }, {
+                    type: "numericY",
+                    name: "yAxis",
+                    title: "Price"
+                }],
+                series: [{
+                    type: "moneyFlowIndexIndicator",
+                    isTransitionInEnabled: true,
+                    closeMemberPath: "Close",
+                    highMemberPath: "High",
+                    lowMemberPath: "Low",
+                    openMemberPath: "Open",
+                    volumeMemberPath: "Volume",
+                    xAxis: "xAxis",
+                    yAxis: "yAxis",
+                    name: "indicatorSeries",
+                    title: "Financial Indicator Data"
+                }]
+            });
+
+            $("#cbxIndicator").igCombo({
+                width: "400px",
+                enableClearButton: false,
+                mode: "dropdown",
+                dataSource: indicators,
+                textKey: "text",
+                valueKey: "key",
+                selectedItems: [{ index: 17 }],
+                selectionChanged: function (evt, ui) {
+                    if (ui.items && ui.items[0]) {
+                        changeIndicator(ui.items[0].value);
+                    }
+                }
+            });
+
+        });
+
+        function changeIndicator(newIndicator) {
+            $("#indicatorChart").igDataChart("option", "series", [{
+                name: "indicatorSeries",
+                remove: true
+            }]);
+
+            $("#indicatorChart").igDataChart("option", "series", [{
+                type: newIndicator,
+                name: "indicatorSeries",
+                title: "Financial Indicator Data",
+                xAxis: "xAxis",
+                yAxis: "yAxis",
+                closeMemberPath: "Close",
+                highMemberPath: "High",
+                lowMemberPath: "Low",
+                openMemberPath: "Open",
+                volumeMemberPath: "Volume"
+            }]);
+        };
+    </script>
+
+    <style type="text/css">
+        #priceChart, #indicatorChart
+        {
+            margin: 10px 0px 10px 0px;
+        }       
+        
+        .selectionOptions
+        {
+            width: 450px;
+            margin-top: 10px;
+        }
+
+        .selectionOptions > label 
+        {
+            display: block;
+        }
+
+    </style>
+
+    <div id="priceChart"></div>
+    <div id="indicatorChart"></div>
+
+    <div class="selectionOptions">
+        <label>Select Indicator:</label>
+        <span id="cbxIndicator"></span>
+    </div>
+    
+    <div class="selectionOptions" style="display: inline-block">
+        <label>Stock data from:
+            <a href="http://www.quandl.com/" target="_blank">Quandl</a>
+        </label>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>ASP.NET MVC Basic Usage</Title>
+    <Description>This example demonstrates how you can utilize the ASP.NET MVC helper for the Splitter.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>ASP.NET MVC の基本的な使用方法</Title>
+    <Description>このサンプルでは、スプリッターの ASP.NET MVC ヘルパーを使用する方法を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+</Sample>

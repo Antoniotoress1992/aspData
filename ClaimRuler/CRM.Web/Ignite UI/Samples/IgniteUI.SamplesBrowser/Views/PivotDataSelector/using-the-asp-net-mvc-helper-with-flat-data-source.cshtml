@@ -1,0 +1,131 @@
+﻿@using Infragistics.Web.Mvc
+@using IgniteUI.SamplesBrowser.Models
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="@Url.Content("~/igniteui/css/themes/infragistics/infragistics.theme.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/igniteui/css/structure/infragistics.css")" rel="stylesheet" />
+
+    <script src="@Url.Content("~/js/modernizr.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery-ui.min.js")"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="@Url.Content("~/igniteui/js/infragistics.core.js")"></script>
+    <script src="@Url.Content("~/igniteui/js/infragistics.lob.js")"></script>
+
+    <style>
+        #dataSelector, #pivotGrid {
+            float: left;
+        }
+    </style>
+</head>
+<body>
+
+    @(Html.Infragistics().OlapDataSource().ID("flatDataSource")
+        .DataSourceOptions(
+            dataSourceOptions => dataSourceOptions
+                .Columns("[Location].[Location]")
+                .Rows("[Dates].[RequiredDate]")
+                .Measures("[Measures].[Freight]")
+                .FlatDataOptions(flatOptions => flatOptions.Metadata(
+                    metadata => metadata.Cube(cube => cube.Name("Invoices").Caption("Invoices")
+                        .MeasuresDimension(measuresDimension => measuresDimension.Caption("Measures").Measures(
+                            measures =>
+                            {
+                                measures.AddMeasure().Name("Quantity").Caption("Quantity").Aggregator("$.ig.OlapUtilities.prototype.sumAggregator('Quantity')");
+                                measures.AddMeasure().Name("Freight").Caption("Freight").Aggregator("$.ig.OlapUtilities.prototype.sumAggregator('Freight', 2)");
+                                measures.AddMeasure().Name("Discount").Caption("Discount").Aggregator("$.ig.OlapUtilities.prototype.sumAggregator('Discount', 2)");
+                            }))
+                        .Dimensions(dimensions =>
+                            {
+                                dimensions.AddDimension().Name("Location").Caption("Location").Hierarchies(
+                                    hierarchies =>
+                                        hierarchies.AddHierarchy().Name("Location").Caption("Location").Levels(levels =>
+                                        {
+                                            levels.AddLevel().Name("AllLocations").Caption("All Locations")
+                                                .MemberProvider("function(item) {return 'All Locations';}");
+                                            levels.AddLevel().Name("ShipCountry").Caption("Country")
+                                                .MemberProvider("function(item) {return item.ShipCountry; }");
+                                            levels.AddLevel().Name("City").Caption("City")
+                                                .MemberProvider("function(item) {return item.City; }");
+                                            levels.AddLevel().Name("Address").Caption("Address")
+                                                .MemberProvider("function(item) {return item.Address; }");
+                                        }));
+                                dimensions.AddDimension().Name("Dates").Caption("Dates").Hierarchies(
+                                    hierarchies =>
+                                    {
+                                        hierarchies.AddHierarchy().Name("RequiredDate").Caption("Required Date").Levels(levels =>
+                                        {
+                                            levels.AddLevel().Name("AllPeriods").Caption("All Periods").MemberProvider("function(item) { return 'All Periods'; }");
+                                            levels.AddLevel().Name("Year").Caption("Year").MemberProvider("$.ig.OlapUtilities.prototype.dateMemberProvider('year', 'RequiredDate')");
+                                            levels.AddLevel().Name("Quarter").Caption("Quarter").MemberProvider("$.ig.OlapUtilities.prototype.dateMemberProvider('quarter', 'RequiredDate')");
+                                            levels.AddLevel().Name("Month").Caption("Month").MemberProvider("$.ig.OlapUtilities.prototype.dateMemberProvider('month', 'RequiredDate')");
+                                            levels.AddLevel().Name("Date").Caption("Date").MemberProvider("$.ig.OlapUtilities.prototype.dateMemberProvider('date', 'RequiredDate')");
+                                        });
+                                        hierarchies.AddHierarchy().Name("ShippedDate").Caption("Shipped Date").Levels(levels =>
+                                        {
+                                            levels.AddLevel().Name("AllPeriods").Caption("All Periods").MemberProvider("function(item) { return 'All Periods'; }");
+                                            levels.AddLevel().Name("Year").Caption("Year").MemberProvider("$.ig.OlapUtilities.prototype.dateMemberProvider('year', 'ShippedDate')");
+                                            levels.AddLevel().Name("Quarter").Caption("Quarter").MemberProvider("$.ig.OlapUtilities.prototype.dateMemberProvider('quarter', 'ShippedDate')");
+                                            levels.AddLevel().Name("Month").Caption("Month").MemberProvider("$.ig.OlapUtilities.prototype.dateMemberProvider('month', 'ShippedDate')");
+                                            levels.AddLevel().Name("Date").Caption("Date").MemberProvider("$.ig.OlapUtilities.prototype.dateMemberProvider('date', 'ShippedDate')");
+                                        });
+                                        hierarchies.AddHierarchy().Name("OrderDate").Caption("Order Date").Levels(levels =>
+                                        {
+                                            levels.AddLevel().Name("AllPeriods").Caption("All Periods").MemberProvider("function(item) { return 'All Periods'; }");
+                                            levels.AddLevel().Name("Year").Caption("Year").MemberProvider("$.ig.OlapUtilities.prototype.dateMemberProvider('year', 'OrderDate')");
+                                            levels.AddLevel().Name("Quarter").Caption("Quarter").MemberProvider("$.ig.OlapUtilities.prototype.dateMemberProvider('quarter', 'OrderDate')");
+                                            levels.AddLevel().Name("Month").Caption("Month").MemberProvider("$.ig.OlapUtilities.prototype.dateMemberProvider('month', 'OrderDate')");
+                                            levels.AddLevel().Name("Date").Caption("Date").MemberProvider("$.ig.OlapUtilities.prototype.dateMemberProvider('date', 'OrderDate')");
+                                        });
+                                    });
+                                dimensions.AddDimension().Name("Customers").Caption("Customers").Hierarchies(
+                                    hierarchies =>
+                                        hierarchies.AddHierarchy().Name("Customers").Caption("Customers").Levels(levels =>
+                                        {
+                                            levels.AddLevel().Name("AllCustomers").Caption("All Customers")
+                                                .MemberProvider("function(item) {return 'All Customers'; }");
+                                            levels.AddLevel().Name("CustomerName").Caption("Customer Name")
+                                                .MemberProvider("function(item) {return item.CustomerName; }");
+                                        }));
+                                dimensions.AddDimension().Name("Salespeople").Caption("Salespeople").Hierarchies(
+                                    hierarchies =>
+                                        hierarchies.AddHierarchy().Name("Salespeople").Caption("Salespeople").Levels(levels =>
+                                        {
+                                            levels.AddLevel().Name("AllSalespeople").Caption("All Salespeople")
+                                                .MemberProvider("function(item) {return 'All Salespeople'; }");
+                                            levels.AddLevel().Name("Salesperson").Caption("Salesperson")
+                                                .MemberProvider("function(item) {return item.Salesperson; }");
+                                        }));
+                                dimensions.AddDimension().Name("Shippers").Caption("Shippers").Hierarchies(
+                                    hierarchies =>
+                                        hierarchies.AddHierarchy().Name("Shippers").Caption("Shippers").Levels(levels =>
+                                        {
+                                            levels.AddLevel().Name("AllShippers").Caption("All Shippers")
+                                                .MemberProvider("function(item) {return 'All Shippers'; }");
+                                            levels.AddLevel().Name("ShipperName").Caption("Shipper Name")
+                                                .MemberProvider("function(item) {return item.ShipperName; }");
+                                        }));
+                                dimensions.AddDimension().Name("Products").Caption("Products").Hierarchies(
+                                    hierarchies =>
+                                        hierarchies.AddHierarchy().Name("Products").Caption("Products").Levels(levels =>
+                                        {
+                                            levels.AddLevel().Name("AllProducts").Caption("All Products")
+                                                .MemberProvider("function(item) {return 'All Products'; }");
+                                            levels.AddLevel().Name("Product").Caption("Product")
+                                                .MemberProvider("function(item) {return item.ProductName; }");
+                                        }));
+                            })))
+                        .DataSource(this.Model)
+                        .DataBind()))
+                    .Render())
+    @(Html.Infragistics().PivotDataSelector().Width("230px").Height("565px").DataSourceID("flatDataSource").ID("dataSelector").Render())
+    @(Html.Infragistics().PivotGrid().Width("680px").Height("565px").DataSourceID("flatDataSource").ID("pivotGrid").Render())
+</body>
+</html>

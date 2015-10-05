@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Binding to Flat Data Source</Title>
+    <Description>This sample demonstrates how to bind the igPivotView to an igOlapFlatDataSource.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>フラット データ ソースへのバインド</Title>
+    <Description>このサンプルでは、igPivotView を igOlapFlatDataSource にバインドする方法を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <MinSampleSize>Desktop</MinSampleSize>
+</Sample>

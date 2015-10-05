@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Load on Demand</Title>
+    <Description>
+        <![CDATA[
+        This sample demonstrates how to use the load on demand functionality of igHierarchicalGrid. Load on demand functionality enables the hierarchical grid to request the data for the child layouts from the server as the user interacts with the grid (expands a layout). This approach significantly reduces the data being transferred between the browser and the server.<br/>
+        The grid in this sample is configured in the controller which is mandatory for load on demand scenario. When you expand a row the data for the child layout will be requested with an AJAX call from the server.
+        ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>ロードオンデマンド</Title>
+    <Description>
+        <![CDATA[
+        このサンプルでは、igHierarchicalGrid のロードオンデマンド機能の使用方法を紹介します。ロードオンデマンド機能は、ユーザーがグリッドのレイアウトを展開するときにサーバーから子レイアウトのデータを要求します。この方法は、ブラウザーとサーバーの間に送信されるデータの量を減らします。<br/>
+        このサンプルのグリッドは、コントローラーで構成されます。ロードオンデマンドの場合に必要です。行を展開すると、子レイアウトのデータがサーバーから AJAX 呼び出しで要求されます。
+        ]]>
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

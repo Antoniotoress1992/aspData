@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Claim_RulerDataSet" targetNamespace="http://tempuri.org/Claim_RulerDataSet.xsd" xmlns:mstns="http://tempuri.org/Claim_RulerDataSet.xsd" xmlns="http://tempuri.org/Claim_RulerDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ClaimRulerConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ClaimRulerConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ClaimRulerConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vw_AdjusterPayoutTableAdapter" GeneratorDataComponentClassName="vw_AdjusterPayoutTableAdapter" Name="vw_AdjusterPayout" UserDataComponentName="vw_AdjusterPayoutTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ClaimRulerConnectionString (Web.config)" DbObjectName="Claim_Ruler.dbo.vw_AdjusterPayout" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT InvoiceID, InvoiceNumber, ServiceDate, AdjusterClaimNumber, ClaimID, PolicyID, AdjusterId, AdjusterName, Total, ExpenseDate, Rate, CommissionAmount, TaxRate, NetCommissionAmount, InsuredName, ServiceDescription, StatusID, ClientID, TotalAmount FROM dbo.vw_AdjusterPayout</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="InvoiceID" DataSetColumn="InvoiceID" />
+              <Mapping SourceColumn="InvoiceNumber" DataSetColumn="InvoiceNumber" />
+              <Mapping SourceColumn="ServiceDate" DataSetColumn="ServiceDate" />
+              <Mapping SourceColumn="AdjusterClaimNumber" DataSetColumn="AdjusterClaimNumber" />
+              <Mapping SourceColumn="ClaimID" DataSetColumn="ClaimID" />
+              <Mapping SourceColumn="PolicyID" DataSetColumn="PolicyID" />
+              <Mapping SourceColumn="AdjusterId" DataSetColumn="AdjusterId" />
+              <Mapping SourceColumn="AdjusterName" DataSetColumn="AdjusterName" />
+              <Mapping SourceColumn="Total" DataSetColumn="Total" />
+              <Mapping SourceColumn="ExpenseDate" DataSetColumn="ExpenseDate" />
+              <Mapping SourceColumn="Rate" DataSetColumn="Rate" />
+              <Mapping SourceColumn="CommissionAmount" DataSetColumn="CommissionAmount" />
+              <Mapping SourceColumn="TaxRate" DataSetColumn="TaxRate" />
+              <Mapping SourceColumn="NetCommissionAmount" DataSetColumn="NetCommissionAmount" />
+              <Mapping SourceColumn="InsuredName" DataSetColumn="InsuredName" />
+              <Mapping SourceColumn="ServiceDescription" DataSetColumn="ServiceDescription" />
+              <Mapping SourceColumn="StatusID" DataSetColumn="StatusID" />
+              <Mapping SourceColumn="ClientID" DataSetColumn="ClientID" />
+              <Mapping SourceColumn="TotalAmount" DataSetColumn="TotalAmount" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Claim_RulerDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Claim_RulerDataSet" msprop:Generator_UserDSName="Claim_RulerDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vw_AdjusterPayout" msprop:Generator_TableClassName="vw_AdjusterPayoutDataTable" msprop:Generator_TableVarName="tablevw_AdjusterPayout" msprop:Generator_TablePropName="vw_AdjusterPayout" msprop:Generator_RowDeletingName="vw_AdjusterPayoutRowDeleting" msprop:Generator_RowChangingName="vw_AdjusterPayoutRowChanging" msprop:Generator_RowEvHandlerName="vw_AdjusterPayoutRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_AdjusterPayoutRowDeleted" msprop:Generator_UserTableName="vw_AdjusterPayout" msprop:Generator_RowChangedName="vw_AdjusterPayoutRowChanged" msprop:Generator_RowEvArgName="vw_AdjusterPayoutRowChangeEvent" msprop:Generator_RowClassName="vw_AdjusterPayoutRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="InvoiceID" msprop:Generator_ColumnVarNameInTable="columnInvoiceID" msprop:Generator_ColumnPropNameInRow="InvoiceID" msprop:Generator_ColumnPropNameInTable="InvoiceIDColumn" msprop:Generator_UserColumnName="InvoiceID" type="xs:int" />
+              <xs:element name="InvoiceNumber" msprop:Generator_ColumnVarNameInTable="columnInvoiceNumber" msprop:Generator_ColumnPropNameInRow="InvoiceNumber" msprop:Generator_ColumnPropNameInTable="InvoiceNumberColumn" msprop:Generator_UserColumnName="InvoiceNumber" type="xs:int" minOccurs="0" />
+              <xs:element name="ServiceDate" msprop:Generator_ColumnVarNameInTable="columnServiceDate" msprop:Generator_ColumnPropNameInRow="ServiceDate" msprop:Generator_ColumnPropNameInTable="ServiceDateColumn" msprop:Generator_UserColumnName="ServiceDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="AdjusterClaimNumber" msprop:Generator_ColumnVarNameInTable="columnAdjusterClaimNumber" msprop:Generator_ColumnPropNameInRow="AdjusterClaimNumber" msprop:Generator_ColumnPropNameInTable="AdjusterClaimNumberColumn" msprop:Generator_UserColumnName="AdjusterClaimNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ClaimID" msprop:Generator_ColumnVarNameInTable="columnClaimID" msprop:Generator_ColumnPropNameInRow="ClaimID" msprop:Generator_ColumnPropNameInTable="ClaimIDColumn" msprop:Generator_UserColumnName="ClaimID" type="xs:int" />
+              <xs:element name="PolicyID" msprop:Generator_ColumnVarNameInTable="columnPolicyID" msprop:Generator_ColumnPropNameInRow="PolicyID" msprop:Generator_ColumnPropNameInTable="PolicyIDColumn" msprop:Generator_UserColumnName="PolicyID" type="xs:int" />
+              <xs:element name="AdjusterId" msprop:Generator_ColumnVarNameInTable="columnAdjusterId" msprop:Generator_ColumnPropNameInRow="AdjusterId" msprop:Generator_ColumnPropNameInTable="AdjusterIdColumn" msprop:Generator_UserColumnName="AdjusterId" type="xs:int" />
+              <xs:element name="AdjusterName" msprop:Generator_ColumnVarNameInTable="columnAdjusterName" msprop:Generator_ColumnPropNameInRow="AdjusterName" msprop:Generator_ColumnPropNameInTable="AdjusterNameColumn" msprop:Generator_UserColumnName="AdjusterName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_UserColumnName="Total" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ExpenseDate" msprop:Generator_ColumnVarNameInTable="columnExpenseDate" msprop:Generator_ColumnPropNameInRow="ExpenseDate" msprop:Generator_ColumnPropNameInTable="ExpenseDateColumn" msprop:Generator_UserColumnName="ExpenseDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Rate" msprop:Generator_ColumnVarNameInTable="columnRate" msprop:Generator_ColumnPropNameInRow="Rate" msprop:Generator_ColumnPropNameInTable="RateColumn" msprop:Generator_UserColumnName="Rate" type="xs:decimal" />
+              <xs:element name="CommissionAmount" msprop:Generator_ColumnVarNameInTable="columnCommissionAmount" msprop:Generator_ColumnPropNameInRow="CommissionAmount" msprop:Generator_ColumnPropNameInTable="CommissionAmountColumn" msprop:Generator_UserColumnName="CommissionAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TaxRate" msprop:Generator_ColumnVarNameInTable="columnTaxRate" msprop:Generator_ColumnPropNameInRow="TaxRate" msprop:Generator_ColumnPropNameInTable="TaxRateColumn" msprop:Generator_UserColumnName="TaxRate" type="xs:decimal" />
+              <xs:element name="NetCommissionAmount" msprop:Generator_ColumnVarNameInTable="columnNetCommissionAmount" msprop:Generator_ColumnPropNameInRow="NetCommissionAmount" msprop:Generator_ColumnPropNameInTable="NetCommissionAmountColumn" msprop:Generator_UserColumnName="NetCommissionAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="InsuredName" msprop:Generator_ColumnVarNameInTable="columnInsuredName" msprop:Generator_ColumnPropNameInRow="InsuredName" msprop:Generator_ColumnPropNameInTable="InsuredNameColumn" msprop:Generator_UserColumnName="InsuredName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ServiceDescription" msprop:Generator_ColumnVarNameInTable="columnServiceDescription" msprop:Generator_ColumnPropNameInRow="ServiceDescription" msprop:Generator_ColumnPropNameInTable="ServiceDescriptionColumn" msprop:Generator_UserColumnName="ServiceDescription" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StatusID" msprop:Generator_ColumnVarNameInTable="columnStatusID" msprop:Generator_ColumnPropNameInRow="StatusID" msprop:Generator_ColumnPropNameInTable="StatusIDColumn" msprop:Generator_UserColumnName="StatusID" type="xs:int" minOccurs="0" />
+              <xs:element name="ClientID" msprop:Generator_ColumnVarNameInTable="columnClientID" msprop:Generator_ColumnPropNameInRow="ClientID" msprop:Generator_ColumnPropNameInTable="ClientIDColumn" msprop:Generator_UserColumnName="ClientID" type="xs:int" minOccurs="0" />
+              <xs:element name="TotalAmount" msprop:Generator_ColumnVarNameInTable="columnTotalAmount" msprop:Generator_ColumnPropNameInRow="TotalAmount" msprop:Generator_ColumnPropNameInTable="TotalAmountColumn" msprop:Generator_UserColumnName="TotalAmount" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vw_AdjusterPayout" />
+      <xs:field xpath="mstns:InvoiceID" />
+      <xs:field xpath="mstns:ClaimID" />
+      <xs:field xpath="mstns:AdjusterId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

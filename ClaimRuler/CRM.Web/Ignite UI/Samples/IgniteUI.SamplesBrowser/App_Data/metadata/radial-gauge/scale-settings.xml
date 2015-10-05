@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Scale Settings</Title>
+    <Description>A scale defines a range of values in the Radial Gauge. Use the table above to set the Radial Gauge control's scale properties. </Description>
+    <HelpTopics>
+      <HelpTopic Title="Configuring the Scales (igRadialGauge)" TopicName="igRadialGauge_Configuring_the_Scales" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>スケールの設定</Title>
+    <Description>スケールは、ラジアル ゲージで値の範囲を定義します。以上の表を使用してラジアル ゲージ コントロールのスケール プロパティを設定できます。</Description>
+    <HelpTopics>
+      <HelpTopic Title="スケールの構成 (igRadialGauge)" TopicName="igRadialGauge_Configuring_the_Scales" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Basic Usage</Title>
+    <Description>This sample demonstrates how the NavBar ASP.NET MVC helper allows you to create and customize navigation menus.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Adding NavBar" TopicName="Adding_NavBar" />
+      <HelpTopic Title="Overview" TopicName="NavBar_Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>基本的な使用方法</Title>
+    <Description>このサンプルでは、NavBar ASP.NET MVC ヘルパーを使用してナビゲーション メニューを作成してカスタマイズする方法を紹介します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="NavBar の追加" TopicName="Adding_NavBar" />
+      <HelpTopic Title="概要" TopicName="NavBar_Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+</Sample>

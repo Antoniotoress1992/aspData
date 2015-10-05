@@ -1,0 +1,59 @@
+﻿@using IgniteUI.SamplesBrowser.Application.Model
+@using Infragistics.IgniteUI.SamplesBrowser.Shared.ViewModels
+@model SampleViewModel
+
+<div class="igsb-running-sample @Model.MinSampleSizeCssClass">
+    @if (Model.Sample.Control.IsJQueryUI)
+    {
+        @Html.Raw(Model.Sample.Code.RunningSampleBody)
+    }
+    @if (Model.Sample.Control.IsJQueryMobile)
+    {            
+        if(Model.ShowMobileSampleUI)
+        {           
+            @Html.Partial("_MobileThemes");
+        }
+        <div class="mobileMainContainer">
+            <div id="phoneContainer" class="phone ios phoneie7">
+                <div id="mobileDiv" class="screen">
+                    <iframe id="mobile-content" src="@Url.Content(Model.MobileSampleUrl)" scrolling="no" frameborder="0"></iframe>
+                    <input type="hidden" name="_themeCombo" />
+                </div>
+            </div>
+        </div>                
+        if(Model.ShowMobileSampleUI)
+        {                                         
+        <div id="rightElements" class="info-area">
+            <div class="popout-container">
+                <a id="popoutLink" href="@Url.Content(Model.Sample.NativeMobileUrl)" target="_blank">
+                    <div class="popout-sample">@Resources.Main.Popout_Sample</div>
+                </a>
+                <div id="qrZone" class="qr-code">
+                    <p>@Resources.Main.Popout_Description</p>
+                    <div id="qrCodeZone"></div>
+                </div>
+            </div>
+        </div>
+        }
+    }
+</div>
+@if (Model.Sample.Control.IsJQueryUI)
+{
+    <div class="igsb-width-msg @Model.MinSampleSizeCssClass">
+        <div class="igsb-width-msg-inner">
+            <p>@Resources.Main.Screen_Size_Message</p>
+            <br />
+            <p>@Html.Raw(string.Format(Resources.Main.Other_Viewing_Options_Format, Url.Content(Model.NativeSampleRelativeUrl), Model.EmailSampleUrl))</p>
+        </div>
+    </div>
+    
+    if (Model.Sample.Control.PathID == "dialog-window")
+    {
+        <script>
+            $("body").on("igdialogcreate", function (e, ui) {
+                var fallbackClass = $("#sbRunningSample").attr("class");
+                $(".ui-igdialog").addClass(fallbackClass);
+            });
+        </script>
+    }
+}

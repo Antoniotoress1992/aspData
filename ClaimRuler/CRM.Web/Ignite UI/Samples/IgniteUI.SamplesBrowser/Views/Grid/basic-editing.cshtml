@@ -1,0 +1,150 @@
+﻿@using Infragistics.Web.Mvc
+@using IgniteUI.SamplesBrowser.Models
+@model IQueryable<IgniteUI.SamplesBrowser.Models.Northwind.Order>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="@Url.Content("~/igniteui/css/themes/infragistics/infragistics.theme.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/igniteui/css/structure/infragistics.css")" rel="stylesheet" />
+
+    <script src="@Url.Content("~/js/modernizr.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery-ui.min.js")"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="@Url.Content("~/igniteui/js/infragistics.core.js")"></script>
+    <script src="@Url.Content("~/igniteui/js/infragistics.lob.js")"></script>
+
+	<style type="text/css">
+		input.button-style
+		{
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+
+    @(Html.Infragistics()
+        .Grid(Model)
+        .ID("Grid")
+        .Height("500px")
+        .Width("100%")
+        .AutoGenerateColumns(false)
+        .AutoGenerateLayouts(false)
+        .RenderCheckboxes(true)
+        .PrimaryKey("OrderID")
+        .Columns(column =>
+        {
+            column.For(x => x.OrderID).HeaderText("Order ID").Width("10%");
+            column.For(x => x.OrderDate).HeaderText("Order Date").Width("15%");
+            column.For(x => x.CustomerID).HeaderText("Ship Name").Width("20%").FormatterFunction("lookupCustomer");
+            column.For(x => x.ShipAddress).HeaderText("Ship Address").Width("25%");
+            column.For(x => x.TotalItems).HeaderText("Total Items").Width("10%");
+            column.For(x => x.TotalPrice).HeaderText("Total Price").Width("15%");
+        })
+        .Features(feature =>
+        {
+            feature.Updating().ColumnSettings(cs => {
+                cs.ColumnSetting().ColumnKey("OrderID").ReadOnly(true);
+                cs.ColumnSetting().ColumnKey("OrderDate").EditorType(ColumnEditorType.DatePicker).Required(true);
+                cs.ColumnSetting().ColumnKey("CustomerID").EditorType(ColumnEditorType.Combo).Required(true).ComboEditorOptions(co => co.DataSource(ViewBag.Customers).ValueKey("ID").TextKey("CompanyName").Mode(ComboMode.DropDown).EnableClearButton(false));
+                cs.ColumnSetting().ColumnKey("ShipAddress").Required(true).TextEditorOptions(o => o.ValidatorOptions(vo => vo.MinLength(4).KeepFocus(ValidatorKeepFocus.Never)));
+                cs.ColumnSetting().ColumnKey("TotalItems").Required(true);
+                cs.ColumnSetting().ColumnKey("TotalPrice").Required(true).EditorType(ColumnEditorType.Currency);
+            });
+            feature.Sorting();
+        })
+        .DataSourceUrl(Url.Action("GetOrders"))
+        .UpdateUrl(Url.Action("OrdersSaveData"))
+        .DataBind()
+        .Render()
+    )
+    <input type="button" id="saveChanges" class="button-style" value="Save Changes" />
+    <input type="button" id="undo" class="button-style" value="Undo" />
+    <input type="button" id="redo" class="button-style" value="Redo" />
+    <script>
+        var updates, customersLookup = [];
+        $(function () {
+            var grid = $("#Grid"), comboDataSource = {};
+            comboDataSource = grid.data("igGridUpdating").options.columnSettings[2].editorOptions.dataSource;
+            for (var i = 0; i < comboDataSource.length; i++) {
+                customersLookup[comboDataSource[i].ID] = comboDataSource[i];
+            }
+            $("#saveChanges").igButton({ labelText: $("#saveChanges").val(), disabled: true });
+            $("#undo").igButton({ labelText: $("#undo").val(), disabled: true });
+            $("#redo").igButton({ labelText: $("#redo").val(), disabled: true });
+
+            grid.on("iggridupdatingrowdeleted", function (e, args) {
+                $("#undo").igButton("option", "disabled", false);
+                $("#saveChanges").igButton("option", "disabled", false);
+            });
+
+            grid.on("iggridupdatingrowadded", function (e, args) {
+                $("#undo").igButton("option", "disabled", false);
+                $("#saveChanges").igButton("option", "disabled", false);
+            });
+            grid.on("iggridupdatingeditrowended", function (e, args) {
+                if (args.update) {
+                    $("#undo").igButton("option", "disabled", false);
+                    $("#saveChanges").igButton("option", "disabled", false);
+                }
+            });
+            $("#undo").on('igbuttonclick',
+                function (e, args) {
+                    updates = grid.data('igGrid').dataSource.allTransactions();
+                    grid.igGrid("rollback", true);
+
+                    $("#redo").igButton("option", "disabled", false);
+                    $("#undo").igButton("disable");
+                    $("#saveChanges").igButton("disable");
+
+                    return false;
+                }
+            );
+
+            $("#redo").on('igbuttonclick',
+                function (e) {
+                    $.each(updates, function (index, transaction) {
+                        switch (transaction.type) {
+                            case "row":
+                                grid.igGridUpdating('updateRow', transaction.rowId, transaction.row, null, false);
+                                break;
+                            case "newrow":
+                                grid.igGridUpdating('addRow', transaction.row, false);
+                                break;
+                            case "deleterow":
+                                grid.igGridUpdating('deleteRow', transaction.rowId, false);
+                                break;
+                        }
+
+                    });
+                    $(this).igButton("disable");
+                    $("#undo").igButton("option", "disabled", false);
+                    $("#saveChanges").igButton("option", "disabled", false);
+                }
+            );
+
+            $("#saveChanges").on('igbuttonclick',
+                function (e) {
+                    grid.igGrid("saveChanges");
+                    $("#undo").igButton("disable");
+                    $(this).igButton("disable");
+                    return false;
+                }
+            );
+            $("#Grid").on("iggridupdatingdatadirty", function (event, ui) {
+                grid.igGrid("commit");
+                //saving local changes to the datasource when sorting
+                return false;
+            });
+        });
+        function lookupCustomer(id) {
+            return customersLookup[id].CompanyName;
+        }
+    </script>
+</body>
+</html>

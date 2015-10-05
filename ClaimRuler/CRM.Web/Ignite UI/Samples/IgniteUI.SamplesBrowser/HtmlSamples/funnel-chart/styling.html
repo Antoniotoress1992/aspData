@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="../../igniteui/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+    <link href="../../igniteui/css/structure/infragistics.css" rel="stylesheet" />
+
+    <script src="../../js/modernizr.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="../../igniteui/js/infragistics.core.js"></script>
+    <script src="../../igniteui/js/infragistics.dv.js"></script>
+    <script src="../../igniteui/js/infragistics.lob.js" type="text/javascript"></script>
+
+</head>
+<body>
+    <link href="../../css/charts/chart-samples.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript">
+        var data = [
+            { Budget: 30, Department: "Administration" },
+            { Budget: 50, Department: "Sales" },
+            { Budget: 60, Department: "IT" },
+            { Budget: 50, Department: "Marketing" },
+            { Budget: 100, Department: "Development" },
+            { Budget: 20, Department: "Support" }
+        ];
+
+        $(function () {
+            //  Create a regular funnel chart: It is styled according to the CSS in the infragistics.theme.css
+            //  The styles are redefined later in the <style> node of the page
+            $("#chartCSS").igFunnelChart({
+                width: "100%",
+                height: "430px",
+                dataSource: data,
+					 tooltipTemplate: "${Department}: ${Budget}",
+                valueMemberPath: "Budget",
+                innerLabelMemberPath: "Budget",
+                innerLabelVisibility: "visible",
+                outerLabelMemberPath: "Department",
+                outerLabelVisibility: "visible"
+            });
+            //  Create a funnel chart with brushes and outlines options set with specific colors
+            $("#chartOptions").igFunnelChart({
+                width: "100%",
+                height: "430px",
+                dataSource: data,
+					 tooltipTemplate: "${Department}: ${Budget}",
+                outlineThickness: 3,
+                bottomEdgeWidth: 0.25,
+                outerLabelAlignment: "right",
+                brushes: ["#7DC3D9", "#3e5354", "#9EB5B4", "#5DD1C6", "#AFD1CE", "#2B768E"],
+                outlines: [ "#3189A6", "#212D2E", "#5C7877", "#2FA498", "#487D78", "#163F4B" ],
+                valueMemberPath: "Budget",
+                innerLabelMemberPath: "Budget",
+                innerLabelVisibility: "visible",
+                outerLabelMemberPath: "Department",
+                outerLabelVisibility: "visible"
+            });
+        });
+    </script>
+
+    <style type="text/css">
+        /* Redefine the styles from infragistics.theme.css that define fill and border colors for slices */
+        .customCss .ui-chart-palette-1 { border-color: #00AADE; background-color: #00AADE }
+        .customCss .ui-chart-palette-2 { border-color: #4B4B4D; background-color: #4B4B4D }
+        .customCss .ui-chart-palette-3 { border-color: #FCB025; background-color: #FCB025 }
+        .customCss .ui-chart-palette-4 { border-color: #EC6C2B; background-color: #EC6C2B }
+        .customCss .ui-chart-palette-5 { border-color: #36C0F3; background-color: #36C0F3 }
+        .customCss .ui-chart-palette-6 { border-color: #5B17A8; background-color: #5B17A8 }
+        .customCss .ui-funnel { 
+            font-family: verdana;
+				font-weight: bold;
+				font-style: italic;
+            font-size: 12px;
+            color: #d00000;
+        }
+        .customCss .ui-funnel-slice { color: yellow; }
+        .customCss .ui-funnel-tooltip {
+            font-family: 'Courier New';
+				background: #e0e0f0;
+				border: 1px solid #8080e0;
+            font-size: 18px;
+            color: #8000a0;
+        }
+    </style>
+
+    <div class="sampleContent">
+        <div style="display: inline-block; height: 460px; width: 44%; z-index: 2; position: relative;" class="customCss">
+            <h4>Styled by CSS</h4>
+            <div id="chartCSS" style="border: none;"></div>
+        </div>
+        <div style="display: inline-block; height: 460px; width: 44%; margin-left: 1.5%;">
+            <h4>Styled by Widget Options</h4>
+            <div id="chartOptions" style="border: none;"></div>
+        </div>
+    </div>
+</body>
+</html>

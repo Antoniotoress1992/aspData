@@ -1,0 +1,89 @@
+﻿@using Infragistics.Web.Mvc
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="@Url.Content("~/igniteui/css/themes/infragistics/infragistics.theme.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/igniteui/css/structure/infragistics.css")" rel="stylesheet" />
+
+    <script src="@Url.Content("~/js/modernizr.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery-ui.min.js")"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="@Url.Content("~/igniteui/js/infragistics.core.js")"></script>
+    <script src="@Url.Content("~/igniteui/js/infragistics.dv.js")"></script>
+</head>
+<body>
+    <h2>Cranberry Lake Weather</h2> 
+    <h3>RAWS WANAKENA NY US, Newton Falls, 9/26/2013</h3>
+    <br />
+
+    Temperature
+    @(Html.Infragistics().LinearGauge()
+        .Width("100%")
+        .Height("80px")
+        .MinimumValue(-20)
+        .MaximumValue(40)
+        .Interval(10)
+        .Ranges(range =>
+            {
+                range.Range("range1").StartValue(-20).EndValue(0).Brush("#FDB881");
+                range.Range("range2").StartValue(0).EndValue(20).Brush("#F99544");
+                range.Range("range3").StartValue(20).EndValue(30).Brush("#F18B36");
+                range.Range("range4").StartValue(30).EndValue(40).Brush("#D2660D");
+            })
+        .Value(6.6)
+        .NeedleBrush("orange")
+        .NeedleShape(LinearGraphNeedleShape.Triangle)
+        .FontBrush("#D2660D")
+        .TickBrush("#E2661D")
+        .ClientEvents(new Dictionary<string, string>() { { "formatLabel", "function(evt, ui) { ui.label += '°C' }" } })
+        .TransitionDuration(500)
+        .HtmlAttributes(new Dictionary<string, object> { { "style", "margin-bottom:40px" } })
+        .Render())
+
+    Air Pressure (hPa)
+    @(Html.Infragistics().LinearGauge()
+        .Width("100%")
+        .Height("80px")
+        .MinimumValue(940)
+        .MaximumValue(1060)
+        .Interval(20)  
+        .Ranges(range =>
+            {
+                range.Range("stormy").StartValue(940).EndValue(980).Brush("#ABD652");
+                range.Range("change").StartValue(980).EndValue(1020).Brush("#739F19");
+                range.Range("veryDry").StartValue(1020).EndValue(1060).Brush("#527211");
+            })
+        .Value(1018)
+        .NeedleBrush("white")
+        .NeedleShape(LinearGraphNeedleShape.Trapezoid)
+        .FontBrush("#527211")
+        .TickBrush("#628221")
+        .HtmlAttributes(new Dictionary<string, object> { { "style", "margin-bottom:40px" } }) 
+        .TransitionDuration(500)
+        .Render())
+
+    Humidity
+    @(Html.Infragistics().LinearGauge()
+        .Width("100%")
+        .Height("80px")         
+        .Ranges(range =>
+        {
+            range.Range("dangerHigh").StartValue(60).EndValue(100);
+            range.Range("normal").StartValue(30).EndValue(60);
+            range.Range("dangerLow").StartValue(0).EndValue(30);
+        })
+        .Value(99)
+        .FontBrush("#216E99")
+        .TickBrush("#115E89")
+        .ClientEvents(new Dictionary<string, string>() { { "formatLabel", "function(evt, ui) { ui.label += '%' }" } })
+        .TransitionDuration(500)
+        .Render())
+</body>
+</html>

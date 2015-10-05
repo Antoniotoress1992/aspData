@@ -1,0 +1,64 @@
+﻿@using Infragistics.IgniteUI.SamplesBrowser.Shared.Contracts
+@model ICustomErrorViewModel
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>@Model.PageTitle</title>    
+    <link href="@Url.Content("~/css/sb-responsive.css")" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600,400' rel='stylesheet' type='text/css' />
+</head>
+<body>
+    <div id="sampleBrowserContainer" class="sbContainer, sbContainerError" >
+        <header class="ui-helper-clearfix row sbHeader">
+            <div class="headerIcon">
+                <a href="@Url.Content("~/")">
+                    <img src="@Url.Content("~/images/headerIcon.PNG")" />
+                </a>
+            </div>
+        </header>
+
+        <div id="mainContainer" class="sb-layout ui-helper-clearfix">
+            <div class="menu-bar">
+                <a href="@Url.Content("~/")" class="tablet-size-logo"></a>
+                <a href="@Url.Content("~/")" class="phone-size-logo"></a>
+            </div>
+
+            <section class="row sample-page main-error-content ui-helper-clearfix">
+
+                <article class="ui-helper-clearfix">
+                    <div id="sample">
+                        <section>
+                            <div id="sampleNavigation" class="ui-helper-clearfix">
+                                <h1 id="sample-title" class="pageTitle" style="float: none">@Model.Heading</h1>
+
+                            </div>
+
+                            <div class="igsb-sample-desc">
+                                @Model.Message
+                            </div>
+                            
+                            <img style="width: 80%;display: block; padding-top: 20px; margin-left: auto; margin-right: auto" src="@Url.Content(Model.ImageUrl)" alt="@Model.PageTitle" title="@Model.PageTitle" />
+                            
+                        </section>
+                    </div>
+                </article>
+            </section>
+        </div>
+    <footer class="row footerArea">
+        <div class="footerIcon">
+            <img src="@Url.Content("~/images/footerIcon.PNG")" />
+        </div>
+        <nav class="footerNav">
+            <a href="http://www.infragistics.com/legal/license/">LICENSE AGREEMENT</a>|
+            <a href="http://www.infragistics.com/about-us/contact-us/">CONTACT US</a>|
+            <a href="http://www.infragistics.com/help/">GET HELP</a>|
+            <a href="http://www.infragistics.com/about-us/">MEET US</a>|
+            <a href="http://www.infragistics.com/legal/privacy/">PRIVACY AGREEMENT</a>|
+            <a href="http://www.infragistics.com/sitemap/">SITE MAP</a>|
+            <a href="http://www.infragistics.com/legal/information/">LEGAL INFORMATION</a>
+        </nav>
+    </footer>
+    </div>
+</body>
+</html>

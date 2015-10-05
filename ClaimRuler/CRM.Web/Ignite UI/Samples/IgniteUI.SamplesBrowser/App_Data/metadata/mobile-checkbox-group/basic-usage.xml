@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Basic Usage</Title>
+    <Description>This sample demonstrates how to customize the ASP.NET MVC Check Box Group helper to define several checkboxes together. The group can be configured for vertical or horizontal display.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Adding CheckBoxGroup" TopicName="Adding CheckBoxGroup" />
+      <HelpTopic Title="Configuring" TopicName="CheckBoxGroup Configuring" />
+      <HelpTopic Title="Overview" TopicName="CheckBoxGroup Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>基本的な使用方法</Title>
+    <Description>このサンプルでは、複数のチェックボックスを定義するために ASP.NET MVC Check Box Group ヘルパーをカスタマイズする方法を紹介します。グループを垂直方向または水平方向に表示できます。</Description>
+    <HelpTopics>
+      <HelpTopic Title="CheckBoxGroup の追加" TopicName="Adding CheckBoxGroup" />
+      <HelpTopic Title="構成" TopicName="CheckBoxGroup Configuring" />
+      <HelpTopic Title="概要" TopicName="CheckBoxGroup Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+</Sample>

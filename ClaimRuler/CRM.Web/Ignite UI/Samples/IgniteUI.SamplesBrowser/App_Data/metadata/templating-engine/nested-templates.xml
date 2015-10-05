@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Nested Templates</Title>
+    <Description>This sample demonstrates how nested templates are possible using the Infragistics Templating Engine. In the following scenario each feature of the Infragistics Templating Engine is used to iterate through the movies collection from the data source and unordered list is created as an output in the last column.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>ネスト テンプレート</Title>
+    <Description>このサンプルは、Infragistics テンプレート エンジンを使用してネストされたテンプレートを使用する方法を紹介します。以下のシナリオでは、Infragistics テンプレート エンジンの機能を使用して、データ ソースの映画コレクションを繰り返します。最後の列では、出力は非順序リストとして作成されます。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

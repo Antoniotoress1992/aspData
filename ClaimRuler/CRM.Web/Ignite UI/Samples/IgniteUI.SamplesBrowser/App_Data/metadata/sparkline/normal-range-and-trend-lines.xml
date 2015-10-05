@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Normal Range and Trend Lines</Title>
+    <Description>
+      This sample shows the normal range and trend line functionality. To set a normal range,
+      provide a 'normalRangeMinimum' and 'normalRangeMaximum' values and set the 'normalRangeVisibility'. For trend lines, there are many styles to choose from. To enable the trend line,
+      choose the trend line type that is best for your application and set the 'trendLineType' option.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Overview" TopicName="igSparkline_Overview" />
+      <HelpTopic Title="Visual Elements" TopicName="igSparkline_Visual_Elements" />
+      <HelpTopic Title="Configuring" TopicName="igSparkline_Configuring" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>標準範囲およびトレンドライン</Title>
+    <Description>
+      このサンプルは標準範囲およびトレンドライン機能を紹介します。標準範囲を設定するには、normalRangeMinimum および normalRangeMaximum 値を設定し、normalRangeVisibility を設定します。トレンドラインの複数のスタイルのいずれかを選択できます。トレンドラインを有効にするには、アプリケーションに適切なトレンドライン タイプを選択して trendLineType オプションを設定します。
+    </Description>
+    <HelpTopics>
+      <HelpTopic Title="概要" TopicName="igSparkline_Overview" />
+      <HelpTopic Title="視覚要素" TopicName="igSparkline_Visual_Elements" />
+      <HelpTopic Title="構成" TopicName="igSparkline_Configuring" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

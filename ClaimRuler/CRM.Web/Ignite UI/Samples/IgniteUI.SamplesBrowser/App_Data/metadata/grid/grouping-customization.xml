@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Grouping Customization</Title>
+    <Description>
+        This sample demonstrates how to customize the grouping functionality of the igGrid group by feature.
+        A custom group comparer function groups the "Product Name" column by the first letter of the product.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>グループ化のカスタマイズ</Title>
+    <Description>
+      このサンプルでは、igGrid のグループ化機能のグループ化をカスタマイズする方法を紹介します。
+      カスタム グループの比較関数は、「製品名」列を製品の最初の文字によってグループ化します。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

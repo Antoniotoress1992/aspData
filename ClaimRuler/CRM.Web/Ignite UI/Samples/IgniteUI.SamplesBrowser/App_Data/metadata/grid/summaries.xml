@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Summaries</Title>
+    <Description>
+        This sample demonstrates summaries feature for the igGrid control. Summaries are rendered at the bottom of the grid. The end user can choose summary functions to show and hide for a column as well as to show/hide all the summaries at once. The default summary fuctions available are COUNT, MIN, MAX, SUM, AVG. There is also an option to create custom summaries.
+        The available summary functions for a column depend on its type. For example for a string column only the count function is available. For the number column all the summary functions are available. You can configure initial summary functions on a per column basis using the columnSettings option.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>集計</Title>
+    <Description>
+      このサンプルでは、igGrid コントロールの集計機能を紹介します。集計はグリッドの下側に描画されます。エンド ユーザーが列の集計関数を選択するか、すべての集計を表示するか、非表示できます。デフォルトの利用可能な集計関数は COUNT、MIN、MAX、SUM、および AVG。カスタム集計を作成するオプションもあります。
+      列の利用可能な集計関数はタイプに基づいて設定されます。たとえば、文字列の列でカウント関数のみは利用可能です。数値の列ですべての集計関数は利用可能です。columnSettings オプションを使用すると、列によって最初の集計関数を構成できます。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

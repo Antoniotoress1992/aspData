@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Item Configurations</Title>
+    <Description>This sample demonstrates configuring the tiles inside the Tile Manager in terms of position and size.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>項目構成</Title>
+    <Description>このサンプルでは、igTileManager の各項目の位置およびサイズを構成する方法を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <IsResponsive>True</IsResponsive>
+  <MinSampleSize>PhonePortrait</MinSampleSize>
+</Sample>

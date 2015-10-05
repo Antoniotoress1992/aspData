@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>JSON Binding</Title>
+    <Description>The igListView can bind to JSON data on the client by setting the data variable in HTML markup using data attributes.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Overview" TopicName="igListView_Overview" />
+      <HelpTopic Title="Data Attributes" TopicName="igListView_Data_Attributes_Reference" />
+      <HelpTopic Title="Multi-Level Data Binding" TopicName="igListView_Configuring_Multi-Level_Data_Binding" />
+      <HelpTopic Title="Known Issues and Limitations" TopicName="igListView_Known_Issues" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>JSON のバインド</Title>
+    <Description>igListView は、データ属性を使用して HTML マークアップのデータ変数を設定すると、クライアントの JSON データにバインドできます。</Description>
+    <HelpTopics>
+      <HelpTopic Title="概要" TopicName="igListView_Overview" />
+      <HelpTopic Title="データ属性" TopicName="igListView_Data_Attributes_Reference" />
+      <HelpTopic Title="マルチレベル データ バインド" TopicName="igListView_Configuring_Multi-Level_Data_Binding" />
+      <HelpTopic Title="既知の問題と制限" TopicName="igListView_Known_Issues" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

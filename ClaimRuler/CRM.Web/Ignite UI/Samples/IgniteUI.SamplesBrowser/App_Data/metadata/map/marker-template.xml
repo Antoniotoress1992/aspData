@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Marker Template</Title>
+    <Description>This sample demonstrates how to create a custom marker template in the igMap control. The marker template is implemented in JavaScript by assigning a function to the corresponding geographic series which is called whenever a marker needs to be rendered on screen. The marker rendering function uses the HTML5 canvas API to draw marker contents. The sample shows all Infragistics offices around the world which are marked by custom marker colored based on type of the office in addition to the name of each office presented next to the marker.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Overview" TopicName="Overview_igMap" />
+      <HelpTopic Title="Visual Features" TopicName="igMap_Configuring_Visual_Features" />
+      <HelpTopic Title="Styling" TopicName="Styling_igMap" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>マーカー テンプレート</Title>
+    <Description>このサンプルでは、マップ コントロールでカスタム マーカー テンプレートを作成する方法を紹介します。マーカー テンプレートは、JavaScript で対応する地理系列に関数を割り当てて実装されます。画面でマーカーを描画するときに呼び出されます。マーカーの描画関数は、マーカーのコンテンツを描画するために HTML5 キャンバス API を使用します。Infragistics の海外拠点を表示します。オフィスは、タイプに基づくカスタム マーカーによって色が設定されます。マーカーの隣に名前を表示します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="概要" TopicName="Overview_igMap" />
+      <HelpTopic Title="ビジュアル機能" TopicName="igMap_Configuring_Visual_Features" />
+      <HelpTopic Title="スタイル設定" TopicName="Styling_igMap" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>TabletLandscape</MinSampleSize>
+</Sample>

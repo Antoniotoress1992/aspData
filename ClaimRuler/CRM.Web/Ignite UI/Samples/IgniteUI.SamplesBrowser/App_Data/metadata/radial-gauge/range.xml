@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Range</Title>
+    <Description>A range is a visual element that highlights a specified range of values on a scale. Use the table above to set the Radial Gauge control's range properties.  </Description>
+    <HelpTopics>
+      <HelpTopic Title="Configuring Ranges (igRadialGauge)" TopicName="igRadialGauge_Configuring_Ranges" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>範囲</Title>
+    <Description>範囲は、スケールで値の指定した領域を強調表示する視覚的な要素です。以上の表を使用してラジアル ゲージ コントロールの範囲プロパティを設定できます。</Description>
+    <HelpTopics>
+      <HelpTopic Title="範囲の構成 (igRadialGauge)" TopicName="igRadialGauge_Configuring_Ranges" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

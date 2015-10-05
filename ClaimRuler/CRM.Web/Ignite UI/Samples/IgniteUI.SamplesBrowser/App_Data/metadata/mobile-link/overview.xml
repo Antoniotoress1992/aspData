@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">mobile-link/basic-usage</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      The mobile link ASP.NET MVC helper is a Microsoft® .NET programming interface used to render HTML and JavaScript 
+      for the jQuery Mobile button widget containing a hyperlink. See the complete list of samples in the menu.
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      Mobile Link ASP.NET MVC ヘルパーは、ハイパーリンクを含む jQuery Mobile button ウィジェットの HTML および JavaScript を描画するための Microsoft® .NET プログラミング インターフェイスです。サンプルをすべて表示するには、メニューを参照してください。
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

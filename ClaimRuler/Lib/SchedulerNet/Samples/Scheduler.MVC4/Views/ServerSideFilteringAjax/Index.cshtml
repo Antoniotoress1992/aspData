@@ -1,0 +1,22 @@
+@{
+    ViewBag.Title = "Scheduler | Server Side filtering, ajax loading";
+    ViewBag.SampleTitle = "Integration with other controls";
+    ViewBag.ShortDescription = "Server Side filtering, ajax loading";
+    ViewBag.LongDescription = "Use control in the right corner of the page<br />    Scheduler will load only events of selected room.";
+}
+
+@model SchedulerTest.Controllers.ServerSideFilteringAjaxController.SchedulerFilterModel
+
+<div style="position:absolute;  right:200px; top:10px">
+    @Html.DropDownListFor(m => m.Rooms, new SelectList(Model.Rooms, "key", "label"), new { onchange = "reload()"})
+    </div>
+
+    <script>
+        function reload() {
+            
+            scheduler.clearAll();
+            scheduler.load("@Html.Raw(Model.Scheduler.DataUrl)rooms=" + document.getElementById("Rooms").value);
+           
+        }
+    </script> 
+     @Html.Raw(Model.Scheduler.Render())

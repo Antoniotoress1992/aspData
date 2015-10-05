@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>ASP.NET MVC Helper</Title>
+    <Description>This sample demonstrates how to initialize the Script Loader using the ASP.NET MVC helper. As shown in the accompanying code listings, you must provide the path to required CSS and JavaScript directories and declare which resources the loader will fetch for the page. This sample loads the igGrid control with the Sorting feature. When using the loader in ASP.NET MVC, the helper can automatically determine which resources need to be downloaded based off of what is used in the ASP.NET view.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>ASP.NET MVC ヘルパー</Title>
+    <Description>このサンプルでは、ASP.NET MVC ヘルパーを使用してスクリプト ローダーを初期化する方法を示します。必要な CSS と JavaScript ディレクトリへのパスを提供し、ローダーはページにフェッチするリソースを宣言する必要があります。このサンプルは並べ替え機能が有効な igGrid コントロールを読み込みます。ASP.NET MVC でローダーを使用する場合、ヘルパーは ASP.NET ビューに基づいてダウンロードする必要があるリソースを自動的に決定できます。</Description>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+  <IsFullPostBack>False</IsFullPostBack>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

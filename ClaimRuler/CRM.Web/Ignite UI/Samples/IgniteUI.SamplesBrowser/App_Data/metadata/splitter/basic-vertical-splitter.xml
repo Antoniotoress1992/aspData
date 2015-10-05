@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Basic Vertical Splitter</Title>
+    <Description>This sample demonstrates how to use the Splitter control to manage a page's vertical layout. The first container contains a Tree control with continents and countries. The left vertical panel has maximum and minimum ranges that a user can resize the panel. When a node is clicked, the description for the selected item is in the right panel.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>ベーシック垂直スプリッター</Title>
+    <Description>このサンプルでは、スプリッター コントロールを使用してページの垂直レイアウトを管理する方法を紹介します。最初のコンテナーは大陸および国を含むツリー コントロールを表示します。左の垂直パネルはサイズ変更の最大値および最小値があります。ノードをクリックすると、選択した項目の説明が右パネルに表示されます。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>  
+  <MinSampleSize>PhonePortrait</MinSampleSize>
+</Sample>

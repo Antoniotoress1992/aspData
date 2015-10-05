@@ -1,0 +1,68 @@
+﻿@using Infragistics.Web.Mvc
+@using IgniteUI.SamplesBrowser.Models
+@model IgniteUI.SamplesBrowser.Models.Northwind.Order
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="@Url.Content("~/igniteui/css/themes/infragistics/infragistics.theme.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/igniteui/css/structure/infragistics.css")" rel="stylesheet" />
+
+    <script src="@Url.Content("~/js/modernizr.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery-ui.min.js")"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="@Url.Content("~/igniteui/js/infragistics.core.js")"></script>
+    <script src="@Url.Content("~/igniteui/js/infragistics.lob.js")"></script>
+
+</head>
+<body>
+    <style>
+
+        .sample-ui div {
+            margin-bottom: 1em;
+        }
+
+        .sample-ui h4 {
+            margin-bottom: .5em;
+        }
+
+        .sample-ui #submitBtn {
+            width: 100px;
+        }
+
+    </style>
+
+    @using (Html.BeginForm())
+    {
+        <div class="sample-ui">
+            @Html.HiddenFor(item => item.OrderID)
+
+            <div>
+                <h4>Current Employee:</h4>
+                @Html.DisplayFor(item => item.EmployeeName)
+            </div>
+
+            <div>
+                <h4>Choose New Employee</h4>
+
+                @(Html.Infragistics().ComboFor(item => item.EmployeeID)
+                    .Width("270px")
+                    .DataSourceUrl(Url.Action("employee-combo-data"))
+                    .ValueKey("ID")
+                    .TextKey("Name")
+                    .DataBind()
+                    .Render()
+                )
+            </div>
+
+            <input id="submitBtn" type="submit" value="Update" />
+        </div>
+    }
+</body>
+</html>

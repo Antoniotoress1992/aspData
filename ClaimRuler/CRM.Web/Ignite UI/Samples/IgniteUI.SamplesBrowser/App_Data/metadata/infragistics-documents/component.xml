@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Infragistics Documents</Name>
+    <Description>Produce and share PDF and XPS documents with the compiled assembly that lets you layout and publish quality electronic documents for Web-based distribution to millions of PDF and XPS supporting applications already installed worldwide.</Description>    
+    <PageKeywords></PageKeywords>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Congratulation_Exported_Page" Value="Congratulations! You have exported page {0} successfully!" />
+      <LocalizedSampleString Key="Congratulation_Exported_Pages" Value="Congratulations! You have exported all pages from the report successfully!" />
+      <LocalizedSampleString Key="Document_Exporter" Value="Document Exporter" />
+      <LocalizedSampleString Key="IG_Copyright" Value="Copyright © 2003-{0} by Infragistics, Inc." />
+      <LocalizedSampleString Key="IG_Inc" Value="Infragistics, Inc." />
+      <LocalizedSampleString Key="IG_Report_Writer" Value="Infragistics Report Writer" />
+      <LocalizedSampleString Key="Order_ID" Value="Order ID" />
+      <LocalizedSampleString Key="Contact_Name" Value="Contact Name" />
+      <LocalizedSampleString Key="Ship_Address" Value="Shipping Address" />
+      <LocalizedSampleString Key="Order_Date" Value="Order Date" />
+      <LocalizedSampleString Key="Export_Options" Value="Export Options" />
+      <LocalizedSampleString Key="Export_Format" Value="Export Format" />
+      <LocalizedSampleString Key="PDF_Format" Value="PDF Format" />
+      <LocalizedSampleString Key="XPS_Format" Value="XPS Format" />
+      <LocalizedSampleString Key="Export_Orientation" Value="Export Orientation" />
+      <LocalizedSampleString Key="Portrait" Value="Portrait" />
+      <LocalizedSampleString Key="Landscape" Value="Landscape" />
+      <LocalizedSampleString Key="Export_Type" Value="Export Type" />
+      <LocalizedSampleString Key="Current_Page" Value="Current Page" />
+      <LocalizedSampleString Key="All_Pages" Value="All Pages" />
+      <LocalizedSampleString Key="Export_Button" Value="Export Button" />
+    </LocalizedSampleStrings>
+  </LocalizedContent>
+  
+  <LocalizedContent Language="ja">
+    <Name>Infragistics Documents</Name>
+    <Description>PDF および XPS ドキュメントを作成して共有できます。Web でドキュメントをレイアウトして公開すると、PDF または XPS をサポートするアプリケーションで表示できます。</Description>
+    <PageKeywords></PageKeywords>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Congratulation_Exported_Page" Value="エクスポートが完了しました。{0} 個のページをエクスポートしました。" />
+      <LocalizedSampleString Key="Congratulation_Exported_Pages" Value="エクスポートが完了しました。レポートのすべてのページをエクスポートしました。" />
+      <LocalizedSampleString Key="Document_Exporter" Value="ドキュメント エクスポーター" />
+      <LocalizedSampleString Key="IG_Copyright" Value="Copyright © 2003-{0} by Infragistics, Inc." />
+      <LocalizedSampleString Key="IG_Inc" Value="インフラジスティックス・ジャパン株式会社" />
+      <LocalizedSampleString Key="IG_Report_Writer" Value="Infragistics Report Writer" />
+      <LocalizedSampleString Key="Order_ID" Value="注文 ID" />
+      <LocalizedSampleString Key="Contact_Name" Value="名前" />
+      <LocalizedSampleString Key="Ship_Address" Value="配送先住所" />
+      <LocalizedSampleString Key="Order_Date" Value="注文日" />
+      <LocalizedSampleString Key="Export_Options" Value="エクスポート オプション" />
+      <LocalizedSampleString Key="Export_Format" Value="エクスポート形式" />
+      <LocalizedSampleString Key="PDF_Format" Value="PDF 形式" />
+      <LocalizedSampleString Key="XPS_Format" Value="XPS 形式" />
+      <LocalizedSampleString Key="Export_Orientation" Value="エクスポートの方向" />
+      <LocalizedSampleString Key="Portrait" Value="縦" />
+      <LocalizedSampleString Key="Landscape" Value="横" />
+      <LocalizedSampleString Key="Export_Type" Value="エクスポートのタイプ" />
+      <LocalizedSampleString Key="Current_Page" Value="現在のページ" />
+      <LocalizedSampleString Key="All_Pages" Value="すべてのページ" />
+      <LocalizedSampleString Key="Export_Button" Value="エクスポート" />
+    </LocalizedSampleStrings>
+  </LocalizedContent>
+  
+  <ClientApiUrl></ClientApiUrl>
+  <ForumNumber>558</ForumNumber>
+  <HelpPageName>Infragistics.Web.Mvc.Documents.Reports~Infragistics.Documents.Reports_namespace_hierarchy</HelpPageName>
+  <IconImage></IconImage>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <TOC>
+    <Sample>create-pdf-or-xps</Sample>
+  </TOC>
+</Component>

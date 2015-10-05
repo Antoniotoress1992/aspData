@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Grouping with summaries</Title>
+    <Description>
+        This sample demonstrates the grouping feature of igGrid control. Drag a column to the group by area at the top to group it. The initialExpand option controls the expansion of the groups after a grouping. Initially the grouped column is sorted in ascending order. Click on the grouped column indicator to change the sorting of the group. To ungroup a column click on the X icon of the grouped column indicator. You can configure initial grouping on a per column basis using the columnSettings option. Additionally each group row can contain custom information about the group (a summary). For example, in this sample the group row will show the number of orders placed after 8/1/1996 for each seperate group.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>グループ化 (集計)</Title>
+    <Description>
+      このサンプルでは、igGrid コントロールのグループ化機能を紹介します。グループ化するには、列を上側のグループ領域にドラッグします。グループ化が実行した後、initialExpand オプションはグループの展開を制御します。グループ化された列は最初に昇順で並べ替えています。グループ化された列のインジケーターをクリックすると、グループの並べ替えを変更します。列のグループ化を解除するには、グループ化された列のインジケーターの X アイコンをクリックします。columnSettings オプションを使用すると、列によって最初のグループ化を構成できます。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

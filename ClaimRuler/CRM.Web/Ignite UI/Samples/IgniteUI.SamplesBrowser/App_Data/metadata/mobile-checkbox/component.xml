@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Check Box</Name>
+    <Description>
+      Go beyond simple web pages and build true mobile applications. With a selection seven types of mobile input controls, users can provide inputs and responses simply and easily.
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Basic_Check_Box" Value="Basic Check Box" />
+      <LocalizedSampleString Key="Agree_License" Value="Agree License" />
+      <LocalizedSampleString Key="Native_Check_Box" Value="Native Check Box" />
+    </LocalizedSampleStrings>
+    <PageKeywords>MobileCheckbox</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Check Box</Name>
+    <Description>
+      モバイル アプリケーションに対応するコントロールを提供します。モバイル入力コントロールの 7 つのタイプを提供します。
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Basic_Check_Box" Value="基本チェックボックス" />
+      <LocalizedSampleString Key="Agree_License" Value="ライセンスに同意" />
+      <LocalizedSampleString Key="Native_Check_Box" Value="ネイティブ チェックボックス" />
+    </LocalizedSampleStrings>
+    <PageKeywords>MobileCheckbox</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>http://api.jquerymobile.com/checkboxradio/</ClientApiUrl>
+  <HelpPageName>CheckBox</HelpPageName>
+  <ForumNumber>691</ForumNumber>
+  <IconImage>jquery-mobile-checkbox.png</IconImage>
+  <ClientRuntime>jQueryMobile</ClientRuntime>
+  <TOC>
+    <Sample>basic-usage</Sample>
+  </TOC>
+</Component>

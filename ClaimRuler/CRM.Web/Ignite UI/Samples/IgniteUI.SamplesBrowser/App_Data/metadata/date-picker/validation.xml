@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Validation</Title>
+    <Description>This example shows different options for configuring validation in the date picker. The date pickers are configured to fail validation when no value is entered. The first date picker validates on blur and retains focus when validation fails. The second date picker validates with every value change. Both date pickers display invalid styles if validation fails on form submit.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Overview" TopicName="igDatePicker_Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>検証</Title>
+    <Description>このサンプルでは、日付ピッカーの検証を構成するオプションを紹介します。入力された値がない場合、日付ピッカーの検証は失敗します。最初の日付ピッカーは onBlur 時に検証し、検証が失敗した場合もフォーカスを保持します。2 つ目の日付ピッカーは各変更で検証します。フォームの送信で検証が失敗した場合、両方の日付ピッカーで無効なスタイルを表示します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="概要" TopicName="igDatePicker_Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhonePortrait</MinSampleSize>
+</Sample>

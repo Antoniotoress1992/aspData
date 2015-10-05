@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Virtualization (Fixed)</Title>
+    <Description>
+        This sample demonstrates the unique HTML virtualization capabilities of our jQuery Grid control. Virtualization is valuable when displaying large sets of records to end users. For example, a virtualized grid can support a data source of thousands of records, and still provide a responsive experience to the end-user during a rapid scroll of the grid. This responsiveness is present when virtual scrolling and paging are not enabled. The current sample has 501 JSON records loaded at a single time on the client, and the end user experience does not differ from that of a grid where all of the DOM elements are explicitly rendered in HTML. Virtualization is possible by supporting a virtual DOM section in the grid that is constantly refreshed for data. This means that HTML elements for the entire data set are not explicitly created, instead DOM elements are reused in the grid. Refreshing data in existing DOM elements boosts performance significantly for scenarios that require large sets of data without using paging or virtual scrolling to fetch more data from the server.
+        The virtualization settings are configurable in the Virtualization property in the grid. You have the option of providing either boolean values or numeric values to configure virtualization settings. Providing numeric values instruct the grid that if the number of loaded rows in the data source exceeds this value, virtualization is automatically enabled. Further, you may configure vertical (row) and horizontal (column) virtualization separately. Vertical virtualization is enabled by setting RowVirtualization to true, while horizontal virtualization is enabled by setting ColumnVirtualization to true. In the case where you only want to have horizontal or vertical virtualization, Virtualization must be set to false. For vertical virtualization, it is important to note the average row height property – it’s default value is set to 25 pixels, but it might be necessary to manually adjust this property when working with a grid that has a small width, but the cell text is long so it spans multiple lines, and thus affects the rows’ heights.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>仮想化 (固定)</Title>
+    <Description>
+      このサンプルでは、jQuery グリッド コントロールの HTML 仮想化機能を紹介します。サイズの大きいレコードの表示に仮想化を推奨します。仮想グリッドは、数千のレコード データ ソースを処理する場合もエンドユーザーに高いパフォーマンスを提供できます。仮想スクロールおよびページングを無効にした場合も、スムーズな操作が可能です。このサンプルは、クライアント側に一度に読み込まれた 501 JSON レコードがありますが、DOM 要素すべてが HTML で明示的に描画されたグリッドとパフォーマンスに違いはありません。仮想化を実装するには、データを更新するグリッドで仮想 DOM セクションをサポートします。つまり、DOM 要素がグリッドで再利用される代わりに、データセット全体の HTML 要素が明示的に作成されます。依存の DOM 要素でデータを更新すると、ページングまたは仮想スクロールを使用しないデータの大量を読み込むシナリオでは、パフォーマンスを向上します。
+      仮想化はグリッドの Virtualization プロパティで設定できます。仮想化設定にブール値または数値を使用することも可能です。数値を提供することにより、データソースを読み込む行数がこの値を超過した場合に、仮想化が自動的に有効になるように設定することが可能です。更に、水平 (水平) および垂直 (垂直) の仮想化をそれぞれ設定することが可能です。垂直の仮想化は RowVirtualization を true に設定し、水平の仮想化は ColumnVirtualization を true に設定することにより有効にできます。水平または垂直どちらかの仮想化のみを有効にしたい場合、Virtualization は false に設定する必要があります。垂直の仮想化では、列の平均の高さプロパティに注意してください。デフォルト値は 25 ピクセルですが、幅の狭いグリッドの場合にはプロパティを変更する必要があります。ただし、セル テキストが長いため複数行になり、行の高さに影響します。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

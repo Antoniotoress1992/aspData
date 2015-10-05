@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">data-chart/json-binding</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      The igDataChart is an HTML5 chart control built with performance in mind. It can <a href="~/data-chart/binding-high-volume-data">render very large data sets</a> 
+      and includes <a href="~/data-chart/series-tooltips">tooltips</a>, <a href="~/data-chart/crosshair-layer">crosshairs</a>, <a href="~/data-chart/chart-fill-gradients">gradients</a>,
+       <a href="~/data-chart/series-highlighting">highlighting</a>, 
+      and <a href="~/data-chart/transition-animation">animation</a> functionality. The igDataChart renders over 50 chart types including the following:
+      <ul>
+        <li><a href="~/data-chart/bar-and-column-series">Bar</a></li>
+        <li><a href="~/data-chart/bar-and-column-series">Column</a></li>
+        <li><a href="~/data-chart/stacked-series">Stacked Bar</a></li>
+        <li><a href="~/data-chart/stacked-series">Stacked 100 Column</a></li>
+        <li><a href="~/data-chart/scatter-series">Bubble</a></li>        
+        <li><a href="~/data-chart/category-series">Line</a></li>
+        <li><a href="~/data-chart/category-series">Area</a></li>
+        <li><a href="~/data-chart/category-series">Spline</a></li>
+        <li><a href="~/data-chart/category-series">Waterfall</a></li>
+        <li><a href="~/data-chart/category-series">Point</a></li>
+        <li><a href="~/data-chart/stacked-series">Stacked Spline</a></li>        
+        <li><a href="~/data-chart/financial-series">Candlestick</a></li>
+        <li><a href="~/data-chart/financial-series">OHLC</a></li>  
+        <li><a href="~/data-chart/financial-indicators">Financial Indicators</a></li>  
+        <li><a href="~/data-chart/polar-series">Polar Scatter</a></li>
+        <li><a href="~/data-chart/polar-series">Polar Line</a></li>
+        <li><a href="~/data-chart/polar-series">Polar Spline</a></li>        
+        <li><a href="~/data-chart/radial-series">Radial Line</a></li>
+        <li><a href="~/data-chart/radial-series">Radial Column</a></li>
+        <li><a href="~/data-chart/radial-series">Radial Pie</a></li>             
+        <li><a href="~/data-chart/range-category-series">Range Column</a></li>        
+        <li><a href="~/data-chart/scatter-series">Scatter</a></li>
+      </ul>
+      And more listed in the menu!
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      igDataChart は HTML5 チャート コントロールです。<a href="~/data-chart/binding-high-volume-data">大きいデータ セットを描画</a>し、<a href="~/data-chart/series-tooltips">ツールチップ</a>、<a href="~/data-chart/crosshair-layer">十字線</a>、<a href="~/data-chart/chart-fill-gradients">グラデーション</a>、<a href="~/data-chart/series-highlighting">強調表示</a>、<a href="~/data-chart/transition-animation">アニメーション</a>などの機能を提供します。 
+      igDataChart は 50 以上のチャート タイプを描画します:
+      <ul>
+        <li><a href="~/data-chart/bar-and-column-series">棒</a></li>
+        <li><a href="~/data-chart/bar-and-column-series">柱状</a></li>
+        <li><a href="~/data-chart/stacked-series">積層型棒</a></li>
+        <li><a href="~/data-chart/stacked-series">積層型 100 柱状</a></li>
+        <li><a href="~/data-chart/scatter-series">バブル</a></li>        
+        <li><a href="~/data-chart/category-series">折れ線</a></li>
+        <li><a href="~/data-chart/category-series">エリア</a></li>
+        <li><a href="~/data-chart/category-series">スプライン</a></li>
+        <li><a href="~/data-chart/category-series">ウォーターフォール</a></li>
+        <li><a href="~/data-chart/category-series">ポイント</a></li>
+        <li><a href="~/data-chart/stacked-series">積層型スプライン</a></li>        
+        <li><a href="~/data-chart/financial-series">ロウソク足</a></li>
+        <li><a href="~/data-chart/financial-series">OHLC</a></li>
+        <li><a href="~/data-chart/financial-indicators">財務指標</a></li> 
+        <li><a href="~/data-chart/polar-series">極座標散布図</a></li>
+        <li><a href="~/data-chart/polar-series">極座標折れ線</a></li>
+        <li><a href="~/data-chart/polar-series">極座標スプライン</a></li>        
+        <li><a href="~/data-chart/radial-series">ラジアル折れ線</a></li>
+        <li><a href="~/data-chart/radial-series">ラジアル柱状</a></li>
+        <li><a href="~/data-chart/radial-series">ラジアル円</a></li>             
+        <li><a href="~/data-chart/range-category-series">範囲柱状</a></li>        
+        <li><a href="~/data-chart/scatter-series">散布図</a></li>
+      </ul>
+      すべてのサンプルを表示するには、メニューを参照してください。
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>MVC Initialization</Title>
+    <Description>This sample demonstrates how to use the ASP.NET MVC helper for the igQRCodeBarcode.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>MVC の初期化</Title>
+    <Description>このサンプルでは、igQRCodeBarcode の ASP.NET MVC ヘルパーを使用する方法を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+</Sample>

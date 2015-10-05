@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SitePopUp.master.cs" Inherits="CRM.Web.SitePopUp" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Claim Ruler - Industrial Strength Property Claim Management Software</title>
+    <link type="text/css" rel="stylesheet" runat="server" href="~/Css/ClaimRuler.css" />
+     <link type="text/css" rel="Stylesheet" runat="server" href="~/Css/cupertino/jquery-ui-1.10.4.custom.css" />
+    
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+          <asp:ScriptManager ID="ScriptManager1" EnablePartialRendering="true" runat="server" EnablePageMethods="true">
+            <Scripts>
+                <asp:ScriptReference Path="~/js/jquery-1.8.3.js" />
+                <asp:ScriptReference Path="~/js/jquery-ui-1.10.4.custom.js" />
+                <asp:ScriptReference Path="~/js/jquery.blockUI.js" />
+                <asp:ScriptReference Path="~/js/general.js" />               
+            </Scripts>
+        </asp:ScriptManager>
+        
+            
+            <asp:ContentPlaceHolder ID="content1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <script type="text/javascript">
+        Sys.WebForms.PageRequestManager.getInstance().add_beginRequest(beginRequestHandler);
+        Sys.WebForms.PageRequestManager.getInstance().add_endRequest(endRequestHandler);
+        function beginRequestHandler(sender, args) {
+            $.blockUI({ message: '<div style="padding:5px;"><img runat="server" src="~/images/ajax-loader.gif" /></di>' });
+        }
+
+        function endRequestHandler(sender, args) {
+            $.unblockUI();
+        }
+        function reloadPage() {
+            window.location.reload();
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Validation</Title>
+    <Description>This sample demonstrates the usage of validation for igEditors. There are a variety of options you can set from Validation Options section.</Description>
+    <HelpTopics>
+      <HelpTopic Title="API" TopicName="igTextEditor_jQuery_API" />
+      <HelpTopic Title="Validation" TopicName="Configuring ASP.NET MVC Validation" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>検証</Title>
+    <Description>このサンプルは igEditors の検証方法について紹介します。「検証オプション」でさまざまなオプションを設定できます。</Description>
+    <HelpTopics>
+      <HelpTopic Title="API" TopicName="igTextEditor_jQuery_API" />
+      <HelpTopic Title="検証" TopicName="Configuring ASP.NET MVC Validation" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhonePortrait</MinSampleSize>
+</Sample>

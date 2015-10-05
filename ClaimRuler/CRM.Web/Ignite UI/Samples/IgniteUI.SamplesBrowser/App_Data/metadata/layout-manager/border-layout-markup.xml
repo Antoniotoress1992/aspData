@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Border Layout from HTML markup</Title>
+    <Description>This sample demonstrates initializing the Layout Manager control's Border layout from the HTML markup by assigning "center"/"left"/"right"/"header"/"footer" CSS classes.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>境界線のレイアウト - HTML マークアップ</Title>
+    <Description>このサンプルでは、「center」/「left」/「right」/「header」/「footer」 CSS クラスを割り当てると、マークアップで境界線のレイアウトを初期化する方法を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <IsResponsive>True</IsResponsive>
+  <MinSampleSize>PhonePortrait</MinSampleSize>
+</Sample>

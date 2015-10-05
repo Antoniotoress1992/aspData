@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Sorting (Local)</Title>
+    <Description>
+        This sample demonstrates the local sorting functionality of the igGrid control. When sorting is local, the sorting UI functionality is handled by the igGridSorting jQuery widget, while all data-related logic is handled by the igDataSource control. The sorted column headers have sorting indicators applied, so that sortable columns are distinguished visually from the rest of the columns in the grid.
+        The column cells belonging to the sorted column may also be styled (which is enabled by default), and the custom styling may be turned off by setting the applyColumnCss property to false.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>並べ替え (ローカル)</Title>
+    <Description>
+      このサンプルでは、igGrid コントロールでローカルに並べ替える機能を紹介します。ローカルで並べ替える場合、UI 機能は igGridSorting jQuery ウィジットによって処理されます。一方、すべてのデータに関するロジックは igDataSource コントロールによって処理されます。並べ替え可能な列のヘッダーに並べ替えインジケーターを表示できるため、ユーザーは並べ替え可能な列を簡単に識別できます。
+      並べ替えられた列に属す列セルにスタイル設定することも可能です (デフォルト)。また、applyColumnCss プロパティを false に設定してカスタム スタイルを無効にすることも可能です。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

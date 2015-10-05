@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Filtering</Title>
+    <Description>The dropdown list of the igCombo control can be filtered based off of the input value. 
+    The auto-suggest functionality is also supported which highlights character strings that match entered text. 
+    Further, the autocomplete feature will prefill the text in the input box as the user is typing to reflect the first matching item in the dropdown list. See how these features interact by changing the options below.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Configuring Remote Filtering" TopicName="igCombo_Configure_Remote_Filtering" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>フィルタリング</Title>
+    <Description>
+      igCombo コントロールのドロップダウン リストは入力値に基づいてフィルターできます。
+      入力したテキストと一致する文字列を強調する自動補完機能もサポートされます。
+      また、オート コンプリート機能は、ユーザーが入力しているときに、テキスト ボックスにドロップダウン リストの最初の一致する項目の文字列を挿入します。以下のオプションを変更して、機能を確認します。
+    </Description>
+    <HelpTopics>
+      <HelpTopic Title="リモート フィルタリングの構成" TopicName="igCombo_Configure_Remote_Filtering" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

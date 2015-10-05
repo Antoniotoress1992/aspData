@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Check Box Group</Name>
+    <Description>
+      Go beyond simple web pages and build true mobile applications. With a selection seven types of mobile input controls, users can provide inputs and responses simply and easily.
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Basic_Check_Box_Group" Value="Basic Check Box Group"/>
+      <LocalizedSampleString Key="Check_Box" Value="Check Box"/>
+      <LocalizedSampleString Key="Horizontal_Check_Box_Group" Value="Horizontal Check Box Group"/>
+      <LocalizedSampleString Key="Kia" Value="Kia"/>
+      <LocalizedSampleString Key="VW" Value="VW"/>
+      <LocalizedSampleString Key="Audi" Value="Audi"/>
+      <LocalizedSampleString Key="Porche" Value="Porche"/>
+      <LocalizedSampleString Key="Volvo" Value="Volvo"/>
+    </LocalizedSampleStrings>
+    <PageKeywords>MobileCheckboxGroup</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Check Box Group</Name>
+    <Description>
+      モバイル アプリケーションに対応するコントロールを提供します。モバイル入力コントロールの 7 つのタイプを提供します。
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Basic_Check_Box_Group" Value="基本チェックボックス グループ"/>
+      <LocalizedSampleString Key="Check_Box" Value="チェックボックス"/>
+      <LocalizedSampleString Key="Horizontal_Check_Box_Group" Value="水平チェックボックス グループ"/>
+      <LocalizedSampleString Key="Kia" Value="Kia"/>
+      <LocalizedSampleString Key="VW" Value="VW"/>
+      <LocalizedSampleString Key="Audi" Value="Audi"/>
+      <LocalizedSampleString Key="Porche" Value="Porche"/>
+      <LocalizedSampleString Key="Volvo" Value="Volvo"/>
+    </LocalizedSampleStrings>
+    <PageKeywords>MobileCheckboxGroup</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>http://api.jquerymobile.com/checkboxradio/</ClientApiUrl>
+  <HelpPageName>CheckBoxGroup</HelpPageName>
+  <ForumNumber>691</ForumNumber>
+  <IconImage>jquery-mobile-checkbox-group.png</IconImage>
+  <ClientRuntime>jQueryMobile</ClientRuntime>
+  <TOC>
+    <Sample>basic-usage</Sample>
+  </TOC>
+</Component>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AdjustersDataSet" targetNamespace="http://tempuri.org/AdjustersDataSet.xsd" xmlns:mstns="http://tempuri.org/AdjustersDataSet.xsd" xmlns="http://tempuri.org/AdjustersDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ClaimRulerConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ClaimRulerConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ClaimRulerConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vw_AdjusterTableAdapter" GeneratorDataComponentClassName="vw_AdjusterTableAdapter" Name="vw_Adjuster" UserDataComponentName="vw_AdjusterTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ClaimRulerConnectionString (Web.config)" DbObjectName="ClaimRuler.dbo.vw_Adjuster" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ClientId, AdjusterId, AdjusterName FROM dbo.vw_Adjuster</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ClientId" DataSetColumn="ClientId" />
+              <Mapping SourceColumn="AdjusterId" DataSetColumn="AdjusterId" />
+              <Mapping SourceColumn="AdjusterName" DataSetColumn="AdjusterName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AdjustersDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="AdjustersDataSet" msprop:Generator_UserDSName="AdjustersDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vw_Adjuster" msprop:Generator_TableClassName="vw_AdjusterDataTable" msprop:Generator_TableVarName="tablevw_Adjuster" msprop:Generator_TablePropName="vw_Adjuster" msprop:Generator_RowDeletingName="vw_AdjusterRowDeleting" msprop:Generator_RowChangingName="vw_AdjusterRowChanging" msprop:Generator_RowEvHandlerName="vw_AdjusterRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_AdjusterRowDeleted" msprop:Generator_UserTableName="vw_Adjuster" msprop:Generator_RowChangedName="vw_AdjusterRowChanged" msprop:Generator_RowEvArgName="vw_AdjusterRowChangeEvent" msprop:Generator_RowClassName="vw_AdjusterRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ClientId" msprop:Generator_ColumnVarNameInTable="columnClientId" msprop:Generator_ColumnPropNameInRow="ClientId" msprop:Generator_ColumnPropNameInTable="ClientIdColumn" msprop:Generator_UserColumnName="ClientId" type="xs:int" minOccurs="0" />
+              <xs:element name="AdjusterId" msprop:Generator_ColumnVarNameInTable="columnAdjusterId" msprop:Generator_ColumnPropNameInRow="AdjusterId" msprop:Generator_ColumnPropNameInTable="AdjusterIdColumn" msprop:Generator_UserColumnName="AdjusterId" type="xs:int" />
+              <xs:element name="AdjusterName" msprop:Generator_ColumnVarNameInTable="columnAdjusterName" msprop:Generator_ColumnPropNameInRow="AdjusterName" msprop:Generator_ColumnPropNameInTable="AdjusterNameColumn" msprop:Generator_UserColumnName="AdjusterName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="103" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

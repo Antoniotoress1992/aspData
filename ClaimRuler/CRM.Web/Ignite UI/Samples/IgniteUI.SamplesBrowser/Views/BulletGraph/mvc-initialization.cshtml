@@ -1,0 +1,89 @@
+﻿@using Infragistics.Web.Mvc
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="@Url.Content("~/igniteui/css/themes/infragistics/infragistics.theme.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/igniteui/css/structure/infragistics.css")" rel="stylesheet" />
+
+    <script src="@Url.Content("~/js/modernizr.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery-ui.min.js")"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="@Url.Content("~/igniteui/js/infragistics.core.js")"></script>
+    <script src="@Url.Content("~/igniteui/js/infragistics.dv.js")"></script>
+</head>
+<body>
+    <h3>Healthy Eating</h3>     
+    <br />
+    <h4>Total calories intake ratio between fat, carbohydrates and protein, where middle ranges are healthy ratios and the target values - ideally set goals.</h4>
+    <br />
+
+    Fat
+    @(Html.Infragistics().BulletGraph()
+        .Width("100%")
+        .Height("80px")  
+        .Ranges(range =>
+        {
+            range.Range("unhealthyRange").StartValue(0).EndValue(20).Brush("#FDB881"); 
+            range.Range("healthyRange").StartValue(20).EndValue(35).Brush("#F18B36");
+            range.Range("veryUnhealthyRange").StartValue(35).EndValue(100).Brush("#D2660D");
+        })
+        .Value(30)
+        .TargetValue(20)
+        .ValueBrush("white") 
+        .TargetValueBrush("white") 
+        .FontBrush("#D2660D")
+        .TickBrush("#E2661D")
+        .ClientEvents(new Dictionary<string, string>() { { "formatLabel", "function(evt, ui) { ui.label += '%' }" } })
+        .TransitionDuration(500)
+        .HtmlAttributes(new Dictionary<string, object> { { "style", "margin-bottom:40px" } })
+        .Render())
+
+    Carbohydrates
+    @(Html.Infragistics().BulletGraph()
+        .Width("100%")
+        .Height("80px")  
+        .Ranges(range =>
+        {
+            range.Range("unhealthyRange").StartValue(0).EndValue(45).Brush("#ABD652");
+            range.Range("healthyRange").StartValue(45).EndValue(65).Brush("#739F19");
+            range.Range("veryUnhealthyRange").StartValue(65).EndValue(100).Brush("#527211");
+        })
+        .Value(48)
+        .TargetValue(50)
+        .ValueBrush("white") 
+        .TargetValueBrush("white") 
+        .FontBrush("#527211")
+        .TickBrush("#628221")
+        .HtmlAttributes(new Dictionary<string, object> { { "style", "margin-bottom:40px" } })
+        .ClientEvents(new Dictionary<string, string>() { { "formatLabel", "function(evt, ui) { ui.label += '%' }" } })
+        .TransitionDuration(500)
+        .Render())
+
+    Protein
+    @(Html.Infragistics().BulletGraph()
+        .Width("100%")
+        .Height("80px")         
+        .Ranges(range =>
+        {
+            range.Range("unhealthyRange").StartValue(0).EndValue(10);
+            range.Range("healthyRange").StartValue(10).EndValue(35);
+            range.Range("veryUnhealthyRange").StartValue(35).EndValue(100);
+        })
+        .Value(22)
+        .TargetValue(30)        
+        .ValueBrush("white") 
+        .TargetValueBrush("white") 
+        .FontBrush("#216E99")
+        .TickBrush("#115E89")
+        .ClientEvents(new Dictionary<string, string>() { { "formatLabel", "function(evt, ui) { ui.label += '%' }" } })
+        .TransitionDuration(500)
+        .Render())
+</body>
+</html>

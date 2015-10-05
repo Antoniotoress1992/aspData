@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Feature Chooser</Title>
+    <Description>
+        Feature Chooser provides menu-like interface to grid columns when multiple features are enabled. Click or tap on the gear icon shown in each grid column to start interacting with Feature Chooser.
+        Feature Chooser supports the following features: Sorting (multi mode), Filtering (advanced mode), Hiding, Summaries, Column Moving.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>機能セレクター</Title>
+    <Description>
+      機能セレクターは、複数の機能が有効にした場合、グリッド列にメニュー インターフェイスを提供します。各グリッド列で表示されるギア アイコンをクリックするか、タップすると、機能セレクターを表示します。
+      機能セレクターは、並べ替え (複数列)、フィルタリング (詳細モード)、非表示、集計、列移動をサポートします。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

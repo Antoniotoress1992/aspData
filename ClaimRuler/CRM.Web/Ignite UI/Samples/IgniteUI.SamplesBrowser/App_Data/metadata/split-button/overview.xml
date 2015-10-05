@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">split-button/change-shapes</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      Split buttons, also known as split drop down buttons, are useful when you want to provide a default action/command for a button but also need to supply other, secondary options. 
+      If you use Microsoft Office, Windows, or Gmail, you will be familiar with this pattern. Typically it is a command name with an optional icon, followed by a splitter, and then a down arrow. The command that is displayed directly is the default, and if you click that part of the button, it will execute that command, but you can also click the drop down to see alternative commands and select them from the drop down to execute.
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      分割ボタン (分割ドロップダウン ボタン) は、ボタンのデフォルト操作/コマンドやその他のオプションを提供します。
+      Microsoft Office、Windows、および Gmail でも使用されているパターンです。コマンド名およびオプションのアイコン、スプリッター、およびドロップダウン矢印があります。表示されるコマンドはデフォルトです。そのボタン部分をクリックすると、そのコマンドを実行します。または、ドロップダウンをクリックし表示されるその他のコマンドから選択、実行することができます。
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

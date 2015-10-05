@@ -1,0 +1,135 @@
+﻿@using Infragistics.Web.Mvc
+@using IgniteUI.SamplesBrowser.Models
+@model IQueryable<IgniteUI.SamplesBrowser.Models.Northwind.Order>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="@Url.Content("~/igniteui/css/themes/infragistics/infragistics.theme.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/igniteui/css/structure/infragistics.css")" rel="stylesheet" />
+
+    <script src="@Url.Content("~/js/modernizr.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery-ui.min.js")"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="@Url.Content("~/igniteui/js/infragistics.core.js")"></script>
+    <script src="@Url.Content("~/igniteui/js/infragistics.lob.js")"></script>
+
+    <style type="text/css">
+        .export-excel-sample fieldset {
+            margin: 5px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #CCCCCC;
+        }
+
+            .export-excel-sample fieldset label {
+                display: block;
+                margin-bottom: 3px;
+            }
+
+            .export-excel-sample fieldset input {
+                margin-bottom: 5px;
+                float: left;
+                clear: left;
+            }
+
+            .export-excel-sample fieldset label {
+                float: left;
+                width: 160px;
+                padding-top: 2px;
+            }
+
+            .export-excel-sample fieldset fieldset {
+                display: inline-block;
+                vertical-align: middle;
+                width: auto;
+            }
+
+        #grid1_container {
+            margin: 15px auto;
+        }
+
+        .export-excel-sample .button-container {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    @using(Html.BeginForm())
+    {
+
+        <div class="export-excel-sample">
+            <fieldset>
+                <legend>Export Options</legend>
+                <fieldset>
+                    <legend>Export Type</legend>
+                    <input type="radio" name="exportType" id="currentPage" value="false" checked="checked" />
+                    <label for="currentPage">Current Page</label>
+                    <input type="radio" name="exportType" id="allPages" value="true" />
+                    <label for="allPages">All Pages</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Export Format</legend>
+                    <input type="radio" name="exportFormat" id="Excel2007" value="true" checked="checked" />
+                    <label for="Excel2007">Excel 2007 Format</label>
+                    <input type="radio" name="exportFormat" id="Excel97-03" value="false" />
+                    <label for="Excel97-03">Excel 97 2003 Format</label>
+                </fieldset>
+                <div class="button-container">
+                    <input id="btnSubmit" type="submit" value="Export Button" />
+                </div>
+            </fieldset>
+        </div>
+
+        <script type="text/javascript">
+            $(function () {
+                var grid = $("#grid1"),
+                    pageSize = $("#pageSize"),
+                    pageNumber = $("#pageNumber");
+
+                pageNumber.val(0);
+                pageSize.val(0);
+
+                grid.on("iggridrendered", function (e, ui) {
+                    pageSize.val(grid.igGridPaging("option", "pageSize"));
+                    pageNumber.val(grid.igGridPaging("option", "currentPageIndex"));
+                });
+
+                grid.on("iggridpagingpageindexchanged", function (e, ui) {
+                    pageNumber.val(ui.pageIndex);
+                });
+
+                grid.on("iggridpagingpagesizechanged", function (e, ui) {
+                    pageSize.val(ui.pageSize);
+                    pageNumber.val(0);
+                });
+            });
+        </script>
+
+        @(Html.Infragistics().Grid(Model).ID("grid1")
+        .PrimaryKey("OrderID")
+        .AutoGenerateColumns(false)
+        .Columns(column =>
+        {
+            column.For(x => x.OrderID).HeaderText("Order ID").DataType("number");
+            column.For(x => x.ContactName).HeaderText("Contact Name");
+            column.For(x => x.ShipAddress).HeaderText("Shipping Address");
+            column.For(x => x.OrderDate).HeaderText("Order Date");
+        }).Features(features =>
+        {
+            features.Paging();
+        }).Height("500").Width("100%").DataSourceUrl(Url.Action("PagingGetData")).DataBind().Render())
+
+        <input type="hidden" name="pageSize" id="pageSize" value="" />
+        <input type="hidden" name="pageNumber" id="pageNumber" value="" />
+    }
+</body>
+</html>

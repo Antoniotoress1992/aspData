@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>XML Binding</Title>
+    <Description>This is a basic example for binding the pie chart to an XML string.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Overview" TopicName="igPieChart_Overview" />
+      <HelpTopic Title="Adding Pie Chart" TopicName="igPieChart_Adding" />
+      <HelpTopic Title="Data Binding" TopicName="igPieChart_DataBinding" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>XML のバインド</Title>
+    <Description>このサンプルは、XML 文字列にバインドされた円チャートを表示します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="概要" TopicName="igPieChart_Overview" />
+      <HelpTopic Title="円チャートの追加" TopicName="igPieChart_Adding" />
+      <HelpTopic Title="データ バインディング" TopicName="igPieChart_DataBinding" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

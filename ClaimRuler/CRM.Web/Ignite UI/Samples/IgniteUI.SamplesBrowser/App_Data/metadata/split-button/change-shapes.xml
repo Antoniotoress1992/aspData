@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Split button basics</Title>
+    <Description>This sample demonstrates how a user could combine split button and color picker. You could change the shape of the three figures via split button or change their color via colorpickersplitbutton.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>分割ボタンの基本機能</Title>
+    <Description>このサンプルでは、分割ボタンとカラー ピッカーを一緒に使用する方法を紹介します。3 つの図形の形を分割ボタンで変更、または色をカラー ピッカーで変更できます。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status>New</Status>
+  <MinSampleSize>TabletLandscape</MinSampleSize>
+</Sample>

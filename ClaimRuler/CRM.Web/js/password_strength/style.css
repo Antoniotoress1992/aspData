@@ -1,0 +1,57 @@
+
+		
+a{
+	color:#0073BF;
+	text-decoration:none;
+}
+	
+
+#header{
+	text-align:center;
+	margin:20px 0 40px;
+}
+		
+#footer{
+	text-align:center;
+	margin-top:40px;
+}
+
+#register {
+	margin-left:100px;	
+}
+#register label{
+	margin-right:5px;
+}
+#register input {
+	padding:5px 7px;
+	border:1px solid #d5d9da;
+	box-shadow: 0 0 5px #e8e9eb inset;
+	width:250px;
+	font-size:1em;
+	outline:0;
+}
+#result{
+	margin-left:5px;
+}
+
+.short{
+	color:#FF0000 !Important;
+}
+
+.weak{
+	color:#E66C2C !Important;
+}
+
+.good{
+	color:#2D98F3 !Important;
+}
+
+.strong{
+	color:#006400 !Important;
+}
+@font-face {
+  font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Vollkorn Regular'), local('Vollkorn-Regular'), url(http://themes.googleusercontent.com/static/fonts/vollkorn/v3/BCFBp4rt5gxxFrX6F12DKvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}

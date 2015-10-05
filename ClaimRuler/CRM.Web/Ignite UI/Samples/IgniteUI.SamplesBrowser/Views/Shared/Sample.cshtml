@@ -1,0 +1,67 @@
+﻿@using IgniteUI.SamplesBrowser.Application.Model
+@using Infragistics.IgniteUI.SamplesBrowser.Shared.ViewModels
+@using Infragistics.IgniteUI.SamplesBrowser.Shared.HtmlHelperExtensions
+@model SampleViewModel
+@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml"; 
+}
+
+@section HeadContent
+{
+    @Html.Partial("_SampleHead", Model)
+}
+<section class="row sample-page main-content ui-helper-clearfix">
+    <div id="controlInfo">        
+        @{
+            var iconName = !String.IsNullOrEmpty(@Model.Sample.Control.PathID) ? "igsb-" + @Model.Sample.Control.PathID.Replace("-", ""): "";
+            <span id="sampleControlIcon" class="igsb-sampleControlIcon @iconName"></span>
+        }
+        <span id="control-title">@Model.Sample.Control.Name</span>        
+    </div>
+<article class="ui-helper-clearfix">
+    <div id="sample">
+        <section>
+            <div id="sampleNavigation" class="ui-helper-clearfix">
+                <div id="sbPrevNextButtons">
+                    <span id="sampleNavigatePrev"></span>
+                    <span id="sampleNavigateNext"></span>
+                </div>                
+                    <h1 id="sample-title" class="pageTitle">@Model.Sample.Title</h1>
+			</div>
+            @if (!string.IsNullOrWhiteSpace(Model.RuntimeEnvLimitationMsg))
+            {
+                <div class="igsb-bold">
+                    @Html.Raw(Model.RuntimeEnvLimitationMsg)
+                    @if (!string.IsNullOrEmpty(Model.RuntimeEnvLimitationWrkUrl))
+                    {
+                        @Resources.Main.Server_Runttime_Message_See <a href="@Model.RuntimeEnvLimitationWrkUrl">@Resources.Main.Server_Runttime_Message_Here</a>
+                    }
+                            
+                </div>
+            }
+            <div id="dvLoading" class="loaderCss" style="display: none"></div>
+            @{
+					string ctp = Model.Sample.Status == Infragistics.IgniteUI.SamplesBrowser.Shared.Entities.HighlightStatus.Ctp ? "block" : "none";
+            }
+            <div class="sampleCtpLabel" style="display: @ctp">@Resources.Main.CTP_Sample_Label</div>
+            <div id="sampleContainer" class="ui-helper-clearfix">
+                @Html.Partial("_RunningSample", Model)
+            </div>
+            <div class="igsb-sample-desc">
+                @Html.Raw(Model.Sample.Description)
+            </div>
+            
+			<div id="bottomSection">			    
+                <h2 class="pageTitle">@Resources.Main.Code_View</h2>
+                @Html.Partial("_CodeViewer", Model.Sample.Code)
+                @if (Model.Sample.Control.HasApplicationSampleLinks)
+                {
+                    @Html.Partial("_ControlAppSamples", Model.Sample.Control)
+                }
+                @Html.LearningSection(Model, Url)
+                <br />
+			</div>
+        </section>
+    </div>
+</article>
+</section>

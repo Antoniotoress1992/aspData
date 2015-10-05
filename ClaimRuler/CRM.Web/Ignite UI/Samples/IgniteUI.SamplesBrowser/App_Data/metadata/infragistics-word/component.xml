@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Infragistics Word</Name>
+    <Description>Create Microsoft® Word® documents in high-fidelity with the compiled assembly that writes in the widely-interoperable DOC/DOCX/WordML file format. With absolutely no Word dependency, your application can run independently of Word, and Word does not have to be installed alongside your application.</Description>    
+    <PageKeywords></PageKeywords>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Congratulation_Word" Value="Congratulations! You have successfully exported igGrid data to Word!" />
+      <LocalizedSampleString Key="Order_ID" Value="Order ID" />
+      <LocalizedSampleString Key="Contact_Name" Value="Contact Name" />
+      <LocalizedSampleString Key="Ship_Address" Value="Shipping Address" />
+      <LocalizedSampleString Key="Order_Date" Value="Order Date" />
+      <LocalizedSampleString Key="Export_Options" Value="Export Options" />
+      <LocalizedSampleString Key="Export_Type" Value="Export Type" />
+      <LocalizedSampleString Key="Current_Page" Value="Current Page" />
+      <LocalizedSampleString Key="All_Pages" Value="All Pages" />
+      <LocalizedSampleString Key="Export_Button" Value="Export Button" />
+    </LocalizedSampleStrings>
+  </LocalizedContent>
+  
+  <LocalizedContent Language="ja">
+    <Name>Infragistics Word</Name>
+    <Description>コンパイル アセンブリで Microsoft® Word® 文書を作成します。DOC、DOCX、WordML ファイル形式がサポートされています。Word に依存しないため、アプリケーションをスタンドアロンで実行でき、Word をローカルにインストールする必要はありません。</Description>
+    <PageKeywords></PageKeywords>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Congratulation_Word" Value="エクスポートが完了しました。igGrid データを Word へのエクスポートが完了しました。" />
+      <LocalizedSampleString Key="Order_ID" Value="注文 ID" />
+      <LocalizedSampleString Key="Contact_Name" Value="名前" />
+      <LocalizedSampleString Key="Ship_Address" Value="配送先住所" />
+      <LocalizedSampleString Key="Order_Date" Value="注文日" />
+      <LocalizedSampleString Key="Export_Options" Value="エクスポート オプション" />
+      <LocalizedSampleString Key="Export_Type" Value="エクスポートのタイプ" />
+      <LocalizedSampleString Key="Current_Page" Value="現在のページ" />
+      <LocalizedSampleString Key="All_Pages" Value="すべてのページ" />
+      <LocalizedSampleString Key="Export_Button" Value="エクスポート" />
+    </LocalizedSampleStrings>
+  </LocalizedContent>
+  
+  <ClientApiUrl></ClientApiUrl>
+  <ForumNumber>557</ForumNumber>
+  <HelpPageName>Infragistics.Web.Mvc.Documents.Word~Infragistics.Documents.Word_namespace</HelpPageName>
+  <IconImage></IconImage>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <TOC>
+    <Sample>create-word-table</Sample>
+  </TOC>
+</Component>

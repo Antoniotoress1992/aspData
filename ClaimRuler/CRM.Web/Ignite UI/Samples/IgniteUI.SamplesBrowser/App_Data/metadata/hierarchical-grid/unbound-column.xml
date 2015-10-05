@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Unbound Column</Title>
+    <Description>
+        <![CDATA[
+        The sample demonstrates how to configure unbound columns in igHierarchicalGrid.<br/>
+        The column "In USA" in the root layout is using dataBound client event to set unbound values. The column "Freight Expense" in the child layout is using formula to calculate its values.
+        ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>非バインド列</Title>
+    <Description>
+    <![CDATA[
+        このサンプルでは、igHierarchicalGrid で非バインド列を構成する方法を紹介します。<br/>
+        ルート レイアウトの「米国内」列は dataBound イベントで非バインド値を設定します。子レイアウトの「輸送費」列は数式を使用して値を計算します。
+        ]]>
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>List View</Name>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Beverages" Value="Beverages" />
+      <LocalizedSampleString Key="Dairy" Value="Dairy" />
+      <LocalizedSampleString Key="Seafood" Value="Seafood" />
+      <LocalizedSampleString Key="Confections" Value="Confections" />
+      <LocalizedSampleString Key="Expand_Presets" Value="Expand Presets" />
+      <LocalizedSampleString Key="Primary_Colors" Value="Primary Colors" />
+      <LocalizedSampleString Key="Red" Value="Red" />
+      <LocalizedSampleString Key="Blue" Value="Blue" />
+      <LocalizedSampleString Key="Yellow" Value="Yellow" />
+      <LocalizedSampleString Key="Secondary_Colors" Value="Secondary Colors" />
+      <LocalizedSampleString Key="Green" Value="Green" />
+      <LocalizedSampleString Key="Orange" Value="Orange" />
+      <LocalizedSampleString Key="Purple" Value="Purple" />
+      <LocalizedSampleString Key="Neutral_Colors" Value="Neutral Colors" />
+      <LocalizedSampleString Key="Brown" Value="Brown" />
+      <LocalizedSampleString Key="Black" Value="Black" />
+      <LocalizedSampleString Key="White" Value="White" />
+      <LocalizedSampleString Key="Product_Name" Value="Product Name" />
+      <LocalizedSampleString Key="Category" Value="Category" />
+      <LocalizedSampleString Key="Item" Value="Item" />
+      <LocalizedSampleString Key="Items" Value="Items" />
+      <LocalizedSampleString Key="Out_Of_Stock" Value="Out of Stock" />
+      <LocalizedSampleString Key="Sorting_Options" Value="Sorting Options" />
+      <LocalizedSampleString Key="Inventory" Value="Inventory" />
+      <LocalizedSampleString Key="Category_Groups" Value="Category Groups" />
+    </LocalizedSampleStrings>
+    <Description>
+      With our versatile List/Grid Control, you can show one column of data, drill down into details, have detailed templates, load items on demand, set various presets for filtering and sorting, filter by keywords, and much more!
+    </Description>
+    <PageKeywords>igListView</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>List View</Name>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Beverages" Value="飲料" />
+      <LocalizedSampleString Key="Dairy" Value="乳製品" />
+      <LocalizedSampleString Key="Seafood" Value="魚介類" />
+      <LocalizedSampleString Key="Confections" Value="菓子類" />
+      <LocalizedSampleString Key="Expand_Presets" Value="プリセットの展開" />
+      <LocalizedSampleString Key="Primary_Colors" Value="原色" />
+      <LocalizedSampleString Key="Red" Value="赤" />
+      <LocalizedSampleString Key="Blue" Value="青" />
+      <LocalizedSampleString Key="Yellow" Value="黄" />
+      <LocalizedSampleString Key="Secondary_Colors" Value="二次色" />
+      <LocalizedSampleString Key="Green" Value="緑" />
+      <LocalizedSampleString Key="Orange" Value="オレンジ" />
+      <LocalizedSampleString Key="Purple" Value="パープル" />
+      <LocalizedSampleString Key="Neutral_Colors" Value="中間色" />
+      <LocalizedSampleString Key="Brown" Value="茶" />
+      <LocalizedSampleString Key="Black" Value="黒" />
+      <LocalizedSampleString Key="White" Value="白" />
+      <LocalizedSampleString Key="Product_Name" Value="製品名" />
+      <LocalizedSampleString Key="Category" Value="カテゴリ" />
+      <LocalizedSampleString Key="Item" Value="項目" />
+      <LocalizedSampleString Key="Items" Value="項目" />
+      <LocalizedSampleString Key="Out_Of_Stock" Value="在庫がありません" />
+      <LocalizedSampleString Key="Sorting_Options" Value="並べ替えオプション" />
+      <LocalizedSampleString Key="Inventory" Value="在庫" />
+      <LocalizedSampleString Key="Category_Groups" Value="カテゴリ グループ" />
+    </LocalizedSampleStrings>
+    <Description>
+      リスト/グリッド コントロールは、データ内の 1 行のみの表示、ドリルダウン詳細表示、詳細テンプレートの使用、項目のオンデマンド読み込み、フィルタリングと並べ替え対応プリセット、キーワード フィルターなど、多数の機能を提供します。
+    </Description>
+    <PageKeywords>igListView</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>mobile.igListView</ClientApiUrl>
+  <HelpPageName>igListView</HelpPageName>
+  <ForumNumber>662</ForumNumber>
+  <IconImage>jquery-mobile-listview.png</IconImage>
+  <ClientRuntime>jQueryMobile</ClientRuntime>
+  <IsFeatureComponent>True</IsFeatureComponent>
+  <TOC>
+    <Sample>json-binding</Sample>
+    <Sample>bind-to-rest-service</Sample>
+    <Sample>dynamic-binding</Sample>
+    <Sample>list-dividers</Sample>
+    <Sample>sort-group-presets</Sample>
+    <Sample>search</Sample>
+    <Sample>filter-presets</Sample>
+    <Sample>remote-features</Sample>
+    <Sample>custom-groups</Sample>
+    <Sample>templates</Sample>
+    <Sample>api-events</Sample>
+    <Sample>bind-collection</Sample>
+    <Sample>load-on-demand</Sample>
+  </TOC>
+</Component>

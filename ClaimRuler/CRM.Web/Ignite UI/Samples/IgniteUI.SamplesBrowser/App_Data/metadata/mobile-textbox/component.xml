@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>TextBox</Name>
+    <Description>
+      Go beyond simple web pages and build true mobile applications. With a selection seven types of mobile input controls, users can provide inputs and responses simply and easily.
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Basic_Text_Box" Value="Basic Text Box" />
+      <LocalizedSampleString Key="Search" Value="Search..." />
+      <LocalizedSampleString Key="User_Name" Value="User Name" />
+      <LocalizedSampleString Key="Password" Value="Password" />
+      <LocalizedSampleString Key="Description" Value="Description" />
+    </LocalizedSampleStrings>
+    <PageKeywords>MobileTextBox</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>TextBox</Name>
+    <Description>
+      モバイル アプリケーションに対応するコントロールを提供します。モバイル入力コントロールの 7 つのタイプを提供します。
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Basic_Text_Box" Value="ベーシック テキスト ボックス" />
+      <LocalizedSampleString Key="Search" Value="検索..." />
+      <LocalizedSampleString Key="User_Name" Value="ユーザー名" />
+      <LocalizedSampleString Key="Password" Value="パスワード" />
+      <LocalizedSampleString Key="Description" Value="説明" />
+    </LocalizedSampleStrings>
+    <PageKeywords>MobileTextBox</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>http://api.jquerymobile.com/textinput/</ClientApiUrl>
+  <HelpPageName>TextBox</HelpPageName>
+  <ForumNumber>691</ForumNumber>
+  <IconImage>jquery-mobile-textbox.png</IconImage>
+  <ClientRuntime>jQueryMobile</ClientRuntime>
+  <TOC>
+    <Sample>basic-usage</Sample>
+  </TOC>
+</Component>

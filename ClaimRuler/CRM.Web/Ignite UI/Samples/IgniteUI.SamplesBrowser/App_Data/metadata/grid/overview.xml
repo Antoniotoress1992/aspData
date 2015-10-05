@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">grid/json-binding</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      The igGrid is the fastest jQuery grid on the market and provides line of business features, touch support, and <a href="~/grid/responsive-web-design-mode">responsive web design</a> features. 
+      You can bind the igGrid to a variety of data sources including <a href="~/grid/json-binding">JSON</a>, <a href="~/grid/xml-binding">XML</a>, <a href="~/grid/html-binding">HTML tables</a>, 
+      <a href="~/grid/aspnet-mvc-helper">.NET collections</a>, and even <a href="~/grid/datatable-binding">.NET DataTables</a>. The igGrid works with popular open source libraries 
+      including <a href="~/grid/bind-grid-with-ko">KnockoutJS</a>, <a href="~/grid/history">History.js</a>, <a href="~/grid/jsRender-integration">JsRender</a>, and 
+      <a href="~/grid/twitter-bootstrap">Bootstrap</a>. It includes powerful line of business features such as:
+      <ul>
+        <li><a href="~/grid/basic-editing">Editing</a></li>
+        <li><a href="~/grid/sorting-local">Sorting</a></li>
+        <li><a href="~/grid/filtering">Filtering</a></li>
+        <li><a href="~/grid/column-resizing">Column Resizing</a></li>
+        <li><a href="~/grid/paging">Paging</a></li>
+        <li><a href="~/grid/summaries">Summaries</a></li>
+        <li>And more listed in the menu!</li>
+      </ul>
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      igGrid は jQuery グリッドです。業務用機能、タッチ サポート、および<a href="~/grid/responsive-web-design-mode">レスポンシブ web デザイン</a>機能を提供します。
+      igGrid を <a href="~/grid/json-binding">JSON</a>、<a href="~/grid/xml-binding">XML</a>、<a href="~/grid/html-binding">HTML テーブル</a>、<a href="~/grid/aspnet-mvc-helper">.NET コレクション</a>、<a href="~/grid/datatable-binding">.NET DataTable</a> などのデータ ソースにバインドできます。 
+      igGrid は、<a href="~/grid/bind-grid-with-ko">KnockoutJS</a>、<a href="~/grid/history">History.js</a>、<a href="~/grid/jsRender-integration">JsRender</a>、および <a href="~/grid/twitter-bootstrap">Bootstrap</a> などの人気のあるオープン ソース ライブラリと操作します。
+      以下の業務用機能を提供します:
+      <ul>
+        <li><a href="~/grid/basic-editing">編集</a></li>
+        <li><a href="~/grid/sorting-local">並べ替え</a></li>
+        <li><a href="~/grid/filtering">フィルタリング</a></li>
+        <li><a href="~/grid/column-resizing">列サイズの変更</a></li>
+        <li><a href="~/grid/paging">ページング</a></li>
+        <li><a href="~/grid/summaries">集計</a></li>
+        <li>すべてのサンプルを表示するには、メニューを参照してください。</li>
+      </ul>
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

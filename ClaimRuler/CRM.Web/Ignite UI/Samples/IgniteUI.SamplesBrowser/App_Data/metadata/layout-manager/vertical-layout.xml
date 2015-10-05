@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Responsive Vertical Layout</Title>
+    <Description>This sample demonstrates the responsiveness of the Layout Manager control's Vertical layout with various item sizes set either in pixels or percentages and setting the number of items in the Layout Manager's options without the need for any initial markup.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>レスポンシブ垂直方向レイアウト</Title>
+    <Description>このサンプルはレスポンシブ垂直レイアウトを紹介します。要素を垂直に配置し、サイズはピクセルまたはパーセンテージで設定できます。初期化のマークアップの必要なしで、コンポーネントのオプションに複数の項目を指定できます。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <IsResponsive>True</IsResponsive>
+</Sample>

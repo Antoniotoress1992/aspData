@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Basic Editing</Title>
+    <Description>
+          <![CDATA[
+        In this sample the igGrid Updating feature communicates with the Grid MVC Helper wrapper to persist the changes on the server.
+        The igGrid Updating feature uses transactions to log any changes made to the grid. These transactions are kept locally in the browser until the igGrid.saveChanges API method is called to send a POST request to the Url indicated by the igGrid.updateUrl option. On the server these transaction should be parsed and processed and the Grid MVC Helper wrapper greatly simplifies this task. The OrdersSaveData controller method uses a GridModel.LoadTransactions&lt;T&gt;(string postdata) to deserialize the changes from the grid and processes them.
+        Use the grid to add, edit or delete single or multiple records. Press the "Save Changes" to send the changes on the server with an Ajax call.
+    ]]>
+        </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+      <Title>基本編集</Title>
+    <Description>
+          <![CDATA[
+        このサンプルでは、igGrid の更新機能は、サーバーに変更を永続化するためにグリッドの MVC ヘルパーと操作します。
+        igGrid の更新機能は、グリッドの変更をログするためにトランザクションを使用します。トランザクションはローカルにブラウザーで保存されます。igGrid.saveChanges の API メソッドを呼び出したときに、igGrid.updateUrl オプションの URL に POST 要求を送信します。サーバーでトランザクションを解析して処理します。グリッドの MVC ヘルパー ラッパーはこのタスクに便利です。OrdersSaveData コントローラー メソッドは、GridModel.LoadTransactions<T>(string postdata) を使用してグリッドの変更を逆シリアル化し、処理します。
+        グリッドを使用してレコードを追加、編集、削除します。[変更の保存] ボタンを押して Ajax 呼び出しでサーバーに変更を送信します。
+    ]]></Description>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

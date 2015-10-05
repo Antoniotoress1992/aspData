@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Range Category Series</title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="../../igniteui/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+    <link href="../../igniteui/css/structure/infragistics.css" rel="stylesheet" />
+    
+    <!--CSS file specific for chart styling -->
+    <link href="../../igniteui/css/structure/modules/infragistics.ui.chart.new.css" rel="stylesheet" />
+
+    <script src="../../js/modernizr.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="../../igniteui/js/infragistics.core.js"></script>
+    <script src="../../igniteui/js/infragistics.dv.js"></script>
+
+</head>
+<body>
+    <script type="text/javascript" src="../../data-files/temperature.js"></script>
+
+    <script id="tooltipTemplate" type="text/x-jquery-tmpl">
+        <div>
+            <span id="tooltipValue">Philadelphia: ${item.PhiladelphiaTemp}</span><br />
+            <span id="Span1">New York City: ${item.NewYorkCityTemp}</span>
+        </div>
+    </script>
+
+    <script type="text/javascript">
+
+        $(function () {
+            function createChart(selector, seriesType, dataSource) {
+                $(selector).igDataChart({
+                    width: "400px",
+                    height: "400px",
+                    dataSource: data,
+                    title: "New York City vs. Philadelphia",
+                    subtitle: "A comparison of daily temperatures",
+                    axes: [{
+                        name: "xAxis",
+                        type: "categoryX",
+                        label: "Time"
+                    },
+                    {
+                        name: "yAxis",
+                        type: "numericY",
+                        title: "Temperature (Degrees Fahrenheit)",
+                    }],
+                    series: [{
+                        name: "series1",
+                        title: "Test Series",
+                        type: seriesType,
+                        isHighlightingEnabled: true,
+                        isTransitionInEnabled: true,
+                        xAxis: "xAxis",
+                        yAxis: "yAxis",
+                        lowMemberPath: "NewYorkCityTemp",
+                        highMemberPath: "PhiladelphiaTemp",
+                        showTooltip: true,
+                        tooltipTemplate: "tooltipTemplate"
+                    }],
+                    horizontalZoomable: true,
+                    verticalZoomable: true,
+                    windowResponse: "immediate"
+                });
+            }
+
+            createChart("#chartRangeArea", "rangeArea", data);
+            createChart("#chartRangeColumn", "rangeColumn", data);
+        });
+    </script>
+
+    <style type="text/css">
+        h2
+        {
+            width: 100%;
+            text-align: center;
+        }
+        
+        .chart
+        {
+            position: relative;
+            float: left;
+            margin-right: 10px;
+        }
+    </style>
+
+    <div class="chartContainer">
+        <div class="chart">
+            <h2>Range Area</h2>
+            <div id="chartRangeArea"></div>
+        </div>
+        <div class="chart">
+            <h2>Range Column</h2>
+            <div id="chartRangeColumn"></div>
+        </div>
+    </div>
+
+    <div class="NOAAdata-attribution">
+        Weather data from:<br />
+        <a href="http://www.noaa.gov/" target="_blank">NOAA</a>
+    </div>
+</body>
+</html>

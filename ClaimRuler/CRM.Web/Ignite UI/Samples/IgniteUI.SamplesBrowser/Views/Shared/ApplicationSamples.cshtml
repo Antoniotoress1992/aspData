@@ -1,0 +1,88 @@
+﻿@using IgniteUI.SamplesBrowser.Application.Model
+@using Infragistics.IgniteUI.SamplesBrowser.Shared.ViewModels
+@model ShowcaseViewModel
+
+@{
+    Layout = "~/Views/Shared/_CoverLayout.cshtml";   
+}
+
+<section id="showcase">
+    <div class="showCasePageTitleDesc">
+        <h1 id="showCasePageTitle" class="pageTitle">@Resources.Main.Showcase_sclbl <span>@Resources.Main.Sample_sclbl</span></h1>
+        <div class="pageDesc">@Resources.Main.PageDescripton_sclbl</div>
+    </div>
+    <div id="showCaseSampleList">
+        @{
+            var scanAccent = "<span class=\"igsb-highlight\">" + Resources.Main.View_sclbl + "</span>";
+            var scanText = string.Format(Resources.Main.ScanText_sclbl, scanAccent);
+            var count = 0;
+            foreach (var appSample in Model.ApplicationSamples)
+            {
+                var qrZonePrefix = "scSampleQRZone_";
+                var qrZoneID = qrZonePrefix + count;
+                var qrZoneImageID = qrZonePrefix + "Image" + count;
+                string sampleTarget = "sampleTarget" + count, downloadTarget = "downloadTarget" + count, gitTarget = "gitTarget" + count;
+                count++;
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        CreateAppQRCode('@qrZoneID', '@qrZoneImageID', '@appSample.Url');
+                    });
+                </script>
+                                
+            <div class="showCaseSampleDiv">
+                <div class="showCaseSampleImg">
+                    <a style="padding: 0px; margin: 0px" href="@appSample.Url" target="@sampleTarget">
+                        <img class="appSamplesImage" src="@Url.Content(appSample.ImageUrl)" /></a>
+                </div>
+                <div class="showCaseSampleDetails">
+                    <span class="scSampleTitle">@Html.Raw(string.Format(Resources.Main.App_Sample_Title_Format, appSample.Name))</span>
+                    <div class="appSamplesDesc">@appSample.Description</div>
+                    <div class="scSampleDetailsLinksQR">
+                        <div class="scSampleDetailsLinks">
+                            <ul class="scSampleDetailsLinksUL">
+                                <li>
+                                    <a class="appLaunchLink" href="@appSample.Url" style="text-decoration: none; padding: 0; margin-left: 0;" target="@sampleTarget">
+                                        <span class="controlGroupIcon sprite-launchicon">&nbsp;</span>
+                                        @if (Model.Url.Config.IsLocalInstall || Model.LocalZipInstall)
+                                        {
+                                            @Resources.Main.ViewOnline_sclbl
+                                        }
+                                        else{
+                                            @Resources.Main.Launch_sclbl
+                                        }
+                                    </a>&nbsp;
+                                </li>
+                                <li>
+                                    <a class="appDownloadLink" href="@appSample.DownloadUrl" style="text-decoration: none; padding: 0; margin-left: 0;" target="@downloadTarget">
+                                        <span class="controlGroupIcon sprite-downloadicon">&nbsp;</span>@Resources.Main.Download_sclbl
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="appGitLink" href="@appSample.GitUrl" style="text-decoration: none; padding: 0; margin-left: 0;" target="@gitTarget">
+                                        <span class="controlGroupIcon sprite-giticon">&nbsp;</span>git
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scSampleDetailsQR">
+                            <a href="@appSample.Url" target="@sampleTarget"><span class="showcase-QRcode" id="@qrZoneID"></span></a>
+                            <span class="scSampleQRText">@Html.Raw(scanText)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="scSampleControls">
+                    <div>
+                        <p class="scSampleTitle">@Resources.Main.Featured_Controls</p>
+                        <ul class="scSampleControlsUL">
+                            @foreach (var cnt in appSample.Controls)
+                            {
+                                <li><a href="@Url.Content(cnt.OverviewUrl)" >@cnt.Name</a></li> 
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>                
+            }
+        }
+    </div>
+</section>

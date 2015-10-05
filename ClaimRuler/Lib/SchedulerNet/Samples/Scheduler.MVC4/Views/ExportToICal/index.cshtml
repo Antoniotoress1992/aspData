@@ -1,0 +1,13 @@
+@{
+    ViewBag.Title = "Scheduler | Export to iCal";
+    ViewBag.SampleTitle = "Export";
+    ViewBag.ShortDescription = "Export to iCal";
+    ViewBag.LongDescription = "Export calendar to iCal";
+}
+
+
+   <div style="text-align:center">
+   <input type="button" value="Print" onclick="@Html.Raw(Model.ToICal("/ExportToICal/ExportServerSide", "data"))" />
+   </div>
+   @Html.Raw(Model.Render()) 
+

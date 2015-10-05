@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>XML Binding</Title>
+    <Description>This sample shows how to bind an igFunnelChart to data available in XML structure. For that purpose the XML data is passed to an igDataSource which provides the data to the funnel chart.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Binding to Data" TopicName="igFunnelChart_Binding_to_Data" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>XML のバインド</Title>
+    <Description>このサンプルは igFunnelChart を XML 構造のデータにバインドする方法を紹介します。そのために、XML データはデータをファンネル チャートに提供する igDataSource に渡されます。</Description>
+    <HelpTopics>
+      <HelpTopic Title="データ バインド" TopicName="igFunnelChart_Binding_to_Data" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

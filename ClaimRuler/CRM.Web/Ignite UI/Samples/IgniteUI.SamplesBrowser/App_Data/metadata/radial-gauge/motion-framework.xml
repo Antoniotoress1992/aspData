@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Gauge Animation</Title>
+    <Description>This sample demonstrates animated transitions between configuration states of igRadialGauge control. You can control the speed of the animations by setting the 'transitionDuration' option.</Description>
+    <HelpTopics>
+      <HelpTopic Title="igRadialGauge" TopicName="igRadialGauge" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>ゲージのアニメーション</Title>
+    <Description>このサンプルでは、igRadialGauge コントロールの構成状態のアニメーション化されたトランジションを紹介します。'transistionDuration' オプションを設定してアニメーションのスピードを制御できます。</Description>
+    <HelpTopics>
+      <HelpTopic Title="igRadialGauge" TopicName="igRadialGauge" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime> 
+  <Status></Status>
+</Sample>

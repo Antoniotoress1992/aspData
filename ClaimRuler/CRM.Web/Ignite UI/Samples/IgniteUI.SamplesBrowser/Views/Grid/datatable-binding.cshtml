@@ -1,0 +1,51 @@
+﻿@using Infragistics.Web.Mvc
+@using IgniteUI.SamplesBrowser.Models.Northwind
+@using System.Data
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="@Url.Content("~/igniteui/css/themes/infragistics/infragistics.theme.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/igniteui/css/structure/infragistics.css")" rel="stylesheet" />
+
+    <script src="@Url.Content("~/js/modernizr.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery-ui.min.js")"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="@Url.Content("~/igniteui/js/infragistics.core.js")"></script>
+    <script src="@Url.Content("~/igniteui/js/infragistics.lob.js")"></script>
+
+</head>
+<body>
+    <!-- Note: When grid is defined in the View and DataTable is used as DataSource, grid columns can only be auto-generated -->
+    @(Html.Infragistics().Grid<System.Data.DataTable>()
+        .ID("grid1")
+        .Height("400px")
+        .Width("100%")
+        .AutoGenerateColumns(true)
+        .DefaultColumnWidth("150px")
+        .Features(feature =>
+        {
+            feature.Responsive()
+            .EnableVerticalRendering(false)
+            .ReactOnContainerWidthChanges(true)
+            .ColumnSettings(cs =>
+            {
+                cs.ColumnSetting().ColumnKey("CustomerID").Classes("ui-hidden-phone");
+                cs.ColumnSetting().ColumnKey("Region").Classes("ui-hidden-phone");
+                cs.ColumnSetting().ColumnKey("Address").Classes("ui-hidden-phone");
+                cs.ColumnSetting().ColumnKey("City").Classes("ui-hidden-phone");
+                cs.ColumnSetting().ColumnKey("Fax").Classes("ui-hidden-phone");
+            });
+        })               
+        .DataSource(Model)
+        .DataBind()
+        .Render()
+    )
+
+</body>
+</html>

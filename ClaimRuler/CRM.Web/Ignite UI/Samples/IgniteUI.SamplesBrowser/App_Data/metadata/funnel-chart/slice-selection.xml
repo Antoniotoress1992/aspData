@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Slice Selection</Title>
+    <Description>This sample demonstrates how to enable slice selection functionality and how to handle the slice selected event.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Overview" TopicName="igFunnelChart_Overview" />
+      <HelpTopic Title="Configuring" TopicName="igFunnelChart_Configuring" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>スライスの選択</Title>
+    <Description>このサンプルでは、スライスの選択機能を有効にし、sliceSelected イベントを処理する方法を紹介します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="概要" TopicName="igFunnelChart_Overview" />
+      <HelpTopic Title="構成" TopicName="igFunnelChart_Configuring" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="../../igniteui/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+    <link href="../../igniteui/css/structure/infragistics.css" rel="stylesheet" />
+
+    <script src="../../js/modernizr.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="../../igniteui/js/infragistics.core.js"></script>
+    <script src="../../igniteui/js/infragistics.lob.js"></script>
+
+</head>
+<body>
+
+    <div id="igUpload1"></div>
+    <div id="error-message" style="color: #FF0000; font-weight: bold;"></div>
+
+    <script>
+
+        $(function () {
+            $("#igUpload1").igUpload({
+                mode: 'single',
+                autostartupload: true,
+                progressUrl: "../../IGUploadStatusHandler.ashx",
+                controlId: "serverID1",
+                onError: function (e, args) {
+                    showAlert(args);
+                }
+            });
+        });
+
+        function showAlert(args) {
+            $("#error-message").html(args.errorMessage).stop(true, true).fadeIn(500).delay(3000).fadeOut(500);
+        }
+    </script>
+
+</body>
+</html>

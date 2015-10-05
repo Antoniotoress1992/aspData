@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>JSON Binding</Title>
+    <Description>
+        This sample demonstrates how to bind the igDataSource component to local JSON format.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>JSON のバインド</Title>
+    <Description>
+      このサンプルでは、igDataSource コンポーネントをローカル JSON 形式にバインドする方法を紹介します。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

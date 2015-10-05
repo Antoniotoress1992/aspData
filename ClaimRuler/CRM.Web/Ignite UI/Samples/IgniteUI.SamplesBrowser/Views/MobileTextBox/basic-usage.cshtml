@@ -1,0 +1,92 @@
+﻿@using Infragistics.Web.Mvc.Mobile
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="@Url.Content("~/css/jqm/jquery.mobile.structure.min.css")" rel="stylesheet" />
+
+    <!-- Required Ignite UI Mobile Combined CSS Files -->
+    <link href="@Url.Content("~/igniteui/mobile/css/structure/infragistics.mobile.css")"  rel="stylesheet"/>
+    <link href="@Url.Content("~/igniteui/mobile/css/themes/ios/infragistics.mobile.theme.css")"  rel="stylesheet"/>
+    
+    <script src="@Url.Content("~/js/modernizr.min.js")"></script>
+    <script src="@Url.Content("~/js/jqm/jquery.min.js")"></script>
+    <script src="@Url.Content("~/js/jqm/jquery.mobile.min.js")"></script>
+
+    <!-- Required Ignite UI Mobile Combined JavaScript File -->
+    <script src="@Url.Content("~/igniteui/mobile/js/infragistics.mobile.js")"></script>
+</head>
+<body>
+    <div data-role="page">
+
+        <style type="text/css">
+            .sample-block { margin-top: 30px; }
+            .sample-block-basic { border: 1px solid black; border-radius: 11px; box-shadow: 3px 3px 10px #000; padding: 20px 0px; }
+            .sample-block h4 { padding: 0px; margin: 0px 10px; }
+        </style>       
+
+        <div data-role="content">
+
+            <div class="sample-block">
+                @(
+                    Html.InfragisticsMobile()
+                    .TextBox()
+                    .ID("txtbx1")
+                    .Text("Basic Text Box")
+                    .Render()
+                )
+            </div>
+            <div class="sample-block">
+                @(
+                    Html.InfragisticsMobile()
+                    .TextBox()
+                    .ID("txtSearch")
+                    .Mode(Infragistics.Web.Mvc.Mobile.TextEditorTextMode.Search)
+                    .Text("Search...")
+                    .Mini(true)
+                    .Render()
+                )
+            </div>
+            <div class="sample-block">
+                @(
+                    Html.InfragisticsMobile()
+                    .TextBox()
+                    .ID("textUser")
+                    .Mode(Infragistics.Web.Mvc.Mobile.TextEditorTextMode.Text)
+                    .Text("User Name")
+                    .Mini(true)
+                    .Render()
+                )
+            </div>
+            <div class="sample-block">
+                @(
+                    Html.InfragisticsMobile()
+                    .TextBox()
+                    .ID("textPass")
+                    .Mode(Infragistics.Web.Mvc.Mobile.TextEditorTextMode.Password)
+                    .Text("Password")
+                    .Mini(true)
+                    .Render()
+                )
+            </div>
+            <div class="sample-block">
+                @(
+                    Html.InfragisticsMobile()
+                    .TextBox()
+                    .ID("textDescr")
+                    .Mode(Infragistics.Web.Mvc.Mobile.TextEditorTextMode.Multiline)
+                    .Label("Description")
+                    .Render()
+                )
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

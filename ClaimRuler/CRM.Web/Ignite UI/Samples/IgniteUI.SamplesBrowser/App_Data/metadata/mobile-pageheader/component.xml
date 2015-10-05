@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>PageHeader</Name>
+    <Description>
+      With a full range of Mobile Layout controls, you can be sure your mobile application's presentation is optimized for mobile devices.
+    </Description>
+    <PageKeywords>MobilePageHeader</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>PageHeader</Name>
+    <Description>
+      モバイル レイアウト コントロールを使用すると、アプリケーションをモバイル デバイスのために最適化できます。
+    </Description>
+    <PageKeywords>MobilePageHeader</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>http://api.jquerymobile.com/header/</ClientApiUrl>
+  <HelpPageName>PageHeader</HelpPageName>
+  <ForumNumber>692</ForumNumber>
+  <IconImage>jquery-mobile-page-header.png</IconImage>
+  <ClientRuntime>jQueryMobile</ClientRuntime>
+  <TOC>
+    <Sample>basic-usage</Sample>
+  </TOC>
+</Component>

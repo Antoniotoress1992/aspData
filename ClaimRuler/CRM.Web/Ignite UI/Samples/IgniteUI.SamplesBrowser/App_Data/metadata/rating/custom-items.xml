@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Custom Items</Title>
+    <Description>This sample illustrates how to change the visual appearance of our jQuery Rating control entirely using its 'cssVotes' property. It gives you the ability to apply different styles on any of the control's items. At the same time, for every one of the items you can set a different style for the following states: normal, selected and hovered. The second sample shows you how to select only one item, which is not supported by the jQuery Rating control, but can be achieved using our 'cssVotes' property.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>カスタム項目</Title>
+    <Description>このサンプルは cssVotes プロパティを使用して jQuery レーティングの外観を変更する方法を紹介します。コントロールの各項目に異なるスタイルを適用します。各項目には normal、selected、および hovered の状態に別のスタイルを設定できます。2 つ目のサンプルは、cssVotes プロパティを使用して (jQuery レーティング コントロールでサポートされていません) 項目を 1 つだけ選択する方法を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

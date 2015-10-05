@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Row Selectors</Title>
+    <Description>
+        This sample demonstrates how to configure row selectors in the igGrid control.
+        Note: When you want to select an igGrid row under touch platform devices, the only way to do this is to use the igGrid
+        row selector's checkboxes. In this sample igGrid checkboxes are enabled when the sample is opened from a touch device browser,
+        while under Desktop browser they are off, because in such cases you are not required to use the checkboxes.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>行セレクター</Title>
+    <Description>
+      このサンプルでは、igGrid コントロールで行セレクターを構成する方法を紹介します。
+      注: タッチ デバイスで igGrid 行を選択するには、igGrid の行セレクターのチェックボックスを使用する必要があります。
+      このサンプルは、タッチ デバイス ブラウザーで開かれた場合に igGrid のチェックボックスが有効になります。デスクトップ ブラウザーでは必要ないため無効になります。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>ASP.NET MVC Helper</Title>
+    <Description>This is a basic example showing the pie chart created with the ASP.NET MVC helper.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Overview" TopicName="igPieChart_Overview" />
+      <HelpTopic Title="MVC Helper API" TopicName="igPieChart_API_Links" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>ASP.NET MVC ヘルパー</Title>
+    <Description>このサンプルは、ASP.NET MVC ヘルパーによって作成された円チャートを表示します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="概要" TopicName="igPieChart_Overview" />
+      <HelpTopic Title="MVC ヘルパー API" TopicName="igPieChart_API_Links" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

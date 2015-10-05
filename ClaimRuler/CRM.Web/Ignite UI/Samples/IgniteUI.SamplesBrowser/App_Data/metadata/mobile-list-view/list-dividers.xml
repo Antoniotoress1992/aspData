@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>List Dividers</Title>
+    <Description>List dividers can be created declaratively in markup by setting the 'data-role' attribute to 'list-divider'.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Overview" TopicName="igListView_Overview" />
+      <HelpTopic Title="Known Issues and Limitations" TopicName="igListView_Known_Issues" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>リストの区分線</Title>
+    <Description>リスト区分線をマークアップで宣言的に作成するには、'data-role' 属性を 'list-divider' に設定します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="概要" TopicName="igListView_Overview" />
+      <HelpTopic Title="既知の問題と制限" TopicName="igListView_Known_Issues" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

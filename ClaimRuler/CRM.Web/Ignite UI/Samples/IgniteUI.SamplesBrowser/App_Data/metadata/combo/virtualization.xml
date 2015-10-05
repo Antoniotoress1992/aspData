@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Virtualization</Title>
+    <Description>Enabling UI virtualization allows the igCombo control to quickly and efficiently render large amounts of data in the combo. When this feature is enabled, the igCombo control reuses HTML elements and replaces the contents of these elements while scrolling which significantly reduces the overhead in rendering new data. This sample accesses the Northwind Service API.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Optimizing Performance" TopicName="igCombo_Optimize_Performance" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>仮想化</Title>
+    <Description>UI 仮想化を有効にすると、igCombo コントロールはコンボでデータの大量を効率的に描画できます。この機能を有効にすると、igCombo コントロールで HTML 要素を再利用し、スクロール時にこの要素のコンテンツを変更します。そのため新しいデータの描画でのオーバーヘッドを大幅に削減できます。このサンプルは Northwind Service API にアクセスします。</Description>
+    <HelpTopics>
+      <HelpTopic Title="パフォーマンスの最適化" TopicName="igCombo_Optimize_Performance" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

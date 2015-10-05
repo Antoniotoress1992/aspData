@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Create PDF or XPS</Title>
+    <Description>
+      You can export our jQuery Grid’s data to the Microsoft® XPS or Adobe® PDF document formats. Our Documents library also provides the option of selecting from a variety of different export formats, as well as styling options for the exported document.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+      <Title>PDF または XPS の作成</Title>
+    <Description>
+      jQuery グリッド データは Microsoft® XPS や Adobe® PDF へエクスポートできます。ドキュメント ライブラリは、多数のエクスポート形式やスタイル オプションを提供します。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

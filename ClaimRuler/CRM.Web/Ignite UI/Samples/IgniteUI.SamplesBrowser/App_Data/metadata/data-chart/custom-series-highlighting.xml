@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Custom Series Highlighting</Title>
+    <Description>This sample demonstrates how to use the assigningCategoryStyle event to change the highlighting to fade non highlighted columns instead of changing the highlighted column.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Series Highlighting" TopicName="igDataChart_Series_Highlighting" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>カスタム系列の強調表示</Title>
+    <Description>このサンプルでは、assigningCategoryStyle イベントを使用して、強調表示された列を変更する代わりに、強調表示されていない列をフェードするために変更する方法を紹介します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="Series Highlighting" TopicName="igDataChart_Series_Highlighting" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

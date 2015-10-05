@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<HelpContent>
+  <Structure>
+    <Section TitleID="boilerplate_title">
+      <CodeExample SamplePathID="ignite-ui-boilerplate-jquery-ui" ControlPathID="help-jqui-code-examples">
+        <FullCode />
+        <Description ContentID="boilerplate_desc"/>
+      </CodeExample>
+      <Block TitleID="required_resources_title">
+        <HtmlContent ContentID="required_resources"/>
+      </Block>
+    </Section>
+    <Section TitleID="create_grid_chart_title">
+      <CodeExample SamplePathID="getting-started-grid-and-chart" ControlPathID="help-jqui-code-examples">
+        <RunningSample />
+        <TabbedCode />
+        <FullCode Collapsible="Collapsed" />
+      </CodeExample>
+    </Section>
+  </Structure>
+  <LocalizedContent Language="en">
+    <Content ID="boilerplate_title">Ignite UI Boilerplate - jQuery UI</Content>
+    <Content ID="create_grid_chart_title">Create a Grid and Chart</Content>
+    <Content ID="required_resources_title">JavaScript and CSS References</Content>
+    <Content ID="boilerplate_desc">
+      <![CDATA[
+The boilerplate is a template which includes all of the required dependencies for Ignite UI jQuery UI-based controls. 
+All of the required JavaScript and CSS is referenced from CDNs making it easy for you to get started with Ignite UI.
+      ]]>
+    </Content>
+    <Content ID="required_resources">
+      <![CDATA[
+<dl>
+  <dt>Infragistics Theme</dt>
+  <dd>The Infragistics theme is a jQuery UI theme providing the default look and feel for the Ignite UI controls. You have the option to substitute your own jQuery UI theme instead.</dd>
+  <dt>Structure CSS</dt>
+  <dd>The infragistics.css file provides the CSS related to layout and positioning for the Ignite UI controls.</dd>
+  <dt><a href="http://modernizr.com/">Modernizr</a></dt>
+  <dd>Modernizr is a library that makes it easy to detect features present in the browser. Ignite UI primarily uses this library to detect touch capabilities.</dd>
+  <dt><a href="http://jquery.com/">jQuery</a></dt>
+  <dd>One of the most popular JavaScript libraries, jQuery serves as the base for jQuery UI</dd>
+  <dt><a href="http://jqueryui.com/">jQuery UI</a></dt>
+  <dd>The jQuery UI framework adds a set of interactions, effects, widgets, and themes serving as the basis for UI controls in Ignite UI.</dd>
+  <dt>Bundled Ignite UI Core JavaScript</dt>
+  <dd>Ignite UI offers a set of bundled JavaScript files. The infragistics.core.js file contains base logic and data source components. </dd>
+  <dt>Bundled Ignite UI DV JavaScript</dt>
+  <dd>For all charting and mapping controls, use infragistics.dv.js. It takes a dependency on infragistics.core.js and is only required when using charting and mapping controls.</dd>
+  <dt>Bundled Ignite UI LOB JavaScript</dt>
+  <dd>For all other controls including grids, OLAP, and line-of-business, use infragistics.lob.js. This script also takes a dependency on infragistics.core.js.</dd>
+</dl>
+      ]]>
+    </Content>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Content ID="boilerplate_title">Ignite UI のボイラープレート - jQuery UI</Content>
+    <Content ID="create_grid_chart_title">グリッドおよびチャートの作成</Content>
+    <Content ID="required_resources_title">JavaScript および CSS への参照</Content>
+    <Content ID="boilerplate_desc">
+      <![CDATA[
+ボイラープレートは、Ignite UI の jQuery UI ベースのコントロールに必要なすべての依存関係を含むテンプレートです。
+すべての必要な JavaScript ファイルおよび CSS ファイルは CDN から参照されています。それらのファイルをダウンロードせずに Ignite UI を使用できます。
+      ]]>
+    </Content>
+    <Content ID="required_resources">
+      <![CDATA[
+<dl>
+  <dt>Infragistics テーマ</dt>
+  <dd>Infragistics テーマは、Ignite UI コントロールのデフォルト ルック アンド フィールを提供する jQuery UI テーマです。カスタム jQuery UI テーマを使用するオプションがあります。</dd>
+  <dt>構造 CSS</dt>
+  <dd>infragistics.css ファイルは、Ignite UI コントロールのレイアウトおよび配置に関連する CSS を提供します。</dd>
+  <dt><a href="http://modernizr.com/">Modernizr</a></dt>
+  <dd>Modernizr は、ブラウザーの機能を簡単に検出するライブラリです。Ignite UI は、このライブラリを使用してタッチ機能を検出します。</dd>
+  <dt><a href="http://jquery.com/">jQuery</a></dt>
+  <dd>jQuery、人気のある JavaScript ライブラリは、jQuery UI の元です。</dd>
+  <dt><a href="http://jqueryui.com/">jQuery UI</a></dt>
+  <dd>jQuery UI フレームワークは、Ignite UI コントロールの操作、結果、ウィジェット、テーマのセットを追加します。</dd>
+  <dt>Ignite UI コア JavaScript ファイルのバンドル</dt>
+  <dd>Ignite UI は、バンドルされた JavaScript ファイルのセットを提供します。infragistics.core.js ファイルは、基本ロジックおよびデータ ソース コンポーネントを含みます。</dd>
+  <dt>Ignite UI DV JavaScript ファイルのバンドル</dt>
+  <dd>infragistics.dv.js ファイルは、チャートおよびマップ コントロールを含みます。infragistics.core.js ファイルに依存関係があり、チャートおよびマッピング コントロールを使用する場合のみに必要です。</dd>
+  <dt>Ignite UI LOB JavaScript ファイルのバンドル</dt>
+  <dd>infragistics.lob.js ファイルは、グリッド、OLAP、および業務用コントロールなどの他のコントロールを含みます。このスクリプトも infragistics.core.js の依存関係があります。</dd>
+</dl>
+      ]]>
+    </Content>
+  </LocalizedContent>
+</HelpContent>
+

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Column Hiding</Title>
+    <Description>
+        This sample demonstrates the igGrid column hiding functionality.
+        To hide a column click on the column hiding icon located on the right of each column header.
+        To show a column click on the hidden columns indicator located on the left of the adjacent visible column where the hidden column previously resided. You can choose to hide/unhide multiple columns by using the "Column Chooser" dialog accessible from each hidden columns indicator.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>列の非表示</Title>
+    <Description>
+      このサンプルでは、igGrid の列非表示機能を紹介します。
+      列を非表示にするには、各列ヘッダーの右側に配置される列の非表示アイコンをクリックします。
+      列を表示にするには、非表示にした列に隣接する表示列の左側に配置される非表示列のインジケーターをクリックします。各非表示列のインジケーターを起動する「列選択」ダイアログから複数の列を非表示または表示できます。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

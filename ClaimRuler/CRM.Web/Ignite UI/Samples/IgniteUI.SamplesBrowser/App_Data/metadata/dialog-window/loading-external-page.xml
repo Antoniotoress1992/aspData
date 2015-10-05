@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Loading External Page</Title>
+    <Description>This sample demonstrates how to load external content from a URL.</Description>
+    <HelpTopics>
+      <HelpTopic Title="External Page" TopicName="igDialog External Page" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>外部ページの読み込み</Title>
+    <Description>このサンプルでは、URL から外部のコンテンツを読み込む方法を紹介します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="外部ページ" TopicName="igDialog External Page" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <TOC>
+    <Sample>loading-external-page</Sample>
+  </TOC>
+  <IsFullPostBack>False</IsFullPostBack>
+  <MinSampleSize>PhonePortrait</MinSampleSize>
+</Sample>

@@ -1,0 +1,169 @@
+﻿@using Infragistics.Web.Mvc
+@using IgniteUI.SamplesBrowser.Models
+
+@model IgniteUI.SamplesBrowser.Models.Northwind.Product
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="@Url.Content("~/igniteui/css/themes/infragistics/infragistics.theme.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/igniteui/css/structure/infragistics.css")" rel="stylesheet" />
+
+    <script src="@Url.Content("~/js/modernizr.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery-ui.min.js")"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="@Url.Content("~/igniteui/js/infragistics.core.js")"></script>
+    <script src="@Url.Content("~/igniteui/js/infragistics.lob.js")"></script>
+
+</head>
+<body>
+    <style type="text/css">
+        td {
+            vertical-align: top;
+        }
+
+        label {
+            display: block;
+            line-height: 20px;
+        }
+
+        .mainTable {
+            position: relative;
+            width: 350px;
+            margin-left: -175px;
+            left: 50%;
+            border-collapse: collapse;
+        }
+
+        .fonts {
+            font-family: Verdana;
+            font-size: 0.8em;
+        }
+
+        #submitEvent {
+            float: right;
+            height: 30px;
+            margin-top: 10px;
+        }
+
+        .success {
+            color: #458B00;
+            float: right;
+        }
+
+        @@media all and (max-width: 400px) {
+            .mainTable {
+                width: 180px;
+                margin-left: -90px;
+            }
+
+            .mainTable td {
+                float: left;
+            }
+        }
+    </style>
+    <div class="sampleContents">
+        <div class="sample-container">
+            @using (Html.BeginForm())
+            {
+            @Html.HiddenFor(m => m.ID)
+            <table cellpadding="5" cellspacing="0" class="mainTable">
+                <tr>
+                    <td style="vertical-align:top;">           
+                        <label class="fonts">
+                            Product Name</label>
+                         
+                        @(Html.Infragistics().TextEditorFor(m => m.ProductName)
+                         .ID("textEditorProductName")
+                         .ValidatorOptions(m => m.OnBlur(true).OnSubmit(true).FormSubmit(true).KeepFocus(ValidatorKeepFocus.Once))
+                         .Required(true)
+                         .Width(160)
+                         .Render())
+                    </td>
+                    <td>
+                        <label class="fonts">
+                            Quantity Per Unit</label>
+                         
+                        @(Html.Infragistics().NumericEditorFor(m => m.QuantityPerUnit)
+                         .ID("numericEditorQuantityPerUnit")
+                         .ValidatorOptions(m => m.OnBlur(true).OnSubmit(true).FormSubmit(true).KeepFocus(ValidatorKeepFocus.Once))
+                         .Required(true)
+                         .Width(160)
+                         .Render())
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="fonts">
+                            Unit Price</label>
+                   
+                        @(Html.Infragistics().CurrencyEditorFor(m => m.UnitPrice)
+                         .ID("currencyEditorUnitPrice")
+                         .ValidatorOptions(m => m.OnBlur(true).OnSubmit(true).FormSubmit(true).KeepFocus(ValidatorKeepFocus.Once))
+                         .Required(true)
+                         .Width(160)
+                         .MinValue(0)
+                         .Render())
+                          
+                    </td>
+                    <td>
+                        <label class="fonts">
+                        Units in Stock</label>
+                         
+                        @(Html.Infragistics().NumericEditorFor(m => m.UnitsInStock)
+                            .ID("numericEditorUnitsInStock")
+                            .ValidatorOptions(m => m.OnBlur(true).OnSubmit(true).FormSubmit(true).KeepFocus(ValidatorKeepFocus.Once))
+                            .Required(true)
+                            .Width(160)
+                            .MinValue(0)
+                            .Render())
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="fonts">
+                        Units on Order</label>
+                         
+                        @(Html.Infragistics().NumericEditorFor(m => m.UnitsOnOrder)
+                            .ID("numericEditorUnitsOnOrder")
+                            .ValidatorOptions(m => m.OnBlur(true).OnSubmit(true).FormSubmit(true).KeepFocus(ValidatorKeepFocus.Once))
+                            .Required(true)
+                            .Width(160)
+                            .MinValue(0)
+                            .Render())
+                    </td>
+                    <td>
+                       <label class="fonts">
+                         Reorder Level</label>
+                         
+                        @(Html.Infragistics().NumericEditorFor(m => m.ReorderLevel)
+                            .ID("numericEditorReorderLevel")
+                            .ValidatorOptions(m => m.OnBlur(true).OnSubmit(true).FormSubmit(true).KeepFocus(ValidatorKeepFocus.Once))
+                            .Required(true)
+                            .Width(160)
+                            .MinValue(0)
+                            .Render())
+                       <input type="submit" id="submitEvent" value="Submit" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="border: none;">
+                    @if (ViewData["message"] != String.Empty)
+                    { 
+                    <span class="success">@ViewData["message"]</span>
+                    }
+                    </td>
+                </tr>
+            </table>
+            
+            }
+        </div>
+    </div>
+</body>
+</html>

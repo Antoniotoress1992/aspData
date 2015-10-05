@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Category Item Highlight Layer</Title>
+    <Description>This sample demonstrates the Category Item Highlight Layer that highlights items in a series that use a category axis either by drawing a banded shape at their position or by rendering a marker at their position.The sample options pane allows you to edit the properties of the Category Item Highlight Layer, such as changing the color of the highlight, outline, thickness and more.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Category Item Highlight Layer" TopicName="HoverInteractions_Category_Item_Highlight_Layer" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>カテゴリ項目の強調表示レイヤー</Title>
+    <Description>このサンプルは、カテゴリ項目強調表示レイヤーでカテゴリ軸を使用、その場でバンド図形またはマーカーを描画してシリーズの項目を強調表示します。このサンプル オプション ペインでは、カテゴリ強調表示レイヤーのプロパティを変更できます。強調表示の色、アウトライン、太さなどの変更が可能です。</Description>
+    <HelpTopics>
+      <HelpTopic Title="カテゴリ項目の強調表示レイヤー" TopicName="HoverInteractions_Category_Item_Highlight_Layer" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

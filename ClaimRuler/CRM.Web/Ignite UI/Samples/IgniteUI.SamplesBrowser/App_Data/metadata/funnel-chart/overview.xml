@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">funnel-chart/funnel-chart</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      The igFunnelChart control is similar to the <a href="~/pie-chart">igPieChart</a> in that it displays values associated with different categories. The igFunnelChart differs because the sum of the displayed values is not necessarily the total of a larger entity. Funnel slices are typically displayed sorted by value, either largest to smallest or in reverse order. 
+      The igFunnelChart supports <a href="~/funnel-chart/slice-selection">slice selection</a>, <a href="~/funnel-chart/bezier-curve-and-tooltips">tooltips, and bezier curver rendering</a>. See the complete list of samples in the menu.
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      igFunnelChart コントロールは <a href="~/pie-chart">igPieChart</a> のようです。別のカテゴリに関連する値を表示します。igFunnelChart の表示される値の合計は、1 つのエンティティの合計である必要がありません。ファンネル スライスは、通常、最大から最小へ、または最小から最大へ値を並び替えて表示します。
+      igFunnelChart は<a href="~/funnel-chart/slice-selection">スライス選択</a>、<a href="~/funnel-chart/bezier-curve-and-tooltips">ツールチップ、ベジエ曲線の描画</a>をサポートします。サンプルをすべて表示するには、メニューを参照してください。
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Currency Editor</Title>
+    <Description>This sample shows different configurations for the currency editor.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Options" TopicName="igCurrencyEditor_igCurrencyEditor_Options" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>通貨エディター</Title>
+    <Description>このサンプルは通貨エディターの構成を紹介します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="オプション" TopicName="igCurrencyEditor_igCurrencyEditor_Options" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

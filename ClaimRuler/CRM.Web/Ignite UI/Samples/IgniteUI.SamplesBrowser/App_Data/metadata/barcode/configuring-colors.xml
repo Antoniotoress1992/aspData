@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Configuring Colors</Title>
+    <Description>This sample demonstrates styling the igQRCodeBarcode control by configuring the colors used in the barcode.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>色の構成</Title>
+    <Description>このサンプルでは、バーコードの色を構成すると、igQRCodeBarcode コントロールのスタイル設定を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

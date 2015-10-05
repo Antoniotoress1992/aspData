@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Tick Marks Settings</Title>
+    <Description>This sample demonstrates the supported tickmarks configuration of the igBulletGraph control.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>目盛り設定</Title>
+    <Description>このサンプルでは、igBulletGraph コントロールのサポートされる目盛り構成を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

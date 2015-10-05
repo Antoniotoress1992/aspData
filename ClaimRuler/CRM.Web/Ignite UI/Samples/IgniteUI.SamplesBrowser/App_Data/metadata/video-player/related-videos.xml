@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Related Videos</Title>
+    <Description>The jQuery Video Player can display a list of related videos at the end of a video's playback for the end-user to choose what to watch next. These related videos can either be watched in the same Video Player control or lead to a separate page. The following sample demonstrates the first option. Note: When running this sample on a mobile device, the default device video player controls are rendered, unless the Modernizr JavaScript library is undefined. If for some reason you don't have the Modernizr library available on your page, then the igVideoPlayer control is rendered, which in some cases may have fewer touch capabilities than the default device video player. That's why this sample uses the Modernizr library and in mobile contexts the igVideoPlayer falls back to the default device video player.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>関連ビデオ</Title>
+    <Description>jQuery ビデオ プレーヤーはビデオ再生の最後に関連ビデオの一覧をエンドユーザーに表示できます。関連ビデオは同じビデオ プレーヤー コントロールに表示、または他のページで表示することも可能です。このサンプルは最初のオプションを紹介します。注: このサンプルをモバイル デバイスで実行する場合、Modernizr JavaScript ライブラリが未定義である以外、デフォルトのデバイス ビデオ プレーヤー コントロールを描画します。Modernizr ライブラリがページで利用できない場合、igVideoPlayer コントロールを描画します。この場合、デフォルト デバイス ビデオ プレーヤーよりタッチ機能が少ない場合があります。そのため、このサンプルでは Modernizr ライブラリを使用し、モバイル デバイスでは igVideoPlayer ではなくデフォルト デバイス ビデオ プレーヤーを使用します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>Remote</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>TabletLandscape</MinSampleSize>
+</Sample>

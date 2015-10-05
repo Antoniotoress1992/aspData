@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Sort and Group Presets</Title>
+    <Description>Sorting and grouping are similar features and can be configured using the ListView's sorting feature. This sample shows how to configure a default sort by using the sorted fields collection. In addition, you can configure sort and group presets to appear in the sort tray. Click on the preset button to display the corresponding sorting or grouping.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Configuring Sorting" TopicName="igListView_Configuring_Sorting" />
+      <HelpTopic Title="Overview" TopicName="igListView_Overview" />
+      <HelpTopic Title="Known Issues and Limitations" TopicName="igListView_Known_Issues" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>並べ替えとグループ化のプリセット</Title>
+    <Description>並べ替えとグループ化機能は ListView の並べ替え機能によって構成できます。このサンプルでは、並べ替えたフィールドのコレクションを使用してデフォルトの並べ替えを構成できます。また、並べ替えとグループ化プリセットを並べ替えトレーに表示できます。プリセット ボタンをクリックすると、対応する並べ替えまたはグループ化を表示します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="並べ替えの構成" TopicName="igListView_Configuring_Sorting" />
+      <HelpTopic Title="概要" TopicName="igListView_Overview" />
+      <HelpTopic Title="既知の問題と制限" TopicName="igListView_Known_Issues" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

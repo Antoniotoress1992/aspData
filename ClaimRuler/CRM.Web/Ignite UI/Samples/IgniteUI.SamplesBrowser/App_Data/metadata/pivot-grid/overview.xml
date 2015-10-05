@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">pivot-grid/binding-to-flat-data-source</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      The igPivotGrid control is a data presentation control for displaying data in a pivot table. It enables users to perform complex analysis on the supplied data. 
+      The igPivotGrid uses the Online Analytical Processing (OLAP) approach to present the results of multi-dimensional queries in an easy to comprehend manner. 
+      The igPivotGrid control uses an instance of either <a href="~/pivot-grid/binding-to-flat-data-source">igOlapFlatDataSource</a> or 
+      <a href="~/pivot-grid/binding-to-xmla-data-source">igOlapXmlaDataSource</a> component as data source. See the complete list of samples in the menu.
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      igPivotGrid コントロールは、ピボット テーブルにデータを表示するためのデータ プレゼンテーション コントロールです。ユーザーは提供されたデータで複雑な解析を実行できます。
+      igPivotGrid は、オンライン解析処理 (OLAP) アプローチを使用して、分かりやすい方法で多次元クエリーの結果を表示します。
+      igPivotGrid コントロールは、 <a href="~/pivot-grid/binding-to-flat-data-source">igOlapFlatDataSource</a> コンポーネントまたは  <a href="~/pivot-grid/binding-to-xmla-data-source">igOlapXmlaDataSource</a> コンポーネントのインスタンスをデータ ソースとして使用します。サンプルをすべて表示するには、メニューを参照してください。
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

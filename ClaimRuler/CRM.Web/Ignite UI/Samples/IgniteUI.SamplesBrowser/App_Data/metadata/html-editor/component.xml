@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>HTML Editor</Name>
+    <Description>
+      Give your end users a comprehensive HTML editing experience with their web browser by adding our powerful jQuery WYSIWYG editing tool to your applications.
+    </Description>
+    <LocalizedSampleStrings>
+        <LocalizedSampleString Key="customButtonClick" Value="Custom button click." />
+        <LocalizedSampleString Key="btnInsertSignatureTooltip" Value="Insert e-mail signature" />
+        <LocalizedSampleString Key="signatureRegards" Value="Best regards," />
+        <LocalizedSampleString Key="signatureName" Value="John Doe" />
+        <LocalizedSampleString Key="signatureCompany" Value="Acme Corp" />
+        <LocalizedSampleString Key="signaturePhone" Value="555-1111" />
+        <LocalizedSampleString Key="gridDescription" Value="Use the fastest jQuery grid on the market to get more interactivity out of your static HTML tables and data. Our latest iteration offers more line of business features, along with our unrivalled quality and performance." />
+        <LocalizedSampleString Key="chartDescription" Value="Let your data tell the story, with the broadest range of interactive, high-performance HTML5 data charts that include support for a full range of business, scientific and financial charting scenarios, as well as animation and trend line capabilities &quot;right out of the box.&quot;" />
+        <LocalizedSampleString Key="treeDescription" Value="Simplify the look of your hierarchical data into a web-based tree, depicting familiar parent-child relationships between nodes of information. Sporting a responsive user experience and high performance design, your users will love its comprehensive function features like checkbox selection, node templates and more." />
+        <LocalizedSampleString Key="comboDescription" Value="Using this fully featured Combo Box control with intuitive Auto-Suggest, Auto-Complete and Auto-Filtering built-in, your users will be able to find the choices they are looking for much more quickly. Single/Multi-Select capabilities are also available with the Combo Box." />
+        <LocalizedSampleString Key="manipulatingText" Value="Manipulating Text" />
+        <LocalizedSampleString Key="btnStandardTextCaption" Value="Standard Text" />
+        <LocalizedSampleString Key="btnEmphasizeCaption" Value="Emphasize" />
+        <LocalizedSampleString Key="btnPrintCaption" Value="Print" />
+        <LocalizedSampleString Key="text" Value="This is standard text." />
+        <LocalizedSampleString Key="textToolbar" Value="Toolbar text" />
+        <LocalizedSampleString Key="boldButtonTooltip" Value="Bold" />
+        <LocalizedSampleString Key="italicButtonTooltip" Value="Italic" />
+        <LocalizedSampleString Key="underlineButtonTooltip" Value="Underline" />
+    </LocalizedSampleStrings>
+    <PageKeywords>igHtmlEditor</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>HTML Editor</Name>
+    <Description>
+      jQuery WYSIWYG 編集ツールをアプリケーションに追加すると、エンド ユーザーは HTML 形式で編集することができます。
+    </Description>
+    <LocalizedSampleStrings>
+        <LocalizedSampleString Key="customButtonClick" Value="カスタム ボタンのクリック" />
+        <LocalizedSampleString Key="btnInsertSignatureTooltip" Value="メール署名の入力" />
+        <LocalizedSampleString Key="signatureRegards" Value="以上、よろしくお願いいたします。" />
+        <LocalizedSampleString Key="signatureName" Value="山田 貴志" />
+        <LocalizedSampleString Key="signatureCompany" Value="インフラジスシックス・ジャパン" />
+        <LocalizedSampleString Key="signaturePhone" Value="03-555-1111" />
+        <LocalizedSampleString Key="gridDescription" Value="インタラクティブな操作が可能な HTML テーブルやデータなど、高いパフォーマンスを提供する jQuery データ グリッドは、スタイルのカスタマイズ、ページング、並べ替え、フィルタリング機能をサポートします。 インタラクティブな操作が可能な HTML テーブルやデータなど、高いパフォーマンスを提供する jQuery データ グリッドは、スタイルのカスタマイズ、ページング、並べ替え、フィルタリング機能をサポートします。" />
+        <LocalizedSampleString Key="chartDescription" Value="HTML5 データ チャート タイプが複数提供されるチャートは、さまざまなデータを視覚的に表示します。ビジネス、科学、ファイナンシャル チャートなどのシナリオをサポートし、アニメーションやトレンドライン機能に対応しています。" />
+        <LocalizedSampleString Key="treeDescription" Value="階層データをツリーに変換すると、情報のノードの親子関係を表示できます。チェックボックス選択、ノードテンプレートなどの機能を提供し、高いパフォーマンスを持つツリー コントロールを実現できます。" />
+        <LocalizedSampleString Key="comboDescription" Value="コンボ ボックス コントロールは、自動補完、オート コンプリート、およびフィルタリング機能を提供し、ユーザーは簡単に項目を検索することができます。単一選択および複数選択機能があります。" />
+        <LocalizedSampleString Key="manipulatingText" Value="テキストの編集" />
+        <LocalizedSampleString Key="btnStandardTextCaption" Value="標準の文字" />
+        <LocalizedSampleString Key="btnEmphasizeCaption" Value="スタイルを適用" />
+        <LocalizedSampleString Key="btnPrintCaption" Value="印刷" />
+        <LocalizedSampleString Key="text" Value="これは標準の文字です" />
+        <LocalizedSampleString Key="textToolbar" Value="ツールバー テキスト" />
+        <LocalizedSampleString Key="boldButtonTooltip" Value="太字" />
+        <LocalizedSampleString Key="italicButtonTooltip" Value="イタリック" />
+        <LocalizedSampleString Key="underlineButtonTooltip" Value="下線" />
+    </LocalizedSampleStrings>
+    <PageKeywords>igHtmlEditor</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>ui.ightmleditor</ClientApiUrl>
+  <HelpPageName>igHtmlEditor_igHtmlEditor</HelpPageName>
+  <ForumNumber>593</ForumNumber>
+  <IconImage>jquery-html-editor-logo.png</IconImage>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <TOC>
+    <Sample>basic-usage</Sample>
+    <Sample>aspnet-mvc-helper</Sample>
+    <Sample>custom-icons-and-styles</Sample>
+    <Sample>custom-toolbars-and-buttons</Sample>
+    <Sample>standalone-toolbar</Sample>
+    <Sample>edit-content</Sample>
+    <Sample>api-and-events</Sample>
+  </TOC>
+</Component>

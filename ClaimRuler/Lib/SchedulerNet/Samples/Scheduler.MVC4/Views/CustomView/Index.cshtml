@@ -1,0 +1,33 @@
+@{
+    ViewBag.Title = "Scheduler | Custom field";
+    ViewBag.SampleTitle = "Custom view";
+    ViewBag.ShortDescription = "Extend scheduler functionality";
+    ViewBag.LongDescription = "You can create your own views.<br />    See custom \"Decade\" and \"Work Week\" views";
+}
+
+
+@Html.Raw(Model.GenerateLinks())
+<script>
+
+    scheduler.attachEvent("onTemplatesReady", function () {
+        //work week
+        scheduler.date.workweek_start = scheduler.date.week_start;
+        scheduler.templates.workweek_date = scheduler.templates.week_date;
+        scheduler.templates.workweek_scale_date = scheduler.templates.week_scale_date;
+        scheduler.date.add_workweek = function (date, inc) { return scheduler.date.add(date, inc * 7, "day"); }
+        scheduler.date.get_workweek_end = function (date) { return scheduler.date.add(date, 5, "day"); }
+
+
+        //decade
+        scheduler.date.decade_start = function (date) {
+            var ndate = new Date(date.valueOf());
+            ndate.setDate(Math.floor(date.getDate() / 10) * 10 + 1);
+            return this.date_part(ndate);
+        }
+        scheduler.templates.decade_date = scheduler.templates.week_date;
+        scheduler.templates.decade_scale_date = scheduler.templates.week_scale_date;
+        scheduler.date.add_decade = function (date, inc) { return scheduler.date.add(date, inc * 10, "day"); }
+    });
+</script>
+
+@Html.Raw(Model.GenerateHTML())

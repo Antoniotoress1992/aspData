@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Selection and Checkboxes</Title>
+    <Description>The igCombo control supports selection enabled, selection disabled, and selection with checkboxes. Use the keyboard or mouse to select items in the combo and experiment with the different selection options to see the variety of interactions available.</Description>
+    <HelpTopics>
+        <HelpTopic Title="Configuring Selection" TopicName="igCombo_Configure_Selection" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>選択およびチェックボックス</Title>
+    <Description>igCombo コントロールは、選択の有効化/無効化、およびチェックボックス選択機能をサポートします。キーボードまたはマウスでコンボの項目を選択します。選択オプションを変更して、操作を参照します。</Description>
+    <HelpTopics>
+        <HelpTopic Title="選択の構成" TopicName="igCombo_Configure_Selection" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

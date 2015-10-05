@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Localizing Editors</Title>
+    <Description>In this sample, a culture is set to the editors' regional option to change the format of dates, times, and currencies. Three regions are configured here and there are many more to choose from in the infragistics.ui.regional-i18n.js file.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Overview" TopicName="igTextEditor_Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>エディターのローカリゼーション</Title>
+    <Description>このサンプルでは、日付、時間、通貨の書式設定を変更するためにエディターの領域オプションにカルチャが設定されます。ここに 3 つの設定が構成されています。infragistics.ui.regional-i18n.js ファイルに他の設定があります。</Description>
+    <HelpTopics>
+      <HelpTopic Title="概要" TopicName="igTextEditor_Overview" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Editors</Name>
+    <SampleStrings>
+      <LocalizedSampleString Key="KO_IG_Editors" Value="Ignite UI Editors"/>
+      <LocalizedSampleString Key="KO_Plain_Editors" Value="Plain INPUTs" />
+      <LocalizedSampleString Key="KO_Order_Date" Value="Order Date" />
+	  <LocalizedSampleString Key="KO_Ship_Date" Value="Ship Date" />
+      <LocalizedSampleString Key="KO_Due_in_Days" Value="Due in Days" />
+      <LocalizedSampleString Key="KO_Customer_Name" Value="Customer Name" />
+      <LocalizedSampleString Key="KO_Contact_Phone" Value="Contact Phone" />
+	  <LocalizedSampleString Key="KO_Contact_Phone_Mask" Value="(mask: 000-000-0000)" />
+      <LocalizedSampleString Key="KO_Advance_Payment" Value="Advance Payment" />
+      <LocalizedSampleString Key="KO_Discount_Percent" Value="Discount Percent" />
+      <LocalizedSampleString Key="default_config" Value="Default Configuration" />
+      <LocalizedSampleString Key="number_pattern" Value="Number Pattern Configuration" />
+      <LocalizedSampleString Key="symbol_config" Value="Symbol and Separator Configuation" />
+      <LocalizedSampleString Key="date_config" Value="Date and Time Configuration" />
+      <LocalizedSampleString Key="time_config" Value="Time Configuration" />
+      <LocalizedSampleString Key="constraints" Value="Date Contraints, Hide Input Mask" />
+      <LocalizedSampleString Key="enter_today" Value="Enter Today's Date" />
+      <LocalizedSampleString Key="enUS" Value="English, United States" />
+      <LocalizedSampleString Key="Japan" Value="Japan" />
+      <LocalizedSampleString Key="india" Value="Tamil, India" />
+      <LocalizedSampleString Key="text_editor" Value="Text Editor" />
+      <LocalizedSampleString Key="date_picker" Value="Date Picker" />
+      <LocalizedSampleString Key="Mask" Value="Mask" />
+      <LocalizedSampleString Key="signed_byte" Value="Numeric (signed byte)" />
+      <LocalizedSampleString Key="currency_range" Value="Currency, range" />
+      <LocalizedSampleString Key="date_range" Value="Date: 1/1/1900..12/31/2200" />
+      <LocalizedSampleString Key="Submit" Value="Submit" />
+      <LocalizedSampleString Key="form_submit" Value="Form Submit" />
+      <LocalizedSampleString Key="validation_options" Value="Validation Options" />
+      <LocalizedSampleString Key="Required" Value="Required" />
+      <LocalizedSampleString Key="validate_onblur" Value="Validate onblur" />
+      <LocalizedSampleString Key="validate_onchange" Value="Validate onchange" />
+      <LocalizedSampleString Key="validate_submit" Value="Validate on Submit" />
+      <LocalizedSampleString Key="validate_form" Value="Validate on FormSubmit" />
+      <LocalizedSampleString Key="keep_focus" Value="Keep Focus" />
+      <LocalizedSampleString Key="show_icon" Value="Show Icon" />
+      <LocalizedSampleString Key="show_anim" Value="Show Animation (ms)" />
+      <LocalizedSampleString Key="hide_anim" Value="Hide Animation" />
+      <LocalizedSampleString Key="show_all_errors" Value="Show all errors on submit" />
+      <LocalizedSampleString Key="custom_error_message" Value="Custom Error Message" />
+      <LocalizedSampleString Key="enter_date" Value="Enter date" />
+      <LocalizedSampleString Key="submit_fired" Value="Submit event fired" />
+      <LocalizedSampleString Key="form_submitting" Value="Form Submitting..." />
+      <LocalizedSampleString Key="Validation_Order" Value="Order" />
+      <LocalizedSampleString Key="Validation_OrderShipDate" Value="Ship Date" />
+      <LocalizedSampleString Key="Validation_OrderDueDate" Value="Due Date" />
+      <LocalizedSampleString Key="Validation_CustomerName" Value="Customer Name" />
+      <LocalizedSampleString Key="Validation_ShipMethod" Value="Method of Shipment" />
+      <LocalizedSampleString Key="Validation_ContactPhone" Value="Contact Phone" />
+      <LocalizedSampleString Key="Validation_AdvancePaymentAmount" Value="Advance Payment Amount" />
+      <LocalizedSampleString Key="Validation_ContactEmailAddress" Value="Email Address" />
+      <LocalizedSampleString Key="Validation_SubmittedOrder" Value="Submitted Order" />
+      <LocalizedSampleString Key="ProductName" Value="Product Name" />
+      <LocalizedSampleString Key="QuantityPerUnit" Value="Quantity Per Unit" />
+      <LocalizedSampleString Key="UnitPrice" Value="Unit Price" />
+      <LocalizedSampleString Key="UnitsInStock" Value="Units in Stock" />
+      <LocalizedSampleString Key="UnitsOnOrder" Value="Units on Order" />
+      <LocalizedSampleString Key="ReorderLevel" Value="Reorder Level" />
+      <LocalizedSampleString Key="product_saved" Value="Product saved successfully" />
+      <LocalizedSampleString Key="Standard" Value="Standard" />
+      <LocalizedSampleString Key="OneDay" Value="One Day" />
+      <LocalizedSampleString Key="TwoDay" Value="Two Day" />
+      <LocalizedSampleString Key="International" Value="International" />
+      <LocalizedSampleString Key="order_ship_select" Value="The order ship date should be selected" />
+      <LocalizedSampleString Key="customer_required" Value="Customer name is required" />
+      <LocalizedSampleString Key="name_length" Value="The name must be at least two (2) characters long" />
+      <LocalizedSampleString Key="select_ship" Value="Please select ship method" />
+      <LocalizedSampleString Key="provide_phone" Value="Please provide phone number" />
+      <LocalizedSampleString Key="advance_filled" Value="Advance payment amount field should be filled" />
+      <LocalizedSampleString Key="email_required" Value="Email field is required" />
+    </SampleStrings>
+    <Description>
+      Help users enter validated data into your Web applications right the first time with our localizable jQuery editors and accompanying controls for ASP.NET MVC that handle flexible input masks, dates, numbers, currencies, percentages, text - even passwords!
+    </Description>
+    <PageKeywords>igEditor,igTextEditor,igNumericEditor,igMaskEditor,igCurrencyEditor,igPercentEditor,igDateEditor</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Editors</Name>
+    <SampleStrings>
+      <LocalizedSampleString Key="KO_IG_Editors" Value="Ignite UI エディター"/>
+      <LocalizedSampleString Key="KO_Plain_Editors" Value="プレーン INPUT 要素" />
+      <LocalizedSampleString Key="KO_Order_Date" Value="注文日" />
+	  <LocalizedSampleString Key="KO_Ship_Date" Value="出荷日付" />
+      <LocalizedSampleString Key="KO_Due_in_Days" Value="期限 (日)" />
+      <LocalizedSampleString Key="KO_Customer_Name" Value="顧客名" />
+      <LocalizedSampleString Key="KO_Contact_Phone" Value="電話番号" />
+	  <LocalizedSampleString Key="KO_Contact_Phone_Mask" Value="(マスク: 000-000-0000)" />
+      <LocalizedSampleString Key="KO_Advance_Payment" Value="前払い" />
+      <LocalizedSampleString Key="KO_Discount_Percent" Value="割引率" />
+      <LocalizedSampleString Key="default_config" Value="デフォルトの構成" />
+      <LocalizedSampleString Key="number_pattern" Value="番号リストの構成" />
+      <LocalizedSampleString Key="symbol_config" Value="記号とセパレーターの構成" />
+      <LocalizedSampleString Key="date_config" Value="日付と時間構成" />
+      <LocalizedSampleString Key="time_config" Value="時間構成" />
+      <LocalizedSampleString Key="constraints" Value="日付の制約、入力マスクの非表示" />
+      <LocalizedSampleString Key="enter_today" Value="今日の日付の入力" />
+      <LocalizedSampleString Key="enUS" Value="英語 (米国)" />
+      <LocalizedSampleString Key="Japan" Value="日本" />
+      <LocalizedSampleString Key="india" Value="タミル (インド)" />
+      <LocalizedSampleString Key="text_editor" Value="テキスト エディター" />
+      <LocalizedSampleString Key="date_picker" Value="日付の選択" />
+      <LocalizedSampleString Key="Mask" Value="マスク" />
+      <LocalizedSampleString Key="signed_byte" Value="数字 (符号付きバイト)" />
+      <LocalizedSampleString Key="currency_range" Value="通貨、範囲" />
+      <LocalizedSampleString Key="date_range" Value="日付: 1900/1/1..2200/12/31" />
+      <LocalizedSampleString Key="Submit" Value="送信" />
+      <LocalizedSampleString Key="form_submit" Value="フォームの送信" />
+      <LocalizedSampleString Key="validation_options" Value="検証オプション" />
+      <LocalizedSampleString Key="Required" Value="必須" />
+      <LocalizedSampleString Key="validate_onblur" Value="onblur の検証" />
+      <LocalizedSampleString Key="validate_onchange" Value="onchange の検証" />
+      <LocalizedSampleString Key="validate_submit" Value="onsubmit の検証" />
+      <LocalizedSampleString Key="validate_form" Value="onFormSubmit の検証" />
+      <LocalizedSampleString Key="keep_focus" Value="フォーカスの保持" />
+      <LocalizedSampleString Key="show_icon" Value="アイコンの表示" />
+      <LocalizedSampleString Key="show_anim" Value="アニメーションを表示にする (ミリ秒)" />
+      <LocalizedSampleString Key="hide_anim" Value="アニメーションを非表示にする" />
+      <LocalizedSampleString Key="show_all_errors" Value="送信時にすべてのエラーを表示する" />
+      <LocalizedSampleString Key="custom_error_message" Value="カスタム エラー メッセージ" />
+      <LocalizedSampleString Key="enter_date" Value="日付の入力" />
+      <LocalizedSampleString Key="submit_fired" Value="送信イベントが発生しました" />
+      <LocalizedSampleString Key="form_submitting" Value="フォームを送信しています..." />
+      <LocalizedSampleString Key="Validation_Order" Value="注文" />
+      <LocalizedSampleString Key="Validation_OrderShipDate" Value="出荷日" />
+      <LocalizedSampleString Key="Validation_OrderDueDate" Value="期日" />
+      <LocalizedSampleString Key="Validation_CustomerName" Value="顧客名" />
+      <LocalizedSampleString Key="Validation_ShipMethod" Value="出荷の方法" />
+      <LocalizedSampleString Key="Validation_ContactPhone" Value="電話番号" />
+      <LocalizedSampleString Key="Validation_AdvancePaymentAmount" Value="前払い金額" />
+      <LocalizedSampleString Key="Validation_ContactEmailAddress" Value="メール アドレス" />
+      <LocalizedSampleString Key="Validation_SubmittedOrder" Value="完了した注文" />
+      <LocalizedSampleString Key="ProductName" Value="製品名" />
+      <LocalizedSampleString Key="QuantityPerUnit" Value="内容量" />
+      <LocalizedSampleString Key="UnitPrice" Value="単価" />
+      <LocalizedSampleString Key="UnitsInStock" Value="在庫数" />
+      <LocalizedSampleString Key="UnitsOnOrder" Value="入荷待ち" />
+      <LocalizedSampleString Key="ReorderLevel" Value="再発注レベル" />
+      <LocalizedSampleString Key="product_saved" Value="製品を保存しました" />
+      <LocalizedSampleString Key="Standard" Value="標準" />
+      <LocalizedSampleString Key="OneDay" Value="1 日" />
+      <LocalizedSampleString Key="TwoDay" Value="2 日" />
+      <LocalizedSampleString Key="International" Value="海外発送" />
+      <LocalizedSampleString Key="order_ship_select" Value="出荷日を選択してください。" />
+      <LocalizedSampleString Key="customer_required" Value="顧客名を入力してください。" />
+      <LocalizedSampleString Key="name_length" Value="名前の長さは少なくとも 2 文字にする必要があります。" />
+      <LocalizedSampleString Key="select_ship" Value="出荷方法を選択してください。" />
+      <LocalizedSampleString Key="provide_phone" Value="電話番号を入力してください。" />
+      <LocalizedSampleString Key="advance_filled" Value="前払いフィールドに値を入力してください。" />
+      <LocalizedSampleString Key="email_required" Value="メール アドレスを入力してください。" />
+    </SampleStrings>
+    <Description>
+      jQuery エディターは、入力マスク、日付、数値、通貨、パーセント、テキスト、パスワードの検証など、豊かなデータ検証機能を提供します。
+    </Description>
+    <PageKeywords>igEditor,igTextEditor,igNumericEditor,igMaskEditor,igCurrencyEditor,igPercentEditor,igDateEditor</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>ui.igeditor</ClientApiUrl>
+  <HelpPageName>Editors_LandingPage</HelpPageName>
+  <ForumNumber>500</ForumNumber>
+  <IconImage>jquery-editors-logo.png</IconImage>
+  <ClientRuntime>jQueryUI</ClientRuntime>
+  <TOC>
+    <Sample>basic-usage</Sample>
+    <Sample>currency-editor</Sample>
+    <Sample>date-and-time-formats</Sample>
+    <Sample>validation</Sample>
+    <Sample>localizing-editors</Sample>
+    <Sample>bind-editors-with-ko</Sample>
+    <Sample>load-and-save-form-values</Sample>
+    <Sample>data-annotation-validation</Sample>
+  </TOC>
+</Component>

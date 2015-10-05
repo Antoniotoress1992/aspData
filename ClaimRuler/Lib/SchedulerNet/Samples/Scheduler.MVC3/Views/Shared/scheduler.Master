@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Views/Shared/Site.Master" AutoEventWireup="true" CodeBehind="scheduler.master.cs" Inherits="SchedulerTest.Views.DHXScheduler.scheduler" %>
+<%@ Import Namespace="System.Web" %>
+<asp:Content ID="Content3" ContentPlaceHolderID="Title" runat="server">
+    <link href="<%= VirtualPathUtility.ToAbsolute("~/Content/samples.css") %>" rel="stylesheet" type="text/css" />   
+    <div class="samp_header" >
+        <div class="sample_title"><asp:ContentPlaceHolder ID="SampleTitle" runat="server"></asp:ContentPlaceHolder></div>
+        <div class="vertical_line"></div>
+        <div class="desk_holder">
+            <div class="short_description"><asp:ContentPlaceHolder ID="ShortDescription" runat="server"></asp:ContentPlaceHolder></div>
+            <div class="long_description"><asp:ContentPlaceHolder ID="LongDescription" runat="server"></asp:ContentPlaceHolder></div>
+        </div>
+       
+    </div>    
+</asp:Content>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="Content" runat="server">
+    <asp:ContentPlaceHolder ID="Content" runat="server">       
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="TitleContent" runat="server">
+    <asp:ContentPlaceHolder ID="TitleContent" runat="server">       
+    </asp:ContentPlaceHolder>
+</asp:Content>
+

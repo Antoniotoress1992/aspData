@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Component>
+  <LocalizedContent Language="en">
+    <Name>Collapsible Set</Name>
+    <Description>
+      With a full range of Mobile Layout controls, you can be sure your mobile application's presentation is optimized for mobile devices.
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Salads" Value="Salads" />
+      <LocalizedSampleString Key="Shopska" Value="Shopska" />
+      <LocalizedSampleString Key="Tomato" Value="Tomato" />
+      <LocalizedSampleString Key="Cucumber" Value="Cucumber" />
+      <LocalizedSampleString Key="Main_Course" Value="Main Course" />
+      <LocalizedSampleString Key="Chicken" Value="Chicken" />
+      <LocalizedSampleString Key="Veal" Value="Veal" />
+      <LocalizedSampleString Key="Pork_Chop" Value="Pork Chop" />
+      <LocalizedSampleString Key="Desserts" Value="Desserts" />
+      <LocalizedSampleString Key="Ice_Cream" Value="Ice Cream" />
+      <LocalizedSampleString Key="Fresh_Fruit" Value="Fresh Fruit" />
+      <LocalizedSampleString Key="Tiramisu" Value="Tiramisu" />
+    </LocalizedSampleStrings>
+    <PageKeywords>MobileCollapsibleSet</PageKeywords>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Name>Collapsible Set</Name>
+    <Description>
+      モバイル レイアウト コントロールを使用すると、アプリケーションをモバイル デバイスのために最適化できます。
+    </Description>
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="Salads" Value="サラダ" />
+      <LocalizedSampleString Key="Shopska" Value="ガーデン サラダ" />
+      <LocalizedSampleString Key="Tomato" Value="トマト" />
+      <LocalizedSampleString Key="Cucumber" Value="キュウリ" />
+      <LocalizedSampleString Key="Main_Course" Value="メイン コース" />
+      <LocalizedSampleString Key="Chicken" Value="チキン" />
+      <LocalizedSampleString Key="Veal" Value="ビーフ" />
+      <LocalizedSampleString Key="Pork_Chop" Value="ポークチョップ" />
+      <LocalizedSampleString Key="Desserts" Value="スイーツ" />
+      <LocalizedSampleString Key="Ice_Cream" Value="アイス クリーム" />
+      <LocalizedSampleString Key="Fresh_Fruit" Value="フルーツ" />
+      <LocalizedSampleString Key="Tiramisu" Value="ホットケーキ" />
+    </LocalizedSampleStrings>
+    <PageKeywords>MobileCollapsibleSet</PageKeywords>
+  </LocalizedContent>
+  <ClientApiUrl>http://api.jquerymobile.com/collapsible-set/</ClientApiUrl>
+  <HelpPageName>CollapsibleSet_Landing_Page</HelpPageName>
+  <ForumNumber>692</ForumNumber>
+  <IconImage>jquery-mobile-collapsible-set.png</IconImage>
+  <ClientRuntime>jQueryMobile</ClientRuntime>
+  <TOC>
+    <Sample>basic-usage</Sample>
+  </TOC>
+</Component>

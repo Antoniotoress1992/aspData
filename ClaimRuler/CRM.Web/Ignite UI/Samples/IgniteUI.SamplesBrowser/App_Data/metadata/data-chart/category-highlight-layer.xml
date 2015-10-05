@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Category Highlight Layer</Title>
+    <Description>This sample demonstrates the Category Highlight Layer that targets a category axis, or all category axes in the igChart control. The sample options pane allows you to edit the properties of the Category Highlight Layer, such as changing the color of the highlight, outline, thickness and more. </Description>
+    <HelpTopics>
+      <HelpTopic Title="Category Highlight Layer" TopicName="HoverInteractions_Category_Highlight_Layer" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>カテゴリ強調表示レイヤー</Title>
+    <Description>このサンプルは、igChart コントロールで単一/複数のカテゴリ軸をターゲットにしたカテゴリ強調表示レイヤーを紹介します。このサンプル オプション ペインでは、カテゴリ強調表示レイヤーのプロパティを変更できます。強調表示の色、アウトライン、太さなどの変更が可能です。</Description>
+    <HelpTopics>
+      <HelpTopic Title="カテゴリ強調表示レイヤー" TopicName="HoverInteractions_Category_Highlight_Layer" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+</Sample>

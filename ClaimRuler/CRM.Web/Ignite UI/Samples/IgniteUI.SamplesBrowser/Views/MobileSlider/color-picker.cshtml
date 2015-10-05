@@ -1,0 +1,127 @@
+﻿@using Infragistics.Web.Mvc.Mobile
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="@Url.Content("~/css/jqm/jquery.mobile.structure.min.css")" rel="stylesheet" />
+
+    <!-- Required Ignite UI Mobile Combined CSS Files -->
+    <link href="@Url.Content("~/igniteui/mobile/css/structure/infragistics.mobile.css")"  rel="stylesheet"/>
+    <link href="@Url.Content("~/igniteui/mobile/css/themes/ios/infragistics.mobile.theme.css")"  rel="stylesheet"/>
+    
+    <script src="@Url.Content("~/js/modernizr.min.js")"></script>
+    <script src="@Url.Content("~/js/jqm/jquery.min.js")"></script>
+    <script src="@Url.Content("~/js/jqm/jquery.mobile.min.js")"></script>
+
+    <!-- Required Ignite UI Mobile Combined JavaScript File -->
+    <script src="@Url.Content("~/igniteui/mobile/js/infragistics.mobile.js")"></script>
+</head>
+<body>
+    <div data-role="page">
+
+        <style type="text/css">
+            #square {
+                background-color: rgb(210,255,200);
+                width: 100%;
+                height: 100px;
+                margin: 0 0 20px 0;
+            }
+
+            #hexVal {
+                margin: 20px 0 0 0;
+            }
+        </style>
+
+        <script type="text/javascript">
+            $(function () {
+                $("label.ui-slider").next().next().wrap("<div></div>").parent().height(20);
+                $("#RedSlider").change(function (ui) {
+                    changeColor(ui.currentTarget.value, null, null);
+                });
+
+                $("#GreenSlider").change(function (ui) {
+                    changeColor(null, ui.currentTarget.value, null);
+                });
+
+                $("#BlueSlider").change(function (ui) {
+                    changeColor(null, null, ui.currentTarget.value);
+                });
+
+                function changeColor(red, green, blue) {
+                    var redValue = parseInt(red === null ? $("#RedSlider").val() : red);
+                    var blueValue = parseInt(blue === null ? $("#BlueSlider").val() : blue);
+                    var greenValue = parseInt(green === null ? $("#GreenSlider").val() : green);
+                    var rgb = "rgb(" + redValue + "," + greenValue + "," + blueValue + ")";
+                    $('#square').get(0).style.backgroundColor = rgb;
+                    var color = calculateColor();
+                    $("#hexColorValue").html(color);
+                }
+                function calculateColor() {
+                    var $c = $('#square').css("background-color");
+                    return hexc($c);
+                }
+                function hexc(colorval) {
+                    var parts = colorval.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+                    delete (parts[0]);
+                    for (var i = 1; i <= 3; ++i) {
+                        parts[i] = parseInt(parts[i]).toString(16);
+                        if (parts[i].length == 1) parts[i] = '0' + parts[i];
+                    }
+                    color = '#' + parts.join('');
+                    return color;
+                }
+                $("#hexColorValue").html(calculateColor());
+            });
+        </script>
+
+        <div data-role="content">
+
+            <div id="square"></div>
+           
+            @(Html.InfragisticsMobile()
+                .Slider()
+                .ID("RedSlider")
+                .Label("Red")
+                .MinValue(0.0)
+                .MaxValue(255.0)
+                .Step(1.0)
+                .Value(210.0)
+                .NumericInputDisplayMode(Infragistics.Web.Mvc.Mobile.DisplayMode.None)
+                .Render()
+            )
+            <br />
+            @(Html.InfragisticsMobile()
+                .Slider()
+                .ID("GreenSlider")
+                .Label("Green")
+                .MinValue(0.0)
+                .MaxValue(255.0)
+                .Step(1.0)
+                .Value(255.0)
+                .NumericInputDisplayMode(Infragistics.Web.Mvc.Mobile.DisplayMode.None)
+                .Render()
+            )
+            <br />
+            @(Html.InfragisticsMobile()
+                .Slider()
+                .ID("BlueSlider")
+                .Label("Blue")
+                .MinValue(0.0)
+                .MaxValue(255.0)
+                .Step(1.0)
+                .Value(200.0)
+                .NumericInputDisplayMode(Infragistics.Web.Mvc.Mobile.DisplayMode.None)
+                .Render()
+            )
+
+            <p id="hexVal"><b>Hex Value: </b><span id="hexColorValue"></span></p>
+        </div>
+    </div>
+
+</body>
+</html>

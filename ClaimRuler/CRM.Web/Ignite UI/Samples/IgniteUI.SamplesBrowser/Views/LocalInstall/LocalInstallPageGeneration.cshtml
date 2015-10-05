@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "LocalInstallPageGeneration";
+}
+
+<h2>Local Install Pages Generation</h2>
+Form is submitted automatically and zip file will be returned.<br />
+No need for any action from user.
+
+@using (Html.BeginForm("GenerateLocalInstallFiles", "LocalInstall", FormMethod.Post))
+{
+}
+<script type="text/javascript" >
+    document.forms[0].submit();
+</script>

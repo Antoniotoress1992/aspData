@@ -1,0 +1,76 @@
+﻿@using Infragistics.Web.Mvc
+@model IgniteUI.SamplesBrowser.Models.Financial.FinancialDataCollection
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="@Url.Content("~/igniteui/css/themes/infragistics/infragistics.theme.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/igniteui/css/structure/infragistics.css")" rel="stylesheet" />
+
+    <script src="@Url.Content("~/js/modernizr.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery-ui.min.js")"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="@Url.Content("~/igniteui/js/infragistics.core.js")"></script>
+    <script src="@Url.Content("~/igniteui/js/infragistics.dv.js")"></script>
+
+    <script type="text/javascript">
+        function doughnutSliceClick(e, ui) {
+            ui.slice.isSelected = !ui.slice.isSelected;
+        }
+    </script>
+    <script id="budgetTooltipTemplate" type="text/x-ig-tmpl">
+        <div style="padding: 5px">
+            <span id="tooltipValue" style="font-family: Arial; font-size: 12px;">${item.Label} <br> Budget: <b>$${item.Budget}K</b></span>
+        </div>
+    </script>
+    <script id="spendingTooltipTemplate" type="text/x-ig-tmpl">
+        <div style="padding: 5px">
+            <span id="tooltipValue" style="font-family: Arial; font-size: 12px;">${item.Label} <br> Spending: <b>$${item.Spending}K</b></span>
+        </div>
+    </script>
+</head>
+    <body>
+        <table>
+            <tr>
+                <td style="width: 550px;">
+                    <div style="text-align: center; width: 100%; font:16px Arial, Helvetica, sans-serif;">Departments</div>
+                    <div style="text-align: center; width: 100%; margin: 10px 0; font:12px Arial, Helvetica, sans-serif;">Budget vs Spending</div>
+                    @(Html.Infragistics().DoughnutChart()
+                          .ID("MyDoughnutChart")
+                          .InnerExtent(30)
+                          .Width("100%")
+                          .Height("500px")
+                          .AllowSliceSelection(true)
+                          .AddClientEvent(DoughnutChartClientEvents.SliceClick, "doughnutSliceClick")
+                          .Series(s =>
+                              {
+                                  s.Ring("Budget", Model.AsQueryable())
+                                   .LabelMemberPath(o => o.Label)
+                                   .ValueMemberPath(o => o.Budget)
+                                   .LabelsPosition(LabelsPosition.Center)
+                                   .TooltipTemplate("budgetTooltipTemplate")
+                                   .ShowTooltip(true)
+                                   .SelectedStyle(selStyle => selStyle.Fill("#9f725f").Stroke("#745345"))
+                                   .Legend(lg => lg.LegendType(LegendType.Item).Width("150px").ID("legend"));
+                                  s.Ring("Spending", Model.AsQueryable())
+                                   .LabelMemberPath(o => o.Label)
+                                   .ValueMemberPath(o => o.Spending)
+                                   .TooltipTemplate("spendingTooltipTemplate")
+                                   .ShowTooltip(true)
+                                   .LabelsPosition(LabelsPosition.Center)
+                                   .SelectedStyle(selStyle => selStyle.Fill("#9f725f").Stroke("#745345"));
+                              }).Render())
+                </td>
+                <td style="vertical-align: top;">
+                    <div id="legend"></div>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>XML Binding</Title>
+    <Description>
+        The sample demonstrates how to bind igGrid to XML data source. Note that Binding to XML requires a schema to define data fields.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>XML のバインド</Title>
+    <Description>このサンプルでは、igGrid コントロールを XML データ ソースにバインドする方法を紹介します。注: XML へのバインドは、データ フィールドを定義するスキーマが必要です。</Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

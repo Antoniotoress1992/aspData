@@ -1,0 +1,9 @@
+@{
+    ViewBag.Title = "Scheduler | Custom field";
+    ViewBag.SampleTitle = "Custom field";
+    ViewBag.ShortDescription = "Updating from the server side";
+    ViewBag.LongDescription = "Event gets updated from server response after save. <br />    Dbl-click to open details form and change the checkbox state there - after saving, color will be updated from server side.";
+}
+
+
+@Html.Raw(Model.Render()) 

@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ApplicationSamples>
+  <LocalizedContent Language="en">
+    <Samples>
+      <Sample>
+        <Name>Financial Analysis &amp; Stock Tracking</Name>
+        <Description>
+          The Finance Dashboard sample demonstrates the data chart, combo, dialog, and zoom bar controls for the Financial Services industry. The data chart is optimized for high-speed financial charting. This sample uses large datasets with millions of data points and real-time updates. The data chart enables key statistical and technical indicators and comparisons to key competitors.
+        </Description>
+        <ShortDescription>
+          The Finance Dashboard sample demonstrates the data chart, combo, dialog, and zoom bar controls for the Financial Services industry.
+        </ShortDescription>
+        <ImageLink LinkUrl="~/igfinance-sample" ImageAltText="IG Finance Sample" ImageUrl="~/images/marketing/app-samples/igfinance-sample.png" Text="The IG Finance Sample"/>
+        <GitUrl>https://github.com/igniteui/finance-sample</GitUrl>
+        <DownloadUrl>http://infragistics.com/downloads/generate/00000000-0000-0000-0000-000000004273?thankYouEmailContentId=11129</DownloadUrl>
+        <Controls>
+          <Control>data-chart</Control>
+          <Control>zoombar</Control>
+          <Control>combo</Control>
+          <Control>dialog-window</Control>
+        </Controls>
+      </Sample>
+      <Sample>
+        <Name>Sales Dashboard &amp; Performance Tracking</Name>
+        <Description>
+            The Auto Sales Tracking sample is an example application showcasing some of the most powerful Ignite UI controls including the map, grid, and various charts. The map control shows the geographical region represented in the sales data. Bullet graphs, data charts, and pie charts
+            show sales figures over time and in relation to target figures. Sales are detailed using the grid control by dealership and manufacturer and bullet graphs embedded in the grid provide glanceable sales summaries.
+            The application demonstrates how Ignite UI controls are used together to build an immersive and attractive user experience.
+        </Description>
+        <ShortDescription>
+          The Auto Sales Tracking sample is an example application showcasing some of the most powerful Ignite UI controls including the map, grid, and various charts.
+        </ShortDescription>
+        <ImageLink LinkUrl="~/autosales-dashboard-sample" ImageAltText="The Auto Sales Tracking Sample" ImageUrl="~/images/marketing/app-samples/autosalestracking-sample.png" Text="The Auto Sales Tracking Sample"/>
+        <GitUrl>https://github.com/igniteui/autosales-dashboard-sample</GitUrl>
+        <DownloadUrl>http://infragistics.com/downloads/generate/00000000-0000-0000-0000-000000004272?thankYouEmailContentId=11129</DownloadUrl>
+        <Controls>
+          <Control>data-chart</Control>
+          <Control>pie-chart</Control>
+          <Control>grid</Control>
+          <Control>map</Control>
+          <Control>bullet-graph</Control>
+          <Control>dialog-window</Control>
+        </Controls>
+      </Sample>
+      <Sample>
+        <Name>Global Demographics Over Time</Name>
+        <Description>
+          The WorldStats application sample shows the amazing Motion Framework of the Ignite UI Data Chart control that animates data over time to provide users with an extra layer of temporal insight into their data. This sample gives users rich insight into statistical data about all countries in the world by leveraging the Ignite UI Data Chart, Data Grid, Dialog Window, and more. Each chart supports zooming and drag-to-zoom, along with multiple series, series, types, and scales.
+        </Description>
+        <ShortDescription>
+          The WorldStats sample shows the amazing Motion Framework of the Data Chart, plotting demographic data from the world's countries over more than a century.
+        </ShortDescription>
+        <ImageLink LinkUrl="~/world-stats-sample" ImageAltText="The WorldStats Sample" ImageUrl="~/images/marketing/app-samples/worldstats-sample.png" Text="The WorldStats Sample"/>
+        <GitUrl>https://github.com/igniteui/world-stats-sample</GitUrl>
+        <DownloadUrl>http://infragistics.com/downloads/generate/00000000-0000-0000-0000-000000004334?thankYouEmailContentId=11129</DownloadUrl>
+        <Controls>
+          <Control>data-chart</Control>
+          <Control>grid</Control>
+          <Control>dialog-window</Control>
+          <Control>splitter</Control>
+        </Controls>
+      </Sample>
+      <Sample>
+        <Name>
+          Personal Health Tracker
+        </Name>
+        <Description>
+          The Personal Health Tracker sample demos using Ignite UI inside the PhoneGap framework for native-like, installed app experiences.
+        </Description>
+        <ShortDescription>
+          The Personal Health Tracker sample shows using Ignite UI within the PhoneGap app framework. This mobile phone app sample uses the tile view manager to dynamically switch between views in the app. The pie chart, data chart, templating, and customized list view controls help users to see and keep track of their personal health history as well as upcoming doctor appointments.
+        </ShortDescription>
+        <ImageLink LinkUrl="~/healthcare-sample" ImageAltText="Personal Health Tracker Sample" ImageUrl="~/images/marketing/app-samples/ighealthcare-sample.png" Text="The Personal Health Tracker Sample"/>
+        <GitUrl>https://github.com/igniteui/healthcare-sample</GitUrl>
+        <DownloadUrl>http://infragistics.com/downloads/generate/00000000-0000-0000-0000-000000004429?thankYouEmailContentId=11129</DownloadUrl>
+        <Controls>
+          <Control>tile-manager</Control>
+          <Control>data-chart</Control>
+          <Control>mobile-list-view</Control>
+          <Control>linear-gauge</Control>
+        </Controls>
+      </Sample>
+        <Sample>
+        <Name>Patient Management &amp; Vitals</Name>
+        <Description>
+          The ER Dashboard sample demonstrates the capabilities of multiple Ignite UI controls working together into a single complex view designed for mobile tablet devices.
+          The main part of the sample is several charts displaying different kinds of information about patients admitted to the emergency ward of a hospital. The sample shows how the same
+          information can be displayed in a grid and how to switch between views. Combo boxes are used to select different medical parameters to be displayed dynamically update
+          the data behind the charts. Additional buttons let you change the chart visualization with the same data.
+        </Description>
+        <ShortDescription>
+          The ER Dashboard sample demonstrates the capabilities of multiple Ignite UI controls working together into a single complex view designed for mobile tablet devices.
+        </ShortDescription>
+        <ImageLink LinkUrl="~/er-dashboard-sample" ImageAltText="ER Dashboard" ImageUrl="~/images/marketing/app-samples/healthcare-sample.png"/>
+        <GitUrl>https://github.com/igniteui/er-dashboard-sample</GitUrl>
+        <DownloadUrl>http://www.infragistics.com/downloads/generate/00000000-0000-0000-0000-000000003663?thankYouEmailContentId=11129</DownloadUrl>
+        <Controls>
+          <Control>data-chart</Control>
+          <Control>grid</Control>
+          <Control>tile-manager</Control>
+          <Control>combo</Control>
+          <Control>hierarchical-grid</Control>
+        </Controls>
+      </Sample>
+      <Sample>
+        <Name>Personal Finance Dashboard</Name>
+        <Description>
+          The Personal Finance Dashboard sample demonstrates the chart controls from the Ignite UI library acting together with grids, combo boxes and editors in a complex application. The sample is designed 
+          with mobile tablet devices in mind taking into account screen size and performance. The view displays several aspects of personal finances in graphic and tabular form separated into panels. 
+          It shows selecting different periods of time changes the data behind a chart and how to dynamically change the data series rendered by a chart.     
+        </Description>
+        <ShortDescription>
+          The Personal Finance Dashboard sample demonstrates the chart controls from the Ignite UI library acting together with grids, combo boxes and editors into a complex application.
+        </ShortDescription>
+        <ImageLink LinkUrl="~/personal-finance-sample" ImageAltText="Personal Finance Dashboard" ImageUrl="~/images/marketing/app-samples/personalfinance-sample.png"/>
+        <GitUrl>https://github.com/igniteui/personal-finance-sample</GitUrl>
+        <DownloadUrl>http://www.infragistics.com/downloads/generate/00000000-0000-0000-0000-000000003664?thankYouEmailContentId=11129</DownloadUrl>
+        <Controls>
+          <Control>data-chart</Control>
+          <Control>grid</Control>
+          <Control>date-picker</Control>      
+        </Controls>
+      </Sample>
+    </Samples>
+   </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Samples>
+      <Sample>
+        <Name>IG ファイナンス</Name>
+        <Description>
+          ファイナンス ダッシュボードのサンプルは、データ チャートとズームバー コントロールの金融業界で使用できる機能を紹介しています。データ チャートは、財務チャートにおいて高いパフォーマンスとスピードを発揮しています。このサンプルでは、数百万のデータ ポイントや大規模なデータセットにおいて、リアルタイムな更新を使用します。データ チャートでは主要な統計や技術的な指標、および主要な競合他者との比較などができます。
+        </Description>
+        <ShortDescription>
+          ファイナンス ダッシュボードのサンプルは、データ チャートとズームバー コントロールの金融業界で使用できる機能を紹介しています。
+        </ShortDescription>
+        <ImageLink LinkUrl="~/igfinance-sample" ImageAltText="IG ファイナンス サンプル" ImageUrl="~/images/marketing/app-samples/igfinance-sample.png" Text="IG ファイナンス サンプル"/>
+        <GitUrl>https://github.com/igniteui/finance-sample</GitUrl>
+        <DownloadUrl>http://jp.infragistics.com/downloads/DownloadLinkGenerator.aspx?DownloadId=278FDD1A-1452-E311-8B12-0050568A73AE</DownloadUrl>
+        <Controls>
+          <Control>data-chart</Control>
+          <Control>zoombar</Control>
+          <Control>combo</Control>
+          <Control>dialog-window</Control>
+        </Controls>
+      </Sample>
+      <Sample>
+        <Name>自動車販売ダッシュボード</Name>
+        <Description>
+          自動車販売ダッシュボード サンプルは、マップ、グリッド、およびチャートなどの Ignite UI コントロールを使用するサンプル アプリケーションです。マップ コントロールは、地理領域のセールス データを表示します。
+          ブレット グラフ、データ チャート、円チャートは、目標数に対する販売数量を経時的に表示します。グリッド コントロールで販売の詳細を表示し、埋め込みブレット グラフの販売の概要を提供します。
+          このアプリケーションは、さまざまな Ignite UI コントロールを使用して作成した体験型アプリケーションのサンプルです。
+        </Description>
+        <ShortDescription>
+          自動車販売ショーケース サンプルは、マップ、グリッド、およびチャートなどの Ignite UI コントロールを使用するサンプル アプリケーションです。
+        </ShortDescription>
+        <ImageLink LinkUrl="~/autosales-dashboard-sample" ImageAltText="自動車販売ショーケース サンプル" ImageUrl="~/images/marketing/app-samples/autosalestracking-sample.png" Text="自動車販売ショーケース サンプル"/>
+        <GitUrl>https://github.com/igniteui/autosales-dashboard-sample</GitUrl>
+        <DownloadUrl>http://jp.infragistics.com/downloads/DownloadLinkGenerator.aspx?DownloadId=268FDD1A-1452-E311-8B12-0050568A73AE</DownloadUrl>
+        <Controls>
+          <Control>data-chart</Control>
+          <Control>pie-chart</Control>
+          <Control>grid</Control>
+          <Control>map</Control>
+          <Control>bullet-graph</Control>
+          <Control>dialog-window</Control>
+        </Controls>
+      </Sample>
+      <Sample>
+        <Name>世界の統計</Name>
+        <Description>
+          世界の統計アプリケーション サンプルは、Ignite UI データ チャート コントロールの Motion Framework を使用し、データをアニメーションで表示します。このサンプルは、Ignite UI データ チャート、データ グリッド、ダイアログ ウィンドウなどのコントロールを使用して国の統計データを表示します。各チャートでは、ズーム、ドラッグ ズーム、複数の系列、系列タイプ、スケールがサポートされます。
+        </Description>
+        <ShortDescription>
+          世界の統計サンプルは、データ チャートの Motion Framework を使用して百年以上の国の統計データをプロットします。
+        </ShortDescription>
+        <ImageLink LinkUrl="~/world-stats-sample" ImageAltText="The WorldStats Sample" ImageUrl="~/images/marketing/app-samples/worldstats-sample.png" Text="The WorldStats Sample"/>
+        <GitUrl>https://github.com/igniteui/world-stats-sample</GitUrl>
+        <DownloadUrl>http://jp.infragistics.com/downloads/DownloadLinkGenerator.aspx?DownloadId=FE681154-5C67-E311-8B12-0050568A73AE</DownloadUrl>
+        <Controls>
+          <Control>data-chart</Control>
+          <Control>grid</Control>
+          <Control>dialog-window</Control>
+          <Control>splitter</Control>
+        </Controls>
+      </Sample>
+      <Sample>
+        <Name>
+          個人向けヘルス トラッカー
+        </Name>
+        <Description>
+          個人向けヘルス トラッカー サンプルは、ネイティブのようなインストール済みのアプリケーションをシミュレートするために PhoneGap フレームワークで Ignite UI を使用する方法を紹介します。
+        </Description>
+        <ShortDescription>
+          個人向けヘルス トラッカー サンプルは、PhoneGap アプリケーション フレームワークで Ignite UI を使用する方法を紹介します。この携帯電話アプリケーション サンプルは、アプリケーションのビューを動的に切り替えるためにタイル ビュー マネージャーを使用します。円チャート、データ チャート、テンプレート化、カスタマイズされたリスト ビュー コントロールで既往歴と次回の通院日を表示します。
+        </ShortDescription>
+        <ImageLink LinkUrl="~/healthcare-sample" ImageAltText="Personal Health Tracker Sample" ImageUrl="~/images/marketing/app-samples/ighealthcare-sample.png" Text="The Personal Health Tracker Sample"/>
+        <GitUrl>https://github.com/igniteui/healthcare-sample</GitUrl>
+        <DownloadUrl>http://jp.infragistics.com/downloads/DownloadLinkGenerator.aspx?DownloadId=E5605C10-7BB6-E311-8B12-0050568A73AE</DownloadUrl>
+        <Controls>
+          <Control>tile-manager</Control>
+          <Control>data-chart</Control>
+          <Control>mobile-list-view</Control>
+          <Control>linear-gauge</Control>
+        </Controls>
+      </Sample>
+        <Sample>
+        <Name>ER ダッシュボード</Name>
+        <Description>
+            ER ダッシュボード サンプルでは、多数の Ignite UI コントロールを使用し、複雑なデータをモバイル タブレット デバイスに最適なビューに変換し表示しています。
+            このサンプルは、救急病棟の入院患者を複数のチャートを用いてさまざまな情報を表示しています。このサンプルでは、グリッドで同じ情報を異なるビューで表示できます。
+            コンボボックスの多数の医療パラメーターから表示する項目を選択できます。ボタンを使用して、データのチャート視覚化を動的に変更できます。
+        </Description>
+        <ShortDescription>
+          ER ダッシュボード サンプルでは、多数の Ignite UI コントロールを使用し、複雑なデータをモバイル タブレット デバイスに最適なビューに変換し表示しています。
+        </ShortDescription>
+        <ImageLink LinkUrl="~/er-dashboard-sample" ImageAltText="ER ダッシュボード" ImageUrl="~/images/marketing/app-samples/healthcare-sample.png"/>
+        <GitUrl>https://github.com/igniteui/er-dashboard-sample</GitUrl>
+        <DownloadUrl>http://jp.infragistics.com/downloads/DownloadLinkGenerator.aspx?DownloadId=8186279D-DB21-E211-9359-0050568A73AE</DownloadUrl>
+        <Controls>
+          <Control>data-chart</Control>
+          <Control>grid</Control>
+          <Control>tile-manager</Control>
+          <Control>combo</Control>
+          <Control>hierarchical-grid</Control>
+        </Controls>
+      </Sample>
+      <Sample>
+        <Name>ファイナンス ダッシュボード</Name>
+        <Description>
+          ファイナンス ダッシュボード サンプルは、グリッド、コンボボックス、およびエディターと動作する Ignite UI ライブラリのチャート コントロールを使用したサンプル アプリケーションです。
+          このサンプルは、モバイル タブレッド デバイスに最適な画面サイズやパフォーマンスを念頭にデザインされています。このビューでは、きれいなグラフィックスを用いた表形式でファイナンス情報を複数表示します。
+          期間を変更しながらチャートで描画されるデータが動的に変化していくのを確認できます。
+        </Description>
+        <ShortDescription>
+          ファイナンス ダッシュボード サンプルは、グリッド、コンボボックス、およびエディターと動作する Ignite UI ライブラリのチャート コントロールを使用したサンプル アプリケーションです。
+        </ShortDescription>
+        <ImageLink LinkUrl="~/personal-finance-sample" ImageAltText="ファイナンス ダッシュボード" ImageUrl="~/images/marketing/app-samples/personalfinance-sample.png"/>
+        <GitUrl>https://github.com/igniteui/personal-finance-sample</GitUrl>
+        <DownloadUrl>http://jp.infragistics.com/downloads/DownloadLinkGenerator.aspx?DownloadId=8286279D-DB21-E211-9359-0050568A73AE</DownloadUrl>
+        <Controls>
+          <Control>data-chart</Control>
+          <Control>grid</Control>
+          <Control>date-picker</Control>
+        </Controls>
+      </Sample>
+    </Samples>
+  </LocalizedContent>
+</ApplicationSamples>

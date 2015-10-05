@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Geographic High Density Scatter Series</Title>
+    <Description>This sample demonstrates how a high density scatter series in the igMap control can be used to show millions of data points. The map plot area with more densely populated data points are represented by condensed orange color pixels and loosely distributed data points are represented by black color pixels. In addition, there is an option to change minimum and maximum heat properties of the series in order to adjust how heat colors are mapped.
+    </Description>
+    <HelpTopics>
+      <HelpTopic Title="Overview" TopicName="Overview_igMap" />
+      <HelpTopic Title="Creating Different Kinds of Maps" TopicName="igMap_Creating_Different_Kinds_Maps" />
+      <HelpTopic Title="Configuring Geographic High-Density Scatter Series (igMap)" TopicName="igMap_Using_Geographic_High_Density_Scatter_Series" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>地理高密度散布シリーズ</Title>
+    <Description>
+      このサンプルでは、地理マップ コントロールの高密度散布シリーズが何百万のデータ ポイントを表示する方法を紹介します。大量のデータ ポイントを含むマップのプロット領域は凝縮された赤色のピクセルによって表します。少量のデータ ポイントを含む領域は黒色のピクセルによって表します。シリーズのヒートの最小値と最大値プロパティを変更し、ヒート カラーのマッピングを調整できます。
+    </Description>
+    <HelpTopics>
+      <HelpTopic Title="概要" TopicName="Overview_igMap" />
+      <HelpTopic Title="各種マップの作成" TopicName="igMap_Creating_Different_Kinds_Maps" />
+      <HelpTopic Title="地理高密度散布系列の構成 (igMap)" TopicName="igMap_Using_Geographic_High_Density_Scatter_Series" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>Hosted</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

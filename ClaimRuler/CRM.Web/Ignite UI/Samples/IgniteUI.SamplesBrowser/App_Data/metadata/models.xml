@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<models>
+  <LocalizedContent Language="EN">
+    <LocalizedSampleStrings>
+      <LocalizedSampleString Key="order_ship_select" Value="Select ship date"/>
+      <LocalizedSampleString Key="customer_required" Value="Customer name is required"/>
+      <LocalizedSampleString Key="select_ship" Value="Select ship method"/>
+      <LocalizedSampleString Key="provide_phone" Value="Phone number is required"/>
+      <LocalizedSampleString Key="advance_filled" Value="Enter advanced payment"/>
+      <LocalizedSampleString Key="email_required" Value="Email address is required"/>
+      <LocalizedSampleString Key="email_valid" Value="Please enter a valid email"/>
+      <LocalizedSampleString Key="lbl_data_financial_administration" Value="Administration"/>
+      <LocalizedSampleString Key="lbl_data_financial_sales" Value="Sales"/>
+      <LocalizedSampleString Key="lbl_data_financial_it" Value="IT"/>
+      <LocalizedSampleString Key="lbl_data_financial_marketing" Value="Marketing"/>
+      <LocalizedSampleString Key="lbl_data_financial_development" Value="Development"/>
+      <LocalizedSampleString Key="lbl_data_financial_customersupport" Value="Customer Support"/>
+      <LocalizedSampleString Key="Spending" Value="Spending"/>
+      <LocalizedSampleString Key="Budget" Value="Budget"/>
+      <LocalizedSampleString Key="reserved" Value="Room is successfully reserved!"/>
+      <LocalizedSampleString Key="not_reserved" Value="Room is not reserved!"/>
+      
+    </LocalizedSampleStrings>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <LocalizedSampleString Key="order_ship_select" Value="出荷日の選択"/>
+    <LocalizedSampleString Key="customer_required" Value="顧客名を入力してください。"/>
+    <LocalizedSampleString Key="select_ship" Value="出荷方法の選択"/>
+    <LocalizedSampleString Key="provide_phone" Value="電話番号を入力してください。"/>
+    <LocalizedSampleString Key="advance_filled" Value="前払いを入力してください。"/>
+    <LocalizedSampleString Key="email_required" Value="メール アドレスを入力してください。"/>
+    <LocalizedSampleString Key="email_valid" Value="有効なメール アドレスを入力してください。"/>
+    <LocalizedSampleString Key="lbl_data_financial_administration" Value="管理"/>
+    <LocalizedSampleString Key="lbl_data_financial_sales" Value="セールス"/>
+    <LocalizedSampleString Key="lbl_data_financial_it" Value="IT"/>
+    <LocalizedSampleString Key="lbl_data_financial_marketing" Value="マーケティング"/>
+    <LocalizedSampleString Key="lbl_data_financial_development" Value="開発"/>
+    <LocalizedSampleString Key="lbl_data_financial_customersupport" Value="サポート"/>
+    <LocalizedSampleString Key="Spending" Value="支出"/>
+    <LocalizedSampleString Key="Budget" Value="予算"/>
+    <LocalizedSampleString Key="reserved" Value="予約が完了しました。"/>
+    <LocalizedSampleString Key="not_reserved" Value="予約していません。"/>
+  </LocalizedContent>
+</models>

@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Protected/ClaimRuler.Master" AutoEventWireup="true" CodeBehind="ClaimRulerClaim.master.cs" Inherits="CRM.Web.Protected.ClaimRulerClaim" %>
+
+<%@ Register Assembly="Infragistics45.Web.v14.1, Version=14.1.20141.2011, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" Namespace="Infragistics.Web.UI.LayoutControls" TagPrefix="ig" %>
+
+<%@ Register Assembly="Infragistics45.Web.v14.1, Version=14.1.20141.2011, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" Namespace="Infragistics.Web.UI.NavigationControls" TagPrefix="ig" %>
+<%@ Register Src="~/UserControl/ucClaimTopMenu.ascx" TagName="ucClaimTopMenu" TagPrefix="uc1" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderMiddArea" runat="server">
+    <div class="paneContent">
+        <div class="page-title">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderPageTitle" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div>
+            <h2 style="font-size:12px">
+                <span><b><%= Session["InsuredName"]%> &nbsp | &nbsp </b> </span>
+                <span>Net Claim Payable: <%= Session["ClaimPayable"]%> &nbsp  &nbsp </> </span>
+                <span>Client: <%= Session["myClient"]%> &nbsp  &nbsp</> </span>
+                <span>Insurer/Branch: <%= Session["InsurerBranch"]%> &nbsp  &nbsp</> </span>
+                <span>Carrier Invoice Type: <%= Session["CarrierType"]%> &nbsp  &nbsp</> </span>
+                
+            </h2>
+            
+        </div>
+
+        <div class="paneContent">
+            <uc1:ucClaimTopMenu ID="claimTopMenu" runat="server" />
+            <div class="toolbar toolbar-body">
+                <table>
+                    <tr>
+                        <td>
+                            <asp:LinkButton ID="btnBackToPolicy" runat="server" CssClass="toolbar-item" OnClick="btnReturnToPolicy_Click">
+								<span class="toolbar-img-and-text" style="background-image: url(../images/back.png)">Policy</span>
+                            </asp:LinkButton>
+                        </td>
+                        <td>
+                            <asp:LinkButton ID="btnReturnToClient" runat="server" CssClass="toolbar-item" OnClick="btnReturnToClient_Click">
+								<span class="toolbar-img-and-text" style="background-image: url(../images/back.png)">Insured</span>
+                            </asp:LinkButton>
+                        </td>
+                        <td>
+                            <asp:LinkButton ID="btnReturnToClaim" runat="server" Text="" CssClass="toolbar-item" OnClick="btnReturnToClaim_Click">
+									<span class="toolbar-img-and-text" style="background-image: url(../images/back.png)">Claim</span>
+                            </asp:LinkButton>
+                        </td>
+                        <td style="border-left:1px solid; width:20px;"></td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolderToolbar" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="paneContentInner">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolderMiddArea" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </div>
+
+</asp:Content>

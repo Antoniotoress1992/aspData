@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Banner Advertisements</Title>
+    <Description>The jQuery Video Player control supports displaying banners during the video playback. There are plenty of options that can be adjusted to get the desired behavior from this functionality. The following sample demonstrates how to adjust the banner dimensions using properties, how to handle the bannerVisible event to alternate the position of the displayed banner and how to handle the bannerClick events to pause the video when the end-user clicks on a banner following its link on a new tab.</Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>バナー広告</Title>
+    <Description>igVideoPlayer コントロールはビデオの再生中にバナーを表示できます。多数のオプションが提供されるため、動作を詳細にカスタマイズできます。以下のサンプルはバナーのディメンションをプロパティを使用して調整する方法を示します。bannerVisible イベントを処理して表示バナーの位置を変更したり、ユーザーがバナーをクリックしたときに bannerClick イベントを使用してビデオを停止したりする方法を紹介します。</Description>
+  </LocalizedContent>
+  <ServerRuntime>Remote</ServerRuntime>
+  <Status></Status>
+</Sample>

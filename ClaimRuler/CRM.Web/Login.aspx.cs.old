@@ -1,0 +1,162 @@
+﻿
+namespace CRM.Web
+{
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Web;
+    using System.Web.UI;
+    using System.Web.UI.WebControls;
+    using System.Web.Security;
+    using CRM.Core;
+    using LinqKit;
+
+    using CRM.Data;
+    using CRM.Data.Account;
+    using CRM.Repository;
+    using CRM.Data.Entities;
+    public partial class Login : System.Web.UI.Page
+    {
+
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            Page.SetFocus(txtUserName);
+
+        }
+
+
+        List<SecRoleModuleManager.secRoleModuleGet> resRolePermission = new List<SecRoleModuleManager.secRoleModuleGet>();
+
+        private void DoAuthenticate(CRM.Data.Entities.SecUser user)
+        {
+            string url = null;
+            string userData = null;
+            List<int> roleActions = null;
+
+            Session["UserId"] = user.UserId;
+            Session["UserName"] = user.UserName;
+            Session["RoleId"] = user.SecRole.RoleId.ToString();
+
+            // 201307-29
+            Session["ClientId"] = user.ClientID;
+            if (user.Client.Count > 0)
+            {
+                Session["ClientShowTask"] = user.Client == null ? true : (user.Client.FirstOrDefault().isShowTasks ?? true);
+            }
+            else
+            {
+                Session["ClientShowTask"] = true;
+            }
+
+            userData = string.Format("{0}|{1}|{2} {3}|{4}", user.SecRole.RoleName, user.SecRole.RoleId, user.FirstName, user.LastName, user.Email);
+
+            var ticket = new FormsAuthenticationTicket
+                (
+                   1,
+                   user.UserId.ToString(),
+                   DateTime.Now,
+                   DateTime.Now.AddMinutes(120),
+                   true,
+                   userData,	//(user.SecRole.RoleName + "|" + user.SecRole.RoleId.ToString()),
+                   FormsAuthentication.FormsCookiePath
+                );
+
+            string encryptedTicket = FormsAuthentication.Encrypt(ticket);
+            Response.Cookies.Add(new HttpCookie(FormsAuthentication.FormsCookieName, encryptedTicket));
+            Session["rolePermission"] = resRolePermission = SecRoleModuleManager.getRolePermission(user.SecRole.RoleId).ToList();
+
+            // get role actions
+            if (user.RoleId != (int)UserRole.Administrator)
+            {
+                using (ActionManager repository = new ActionManager())
+                {
+                    roleActions = repository.GetActions((int)user.ClientID, (int)user.RoleId);
+                    Session["roleActions"] = roleActions;
+                }
+            }
+
+            //if (user.SecRole.RoleId == (int)UserRole.Adjuster)
+            //	url = "~/Protected/Intake/form.aspx";
+            //else
+            if (Request.QueryString["url"] != null)
+            {
+                url = Request.QueryString["url"].ToString();
+            }
+            else
+                url = FormsAuthentication.DefaultUrl;
+
+            Response.Redirect(url);
+        }
+        List<LoginTrials> resLoginTrails = new List<LoginTrials>();
+
+        protected void btnSubmit_click(object sender, EventArgs e)
+        {
+
+            CRM.Data.Entities.SecUser user = SecUserManager.GetByUserName(txtUserName.Text.Trim());
+            if (user.UserName != null && user.Password != null)
+            {
+                string password = SecurityManager.Decrypt(user.Password);
+
+                if (user.UserId > 0 && password.Equals(txtPassword.Text.Trim()))
+                {
+                    lblError.Visible = false;
+                    Session["Count"] = null;
+                    DoAuthenticate(user);
+
+                }
+                else
+                {
+                    lblError.Visible = true;
+                    lblError.Text = "Invalid User Name or Password!";
+                    createLoginLog(user.UserId, false);
+
+                }
+            }
+            else
+            {
+                lblError.Visible = true;
+                lblError.Text = "Invalid User Name or Password!";
+                return;
+            }
+
+        }
+
+
+        private void checkforLoginAttempt()
+        {
+
+        }
+
+        private void createLoginLog(int UserId, bool sucess)
+        {
+
+
+            SecLoginLog loginlog = new SecLoginLog();
+            loginlog.UserId = UserId;
+            loginlog.LoginId = txtUserName.Text.Trim();
+            loginlog.LoginTime = DateTime.Now;
+            loginlog.LogoutTime = DateTime.Now;
+            if (sucess == true)
+            {
+                loginlog.Sucess = true;
+            }
+            else
+            {
+                loginlog.Sucess = false;
+            }
+            loginlog.CreatedMachineIP = Request.ServerVariables["remote_addr"].ToString();
+            SecLoginLogManager.Save(loginlog);
+        }
+
+
+
+    }
+
+    public class LoginTrials
+    {
+        public int LoginId { get; set; }
+        public int Trial { get; set; }
+        public DateTime TrailTime { get; set; }
+    }
+}

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Numeric Items</Title>
+    <Description>This sample demonstrates how to define numeric item in the igRadialMenu.</Description>
+    <HelpTopics>
+      <HelpTopic Title="Configuring the Tick Marks (igRadialGauge)" TopicName="igRadialGauge_Configuring_Tick_Marks" />
+    </HelpTopics>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>数値項目</Title>
+    <Description>このサンプルでは、igRadialMenu で数値項目を定義する方法を紹介します。</Description>
+    <HelpTopics>
+      <HelpTopic Title="目盛りの構成 (igRadialGauge)" TopicName="igRadialGauge_Configuring_Tick_Marks" />
+    </HelpTopics>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status>new</Status>
+</Sample>

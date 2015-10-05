@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="../../igniteui/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+    <link href="../../igniteui/css/structure/infragistics.css" rel="stylesheet" />
+
+    <script src="../../js/modernizr.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="../../igniteui/js/infragistics.core.js"></script>
+    <script src="../../igniteui/js/infragistics.lob.js"></script>
+
+</head>
+<body>
+
+    <style type="text/css">
+        #comboContainer
+        {
+            margin-bottom: 30px;
+        }
+        .comboTemplates
+        {
+            text-align: center;
+            padding: 2px;
+        }
+        #comboHeaderTemplate
+        {
+            font-size: large;
+            font-weight: bold;
+            background-color: rgb(185, 9, 11);
+            color: White;
+        }
+        #comboFooterTemplate
+        {
+            font-size: small;
+            background-color: rgb(245, 245, 164);
+        }
+        .empImage
+        {
+            float: left;
+            width: 64px;
+            padding-top: 10px;
+        }
+        .empInfo
+        {
+            float: left;
+            padding: 5px;            
+            width: 195px;
+        }
+        .empName
+        {
+            font-weight: bold;
+        }
+        .comboItemContainer
+        {
+            width: 270px;
+            white-space: normal;
+        }
+    </style>
+    
+    <div id="comboIG"></div>
+
+    <script>
+
+        $(function () {
+
+            $("#comboIG").igCombo({
+                filteringType: "local",
+                renderMatchItems: "contains",
+                responseDataKey: "d.results",
+                valueKey: "Name",
+                width: "270px",
+                dataSource: "http://igniteui.com/api/employees?callback=?",
+                headerTemplate: "<div id='comboHeaderTemplate' class='comboTemplates'>Employees</div>",
+                footerTemplate: "<div id='comboFooterTemplate' class='comboTemplates'>More information at <a href='http://www.infragistics.com' target='_blank'>www.infragistics.com</div>",
+                itemTemplate: "<div class='comboItemContainer'><div class='empImage'><a href='http://www.infragistics.com' target='_blank'><img src='${ImageUrl}' width='64px' /></a></div><div class='empInfo'><span class='empName'>${Name}</span><p>${BirthDate}</p><div>${Address}</div></div></div>"
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>

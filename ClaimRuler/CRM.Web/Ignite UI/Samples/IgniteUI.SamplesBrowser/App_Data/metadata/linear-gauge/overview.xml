@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">linear-gauge/basic-configuration</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      The igLinearGauge is a HTML5, canvas-based linear gauge control. It's useful for showing a single measure on a linear range. 
+      This control supports various configurations including <a href="~/linear-gauge/vertical-horizontal-orientation">vertical orientation</a>, <a href="~/linear-gauge/needle-settings">needle customization</a>, and <a href="~/linear-gauge/animated-transitions">animations</a>. 
+      See the complete list of samples in the menu.
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      igLinearGauge は HTML5 キャンバス ベース リニア ゲージ コントロールです。リニア範囲に単一のメジャーを表示します。
+      このコントロールは、<a href="~/linear-gauge/vertical-horizontal-orientation">垂直方向</a>、<a href="~/linear-gauge/needle-settings">針のカスタマイズ</a>、および<a href="~/linear-gauge/animated-transitions">アニメーション</a>などの構成をサポートします。
+      サンプルをすべて表示するには、メニューを参照してください。
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>

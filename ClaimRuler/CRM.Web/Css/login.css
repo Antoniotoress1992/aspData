@@ -1,0 +1,243 @@
+body {
+	margin:0px;
+	background: #ffffff;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	background: #ffffff; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxMSUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZTBlMGUwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+background: -moz-linear-gradient(top,  #ffffff 11%, #e0e0e0 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(11%,#ffffff), color-stop(100%,#e0e0e0)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 11%,#e0e0e0 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 11%,#e0e0e0 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 11%,#e0e0e0 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffffff 11%,#e0e0e0 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e0e0e0',GradientType=0 ); /* IE6-8 */
+
+height:100%;
+}
+
+html {
+	height:100%;
+	
+}
+
+.content {
+	height: auto;
+	width: 870px;
+	margin:auto;
+}
+.all_admin_boxs {
+	float: left;
+	height: auto;
+	width: 870px;
+	margin-top:6%;
+}
+.logo_box {
+	float: left;
+	height: auto;
+	width: 470px;
+	text-align:center;
+}
+#user_name {
+	width: auto;
+	font-size:16px;
+	font-family:Arial ;
+	color:#666666;
+	font-weight:bold;
+	padding-top:10px;
+    border-radius: 5px;
+    background: #feffff; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZlZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlMGUwZTAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #feffff 0%, #e0e0e0 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#feffff), color-stop(100%,#e0e0e0)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #feffff 0%,#e0e0e0 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #feffff 0%,#e0e0e0 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #feffff 0%,#e0e0e0 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #feffff 0%,#e0e0e0 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#e0e0e0',GradientType=0 ); /* IE6-8 */
+
+
+}
+
+
+#user_name ul {
+	float: left;
+	padding: 0 0 0 0;
+	margin: 0;
+}
+#user_name ul p {
+	float: left;
+	padding: 8px 0 0 10px;
+	margin: 0;
+}
+#user_name ul li {
+	display: inline;
+	padding:30px 0 0 10px ;
+	line-height:24px;
+}
+.all_feld {
+	/*float: left;*/
+
+	width: 450px;
+	padding:10px 10px 10px 10px;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+	margin:0 auto 0 auto;
+	/*background: url(images/logo.png) no-repeat top;*/
+	/*border:#d4d4d4 1px solid;*/
+	display:block;
+	box-shadow:0px 0px 10px rgba(0,0,0,0.5);
+	-moz-box-shadow:0px 0px 10px rgba(0,0,0,0.5);
+	-webkit-box-shadow:0px 0px 10px rgba(0,0,0,0.5);
+	background:#4875b9;
+}
+.text_box_all
+{
+width:870px;  
+padding-left:20px; 
+padding-right:20px;
+
+border:1px solid #d4d4d4; 
+border-radius:5px; 
+-moz-border-radius:5px;
+background-color:white; 
+margin-bottom:10px; 
+color:#555; 
+font-size:11px;
+margin:0 auto;
+margin-top:45px; 
+}
+
+
+.myinput {
+	background-color: #ffffff; 
+	border: 2px solid #184687; 
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+	color: #000000;  
+	border-color:#184687; 
+	width: 300px;
+	padding:5px;
+	outline:none;
+}
+
+
+.username{
+	padding:10px;
+	clear:both;
+}
+
+
+
+.mylogo h1 a {
+	display:block;
+	width:150px;
+	}
+
+.mysubmit{
+	color: #ffffff;  
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;  
+	 font-size: 12pt; 
+	 padding:5px 13px;
+	 cursor:pointer;
+	 background:url(../../images/bg.png) repeat-x top #184687;
+	 border:none;
+	 font-family:arial;
+	 font-size:13px;
+	 font-weight:bold;
+}
+
+.error {
+	text-align:center;
+	background:#ffd4d4;
+	border:solid 1px #ebb3b3;
+	color:#000;
+	padding:5px;
+	font-size:13px;
+	margin-top:5px;
+	
+	}
+	
+	.head {
+		/* background:#184687;*/
+		 display:block;
+		 padding:5px 0px;
+		 border-radius:5px 5px 0px 0px;
+		  -moz-border-radius:5px 5px 0px 0px;
+		   -webkit-border-radius:5px 5px 0px 0px;
+		   color:#184687;
+		   font-weight:bold;
+		   font-size:17px;
+		   margin:0 auto;
+		   display:block;
+		   text-align:left;
+		   border-bottom:solid 1px #d4d4d4;
+
+		}
+		
+		
+	.head span {
+		color:#aa0000;
+	}
+		
+		.mytext {
+			font-family:arial;
+			font-size:13px;
+			color:555;
+			
+		}
+		a.report{
+	color: #ffffff;  
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;  
+	 font-size: 12pt; 
+	 padding:5px 13px;
+	 cursor:pointer;
+	 background:url(../images/bg.png) repeat-x top #016f97;
+	 border:none;
+	 font-family:arial;
+	 font-size:13px;
+	 font-weight:bold;
+	 text-decoration:none;
+	 margin:10px auto;
+	min-width:auto;
+	max-width:45px;
+	 display:block;
+	 
+}
+.logo_cont {
+	margin-bottom:10px;
+	background:#FFF;
+}
+
+.mybox {
+	width:100%;
+	margin:0 auto;
+
+	
+
+}
+.clear {
+	clear:both;
+}
+
+
+
+.reverse {
+
+}
+
+.line {
+	background:#fff;
+	border-top:solid 1px #dedede;
+	width:75%;
+	margin:0 auto;
+	height:1px;
+}

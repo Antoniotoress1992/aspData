@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Editing API and Events</Title>
+    <Description>The igGrid control provides different editor types, options, methods, and events for editing data.
+    This sample demonstrates how many of the options interact together.
+    If grid selection is enabled, the active row corresponds to the editing row.
+    If the grid has focus, then editing of the active row can be started from the keyboard when the user begins typing.
+    Keyboard triggers can be adjusted using the startEditTriggers option.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Title>エディター API およびイベント</Title>
+    <Description>
+      igGrid コントロールはデータの編集のためのさまざまなエディター タイプ、オプション、メソッド、およびイベントを提供します。
+      このサンプルでは、グリッドのオプションを紹介します。
+      グリッドで選択が有効な場合、アクティブ行は編集行に相対します。
+      グリッドがフォーカスを持つ場合、ユーザー入力時にキーボードによってアクティブ行の編集を開始します。
+      キーボード トリガーを変更するには、startEditTriggers オプションを使用します。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>File</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

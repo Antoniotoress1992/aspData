@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <LocalizedContent Language="en">
+    <Title>Create Word Table</Title>
+    <Description>
+      You can export our jQuery Grid’s data to a Microsoft Word® document. Our Word library also provides the option of selecting from a variety of different export formats, as well as styling options for the exported document.
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+      <Title>Word テーブルの作成</Title>
+    <Description>
+      jQuery グリッドのデータを Microsoft Word® 文書へエクスポートできます。Word ライブラリは、多数のエクスポート形式やスタイル オプションを提供します。
+    </Description>
+  </LocalizedContent>
+  <ServerRuntime>ASPNETMVC</ServerRuntime>
+  <Status></Status>
+  <MinSampleSize>PhoneLandscape</MinSampleSize>
+</Sample>

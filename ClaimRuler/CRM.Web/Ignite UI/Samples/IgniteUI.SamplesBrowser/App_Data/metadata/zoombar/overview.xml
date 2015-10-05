@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sample>
+  <RedirectToSample CopyTargetTitleAndDescription="none">zoombar/financial-chart</RedirectToSample>
+  <LocalizedContent Language="en">
+    <Description>
+      <![CDATA[
+      The igZoombar is a jQuery UI zooming slider control. It is similar to a slider and has two handles representing minimum and maximum values. You 
+      can use it with the igDataChart to easily display a subset of the data. See the complete list of samples in the menu.
+    ]]>
+    </Description>
+  </LocalizedContent>
+  <LocalizedContent Language="ja">
+    <Description>
+      <![CDATA[
+      igZoombar は jQuery UI のズーム スライダー コントロールです。スライダーのようなコントロールです。最小値および最大値を表す 2 つのハンドルがあります。
+      igDataChart と使用すると、データのサブセットを表示できます。サンプルをすべて表示するには、メニューを参照してください。
+    ]]>
+    </Description>
+  </LocalizedContent>
+</Sample>
